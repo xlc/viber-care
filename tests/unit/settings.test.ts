@@ -1,44 +1,44 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it } from 'vitest'
 import {
-  DEFAULT_SETTINGS,
-  loadSettings,
-  resolveLanguageOrder,
-  saveSettings,
-  type StorageLike,
-  type WordGardenSettings
-} from "../../src/state/settings";
+	DEFAULT_SETTINGS,
+	loadSettings,
+	resolveLanguageOrder,
+	type StorageLike,
+	saveSettings,
+	type WordGardenSettings,
+} from '../../src/state/settings'
 
 class MemoryStorage implements StorageLike {
-  private values = new Map<string, string>();
+	private values = new Map<string, string>()
 
-  getItem(key: string) {
-    return this.values.get(key) ?? null;
-  }
+	getItem(key: string) {
+		return this.values.get(key) ?? null
+	}
 
-  setItem(key: string, value: string) {
-    this.values.set(key, value);
-  }
+	setItem(key: string, value: string) {
+		this.values.set(key, value)
+	}
 }
 
-describe("settings persistence", () => {
-  it("loads defaults when storage is empty", () => {
-    expect(loadSettings(new MemoryStorage())).toEqual(DEFAULT_SETTINGS);
-  });
+describe('settings persistence', () => {
+	it('loads defaults when storage is empty', () => {
+		expect(loadSettings(new MemoryStorage())).toEqual(DEFAULT_SETTINGS)
+	})
 
-  it("persists valid settings and resolves language order", () => {
-    const storage = new MemoryStorage();
-    const settings: WordGardenSettings = {
-      ...DEFAULT_SETTINGS,
-      languageOrderPreset: "custom",
-      customLanguageOrder: ["ja", "en"],
-      activeLevel: "L3",
-      muted: true
-    };
+	it('persists valid settings and resolves language order', () => {
+		const storage = new MemoryStorage()
+		const settings: WordGardenSettings = {
+			...DEFAULT_SETTINGS,
+			languageOrderPreset: 'custom',
+			customLanguageOrder: ['ja', 'en'],
+			activeLevel: 'L3',
+			muted: true,
+		}
 
-    saveSettings(storage, settings);
-    const loaded = loadSettings(storage);
+		saveSettings(storage, settings)
+		const loaded = loadSettings(storage)
 
-    expect(loaded).toEqual(settings);
-    expect(resolveLanguageOrder(loaded)).toEqual(["ja", "en"]);
-  });
-});
+		expect(loaded).toEqual(settings)
+		expect(resolveLanguageOrder(loaded)).toEqual(['ja', 'en'])
+	})
+})

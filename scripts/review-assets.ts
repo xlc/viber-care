@@ -1,117 +1,142 @@
-import { readFile, stat, writeFile, mkdir } from "node:fs/promises";
-import { dirname, join } from "node:path";
-import { RuntimeCatalogSchema, type AssetReference, type RuntimeCatalog } from "../src/content/schema";
+import { mkdir, readFile, stat, writeFile } from 'node:fs/promises'
+import { dirname, join } from 'node:path'
+import {
+	type AssetReference,
+	type RuntimeCatalog,
+	RuntimeCatalogSchema,
+} from '../src/content/schema'
 
-const rootDir = process.cwd();
-const publicDir = join(rootDir, "public");
-const catalogPath = join(publicDir, "catalog.generated.json");
-const manifestPath = join(publicDir, "assets", "generated", "asset-manifest.json");
-const reviewJsonPath = join(publicDir, "assets", "generated", "review.json");
-const reviewHtmlPath = join(publicDir, "assets", "generated", "review.html");
+const rootDir = process.cwd()
+const publicDir = join(rootDir, 'public')
+const catalogPath = join(publicDir, 'catalog.generated.json')
+const manifestPath = join(
+	publicDir,
+	'assets',
+	'generated',
+	'asset-manifest.json',
+)
+const reviewJsonPath = join(publicDir, 'assets', 'generated', 'review.json')
+const reviewHtmlPath = join(publicDir, 'assets', 'generated', 'review.html')
 
 type ManifestEntry = {
-  path: string;
-  type: AssetReference["type"];
-  source: string;
-  reviewRequired: boolean;
-  warning?: string;
-};
-
-function escapeHtml(value: string): string {
-  return value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
+	path: string
+	type: AssetReference['type']
+	source: string
+	reviewRequired: boolean
+	warning?: string
 }
 
-function collectPackAssets(pack: RuntimeCatalog["packs"][number]): AssetReference[] {
-  const assets: AssetReference[] = [];
-  for (const scene of pack.scenes) {
-    if (scene.background.asset) {
-      assets.push(scene.background.asset);
-    }
-    if (scene.music?.asset) {
-      assets.push(scene.music.asset);
-    }
-  }
-  for (const object of pack.objects) {
-    assets.push(object.image);
-    if (object.interaction.soundEffect) {
-      assets.push(object.interaction.soundEffect);
-    }
-    for (const languageContent of Object.values(object.content)) {
-      for (const levelContent of Object.values(languageContent.levels)) {
-        if (levelContent.audio) {
-          assets.push(levelContent.audio);
-        }
-      }
-    }
-  }
+function escapeHtml(value: string): string {
+	return value
+		.replaceAll('&', '&amp;')
+		.replaceAll('<', '&lt;')
+		.replaceAll('>', '&gt;')
+		.replaceAll('"', '&quot;')
+}
 
-  return assets.filter(
-    (asset, index, allAssets) => allAssets.findIndex((candidate) => candidate.path === asset.path) === index
-  );
+function collectPackAssets(
+	pack: RuntimeCatalog['packs'][number],
+): AssetReference[] {
+	const assets: AssetReference[] = []
+	for (const scene of pack.scenes) {
+		if (scene.background.asset) {
+			assets.push(scene.background.asset)
+		}
+		if (scene.music?.asset) {
+			assets.push(scene.music.asset)
+		}
+	}
+	for (const object of pack.objects) {
+		assets.push(object.image)
+		if (object.interaction.soundEffect) {
+			assets.push(object.interaction.soundEffect)
+		}
+		for (const languageContent of Object.values(object.content)) {
+			for (const levelContent of Object.values(languageContent.levels)) {
+				if (levelContent.audio) {
+					assets.push(levelContent.audio)
+				}
+			}
+		}
+	}
+
+	return assets.filter(
+		(asset, index, allAssets) =>
+			allAssets.findIndex((candidate) => candidate.path === asset.path) ===
+			index,
+	)
 }
 
 async function exists(publicPath: string): Promise<boolean> {
-  try {
-    await stat(join(publicDir, publicPath.slice(1)));
-    return true;
-  } catch {
-    return false;
-  }
+	try {
+		await stat(join(publicDir, publicPath.slice(1)))
+		return true
+	} catch {
+		return false
+	}
 }
 
 async function main() {
-  const catalog = RuntimeCatalogSchema.parse(JSON.parse(await readFile(catalogPath, "utf8")));
-  const manifest = JSON.parse(await readFile(manifestPath, "utf8").catch(() => "{\"entries\":[]}")) as {
-    entries: ManifestEntry[];
-  };
-  const manifestByPath = new Map(manifest.entries.map((entry) => [entry.path, entry]));
+	const catalog = RuntimeCatalogSchema.parse(
+		JSON.parse(await readFile(catalogPath, 'utf8')),
+	)
+	const manifest = JSON.parse(
+		await readFile(manifestPath, 'utf8').catch(() => '{"entries":[]}'),
+	) as {
+		entries: ManifestEntry[]
+	}
+	const manifestByPath = new Map(
+		manifest.entries.map((entry) => [entry.path, entry]),
+	)
 
-  const reviewPacks = [];
-  for (const pack of catalog.packs) {
-    const assets = await Promise.all(
-      collectPackAssets(pack).map(async (asset) => {
-        const manifestEntry = manifestByPath.get(asset.path);
-        const present = await exists(asset.path);
-        const warnings = [
-          present ? null : "Missing generated asset file.",
-          manifestEntry?.warning,
-          asset.type === "sound" ? "Procedural or generated SFX should be reviewed for softness." : null
-        ].filter((warning): warning is string => Boolean(warning));
+	const reviewPacks = []
+	for (const pack of catalog.packs) {
+		const assets = await Promise.all(
+			collectPackAssets(pack).map(async (asset) => {
+				const manifestEntry = manifestByPath.get(asset.path)
+				const present = await exists(asset.path)
+				const warnings = [
+					present ? null : 'Missing generated asset file.',
+					manifestEntry?.warning,
+					asset.type === 'sound'
+						? 'Procedural or generated SFX should be reviewed for softness.'
+						: null,
+				].filter((warning): warning is string => Boolean(warning))
 
-        return {
-          path: asset.path,
-          type: asset.type,
-          source: manifestEntry?.source ?? "unknown",
-          present,
-          reviewRequired: Boolean(manifestEntry?.reviewRequired || warnings.length > 0),
-          warnings
-        };
-      })
-    );
+				return {
+					path: asset.path,
+					type: asset.type,
+					source: manifestEntry?.source ?? 'unknown',
+					present,
+					reviewRequired: Boolean(
+						manifestEntry?.reviewRequired || warnings.length > 0,
+					),
+					warnings,
+				}
+			}),
+		)
 
-    reviewPacks.push({
-      id: pack.id,
-      title: pack.title.en ?? pack.id,
-      sceneIds: pack.scenes.map((scene) => scene.id),
-      objectIds: pack.objects.map((object) => object.id),
-      assets
-    });
-  }
+		reviewPacks.push({
+			id: pack.id,
+			title: pack.title.en ?? pack.id,
+			sceneIds: pack.scenes.map((scene) => scene.id),
+			objectIds: pack.objects.map((object) => object.id),
+			assets,
+		})
+	}
 
-  const review = {
-    generatedAt: new Date().toISOString(),
-    packs: reviewPacks,
-    warningCount: reviewPacks.reduce(
-      (count, pack) => count + pack.assets.reduce((inner, asset) => inner + asset.warnings.length, 0),
-      0
-    )
-  };
+	const review = {
+		generatedAt: new Date().toISOString(),
+		packs: reviewPacks,
+		warningCount: reviewPacks.reduce(
+			(count, pack) =>
+				count +
+				pack.assets.reduce((inner, asset) => inner + asset.warnings.length, 0),
+			0,
+		),
+	}
 
-  const html = `<!doctype html>
+	const html = `<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -137,45 +162,49 @@ async function main() {
       <h1>Word Garden Asset Review</h1>
       <p class="meta">${review.warningCount} review warning(s). Generated ${escapeHtml(review.generatedAt)}.</p>
       ${review.packs
-        .map(
-          (pack) => `<section>
+				.map(
+					(pack) => `<section>
         <h2>${escapeHtml(pack.title)} <span class="meta">(${escapeHtml(pack.id)})</span></h2>
-        <p class="meta">Scenes: ${pack.sceneIds.map(escapeHtml).join(", ")}. Objects: ${pack.objectIds
-          .map(escapeHtml)
-          .join(", ")}.</p>
+        <p class="meta">Scenes: ${pack.sceneIds.map(escapeHtml).join(', ')}. Objects: ${pack.objectIds
+					.map(escapeHtml)
+					.join(', ')}.</p>
         <div class="grid">
           ${pack.assets
-            .map((asset) => {
-              const preview =
-                asset.type === "image" || asset.type === "background"
-                  ? `<img src="${escapeHtml(asset.path)}" alt="" />`
-                  : `<audio controls src="${escapeHtml(asset.path)}"></audio>`;
-              return `<article class="asset">
+						.map((asset) => {
+							const preview =
+								asset.type === 'image' || asset.type === 'background'
+									? `<img src="${escapeHtml(asset.path)}" alt="" />`
+									: `<audio controls src="${escapeHtml(asset.path)}"></audio>`
+							return `<article class="asset">
               ${preview}
               <code>${escapeHtml(asset.path)}</code>
               <p class="meta">${escapeHtml(asset.type)} · ${escapeHtml(asset.source)} · ${
-                asset.present ? "present" : "missing"
-              }</p>
-              ${asset.warnings.map((warning) => `<p class="warning">${escapeHtml(warning)}</p>`).join("")}
-            </article>`;
-            })
-            .join("")}
+								asset.present ? 'present' : 'missing'
+							}</p>
+              ${asset.warnings.map((warning) => `<p class="warning">${escapeHtml(warning)}</p>`).join('')}
+            </article>`
+						})
+						.join('')}
         </div>
-      </section>`
-        )
-        .join("")}
+      </section>`,
+				)
+				.join('')}
     </main>
   </body>
-</html>`;
+</html>`
 
-  await mkdir(dirname(reviewJsonPath), { recursive: true });
-  await writeFile(reviewJsonPath, `${JSON.stringify(review, null, 2)}\n`, "utf8");
-  await writeFile(reviewHtmlPath, html, "utf8");
-  console.log(`Wrote ${reviewHtmlPath}`);
-  console.log(`Review warnings: ${review.warningCount}`);
+	await mkdir(dirname(reviewJsonPath), { recursive: true })
+	await writeFile(
+		reviewJsonPath,
+		`${JSON.stringify(review, null, 2)}\n`,
+		'utf8',
+	)
+	await writeFile(reviewHtmlPath, html, 'utf8')
+	console.log(`Wrote ${reviewHtmlPath}`)
+	console.log(`Review warnings: ${review.warningCount}`)
 }
 
 main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
-  process.exit(1);
-});
+	console.error(error instanceof Error ? error.message : error)
+	process.exit(1)
+})

@@ -1,1140 +1,1140 @@
 {
-  "generatedAt": "2026-05-04T10:25:08.635Z",
-  "usedOpenAiTts": false,
-  "entries": [
-    {
-      "path": "/assets/generated/garden/sunny-garden.svg",
-      "type": "background",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/garden/duck.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/duck-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/duck-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/duck-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/duck-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/garden/dog.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/dog-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/dog-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/dog-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/dog-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/garden/cat.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/cat-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/cat-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/cat-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/cat-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/garden/fish.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/fish-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/fish-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/fish-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/fish-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/garden/apple.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/apple-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/apple-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/apple-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/apple-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/garden/banana.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/banana-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/banana-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/banana-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/banana-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/garden/flower.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/flower-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/flower-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/flower-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/flower-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/garden/tree.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/tree-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/tree-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/tree-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/tree-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/garden/sun.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/sun-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/sun-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/sun-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/sun-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/garden/ball.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/audio/ball-en-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/ball-en-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/ball-zh-Hans-L0.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/audio/ball-zh-Hans-L1.mp3",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/ocean-cove.svg",
-      "type": "background",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/fish.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/sea-turtle.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/dolphin.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/whale.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/crab.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/octopus.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/seahorse.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/starfish.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/jellyfish.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/seal.svg",
-      "type": "image",
-      "source": "placeholder-svg",
-      "reviewRequired": true,
-      "warning": "Placeholder SVG generated from content metadata; review or replace with final art."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-en-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-en-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-en-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-en-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-en-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L0.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L1.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L2.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L3.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    },
-    {
-      "path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L4.wav",
-      "type": "audio",
-      "source": "placeholder-audio",
-      "reviewRequired": true,
-      "warning": "Placeholder audio generated because real TTS was unavailable."
-    }
-  ]
+	"generatedAt": "2026-05-04T10:25:08.635Z",
+	"usedOpenAiTts": false,
+	"entries": [
+		{
+			"path": "/assets/generated/garden/sunny-garden.svg",
+			"type": "background",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/garden/duck.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/duck-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/duck-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/duck-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/duck-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/garden/dog.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/dog-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/dog-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/dog-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/dog-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/garden/cat.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/cat-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/cat-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/cat-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/cat-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/garden/fish.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/fish-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/fish-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/fish-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/fish-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/garden/apple.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/apple-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/apple-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/apple-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/apple-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/garden/banana.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/banana-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/banana-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/banana-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/banana-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/garden/flower.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/flower-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/flower-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/flower-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/flower-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/garden/tree.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/tree-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/tree-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/tree-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/tree-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/garden/sun.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/sun-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/sun-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/sun-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/sun-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/garden/ball.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/audio/ball-en-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/ball-en-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/ball-zh-Hans-L0.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/audio/ball-zh-Hans-L1.mp3",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/ocean-cove.svg",
+			"type": "background",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/fish.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/sea-turtle.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/dolphin.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/whale.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/crab.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/octopus.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/seahorse.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/starfish.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/jellyfish.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/seal.svg",
+			"type": "image",
+			"source": "placeholder-svg",
+			"reviewRequired": true,
+			"warning": "Placeholder SVG generated from content metadata; review or replace with final art."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-en-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-en-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-en-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-en-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-en-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L0.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L1.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L2.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L3.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		},
+		{
+			"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L4.wav",
+			"type": "audio",
+			"source": "placeholder-audio",
+			"reviewRequired": true,
+			"warning": "Placeholder audio generated because real TTS was unavailable."
+		}
+	]
 }
