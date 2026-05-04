@@ -1,34 +1,48 @@
 {
-  "name": "word-garden",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "packageManager": "bun@1.2.0",
-  "scripts": {
-    "dev": "vite",
-    "generate:assets": "bun run scripts/generate-assets.ts",
-    "build:catalog": "bun run scripts/generate-catalog.ts",
-    "generate:catalog": "bun run build:catalog",
-    "review:assets": "bun run build:catalog && bun run scripts/review-assets.ts",
-    "validate:content": "bun run scripts/generate-catalog.ts --validate-only",
-    "check:secrets": "bun run scripts/check-client-secrets.ts",
-    "test": "vitest run",
-    "test:e2e": "bun run generate:assets && bun run build:catalog && playwright test",
-    "build": "bun run generate:assets && bun run build:catalog && tsc --noEmit && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "preact": "^10.26.9",
-    "zod": "^4.1.12"
-  },
-  "devDependencies": {
-    "@playwright/test": "^1.56.1",
-    "@preact/preset-vite": "^2.10.2",
-    "@types/bun": "^1.2.22",
-    "@types/node": "^24.5.2",
-    "typescript": "^5.9.2",
-    "vite": "^7.1.7",
-    "vitest": "^3.2.4",
-    "yaml": "^2.8.1"
-  }
+	"name": "word-garden",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"packageManager": "bun@1.2.0",
+	"scripts": {
+		"dev": "vite",
+		"generate:assets": "bun run scripts/generate-assets.ts",
+		"build:catalog": "bun run scripts/generate-catalog.ts",
+		"generate:catalog": "bun run build:catalog",
+		"review:assets": "bun run build:catalog && bun run scripts/review-assets.ts",
+		"validate:content": "bun run scripts/generate-catalog.ts --validate-only",
+		"check:secrets": "bun run scripts/check-client-secrets.ts",
+		"test": "vitest run",
+		"test:e2e": "bun run generate:assets && bun run build:catalog && playwright test",
+		"build": "bun run generate:assets && bun run build:catalog && tsc --noEmit && vite build",
+		"preview": "vite preview",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"lint:fix:unsafe": "biome check --write --unsafe .",
+		"format": "biome format --write .",
+		"format:check": "biome format .",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"preact": "^10.26.9",
+		"zod": "^4.1.12"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.14",
+		"@playwright/test": "^1.56.1",
+		"@preact/preset-vite": "^2.10.2",
+		"@types/bun": "^1.2.22",
+		"@types/node": "^24.5.2",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.4.0",
+		"typescript": "^5.9.2",
+		"vite": "^7.1.7",
+		"vitest": "^3.2.4",
+		"yaml": "^2.8.1"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,json,css,html}": [
+			"biome check --write --no-errors-on-unmatched"
+		]
+	}
 }
