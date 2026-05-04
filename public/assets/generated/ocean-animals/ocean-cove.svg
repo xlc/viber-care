@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-label="Calm ocean cove">
+  <defs>
+    <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="48%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#water)"/>
+  <path d="M0 165 C170 120 270 210 430 166 C610 116 720 206 900 160 C1080 116 1230 175 1440 140 L1440 0 L0 0 Z" fill="#dff8ff" opacity="0.42"/>
+  <path d="M0 655 C180 596 340 690 520 632 C700 574 900 676 1060 622 C1210 572 1300 612 1440 590 L1440 900 L0 900 Z" fill="url(#sand)"/>
+  <path d="M0 345 C185 305 300 385 480 342 C675 294 790 376 970 334 C1160 288 1270 344 1440 312" fill="none" stroke="#e0f7ff" stroke-width="18" stroke-linecap="round" opacity="0.4"/>
+  <path d="M80 760 C200 720 285 790 410 746 C545 700 650 770 775 732 C915 690 1055 760 1250 720" fill="none" stroke="#fff7d6" stroke-width="22" stroke-linecap="round" opacity="0.52"/>
+  <circle cx="200" cy="260" r="22" fill="#e0f7ff" opacity="0.58"/>
+  <circle cx="250" cy="215" r="12" fill="#e0f7ff" opacity="0.52"/>
+  <circle cx="1040" cy="250" r="18" fill="#e0f7ff" opacity="0.5"/>
+  <circle cx="1095" cy="205" r="10" fill="#e0f7ff" opacity="0.48"/>
+  <path d="M112 710 C130 658 158 658 176 710 C158 694 130 694 112 710Z" fill="#34d399" opacity="0.8"/>
+  <path d="M1220 716 C1240 654 1274 654 1294 716 C1274 696 1240 696 1220 716Z" fill="#34d399" opacity="0.78"/>
+</svg>

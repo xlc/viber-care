@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Word Garden icon">
+  <defs>
+    <linearGradient id="garden" x1="80" x2="430" y1="70" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD166"/>
+      <stop offset="0.32" stop-color="#EF476F"/>
+      <stop offset="0.62" stop-color="#118AB2"/>
+      <stop offset="1" stop-color="#55C667"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#E7F6FF"/>
+  <circle cx="256" cy="256" r="184" fill="url(#garden)"/>
+  <path d="M154 305c48-18 79-14 104 16 25-30 58-34 106-16-7 58-41 88-106 88s-98-30-104-88Z" fill="#fffdf8"/>
+  <path d="M254 135c-38 42-38 93 0 151 40-58 40-109 0-151Z" fill="#fffdf8"/>
+  <path d="M167 188c10 57 40 90 90 97-1-58-30-90-90-97Z" fill="#fffdf8" opacity="0.92"/>
+  <path d="M345 188c-60 7-90 39-91 97 51-7 81-40 91-97Z" fill="#fffdf8" opacity="0.92"/>
+  <text x="256" y="310" text-anchor="middle" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="104" font-weight="900" fill="#17323A">W</text>
+</svg>
