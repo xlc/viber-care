@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="friendly ankylosaurus">
+  <defs>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#365143" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M50 158 C62 120 98 102 142 106 C184 110 212 132 218 164 C194 192 88 198 50 158Z" fill="#55b6a6"/>
+    <ellipse cx="70" cy="132" rx="28" ry="22" fill="#6acbbb"/>
+    <circle cx="62" cy="126" r="4" fill="#263238"/>
+    <path d="M58 140 C68 147 78 147 86 140" fill="none" stroke="#276f66" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="106" cy="122" r="11" fill="#c9f0d5" opacity="0.85"/>
+    <circle cx="134" cy="118" r="12" fill="#c9f0d5" opacity="0.85"/>
+    <circle cx="164" cy="128" r="10" fill="#c9f0d5" opacity="0.82"/>
+    <path d="M210 154 C232 152 242 140 246 124" fill="none" stroke="#3d9387" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="246" cy="122" r="15" fill="#3d9387"/>
+    <path d="M88 194 L80 222" stroke="#3d9387" stroke-width="18" stroke-linecap="round"/>
+    <path d="M164 194 L172 222" stroke="#3d9387" stroke-width="18" stroke-linecap="round"/>
+  </g>
+</svg>

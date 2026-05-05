@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-label="Gentle dinosaur valley">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#bdeafe"/>
+      <stop offset="100%" stop-color="#e8f8d6"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#a7e7a7"/>
+      <stop offset="100%" stop-color="#55b77c"/>
+    </linearGradient>
+    <linearGradient id="pond" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#sky)"/>
+  <circle cx="1185" cy="130" r="70" fill="#fde68a" opacity="0.9"/>
+  <path d="M0 340 C130 270 255 310 390 246 C545 174 675 264 820 214 C1015 148 1155 248 1440 184 L1440 900 L0 900 Z" fill="#bbf7d0" opacity="0.85"/>
+  <path d="M0 476 C180 380 360 468 520 394 C705 310 860 438 1030 356 C1205 272 1325 330 1440 298 L1440 900 L0 900 Z" fill="url(#grass)"/>
+  <path d="M0 705 C210 632 350 724 535 650 C725 574 900 700 1085 628 C1235 570 1345 598 1440 566 L1440 900 L0 900 Z" fill="#74c69d" opacity="0.88"/>
+  <ellipse cx="605" cy="752" rx="210" ry="64" fill="url(#pond)" opacity="0.62"/>
+  <ellipse cx="605" cy="742" rx="170" ry="36" fill="#e0f7ff" opacity="0.34"/>
+  <path d="M112 660 C142 590 188 590 218 660 C188 636 142 636 112 660Z" fill="#2f9e6d" opacity="0.75"/>
+  <path d="M1190 650 C1222 570 1274 570 1306 650 C1274 622 1222 622 1190 650Z" fill="#2f9e6d" opacity="0.72"/>
+  <path d="M980 604 C1008 542 1048 542 1076 604 C1048 582 1008 582 980 604Z" fill="#40916c" opacity="0.68"/>
+  <ellipse cx="190" cy="787" rx="58" ry="24" fill="#d8c3a5" opacity="0.72"/>
+  <ellipse cx="1080" cy="805" rx="72" ry="28" fill="#d8c3a5" opacity="0.62"/>
+  <path d="M180 186 C230 154 278 154 326 188" fill="none" stroke="#fff" stroke-width="28" stroke-linecap="round" opacity="0.74"/>
+  <path d="M852 178 C910 134 974 140 1032 184" fill="none" stroke="#fff" stroke-width="26" stroke-linecap="round" opacity="0.62"/>
+</svg>

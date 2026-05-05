@@ -1,0 +1,930 @@
+{
+	"id": "dinosaurs",
+	"version": "1.0.0",
+	"title": {
+		"en": "Dinosaurs",
+		"zh-Hans": "恐龙乐园"
+	},
+	"languages": ["en", "zh-Hans"],
+	"defaultSceneId": "gentle-dino-valley",
+	"scenes": [
+		{
+			"id": "gentle-dino-valley",
+			"packId": "dinosaurs",
+			"title": {
+				"en": "Gentle Dinosaur Valley",
+				"zh-Hans": "温柔恐龙山谷"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly prehistoric dinosaur valley with soft green hills, rounded rocks, simple ferns, a tiny pond, warm sunlight, and plenty of clear open space for objects. No lava, no danger, no text, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/dinosaurs/gentle-dino-valley.svg",
+					"alt": "Gentle dinosaur valley",
+					"generationPrompt": "A calm toddler-friendly prehistoric dinosaur valley with soft green hills, rounded rocks, simple ferns, a tiny pond, warm sunlight, and plenty of clear open space for objects. No lava, no danger, no text, static PWA game background.",
+					"placeholder": {
+						"label": "Dinosaur Valley",
+						"emoji": "🦕"
+					}
+				}
+			},
+			"objects": [
+				{
+					"objectId": "long-neck",
+					"x": 18,
+					"y": 45,
+					"scale": 1.22,
+					"zIndex": 4
+				},
+				{
+					"objectId": "pteranodon",
+					"x": 69,
+					"y": 23,
+					"scale": 0.86,
+					"zIndex": 3
+				},
+				{
+					"objectId": "t-rex",
+					"x": 52,
+					"y": 56,
+					"scale": 1.04,
+					"zIndex": 6
+				},
+				{
+					"objectId": "triceratops",
+					"x": 30,
+					"y": 69,
+					"scale": 0.94,
+					"zIndex": 7
+				},
+				{
+					"objectId": "stegosaurus",
+					"x": 73,
+					"y": 66,
+					"scale": 0.98,
+					"zIndex": 7
+				},
+				{
+					"objectId": "ankylosaurus",
+					"x": 86,
+					"y": 79,
+					"scale": 0.82,
+					"zIndex": 8
+				},
+				{
+					"objectId": "baby-dinosaur",
+					"x": 47,
+					"y": 80,
+					"scale": 0.76,
+					"zIndex": 8
+				},
+				{
+					"objectId": "dinosaur-egg",
+					"x": 59,
+					"y": 84,
+					"scale": 0.64,
+					"zIndex": 9
+				},
+				{
+					"objectId": "fossil",
+					"x": 16,
+					"y": 82,
+					"scale": 0.66,
+					"zIndex": 9
+				},
+				{
+					"objectId": "fern",
+					"x": 90,
+					"y": 55,
+					"scale": 0.78,
+					"zIndex": 5
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		}
+	],
+	"objects": [
+		{
+			"id": "t-rex",
+			"category": "dinosaur",
+			"tags": ["dinosaur", "green", "walker"],
+			"visualPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/t-rex.svg",
+				"alt": "T. rex",
+				"generationPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
+				"placeholder": {
+					"label": "T. rex",
+					"emoji": "🦖"
+				}
+			},
+			"interaction": {
+				"id": "t-rex-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the T. rex.",
+					"successPhrase": "You found the T. rex.",
+					"fallbackText": "That's the T. rex.",
+					"levels": {
+						"L0": {
+							"text": "T. rex",
+							"audioText": "T. rex",
+							"fallbackText": "T. rex",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L0.wav",
+								"generationText": "T. rex"
+							}
+						},
+						"L1": {
+							"text": "The T. rex takes tiny steps.",
+							"audioText": "The T. rex takes tiny steps.",
+							"fallbackText": "The T. rex takes tiny steps.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L1.wav",
+								"generationText": "The T. rex takes tiny steps."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找霸王龙。",
+					"successPhrase": "你找到霸王龙了。",
+					"fallbackText": "这是霸王龙。",
+					"levels": {
+						"L0": {
+							"text": "霸王龙",
+							"romanization": "ba wang long",
+							"audioText": "霸王龙",
+							"fallbackText": "霸王龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L0.wav",
+								"generationText": "霸王龙"
+							}
+						},
+						"L1": {
+							"text": "霸王龙轻轻走。",
+							"romanization": "ba wang long qing qing zou",
+							"audioText": "霸王龙轻轻走。",
+							"fallbackText": "霸王龙轻轻走。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L1.wav",
+								"generationText": "霸王龙轻轻走。"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "triceratops",
+			"category": "dinosaur",
+			"tags": ["dinosaur", "horns", "blue"],
+			"visualPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/triceratops.svg",
+				"alt": "triceratops",
+				"generationPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
+				"placeholder": {
+					"label": "triceratops",
+					"emoji": "🦕"
+				}
+			},
+			"interaction": {
+				"id": "triceratops-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the triceratops.",
+					"successPhrase": "You found the triceratops.",
+					"fallbackText": "That's the triceratops.",
+					"levels": {
+						"L0": {
+							"text": "triceratops",
+							"audioText": "triceratops",
+							"fallbackText": "triceratops",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L0.wav",
+								"generationText": "triceratops"
+							}
+						},
+						"L1": {
+							"text": "The triceratops has three horns.",
+							"audioText": "The triceratops has three horns.",
+							"fallbackText": "The triceratops has three horns.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L1.wav",
+								"generationText": "The triceratops has three horns."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找三角龙。",
+					"successPhrase": "你找到三角龙了。",
+					"fallbackText": "这是三角龙。",
+					"levels": {
+						"L0": {
+							"text": "三角龙",
+							"romanization": "san jiao long",
+							"audioText": "三角龙",
+							"fallbackText": "三角龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L0.wav",
+								"generationText": "三角龙"
+							}
+						},
+						"L1": {
+							"text": "三角龙有三个角。",
+							"romanization": "san jiao long you san ge jiao",
+							"audioText": "三角龙有三个角。",
+							"fallbackText": "三角龙有三个角。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L1.wav",
+								"generationText": "三角龙有三个角。"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "stegosaurus",
+			"category": "dinosaur",
+			"tags": ["dinosaur", "plates", "orange"],
+			"visualPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/stegosaurus.svg",
+				"alt": "stegosaurus",
+				"generationPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
+				"placeholder": {
+					"label": "stegosaurus",
+					"emoji": "🦕"
+				}
+			},
+			"interaction": {
+				"id": "stegosaurus-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the stegosaurus.",
+					"successPhrase": "You found the stegosaurus.",
+					"fallbackText": "That's the stegosaurus.",
+					"levels": {
+						"L0": {
+							"text": "stegosaurus",
+							"audioText": "stegosaurus",
+							"fallbackText": "stegosaurus",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L0.wav",
+								"generationText": "stegosaurus"
+							}
+						},
+						"L1": {
+							"text": "The stegosaurus has back plates.",
+							"audioText": "The stegosaurus has back plates.",
+							"fallbackText": "The stegosaurus has back plates.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L1.wav",
+								"generationText": "The stegosaurus has back plates."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找剑龙。",
+					"successPhrase": "你找到剑龙了。",
+					"fallbackText": "这是剑龙。",
+					"levels": {
+						"L0": {
+							"text": "剑龙",
+							"romanization": "jian long",
+							"audioText": "剑龙",
+							"fallbackText": "剑龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L0.wav",
+								"generationText": "剑龙"
+							}
+						},
+						"L1": {
+							"text": "剑龙背上有板板。",
+							"romanization": "jian long bei shang you ban ban",
+							"audioText": "剑龙背上有板板。",
+							"fallbackText": "剑龙背上有板板。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L1.wav",
+								"generationText": "剑龙背上有板板。"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "long-neck",
+			"category": "dinosaur",
+			"tags": ["dinosaur", "long neck", "leaf"],
+			"visualPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/long-neck.svg",
+				"alt": "long-neck dinosaur",
+				"generationPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
+				"placeholder": {
+					"label": "long-neck dinosaur",
+					"emoji": "🦕"
+				}
+			},
+			"interaction": {
+				"id": "long-neck-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the long-neck dinosaur.",
+					"successPhrase": "You found the long-neck dinosaur.",
+					"fallbackText": "That's the long-neck dinosaur.",
+					"levels": {
+						"L0": {
+							"text": "long-neck dinosaur",
+							"audioText": "long-neck dinosaur",
+							"fallbackText": "long-neck dinosaur",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L0.wav",
+								"generationText": "long-neck dinosaur"
+							}
+						},
+						"L1": {
+							"text": "The long-neck reaches a leaf.",
+							"audioText": "The long-neck reaches a leaf.",
+							"fallbackText": "The long-neck reaches a leaf.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L1.wav",
+								"generationText": "The long-neck reaches a leaf."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找长颈龙。",
+					"successPhrase": "你找到长颈龙了。",
+					"fallbackText": "这是长颈龙。",
+					"levels": {
+						"L0": {
+							"text": "长颈龙",
+							"romanization": "chang jing long",
+							"audioText": "长颈龙",
+							"fallbackText": "长颈龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L0.wav",
+								"generationText": "长颈龙"
+							}
+						},
+						"L1": {
+							"text": "长颈龙够到叶子。",
+							"romanization": "chang jing long gou dao ye zi",
+							"audioText": "长颈龙够到叶子。",
+							"fallbackText": "长颈龙够到叶子。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L1.wav",
+								"generationText": "长颈龙够到叶子。"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "pteranodon",
+			"category": "dinosaur",
+			"tags": ["pterosaur", "wings", "purple"],
+			"visualPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/pteranodon.svg",
+				"alt": "pteranodon",
+				"generationPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
+				"placeholder": {
+					"label": "pteranodon",
+					"emoji": "🪽"
+				}
+			},
+			"interaction": {
+				"id": "pteranodon-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the pteranodon.",
+					"successPhrase": "You found the pteranodon.",
+					"fallbackText": "That's the pteranodon.",
+					"levels": {
+						"L0": {
+							"text": "pteranodon",
+							"audioText": "pteranodon",
+							"fallbackText": "pteranodon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L0.wav",
+								"generationText": "pteranodon"
+							}
+						},
+						"L1": {
+							"text": "The pteranodon glides softly.",
+							"audioText": "The pteranodon glides softly.",
+							"fallbackText": "The pteranodon glides softly.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L1.wav",
+								"generationText": "The pteranodon glides softly."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找翼龙。",
+					"successPhrase": "你找到翼龙了。",
+					"fallbackText": "这是翼龙。",
+					"levels": {
+						"L0": {
+							"text": "翼龙",
+							"romanization": "yi long",
+							"audioText": "翼龙",
+							"fallbackText": "翼龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L0.wav",
+								"generationText": "翼龙"
+							}
+						},
+						"L1": {
+							"text": "翼龙轻轻飞。",
+							"romanization": "yi long qing qing fei",
+							"audioText": "翼龙轻轻飞。",
+							"fallbackText": "翼龙轻轻飞。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L1.wav",
+								"generationText": "翼龙轻轻飞。"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "ankylosaurus",
+			"category": "dinosaur",
+			"tags": ["dinosaur", "armor", "tail"],
+			"visualPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/ankylosaurus.svg",
+				"alt": "ankylosaurus",
+				"generationPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
+				"placeholder": {
+					"label": "ankylosaurus",
+					"emoji": "🦕"
+				}
+			},
+			"interaction": {
+				"id": "ankylosaurus-glow",
+				"animation": "glow"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the ankylosaurus.",
+					"successPhrase": "You found the ankylosaurus.",
+					"fallbackText": "That's the ankylosaurus.",
+					"levels": {
+						"L0": {
+							"text": "ankylosaurus",
+							"audioText": "ankylosaurus",
+							"fallbackText": "ankylosaurus",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L0.wav",
+								"generationText": "ankylosaurus"
+							}
+						},
+						"L1": {
+							"text": "The ankylosaurus has a bumpy back.",
+							"audioText": "The ankylosaurus has a bumpy back.",
+							"fallbackText": "The ankylosaurus has a bumpy back.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L1.wav",
+								"generationText": "The ankylosaurus has a bumpy back."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找甲龙。",
+					"successPhrase": "你找到甲龙了。",
+					"fallbackText": "这是甲龙。",
+					"levels": {
+						"L0": {
+							"text": "甲龙",
+							"romanization": "jia long",
+							"audioText": "甲龙",
+							"fallbackText": "甲龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L0.wav",
+								"generationText": "甲龙"
+							}
+						},
+						"L1": {
+							"text": "甲龙背上有小包。",
+							"romanization": "jia long bei shang you xiao bao",
+							"audioText": "甲龙背上有小包。",
+							"fallbackText": "甲龙背上有小包。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L1.wav",
+								"generationText": "甲龙背上有小包。"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "dinosaur-egg",
+			"category": "dinosaur-object",
+			"tags": ["egg", "nest", "dinosaur"],
+			"visualPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/dinosaur-egg.svg",
+				"alt": "dinosaur egg",
+				"generationPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
+				"placeholder": {
+					"label": "dinosaur egg",
+					"emoji": "🥚"
+				}
+			},
+			"interaction": {
+				"id": "dinosaur-egg-glow",
+				"animation": "glow"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the dinosaur egg.",
+					"successPhrase": "You found the dinosaur egg.",
+					"fallbackText": "That's the dinosaur egg.",
+					"levels": {
+						"L0": {
+							"text": "dinosaur egg",
+							"audioText": "dinosaur egg",
+							"fallbackText": "dinosaur egg",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L0.wav",
+								"generationText": "dinosaur egg"
+							}
+						},
+						"L1": {
+							"text": "The dinosaur egg rests in the nest.",
+							"audioText": "The dinosaur egg rests in the nest.",
+							"fallbackText": "The dinosaur egg rests in the nest.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L1.wav",
+								"generationText": "The dinosaur egg rests in the nest."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找恐龙蛋。",
+					"successPhrase": "你找到恐龙蛋了。",
+					"fallbackText": "这是恐龙蛋。",
+					"levels": {
+						"L0": {
+							"text": "恐龙蛋",
+							"romanization": "kong long dan",
+							"audioText": "恐龙蛋",
+							"fallbackText": "恐龙蛋",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L0.wav",
+								"generationText": "恐龙蛋"
+							}
+						},
+						"L1": {
+							"text": "恐龙蛋在窝里。",
+							"romanization": "kong long dan zai wo li",
+							"audioText": "恐龙蛋在窝里。",
+							"fallbackText": "恐龙蛋在窝里。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L1.wav",
+								"generationText": "恐龙蛋在窝里。"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "baby-dinosaur",
+			"category": "dinosaur",
+			"tags": ["baby", "dinosaur", "smile"],
+			"visualPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/baby-dinosaur.svg",
+				"alt": "baby dinosaur",
+				"generationPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
+				"placeholder": {
+					"label": "baby dinosaur",
+					"emoji": "🦖"
+				}
+			},
+			"interaction": {
+				"id": "baby-dinosaur-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the baby dinosaur.",
+					"successPhrase": "You found the baby dinosaur.",
+					"fallbackText": "That's the baby dinosaur.",
+					"levels": {
+						"L0": {
+							"text": "baby dinosaur",
+							"audioText": "baby dinosaur",
+							"fallbackText": "baby dinosaur",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L0.wav",
+								"generationText": "baby dinosaur"
+							}
+						},
+						"L1": {
+							"text": "The baby dinosaur smiles.",
+							"audioText": "The baby dinosaur smiles.",
+							"fallbackText": "The baby dinosaur smiles.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L1.wav",
+								"generationText": "The baby dinosaur smiles."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找小恐龙。",
+					"successPhrase": "你找到小恐龙了。",
+					"fallbackText": "这是小恐龙。",
+					"levels": {
+						"L0": {
+							"text": "小恐龙",
+							"romanization": "xiao kong long",
+							"audioText": "小恐龙",
+							"fallbackText": "小恐龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L0.wav",
+								"generationText": "小恐龙"
+							}
+						},
+						"L1": {
+							"text": "小恐龙笑一笑。",
+							"romanization": "xiao kong long xiao yi xiao",
+							"audioText": "小恐龙笑一笑。",
+							"fallbackText": "小恐龙笑一笑。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L1.wav",
+								"generationText": "小恐龙笑一笑。"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "fossil",
+			"category": "nature-object",
+			"tags": ["fossil", "rock", "bone"],
+			"visualPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/fossil.svg",
+				"alt": "fossil",
+				"generationPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
+				"placeholder": {
+					"label": "fossil",
+					"emoji": "🦴"
+				}
+			},
+			"interaction": {
+				"id": "fossil-glow",
+				"animation": "glow"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the fossil.",
+					"successPhrase": "You found the fossil.",
+					"fallbackText": "That's the fossil.",
+					"levels": {
+						"L0": {
+							"text": "fossil",
+							"audioText": "fossil",
+							"fallbackText": "fossil",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-en-L0.wav",
+								"generationText": "fossil"
+							}
+						},
+						"L1": {
+							"text": "The fossil rests in the rock.",
+							"audioText": "The fossil rests in the rock.",
+							"fallbackText": "The fossil rests in the rock.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-en-L1.wav",
+								"generationText": "The fossil rests in the rock."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找化石。",
+					"successPhrase": "你找到化石了。",
+					"fallbackText": "这是化石。",
+					"levels": {
+						"L0": {
+							"text": "化石",
+							"romanization": "hua shi",
+							"audioText": "化石",
+							"fallbackText": "化石",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L0.wav",
+								"generationText": "化石"
+							}
+						},
+						"L1": {
+							"text": "化石在石头里。",
+							"romanization": "hua shi zai shi tou li",
+							"audioText": "化石在石头里。",
+							"fallbackText": "化石在石头里。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L1.wav",
+								"generationText": "化石在石头里。"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "fern",
+			"category": "plant",
+			"tags": ["plant", "green", "leaf"],
+			"visualPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dinosaurs/fern.svg",
+				"alt": "fern",
+				"generationPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
+				"placeholder": {
+					"label": "fern",
+					"emoji": "🌿"
+				}
+			},
+			"interaction": {
+				"id": "fern-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the fern.",
+					"successPhrase": "You found the fern.",
+					"fallbackText": "That's the fern.",
+					"levels": {
+						"L0": {
+							"text": "fern",
+							"audioText": "fern",
+							"fallbackText": "fern",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-en-L0.wav",
+								"generationText": "fern"
+							}
+						},
+						"L1": {
+							"text": "The fern is soft and green.",
+							"audioText": "The fern is soft and green.",
+							"fallbackText": "The fern is soft and green.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-en-L1.wav",
+								"generationText": "The fern is soft and green."
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找蕨叶。",
+					"successPhrase": "你找到蕨叶了。",
+					"fallbackText": "这是蕨叶。",
+					"levels": {
+						"L0": {
+							"text": "蕨叶",
+							"romanization": "jue ye",
+							"audioText": "蕨叶",
+							"fallbackText": "蕨叶",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L0.wav",
+								"generationText": "蕨叶"
+							}
+						},
+						"L1": {
+							"text": "蕨叶绿绿的。",
+							"romanization": "jue ye lv lv de",
+							"audioText": "蕨叶绿绿的。",
+							"fallbackText": "蕨叶绿绿的。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L1.wav",
+								"generationText": "蕨叶绿绿的。"
+							}
+						}
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="smiling baby dinosaur">
+  <defs>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#365143" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <ellipse cx="128" cy="158" rx="52" ry="48" fill="#9bdc65"/>
+    <ellipse cx="148" cy="98" rx="38" ry="34" fill="#aee879"/>
+    <path d="M164 96 C186 94 200 104 206 120 C186 122 172 116 160 108Z" fill="#aee879"/>
+    <circle cx="156" cy="90" r="5" fill="#263238"/>
+    <path d="M150 116 C160 124 174 124 184 116" fill="none" stroke="#4c8f31" stroke-width="5" stroke-linecap="round"/>
+    <path d="M82 150 C56 148 42 134 38 116 C62 126 78 130 94 128Z" fill="#83c955"/>
+    <path d="M104 200 L96 224" stroke="#77bd4f" stroke-width="16" stroke-linecap="round"/>
+    <path d="M146 202 L156 224" stroke="#77bd4f" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="136" cy="148" r="7" fill="#fff8cf" opacity="0.72"/>
+    <circle cx="154" cy="158" r="6" fill="#fff8cf" opacity="0.65"/>
+    <circle cx="138" cy="104" r="8" fill="#ffc9d6" opacity="0.8"/>
+  </g>
+</svg>

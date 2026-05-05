@@ -1,0 +1,58 @@
+name: Cloudflare Pages
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  verify-and-deploy:
+    name: Verify and deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.2.0
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Install Playwright browser
+        run: bunx playwright install --with-deps chromium
+
+      - name: Validate content
+        run: bun run validate:content
+
+      - name: Run unit tests
+        run: bun run test
+
+      - name: Run browser tests
+        run: bun run test:e2e
+
+      - name: Build static app
+        run: bun run build
+
+      - name: Check client secrets
+        run: bun run check:secrets
+
+      - name: Deploy to Cloudflare Pages
+        if: github.event_name != 'pull_request'
+        run: bunx wrangler@4.88.0 pages deploy dist --project-name=word-garden --branch="${{ github.ref_name }}"
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

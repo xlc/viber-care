@@ -1,3 +1,4 @@
+import dinosaursPack from '../../content/packs/dinosaurs.json'
 import gardenPack from '../../content/packs/garden.json'
 import oceanAnimalsPack from '../../content/packs/ocean-animals.json'
 import {
@@ -18,4 +19,8 @@ export function createRuntimeCatalog(packs: unknown[]): RuntimeCatalog {
 	})
 }
 
-export const catalog = createRuntimeCatalog([gardenPack, oceanAnimalsPack])
+export const catalog = createRuntimeCatalog([
+	gardenPack,
+	oceanAnimalsPack,
+	dinosaursPack,
+])

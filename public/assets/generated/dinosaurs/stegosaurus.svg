@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="friendly stegosaurus">
+  <defs>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#365143" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M54 160 C62 120 96 100 138 106 C184 112 210 134 214 166 C190 196 96 200 54 160Z" fill="#f59e55"/>
+    <path d="M196 148 C220 140 234 124 238 102 C244 128 234 158 208 170Z" fill="#e38744"/>
+    <ellipse cx="76" cy="130" rx="32" ry="26" fill="#f8b36d"/>
+    <circle cx="65" cy="122" r="5" fill="#263238"/>
+    <path d="M60 138 C70 146 80 146 90 138" fill="none" stroke="#8a4b21" stroke-width="5" stroke-linecap="round"/>
+    <path d="M88 104 L104 62 L124 108Z" fill="#fcd36f"/>
+    <path d="M122 104 L144 54 L164 110Z" fill="#ffd983"/>
+    <path d="M158 118 L180 74 L194 126Z" fill="#fcd36f"/>
+    <path d="M92 194 L84 222" stroke="#d97737" stroke-width="18" stroke-linecap="round"/>
+    <path d="M166 194 L174 222" stroke="#d97737" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="124" cy="154" r="8" fill="#fff3bf" opacity="0.7"/>
+    <circle cx="150" cy="164" r="6" fill="#fff3bf" opacity="0.65"/>
+  </g>
+</svg>

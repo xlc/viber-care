@@ -13,6 +13,7 @@ describe('runtime catalog', () => {
 		expect(parsed.packs.map((pack) => pack.id)).toEqual([
 			'garden',
 			'ocean-animals',
+			'dinosaurs',
 		])
 		expect(parsed.packs[0]?.objects.map((object) => object.id)).toContain('sun')
 		expect(parsed.packs[1]?.objects.map((object) => object.id)).toContain(

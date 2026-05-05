@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="friendly T. rex">
+  <defs>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#365143" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M72 152 C70 116 94 86 132 84 C174 82 206 108 210 146 C212 174 194 194 158 198 L98 198 C82 192 74 176 72 152Z" fill="#58c17b"/>
+    <path d="M75 152 C44 154 28 136 24 112 C48 126 67 130 88 126Z" fill="#4aaa6d"/>
+    <ellipse cx="152" cy="86" rx="42" ry="34" fill="#69d18a"/>
+    <path d="M158 92 C181 90 197 98 204 114 C185 116 168 112 154 104Z" fill="#69d18a"/>
+    <circle cx="166" cy="78" r="5" fill="#263238"/>
+    <path d="M162 112 C172 119 186 119 196 112" fill="none" stroke="#2f6f49" stroke-width="5" stroke-linecap="round"/>
+    <path d="M118 101 C121 88 130 80 142 76" fill="none" stroke="#fff6c2" stroke-width="8" stroke-linecap="round" opacity="0.75"/>
+    <path d="M118 196 L104 224" stroke="#3f8f61" stroke-width="20" stroke-linecap="round"/>
+    <path d="M160 196 L176 224" stroke="#3f8f61" stroke-width="20" stroke-linecap="round"/>
+    <path d="M126 146 L100 160" stroke="#3f8f61" stroke-width="9" stroke-linecap="round"/>
+    <path d="M156 148 L181 160" stroke="#3f8f61" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="134" cy="136" r="9" fill="#fff6c2" opacity="0.6"/>
+    <circle cx="158" cy="148" r="7" fill="#fff6c2" opacity="0.55"/>
+  </g>
+</svg>

@@ -14,6 +14,7 @@ bun run test:e2e
 bun run check:secrets
 bun run build
 bun run dev
+bun run deploy:pages
 ```
 
 ## Local Development
@@ -75,20 +76,27 @@ Deployment target: Cloudflare Pages static hosting.
 - Runtime: static-only
 - Backend: none
 - Cloudflare Functions: none
+- Wrangler config: `wrangler.jsonc`
 
 Environment variables:
 
 - `BUN_VERSION`: optional
+- GitHub Actions secrets: `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`
+
+The Cloudflare API token only needs account-level Cloudflare Pages edit access.
+Create or use a Cloudflare Pages project named `word-garden`; set its production branch to the branch you deploy from.
+
 Recommended production flow:
 
 1. Generate and review assets locally, in the content-generation skill, or in a secure CI job.
 2. Commit bundled generated assets.
-3. Cloudflare Pages runs `bun run build` and deploys `dist`.
+3. GitHub Actions runs the content validation, unit tests, browser tests, static build, and client secret scan.
+4. Pushes to `main` or `master` deploy `dist` to the `word-garden` Cloudflare Pages project.
 
 Optional Wrangler deploy:
 
 ```sh
-bunx wrangler pages deploy dist
+bun run deploy:pages
 ```
 
 `public/_headers` gives long cache headers to static assets. `public/_redirects` supports static app routing.

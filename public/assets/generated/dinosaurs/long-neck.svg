@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="calm long-neck dinosaur">
+  <defs>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#365143" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <ellipse cx="122" cy="172" rx="70" ry="38" fill="#5ec3b1"/>
+    <path d="M154 154 C152 108 160 68 194 48 C212 38 230 44 236 60 C214 64 202 78 198 104 C194 128 192 150 178 168Z" fill="#6fd6c3"/>
+    <ellipse cx="214" cy="58" rx="28" ry="20" fill="#7de1cf"/>
+    <circle cx="224" cy="54" r="4" fill="#263238"/>
+    <path d="M214 68 C222 74 230 74 236 68" fill="none" stroke="#27796c" stroke-width="4" stroke-linecap="round"/>
+    <path d="M62 160 C38 150 26 134 22 112 C52 122 73 130 90 142Z" fill="#4fb09f"/>
+    <path d="M86 204 L78 226" stroke="#429b8c" stroke-width="18" stroke-linecap="round"/>
+    <path d="M148 204 L156 226" stroke="#429b8c" stroke-width="18" stroke-linecap="round"/>
+    <path d="M220 42 C232 30 238 20 238 12" fill="none" stroke="#76b947" stroke-width="10" stroke-linecap="round"/>
+    <ellipse cx="240" cy="14" rx="15" ry="8" fill="#8bd66f" transform="rotate(-24 240 14)"/>
+    <circle cx="112" cy="158" r="8" fill="#e8fff6" opacity="0.62"/>
+  </g>
+</svg>
