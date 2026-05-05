@@ -19,7 +19,7 @@
 				"prompt": "A calm toddler-friendly garden with soft grass, a blue sky, rounded hills, a tiny pond, and warm sunlight. Gentle, uncluttered, static PWA game background.",
 				"asset": {
 					"type": "background",
-					"path": "/assets/generated/garden/sunny-garden.svg",
+					"path": "/assets/generated/garden/sunny-garden.png",
 					"alt": "A calm sunny garden",
 					"generationPrompt": "A calm toddler-friendly garden with soft grass, a blue sky, rounded hills, a tiny pond, and warm sunlight. Gentle, uncluttered, static PWA game background.",
 					"placeholder": {
@@ -53,7 +53,7 @@
 			"visualPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/duck.svg",
+				"path": "/assets/generated/garden/duck.png",
 				"alt": "duck",
 				"generationPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
 				"placeholder": { "label": "duck", "emoji": "🦆" }
@@ -129,7 +129,7 @@
 			"visualPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/dog.svg",
+				"path": "/assets/generated/garden/dog.png",
 				"alt": "dog",
 				"generationPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
 				"placeholder": { "label": "dog", "emoji": "🐶" }
