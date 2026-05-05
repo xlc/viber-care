@@ -50,7 +50,7 @@ This repository currently bundles static SVG and WAV placeholder assets. Content
 and asset generation is handled by the local authoring skill:
 
 ```txt
-skills/content-generation/SKILL.md
+.agents/skills/content-generation/SKILL.md
 ```
 
 For production art, generate and review image/audio assets locally or in a secure

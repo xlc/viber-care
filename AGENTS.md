@@ -82,7 +82,7 @@ Do not hard-code object language content in the engine. Object labels, prompts, 
 Use the local content-generation skill:
 
 ```txt
-skills/content-generation/SKILL.md
+.agents/skills/content-generation/SKILL.md
 ```
 
 Generation is an authoring workflow, not a runtime or package-script workflow.
