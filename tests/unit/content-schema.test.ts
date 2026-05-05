@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import gardenPack from '../../content/packs/garden.json'
+import { ContentPackSchema } from '../../src/content/schema'
 import {
 	ContentValidationError,
 	validateContentPacks,
-} from '../../src/content/build-catalog'
-import { ContentPackSchema } from '../../src/content/schema'
+} from '../../src/content/validation'
 
 describe('content schema validation', () => {
 	it('validates the garden content pack', () => {

@@ -1,16 +1,7 @@
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { parse as parseYaml } from 'yaml'
-import { validateContentPacks } from '../../src/content/build-catalog'
-import type { ContentPack, LearningLevel } from '../../src/content/schema'
-
-const oceanPack = parseYaml(
-	readFileSync(
-		join(process.cwd(), 'content', 'packs', 'ocean-animals.yaml'),
-		'utf8',
-	),
-) as ContentPack
+import oceanPack from '../../content/packs/ocean-animals.json'
+import type { LearningLevel } from '../../src/content/schema'
+import { validateContentPacks } from '../../src/content/validation'
 
 describe('ocean animals content pack', () => {
 	it('contains the requested scene, object count, languages, and levels', () => {

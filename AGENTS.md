@@ -11,9 +11,6 @@ Use Bun only.
 ```sh
 bun install
 bun run validate:content
-bun run generate:assets
-bun run build:catalog
-bun run review:assets
 bun run test
 bun run test:e2e
 bun run check:secrets
@@ -39,15 +36,14 @@ API keys may only be used in secure asset generation workflows outside the clien
 
 ## Content-Driven Architecture
 
-Raw content lives in `content/packs/*.json` or `content/packs/*.yaml`.
+Raw content lives in committed `content/packs/*.json` files.
 
-The app runtime loads only:
+The app runtime imports committed source content through `src/content/catalog.ts`.
+Do not add a generated runtime JSON catalog, catalog generation script, or content
+generation package script.
 
-```txt
-public/catalog.generated.json
-```
-
-Core schemas live in `src/content/schema.ts`. Catalog validation and generation logic lives in `src/content/build-catalog.ts` and `scripts/generate-catalog.ts`.
+Core schemas live in `src/content/schema.ts`. Content validation logic lives in
+`src/content/validation.ts`.
 
 Do not hard-code object language content in the engine. Object labels, prompts, success phrases, fallback text, romanization, audio text, visual prompts, and asset paths belong in content files.
 
@@ -68,7 +64,7 @@ Do not hard-code object language content in the engine. Object labels, prompts, 
 
 ## Adding a Content Pack
 
-1. Create `content/packs/<pack-id>.json` or `.yaml`.
+1. Create `content/packs/<pack-id>.json`.
 2. Add pack metadata, languages, one or more scenes, and objects.
 3. Add scene object positions as percentages.
 4. Add object image asset paths and visual generation prompts.
@@ -76,20 +72,24 @@ Do not hard-code object language content in the engine. Object labels, prompts, 
 6. Add per-language content and per-level content.
 7. For MVP-quality bilingual packs, include English and Simplified Chinese L0/L1 text, audio text, find prompt, success phrase, fallback text, and Simplified Chinese romanization.
 8. Run `bun run validate:content`.
-9. Run `bun run generate:assets`.
-10. Run `bun run build:catalog`.
-11. Review `public/catalog.generated.json` and generated assets.
-12. Run `bun run review:assets` and inspect `public/assets/generated/review.html`.
+9. Run `bun run test`.
+10. Run `bun run test:e2e`.
+11. Run `bun run check:secrets`.
+12. Run `bun run build`.
 
-## Regenerating Assets
+## Generating Content And Assets
 
-Run:
+Use the local content-generation skill:
 
-```sh
-bun run generate:assets
+```txt
+skills/content-generation/SKILL.md
 ```
 
-This creates placeholder SVG image assets and placeholder WAV audio from content metadata when no real generated assets are bundled. For real generated image or audio assets, generate them in a secure local or CI process outside the client build, place static files in `public/assets/`, update content paths if needed, and regenerate the catalog.
+Generation is an authoring workflow, not a runtime or package-script workflow.
+Generate or edit content and static assets directly, place static files in
+`public/assets/`, update content paths if needed, and commit the bundled source
+content/assets. Do not create generated JSON catalogs or generated content
+manifests.
 
 ## Reviewing Assets
 
@@ -99,8 +99,8 @@ Before completion or deployment:
 2. Confirm the scene is calm and uncluttered.
 3. Confirm no asset contains ads, purchases, scary imagery, unsafe behavior, or unwanted text.
 4. Confirm audio text matches the target L0/L1 content.
-5. Confirm the runtime catalog contains only static paths and content.
-6. Run `bun run review:assets` and check all warnings before production release.
+5. Confirm the runtime imports only committed static content and static paths.
+6. Run the completion checks before production release.
 
 ## Completion Checks
 
@@ -108,9 +108,6 @@ Run these before calling work complete:
 
 ```sh
 bun run validate:content
-bun run generate:assets
-bun run build:catalog
-bun run review:assets
 bun run test
 bun run test:e2e
 bun run check:secrets

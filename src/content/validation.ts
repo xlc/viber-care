@@ -1,12 +1,8 @@
 import {
 	type ContentPack,
 	ContentPackSchema,
-	LEARNING_LEVELS,
 	REQUIRED_MVP_LANGUAGES,
 	REQUIRED_MVP_LEVELS,
-	type RuntimeCatalog,
-	RuntimeCatalogSchema,
-	SUPPORTED_LANGUAGE_CODES,
 } from './schema'
 
 export class ContentValidationError extends Error {
@@ -93,20 +89,4 @@ export function validateContentPacks(input: unknown[]): ContentPack[] {
 	}
 
 	return packs
-}
-
-export function buildRuntimeCatalog(
-	packs: ContentPack[],
-	generatedAt = new Date().toISOString(),
-): RuntimeCatalog {
-	const catalog = {
-		schemaVersion: '1',
-		generatedAt,
-		supportedLanguages: [...SUPPORTED_LANGUAGE_CODES],
-		learningLevels: [...LEARNING_LEVELS],
-		defaultLanguageOrder: ['en', 'zh-Hans'],
-		packs,
-	} satisfies RuntimeCatalog
-
-	return RuntimeCatalogSchema.parse(catalog)
 }

@@ -3,7 +3,6 @@ const APP_SHELL = [
 	'/',
 	'/index.html',
 	'/manifest.webmanifest',
-	'/catalog.generated.json',
 	'/icons/word-garden.svg',
 ]
 
@@ -37,11 +36,6 @@ self.addEventListener('fetch', (event) => {
 		request.method !== 'GET' ||
 		new URL(request.url).origin !== self.location.origin
 	) {
-		return
-	}
-
-	if (request.url.endsWith('/catalog.generated.json')) {
-		event.respondWith(fetch(request).catch(() => caches.match(request)))
 		return
 	}
 

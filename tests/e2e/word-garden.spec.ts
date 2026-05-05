@@ -62,6 +62,7 @@ test('settings panel can switch to the ocean animals pack', async ({
 
 test('runtime makes no calls to OpenAI or AI endpoints', async ({ page }) => {
 	const forbiddenRequests: string[] = []
+	const publicJsonRequests: string[] = []
 	await page.route('**/*', async (route) => {
 		const url = route.request().url()
 		if (
@@ -70,6 +71,10 @@ test('runtime makes no calls to OpenAI or AI endpoints', async ({ page }) => {
 			)
 		) {
 			forbiddenRequests.push(url)
+		}
+		const path = new URL(url).pathname
+		if (path.endsWith('.json') && !path.startsWith('/content/packs/')) {
+			publicJsonRequests.push(url)
 		}
 		await route.continue()
 	})
@@ -80,4 +85,5 @@ test('runtime makes no calls to OpenAI or AI endpoints', async ({ page }) => {
 	await page.getByTestId('object-sun').click()
 
 	expect(forbiddenRequests).toEqual([])
+	expect(publicJsonRequests).toEqual([])
 })

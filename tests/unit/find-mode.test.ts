@@ -1,16 +1,8 @@
 import { describe, expect, it } from 'vitest'
-import gardenPack from '../../content/packs/garden.json'
-import {
-	buildRuntimeCatalog,
-	validateContentPacks,
-} from '../../src/content/build-catalog'
+import { catalog } from '../../src/content/catalog'
 import { createFindRound, handleFindTap } from '../../src/game/find-mode'
 import { getPack } from '../../src/learning/engine'
 
-const catalog = buildRuntimeCatalog(
-	validateContentPacks([gardenPack]),
-	'2026-05-04T00:00:00.000Z',
-)
 const objects = getPack(catalog).objects
 
 describe('Find mode target behavior', () => {

@@ -2,7 +2,14 @@ import { readdir, readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 const rootDir = process.cwd()
-const scanRoots = ['src', 'dist', 'public/catalog.generated.json']
+const scanRoots = [
+	'content',
+	'src',
+	'dist',
+	'public/manifest.webmanifest',
+	'public/sw.js',
+	'public/icons',
+]
 const patterns = [
 	{ name: 'OpenAI-style secret key', regex: /\bsk-[A-Za-z0-9_-]{20,}\b/g },
 	{

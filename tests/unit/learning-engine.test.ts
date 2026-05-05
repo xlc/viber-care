@@ -1,19 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import gardenPack from '../../content/packs/garden.json'
-import {
-	buildRuntimeCatalog,
-	validateContentPacks,
-} from '../../src/content/build-catalog'
+import { catalog } from '../../src/content/catalog'
 import { buildLearningSequence, getPack } from '../../src/learning/engine'
 import {
 	DEFAULT_SETTINGS,
 	type WordGardenSettings,
 } from '../../src/state/settings'
 
-const catalog = buildRuntimeCatalog(
-	validateContentPacks([gardenPack]),
-	'2026-05-04T00:00:00.000Z',
-)
 const duck = getPack(catalog).objects.find((object) => object.id === 'duck')
 if (!duck) {
 	throw new Error('Test setup failed: duck object not found')

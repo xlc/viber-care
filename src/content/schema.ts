@@ -126,7 +126,6 @@ export const ContentPackSchema = z.object({
 
 export const RuntimeCatalogSchema = z.object({
 	schemaVersion: z.literal('1'),
-	generatedAt: z.string().min(1),
 	supportedLanguages: z.array(LanguageCodeSchema).min(1),
 	learningLevels: z.array(LearningLevelSchema).length(6),
 	defaultLanguageOrder: z.array(LanguageCodeSchema).min(1),

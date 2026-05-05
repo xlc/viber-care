@@ -6,16 +6,13 @@
 	"packageManager": "bun@1.2.0",
 	"scripts": {
 		"dev": "vite",
-		"generate:assets": "bun run scripts/generate-assets.ts",
-		"build:catalog": "bun run scripts/generate-catalog.ts",
-		"generate:catalog": "bun run build:catalog",
-		"review:assets": "bun run build:catalog && bun run scripts/review-assets.ts",
-		"validate:content": "bun run scripts/generate-catalog.ts --validate-only",
+		"validate:content": "vitest run tests/unit/content-schema.test.ts tests/unit/catalog.test.ts tests/unit/ocean-pack.test.ts",
 		"check:secrets": "bun run scripts/check-client-secrets.ts",
 		"test": "vitest run",
-		"test:e2e": "bun run generate:assets && bun run build:catalog && playwright test",
-		"build": "bun run generate:assets && bun run build:catalog && tsc --noEmit && vite build",
+		"test:e2e": "playwright test",
+		"build": "tsc --noEmit && vite build",
 		"preview": "vite preview",
+		"check": "tsc --noEmit && biome check .",
 		"lint": "biome check .",
 		"lint:fix": "biome check --write .",
 		"lint:fix:unsafe": "biome check --write --unsafe .",
@@ -37,8 +34,7 @@
 		"lint-staged": "^16.4.0",
 		"typescript": "^5.9.2",
 		"vite": "^7.1.7",
-		"vitest": "^3.2.4",
-		"yaml": "^2.8.1"
+		"vitest": "^3.2.4"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx,json,css,html}": [

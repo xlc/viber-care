@@ -1,13 +1,13 @@
 import type { JSX } from 'preact'
 import { useEffect, useMemo, useState } from 'preact/hooks'
 import { playSoftTap, speakSequence } from './audio/speech'
+import { catalog } from './content/catalog'
 import {
 	type LanguageCode,
 	LEARNING_LEVELS,
 	type LearningLevel,
 	type ObjectConcept,
 	type RuntimeCatalog,
-	RuntimeCatalogSchema,
 	type Scene,
 	SUPPORTED_LANGUAGE_CODES,
 } from './content/schema'
@@ -70,42 +70,8 @@ type ToastState = {
 	sequence: LearningPresentation[]
 }
 
-function useCatalog() {
-	const [catalog, setCatalog] = useState<RuntimeCatalog | null>(null)
-	const [error, setError] = useState<string | null>(null)
-
-	useEffect(() => {
-		let isMounted = true
-
-		fetch('/catalog.generated.json', { cache: 'no-store' })
-			.then(async (response) => {
-				if (!response.ok) {
-					throw new Error(`Catalog failed to load: ${response.status}`)
-				}
-				return response.json()
-			})
-			.then((json) => RuntimeCatalogSchema.parse(json))
-			.then((parsed) => {
-				if (isMounted) {
-					setCatalog(parsed)
-				}
-			})
-			.catch((catalogError: unknown) => {
-				if (isMounted) {
-					setError(
-						catalogError instanceof Error
-							? catalogError.message
-							: 'Catalog failed to load.',
-					)
-				}
-			})
-
-		return () => {
-			isMounted = false
-		}
-	}, [])
-
-	return { catalog, error }
+function useCatalog(): { catalog: RuntimeCatalog; error: null } {
+	return { catalog, error: null }
 }
 
 function getPlacements(
