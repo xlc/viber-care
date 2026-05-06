@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<defs>
+		<filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+			<feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#2f5f67" flood-opacity="0.16"/>
+		</filter>
+	</defs>
+	<g filter="url(#soft-shadow)">
+		<ellipse cx="256" cy="407" rx="170" ry="32" fill="#315862" opacity="0.13"/>
+		<circle cx="148" cy="352" r="64" fill="none" stroke="#354b53" stroke-width="18"/>
+		<circle cx="364" cy="352" r="64" fill="none" stroke="#354b53" stroke-width="18"/>
+		<circle cx="148" cy="352" r="11" fill="#354b53"/>
+		<circle cx="364" cy="352" r="11" fill="#354b53"/>
+		<path d="M148 352 L216 260 L274 352 Z" fill="none" stroke="#e77966" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M216 260 H292 L364 352" fill="none" stroke="#e77966" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M274 352 L216 260" fill="none" stroke="#e77966" stroke-width="18" stroke-linecap="round"/>
+		<path d="M199 242 H250" stroke="#354b53" stroke-width="16" stroke-linecap="round"/>
+		<path d="M292 260 L315 214" stroke="#354b53" stroke-width="16" stroke-linecap="round"/>
+		<path d="M314 214 H356" stroke="#354b53" stroke-width="16" stroke-linecap="round"/>
+		<path d="M214 260 L200 217" stroke="#354b53" stroke-width="14" stroke-linecap="round"/>
+	</g>
+</svg>

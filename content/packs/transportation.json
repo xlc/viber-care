@@ -1,0 +1,1110 @@
+{
+	"id": "transportation",
+	"version": "1.0.0",
+	"title": {
+		"en": "Transportation",
+		"zh-Hans": "交通工具"
+	},
+	"languages": ["en", "zh-Hans"],
+	"defaultSceneId": "gentle-transit-park",
+	"scenes": [
+		{
+			"id": "gentle-transit-park",
+			"packId": "transportation",
+			"title": {
+				"en": "Gentle Transit Park",
+				"zh-Hans": "温柔交通公园"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly transportation park with a soft road, small rail track, quiet pond, blue sky, gentle hills, and open space for vehicle objects. No text, no logos, no traffic danger, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/transportation/gentle-transit-park.svg",
+					"alt": "Gentle transit park",
+					"generationPrompt": "A calm toddler-friendly transportation park with a soft road, small rail track, quiet pond, blue sky, gentle hills, and open space for vehicle objects. No text, no logos, no traffic danger, static PWA game background.",
+					"placeholder": {
+						"label": "Transit Park",
+						"emoji": "🚗"
+					}
+				}
+			},
+			"objects": [
+				{
+					"objectId": "airplane",
+					"x": 70,
+					"y": 22,
+					"scale": 0.82,
+					"zIndex": 2
+				},
+				{
+					"objectId": "helicopter",
+					"x": 34,
+					"y": 25,
+					"scale": 0.78,
+					"zIndex": 3
+				},
+				{
+					"objectId": "truck",
+					"x": 88,
+					"y": 55,
+					"scale": 0.8,
+					"zIndex": 5
+				},
+				{
+					"objectId": "car",
+					"x": 28,
+					"y": 65,
+					"scale": 0.82,
+					"zIndex": 6
+				},
+				{
+					"objectId": "bus",
+					"x": 55,
+					"y": 65,
+					"scale": 0.92,
+					"zIndex": 7
+				},
+				{
+					"objectId": "taxi",
+					"x": 76,
+					"y": 70,
+					"scale": 0.74,
+					"zIndex": 8
+				},
+				{
+					"objectId": "bicycle",
+					"x": 13,
+					"y": 72,
+					"scale": 0.72,
+					"zIndex": 9
+				},
+				{
+					"objectId": "scooter",
+					"x": 41,
+					"y": 78,
+					"scale": 0.66,
+					"zIndex": 10
+				},
+				{
+					"objectId": "boat",
+					"x": 76,
+					"y": 84,
+					"scale": 0.74,
+					"zIndex": 11
+				},
+				{
+					"objectId": "train",
+					"x": 25,
+					"y": 86,
+					"scale": 0.9,
+					"zIndex": 12
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		}
+	],
+	"objects": [
+		{
+			"id": "car",
+			"category": "transportation",
+			"tags": ["transportation", "road", "wheels"],
+			"visualPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/car.svg",
+				"alt": "red car",
+				"generationPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "car",
+					"emoji": "🚗"
+				}
+			},
+			"interaction": {
+				"id": "car-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the car.",
+					"successPhrase": "You found the car.",
+					"fallbackText": "That's the car.",
+					"levels": {
+						"L0": {
+							"text": "car",
+							"audioText": "car",
+							"fallbackText": "car"
+						},
+						"L1": {
+							"text": "The car rolls.",
+							"audioText": "The car rolls.",
+							"fallbackText": "car"
+						},
+						"L2": {
+							"text": "red car",
+							"audioText": "red car",
+							"fallbackText": "car"
+						},
+						"L3": {
+							"text": "The car rolls on the path.",
+							"audioText": "The car rolls on the path.",
+							"fallbackText": "car"
+						},
+						"L4": {
+							"text": "What rolls on wheels? The car rolls.",
+							"audioText": "What rolls on wheels? The car rolls.",
+							"fallbackText": "car"
+						},
+						"L5": {
+							"text": "The car rolls slowly through the transit park.",
+							"audioText": "The car rolls slowly through the transit park.",
+							"fallbackText": "That's the car."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找小汽车。",
+					"successPhrase": "你找到小汽车了。",
+					"fallbackText": "这是小汽车。",
+					"levels": {
+						"L0": {
+							"text": "小汽车",
+							"audioText": "小汽车",
+							"fallbackText": "小汽车"
+						},
+						"L1": {
+							"text": "小汽车开一开。",
+							"audioText": "小汽车开一开。",
+							"fallbackText": "小汽车"
+						},
+						"L2": {
+							"text": "红色小汽车",
+							"audioText": "红色小汽车",
+							"fallbackText": "小汽车"
+						},
+						"L3": {
+							"text": "小汽车在小路上开。",
+							"audioText": "小汽车在小路上开。",
+							"fallbackText": "小汽车"
+						},
+						"L4": {
+							"text": "谁在轮子上开？小汽车在轮子上开。",
+							"audioText": "谁在轮子上开？小汽车在轮子上开。",
+							"fallbackText": "小汽车"
+						},
+						"L5": {
+							"text": "小汽车慢慢开过交通公园。",
+							"audioText": "小汽车慢慢开过交通公园。",
+							"fallbackText": "这是小汽车。"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "bus",
+			"category": "transportation",
+			"tags": ["transportation", "road", "public transit"],
+			"visualPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/bus.svg",
+				"alt": "yellow bus",
+				"generationPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
+				"placeholder": {
+					"label": "bus",
+					"emoji": "🚌"
+				}
+			},
+			"interaction": {
+				"id": "bus-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the bus.",
+					"successPhrase": "You found the bus.",
+					"fallbackText": "That's the bus.",
+					"levels": {
+						"L0": {
+							"text": "bus",
+							"audioText": "bus",
+							"fallbackText": "bus"
+						},
+						"L1": {
+							"text": "The bus goes by.",
+							"audioText": "The bus goes by.",
+							"fallbackText": "bus"
+						},
+						"L2": {
+							"text": "yellow bus",
+							"audioText": "yellow bus",
+							"fallbackText": "bus"
+						},
+						"L3": {
+							"text": "The bus carries friends on the road.",
+							"audioText": "The bus carries friends on the road.",
+							"fallbackText": "bus"
+						},
+						"L4": {
+							"text": "What has big windows? The bus has big windows.",
+							"audioText": "What has big windows? The bus has big windows.",
+							"fallbackText": "bus"
+						},
+						"L5": {
+							"text": "The bus stops softly beside the path.",
+							"audioText": "The bus stops softly beside the path.",
+							"fallbackText": "That's the bus."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找公交车。",
+					"successPhrase": "你找到公交车了。",
+					"fallbackText": "这是公交车。",
+					"levels": {
+						"L0": {
+							"text": "公交车",
+							"audioText": "公交车",
+							"fallbackText": "公交车"
+						},
+						"L1": {
+							"text": "公交车开过来。",
+							"audioText": "公交车开过来。",
+							"fallbackText": "公交车"
+						},
+						"L2": {
+							"text": "黄色公交车",
+							"audioText": "黄色公交车",
+							"fallbackText": "公交车"
+						},
+						"L3": {
+							"text": "公交车载着朋友在路上走。",
+							"audioText": "公交车载着朋友在路上走。",
+							"fallbackText": "公交车"
+						},
+						"L4": {
+							"text": "谁有大大的窗户？公交车有大大的窗户。",
+							"audioText": "谁有大大的窗户？公交车有大大的窗户。",
+							"fallbackText": "公交车"
+						},
+						"L5": {
+							"text": "公交车轻轻停在小路旁。",
+							"audioText": "公交车轻轻停在小路旁。",
+							"fallbackText": "这是公交车。"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "train",
+			"category": "transportation",
+			"tags": ["transportation", "rail", "wheels"],
+			"visualPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/train.svg",
+				"alt": "green train",
+				"generationPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
+				"placeholder": {
+					"label": "train",
+					"emoji": "🚆"
+				}
+			},
+			"interaction": {
+				"id": "train-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the train.",
+					"successPhrase": "You found the train.",
+					"fallbackText": "That's the train.",
+					"levels": {
+						"L0": {
+							"text": "train",
+							"audioText": "train",
+							"fallbackText": "train"
+						},
+						"L1": {
+							"text": "The train rolls along.",
+							"audioText": "The train rolls along.",
+							"fallbackText": "train"
+						},
+						"L2": {
+							"text": "green train",
+							"audioText": "green train",
+							"fallbackText": "train"
+						},
+						"L3": {
+							"text": "The train rolls on the track.",
+							"audioText": "The train rolls on the track.",
+							"fallbackText": "train"
+						},
+						"L4": {
+							"text": "What rides on tracks? The train rides on tracks.",
+							"audioText": "What rides on tracks? The train rides on tracks.",
+							"fallbackText": "train"
+						},
+						"L5": {
+							"text": "The train makes a gentle trip past the grass.",
+							"audioText": "The train makes a gentle trip past the grass.",
+							"fallbackText": "That's the train."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找火车。",
+					"successPhrase": "你找到火车了。",
+					"fallbackText": "这是火车。",
+					"levels": {
+						"L0": {
+							"text": "火车",
+							"audioText": "火车",
+							"fallbackText": "火车"
+						},
+						"L1": {
+							"text": "火车向前开。",
+							"audioText": "火车向前开。",
+							"fallbackText": "火车"
+						},
+						"L2": {
+							"text": "绿色火车",
+							"audioText": "绿色火车",
+							"fallbackText": "火车"
+						},
+						"L3": {
+							"text": "火车在轨道上开。",
+							"audioText": "火车在轨道上开。",
+							"fallbackText": "火车"
+						},
+						"L4": {
+							"text": "谁在轨道上走？火车在轨道上走。",
+							"audioText": "谁在轨道上走？火车在轨道上走。",
+							"fallbackText": "火车"
+						},
+						"L5": {
+							"text": "火车轻轻开过草地旁边。",
+							"audioText": "火车轻轻开过草地旁边。",
+							"fallbackText": "这是火车。"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "airplane",
+			"category": "transportation",
+			"tags": ["transportation", "sky", "flying"],
+			"visualPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/airplane.svg",
+				"alt": "white airplane",
+				"generationPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
+				"placeholder": {
+					"label": "airplane",
+					"emoji": "✈️"
+				}
+			},
+			"interaction": {
+				"id": "airplane-glow",
+				"animation": "glow"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the airplane.",
+					"successPhrase": "You found the airplane.",
+					"fallbackText": "That's the airplane.",
+					"levels": {
+						"L0": {
+							"text": "airplane",
+							"audioText": "airplane",
+							"fallbackText": "airplane"
+						},
+						"L1": {
+							"text": "The airplane flies.",
+							"audioText": "The airplane flies.",
+							"fallbackText": "airplane"
+						},
+						"L2": {
+							"text": "white airplane",
+							"audioText": "white airplane",
+							"fallbackText": "airplane"
+						},
+						"L3": {
+							"text": "The airplane flies in the blue sky.",
+							"audioText": "The airplane flies in the blue sky.",
+							"fallbackText": "airplane"
+						},
+						"L4": {
+							"text": "What flies high? The airplane flies high.",
+							"audioText": "What flies high? The airplane flies high.",
+							"fallbackText": "airplane"
+						},
+						"L5": {
+							"text": "The airplane glides softly over the transit park.",
+							"audioText": "The airplane glides softly over the transit park.",
+							"fallbackText": "That's the airplane."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找飞机。",
+					"successPhrase": "你找到飞机了。",
+					"fallbackText": "这是飞机。",
+					"levels": {
+						"L0": {
+							"text": "飞机",
+							"audioText": "飞机",
+							"fallbackText": "飞机"
+						},
+						"L1": {
+							"text": "飞机飞一飞。",
+							"audioText": "飞机飞一飞。",
+							"fallbackText": "飞机"
+						},
+						"L2": {
+							"text": "白色飞机",
+							"audioText": "白色飞机",
+							"fallbackText": "飞机"
+						},
+						"L3": {
+							"text": "飞机在蓝天里飞。",
+							"audioText": "飞机在蓝天里飞。",
+							"fallbackText": "飞机"
+						},
+						"L4": {
+							"text": "谁飞得高？飞机飞得高。",
+							"audioText": "谁飞得高？飞机飞得高。",
+							"fallbackText": "飞机"
+						},
+						"L5": {
+							"text": "飞机轻轻飞过交通公园上空。",
+							"audioText": "飞机轻轻飞过交通公园上空。",
+							"fallbackText": "这是飞机。"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "boat",
+			"category": "transportation",
+			"tags": ["transportation", "water", "floating"],
+			"visualPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/boat.svg",
+				"alt": "blue boat",
+				"generationPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "boat",
+					"emoji": "⛵"
+				}
+			},
+			"interaction": {
+				"id": "boat-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the boat.",
+					"successPhrase": "You found the boat.",
+					"fallbackText": "That's the boat.",
+					"levels": {
+						"L0": {
+							"text": "boat",
+							"audioText": "boat",
+							"fallbackText": "boat"
+						},
+						"L1": {
+							"text": "The boat floats.",
+							"audioText": "The boat floats.",
+							"fallbackText": "boat"
+						},
+						"L2": {
+							"text": "blue boat",
+							"audioText": "blue boat",
+							"fallbackText": "boat"
+						},
+						"L3": {
+							"text": "The boat floats on the water.",
+							"audioText": "The boat floats on the water.",
+							"fallbackText": "boat"
+						},
+						"L4": {
+							"text": "What floats on water? The boat floats on water.",
+							"audioText": "What floats on water? The boat floats on water.",
+							"fallbackText": "boat"
+						},
+						"L5": {
+							"text": "The boat bobs gently in the quiet pond.",
+							"audioText": "The boat bobs gently in the quiet pond.",
+							"fallbackText": "That's the boat."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找小船。",
+					"successPhrase": "你找到小船了。",
+					"fallbackText": "这是小船。",
+					"levels": {
+						"L0": {
+							"text": "小船",
+							"audioText": "小船",
+							"fallbackText": "小船"
+						},
+						"L1": {
+							"text": "小船漂一漂。",
+							"audioText": "小船漂一漂。",
+							"fallbackText": "小船"
+						},
+						"L2": {
+							"text": "蓝色小船",
+							"audioText": "蓝色小船",
+							"fallbackText": "小船"
+						},
+						"L3": {
+							"text": "小船在水面上漂。",
+							"audioText": "小船在水面上漂。",
+							"fallbackText": "小船"
+						},
+						"L4": {
+							"text": "谁在水面上漂？小船在水面上漂。",
+							"audioText": "谁在水面上漂？小船在水面上漂。",
+							"fallbackText": "小船"
+						},
+						"L5": {
+							"text": "小船在安静的池塘里轻轻摇。",
+							"audioText": "小船在安静的池塘里轻轻摇。",
+							"fallbackText": "这是小船。"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "bicycle",
+			"category": "transportation",
+			"tags": ["transportation", "road", "wheels"],
+			"visualPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/bicycle.svg",
+				"alt": "little bicycle",
+				"generationPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
+				"placeholder": {
+					"label": "bicycle",
+					"emoji": "🚲"
+				}
+			},
+			"interaction": {
+				"id": "bicycle-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the bicycle.",
+					"successPhrase": "You found the bicycle.",
+					"fallbackText": "That's the bicycle.",
+					"levels": {
+						"L0": {
+							"text": "bicycle",
+							"audioText": "bicycle",
+							"fallbackText": "bicycle"
+						},
+						"L1": {
+							"text": "The bicycle rolls.",
+							"audioText": "The bicycle rolls.",
+							"fallbackText": "bicycle"
+						},
+						"L2": {
+							"text": "little bicycle",
+							"audioText": "little bicycle",
+							"fallbackText": "bicycle"
+						},
+						"L3": {
+							"text": "The bicycle rolls on two wheels.",
+							"audioText": "The bicycle rolls on two wheels.",
+							"fallbackText": "bicycle"
+						},
+						"L4": {
+							"text": "What has two wheels? The bicycle has two wheels.",
+							"audioText": "What has two wheels? The bicycle has two wheels.",
+							"fallbackText": "bicycle"
+						},
+						"L5": {
+							"text": "The bicycle waits beside the sunny path.",
+							"audioText": "The bicycle waits beside the sunny path.",
+							"fallbackText": "That's the bicycle."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找自行车。",
+					"successPhrase": "你找到自行车了。",
+					"fallbackText": "这是自行车。",
+					"levels": {
+						"L0": {
+							"text": "自行车",
+							"audioText": "自行车",
+							"fallbackText": "自行车"
+						},
+						"L1": {
+							"text": "自行车转一转。",
+							"audioText": "自行车转一转。",
+							"fallbackText": "自行车"
+						},
+						"L2": {
+							"text": "小小自行车",
+							"audioText": "小小自行车",
+							"fallbackText": "自行车"
+						},
+						"L3": {
+							"text": "自行车用两个轮子前进。",
+							"audioText": "自行车用两个轮子前进。",
+							"fallbackText": "自行车"
+						},
+						"L4": {
+							"text": "谁有两个轮子？自行车有两个轮子。",
+							"audioText": "谁有两个轮子？自行车有两个轮子。",
+							"fallbackText": "自行车"
+						},
+						"L5": {
+							"text": "自行车在阳光小路旁等一等。",
+							"audioText": "自行车在阳光小路旁等一等。",
+							"fallbackText": "这是自行车。"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "truck",
+			"category": "transportation",
+			"tags": ["transportation", "road", "wheels"],
+			"visualPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/truck.svg",
+				"alt": "green truck",
+				"generationPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
+				"placeholder": {
+					"label": "truck",
+					"emoji": "🚚"
+				}
+			},
+			"interaction": {
+				"id": "truck-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the truck.",
+					"successPhrase": "You found the truck.",
+					"fallbackText": "That's the truck.",
+					"levels": {
+						"L0": {
+							"text": "truck",
+							"audioText": "truck",
+							"fallbackText": "truck"
+						},
+						"L1": {
+							"text": "The truck rolls.",
+							"audioText": "The truck rolls.",
+							"fallbackText": "truck"
+						},
+						"L2": {
+							"text": "green truck",
+							"audioText": "green truck",
+							"fallbackText": "truck"
+						},
+						"L3": {
+							"text": "The truck carries a gentle load.",
+							"audioText": "The truck carries a gentle load.",
+							"fallbackText": "truck"
+						},
+						"L4": {
+							"text": "What has a big back? The truck has a big back.",
+							"audioText": "What has a big back? The truck has a big back.",
+							"fallbackText": "truck"
+						},
+						"L5": {
+							"text": "The truck rolls carefully beside the trees.",
+							"audioText": "The truck rolls carefully beside the trees.",
+							"fallbackText": "That's the truck."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找卡车。",
+					"successPhrase": "你找到卡车了。",
+					"fallbackText": "这是卡车。",
+					"levels": {
+						"L0": {
+							"text": "卡车",
+							"audioText": "卡车",
+							"fallbackText": "卡车"
+						},
+						"L1": {
+							"text": "卡车开一开。",
+							"audioText": "卡车开一开。",
+							"fallbackText": "卡车"
+						},
+						"L2": {
+							"text": "绿色卡车",
+							"audioText": "绿色卡车",
+							"fallbackText": "卡车"
+						},
+						"L3": {
+							"text": "卡车运着轻轻的东西。",
+							"audioText": "卡车运着轻轻的东西。",
+							"fallbackText": "卡车"
+						},
+						"L4": {
+							"text": "谁有大大的车厢？卡车有大大的车厢。",
+							"audioText": "谁有大大的车厢？卡车有大大的车厢。",
+							"fallbackText": "卡车"
+						},
+						"L5": {
+							"text": "卡车小心地开过树旁。",
+							"audioText": "卡车小心地开过树旁。",
+							"fallbackText": "这是卡车。"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "taxi",
+			"category": "transportation",
+			"tags": ["transportation", "road", "wheels"],
+			"visualPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/taxi.svg",
+				"alt": "yellow taxi",
+				"generationPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
+				"placeholder": {
+					"label": "taxi",
+					"emoji": "🚕"
+				}
+			},
+			"interaction": {
+				"id": "taxi-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the taxi.",
+					"successPhrase": "You found the taxi.",
+					"fallbackText": "That's the taxi.",
+					"levels": {
+						"L0": {
+							"text": "taxi",
+							"audioText": "taxi",
+							"fallbackText": "taxi"
+						},
+						"L1": {
+							"text": "The taxi rolls by.",
+							"audioText": "The taxi rolls by.",
+							"fallbackText": "taxi"
+						},
+						"L2": {
+							"text": "yellow taxi",
+							"audioText": "yellow taxi",
+							"fallbackText": "taxi"
+						},
+						"L3": {
+							"text": "The taxi rolls along the road.",
+							"audioText": "The taxi rolls along the road.",
+							"fallbackText": "taxi"
+						},
+						"L4": {
+							"text": "What has a small roof light? The taxi has a roof light.",
+							"audioText": "What has a small roof light? The taxi has a roof light.",
+							"fallbackText": "taxi"
+						},
+						"L5": {
+							"text": "The taxi waits kindly near the station.",
+							"audioText": "The taxi waits kindly near the station.",
+							"fallbackText": "That's the taxi."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找出租车。",
+					"successPhrase": "你找到出租车了。",
+					"fallbackText": "这是出租车。",
+					"levels": {
+						"L0": {
+							"text": "出租车",
+							"audioText": "出租车",
+							"fallbackText": "出租车"
+						},
+						"L1": {
+							"text": "出租车开过来。",
+							"audioText": "出租车开过来。",
+							"fallbackText": "出租车"
+						},
+						"L2": {
+							"text": "黄色出租车",
+							"audioText": "黄色出租车",
+							"fallbackText": "出租车"
+						},
+						"L3": {
+							"text": "出租车沿着小路开。",
+							"audioText": "出租车沿着小路开。",
+							"fallbackText": "出租车"
+						},
+						"L4": {
+							"text": "谁有小小的车顶灯？出租车有车顶灯。",
+							"audioText": "谁有小小的车顶灯？出租车有车顶灯。",
+							"fallbackText": "出租车"
+						},
+						"L5": {
+							"text": "出租车温柔地等在车站旁。",
+							"audioText": "出租车温柔地等在车站旁。",
+							"fallbackText": "这是出租车。"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "scooter",
+			"category": "transportation",
+			"tags": ["transportation", "road", "wheels"],
+			"visualPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/scooter.svg",
+				"alt": "blue scooter",
+				"generationPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
+				"placeholder": {
+					"label": "scooter",
+					"emoji": "🛴"
+				}
+			},
+			"interaction": {
+				"id": "scooter-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the scooter.",
+					"successPhrase": "You found the scooter.",
+					"fallbackText": "That's the scooter.",
+					"levels": {
+						"L0": {
+							"text": "scooter",
+							"audioText": "scooter",
+							"fallbackText": "scooter"
+						},
+						"L1": {
+							"text": "The scooter glides.",
+							"audioText": "The scooter glides.",
+							"fallbackText": "scooter"
+						},
+						"L2": {
+							"text": "blue scooter",
+							"audioText": "blue scooter",
+							"fallbackText": "scooter"
+						},
+						"L3": {
+							"text": "The scooter glides on the path.",
+							"audioText": "The scooter glides on the path.",
+							"fallbackText": "scooter"
+						},
+						"L4": {
+							"text": "What has a tall handle? The scooter has a tall handle.",
+							"audioText": "What has a tall handle? The scooter has a tall handle.",
+							"fallbackText": "scooter"
+						},
+						"L5": {
+							"text": "The scooter rests beside the soft road.",
+							"audioText": "The scooter rests beside the soft road.",
+							"fallbackText": "That's the scooter."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找滑板车。",
+					"successPhrase": "你找到滑板车了。",
+					"fallbackText": "这是滑板车。",
+					"levels": {
+						"L0": {
+							"text": "滑板车",
+							"audioText": "滑板车",
+							"fallbackText": "滑板车"
+						},
+						"L1": {
+							"text": "滑板车滑一滑。",
+							"audioText": "滑板车滑一滑。",
+							"fallbackText": "滑板车"
+						},
+						"L2": {
+							"text": "蓝色滑板车",
+							"audioText": "蓝色滑板车",
+							"fallbackText": "滑板车"
+						},
+						"L3": {
+							"text": "滑板车在小路上滑。",
+							"audioText": "滑板车在小路上滑。",
+							"fallbackText": "滑板车"
+						},
+						"L4": {
+							"text": "谁有高高的把手？滑板车有高高的把手。",
+							"audioText": "谁有高高的把手？滑板车有高高的把手。",
+							"fallbackText": "滑板车"
+						},
+						"L5": {
+							"text": "滑板车停在柔软的小路旁。",
+							"audioText": "滑板车停在柔软的小路旁。",
+							"fallbackText": "这是滑板车。"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "helicopter",
+			"category": "transportation",
+			"tags": ["transportation", "sky", "flying"],
+			"visualPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/transportation/helicopter.svg",
+				"alt": "green helicopter",
+				"generationPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
+				"placeholder": {
+					"label": "helicopter",
+					"emoji": "🚁"
+				}
+			},
+			"interaction": {
+				"id": "helicopter-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the helicopter.",
+					"successPhrase": "You found the helicopter.",
+					"fallbackText": "That's the helicopter.",
+					"levels": {
+						"L0": {
+							"text": "helicopter",
+							"audioText": "helicopter",
+							"fallbackText": "helicopter"
+						},
+						"L1": {
+							"text": "The helicopter hovers.",
+							"audioText": "The helicopter hovers.",
+							"fallbackText": "helicopter"
+						},
+						"L2": {
+							"text": "green helicopter",
+							"audioText": "green helicopter",
+							"fallbackText": "helicopter"
+						},
+						"L3": {
+							"text": "The helicopter hovers in the sky.",
+							"audioText": "The helicopter hovers in the sky.",
+							"fallbackText": "helicopter"
+						},
+						"L4": {
+							"text": "What has a spinning rotor? The helicopter has a rotor.",
+							"audioText": "What has a spinning rotor? The helicopter has a rotor.",
+							"fallbackText": "helicopter"
+						},
+						"L5": {
+							"text": "The helicopter hums softly above the trees.",
+							"audioText": "The helicopter hums softly above the trees.",
+							"fallbackText": "That's the helicopter."
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找直升机。",
+					"successPhrase": "你找到直升机了。",
+					"fallbackText": "这是直升机。",
+					"levels": {
+						"L0": {
+							"text": "直升机",
+							"audioText": "直升机",
+							"fallbackText": "直升机"
+						},
+						"L1": {
+							"text": "直升机停在空中。",
+							"audioText": "直升机停在空中。",
+							"fallbackText": "直升机"
+						},
+						"L2": {
+							"text": "绿色直升机",
+							"audioText": "绿色直升机",
+							"fallbackText": "直升机"
+						},
+						"L3": {
+							"text": "直升机在天空中停一停。",
+							"audioText": "直升机在天空中停一停。",
+							"fallbackText": "直升机"
+						},
+						"L4": {
+							"text": "谁有旋转的桨叶？直升机有桨叶。",
+							"audioText": "谁有旋转的桨叶？直升机有桨叶。",
+							"fallbackText": "直升机"
+						},
+						"L5": {
+							"text": "直升机在树上方轻轻嗡嗡响。",
+							"audioText": "直升机在树上方轻轻嗡嗡响。",
+							"fallbackText": "这是直升机。"
+						}
+					}
+				}
+			}
+		}
+	]
+}

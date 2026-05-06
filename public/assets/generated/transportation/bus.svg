@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<defs>
+		<filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+			<feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#2f5f67" flood-opacity="0.16"/>
+		</filter>
+	</defs>
+	<g filter="url(#soft-shadow)">
+		<ellipse cx="256" cy="407" rx="178" ry="34" fill="#315862" opacity="0.13"/>
+		<rect x="78" y="174" width="356" height="218" rx="48" fill="#f3bd45"/>
+		<rect x="110" y="208" width="76" height="68" rx="18" fill="#d6f0f4"/>
+		<rect x="204" y="208" width="76" height="68" rx="18" fill="#d6f0f4"/>
+		<rect x="298" y="208" width="76" height="68" rx="18" fill="#d6f0f4"/>
+		<rect x="112" y="300" width="262" height="50" rx="24" fill="#ffe59a" opacity="0.72"/>
+		<circle cx="148" cy="392" r="39" fill="#344750"/>
+		<circle cx="148" cy="392" r="17" fill="#f6f1dc"/>
+		<circle cx="364" cy="392" r="39" fill="#344750"/>
+		<circle cx="364" cy="392" r="17" fill="#f6f1dc"/>
+		<circle cx="414" cy="328" r="13" fill="#fff0b5"/>
+	</g>
+</svg>

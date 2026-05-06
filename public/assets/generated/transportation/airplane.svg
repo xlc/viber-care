@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<defs>
+		<filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+			<feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#2f5f67" flood-opacity="0.16"/>
+		</filter>
+	</defs>
+	<g filter="url(#soft-shadow)">
+		<ellipse cx="256" cy="396" rx="150" ry="30" fill="#315862" opacity="0.1"/>
+		<path d="M84 269 C170 220 294 204 414 230 C446 237 455 278 426 293 C306 355 176 354 76 317 C52 308 57 284 84 269 Z" fill="#f2f4f2"/>
+		<path d="M244 242 L167 153 C158 142 171 127 185 135 L324 225 Z" fill="#83c6df"/>
+		<path d="M264 292 L184 381 C174 392 188 407 202 398 L340 300 Z" fill="#83c6df"/>
+		<path d="M372 229 L435 159 C444 149 461 158 456 172 L428 259 Z" fill="#ee8b7c"/>
+		<circle cx="174" cy="276" r="17" fill="#b9e3eb"/>
+		<circle cx="226" cy="264" r="17" fill="#b9e3eb"/>
+		<circle cx="278" cy="258" r="17" fill="#b9e3eb"/>
+		<path d="M72 293 C44 285 37 270 54 258 C74 246 96 254 111 266 Z" fill="#f7d57b"/>
+	</g>
+</svg>

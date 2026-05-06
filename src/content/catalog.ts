@@ -3,6 +3,7 @@ import englishAlphabetPack from '../../content/packs/english-alphabet.json'
 import gardenPack from '../../content/packs/garden.json'
 import numbersPack from '../../content/packs/numbers.json'
 import oceanAnimalsPack from '../../content/packs/ocean-animals.json'
+import transportationPack from '../../content/packs/transportation.json'
 import {
 	LEARNING_LEVELS,
 	type RuntimeCatalog,
@@ -27,4 +28,5 @@ export const catalog = createRuntimeCatalog([
 	dinosaursPack,
 	numbersPack,
 	englishAlphabetPack,
+	transportationPack,
 ])

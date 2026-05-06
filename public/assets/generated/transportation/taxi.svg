@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<defs>
+		<filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+			<feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#2f5f67" flood-opacity="0.16"/>
+		</filter>
+	</defs>
+	<g filter="url(#soft-shadow)">
+		<ellipse cx="256" cy="405" rx="170" ry="32" fill="#315862" opacity="0.13"/>
+		<path d="M112 267 H400 C432 267 455 292 455 323 V345 C455 369 436 388 412 388 H100 C76 388 57 369 57 345 V323 C57 292 80 267 112 267 Z" fill="#ffd15d"/>
+		<path d="M154 267 C178 217 218 190 272 190 H324 C362 190 391 220 407 267 Z" fill="#f5b449"/>
+		<rect x="230" y="168" width="68" height="26" rx="13" fill="#ffe690"/>
+		<path d="M188 253 C204 222 230 207 271 207 H291 V253 Z" fill="#d9f1f5"/>
+		<path d="M308 207 H326 C349 207 370 226 383 253 H308 Z" fill="#d9f1f5"/>
+		<circle cx="148" cy="388" r="39" fill="#344750"/>
+		<circle cx="148" cy="388" r="18" fill="#f6f1dc"/>
+		<circle cx="365" cy="388" r="39" fill="#344750"/>
+		<circle cx="365" cy="388" r="18" fill="#f6f1dc"/>
+		<circle cx="436" cy="325" r="14" fill="#fff2bf"/>
+	</g>
+</svg>
