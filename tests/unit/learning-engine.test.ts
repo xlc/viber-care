@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { catalog } from '../../src/content/catalog'
+import type { ObjectConcept } from '../../src/content/schema'
 import { buildLearningSequence, getPack } from '../../src/learning/engine'
 import {
 	DEFAULT_SETTINGS,
@@ -28,12 +29,18 @@ describe('learning engine', () => {
 	})
 
 	it('falls back from incomplete advanced levels to available content', () => {
+		const incompleteDuck = JSON.parse(JSON.stringify(duck)) as ObjectConcept
+		delete incompleteDuck.content.en.levels.L2
+		delete incompleteDuck.content.en.levels.L3
+		delete incompleteDuck.content.en.levels.L4
+		delete incompleteDuck.content.en.levels.L5
+
 		const settings: WordGardenSettings = {
 			...DEFAULT_SETTINGS,
 			activeLevel: 'L4',
 		}
 
-		const sequence = buildLearningSequence(duck, settings)
+		const sequence = buildLearningSequence(incompleteDuck, settings)
 
 		expect(sequence[0]?.requestedLevel).toBe('L4')
 		expect(sequence[0]?.resolvedLevel).toBe('L1')

@@ -19,7 +19,7 @@
 				"prompt": "A calm toddler-friendly garden with soft grass, a blue sky, rounded hills, a tiny pond, and warm sunlight. Gentle, uncluttered, static PWA game background.",
 				"asset": {
 					"type": "background",
-					"path": "/assets/generated/garden/sunny-garden.png",
+					"path": "/assets/generated/imagegen/garden/sunny-garden.webp",
 					"alt": "A calm sunny garden",
 					"generationPrompt": "A calm toddler-friendly garden with soft grass, a blue sky, rounded hills, a tiny pond, and warm sunlight. Gentle, uncluttered, static PWA game background.",
 					"placeholder": {
@@ -29,16 +29,76 @@
 				}
 			},
 			"objects": [
-				{ "objectId": "sun", "x": 82, "y": 12, "scale": 1.2, "zIndex": 1 },
-				{ "objectId": "tree", "x": 14, "y": 34, "scale": 1.35, "zIndex": 2 },
-				{ "objectId": "flower", "x": 64, "y": 62, "scale": 0.88, "zIndex": 4 },
-				{ "objectId": "duck", "x": 34, "y": 64, "scale": 0.96, "zIndex": 4 },
-				{ "objectId": "fish", "x": 47, "y": 78, "scale": 0.84, "zIndex": 5 },
-				{ "objectId": "dog", "x": 22, "y": 72, "scale": 1.02, "zIndex": 5 },
-				{ "objectId": "cat", "x": 76, "y": 72, "scale": 0.94, "zIndex": 5 },
-				{ "objectId": "apple", "x": 18, "y": 51, "scale": 0.72, "zIndex": 6 },
-				{ "objectId": "banana", "x": 55, "y": 48, "scale": 0.72, "zIndex": 6 },
-				{ "objectId": "ball", "x": 86, "y": 83, "scale": 0.86, "zIndex": 6 }
+				{
+					"objectId": "sun",
+					"x": 82,
+					"y": 12,
+					"scale": 1.2,
+					"zIndex": 1
+				},
+				{
+					"objectId": "tree",
+					"x": 14,
+					"y": 34,
+					"scale": 1.35,
+					"zIndex": 2
+				},
+				{
+					"objectId": "flower",
+					"x": 64,
+					"y": 62,
+					"scale": 0.88,
+					"zIndex": 4
+				},
+				{
+					"objectId": "duck",
+					"x": 34,
+					"y": 64,
+					"scale": 0.96,
+					"zIndex": 4
+				},
+				{
+					"objectId": "fish",
+					"x": 47,
+					"y": 78,
+					"scale": 0.84,
+					"zIndex": 5
+				},
+				{
+					"objectId": "dog",
+					"x": 22,
+					"y": 72,
+					"scale": 1.02,
+					"zIndex": 5
+				},
+				{
+					"objectId": "cat",
+					"x": 76,
+					"y": 72,
+					"scale": 0.94,
+					"zIndex": 5
+				},
+				{
+					"objectId": "apple",
+					"x": 18,
+					"y": 51,
+					"scale": 0.72,
+					"zIndex": 6
+				},
+				{
+					"objectId": "banana",
+					"x": 55,
+					"y": 48,
+					"scale": 0.72,
+					"zIndex": 6
+				},
+				{
+					"objectId": "ball",
+					"x": 86,
+					"y": 83,
+					"scale": 0.86,
+					"zIndex": 6
+				}
 			],
 			"music": {
 				"enabledByDefault": false
@@ -53,12 +113,18 @@
 			"visualPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/duck.png",
+				"path": "/assets/generated/imagegen/garden/duck.webp",
 				"alt": "duck",
 				"generationPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
-				"placeholder": { "label": "duck", "emoji": "🦆" }
+				"placeholder": {
+					"label": "duck",
+					"emoji": "🦆"
+				}
 			},
-			"interaction": { "id": "duck-bob", "animation": "bob" },
+			"interaction": {
+				"id": "duck-bob",
+				"animation": "bob"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -86,6 +152,26 @@
 								"path": "/assets/generated/audio/duck-en-L1.mp3",
 								"generationText": "The duck says quack."
 							}
+						},
+						"L2": {
+							"text": "little yellow duck",
+							"audioText": "little yellow duck",
+							"fallbackText": "duck"
+						},
+						"L3": {
+							"text": "The duck paddles by the pond.",
+							"audioText": "The duck paddles by the pond.",
+							"fallbackText": "duck"
+						},
+						"L4": {
+							"text": "Who says quack? The duck says quack.",
+							"audioText": "Who says quack? The duck says quack.",
+							"fallbackText": "duck"
+						},
+						"L5": {
+							"text": "The duck finds the pond and gives a soft quack.",
+							"audioText": "The duck finds the pond and gives a soft quack.",
+							"fallbackText": "duck"
 						}
 					}
 				},
@@ -117,6 +203,30 @@
 								"path": "/assets/generated/audio/duck-zh-Hans-L1.mp3",
 								"generationText": "鸭子嘎嘎叫。"
 							}
+						},
+						"L2": {
+							"text": "黄色小鸭子",
+							"audioText": "黄色小鸭子",
+							"fallbackText": "鸭子",
+							"romanization": "huang se xiao ya zi"
+						},
+						"L3": {
+							"text": "鸭子在池塘边游。",
+							"audioText": "鸭子在池塘边游。",
+							"fallbackText": "鸭子",
+							"romanization": "ya zi zai chi tang bian you"
+						},
+						"L4": {
+							"text": "谁嘎嘎叫？鸭子嘎嘎叫。",
+							"audioText": "谁嘎嘎叫？鸭子嘎嘎叫。",
+							"fallbackText": "鸭子",
+							"romanization": "shei ga ga jiao ya zi ga ga jiao"
+						},
+						"L5": {
+							"text": "鸭子找到池塘，轻轻嘎嘎叫。",
+							"audioText": "鸭子找到池塘，轻轻嘎嘎叫。",
+							"fallbackText": "鸭子",
+							"romanization": "ya zi zhao dao chi tang qing qing ga ga jiao"
 						}
 					}
 				}
@@ -129,12 +239,18 @@
 			"visualPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/dog.png",
+				"path": "/assets/generated/imagegen/garden/dog.webp",
 				"alt": "dog",
 				"generationPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
-				"placeholder": { "label": "dog", "emoji": "🐶" }
+				"placeholder": {
+					"label": "dog",
+					"emoji": "🐶"
+				}
 			},
-			"interaction": { "id": "dog-wiggle", "animation": "wiggle" },
+			"interaction": {
+				"id": "dog-wiggle",
+				"animation": "wiggle"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -162,6 +278,26 @@
 								"path": "/assets/generated/audio/dog-en-L1.mp3",
 								"generationText": "The dog goes woof."
 							}
+						},
+						"L2": {
+							"text": "friendly brown dog",
+							"audioText": "friendly brown dog",
+							"fallbackText": "dog"
+						},
+						"L3": {
+							"text": "The dog wags its tail.",
+							"audioText": "The dog wags its tail.",
+							"fallbackText": "dog"
+						},
+						"L4": {
+							"text": "Who goes woof? The dog goes woof.",
+							"audioText": "Who goes woof? The dog goes woof.",
+							"fallbackText": "dog"
+						},
+						"L5": {
+							"text": "The dog sits in the grass and gives a happy woof.",
+							"audioText": "The dog sits in the grass and gives a happy woof.",
+							"fallbackText": "dog"
 						}
 					}
 				},
@@ -193,6 +329,30 @@
 								"path": "/assets/generated/audio/dog-zh-Hans-L1.mp3",
 								"generationText": "小狗汪汪叫。"
 							}
+						},
+						"L2": {
+							"text": "友好的棕色小狗",
+							"audioText": "友好的棕色小狗",
+							"fallbackText": "小狗",
+							"romanization": "you hao de zong se xiao gou"
+						},
+						"L3": {
+							"text": "小狗摇摇尾巴。",
+							"audioText": "小狗摇摇尾巴。",
+							"fallbackText": "小狗",
+							"romanization": "xiao gou yao yao wei ba"
+						},
+						"L4": {
+							"text": "谁汪汪叫？小狗汪汪叫。",
+							"audioText": "谁汪汪叫？小狗汪汪叫。",
+							"fallbackText": "小狗",
+							"romanization": "shei wang wang jiao xiao gou wang wang jiao"
+						},
+						"L5": {
+							"text": "小狗坐在草地上，开心地汪汪叫。",
+							"audioText": "小狗坐在草地上，开心地汪汪叫。",
+							"fallbackText": "小狗",
+							"romanization": "xiao gou zuo zai cao di shang kai xin de wang wang jiao"
 						}
 					}
 				}
@@ -205,12 +365,18 @@
 			"visualPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/cat.svg",
+				"path": "/assets/generated/imagegen/garden/cat.webp",
 				"alt": "cat",
 				"generationPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background.",
-				"placeholder": { "label": "cat", "emoji": "🐱" }
+				"placeholder": {
+					"label": "cat",
+					"emoji": "🐱"
+				}
 			},
-			"interaction": { "id": "cat-sway", "animation": "sway" },
+			"interaction": {
+				"id": "cat-sway",
+				"animation": "sway"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -238,6 +404,26 @@
 								"path": "/assets/generated/audio/cat-en-L1.mp3",
 								"generationText": "The cat says meow."
 							}
+						},
+						"L2": {
+							"text": "soft orange cat",
+							"audioText": "soft orange cat",
+							"fallbackText": "cat"
+						},
+						"L3": {
+							"text": "The cat sits in the sun.",
+							"audioText": "The cat sits in the sun.",
+							"fallbackText": "cat"
+						},
+						"L4": {
+							"text": "Who says meow? The cat says meow.",
+							"audioText": "Who says meow? The cat says meow.",
+							"fallbackText": "cat"
+						},
+						"L5": {
+							"text": "The cat stretches in the warm sun and says meow.",
+							"audioText": "The cat stretches in the warm sun and says meow.",
+							"fallbackText": "cat"
 						}
 					}
 				},
@@ -269,6 +455,30 @@
 								"path": "/assets/generated/audio/cat-zh-Hans-L1.mp3",
 								"generationText": "小猫喵喵叫。"
 							}
+						},
+						"L2": {
+							"text": "柔软的橙色小猫",
+							"audioText": "柔软的橙色小猫",
+							"fallbackText": "小猫",
+							"romanization": "rou ruan de cheng se xiao mao"
+						},
+						"L3": {
+							"text": "小猫坐在阳光里。",
+							"audioText": "小猫坐在阳光里。",
+							"fallbackText": "小猫",
+							"romanization": "xiao mao zuo zai yang guang li"
+						},
+						"L4": {
+							"text": "谁喵喵叫？小猫喵喵叫。",
+							"audioText": "谁喵喵叫？小猫喵喵叫。",
+							"fallbackText": "小猫",
+							"romanization": "shei miao miao jiao xiao mao miao miao jiao"
+						},
+						"L5": {
+							"text": "小猫在暖暖的阳光里伸伸懒腰。",
+							"audioText": "小猫在暖暖的阳光里伸伸懒腰。",
+							"fallbackText": "小猫",
+							"romanization": "xiao mao zai nuan nuan de yang guang li shen shen lan yao"
 						}
 					}
 				}
@@ -281,12 +491,18 @@
 			"visualPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/fish.svg",
+				"path": "/assets/generated/imagegen/garden/fish.webp",
 				"alt": "fish",
 				"generationPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
-				"placeholder": { "label": "fish", "emoji": "🐟" }
+				"placeholder": {
+					"label": "fish",
+					"emoji": "🐟"
+				}
 			},
-			"interaction": { "id": "fish-bounce", "animation": "bounce" },
+			"interaction": {
+				"id": "fish-bounce",
+				"animation": "bounce"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -314,6 +530,26 @@
 								"path": "/assets/generated/audio/fish-en-L1.mp3",
 								"generationText": "The fish swims."
 							}
+						},
+						"L2": {
+							"text": "bright blue fish",
+							"audioText": "bright blue fish",
+							"fallbackText": "fish"
+						},
+						"L3": {
+							"text": "The fish swims in the pond.",
+							"audioText": "The fish swims in the pond.",
+							"fallbackText": "fish"
+						},
+						"L4": {
+							"text": "Who swims in water? The fish swims in water.",
+							"audioText": "Who swims in water? The fish swims in water.",
+							"fallbackText": "fish"
+						},
+						"L5": {
+							"text": "The fish makes tiny bubbles in the quiet pond.",
+							"audioText": "The fish makes tiny bubbles in the quiet pond.",
+							"fallbackText": "fish"
 						}
 					}
 				},
@@ -345,6 +581,30 @@
 								"path": "/assets/generated/audio/fish-zh-Hans-L1.mp3",
 								"generationText": "小鱼游一游。"
 							}
+						},
+						"L2": {
+							"text": "亮蓝色的小鱼",
+							"audioText": "亮蓝色的小鱼",
+							"fallbackText": "小鱼",
+							"romanization": "liang lan se de xiao yu"
+						},
+						"L3": {
+							"text": "小鱼在池塘里游。",
+							"audioText": "小鱼在池塘里游。",
+							"fallbackText": "小鱼",
+							"romanization": "xiao yu zai chi tang li you"
+						},
+						"L4": {
+							"text": "谁在水里游？小鱼在水里游。",
+							"audioText": "谁在水里游？小鱼在水里游。",
+							"fallbackText": "小鱼",
+							"romanization": "shei zai shui li you xiao yu zai shui li you"
+						},
+						"L5": {
+							"text": "小鱼在安静的池塘里吹小泡泡。",
+							"audioText": "小鱼在安静的池塘里吹小泡泡。",
+							"fallbackText": "小鱼",
+							"romanization": "xiao yu zai an jing de chi tang li chui xiao pao pao"
 						}
 					}
 				}
@@ -357,12 +617,18 @@
 			"visualPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/apple.svg",
+				"path": "/assets/generated/imagegen/garden/apple.webp",
 				"alt": "apple",
 				"generationPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background.",
-				"placeholder": { "label": "apple", "emoji": "🍎" }
+				"placeholder": {
+					"label": "apple",
+					"emoji": "🍎"
+				}
 			},
-			"interaction": { "id": "apple-bounce", "animation": "bounce" },
+			"interaction": {
+				"id": "apple-bounce",
+				"animation": "bounce"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -390,6 +656,26 @@
 								"path": "/assets/generated/audio/apple-en-L1.mp3",
 								"generationText": "The apple is crunchy."
 							}
+						},
+						"L2": {
+							"text": "round red apple",
+							"audioText": "round red apple",
+							"fallbackText": "apple"
+						},
+						"L3": {
+							"text": "The apple hangs on the tree.",
+							"audioText": "The apple hangs on the tree.",
+							"fallbackText": "apple"
+						},
+						"L4": {
+							"text": "What is red and round? The apple is red and round.",
+							"audioText": "What is red and round? The apple is red and round.",
+							"fallbackText": "apple"
+						},
+						"L5": {
+							"text": "The apple rests on a leaf in the sunny garden.",
+							"audioText": "The apple rests on a leaf in the sunny garden.",
+							"fallbackText": "apple"
 						}
 					}
 				},
@@ -421,6 +707,30 @@
 								"path": "/assets/generated/audio/apple-zh-Hans-L1.mp3",
 								"generationText": "苹果脆脆的。"
 							}
+						},
+						"L2": {
+							"text": "圆圆的红苹果",
+							"audioText": "圆圆的红苹果",
+							"fallbackText": "苹果",
+							"romanization": "yuan yuan de hong ping guo"
+						},
+						"L3": {
+							"text": "苹果挂在树上。",
+							"audioText": "苹果挂在树上。",
+							"fallbackText": "苹果",
+							"romanization": "ping guo gua zai shu shang"
+						},
+						"L4": {
+							"text": "什么又红又圆？苹果又红又圆。",
+							"audioText": "什么又红又圆？苹果又红又圆。",
+							"fallbackText": "苹果",
+							"romanization": "shen me you hong you yuan ping guo you hong you yuan"
+						},
+						"L5": {
+							"text": "苹果躺在叶子上，晒着温暖的太阳。",
+							"audioText": "苹果躺在叶子上，晒着温暖的太阳。",
+							"fallbackText": "苹果",
+							"romanization": "ping guo tang zai ye zi shang shai zhe wen nuan de tai yang"
 						}
 					}
 				}
@@ -433,12 +743,18 @@
 			"visualPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/banana.svg",
+				"path": "/assets/generated/imagegen/garden/banana.webp",
 				"alt": "banana",
 				"generationPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background.",
-				"placeholder": { "label": "banana", "emoji": "🍌" }
+				"placeholder": {
+					"label": "banana",
+					"emoji": "🍌"
+				}
 			},
-			"interaction": { "id": "banana-sway", "animation": "sway" },
+			"interaction": {
+				"id": "banana-sway",
+				"animation": "sway"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -466,6 +782,26 @@
 								"path": "/assets/generated/audio/banana-en-L1.mp3",
 								"generationText": "The banana is sweet."
 							}
+						},
+						"L2": {
+							"text": "curvy yellow banana",
+							"audioText": "curvy yellow banana",
+							"fallbackText": "banana"
+						},
+						"L3": {
+							"text": "The banana is yellow and long.",
+							"audioText": "The banana is yellow and long.",
+							"fallbackText": "banana"
+						},
+						"L4": {
+							"text": "What fruit is yellow? The banana is yellow.",
+							"audioText": "What fruit is yellow? The banana is yellow.",
+							"fallbackText": "banana"
+						},
+						"L5": {
+							"text": "The banana smiles like a little moon in the garden.",
+							"audioText": "The banana smiles like a little moon in the garden.",
+							"fallbackText": "banana"
 						}
 					}
 				},
@@ -497,6 +833,30 @@
 								"path": "/assets/generated/audio/banana-zh-Hans-L1.mp3",
 								"generationText": "香蕉甜甜的。"
 							}
+						},
+						"L2": {
+							"text": "弯弯的黄香蕉",
+							"audioText": "弯弯的黄香蕉",
+							"fallbackText": "香蕉",
+							"romanization": "wan wan de huang xiang jiao"
+						},
+						"L3": {
+							"text": "香蕉又黄又长。",
+							"audioText": "香蕉又黄又长。",
+							"fallbackText": "香蕉",
+							"romanization": "xiang jiao you huang you chang"
+						},
+						"L4": {
+							"text": "什么水果是黄色的？香蕉是黄色的。",
+							"audioText": "什么水果是黄色的？香蕉是黄色的。",
+							"fallbackText": "香蕉",
+							"romanization": "shen me shui guo shi huang se de xiang jiao shi huang se de"
+						},
+						"L5": {
+							"text": "香蕉像小月亮一样在花园里微笑。",
+							"audioText": "香蕉像小月亮一样在花园里微笑。",
+							"fallbackText": "香蕉",
+							"romanization": "xiang jiao xiang xiao yue liang yi yang zai hua yuan li wei xiao"
 						}
 					}
 				}
@@ -509,12 +869,18 @@
 			"visualPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/flower.svg",
+				"path": "/assets/generated/imagegen/garden/flower.webp",
 				"alt": "flower",
 				"generationPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
-				"placeholder": { "label": "flower", "emoji": "🌸" }
+				"placeholder": {
+					"label": "flower",
+					"emoji": "🌸"
+				}
 			},
-			"interaction": { "id": "flower-sway", "animation": "sway" },
+			"interaction": {
+				"id": "flower-sway",
+				"animation": "sway"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -542,6 +908,26 @@
 								"path": "/assets/generated/audio/flower-en-L1.mp3",
 								"generationText": "The flower sways."
 							}
+						},
+						"L2": {
+							"text": "pink garden flower",
+							"audioText": "pink garden flower",
+							"fallbackText": "flower"
+						},
+						"L3": {
+							"text": "The flower grows in the grass.",
+							"audioText": "The flower grows in the grass.",
+							"fallbackText": "flower"
+						},
+						"L4": {
+							"text": "What smells sweet? The flower smells sweet.",
+							"audioText": "What smells sweet? The flower smells sweet.",
+							"fallbackText": "flower"
+						},
+						"L5": {
+							"text": "The flower opens slowly in the sunny garden.",
+							"audioText": "The flower opens slowly in the sunny garden.",
+							"fallbackText": "flower"
 						}
 					}
 				},
@@ -573,6 +959,30 @@
 								"path": "/assets/generated/audio/flower-zh-Hans-L1.mp3",
 								"generationText": "花儿轻轻摇。"
 							}
+						},
+						"L2": {
+							"text": "粉色的花",
+							"audioText": "粉色的花",
+							"fallbackText": "花儿",
+							"romanization": "fen se de hua"
+						},
+						"L3": {
+							"text": "花在草地上长大。",
+							"audioText": "花在草地上长大。",
+							"fallbackText": "花儿",
+							"romanization": "hua zai cao di shang zhang da"
+						},
+						"L4": {
+							"text": "什么香香的？花香香的。",
+							"audioText": "什么香香的？花香香的。",
+							"fallbackText": "花儿",
+							"romanization": "shen me xiang xiang de hua xiang xiang de"
+						},
+						"L5": {
+							"text": "花在阳光花园里慢慢开放。",
+							"audioText": "花在阳光花园里慢慢开放。",
+							"fallbackText": "花儿",
+							"romanization": "hua zai yang guang hua yuan li man man kai fang"
 						}
 					}
 				}
@@ -585,12 +995,18 @@
 			"visualPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/tree.svg",
+				"path": "/assets/generated/imagegen/garden/tree.webp",
 				"alt": "tree",
 				"generationPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background.",
-				"placeholder": { "label": "tree", "emoji": "🌳" }
+				"placeholder": {
+					"label": "tree",
+					"emoji": "🌳"
+				}
 			},
-			"interaction": { "id": "tree-sway", "animation": "sway" },
+			"interaction": {
+				"id": "tree-sway",
+				"animation": "sway"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -618,6 +1034,26 @@
 								"path": "/assets/generated/audio/tree-en-L1.mp3",
 								"generationText": "The tree is tall."
 							}
+						},
+						"L2": {
+							"text": "tall green tree",
+							"audioText": "tall green tree",
+							"fallbackText": "tree"
+						},
+						"L3": {
+							"text": "The tree gives cool shade.",
+							"audioText": "The tree gives cool shade.",
+							"fallbackText": "tree"
+						},
+						"L4": {
+							"text": "What has leaves? The tree has leaves.",
+							"audioText": "What has leaves? The tree has leaves.",
+							"fallbackText": "tree"
+						},
+						"L5": {
+							"text": "The tree sways gently while birds rest nearby.",
+							"audioText": "The tree sways gently while birds rest nearby.",
+							"fallbackText": "tree"
 						}
 					}
 				},
@@ -649,6 +1085,30 @@
 								"path": "/assets/generated/audio/tree-zh-Hans-L1.mp3",
 								"generationText": "大树高高的。"
 							}
+						},
+						"L2": {
+							"text": "高高的绿树",
+							"audioText": "高高的绿树",
+							"fallbackText": "大树",
+							"romanization": "gao gao de lu shu"
+						},
+						"L3": {
+							"text": "大树带来凉凉的树荫。",
+							"audioText": "大树带来凉凉的树荫。",
+							"fallbackText": "大树",
+							"romanization": "da shu dai lai liang liang de shu yin"
+						},
+						"L4": {
+							"text": "什么有叶子？大树有叶子。",
+							"audioText": "什么有叶子？大树有叶子。",
+							"fallbackText": "大树",
+							"romanization": "shen me you ye zi da shu you ye zi"
+						},
+						"L5": {
+							"text": "大树轻轻摇，小鸟在旁边休息。",
+							"audioText": "大树轻轻摇，小鸟在旁边休息。",
+							"fallbackText": "大树",
+							"romanization": "da shu qing qing yao xiao niao zai pang bian xiu xi"
 						}
 					}
 				}
@@ -661,12 +1121,18 @@
 			"visualPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/sun.svg",
+				"path": "/assets/generated/imagegen/garden/sun.webp",
 				"alt": "sun",
 				"generationPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background.",
-				"placeholder": { "label": "sun", "emoji": "☀️" }
+				"placeholder": {
+					"label": "sun",
+					"emoji": "☀️"
+				}
 			},
-			"interaction": { "id": "sun-glow", "animation": "glow" },
+			"interaction": {
+				"id": "sun-glow",
+				"animation": "glow"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -694,6 +1160,26 @@
 								"path": "/assets/generated/audio/sun-en-L1.mp3",
 								"generationText": "The sun is warm."
 							}
+						},
+						"L2": {
+							"text": "warm yellow sun",
+							"audioText": "warm yellow sun",
+							"fallbackText": "sun"
+						},
+						"L3": {
+							"text": "The sun shines on the garden.",
+							"audioText": "The sun shines on the garden.",
+							"fallbackText": "sun"
+						},
+						"L4": {
+							"text": "What makes light? The sun makes light.",
+							"audioText": "What makes light? The sun makes light.",
+							"fallbackText": "sun"
+						},
+						"L5": {
+							"text": "The sun warms the flowers, the tree, and the pond.",
+							"audioText": "The sun warms the flowers, the tree, and the pond.",
+							"fallbackText": "sun"
 						}
 					}
 				},
@@ -725,6 +1211,30 @@
 								"path": "/assets/generated/audio/sun-zh-Hans-L1.mp3",
 								"generationText": "太阳暖暖的。"
 							}
+						},
+						"L2": {
+							"text": "温暖的黄色太阳",
+							"audioText": "温暖的黄色太阳",
+							"fallbackText": "太阳",
+							"romanization": "wen nuan de huang se tai yang"
+						},
+						"L3": {
+							"text": "太阳照着花园。",
+							"audioText": "太阳照着花园。",
+							"fallbackText": "太阳",
+							"romanization": "tai yang zhao zhe hua yuan"
+						},
+						"L4": {
+							"text": "什么会发光？太阳会发光。",
+							"audioText": "什么会发光？太阳会发光。",
+							"fallbackText": "太阳",
+							"romanization": "shen me hui fa guang tai yang hui fa guang"
+						},
+						"L5": {
+							"text": "太阳温暖着花朵、大树和池塘。",
+							"audioText": "太阳温暖着花朵、大树和池塘。",
+							"fallbackText": "太阳",
+							"romanization": "tai yang wen nuan zhe hua duo da shu he chi tang"
 						}
 					}
 				}
@@ -737,12 +1247,18 @@
 			"visualPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/garden/ball.svg",
+				"path": "/assets/generated/imagegen/garden/ball.webp",
 				"alt": "ball",
 				"generationPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
-				"placeholder": { "label": "ball", "emoji": "⚽" }
+				"placeholder": {
+					"label": "ball",
+					"emoji": "⚽"
+				}
 			},
-			"interaction": { "id": "ball-bounce", "animation": "bounce" },
+			"interaction": {
+				"id": "ball-bounce",
+				"animation": "bounce"
+			},
 			"content": {
 				"en": {
 					"language": "en",
@@ -770,6 +1286,26 @@
 								"path": "/assets/generated/audio/ball-en-L1.mp3",
 								"generationText": "The ball rolls."
 							}
+						},
+						"L2": {
+							"text": "colorful round ball",
+							"audioText": "colorful round ball",
+							"fallbackText": "ball"
+						},
+						"L3": {
+							"text": "The ball rolls on the grass.",
+							"audioText": "The ball rolls on the grass.",
+							"fallbackText": "ball"
+						},
+						"L4": {
+							"text": "What can roll? The ball can roll.",
+							"audioText": "What can roll? The ball can roll.",
+							"fallbackText": "ball"
+						},
+						"L5": {
+							"text": "The ball rolls softly and stops by the flower.",
+							"audioText": "The ball rolls softly and stops by the flower.",
+							"fallbackText": "ball"
 						}
 					}
 				},
@@ -801,6 +1337,30 @@
 								"path": "/assets/generated/audio/ball-zh-Hans-L1.mp3",
 								"generationText": "小球滚一滚。"
 							}
+						},
+						"L2": {
+							"text": "彩色的圆球",
+							"audioText": "彩色的圆球",
+							"fallbackText": "小球",
+							"romanization": "cai se de yuan qiu"
+						},
+						"L3": {
+							"text": "球在草地上滚。",
+							"audioText": "球在草地上滚。",
+							"fallbackText": "小球",
+							"romanization": "qiu zai cao di shang gun"
+						},
+						"L4": {
+							"text": "什么会滚？球会滚。",
+							"audioText": "什么会滚？球会滚。",
+							"fallbackText": "小球",
+							"romanization": "shen me hui gun qiu hui gun"
+						},
+						"L5": {
+							"text": "球轻轻滚到花朵旁边停下。",
+							"audioText": "球轻轻滚到花朵旁边停下。",
+							"fallbackText": "小球",
+							"romanization": "qiu qing qing gun dao hua duo pang bian ting xia"
 						}
 					}
 				}

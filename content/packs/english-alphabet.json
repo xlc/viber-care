@@ -1,0 +1,2978 @@
+{
+	"id": "english-alphabet",
+	"version": "1.0.0",
+	"title": {
+		"en": "English Alphabet",
+		"zh-Hans": "英语字母"
+	},
+	"languages": ["en", "zh-Hans"],
+	"defaultSceneId": "alphabet-park",
+	"scenes": [
+		{
+			"id": "alphabet-park",
+			"packId": "english-alphabet",
+			"title": {
+				"en": "Alphabet Park",
+				"zh-Hans": "字母公园"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/english-alphabet/alphabet-park.webp",
+					"alt": "A calm alphabet park",
+					"generationPrompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+					"placeholder": {
+						"label": "Alphabet Park",
+						"emoji": "🌈"
+					}
+				}
+			},
+			"objects": [
+				{
+					"objectId": "letter-a",
+					"x": 9,
+					"y": 13,
+					"scale": 0.48,
+					"zIndex": 2
+				},
+				{
+					"objectId": "letter-b",
+					"x": 29.5,
+					"y": 13,
+					"scale": 0.48,
+					"zIndex": 3
+				},
+				{
+					"objectId": "letter-c",
+					"x": 50,
+					"y": 13,
+					"scale": 0.48,
+					"zIndex": 4
+				},
+				{
+					"objectId": "letter-d",
+					"x": 70.5,
+					"y": 13,
+					"scale": 0.48,
+					"zIndex": 5
+				},
+				{
+					"objectId": "letter-e",
+					"x": 91,
+					"y": 13,
+					"scale": 0.48,
+					"zIndex": 6
+				},
+				{
+					"objectId": "letter-f",
+					"x": 9,
+					"y": 28,
+					"scale": 0.48,
+					"zIndex": 7
+				},
+				{
+					"objectId": "letter-g",
+					"x": 29.5,
+					"y": 28,
+					"scale": 0.48,
+					"zIndex": 8
+				},
+				{
+					"objectId": "letter-h",
+					"x": 50,
+					"y": 28,
+					"scale": 0.48,
+					"zIndex": 9
+				},
+				{
+					"objectId": "letter-i",
+					"x": 70.5,
+					"y": 28,
+					"scale": 0.48,
+					"zIndex": 10
+				},
+				{
+					"objectId": "letter-j",
+					"x": 91,
+					"y": 28,
+					"scale": 0.48,
+					"zIndex": 11
+				},
+				{
+					"objectId": "letter-k",
+					"x": 9,
+					"y": 43,
+					"scale": 0.48,
+					"zIndex": 12
+				},
+				{
+					"objectId": "letter-l",
+					"x": 29.5,
+					"y": 43,
+					"scale": 0.48,
+					"zIndex": 13
+				},
+				{
+					"objectId": "letter-m",
+					"x": 50,
+					"y": 43,
+					"scale": 0.48,
+					"zIndex": 14
+				},
+				{
+					"objectId": "letter-n",
+					"x": 70.5,
+					"y": 43,
+					"scale": 0.48,
+					"zIndex": 15
+				},
+				{
+					"objectId": "letter-o",
+					"x": 91,
+					"y": 43,
+					"scale": 0.48,
+					"zIndex": 16
+				},
+				{
+					"objectId": "letter-p",
+					"x": 9,
+					"y": 58,
+					"scale": 0.48,
+					"zIndex": 17
+				},
+				{
+					"objectId": "letter-q",
+					"x": 29.5,
+					"y": 58,
+					"scale": 0.48,
+					"zIndex": 18
+				},
+				{
+					"objectId": "letter-r",
+					"x": 50,
+					"y": 58,
+					"scale": 0.48,
+					"zIndex": 19
+				},
+				{
+					"objectId": "letter-s",
+					"x": 70.5,
+					"y": 58,
+					"scale": 0.48,
+					"zIndex": 20
+				},
+				{
+					"objectId": "letter-t",
+					"x": 91,
+					"y": 58,
+					"scale": 0.48,
+					"zIndex": 21
+				},
+				{
+					"objectId": "letter-u",
+					"x": 9,
+					"y": 73,
+					"scale": 0.48,
+					"zIndex": 22
+				},
+				{
+					"objectId": "letter-v",
+					"x": 29.5,
+					"y": 73,
+					"scale": 0.48,
+					"zIndex": 23
+				},
+				{
+					"objectId": "letter-w",
+					"x": 50,
+					"y": 73,
+					"scale": 0.48,
+					"zIndex": 24
+				},
+				{
+					"objectId": "letter-x",
+					"x": 70.5,
+					"y": 73,
+					"scale": 0.48,
+					"zIndex": 25
+				},
+				{
+					"objectId": "letter-y",
+					"x": 91,
+					"y": 73,
+					"scale": 0.48,
+					"zIndex": 26
+				},
+				{
+					"objectId": "letter-z",
+					"x": 50,
+					"y": 88,
+					"scale": 0.48,
+					"zIndex": 27
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		}
+	],
+	"objects": [
+		{
+			"id": "letter-a",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "a"],
+			"visualPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-a.webp",
+				"alt": "letter A",
+				"generationPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "A",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-a-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter A.",
+					"successPhrase": "You found letter A.",
+					"fallbackText": "A",
+					"levels": {
+						"L0": {
+							"text": "A",
+							"audioText": "A",
+							"fallbackText": "A"
+						},
+						"L1": {
+							"text": "A is for apple.",
+							"audioText": "A is for apple.",
+							"fallbackText": "A"
+						},
+						"L2": {
+							"text": "uppercase A",
+							"audioText": "uppercase A",
+							"fallbackText": "A"
+						},
+						"L3": {
+							"text": "A starts the word apple.",
+							"audioText": "A starts the word apple.",
+							"fallbackText": "A"
+						},
+						"L4": {
+							"text": "What letter is this? It is A.",
+							"audioText": "What letter is this? It is A.",
+							"fallbackText": "A"
+						},
+						"L5": {
+							"text": "A sits on the card and says apple.",
+							"audioText": "A sits on the card and says apple.",
+							"fallbackText": "A"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 A。",
+					"successPhrase": "你找到字母 A 了。",
+					"fallbackText": "字母 A",
+					"levels": {
+						"L0": {
+							"text": "字母 A",
+							"romanization": "zi mu A",
+							"audioText": "字母 A",
+							"fallbackText": "字母 A"
+						},
+						"L1": {
+							"text": "A 代表苹果。",
+							"romanization": "A dai biao ping guo",
+							"audioText": "A 代表苹果。",
+							"fallbackText": "字母 A"
+						},
+						"L2": {
+							"text": "大写字母 A",
+							"audioText": "大写字母 A",
+							"fallbackText": "字母 A",
+							"romanization": "da xie zi mu A"
+						},
+						"L3": {
+							"text": "A 是苹果的开头。",
+							"audioText": "A 是苹果的开头。",
+							"fallbackText": "字母 A",
+							"romanization": "A shi ping guo de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 A。",
+							"audioText": "这是什么字母？这是 A。",
+							"fallbackText": "字母 A",
+							"romanization": "zhe shi shen me zi mu zhe shi A"
+						},
+						"L5": {
+							"text": "A 在卡片上，轻轻说苹果。",
+							"audioText": "A 在卡片上，轻轻说苹果。",
+							"fallbackText": "字母 A",
+							"romanization": "A zai ka pian shang qing qing shuo ping guo"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-b",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "b"],
+			"visualPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-b.webp",
+				"alt": "letter B",
+				"generationPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "B",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-b-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter B.",
+					"successPhrase": "You found letter B.",
+					"fallbackText": "B",
+					"levels": {
+						"L0": {
+							"text": "B",
+							"audioText": "B",
+							"fallbackText": "B"
+						},
+						"L1": {
+							"text": "B is for ball.",
+							"audioText": "B is for ball.",
+							"fallbackText": "B"
+						},
+						"L2": {
+							"text": "uppercase B",
+							"audioText": "uppercase B",
+							"fallbackText": "B"
+						},
+						"L3": {
+							"text": "B starts the word ball.",
+							"audioText": "B starts the word ball.",
+							"fallbackText": "B"
+						},
+						"L4": {
+							"text": "What letter is this? It is B.",
+							"audioText": "What letter is this? It is B.",
+							"fallbackText": "B"
+						},
+						"L5": {
+							"text": "B sits on the card and says ball.",
+							"audioText": "B sits on the card and says ball.",
+							"fallbackText": "B"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 B。",
+					"successPhrase": "你找到字母 B 了。",
+					"fallbackText": "字母 B",
+					"levels": {
+						"L0": {
+							"text": "字母 B",
+							"romanization": "zi mu B",
+							"audioText": "字母 B",
+							"fallbackText": "字母 B"
+						},
+						"L1": {
+							"text": "B 代表球。",
+							"romanization": "B dai biao qiu",
+							"audioText": "B 代表球。",
+							"fallbackText": "字母 B"
+						},
+						"L2": {
+							"text": "大写字母 B",
+							"audioText": "大写字母 B",
+							"fallbackText": "字母 B",
+							"romanization": "da xie zi mu B"
+						},
+						"L3": {
+							"text": "B 是球的开头。",
+							"audioText": "B 是球的开头。",
+							"fallbackText": "字母 B",
+							"romanization": "B shi qiu de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 B。",
+							"audioText": "这是什么字母？这是 B。",
+							"fallbackText": "字母 B",
+							"romanization": "zhe shi shen me zi mu zhe shi B"
+						},
+						"L5": {
+							"text": "B 在卡片上，轻轻说球。",
+							"audioText": "B 在卡片上，轻轻说球。",
+							"fallbackText": "字母 B",
+							"romanization": "B zai ka pian shang qing qing shuo qiu"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-c",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "c"],
+			"visualPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-c.webp",
+				"alt": "letter C",
+				"generationPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "C",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-c-glow",
+				"animation": "glow"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter C.",
+					"successPhrase": "You found letter C.",
+					"fallbackText": "C",
+					"levels": {
+						"L0": {
+							"text": "C",
+							"audioText": "C",
+							"fallbackText": "C"
+						},
+						"L1": {
+							"text": "C is for cat.",
+							"audioText": "C is for cat.",
+							"fallbackText": "C"
+						},
+						"L2": {
+							"text": "uppercase C",
+							"audioText": "uppercase C",
+							"fallbackText": "C"
+						},
+						"L3": {
+							"text": "C starts the word cat.",
+							"audioText": "C starts the word cat.",
+							"fallbackText": "C"
+						},
+						"L4": {
+							"text": "What letter is this? It is C.",
+							"audioText": "What letter is this? It is C.",
+							"fallbackText": "C"
+						},
+						"L5": {
+							"text": "C sits on the card and says cat.",
+							"audioText": "C sits on the card and says cat.",
+							"fallbackText": "C"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 C。",
+					"successPhrase": "你找到字母 C 了。",
+					"fallbackText": "字母 C",
+					"levels": {
+						"L0": {
+							"text": "字母 C",
+							"romanization": "zi mu C",
+							"audioText": "字母 C",
+							"fallbackText": "字母 C"
+						},
+						"L1": {
+							"text": "C 代表小猫。",
+							"romanization": "C dai biao xiao mao",
+							"audioText": "C 代表小猫。",
+							"fallbackText": "字母 C"
+						},
+						"L2": {
+							"text": "大写字母 C",
+							"audioText": "大写字母 C",
+							"fallbackText": "字母 C",
+							"romanization": "da xie zi mu C"
+						},
+						"L3": {
+							"text": "C 是小猫的开头。",
+							"audioText": "C 是小猫的开头。",
+							"fallbackText": "字母 C",
+							"romanization": "C shi xiao mao de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 C。",
+							"audioText": "这是什么字母？这是 C。",
+							"fallbackText": "字母 C",
+							"romanization": "zhe shi shen me zi mu zhe shi C"
+						},
+						"L5": {
+							"text": "C 在卡片上，轻轻说小猫。",
+							"audioText": "C 在卡片上，轻轻说小猫。",
+							"fallbackText": "字母 C",
+							"romanization": "C zai ka pian shang qing qing shuo xiao mao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-d",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "d"],
+			"visualPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-d.webp",
+				"alt": "letter D",
+				"generationPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "D",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-d-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter D.",
+					"successPhrase": "You found letter D.",
+					"fallbackText": "D",
+					"levels": {
+						"L0": {
+							"text": "D",
+							"audioText": "D",
+							"fallbackText": "D"
+						},
+						"L1": {
+							"text": "D is for duck.",
+							"audioText": "D is for duck.",
+							"fallbackText": "D"
+						},
+						"L2": {
+							"text": "uppercase D",
+							"audioText": "uppercase D",
+							"fallbackText": "D"
+						},
+						"L3": {
+							"text": "D starts the word duck.",
+							"audioText": "D starts the word duck.",
+							"fallbackText": "D"
+						},
+						"L4": {
+							"text": "What letter is this? It is D.",
+							"audioText": "What letter is this? It is D.",
+							"fallbackText": "D"
+						},
+						"L5": {
+							"text": "D sits on the card and says duck.",
+							"audioText": "D sits on the card and says duck.",
+							"fallbackText": "D"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 D。",
+					"successPhrase": "你找到字母 D 了。",
+					"fallbackText": "字母 D",
+					"levels": {
+						"L0": {
+							"text": "字母 D",
+							"romanization": "zi mu D",
+							"audioText": "字母 D",
+							"fallbackText": "字母 D"
+						},
+						"L1": {
+							"text": "D 代表鸭子。",
+							"romanization": "D dai biao ya zi",
+							"audioText": "D 代表鸭子。",
+							"fallbackText": "字母 D"
+						},
+						"L2": {
+							"text": "大写字母 D",
+							"audioText": "大写字母 D",
+							"fallbackText": "字母 D",
+							"romanization": "da xie zi mu D"
+						},
+						"L3": {
+							"text": "D 是鸭子的开头。",
+							"audioText": "D 是鸭子的开头。",
+							"fallbackText": "字母 D",
+							"romanization": "D shi ya zi de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 D。",
+							"audioText": "这是什么字母？这是 D。",
+							"fallbackText": "字母 D",
+							"romanization": "zhe shi shen me zi mu zhe shi D"
+						},
+						"L5": {
+							"text": "D 在卡片上，轻轻说鸭子。",
+							"audioText": "D 在卡片上，轻轻说鸭子。",
+							"fallbackText": "字母 D",
+							"romanization": "D zai ka pian shang qing qing shuo ya zi"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-e",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "e"],
+			"visualPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-e.webp",
+				"alt": "letter E",
+				"generationPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "E",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-e-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter E.",
+					"successPhrase": "You found letter E.",
+					"fallbackText": "E",
+					"levels": {
+						"L0": {
+							"text": "E",
+							"audioText": "E",
+							"fallbackText": "E"
+						},
+						"L1": {
+							"text": "E is for egg.",
+							"audioText": "E is for egg.",
+							"fallbackText": "E"
+						},
+						"L2": {
+							"text": "uppercase E",
+							"audioText": "uppercase E",
+							"fallbackText": "E"
+						},
+						"L3": {
+							"text": "E starts the word egg.",
+							"audioText": "E starts the word egg.",
+							"fallbackText": "E"
+						},
+						"L4": {
+							"text": "What letter is this? It is E.",
+							"audioText": "What letter is this? It is E.",
+							"fallbackText": "E"
+						},
+						"L5": {
+							"text": "E sits on the card and says egg.",
+							"audioText": "E sits on the card and says egg.",
+							"fallbackText": "E"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 E。",
+					"successPhrase": "你找到字母 E 了。",
+					"fallbackText": "字母 E",
+					"levels": {
+						"L0": {
+							"text": "字母 E",
+							"romanization": "zi mu E",
+							"audioText": "字母 E",
+							"fallbackText": "字母 E"
+						},
+						"L1": {
+							"text": "E 代表鸡蛋。",
+							"romanization": "E dai biao ji dan",
+							"audioText": "E 代表鸡蛋。",
+							"fallbackText": "字母 E"
+						},
+						"L2": {
+							"text": "大写字母 E",
+							"audioText": "大写字母 E",
+							"fallbackText": "字母 E",
+							"romanization": "da xie zi mu E"
+						},
+						"L3": {
+							"text": "E 是鸡蛋的开头。",
+							"audioText": "E 是鸡蛋的开头。",
+							"fallbackText": "字母 E",
+							"romanization": "E shi ji dan de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 E。",
+							"audioText": "这是什么字母？这是 E。",
+							"fallbackText": "字母 E",
+							"romanization": "zhe shi shen me zi mu zhe shi E"
+						},
+						"L5": {
+							"text": "E 在卡片上，轻轻说鸡蛋。",
+							"audioText": "E 在卡片上，轻轻说鸡蛋。",
+							"fallbackText": "字母 E",
+							"romanization": "E zai ka pian shang qing qing shuo ji dan"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-f",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "f"],
+			"visualPrompt": "A large friendly uppercase F letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-f.webp",
+				"alt": "letter F",
+				"generationPrompt": "A large friendly uppercase F letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "F",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-f-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter F.",
+					"successPhrase": "You found letter F.",
+					"fallbackText": "F",
+					"levels": {
+						"L0": {
+							"text": "F",
+							"audioText": "F",
+							"fallbackText": "F"
+						},
+						"L1": {
+							"text": "F is for fish.",
+							"audioText": "F is for fish.",
+							"fallbackText": "F"
+						},
+						"L2": {
+							"text": "uppercase F",
+							"audioText": "uppercase F",
+							"fallbackText": "F"
+						},
+						"L3": {
+							"text": "F starts the word fish.",
+							"audioText": "F starts the word fish.",
+							"fallbackText": "F"
+						},
+						"L4": {
+							"text": "What letter is this? It is F.",
+							"audioText": "What letter is this? It is F.",
+							"fallbackText": "F"
+						},
+						"L5": {
+							"text": "F sits on the card and says fish.",
+							"audioText": "F sits on the card and says fish.",
+							"fallbackText": "F"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 F。",
+					"successPhrase": "你找到字母 F 了。",
+					"fallbackText": "字母 F",
+					"levels": {
+						"L0": {
+							"text": "字母 F",
+							"romanization": "zi mu F",
+							"audioText": "字母 F",
+							"fallbackText": "字母 F"
+						},
+						"L1": {
+							"text": "F 代表鱼。",
+							"romanization": "F dai biao yu",
+							"audioText": "F 代表鱼。",
+							"fallbackText": "字母 F"
+						},
+						"L2": {
+							"text": "大写字母 F",
+							"audioText": "大写字母 F",
+							"fallbackText": "字母 F",
+							"romanization": "da xie zi mu F"
+						},
+						"L3": {
+							"text": "F 是鱼的开头。",
+							"audioText": "F 是鱼的开头。",
+							"fallbackText": "字母 F",
+							"romanization": "F shi yu de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 F。",
+							"audioText": "这是什么字母？这是 F。",
+							"fallbackText": "字母 F",
+							"romanization": "zhe shi shen me zi mu zhe shi F"
+						},
+						"L5": {
+							"text": "F 在卡片上，轻轻说鱼。",
+							"audioText": "F 在卡片上，轻轻说鱼。",
+							"fallbackText": "字母 F",
+							"romanization": "F zai ka pian shang qing qing shuo yu"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-g",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "g"],
+			"visualPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-g.webp",
+				"alt": "letter G",
+				"generationPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "G",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-g-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter G.",
+					"successPhrase": "You found letter G.",
+					"fallbackText": "G",
+					"levels": {
+						"L0": {
+							"text": "G",
+							"audioText": "G",
+							"fallbackText": "G"
+						},
+						"L1": {
+							"text": "G is for garden.",
+							"audioText": "G is for garden.",
+							"fallbackText": "G"
+						},
+						"L2": {
+							"text": "uppercase G",
+							"audioText": "uppercase G",
+							"fallbackText": "G"
+						},
+						"L3": {
+							"text": "G starts the word garden.",
+							"audioText": "G starts the word garden.",
+							"fallbackText": "G"
+						},
+						"L4": {
+							"text": "What letter is this? It is G.",
+							"audioText": "What letter is this? It is G.",
+							"fallbackText": "G"
+						},
+						"L5": {
+							"text": "G sits on the card and says garden.",
+							"audioText": "G sits on the card and says garden.",
+							"fallbackText": "G"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 G。",
+					"successPhrase": "你找到字母 G 了。",
+					"fallbackText": "字母 G",
+					"levels": {
+						"L0": {
+							"text": "字母 G",
+							"romanization": "zi mu G",
+							"audioText": "字母 G",
+							"fallbackText": "字母 G"
+						},
+						"L1": {
+							"text": "G 代表花园。",
+							"romanization": "G dai biao hua yuan",
+							"audioText": "G 代表花园。",
+							"fallbackText": "字母 G"
+						},
+						"L2": {
+							"text": "大写字母 G",
+							"audioText": "大写字母 G",
+							"fallbackText": "字母 G",
+							"romanization": "da xie zi mu G"
+						},
+						"L3": {
+							"text": "G 是花园的开头。",
+							"audioText": "G 是花园的开头。",
+							"fallbackText": "字母 G",
+							"romanization": "G shi hua yuan de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 G。",
+							"audioText": "这是什么字母？这是 G。",
+							"fallbackText": "字母 G",
+							"romanization": "zhe shi shen me zi mu zhe shi G"
+						},
+						"L5": {
+							"text": "G 在卡片上，轻轻说花园。",
+							"audioText": "G 在卡片上，轻轻说花园。",
+							"fallbackText": "字母 G",
+							"romanization": "G zai ka pian shang qing qing shuo hua yuan"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-h",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "h"],
+			"visualPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-h.webp",
+				"alt": "letter H",
+				"generationPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "H",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-h-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter H.",
+					"successPhrase": "You found letter H.",
+					"fallbackText": "H",
+					"levels": {
+						"L0": {
+							"text": "H",
+							"audioText": "H",
+							"fallbackText": "H"
+						},
+						"L1": {
+							"text": "H is for hat.",
+							"audioText": "H is for hat.",
+							"fallbackText": "H"
+						},
+						"L2": {
+							"text": "uppercase H",
+							"audioText": "uppercase H",
+							"fallbackText": "H"
+						},
+						"L3": {
+							"text": "H starts the word hat.",
+							"audioText": "H starts the word hat.",
+							"fallbackText": "H"
+						},
+						"L4": {
+							"text": "What letter is this? It is H.",
+							"audioText": "What letter is this? It is H.",
+							"fallbackText": "H"
+						},
+						"L5": {
+							"text": "H sits on the card and says hat.",
+							"audioText": "H sits on the card and says hat.",
+							"fallbackText": "H"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 H。",
+					"successPhrase": "你找到字母 H 了。",
+					"fallbackText": "字母 H",
+					"levels": {
+						"L0": {
+							"text": "字母 H",
+							"romanization": "zi mu H",
+							"audioText": "字母 H",
+							"fallbackText": "字母 H"
+						},
+						"L1": {
+							"text": "H 代表帽子。",
+							"romanization": "H dai biao mao zi",
+							"audioText": "H 代表帽子。",
+							"fallbackText": "字母 H"
+						},
+						"L2": {
+							"text": "大写字母 H",
+							"audioText": "大写字母 H",
+							"fallbackText": "字母 H",
+							"romanization": "da xie zi mu H"
+						},
+						"L3": {
+							"text": "H 是帽子的开头。",
+							"audioText": "H 是帽子的开头。",
+							"fallbackText": "字母 H",
+							"romanization": "H shi mao zi de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 H。",
+							"audioText": "这是什么字母？这是 H。",
+							"fallbackText": "字母 H",
+							"romanization": "zhe shi shen me zi mu zhe shi H"
+						},
+						"L5": {
+							"text": "H 在卡片上，轻轻说帽子。",
+							"audioText": "H 在卡片上，轻轻说帽子。",
+							"fallbackText": "字母 H",
+							"romanization": "H zai ka pian shang qing qing shuo mao zi"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-i",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "i"],
+			"visualPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-i.webp",
+				"alt": "letter I",
+				"generationPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "I",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-i-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter I.",
+					"successPhrase": "You found letter I.",
+					"fallbackText": "I",
+					"levels": {
+						"L0": {
+							"text": "I",
+							"audioText": "I",
+							"fallbackText": "I"
+						},
+						"L1": {
+							"text": "I is for igloo.",
+							"audioText": "I is for igloo.",
+							"fallbackText": "I"
+						},
+						"L2": {
+							"text": "uppercase I",
+							"audioText": "uppercase I",
+							"fallbackText": "I"
+						},
+						"L3": {
+							"text": "I starts the word igloo.",
+							"audioText": "I starts the word igloo.",
+							"fallbackText": "I"
+						},
+						"L4": {
+							"text": "What letter is this? It is I.",
+							"audioText": "What letter is this? It is I.",
+							"fallbackText": "I"
+						},
+						"L5": {
+							"text": "I sits on the card and says igloo.",
+							"audioText": "I sits on the card and says igloo.",
+							"fallbackText": "I"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 I。",
+					"successPhrase": "你找到字母 I 了。",
+					"fallbackText": "字母 I",
+					"levels": {
+						"L0": {
+							"text": "字母 I",
+							"romanization": "zi mu I",
+							"audioText": "字母 I",
+							"fallbackText": "字母 I"
+						},
+						"L1": {
+							"text": "I 代表冰屋。",
+							"romanization": "I dai biao bing wu",
+							"audioText": "I 代表冰屋。",
+							"fallbackText": "字母 I"
+						},
+						"L2": {
+							"text": "大写字母 I",
+							"audioText": "大写字母 I",
+							"fallbackText": "字母 I",
+							"romanization": "da xie zi mu I"
+						},
+						"L3": {
+							"text": "I 是冰屋的开头。",
+							"audioText": "I 是冰屋的开头。",
+							"fallbackText": "字母 I",
+							"romanization": "I shi bing wu de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 I。",
+							"audioText": "这是什么字母？这是 I。",
+							"fallbackText": "字母 I",
+							"romanization": "zhe shi shen me zi mu zhe shi I"
+						},
+						"L5": {
+							"text": "I 在卡片上，轻轻说冰屋。",
+							"audioText": "I 在卡片上，轻轻说冰屋。",
+							"fallbackText": "字母 I",
+							"romanization": "I zai ka pian shang qing qing shuo bing wu"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-j",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "j"],
+			"visualPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-j.webp",
+				"alt": "letter J",
+				"generationPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "J",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-j-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter J.",
+					"successPhrase": "You found letter J.",
+					"fallbackText": "J",
+					"levels": {
+						"L0": {
+							"text": "J",
+							"audioText": "J",
+							"fallbackText": "J"
+						},
+						"L1": {
+							"text": "J is for jam.",
+							"audioText": "J is for jam.",
+							"fallbackText": "J"
+						},
+						"L2": {
+							"text": "uppercase J",
+							"audioText": "uppercase J",
+							"fallbackText": "J"
+						},
+						"L3": {
+							"text": "J starts the word jam.",
+							"audioText": "J starts the word jam.",
+							"fallbackText": "J"
+						},
+						"L4": {
+							"text": "What letter is this? It is J.",
+							"audioText": "What letter is this? It is J.",
+							"fallbackText": "J"
+						},
+						"L5": {
+							"text": "J sits on the card and says jam.",
+							"audioText": "J sits on the card and says jam.",
+							"fallbackText": "J"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 J。",
+					"successPhrase": "你找到字母 J 了。",
+					"fallbackText": "字母 J",
+					"levels": {
+						"L0": {
+							"text": "字母 J",
+							"romanization": "zi mu J",
+							"audioText": "字母 J",
+							"fallbackText": "字母 J"
+						},
+						"L1": {
+							"text": "J 代表果酱。",
+							"romanization": "J dai biao guo jiang",
+							"audioText": "J 代表果酱。",
+							"fallbackText": "字母 J"
+						},
+						"L2": {
+							"text": "大写字母 J",
+							"audioText": "大写字母 J",
+							"fallbackText": "字母 J",
+							"romanization": "da xie zi mu J"
+						},
+						"L3": {
+							"text": "J 是果酱的开头。",
+							"audioText": "J 是果酱的开头。",
+							"fallbackText": "字母 J",
+							"romanization": "J shi guo jiang de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 J。",
+							"audioText": "这是什么字母？这是 J。",
+							"fallbackText": "字母 J",
+							"romanization": "zhe shi shen me zi mu zhe shi J"
+						},
+						"L5": {
+							"text": "J 在卡片上，轻轻说果酱。",
+							"audioText": "J 在卡片上，轻轻说果酱。",
+							"fallbackText": "字母 J",
+							"romanization": "J zai ka pian shang qing qing shuo guo jiang"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-k",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "k"],
+			"visualPrompt": "A large friendly uppercase K letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-k.webp",
+				"alt": "letter K",
+				"generationPrompt": "A large friendly uppercase K letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "K",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-k-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter K.",
+					"successPhrase": "You found letter K.",
+					"fallbackText": "K",
+					"levels": {
+						"L0": {
+							"text": "K",
+							"audioText": "K",
+							"fallbackText": "K"
+						},
+						"L1": {
+							"text": "K is for kite.",
+							"audioText": "K is for kite.",
+							"fallbackText": "K"
+						},
+						"L2": {
+							"text": "uppercase K",
+							"audioText": "uppercase K",
+							"fallbackText": "K"
+						},
+						"L3": {
+							"text": "K starts the word kite.",
+							"audioText": "K starts the word kite.",
+							"fallbackText": "K"
+						},
+						"L4": {
+							"text": "What letter is this? It is K.",
+							"audioText": "What letter is this? It is K.",
+							"fallbackText": "K"
+						},
+						"L5": {
+							"text": "K sits on the card and says kite.",
+							"audioText": "K sits on the card and says kite.",
+							"fallbackText": "K"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 K。",
+					"successPhrase": "你找到字母 K 了。",
+					"fallbackText": "字母 K",
+					"levels": {
+						"L0": {
+							"text": "字母 K",
+							"romanization": "zi mu K",
+							"audioText": "字母 K",
+							"fallbackText": "字母 K"
+						},
+						"L1": {
+							"text": "K 代表风筝。",
+							"romanization": "K dai biao feng zheng",
+							"audioText": "K 代表风筝。",
+							"fallbackText": "字母 K"
+						},
+						"L2": {
+							"text": "大写字母 K",
+							"audioText": "大写字母 K",
+							"fallbackText": "字母 K",
+							"romanization": "da xie zi mu K"
+						},
+						"L3": {
+							"text": "K 是风筝的开头。",
+							"audioText": "K 是风筝的开头。",
+							"fallbackText": "字母 K",
+							"romanization": "K shi feng zheng de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 K。",
+							"audioText": "这是什么字母？这是 K。",
+							"fallbackText": "字母 K",
+							"romanization": "zhe shi shen me zi mu zhe shi K"
+						},
+						"L5": {
+							"text": "K 在卡片上，轻轻说风筝。",
+							"audioText": "K 在卡片上，轻轻说风筝。",
+							"fallbackText": "字母 K",
+							"romanization": "K zai ka pian shang qing qing shuo feng zheng"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-l",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "l"],
+			"visualPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-l.webp",
+				"alt": "letter L",
+				"generationPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "L",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-l-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter L.",
+					"successPhrase": "You found letter L.",
+					"fallbackText": "L",
+					"levels": {
+						"L0": {
+							"text": "L",
+							"audioText": "L",
+							"fallbackText": "L"
+						},
+						"L1": {
+							"text": "L is for leaf.",
+							"audioText": "L is for leaf.",
+							"fallbackText": "L"
+						},
+						"L2": {
+							"text": "uppercase L",
+							"audioText": "uppercase L",
+							"fallbackText": "L"
+						},
+						"L3": {
+							"text": "L starts the word leaf.",
+							"audioText": "L starts the word leaf.",
+							"fallbackText": "L"
+						},
+						"L4": {
+							"text": "What letter is this? It is L.",
+							"audioText": "What letter is this? It is L.",
+							"fallbackText": "L"
+						},
+						"L5": {
+							"text": "L sits on the card and says leaf.",
+							"audioText": "L sits on the card and says leaf.",
+							"fallbackText": "L"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 L。",
+					"successPhrase": "你找到字母 L 了。",
+					"fallbackText": "字母 L",
+					"levels": {
+						"L0": {
+							"text": "字母 L",
+							"romanization": "zi mu L",
+							"audioText": "字母 L",
+							"fallbackText": "字母 L"
+						},
+						"L1": {
+							"text": "L 代表叶子。",
+							"romanization": "L dai biao ye zi",
+							"audioText": "L 代表叶子。",
+							"fallbackText": "字母 L"
+						},
+						"L2": {
+							"text": "大写字母 L",
+							"audioText": "大写字母 L",
+							"fallbackText": "字母 L",
+							"romanization": "da xie zi mu L"
+						},
+						"L3": {
+							"text": "L 是叶子的开头。",
+							"audioText": "L 是叶子的开头。",
+							"fallbackText": "字母 L",
+							"romanization": "L shi ye zi de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 L。",
+							"audioText": "这是什么字母？这是 L。",
+							"fallbackText": "字母 L",
+							"romanization": "zhe shi shen me zi mu zhe shi L"
+						},
+						"L5": {
+							"text": "L 在卡片上，轻轻说叶子。",
+							"audioText": "L 在卡片上，轻轻说叶子。",
+							"fallbackText": "字母 L",
+							"romanization": "L zai ka pian shang qing qing shuo ye zi"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-m",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "m"],
+			"visualPrompt": "A large friendly uppercase M letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-m.webp",
+				"alt": "letter M",
+				"generationPrompt": "A large friendly uppercase M letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "M",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-m-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter M.",
+					"successPhrase": "You found letter M.",
+					"fallbackText": "M",
+					"levels": {
+						"L0": {
+							"text": "M",
+							"audioText": "M",
+							"fallbackText": "M"
+						},
+						"L1": {
+							"text": "M is for moon.",
+							"audioText": "M is for moon.",
+							"fallbackText": "M"
+						},
+						"L2": {
+							"text": "uppercase M",
+							"audioText": "uppercase M",
+							"fallbackText": "M"
+						},
+						"L3": {
+							"text": "M starts the word moon.",
+							"audioText": "M starts the word moon.",
+							"fallbackText": "M"
+						},
+						"L4": {
+							"text": "What letter is this? It is M.",
+							"audioText": "What letter is this? It is M.",
+							"fallbackText": "M"
+						},
+						"L5": {
+							"text": "M sits on the card and says moon.",
+							"audioText": "M sits on the card and says moon.",
+							"fallbackText": "M"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 M。",
+					"successPhrase": "你找到字母 M 了。",
+					"fallbackText": "字母 M",
+					"levels": {
+						"L0": {
+							"text": "字母 M",
+							"romanization": "zi mu M",
+							"audioText": "字母 M",
+							"fallbackText": "字母 M"
+						},
+						"L1": {
+							"text": "M 代表月亮。",
+							"romanization": "M dai biao yue liang",
+							"audioText": "M 代表月亮。",
+							"fallbackText": "字母 M"
+						},
+						"L2": {
+							"text": "大写字母 M",
+							"audioText": "大写字母 M",
+							"fallbackText": "字母 M",
+							"romanization": "da xie zi mu M"
+						},
+						"L3": {
+							"text": "M 是月亮的开头。",
+							"audioText": "M 是月亮的开头。",
+							"fallbackText": "字母 M",
+							"romanization": "M shi yue liang de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 M。",
+							"audioText": "这是什么字母？这是 M。",
+							"fallbackText": "字母 M",
+							"romanization": "zhe shi shen me zi mu zhe shi M"
+						},
+						"L5": {
+							"text": "M 在卡片上，轻轻说月亮。",
+							"audioText": "M 在卡片上，轻轻说月亮。",
+							"fallbackText": "字母 M",
+							"romanization": "M zai ka pian shang qing qing shuo yue liang"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-n",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "n"],
+			"visualPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-n.webp",
+				"alt": "letter N",
+				"generationPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "N",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-n-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter N.",
+					"successPhrase": "You found letter N.",
+					"fallbackText": "N",
+					"levels": {
+						"L0": {
+							"text": "N",
+							"audioText": "N",
+							"fallbackText": "N"
+						},
+						"L1": {
+							"text": "N is for nest.",
+							"audioText": "N is for nest.",
+							"fallbackText": "N"
+						},
+						"L2": {
+							"text": "uppercase N",
+							"audioText": "uppercase N",
+							"fallbackText": "N"
+						},
+						"L3": {
+							"text": "N starts the word nest.",
+							"audioText": "N starts the word nest.",
+							"fallbackText": "N"
+						},
+						"L4": {
+							"text": "What letter is this? It is N.",
+							"audioText": "What letter is this? It is N.",
+							"fallbackText": "N"
+						},
+						"L5": {
+							"text": "N sits on the card and says nest.",
+							"audioText": "N sits on the card and says nest.",
+							"fallbackText": "N"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 N。",
+					"successPhrase": "你找到字母 N 了。",
+					"fallbackText": "字母 N",
+					"levels": {
+						"L0": {
+							"text": "字母 N",
+							"romanization": "zi mu N",
+							"audioText": "字母 N",
+							"fallbackText": "字母 N"
+						},
+						"L1": {
+							"text": "N 代表鸟巢。",
+							"romanization": "N dai biao niao chao",
+							"audioText": "N 代表鸟巢。",
+							"fallbackText": "字母 N"
+						},
+						"L2": {
+							"text": "大写字母 N",
+							"audioText": "大写字母 N",
+							"fallbackText": "字母 N",
+							"romanization": "da xie zi mu N"
+						},
+						"L3": {
+							"text": "N 是鸟巢的开头。",
+							"audioText": "N 是鸟巢的开头。",
+							"fallbackText": "字母 N",
+							"romanization": "N shi niao chao de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 N。",
+							"audioText": "这是什么字母？这是 N。",
+							"fallbackText": "字母 N",
+							"romanization": "zhe shi shen me zi mu zhe shi N"
+						},
+						"L5": {
+							"text": "N 在卡片上，轻轻说鸟巢。",
+							"audioText": "N 在卡片上，轻轻说鸟巢。",
+							"fallbackText": "字母 N",
+							"romanization": "N zai ka pian shang qing qing shuo niao chao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-o",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "o"],
+			"visualPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-o.webp",
+				"alt": "letter O",
+				"generationPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "O",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-o-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter O.",
+					"successPhrase": "You found letter O.",
+					"fallbackText": "O",
+					"levels": {
+						"L0": {
+							"text": "O",
+							"audioText": "O",
+							"fallbackText": "O"
+						},
+						"L1": {
+							"text": "O is for orange.",
+							"audioText": "O is for orange.",
+							"fallbackText": "O"
+						},
+						"L2": {
+							"text": "uppercase O",
+							"audioText": "uppercase O",
+							"fallbackText": "O"
+						},
+						"L3": {
+							"text": "O starts the word orange.",
+							"audioText": "O starts the word orange.",
+							"fallbackText": "O"
+						},
+						"L4": {
+							"text": "What letter is this? It is O.",
+							"audioText": "What letter is this? It is O.",
+							"fallbackText": "O"
+						},
+						"L5": {
+							"text": "O sits on the card and says orange.",
+							"audioText": "O sits on the card and says orange.",
+							"fallbackText": "O"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 O。",
+					"successPhrase": "你找到字母 O 了。",
+					"fallbackText": "字母 O",
+					"levels": {
+						"L0": {
+							"text": "字母 O",
+							"romanization": "zi mu O",
+							"audioText": "字母 O",
+							"fallbackText": "字母 O"
+						},
+						"L1": {
+							"text": "O 代表橙子。",
+							"romanization": "O dai biao cheng zi",
+							"audioText": "O 代表橙子。",
+							"fallbackText": "字母 O"
+						},
+						"L2": {
+							"text": "大写字母 O",
+							"audioText": "大写字母 O",
+							"fallbackText": "字母 O",
+							"romanization": "da xie zi mu O"
+						},
+						"L3": {
+							"text": "O 是橙子的开头。",
+							"audioText": "O 是橙子的开头。",
+							"fallbackText": "字母 O",
+							"romanization": "O shi cheng zi de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 O。",
+							"audioText": "这是什么字母？这是 O。",
+							"fallbackText": "字母 O",
+							"romanization": "zhe shi shen me zi mu zhe shi O"
+						},
+						"L5": {
+							"text": "O 在卡片上，轻轻说橙子。",
+							"audioText": "O 在卡片上，轻轻说橙子。",
+							"fallbackText": "字母 O",
+							"romanization": "O zai ka pian shang qing qing shuo cheng zi"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-p",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "p"],
+			"visualPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-p.webp",
+				"alt": "letter P",
+				"generationPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "P",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-p-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter P.",
+					"successPhrase": "You found letter P.",
+					"fallbackText": "P",
+					"levels": {
+						"L0": {
+							"text": "P",
+							"audioText": "P",
+							"fallbackText": "P"
+						},
+						"L1": {
+							"text": "P is for puppy.",
+							"audioText": "P is for puppy.",
+							"fallbackText": "P"
+						},
+						"L2": {
+							"text": "uppercase P",
+							"audioText": "uppercase P",
+							"fallbackText": "P"
+						},
+						"L3": {
+							"text": "P starts the word puppy.",
+							"audioText": "P starts the word puppy.",
+							"fallbackText": "P"
+						},
+						"L4": {
+							"text": "What letter is this? It is P.",
+							"audioText": "What letter is this? It is P.",
+							"fallbackText": "P"
+						},
+						"L5": {
+							"text": "P sits on the card and says puppy.",
+							"audioText": "P sits on the card and says puppy.",
+							"fallbackText": "P"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 P。",
+					"successPhrase": "你找到字母 P 了。",
+					"fallbackText": "字母 P",
+					"levels": {
+						"L0": {
+							"text": "字母 P",
+							"romanization": "zi mu P",
+							"audioText": "字母 P",
+							"fallbackText": "字母 P"
+						},
+						"L1": {
+							"text": "P 代表小狗。",
+							"romanization": "P dai biao xiao gou",
+							"audioText": "P 代表小狗。",
+							"fallbackText": "字母 P"
+						},
+						"L2": {
+							"text": "大写字母 P",
+							"audioText": "大写字母 P",
+							"fallbackText": "字母 P",
+							"romanization": "da xie zi mu P"
+						},
+						"L3": {
+							"text": "P 是小狗的开头。",
+							"audioText": "P 是小狗的开头。",
+							"fallbackText": "字母 P",
+							"romanization": "P shi xiao gou de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 P。",
+							"audioText": "这是什么字母？这是 P。",
+							"fallbackText": "字母 P",
+							"romanization": "zhe shi shen me zi mu zhe shi P"
+						},
+						"L5": {
+							"text": "P 在卡片上，轻轻说小狗。",
+							"audioText": "P 在卡片上，轻轻说小狗。",
+							"fallbackText": "字母 P",
+							"romanization": "P zai ka pian shang qing qing shuo xiao gou"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-q",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "q"],
+			"visualPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-q.webp",
+				"alt": "letter Q",
+				"generationPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "Q",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-q-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter Q.",
+					"successPhrase": "You found letter Q.",
+					"fallbackText": "Q",
+					"levels": {
+						"L0": {
+							"text": "Q",
+							"audioText": "Q",
+							"fallbackText": "Q"
+						},
+						"L1": {
+							"text": "Q is for quilt.",
+							"audioText": "Q is for quilt.",
+							"fallbackText": "Q"
+						},
+						"L2": {
+							"text": "uppercase Q",
+							"audioText": "uppercase Q",
+							"fallbackText": "Q"
+						},
+						"L3": {
+							"text": "Q starts the word quilt.",
+							"audioText": "Q starts the word quilt.",
+							"fallbackText": "Q"
+						},
+						"L4": {
+							"text": "What letter is this? It is Q.",
+							"audioText": "What letter is this? It is Q.",
+							"fallbackText": "Q"
+						},
+						"L5": {
+							"text": "Q sits on the card and says quilt.",
+							"audioText": "Q sits on the card and says quilt.",
+							"fallbackText": "Q"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 Q。",
+					"successPhrase": "你找到字母 Q 了。",
+					"fallbackText": "字母 Q",
+					"levels": {
+						"L0": {
+							"text": "字母 Q",
+							"romanization": "zi mu Q",
+							"audioText": "字母 Q",
+							"fallbackText": "字母 Q"
+						},
+						"L1": {
+							"text": "Q 代表被子。",
+							"romanization": "Q dai biao bei zi",
+							"audioText": "Q 代表被子。",
+							"fallbackText": "字母 Q"
+						},
+						"L2": {
+							"text": "大写字母 Q",
+							"audioText": "大写字母 Q",
+							"fallbackText": "字母 Q",
+							"romanization": "da xie zi mu Q"
+						},
+						"L3": {
+							"text": "Q 是被子的开头。",
+							"audioText": "Q 是被子的开头。",
+							"fallbackText": "字母 Q",
+							"romanization": "Q shi bei zi de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 Q。",
+							"audioText": "这是什么字母？这是 Q。",
+							"fallbackText": "字母 Q",
+							"romanization": "zhe shi shen me zi mu zhe shi Q"
+						},
+						"L5": {
+							"text": "Q 在卡片上，轻轻说被子。",
+							"audioText": "Q 在卡片上，轻轻说被子。",
+							"fallbackText": "字母 Q",
+							"romanization": "Q zai ka pian shang qing qing shuo bei zi"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-r",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "r"],
+			"visualPrompt": "A large friendly uppercase R letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-r.webp",
+				"alt": "letter R",
+				"generationPrompt": "A large friendly uppercase R letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "R",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-r-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter R.",
+					"successPhrase": "You found letter R.",
+					"fallbackText": "R",
+					"levels": {
+						"L0": {
+							"text": "R",
+							"audioText": "R",
+							"fallbackText": "R"
+						},
+						"L1": {
+							"text": "R is for rainbow.",
+							"audioText": "R is for rainbow.",
+							"fallbackText": "R"
+						},
+						"L2": {
+							"text": "uppercase R",
+							"audioText": "uppercase R",
+							"fallbackText": "R"
+						},
+						"L3": {
+							"text": "R starts the word rainbow.",
+							"audioText": "R starts the word rainbow.",
+							"fallbackText": "R"
+						},
+						"L4": {
+							"text": "What letter is this? It is R.",
+							"audioText": "What letter is this? It is R.",
+							"fallbackText": "R"
+						},
+						"L5": {
+							"text": "R sits on the card and says rainbow.",
+							"audioText": "R sits on the card and says rainbow.",
+							"fallbackText": "R"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 R。",
+					"successPhrase": "你找到字母 R 了。",
+					"fallbackText": "字母 R",
+					"levels": {
+						"L0": {
+							"text": "字母 R",
+							"romanization": "zi mu R",
+							"audioText": "字母 R",
+							"fallbackText": "字母 R"
+						},
+						"L1": {
+							"text": "R 代表彩虹。",
+							"romanization": "R dai biao cai hong",
+							"audioText": "R 代表彩虹。",
+							"fallbackText": "字母 R"
+						},
+						"L2": {
+							"text": "大写字母 R",
+							"audioText": "大写字母 R",
+							"fallbackText": "字母 R",
+							"romanization": "da xie zi mu R"
+						},
+						"L3": {
+							"text": "R 是彩虹的开头。",
+							"audioText": "R 是彩虹的开头。",
+							"fallbackText": "字母 R",
+							"romanization": "R shi cai hong de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 R。",
+							"audioText": "这是什么字母？这是 R。",
+							"fallbackText": "字母 R",
+							"romanization": "zhe shi shen me zi mu zhe shi R"
+						},
+						"L5": {
+							"text": "R 在卡片上，轻轻说彩虹。",
+							"audioText": "R 在卡片上，轻轻说彩虹。",
+							"fallbackText": "字母 R",
+							"romanization": "R zai ka pian shang qing qing shuo cai hong"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-s",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "s"],
+			"visualPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-s.webp",
+				"alt": "letter S",
+				"generationPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "S",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-s-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter S.",
+					"successPhrase": "You found letter S.",
+					"fallbackText": "S",
+					"levels": {
+						"L0": {
+							"text": "S",
+							"audioText": "S",
+							"fallbackText": "S"
+						},
+						"L1": {
+							"text": "S is for sun.",
+							"audioText": "S is for sun.",
+							"fallbackText": "S"
+						},
+						"L2": {
+							"text": "uppercase S",
+							"audioText": "uppercase S",
+							"fallbackText": "S"
+						},
+						"L3": {
+							"text": "S starts the word sun.",
+							"audioText": "S starts the word sun.",
+							"fallbackText": "S"
+						},
+						"L4": {
+							"text": "What letter is this? It is S.",
+							"audioText": "What letter is this? It is S.",
+							"fallbackText": "S"
+						},
+						"L5": {
+							"text": "S sits on the card and says sun.",
+							"audioText": "S sits on the card and says sun.",
+							"fallbackText": "S"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 S。",
+					"successPhrase": "你找到字母 S 了。",
+					"fallbackText": "字母 S",
+					"levels": {
+						"L0": {
+							"text": "字母 S",
+							"romanization": "zi mu S",
+							"audioText": "字母 S",
+							"fallbackText": "字母 S"
+						},
+						"L1": {
+							"text": "S 代表太阳。",
+							"romanization": "S dai biao tai yang",
+							"audioText": "S 代表太阳。",
+							"fallbackText": "字母 S"
+						},
+						"L2": {
+							"text": "大写字母 S",
+							"audioText": "大写字母 S",
+							"fallbackText": "字母 S",
+							"romanization": "da xie zi mu S"
+						},
+						"L3": {
+							"text": "S 是太阳的开头。",
+							"audioText": "S 是太阳的开头。",
+							"fallbackText": "字母 S",
+							"romanization": "S shi tai yang de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 S。",
+							"audioText": "这是什么字母？这是 S。",
+							"fallbackText": "字母 S",
+							"romanization": "zhe shi shen me zi mu zhe shi S"
+						},
+						"L5": {
+							"text": "S 在卡片上，轻轻说太阳。",
+							"audioText": "S 在卡片上，轻轻说太阳。",
+							"fallbackText": "字母 S",
+							"romanization": "S zai ka pian shang qing qing shuo tai yang"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-t",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "t"],
+			"visualPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-t.webp",
+				"alt": "letter T",
+				"generationPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "T",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-t-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter T.",
+					"successPhrase": "You found letter T.",
+					"fallbackText": "T",
+					"levels": {
+						"L0": {
+							"text": "T",
+							"audioText": "T",
+							"fallbackText": "T"
+						},
+						"L1": {
+							"text": "T is for tree.",
+							"audioText": "T is for tree.",
+							"fallbackText": "T"
+						},
+						"L2": {
+							"text": "uppercase T",
+							"audioText": "uppercase T",
+							"fallbackText": "T"
+						},
+						"L3": {
+							"text": "T starts the word tree.",
+							"audioText": "T starts the word tree.",
+							"fallbackText": "T"
+						},
+						"L4": {
+							"text": "What letter is this? It is T.",
+							"audioText": "What letter is this? It is T.",
+							"fallbackText": "T"
+						},
+						"L5": {
+							"text": "T sits on the card and says tree.",
+							"audioText": "T sits on the card and says tree.",
+							"fallbackText": "T"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 T。",
+					"successPhrase": "你找到字母 T 了。",
+					"fallbackText": "字母 T",
+					"levels": {
+						"L0": {
+							"text": "字母 T",
+							"romanization": "zi mu T",
+							"audioText": "字母 T",
+							"fallbackText": "字母 T"
+						},
+						"L1": {
+							"text": "T 代表树。",
+							"romanization": "T dai biao shu",
+							"audioText": "T 代表树。",
+							"fallbackText": "字母 T"
+						},
+						"L2": {
+							"text": "大写字母 T",
+							"audioText": "大写字母 T",
+							"fallbackText": "字母 T",
+							"romanization": "da xie zi mu T"
+						},
+						"L3": {
+							"text": "T 是树的开头。",
+							"audioText": "T 是树的开头。",
+							"fallbackText": "字母 T",
+							"romanization": "T shi shu de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 T。",
+							"audioText": "这是什么字母？这是 T。",
+							"fallbackText": "字母 T",
+							"romanization": "zhe shi shen me zi mu zhe shi T"
+						},
+						"L5": {
+							"text": "T 在卡片上，轻轻说树。",
+							"audioText": "T 在卡片上，轻轻说树。",
+							"fallbackText": "字母 T",
+							"romanization": "T zai ka pian shang qing qing shuo shu"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-u",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "u"],
+			"visualPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-u.webp",
+				"alt": "letter U",
+				"generationPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "U",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-u-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter U.",
+					"successPhrase": "You found letter U.",
+					"fallbackText": "U",
+					"levels": {
+						"L0": {
+							"text": "U",
+							"audioText": "U",
+							"fallbackText": "U"
+						},
+						"L1": {
+							"text": "U is for umbrella.",
+							"audioText": "U is for umbrella.",
+							"fallbackText": "U"
+						},
+						"L2": {
+							"text": "uppercase U",
+							"audioText": "uppercase U",
+							"fallbackText": "U"
+						},
+						"L3": {
+							"text": "U starts the word umbrella.",
+							"audioText": "U starts the word umbrella.",
+							"fallbackText": "U"
+						},
+						"L4": {
+							"text": "What letter is this? It is U.",
+							"audioText": "What letter is this? It is U.",
+							"fallbackText": "U"
+						},
+						"L5": {
+							"text": "U sits on the card and says umbrella.",
+							"audioText": "U sits on the card and says umbrella.",
+							"fallbackText": "U"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 U。",
+					"successPhrase": "你找到字母 U 了。",
+					"fallbackText": "字母 U",
+					"levels": {
+						"L0": {
+							"text": "字母 U",
+							"romanization": "zi mu U",
+							"audioText": "字母 U",
+							"fallbackText": "字母 U"
+						},
+						"L1": {
+							"text": "U 代表雨伞。",
+							"romanization": "U dai biao yu san",
+							"audioText": "U 代表雨伞。",
+							"fallbackText": "字母 U"
+						},
+						"L2": {
+							"text": "大写字母 U",
+							"audioText": "大写字母 U",
+							"fallbackText": "字母 U",
+							"romanization": "da xie zi mu U"
+						},
+						"L3": {
+							"text": "U 是雨伞的开头。",
+							"audioText": "U 是雨伞的开头。",
+							"fallbackText": "字母 U",
+							"romanization": "U shi yu san de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 U。",
+							"audioText": "这是什么字母？这是 U。",
+							"fallbackText": "字母 U",
+							"romanization": "zhe shi shen me zi mu zhe shi U"
+						},
+						"L5": {
+							"text": "U 在卡片上，轻轻说雨伞。",
+							"audioText": "U 在卡片上，轻轻说雨伞。",
+							"fallbackText": "字母 U",
+							"romanization": "U zai ka pian shang qing qing shuo yu san"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-v",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "v"],
+			"visualPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-v.webp",
+				"alt": "letter V",
+				"generationPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "V",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-v-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter V.",
+					"successPhrase": "You found letter V.",
+					"fallbackText": "V",
+					"levels": {
+						"L0": {
+							"text": "V",
+							"audioText": "V",
+							"fallbackText": "V"
+						},
+						"L1": {
+							"text": "V is for violin.",
+							"audioText": "V is for violin.",
+							"fallbackText": "V"
+						},
+						"L2": {
+							"text": "uppercase V",
+							"audioText": "uppercase V",
+							"fallbackText": "V"
+						},
+						"L3": {
+							"text": "V starts the word violin.",
+							"audioText": "V starts the word violin.",
+							"fallbackText": "V"
+						},
+						"L4": {
+							"text": "What letter is this? It is V.",
+							"audioText": "What letter is this? It is V.",
+							"fallbackText": "V"
+						},
+						"L5": {
+							"text": "V sits on the card and says violin.",
+							"audioText": "V sits on the card and says violin.",
+							"fallbackText": "V"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 V。",
+					"successPhrase": "你找到字母 V 了。",
+					"fallbackText": "字母 V",
+					"levels": {
+						"L0": {
+							"text": "字母 V",
+							"romanization": "zi mu V",
+							"audioText": "字母 V",
+							"fallbackText": "字母 V"
+						},
+						"L1": {
+							"text": "V 代表小提琴。",
+							"romanization": "V dai biao xiao ti qin",
+							"audioText": "V 代表小提琴。",
+							"fallbackText": "字母 V"
+						},
+						"L2": {
+							"text": "大写字母 V",
+							"audioText": "大写字母 V",
+							"fallbackText": "字母 V",
+							"romanization": "da xie zi mu V"
+						},
+						"L3": {
+							"text": "V 是小提琴的开头。",
+							"audioText": "V 是小提琴的开头。",
+							"fallbackText": "字母 V",
+							"romanization": "V shi xiao ti qin de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 V。",
+							"audioText": "这是什么字母？这是 V。",
+							"fallbackText": "字母 V",
+							"romanization": "zhe shi shen me zi mu zhe shi V"
+						},
+						"L5": {
+							"text": "V 在卡片上，轻轻说小提琴。",
+							"audioText": "V 在卡片上，轻轻说小提琴。",
+							"fallbackText": "字母 V",
+							"romanization": "V zai ka pian shang qing qing shuo xiao ti qin"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-w",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "w"],
+			"visualPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-w.webp",
+				"alt": "letter W",
+				"generationPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "W",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-w-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter W.",
+					"successPhrase": "You found letter W.",
+					"fallbackText": "W",
+					"levels": {
+						"L0": {
+							"text": "W",
+							"audioText": "W",
+							"fallbackText": "W"
+						},
+						"L1": {
+							"text": "W is for whale.",
+							"audioText": "W is for whale.",
+							"fallbackText": "W"
+						},
+						"L2": {
+							"text": "uppercase W",
+							"audioText": "uppercase W",
+							"fallbackText": "W"
+						},
+						"L3": {
+							"text": "W starts the word whale.",
+							"audioText": "W starts the word whale.",
+							"fallbackText": "W"
+						},
+						"L4": {
+							"text": "What letter is this? It is W.",
+							"audioText": "What letter is this? It is W.",
+							"fallbackText": "W"
+						},
+						"L5": {
+							"text": "W sits on the card and says whale.",
+							"audioText": "W sits on the card and says whale.",
+							"fallbackText": "W"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 W。",
+					"successPhrase": "你找到字母 W 了。",
+					"fallbackText": "字母 W",
+					"levels": {
+						"L0": {
+							"text": "字母 W",
+							"romanization": "zi mu W",
+							"audioText": "字母 W",
+							"fallbackText": "字母 W"
+						},
+						"L1": {
+							"text": "W 代表鲸鱼。",
+							"romanization": "W dai biao jing yu",
+							"audioText": "W 代表鲸鱼。",
+							"fallbackText": "字母 W"
+						},
+						"L2": {
+							"text": "大写字母 W",
+							"audioText": "大写字母 W",
+							"fallbackText": "字母 W",
+							"romanization": "da xie zi mu W"
+						},
+						"L3": {
+							"text": "W 是鲸鱼的开头。",
+							"audioText": "W 是鲸鱼的开头。",
+							"fallbackText": "字母 W",
+							"romanization": "W shi jing yu de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 W。",
+							"audioText": "这是什么字母？这是 W。",
+							"fallbackText": "字母 W",
+							"romanization": "zhe shi shen me zi mu zhe shi W"
+						},
+						"L5": {
+							"text": "W 在卡片上，轻轻说鲸鱼。",
+							"audioText": "W 在卡片上，轻轻说鲸鱼。",
+							"fallbackText": "字母 W",
+							"romanization": "W zai ka pian shang qing qing shuo jing yu"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-x",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "x"],
+			"visualPrompt": "A large friendly uppercase X letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-x.webp",
+				"alt": "letter X",
+				"generationPrompt": "A large friendly uppercase X letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "X",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-x-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter X.",
+					"successPhrase": "You found letter X.",
+					"fallbackText": "X",
+					"levels": {
+						"L0": {
+							"text": "X",
+							"audioText": "X",
+							"fallbackText": "X"
+						},
+						"L1": {
+							"text": "X is for xylophone.",
+							"audioText": "X is for xylophone.",
+							"fallbackText": "X"
+						},
+						"L2": {
+							"text": "uppercase X",
+							"audioText": "uppercase X",
+							"fallbackText": "X"
+						},
+						"L3": {
+							"text": "X starts the word xylophone.",
+							"audioText": "X starts the word xylophone.",
+							"fallbackText": "X"
+						},
+						"L4": {
+							"text": "What letter is this? It is X.",
+							"audioText": "What letter is this? It is X.",
+							"fallbackText": "X"
+						},
+						"L5": {
+							"text": "X sits on the card and says xylophone.",
+							"audioText": "X sits on the card and says xylophone.",
+							"fallbackText": "X"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 X。",
+					"successPhrase": "你找到字母 X 了。",
+					"fallbackText": "字母 X",
+					"levels": {
+						"L0": {
+							"text": "字母 X",
+							"romanization": "zi mu X",
+							"audioText": "字母 X",
+							"fallbackText": "字母 X"
+						},
+						"L1": {
+							"text": "X 代表木琴。",
+							"romanization": "X dai biao mu qin",
+							"audioText": "X 代表木琴。",
+							"fallbackText": "字母 X"
+						},
+						"L2": {
+							"text": "大写字母 X",
+							"audioText": "大写字母 X",
+							"fallbackText": "字母 X",
+							"romanization": "da xie zi mu X"
+						},
+						"L3": {
+							"text": "X 是木琴的开头。",
+							"audioText": "X 是木琴的开头。",
+							"fallbackText": "字母 X",
+							"romanization": "X shi mu qin de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 X。",
+							"audioText": "这是什么字母？这是 X。",
+							"fallbackText": "字母 X",
+							"romanization": "zhe shi shen me zi mu zhe shi X"
+						},
+						"L5": {
+							"text": "X 在卡片上，轻轻说木琴。",
+							"audioText": "X 在卡片上，轻轻说木琴。",
+							"fallbackText": "字母 X",
+							"romanization": "X zai ka pian shang qing qing shuo mu qin"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-y",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "y"],
+			"visualPrompt": "A large friendly uppercase Y letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-y.webp",
+				"alt": "letter Y",
+				"generationPrompt": "A large friendly uppercase Y letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "Y",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-y-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter Y.",
+					"successPhrase": "You found letter Y.",
+					"fallbackText": "Y",
+					"levels": {
+						"L0": {
+							"text": "Y",
+							"audioText": "Y",
+							"fallbackText": "Y"
+						},
+						"L1": {
+							"text": "Y is for yo-yo.",
+							"audioText": "Y is for yo-yo.",
+							"fallbackText": "Y"
+						},
+						"L2": {
+							"text": "uppercase Y",
+							"audioText": "uppercase Y",
+							"fallbackText": "Y"
+						},
+						"L3": {
+							"text": "Y starts the word yo-yo.",
+							"audioText": "Y starts the word yo-yo.",
+							"fallbackText": "Y"
+						},
+						"L4": {
+							"text": "What letter is this? It is Y.",
+							"audioText": "What letter is this? It is Y.",
+							"fallbackText": "Y"
+						},
+						"L5": {
+							"text": "Y sits on the card and says yo-yo.",
+							"audioText": "Y sits on the card and says yo-yo.",
+							"fallbackText": "Y"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 Y。",
+					"successPhrase": "你找到字母 Y 了。",
+					"fallbackText": "字母 Y",
+					"levels": {
+						"L0": {
+							"text": "字母 Y",
+							"romanization": "zi mu Y",
+							"audioText": "字母 Y",
+							"fallbackText": "字母 Y"
+						},
+						"L1": {
+							"text": "Y 代表溜溜球。",
+							"romanization": "Y dai biao liu liu qiu",
+							"audioText": "Y 代表溜溜球。",
+							"fallbackText": "字母 Y"
+						},
+						"L2": {
+							"text": "大写字母 Y",
+							"audioText": "大写字母 Y",
+							"fallbackText": "字母 Y",
+							"romanization": "da xie zi mu Y"
+						},
+						"L3": {
+							"text": "Y 是溜溜球的开头。",
+							"audioText": "Y 是溜溜球的开头。",
+							"fallbackText": "字母 Y",
+							"romanization": "Y shi liu liu qiu de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 Y。",
+							"audioText": "这是什么字母？这是 Y。",
+							"fallbackText": "字母 Y",
+							"romanization": "zhe shi shen me zi mu zhe shi Y"
+						},
+						"L5": {
+							"text": "Y 在卡片上，轻轻说溜溜球。",
+							"audioText": "Y 在卡片上，轻轻说溜溜球。",
+							"fallbackText": "字母 Y",
+							"romanization": "Y zai ka pian shang qing qing shuo liu liu qiu"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "letter-z",
+			"category": "letter",
+			"tags": ["letter", "alphabet", "uppercase", "z"],
+			"visualPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-z.webp",
+				"alt": "letter Z",
+				"generationPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "Z",
+					"emoji": "🔤"
+				}
+			},
+			"interaction": {
+				"id": "letter-z-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find letter Z.",
+					"successPhrase": "You found letter Z.",
+					"fallbackText": "Z",
+					"levels": {
+						"L0": {
+							"text": "Z",
+							"audioText": "Z",
+							"fallbackText": "Z"
+						},
+						"L1": {
+							"text": "Z is for zebra.",
+							"audioText": "Z is for zebra.",
+							"fallbackText": "Z"
+						},
+						"L2": {
+							"text": "uppercase Z",
+							"audioText": "uppercase Z",
+							"fallbackText": "Z"
+						},
+						"L3": {
+							"text": "Z starts the word zebra.",
+							"audioText": "Z starts the word zebra.",
+							"fallbackText": "Z"
+						},
+						"L4": {
+							"text": "What letter is this? It is Z.",
+							"audioText": "What letter is this? It is Z.",
+							"fallbackText": "Z"
+						},
+						"L5": {
+							"text": "Z sits on the card and says zebra.",
+							"audioText": "Z sits on the card and says zebra.",
+							"fallbackText": "Z"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找字母 Z。",
+					"successPhrase": "你找到字母 Z 了。",
+					"fallbackText": "字母 Z",
+					"levels": {
+						"L0": {
+							"text": "字母 Z",
+							"romanization": "zi mu Z",
+							"audioText": "字母 Z",
+							"fallbackText": "字母 Z"
+						},
+						"L1": {
+							"text": "Z 代表斑马。",
+							"romanization": "Z dai biao ban ma",
+							"audioText": "Z 代表斑马。",
+							"fallbackText": "字母 Z"
+						},
+						"L2": {
+							"text": "大写字母 Z",
+							"audioText": "大写字母 Z",
+							"fallbackText": "字母 Z",
+							"romanization": "da xie zi mu Z"
+						},
+						"L3": {
+							"text": "Z 是斑马的开头。",
+							"audioText": "Z 是斑马的开头。",
+							"fallbackText": "字母 Z",
+							"romanization": "Z shi ban ma de kai tou"
+						},
+						"L4": {
+							"text": "这是什么字母？这是 Z。",
+							"audioText": "这是什么字母？这是 Z。",
+							"fallbackText": "字母 Z",
+							"romanization": "zhe shi shen me zi mu zhe shi Z"
+						},
+						"L5": {
+							"text": "Z 在卡片上，轻轻说斑马。",
+							"audioText": "Z 在卡片上，轻轻说斑马。",
+							"fallbackText": "字母 Z",
+							"romanization": "Z zai ka pian shang qing qing shuo ban ma"
+						}
+					}
+				}
+			}
+		}
+	]
+}

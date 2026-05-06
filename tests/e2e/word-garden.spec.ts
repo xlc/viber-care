@@ -60,6 +60,34 @@ test('settings panel can switch to the ocean animals pack', async ({
 	await expect(page.getByTestId('word-tray')).toContainText('鲸鱼')
 })
 
+test('settings panel can switch to numbers and English alphabet packs', async ({
+	page,
+}) => {
+	await page.goto('/')
+	await page.getByTestId('mute-button').click()
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('pack-numbers').click()
+	await page.getByLabel('Close settings').click()
+
+	await expect(page.getByText('Number Meadow')).toBeVisible()
+	await expect(page.getByTestId('object-number-one')).toBeVisible()
+	await expect(page.locator('.garden-object')).toHaveCount(10)
+	await page.getByTestId('object-number-one').click()
+	await expect(page.getByTestId('word-tray')).toContainText('one')
+	await expect(page.getByTestId('word-tray')).toContainText('一')
+
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('pack-english-alphabet').click()
+	await page.getByLabel('Close settings').click()
+
+	await expect(page.getByText('Alphabet Park')).toBeVisible()
+	await expect(page.getByTestId('object-letter-z')).toBeVisible()
+	await expect(page.locator('.garden-object')).toHaveCount(26)
+	await page.getByTestId('object-letter-z').click()
+	await expect(page.getByTestId('word-tray')).toContainText('Z')
+	await expect(page.getByTestId('word-tray')).toContainText('字母 Z')
+})
+
 test('runtime makes no calls to OpenAI or AI endpoints', async ({ page }) => {
 	const forbiddenRequests: string[] = []
 	const publicJsonRequests: string[] = []

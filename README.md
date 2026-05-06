@@ -1,6 +1,6 @@
 # Word Garden
 
-Word Garden is a static PWA game for toddlers to learn objects and words in gentle bilingual scenes. The MVP supports English and Simplified Chinese, Explore mode, Find mode, a Story-mode placeholder, garden and ocean packs, and runtime fallbacks for L2-L5.
+Word Garden is a static PWA game for toddlers to learn objects and words in gentle bilingual scenes. The MVP supports English and Simplified Chinese, Explore mode, Find mode, a Story-mode placeholder, garden, ocean, dinosaur, numbers, and English alphabet packs, and runtime fallbacks for L2-L5.
 
 ## Commands
 
@@ -47,8 +47,9 @@ The engine does not need code changes for new objects, scenes, packs, language c
 
 ## Assets
 
-This repository currently bundles static SVG and WAV placeholder assets. Content
-and asset generation is handled by the local authoring skill:
+This repository bundles committed static raster images for content packs and
+static audio targets. Content and asset generation is handled by the local
+authoring skill:
 
 ```txt
 .agents/skills/content-generation/SKILL.md
@@ -56,8 +57,9 @@ and asset generation is handled by the local authoring skill:
 
 For production art, generate and review image/audio assets locally or in a secure
 CI job, place the static files under `public/assets/`, update the pack asset
-paths if needed, then commit the bundled assets. The static runtime does not
-need any secret or network access.
+paths if needed, then commit the bundled assets. Content image references should
+stay under `public/assets/generated/imagegen/`. The static runtime does not need
+any secret or network access.
 
 Review assets before deployment:
 
@@ -121,4 +123,7 @@ bun run deploy:pages
 - L4: question/answer
 - L5: mini story or guided sequence
 
-The garden pack has real L0 and L1 text/audio targets for English and Simplified Chinese. L2-L5 are supported by schema and runtime fallback behavior.
+Every committed content pack includes English and Simplified Chinese L0-L5 text
+for each object. L0-L1 keep bundled audio targets where production audio exists;
+higher levels use the runtime's soft speech synthesis until matching static
+audio clips are added.

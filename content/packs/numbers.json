@@ -1,0 +1,1170 @@
+{
+	"id": "numbers",
+	"version": "1.0.0",
+	"title": {
+		"en": "Numbers",
+		"zh-Hans": "数字乐园"
+	},
+	"languages": ["en", "zh-Hans"],
+	"defaultSceneId": "number-meadow",
+	"scenes": [
+		{
+			"id": "number-meadow",
+			"packId": "numbers",
+			"title": {
+				"en": "Number Meadow",
+				"zh-Hans": "数字草地"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly meadow with soft green hills, gentle clouds, a quiet path, and open space for number cards. No text, no clutter, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/numbers/number-meadow.webp",
+					"alt": "A calm number meadow",
+					"generationPrompt": "A calm toddler-friendly meadow with soft green hills, gentle clouds, a quiet path, and open space for number cards. No text, no clutter, static PWA game background.",
+					"placeholder": {
+						"label": "Number Meadow",
+						"emoji": "🌿"
+					}
+				}
+			},
+			"objects": [
+				{
+					"objectId": "number-one",
+					"x": 18,
+					"y": 22,
+					"scale": 0.68,
+					"zIndex": 2
+				},
+				{
+					"objectId": "number-two",
+					"x": 50,
+					"y": 22,
+					"scale": 0.68,
+					"zIndex": 3
+				},
+				{
+					"objectId": "number-three",
+					"x": 82,
+					"y": 22,
+					"scale": 0.68,
+					"zIndex": 4
+				},
+				{
+					"objectId": "number-four",
+					"x": 18,
+					"y": 44,
+					"scale": 0.68,
+					"zIndex": 5
+				},
+				{
+					"objectId": "number-five",
+					"x": 50,
+					"y": 44,
+					"scale": 0.68,
+					"zIndex": 6
+				},
+				{
+					"objectId": "number-six",
+					"x": 82,
+					"y": 44,
+					"scale": 0.68,
+					"zIndex": 7
+				},
+				{
+					"objectId": "number-seven",
+					"x": 18,
+					"y": 66,
+					"scale": 0.68,
+					"zIndex": 8
+				},
+				{
+					"objectId": "number-eight",
+					"x": 50,
+					"y": 66,
+					"scale": 0.68,
+					"zIndex": 9
+				},
+				{
+					"objectId": "number-nine",
+					"x": 82,
+					"y": 66,
+					"scale": 0.68,
+					"zIndex": 10
+				},
+				{
+					"objectId": "number-ten",
+					"x": 50,
+					"y": 86,
+					"scale": 0.68,
+					"zIndex": 11
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		}
+	],
+	"objects": [
+		{
+			"id": "number-one",
+			"category": "number",
+			"tags": ["number", "counting", "one"],
+			"visualPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-one.webp",
+				"alt": "number one",
+				"generationPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "one",
+					"emoji": "1️⃣"
+				}
+			},
+			"interaction": {
+				"id": "number-one-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number one.",
+					"successPhrase": "You found number one.",
+					"fallbackText": "one",
+					"levels": {
+						"L0": {
+							"text": "one",
+							"audioText": "one",
+							"fallbackText": "one"
+						},
+						"L1": {
+							"text": "Number one.",
+							"audioText": "Number one.",
+							"fallbackText": "one"
+						},
+						"L2": {
+							"text": "count to one",
+							"audioText": "count to one",
+							"fallbackText": "one"
+						},
+						"L3": {
+							"text": "One little dot is here.",
+							"audioText": "One little dot is here.",
+							"fallbackText": "one"
+						},
+						"L4": {
+							"text": "What number is this? It is one.",
+							"audioText": "What number is this? It is one.",
+							"fallbackText": "one"
+						},
+						"L5": {
+							"text": "The number one card hops softly in the number meadow.",
+							"audioText": "The number one card hops softly in the number meadow.",
+							"fallbackText": "one"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字一。",
+					"successPhrase": "你找到数字一了。",
+					"fallbackText": "一",
+					"levels": {
+						"L0": {
+							"text": "一",
+							"romanization": "yi",
+							"audioText": "一",
+							"fallbackText": "一"
+						},
+						"L1": {
+							"text": "数字一。",
+							"romanization": "shu zi yi",
+							"audioText": "数字一。",
+							"fallbackText": "一"
+						},
+						"L2": {
+							"text": "数到一",
+							"audioText": "数到一",
+							"fallbackText": "一",
+							"romanization": "shu dao yi"
+						},
+						"L3": {
+							"text": "这里有一个小点。",
+							"audioText": "这里有一个小点。",
+							"fallbackText": "一",
+							"romanization": "zhe li you yi ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是一。",
+							"audioText": "这是几？这是一。",
+							"fallbackText": "一",
+							"romanization": "zhe shi ji zhe shi yi"
+						},
+						"L5": {
+							"text": "一号卡片在数字草地上轻轻跳。",
+							"audioText": "一号卡片在数字草地上轻轻跳。",
+							"fallbackText": "一",
+							"romanization": "yi hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "number-two",
+			"category": "number",
+			"tags": ["number", "counting", "two"],
+			"visualPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-two.webp",
+				"alt": "number two",
+				"generationPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "two",
+					"emoji": "2️⃣"
+				}
+			},
+			"interaction": {
+				"id": "number-two-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number two.",
+					"successPhrase": "You found number two.",
+					"fallbackText": "two",
+					"levels": {
+						"L0": {
+							"text": "two",
+							"audioText": "two",
+							"fallbackText": "two"
+						},
+						"L1": {
+							"text": "Number two.",
+							"audioText": "Number two.",
+							"fallbackText": "two"
+						},
+						"L2": {
+							"text": "count to two",
+							"audioText": "count to two",
+							"fallbackText": "two"
+						},
+						"L3": {
+							"text": "Two little dots are here.",
+							"audioText": "Two little dots are here.",
+							"fallbackText": "two"
+						},
+						"L4": {
+							"text": "What number is this? It is two.",
+							"audioText": "What number is this? It is two.",
+							"fallbackText": "two"
+						},
+						"L5": {
+							"text": "The number two card hops softly in the number meadow.",
+							"audioText": "The number two card hops softly in the number meadow.",
+							"fallbackText": "two"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字二。",
+					"successPhrase": "你找到数字二了。",
+					"fallbackText": "二",
+					"levels": {
+						"L0": {
+							"text": "二",
+							"romanization": "er",
+							"audioText": "二",
+							"fallbackText": "二"
+						},
+						"L1": {
+							"text": "数字二。",
+							"romanization": "shu zi er",
+							"audioText": "数字二。",
+							"fallbackText": "二"
+						},
+						"L2": {
+							"text": "数到二",
+							"audioText": "数到二",
+							"fallbackText": "二",
+							"romanization": "shu dao er"
+						},
+						"L3": {
+							"text": "这里有两个小点。",
+							"audioText": "这里有两个小点。",
+							"fallbackText": "二",
+							"romanization": "zhe li you liang ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是二。",
+							"audioText": "这是几？这是二。",
+							"fallbackText": "二",
+							"romanization": "zhe shi ji zhe shi er"
+						},
+						"L5": {
+							"text": "二号卡片在数字草地上轻轻跳。",
+							"audioText": "二号卡片在数字草地上轻轻跳。",
+							"fallbackText": "二",
+							"romanization": "er hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "number-three",
+			"category": "number",
+			"tags": ["number", "counting", "three"],
+			"visualPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-three.webp",
+				"alt": "number three",
+				"generationPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "three",
+					"emoji": "3️⃣"
+				}
+			},
+			"interaction": {
+				"id": "number-three-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number three.",
+					"successPhrase": "You found number three.",
+					"fallbackText": "three",
+					"levels": {
+						"L0": {
+							"text": "three",
+							"audioText": "three",
+							"fallbackText": "three"
+						},
+						"L1": {
+							"text": "Number three.",
+							"audioText": "Number three.",
+							"fallbackText": "three"
+						},
+						"L2": {
+							"text": "count to three",
+							"audioText": "count to three",
+							"fallbackText": "three"
+						},
+						"L3": {
+							"text": "Three little dots are here.",
+							"audioText": "Three little dots are here.",
+							"fallbackText": "three"
+						},
+						"L4": {
+							"text": "What number is this? It is three.",
+							"audioText": "What number is this? It is three.",
+							"fallbackText": "three"
+						},
+						"L5": {
+							"text": "The number three card hops softly in the number meadow.",
+							"audioText": "The number three card hops softly in the number meadow.",
+							"fallbackText": "three"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字三。",
+					"successPhrase": "你找到数字三了。",
+					"fallbackText": "三",
+					"levels": {
+						"L0": {
+							"text": "三",
+							"romanization": "san",
+							"audioText": "三",
+							"fallbackText": "三"
+						},
+						"L1": {
+							"text": "数字三。",
+							"romanization": "shu zi san",
+							"audioText": "数字三。",
+							"fallbackText": "三"
+						},
+						"L2": {
+							"text": "数到三",
+							"audioText": "数到三",
+							"fallbackText": "三",
+							"romanization": "shu dao san"
+						},
+						"L3": {
+							"text": "这里有三个小点。",
+							"audioText": "这里有三个小点。",
+							"fallbackText": "三",
+							"romanization": "zhe li you san ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是三。",
+							"audioText": "这是几？这是三。",
+							"fallbackText": "三",
+							"romanization": "zhe shi ji zhe shi san"
+						},
+						"L5": {
+							"text": "三号卡片在数字草地上轻轻跳。",
+							"audioText": "三号卡片在数字草地上轻轻跳。",
+							"fallbackText": "三",
+							"romanization": "san hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "number-four",
+			"category": "number",
+			"tags": ["number", "counting", "four"],
+			"visualPrompt": "A large friendly number four on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-four.webp",
+				"alt": "number four",
+				"generationPrompt": "A large friendly number four on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "four",
+					"emoji": "4️⃣"
+				}
+			},
+			"interaction": {
+				"id": "number-four-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number four.",
+					"successPhrase": "You found number four.",
+					"fallbackText": "four",
+					"levels": {
+						"L0": {
+							"text": "four",
+							"audioText": "four",
+							"fallbackText": "four"
+						},
+						"L1": {
+							"text": "Number four.",
+							"audioText": "Number four.",
+							"fallbackText": "four"
+						},
+						"L2": {
+							"text": "count to four",
+							"audioText": "count to four",
+							"fallbackText": "four"
+						},
+						"L3": {
+							"text": "Four little dots are here.",
+							"audioText": "Four little dots are here.",
+							"fallbackText": "four"
+						},
+						"L4": {
+							"text": "What number is this? It is four.",
+							"audioText": "What number is this? It is four.",
+							"fallbackText": "four"
+						},
+						"L5": {
+							"text": "The number four card hops softly in the number meadow.",
+							"audioText": "The number four card hops softly in the number meadow.",
+							"fallbackText": "four"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字四。",
+					"successPhrase": "你找到数字四了。",
+					"fallbackText": "四",
+					"levels": {
+						"L0": {
+							"text": "四",
+							"romanization": "si",
+							"audioText": "四",
+							"fallbackText": "四"
+						},
+						"L1": {
+							"text": "数字四。",
+							"romanization": "shu zi si",
+							"audioText": "数字四。",
+							"fallbackText": "四"
+						},
+						"L2": {
+							"text": "数到四",
+							"audioText": "数到四",
+							"fallbackText": "四",
+							"romanization": "shu dao si"
+						},
+						"L3": {
+							"text": "这里有四个小点。",
+							"audioText": "这里有四个小点。",
+							"fallbackText": "四",
+							"romanization": "zhe li you si ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是四。",
+							"audioText": "这是几？这是四。",
+							"fallbackText": "四",
+							"romanization": "zhe shi ji zhe shi si"
+						},
+						"L5": {
+							"text": "四号卡片在数字草地上轻轻跳。",
+							"audioText": "四号卡片在数字草地上轻轻跳。",
+							"fallbackText": "四",
+							"romanization": "si hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "number-five",
+			"category": "number",
+			"tags": ["number", "counting", "five"],
+			"visualPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-five.webp",
+				"alt": "number five",
+				"generationPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "five",
+					"emoji": "5️⃣"
+				}
+			},
+			"interaction": {
+				"id": "number-five-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number five.",
+					"successPhrase": "You found number five.",
+					"fallbackText": "five",
+					"levels": {
+						"L0": {
+							"text": "five",
+							"audioText": "five",
+							"fallbackText": "five"
+						},
+						"L1": {
+							"text": "Number five.",
+							"audioText": "Number five.",
+							"fallbackText": "five"
+						},
+						"L2": {
+							"text": "count to five",
+							"audioText": "count to five",
+							"fallbackText": "five"
+						},
+						"L3": {
+							"text": "Five little dots are here.",
+							"audioText": "Five little dots are here.",
+							"fallbackText": "five"
+						},
+						"L4": {
+							"text": "What number is this? It is five.",
+							"audioText": "What number is this? It is five.",
+							"fallbackText": "five"
+						},
+						"L5": {
+							"text": "The number five card hops softly in the number meadow.",
+							"audioText": "The number five card hops softly in the number meadow.",
+							"fallbackText": "five"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字五。",
+					"successPhrase": "你找到数字五了。",
+					"fallbackText": "五",
+					"levels": {
+						"L0": {
+							"text": "五",
+							"romanization": "wu",
+							"audioText": "五",
+							"fallbackText": "五"
+						},
+						"L1": {
+							"text": "数字五。",
+							"romanization": "shu zi wu",
+							"audioText": "数字五。",
+							"fallbackText": "五"
+						},
+						"L2": {
+							"text": "数到五",
+							"audioText": "数到五",
+							"fallbackText": "五",
+							"romanization": "shu dao wu"
+						},
+						"L3": {
+							"text": "这里有五个小点。",
+							"audioText": "这里有五个小点。",
+							"fallbackText": "五",
+							"romanization": "zhe li you wu ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是五。",
+							"audioText": "这是几？这是五。",
+							"fallbackText": "五",
+							"romanization": "zhe shi ji zhe shi wu"
+						},
+						"L5": {
+							"text": "五号卡片在数字草地上轻轻跳。",
+							"audioText": "五号卡片在数字草地上轻轻跳。",
+							"fallbackText": "五",
+							"romanization": "wu hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "number-six",
+			"category": "number",
+			"tags": ["number", "counting", "six"],
+			"visualPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-six.webp",
+				"alt": "number six",
+				"generationPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "six",
+					"emoji": "6️⃣"
+				}
+			},
+			"interaction": {
+				"id": "number-six-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number six.",
+					"successPhrase": "You found number six.",
+					"fallbackText": "six",
+					"levels": {
+						"L0": {
+							"text": "six",
+							"audioText": "six",
+							"fallbackText": "six"
+						},
+						"L1": {
+							"text": "Number six.",
+							"audioText": "Number six.",
+							"fallbackText": "six"
+						},
+						"L2": {
+							"text": "count to six",
+							"audioText": "count to six",
+							"fallbackText": "six"
+						},
+						"L3": {
+							"text": "Six little dots are here.",
+							"audioText": "Six little dots are here.",
+							"fallbackText": "six"
+						},
+						"L4": {
+							"text": "What number is this? It is six.",
+							"audioText": "What number is this? It is six.",
+							"fallbackText": "six"
+						},
+						"L5": {
+							"text": "The number six card hops softly in the number meadow.",
+							"audioText": "The number six card hops softly in the number meadow.",
+							"fallbackText": "six"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字六。",
+					"successPhrase": "你找到数字六了。",
+					"fallbackText": "六",
+					"levels": {
+						"L0": {
+							"text": "六",
+							"romanization": "liu",
+							"audioText": "六",
+							"fallbackText": "六"
+						},
+						"L1": {
+							"text": "数字六。",
+							"romanization": "shu zi liu",
+							"audioText": "数字六。",
+							"fallbackText": "六"
+						},
+						"L2": {
+							"text": "数到六",
+							"audioText": "数到六",
+							"fallbackText": "六",
+							"romanization": "shu dao liu"
+						},
+						"L3": {
+							"text": "这里有六个小点。",
+							"audioText": "这里有六个小点。",
+							"fallbackText": "六",
+							"romanization": "zhe li you liu ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是六。",
+							"audioText": "这是几？这是六。",
+							"fallbackText": "六",
+							"romanization": "zhe shi ji zhe shi liu"
+						},
+						"L5": {
+							"text": "六号卡片在数字草地上轻轻跳。",
+							"audioText": "六号卡片在数字草地上轻轻跳。",
+							"fallbackText": "六",
+							"romanization": "liu hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "number-seven",
+			"category": "number",
+			"tags": ["number", "counting", "seven"],
+			"visualPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-seven.webp",
+				"alt": "number seven",
+				"generationPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "seven",
+					"emoji": "7️⃣"
+				}
+			},
+			"interaction": {
+				"id": "number-seven-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number seven.",
+					"successPhrase": "You found number seven.",
+					"fallbackText": "seven",
+					"levels": {
+						"L0": {
+							"text": "seven",
+							"audioText": "seven",
+							"fallbackText": "seven"
+						},
+						"L1": {
+							"text": "Number seven.",
+							"audioText": "Number seven.",
+							"fallbackText": "seven"
+						},
+						"L2": {
+							"text": "count to seven",
+							"audioText": "count to seven",
+							"fallbackText": "seven"
+						},
+						"L3": {
+							"text": "Seven little dots are here.",
+							"audioText": "Seven little dots are here.",
+							"fallbackText": "seven"
+						},
+						"L4": {
+							"text": "What number is this? It is seven.",
+							"audioText": "What number is this? It is seven.",
+							"fallbackText": "seven"
+						},
+						"L5": {
+							"text": "The number seven card hops softly in the number meadow.",
+							"audioText": "The number seven card hops softly in the number meadow.",
+							"fallbackText": "seven"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字七。",
+					"successPhrase": "你找到数字七了。",
+					"fallbackText": "七",
+					"levels": {
+						"L0": {
+							"text": "七",
+							"romanization": "qi",
+							"audioText": "七",
+							"fallbackText": "七"
+						},
+						"L1": {
+							"text": "数字七。",
+							"romanization": "shu zi qi",
+							"audioText": "数字七。",
+							"fallbackText": "七"
+						},
+						"L2": {
+							"text": "数到七",
+							"audioText": "数到七",
+							"fallbackText": "七",
+							"romanization": "shu dao qi"
+						},
+						"L3": {
+							"text": "这里有七个小点。",
+							"audioText": "这里有七个小点。",
+							"fallbackText": "七",
+							"romanization": "zhe li you qi ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是七。",
+							"audioText": "这是几？这是七。",
+							"fallbackText": "七",
+							"romanization": "zhe shi ji zhe shi qi"
+						},
+						"L5": {
+							"text": "七号卡片在数字草地上轻轻跳。",
+							"audioText": "七号卡片在数字草地上轻轻跳。",
+							"fallbackText": "七",
+							"romanization": "qi hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "number-eight",
+			"category": "number",
+			"tags": ["number", "counting", "eight"],
+			"visualPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-eight.webp",
+				"alt": "number eight",
+				"generationPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "eight",
+					"emoji": "8️⃣"
+				}
+			},
+			"interaction": {
+				"id": "number-eight-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number eight.",
+					"successPhrase": "You found number eight.",
+					"fallbackText": "eight",
+					"levels": {
+						"L0": {
+							"text": "eight",
+							"audioText": "eight",
+							"fallbackText": "eight"
+						},
+						"L1": {
+							"text": "Number eight.",
+							"audioText": "Number eight.",
+							"fallbackText": "eight"
+						},
+						"L2": {
+							"text": "count to eight",
+							"audioText": "count to eight",
+							"fallbackText": "eight"
+						},
+						"L3": {
+							"text": "Eight little dots are here.",
+							"audioText": "Eight little dots are here.",
+							"fallbackText": "eight"
+						},
+						"L4": {
+							"text": "What number is this? It is eight.",
+							"audioText": "What number is this? It is eight.",
+							"fallbackText": "eight"
+						},
+						"L5": {
+							"text": "The number eight card hops softly in the number meadow.",
+							"audioText": "The number eight card hops softly in the number meadow.",
+							"fallbackText": "eight"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字八。",
+					"successPhrase": "你找到数字八了。",
+					"fallbackText": "八",
+					"levels": {
+						"L0": {
+							"text": "八",
+							"romanization": "ba",
+							"audioText": "八",
+							"fallbackText": "八"
+						},
+						"L1": {
+							"text": "数字八。",
+							"romanization": "shu zi ba",
+							"audioText": "数字八。",
+							"fallbackText": "八"
+						},
+						"L2": {
+							"text": "数到八",
+							"audioText": "数到八",
+							"fallbackText": "八",
+							"romanization": "shu dao ba"
+						},
+						"L3": {
+							"text": "这里有八个小点。",
+							"audioText": "这里有八个小点。",
+							"fallbackText": "八",
+							"romanization": "zhe li you ba ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是八。",
+							"audioText": "这是几？这是八。",
+							"fallbackText": "八",
+							"romanization": "zhe shi ji zhe shi ba"
+						},
+						"L5": {
+							"text": "八号卡片在数字草地上轻轻跳。",
+							"audioText": "八号卡片在数字草地上轻轻跳。",
+							"fallbackText": "八",
+							"romanization": "ba hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "number-nine",
+			"category": "number",
+			"tags": ["number", "counting", "nine"],
+			"visualPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-nine.webp",
+				"alt": "number nine",
+				"generationPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "nine",
+					"emoji": "9️⃣"
+				}
+			},
+			"interaction": {
+				"id": "number-nine-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number nine.",
+					"successPhrase": "You found number nine.",
+					"fallbackText": "nine",
+					"levels": {
+						"L0": {
+							"text": "nine",
+							"audioText": "nine",
+							"fallbackText": "nine"
+						},
+						"L1": {
+							"text": "Number nine.",
+							"audioText": "Number nine.",
+							"fallbackText": "nine"
+						},
+						"L2": {
+							"text": "count to nine",
+							"audioText": "count to nine",
+							"fallbackText": "nine"
+						},
+						"L3": {
+							"text": "Nine little dots are here.",
+							"audioText": "Nine little dots are here.",
+							"fallbackText": "nine"
+						},
+						"L4": {
+							"text": "What number is this? It is nine.",
+							"audioText": "What number is this? It is nine.",
+							"fallbackText": "nine"
+						},
+						"L5": {
+							"text": "The number nine card hops softly in the number meadow.",
+							"audioText": "The number nine card hops softly in the number meadow.",
+							"fallbackText": "nine"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字九。",
+					"successPhrase": "你找到数字九了。",
+					"fallbackText": "九",
+					"levels": {
+						"L0": {
+							"text": "九",
+							"romanization": "jiu",
+							"audioText": "九",
+							"fallbackText": "九"
+						},
+						"L1": {
+							"text": "数字九。",
+							"romanization": "shu zi jiu",
+							"audioText": "数字九。",
+							"fallbackText": "九"
+						},
+						"L2": {
+							"text": "数到九",
+							"audioText": "数到九",
+							"fallbackText": "九",
+							"romanization": "shu dao jiu"
+						},
+						"L3": {
+							"text": "这里有九个小点。",
+							"audioText": "这里有九个小点。",
+							"fallbackText": "九",
+							"romanization": "zhe li you jiu ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是九。",
+							"audioText": "这是几？这是九。",
+							"fallbackText": "九",
+							"romanization": "zhe shi ji zhe shi jiu"
+						},
+						"L5": {
+							"text": "九号卡片在数字草地上轻轻跳。",
+							"audioText": "九号卡片在数字草地上轻轻跳。",
+							"fallbackText": "九",
+							"romanization": "jiu hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "number-ten",
+			"category": "number",
+			"tags": ["number", "counting", "ten"],
+			"visualPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-ten.webp",
+				"alt": "number ten",
+				"generationPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "ten",
+					"emoji": "🔟"
+				}
+			},
+			"interaction": {
+				"id": "number-ten-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find number ten.",
+					"successPhrase": "You found number ten.",
+					"fallbackText": "ten",
+					"levels": {
+						"L0": {
+							"text": "ten",
+							"audioText": "ten",
+							"fallbackText": "ten"
+						},
+						"L1": {
+							"text": "Number ten.",
+							"audioText": "Number ten.",
+							"fallbackText": "ten"
+						},
+						"L2": {
+							"text": "count to ten",
+							"audioText": "count to ten",
+							"fallbackText": "ten"
+						},
+						"L3": {
+							"text": "Ten little dots are here.",
+							"audioText": "Ten little dots are here.",
+							"fallbackText": "ten"
+						},
+						"L4": {
+							"text": "What number is this? It is ten.",
+							"audioText": "What number is this? It is ten.",
+							"fallbackText": "ten"
+						},
+						"L5": {
+							"text": "The number ten card hops softly in the number meadow.",
+							"audioText": "The number ten card hops softly in the number meadow.",
+							"fallbackText": "ten"
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找数字十。",
+					"successPhrase": "你找到数字十了。",
+					"fallbackText": "十",
+					"levels": {
+						"L0": {
+							"text": "十",
+							"romanization": "shi",
+							"audioText": "十",
+							"fallbackText": "十"
+						},
+						"L1": {
+							"text": "数字十。",
+							"romanization": "shu zi shi",
+							"audioText": "数字十。",
+							"fallbackText": "十"
+						},
+						"L2": {
+							"text": "数到十",
+							"audioText": "数到十",
+							"fallbackText": "十",
+							"romanization": "shu dao shi"
+						},
+						"L3": {
+							"text": "这里有十个小点。",
+							"audioText": "这里有十个小点。",
+							"fallbackText": "十",
+							"romanization": "zhe li you shi ge xiao dian"
+						},
+						"L4": {
+							"text": "这是几？这是十。",
+							"audioText": "这是几？这是十。",
+							"fallbackText": "十",
+							"romanization": "zhe shi ji zhe shi shi"
+						},
+						"L5": {
+							"text": "十号卡片在数字草地上轻轻跳。",
+							"audioText": "十号卡片在数字草地上轻轻跳。",
+							"fallbackText": "十",
+							"romanization": "shi hao ka pian zai shu zi cao di shang qing qing tiao"
+						}
+					}
+				}
+			}
+		}
+	]
+}

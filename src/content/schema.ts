@@ -13,7 +13,6 @@ export const SUPPORTED_LANGUAGE_CODES = [
 export const LEARNING_LEVELS = ['L0', 'L1', 'L2', 'L3', 'L4', 'L5'] as const
 
 export const REQUIRED_MVP_LANGUAGES = ['en', 'zh-Hans'] as const
-export const REQUIRED_MVP_LEVELS = ['L0', 'L1'] as const
 
 export type LanguageCode = (typeof SUPPORTED_LANGUAGE_CODES)[number]
 export type LearningLevel = (typeof LEARNING_LEVELS)[number]

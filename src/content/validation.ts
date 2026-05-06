@@ -1,8 +1,8 @@
 import {
 	type ContentPack,
 	ContentPackSchema,
+	LEARNING_LEVELS,
 	REQUIRED_MVP_LANGUAGES,
-	REQUIRED_MVP_LEVELS,
 } from './schema'
 
 export class ContentValidationError extends Error {
@@ -23,6 +23,12 @@ export function validateContentPacks(input: unknown[]): ContentPack[] {
 		}
 		packIds.add(pack.id)
 
+		for (const language of REQUIRED_MVP_LANGUAGES) {
+			if (!pack.languages.includes(language)) {
+				messages.push(`Pack "${pack.id}" is missing ${language} language.`)
+			}
+		}
+
 		const objectIds = new Set<string>()
 		for (const object of pack.objects) {
 			if (objectIds.has(object.id)) {
@@ -39,7 +45,7 @@ export function validateContentPacks(input: unknown[]): ContentPack[] {
 					continue
 				}
 
-				for (const level of REQUIRED_MVP_LEVELS) {
+				for (const level of LEARNING_LEVELS) {
 					const levelContent = languageContent.levels[level]
 					if (!levelContent) {
 						messages.push(

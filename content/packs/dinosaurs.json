@@ -19,7 +19,7 @@
 				"prompt": "A calm toddler-friendly prehistoric dinosaur valley with soft green hills, rounded rocks, simple ferns, a tiny pond, warm sunlight, and plenty of clear open space for objects. No lava, no danger, no text, static PWA game background.",
 				"asset": {
 					"type": "background",
-					"path": "/assets/generated/dinosaurs/gentle-dino-valley.svg",
+					"path": "/assets/generated/imagegen/dinosaurs/gentle-dino-valley.webp",
 					"alt": "Gentle dinosaur valley",
 					"generationPrompt": "A calm toddler-friendly prehistoric dinosaur valley with soft green hills, rounded rocks, simple ferns, a tiny pond, warm sunlight, and plenty of clear open space for objects. No lava, no danger, no text, static PWA game background.",
 					"placeholder": {
@@ -113,7 +113,7 @@
 			"visualPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/t-rex.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/t-rex.webp",
 				"alt": "T. rex",
 				"generationPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
 				"placeholder": {
@@ -152,6 +152,26 @@
 								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L1.wav",
 								"generationText": "The T. rex takes tiny steps."
 							}
+						},
+						"L2": {
+							"text": "friendly green T. rex",
+							"audioText": "friendly green T. rex",
+							"fallbackText": "That's the T. rex."
+						},
+						"L3": {
+							"text": "The T. rex takes tiny steps.",
+							"audioText": "The T. rex takes tiny steps.",
+							"fallbackText": "That's the T. rex."
+						},
+						"L4": {
+							"text": "Who has tiny arms? The T. rex has tiny arms.",
+							"audioText": "Who has tiny arms? The T. rex has tiny arms.",
+							"fallbackText": "That's the T. rex."
+						},
+						"L5": {
+							"text": "The T. rex walks softly past the fern.",
+							"audioText": "The T. rex walks softly past the fern.",
+							"fallbackText": "That's the T. rex."
 						}
 					}
 				},
@@ -183,6 +203,30 @@
 								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L1.wav",
 								"generationText": "霸王龙轻轻走。"
 							}
+						},
+						"L2": {
+							"text": "友好的绿色霸王龙",
+							"audioText": "友好的绿色霸王龙",
+							"fallbackText": "这是霸王龙。",
+							"romanization": "you hao de lu se ba wang long"
+						},
+						"L3": {
+							"text": "霸王龙迈着小小的步子。",
+							"audioText": "霸王龙迈着小小的步子。",
+							"fallbackText": "这是霸王龙。",
+							"romanization": "ba wang long mai zhe xiao xiao de bu zi"
+						},
+						"L4": {
+							"text": "谁有小小的手臂？霸王龙有小小的手臂。",
+							"audioText": "谁有小小的手臂？霸王龙有小小的手臂。",
+							"fallbackText": "这是霸王龙。",
+							"romanization": "shei you xiao xiao de shou bi ba wang long you xiao xiao de shou bi"
+						},
+						"L5": {
+							"text": "霸王龙轻轻走过蕨类植物旁边。",
+							"audioText": "霸王龙轻轻走过蕨类植物旁边。",
+							"fallbackText": "这是霸王龙。",
+							"romanization": "ba wang long qing qing zou guo jue lei zhi wu pang bian"
 						}
 					}
 				}
@@ -195,7 +239,7 @@
 			"visualPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/triceratops.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/triceratops.webp",
 				"alt": "triceratops",
 				"generationPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
 				"placeholder": {
@@ -234,6 +278,26 @@
 								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L1.wav",
 								"generationText": "The triceratops has three horns."
 							}
+						},
+						"L2": {
+							"text": "gentle blue triceratops",
+							"audioText": "gentle blue triceratops",
+							"fallbackText": "That's the triceratops."
+						},
+						"L3": {
+							"text": "The triceratops has three soft horns.",
+							"audioText": "The triceratops has three soft horns.",
+							"fallbackText": "That's the triceratops."
+						},
+						"L4": {
+							"text": "Who has a big frill? The triceratops has a big frill.",
+							"audioText": "Who has a big frill? The triceratops has a big frill.",
+							"fallbackText": "That's the triceratops."
+						},
+						"L5": {
+							"text": "The triceratops nods hello in the valley.",
+							"audioText": "The triceratops nods hello in the valley.",
+							"fallbackText": "That's the triceratops."
 						}
 					}
 				},
@@ -265,6 +329,30 @@
 								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L1.wav",
 								"generationText": "三角龙有三个角。"
 							}
+						},
+						"L2": {
+							"text": "温柔的蓝色三角龙",
+							"audioText": "温柔的蓝色三角龙",
+							"fallbackText": "这是三角龙。",
+							"romanization": "wen rou de lan se san jiao long"
+						},
+						"L3": {
+							"text": "三角龙有三只软软的角。",
+							"audioText": "三角龙有三只软软的角。",
+							"fallbackText": "这是三角龙。",
+							"romanization": "san jiao long you san zhi ruan ruan de jiao"
+						},
+						"L4": {
+							"text": "谁有大头盾？三角龙有大头盾。",
+							"audioText": "谁有大头盾？三角龙有大头盾。",
+							"fallbackText": "这是三角龙。",
+							"romanization": "shei you da tou dun san jiao long you da tou dun"
+						},
+						"L5": {
+							"text": "三角龙在山谷里点头问好。",
+							"audioText": "三角龙在山谷里点头问好。",
+							"fallbackText": "这是三角龙。",
+							"romanization": "san jiao long zai shan gu li dian tou wen hao"
 						}
 					}
 				}
@@ -277,7 +365,7 @@
 			"visualPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/stegosaurus.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/stegosaurus.webp",
 				"alt": "stegosaurus",
 				"generationPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
 				"placeholder": {
@@ -316,6 +404,26 @@
 								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L1.wav",
 								"generationText": "The stegosaurus has back plates."
 							}
+						},
+						"L2": {
+							"text": "orange stegosaurus",
+							"audioText": "orange stegosaurus",
+							"fallbackText": "That's the stegosaurus."
+						},
+						"L3": {
+							"text": "The stegosaurus has soft back plates.",
+							"audioText": "The stegosaurus has soft back plates.",
+							"fallbackText": "That's the stegosaurus."
+						},
+						"L4": {
+							"text": "What has plates on its back? The stegosaurus does.",
+							"audioText": "What has plates on its back? The stegosaurus does.",
+							"fallbackText": "That's the stegosaurus."
+						},
+						"L5": {
+							"text": "The stegosaurus sways beside the warm rocks.",
+							"audioText": "The stegosaurus sways beside the warm rocks.",
+							"fallbackText": "That's the stegosaurus."
 						}
 					}
 				},
@@ -347,6 +455,30 @@
 								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L1.wav",
 								"generationText": "剑龙背上有板板。"
 							}
+						},
+						"L2": {
+							"text": "橙色剑龙",
+							"audioText": "橙色剑龙",
+							"fallbackText": "这是剑龙。",
+							"romanization": "cheng se jian long"
+						},
+						"L3": {
+							"text": "剑龙背上有软软的骨板。",
+							"audioText": "剑龙背上有软软的骨板。",
+							"fallbackText": "这是剑龙。",
+							"romanization": "jian long bei shang you ruan ruan de gu ban"
+						},
+						"L4": {
+							"text": "谁背上有骨板？剑龙背上有骨板。",
+							"audioText": "谁背上有骨板？剑龙背上有骨板。",
+							"fallbackText": "这是剑龙。",
+							"romanization": "shei bei shang you gu ban jian long bei shang you gu ban"
+						},
+						"L5": {
+							"text": "剑龙在温暖的石头旁轻轻摇摆。",
+							"audioText": "剑龙在温暖的石头旁轻轻摇摆。",
+							"fallbackText": "这是剑龙。",
+							"romanization": "jian long zai wen nuan de shi tou pang qing qing yao bai"
 						}
 					}
 				}
@@ -359,7 +491,7 @@
 			"visualPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/long-neck.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/long-neck.webp",
 				"alt": "long-neck dinosaur",
 				"generationPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
 				"placeholder": {
@@ -398,6 +530,26 @@
 								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L1.wav",
 								"generationText": "The long-neck reaches a leaf."
 							}
+						},
+						"L2": {
+							"text": "tall long-neck dinosaur",
+							"audioText": "tall long-neck dinosaur",
+							"fallbackText": "That's the long-neck dinosaur."
+						},
+						"L3": {
+							"text": "The long-neck reaches for a leaf.",
+							"audioText": "The long-neck reaches for a leaf.",
+							"fallbackText": "That's the long-neck dinosaur."
+						},
+						"L4": {
+							"text": "Who has a long neck? The long-neck dinosaur does.",
+							"audioText": "Who has a long neck? The long-neck dinosaur does.",
+							"fallbackText": "That's the long-neck dinosaur."
+						},
+						"L5": {
+							"text": "The long-neck gently nibbles a high leaf.",
+							"audioText": "The long-neck gently nibbles a high leaf.",
+							"fallbackText": "That's the long-neck dinosaur."
 						}
 					}
 				},
@@ -429,6 +581,30 @@
 								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L1.wav",
 								"generationText": "长颈龙够到叶子。"
 							}
+						},
+						"L2": {
+							"text": "高高的长颈龙",
+							"audioText": "高高的长颈龙",
+							"fallbackText": "这是长颈龙。",
+							"romanization": "gao gao de chang jing long"
+						},
+						"L3": {
+							"text": "长颈龙伸向叶子。",
+							"audioText": "长颈龙伸向叶子。",
+							"fallbackText": "这是长颈龙。",
+							"romanization": "chang jing long shen xiang ye zi"
+						},
+						"L4": {
+							"text": "谁有长长的脖子？长颈龙有长长的脖子。",
+							"audioText": "谁有长长的脖子？长颈龙有长长的脖子。",
+							"fallbackText": "这是长颈龙。",
+							"romanization": "shei you chang chang de bo zi chang jing long you chang chang de bo zi"
+						},
+						"L5": {
+							"text": "长颈龙轻轻吃到高高的叶子。",
+							"audioText": "长颈龙轻轻吃到高高的叶子。",
+							"fallbackText": "这是长颈龙。",
+							"romanization": "chang jing long qing qing chi dao gao gao de ye zi"
 						}
 					}
 				}
@@ -441,7 +617,7 @@
 			"visualPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/pteranodon.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/pteranodon.webp",
 				"alt": "pteranodon",
 				"generationPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
 				"placeholder": {
@@ -480,6 +656,26 @@
 								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L1.wav",
 								"generationText": "The pteranodon glides softly."
 							}
+						},
+						"L2": {
+							"text": "soft flying pteranodon",
+							"audioText": "soft flying pteranodon",
+							"fallbackText": "That's the pteranodon."
+						},
+						"L3": {
+							"text": "The pteranodon glides in the sky.",
+							"audioText": "The pteranodon glides in the sky.",
+							"fallbackText": "That's the pteranodon."
+						},
+						"L4": {
+							"text": "Who can glide? The pteranodon can glide.",
+							"audioText": "Who can glide? The pteranodon can glide.",
+							"fallbackText": "That's the pteranodon."
+						},
+						"L5": {
+							"text": "The pteranodon floats above the quiet valley.",
+							"audioText": "The pteranodon floats above the quiet valley.",
+							"fallbackText": "That's the pteranodon."
 						}
 					}
 				},
@@ -511,6 +707,30 @@
 								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L1.wav",
 								"generationText": "翼龙轻轻飞。"
 							}
+						},
+						"L2": {
+							"text": "柔软的翼龙",
+							"audioText": "柔软的翼龙",
+							"fallbackText": "这是翼龙。",
+							"romanization": "rou ruan de yi long"
+						},
+						"L3": {
+							"text": "翼龙在天空滑翔。",
+							"audioText": "翼龙在天空滑翔。",
+							"fallbackText": "这是翼龙。",
+							"romanization": "yi long zai tian kong hua xiang"
+						},
+						"L4": {
+							"text": "谁会滑翔？翼龙会滑翔。",
+							"audioText": "谁会滑翔？翼龙会滑翔。",
+							"fallbackText": "这是翼龙。",
+							"romanization": "shei hui hua xiang yi long hui hua xiang"
+						},
+						"L5": {
+							"text": "翼龙在安静的山谷上方飞过。",
+							"audioText": "翼龙在安静的山谷上方飞过。",
+							"fallbackText": "这是翼龙。",
+							"romanization": "yi long zai an jing de shan gu shang fang fei guo"
 						}
 					}
 				}
@@ -523,7 +743,7 @@
 			"visualPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/ankylosaurus.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/ankylosaurus.webp",
 				"alt": "ankylosaurus",
 				"generationPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
 				"placeholder": {
@@ -562,6 +782,26 @@
 								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L1.wav",
 								"generationText": "The ankylosaurus has a bumpy back."
 							}
+						},
+						"L2": {
+							"text": "round ankylosaurus",
+							"audioText": "round ankylosaurus",
+							"fallbackText": "That's the ankylosaurus."
+						},
+						"L3": {
+							"text": "The ankylosaurus has a bumpy back.",
+							"audioText": "The ankylosaurus has a bumpy back.",
+							"fallbackText": "That's the ankylosaurus."
+						},
+						"L4": {
+							"text": "Who has a strong tail? The ankylosaurus has a strong tail.",
+							"audioText": "Who has a strong tail? The ankylosaurus has a strong tail.",
+							"fallbackText": "That's the ankylosaurus."
+						},
+						"L5": {
+							"text": "The ankylosaurus rests near the fern.",
+							"audioText": "The ankylosaurus rests near the fern.",
+							"fallbackText": "That's the ankylosaurus."
 						}
 					}
 				},
@@ -593,6 +833,30 @@
 								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L1.wav",
 								"generationText": "甲龙背上有小包。"
 							}
+						},
+						"L2": {
+							"text": "圆圆的甲龙",
+							"audioText": "圆圆的甲龙",
+							"fallbackText": "这是甲龙。",
+							"romanization": "yuan yuan de jia long"
+						},
+						"L3": {
+							"text": "甲龙背上有小鼓包。",
+							"audioText": "甲龙背上有小鼓包。",
+							"fallbackText": "这是甲龙。",
+							"romanization": "jia long bei shang you xiao gu bao"
+						},
+						"L4": {
+							"text": "谁有有力的尾巴？甲龙有有力的尾巴。",
+							"audioText": "谁有有力的尾巴？甲龙有有力的尾巴。",
+							"fallbackText": "这是甲龙。",
+							"romanization": "shei you you li de wei ba jia long you you li de wei ba"
+						},
+						"L5": {
+							"text": "甲龙在蕨类植物旁边休息。",
+							"audioText": "甲龙在蕨类植物旁边休息。",
+							"fallbackText": "这是甲龙。",
+							"romanization": "jia long zai jue lei zhi wu pang bian xiu xi"
 						}
 					}
 				}
@@ -605,7 +869,7 @@
 			"visualPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/dinosaur-egg.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/dinosaur-egg.webp",
 				"alt": "dinosaur egg",
 				"generationPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
 				"placeholder": {
@@ -644,6 +908,26 @@
 								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L1.wav",
 								"generationText": "The dinosaur egg rests in the nest."
 							}
+						},
+						"L2": {
+							"text": "speckled dinosaur egg",
+							"audioText": "speckled dinosaur egg",
+							"fallbackText": "That's the dinosaur egg."
+						},
+						"L3": {
+							"text": "The dinosaur egg sits in a nest.",
+							"audioText": "The dinosaur egg sits in a nest.",
+							"fallbackText": "That's the dinosaur egg."
+						},
+						"L4": {
+							"text": "What is in the nest? A dinosaur egg is in the nest.",
+							"audioText": "What is in the nest? A dinosaur egg is in the nest.",
+							"fallbackText": "That's the dinosaur egg."
+						},
+						"L5": {
+							"text": "The dinosaur egg rests quietly in the warm nest.",
+							"audioText": "The dinosaur egg rests quietly in the warm nest.",
+							"fallbackText": "That's the dinosaur egg."
 						}
 					}
 				},
@@ -675,6 +959,30 @@
 								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L1.wav",
 								"generationText": "恐龙蛋在窝里。"
 							}
+						},
+						"L2": {
+							"text": "有斑点的恐龙蛋",
+							"audioText": "有斑点的恐龙蛋",
+							"fallbackText": "这是恐龙蛋。",
+							"romanization": "you ban dian de kong long dan"
+						},
+						"L3": {
+							"text": "恐龙蛋在窝里。",
+							"audioText": "恐龙蛋在窝里。",
+							"fallbackText": "这是恐龙蛋。",
+							"romanization": "kong long dan zai wo li"
+						},
+						"L4": {
+							"text": "窝里有什么？窝里有恐龙蛋。",
+							"audioText": "窝里有什么？窝里有恐龙蛋。",
+							"fallbackText": "这是恐龙蛋。",
+							"romanization": "wo li you shen me wo li you kong long dan"
+						},
+						"L5": {
+							"text": "恐龙蛋安静地躺在温暖的窝里。",
+							"audioText": "恐龙蛋安静地躺在温暖的窝里。",
+							"fallbackText": "这是恐龙蛋。",
+							"romanization": "kong long dan an jing de tang zai wen nuan de wo li"
 						}
 					}
 				}
@@ -687,7 +995,7 @@
 			"visualPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/baby-dinosaur.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/baby-dinosaur.webp",
 				"alt": "baby dinosaur",
 				"generationPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
 				"placeholder": {
@@ -726,6 +1034,26 @@
 								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L1.wav",
 								"generationText": "The baby dinosaur smiles."
 							}
+						},
+						"L2": {
+							"text": "tiny baby dinosaur",
+							"audioText": "tiny baby dinosaur",
+							"fallbackText": "That's the baby dinosaur."
+						},
+						"L3": {
+							"text": "The baby dinosaur peeks out.",
+							"audioText": "The baby dinosaur peeks out.",
+							"fallbackText": "That's the baby dinosaur."
+						},
+						"L4": {
+							"text": "Who is tiny? The baby dinosaur is tiny.",
+							"audioText": "Who is tiny? The baby dinosaur is tiny.",
+							"fallbackText": "That's the baby dinosaur."
+						},
+						"L5": {
+							"text": "The baby dinosaur smiles at the gentle valley.",
+							"audioText": "The baby dinosaur smiles at the gentle valley.",
+							"fallbackText": "That's the baby dinosaur."
 						}
 					}
 				},
@@ -757,6 +1085,30 @@
 								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L1.wav",
 								"generationText": "小恐龙笑一笑。"
 							}
+						},
+						"L2": {
+							"text": "小小的恐龙宝宝",
+							"audioText": "小小的恐龙宝宝",
+							"fallbackText": "这是小恐龙。",
+							"romanization": "xiao xiao de kong long bao bao"
+						},
+						"L3": {
+							"text": "恐龙宝宝探出头。",
+							"audioText": "恐龙宝宝探出头。",
+							"fallbackText": "这是小恐龙。",
+							"romanization": "kong long bao bao tan chu tou"
+						},
+						"L4": {
+							"text": "谁小小的？恐龙宝宝小小的。",
+							"audioText": "谁小小的？恐龙宝宝小小的。",
+							"fallbackText": "这是小恐龙。",
+							"romanization": "shei xiao xiao de kong long bao bao xiao xiao de"
+						},
+						"L5": {
+							"text": "恐龙宝宝对温柔的山谷微笑。",
+							"audioText": "恐龙宝宝对温柔的山谷微笑。",
+							"fallbackText": "这是小恐龙。",
+							"romanization": "kong long bao bao dui wen rou de shan gu wei xiao"
 						}
 					}
 				}
@@ -769,7 +1121,7 @@
 			"visualPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/fossil.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/fossil.webp",
 				"alt": "fossil",
 				"generationPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
 				"placeholder": {
@@ -808,6 +1160,26 @@
 								"path": "/assets/generated/dinosaurs/audio/fossil-en-L1.wav",
 								"generationText": "The fossil rests in the rock."
 							}
+						},
+						"L2": {
+							"text": "quiet fossil stone",
+							"audioText": "quiet fossil stone",
+							"fallbackText": "That's the fossil."
+						},
+						"L3": {
+							"text": "The fossil rests in the rock.",
+							"audioText": "The fossil rests in the rock.",
+							"fallbackText": "That's the fossil."
+						},
+						"L4": {
+							"text": "What is inside the rock? A fossil is inside.",
+							"audioText": "What is inside the rock? A fossil is inside.",
+							"fallbackText": "That's the fossil."
+						},
+						"L5": {
+							"text": "The fossil waits quietly beside the path.",
+							"audioText": "The fossil waits quietly beside the path.",
+							"fallbackText": "That's the fossil."
 						}
 					}
 				},
@@ -839,6 +1211,30 @@
 								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L1.wav",
 								"generationText": "化石在石头里。"
 							}
+						},
+						"L2": {
+							"text": "安静的化石石头",
+							"audioText": "安静的化石石头",
+							"fallbackText": "这是化石。",
+							"romanization": "an jing de hua shi shi tou"
+						},
+						"L3": {
+							"text": "化石在石头里。",
+							"audioText": "化石在石头里。",
+							"fallbackText": "这是化石。",
+							"romanization": "hua shi zai shi tou li"
+						},
+						"L4": {
+							"text": "石头里有什么？石头里有化石。",
+							"audioText": "石头里有什么？石头里有化石。",
+							"fallbackText": "这是化石。",
+							"romanization": "shi tou li you shen me shi tou li you hua shi"
+						},
+						"L5": {
+							"text": "化石在小路旁安静地等着。",
+							"audioText": "化石在小路旁安静地等着。",
+							"fallbackText": "这是化石。",
+							"romanization": "hua shi zai xiao lu pang an jing de deng zhe"
 						}
 					}
 				}
@@ -851,7 +1247,7 @@
 			"visualPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/dinosaurs/fern.svg",
+				"path": "/assets/generated/imagegen/dinosaurs/fern.webp",
 				"alt": "fern",
 				"generationPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
 				"placeholder": {
@@ -890,6 +1286,26 @@
 								"path": "/assets/generated/dinosaurs/audio/fern-en-L1.wav",
 								"generationText": "The fern is soft and green."
 							}
+						},
+						"L2": {
+							"text": "soft green fern",
+							"audioText": "soft green fern",
+							"fallbackText": "That's the fern."
+						},
+						"L3": {
+							"text": "The fern grows by the rocks.",
+							"audioText": "The fern grows by the rocks.",
+							"fallbackText": "That's the fern."
+						},
+						"L4": {
+							"text": "What plant is green? The fern is green.",
+							"audioText": "What plant is green? The fern is green.",
+							"fallbackText": "That's the fern."
+						},
+						"L5": {
+							"text": "The fern sways softly in the dinosaur valley.",
+							"audioText": "The fern sways softly in the dinosaur valley.",
+							"fallbackText": "That's the fern."
 						}
 					}
 				},
@@ -921,6 +1337,30 @@
 								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L1.wav",
 								"generationText": "蕨叶绿绿的。"
 							}
+						},
+						"L2": {
+							"text": "柔软的绿色蕨类植物",
+							"audioText": "柔软的绿色蕨类植物",
+							"fallbackText": "这是蕨叶。",
+							"romanization": "rou ruan de lu se jue lei zhi wu"
+						},
+						"L3": {
+							"text": "蕨类植物长在石头旁。",
+							"audioText": "蕨类植物长在石头旁。",
+							"fallbackText": "这是蕨叶。",
+							"romanization": "jue lei zhi wu zhang zai shi tou pang"
+						},
+						"L4": {
+							"text": "什么植物是绿色的？蕨类植物是绿色的。",
+							"audioText": "什么植物是绿色的？蕨类植物是绿色的。",
+							"fallbackText": "这是蕨叶。",
+							"romanization": "shen me zhi wu shi lu se de jue lei zhi wu shi lu se de"
+						},
+						"L5": {
+							"text": "蕨类植物在恐龙山谷里轻轻摇。",
+							"audioText": "蕨类植物在恐龙山谷里轻轻摇。",
+							"fallbackText": "这是蕨叶。",
+							"romanization": "jue lei zhi wu zai kong long shan gu li qing qing yao"
 						}
 					}
 				}
