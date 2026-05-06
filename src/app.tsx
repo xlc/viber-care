@@ -3,7 +3,6 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { playSoftTap, speakSequence } from './audio/speech'
 import { catalog } from './content/catalog'
 import {
-	type LanguageCode,
 	LEARNING_LEVELS,
 	type LearningLevel,
 	type ObjectConcept,
@@ -30,15 +29,9 @@ import {
 	LANGUAGE_ORDER_PRESETS,
 	type LanguageOrderPreset,
 	loadSettings,
-	resolveLanguageOrder,
 	saveSettings,
 	type WordGardenSettings,
 } from './state/settings'
-
-const languageLabels: Record<LanguageCode, string> = {
-	en: 'English',
-	'zh-Hans': 'Simplified Chinese',
-}
 
 const presetLabels: Record<LanguageOrderPreset, string> = {
 	'en-only': 'English only',
@@ -614,7 +607,6 @@ export function App() {
 			: settings.mode === 'find' && targetObject
 				? getFindPrompt(targetObject, settings)
 				: []
-	const resolvedLanguageOrder = resolveLanguageOrder(settings)
 	const backgroundStyle = scene.background.asset
 		? ({
 				backgroundImage: `url(${scene.background.asset.path})`,
@@ -715,17 +707,6 @@ export function App() {
 					))}
 				</div>
 			</section>
-
-			<footer
-				className="language-strip"
-				role="group"
-				aria-label="Active language order"
-			>
-				{resolvedLanguageOrder.map((language) => (
-					<span key={language}>{languageLabels[language]}</span>
-				))}
-				<span>{settings.activeLevel}</span>
-			</footer>
 
 			{settingsOpen ? (
 				<ParentSettings
