@@ -18,7 +18,6 @@ export type LearningPresentation = {
 	resolvedLevel: LearningLevel
 	text: string
 	audioText: string
-	romanization?: string
 	audioPath?: string
 }
 
@@ -98,7 +97,6 @@ export function getLevelPresentation(
 					levelContent.audioText ||
 					levelContent.text ||
 					languageContent.fallbackText,
-				romanization: levelContent.romanization,
 				audioPath: levelContent.audio?.path,
 			}
 		}
@@ -141,7 +139,6 @@ export function getFindPrompt(
 			resolvedLevel: fallback.resolvedLevel,
 			text: languageContent?.findPrompt ?? fallback.text,
 			audioText: languageContent?.findPrompt ?? fallback.audioText,
-			romanization: undefined,
 			audioPath: undefined,
 		}
 	})
@@ -165,7 +162,6 @@ export function getSuccessPhrase(
 			resolvedLevel: fallback.resolvedLevel,
 			text: languageContent?.successPhrase ?? fallback.text,
 			audioText: languageContent?.successPhrase ?? fallback.audioText,
-			romanization: undefined,
 			audioPath: undefined,
 		}
 	})

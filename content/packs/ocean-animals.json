@@ -199,7 +199,6 @@
 					"levels": {
 						"L0": {
 							"text": "小鱼",
-							"romanization": "xiao yu",
 							"audioText": "小鱼",
 							"fallbackText": "小鱼",
 							"audio": {
@@ -210,7 +209,6 @@
 						},
 						"L1": {
 							"text": "小鱼游一游。",
-							"romanization": "xiao yu you yi you",
 							"audioText": "小鱼游一游。",
 							"fallbackText": "小鱼",
 							"audio": {
@@ -221,7 +219,6 @@
 						},
 						"L2": {
 							"text": "小小的鱼",
-							"romanization": "xiao xiao de yu",
 							"audioText": "小小的鱼",
 							"fallbackText": "小鱼",
 							"audio": {
@@ -232,7 +229,6 @@
 						},
 						"L3": {
 							"text": "小鱼在蓝色海里游。",
-							"romanization": "xiao yu zai lan se hai li you",
 							"audioText": "小鱼在蓝色海里游。",
 							"fallbackText": "小鱼",
 							"audio": {
@@ -243,7 +239,6 @@
 						},
 						"L4": {
 							"text": "谁游得快？小鱼游得快。",
-							"romanization": "shui you de kuai xiao yu you de kuai",
 							"audioText": "谁游得快？小鱼游得快。",
 							"fallbackText": "小鱼",
 							"audio": {
@@ -255,8 +250,7 @@
 						"L5": {
 							"text": "小鱼游过泡泡，轻轻打招呼。",
 							"audioText": "小鱼游过泡泡，轻轻打招呼。",
-							"fallbackText": "这是小鱼。",
-							"romanization": "xiao yu you guo pao pao qing qing da zhao hu"
+							"fallbackText": "这是小鱼。"
 						}
 					}
 				}
@@ -355,7 +349,6 @@
 					"levels": {
 						"L0": {
 							"text": "海龟",
-							"romanization": "hai gui",
 							"audioText": "海龟",
 							"fallbackText": "海龟",
 							"audio": {
@@ -366,7 +359,6 @@
 						},
 						"L1": {
 							"text": "海龟慢慢游。",
-							"romanization": "hai gui man man you",
 							"audioText": "海龟慢慢游。",
 							"fallbackText": "海龟",
 							"audio": {
@@ -377,7 +369,6 @@
 						},
 						"L2": {
 							"text": "温柔的海龟",
-							"romanization": "wen rou de hai gui",
 							"audioText": "温柔的海龟",
 							"fallbackText": "海龟",
 							"audio": {
@@ -388,7 +379,6 @@
 						},
 						"L3": {
 							"text": "海龟慢慢向前游。",
-							"romanization": "hai gui man man xiang qian you",
 							"audioText": "海龟慢慢向前游。",
 							"fallbackText": "海龟",
 							"audio": {
@@ -399,7 +389,6 @@
 						},
 						"L4": {
 							"text": "谁有壳？海龟有壳。",
-							"romanization": "shui you ke hai gui you ke",
 							"audioText": "谁有壳？海龟有壳。",
 							"fallbackText": "海龟",
 							"audio": {
@@ -411,8 +400,7 @@
 						"L5": {
 							"text": "海龟慢慢滑过海湾。",
 							"audioText": "海龟慢慢滑过海湾。",
-							"fallbackText": "这是海龟。",
-							"romanization": "hai gui man man hua guo hai wan"
+							"fallbackText": "这是海龟。"
 						}
 					}
 				}
@@ -511,7 +499,6 @@
 					"levels": {
 						"L0": {
 							"text": "海豚",
-							"romanization": "hai tun",
 							"audioText": "海豚",
 							"fallbackText": "海豚",
 							"audio": {
@@ -522,7 +509,6 @@
 						},
 						"L1": {
 							"text": "海豚跳一跳。",
-							"romanization": "hai tun tiao yi tiao",
 							"audioText": "海豚跳一跳。",
 							"fallbackText": "海豚",
 							"audio": {
@@ -533,7 +519,6 @@
 						},
 						"L2": {
 							"text": "快乐的海豚",
-							"romanization": "kuai le de hai tun",
 							"audioText": "快乐的海豚",
 							"fallbackText": "海豚",
 							"audio": {
@@ -544,7 +529,6 @@
 						},
 						"L3": {
 							"text": "海豚跳过小浪花。",
-							"romanization": "hai tun tiao guo xiao lang hua",
 							"audioText": "海豚跳过小浪花。",
 							"fallbackText": "海豚",
 							"audio": {
@@ -555,7 +539,6 @@
 						},
 						"L4": {
 							"text": "谁跳得高？海豚跳得高。",
-							"romanization": "shui tiao de gao hai tun tiao de gao",
 							"audioText": "谁跳得高？海豚跳得高。",
 							"fallbackText": "海豚",
 							"audio": {
@@ -567,8 +550,7 @@
 						"L5": {
 							"text": "海豚跳起来，轻轻溅起水花。",
 							"audioText": "海豚跳起来，轻轻溅起水花。",
-							"fallbackText": "这是海豚。",
-							"romanization": "hai tun tiao qi lai qing qing jian qi shui hua"
+							"fallbackText": "这是海豚。"
 						}
 					}
 				}
@@ -667,7 +649,6 @@
 					"levels": {
 						"L0": {
 							"text": "鲸鱼",
-							"romanization": "jing yu",
 							"audioText": "鲸鱼",
 							"fallbackText": "鲸鱼",
 							"audio": {
@@ -678,7 +659,6 @@
 						},
 						"L1": {
 							"text": "鲸鱼轻轻唱。",
-							"romanization": "jing yu qing qing chang",
 							"audioText": "鲸鱼轻轻唱。",
 							"fallbackText": "鲸鱼",
 							"audio": {
@@ -689,7 +669,6 @@
 						},
 						"L2": {
 							"text": "大大的鲸鱼",
-							"romanization": "da da de jing yu",
 							"audioText": "大大的鲸鱼",
 							"fallbackText": "鲸鱼",
 							"audio": {
@@ -700,7 +679,6 @@
 						},
 						"L3": {
 							"text": "鲸鱼慢慢地游。",
-							"romanization": "jing yu man man de you",
 							"audioText": "鲸鱼慢慢地游。",
 							"fallbackText": "鲸鱼",
 							"audio": {
@@ -711,7 +689,6 @@
 						},
 						"L4": {
 							"text": "谁很大？鲸鱼很大。",
-							"romanization": "shui hen da jing yu hen da",
 							"audioText": "谁很大？鲸鱼很大。",
 							"fallbackText": "鲸鱼",
 							"audio": {
@@ -723,8 +700,7 @@
 						"L5": {
 							"text": "鲸鱼在蓝蓝的水里轻声唱歌。",
 							"audioText": "鲸鱼在蓝蓝的水里轻声唱歌。",
-							"fallbackText": "这是鲸鱼。",
-							"romanization": "jing yu zai lan lan de shui li qing sheng chang ge"
+							"fallbackText": "这是鲸鱼。"
 						}
 					}
 				}
@@ -823,7 +799,6 @@
 					"levels": {
 						"L0": {
 							"text": "螃蟹",
-							"romanization": "pang xie",
 							"audioText": "螃蟹",
 							"fallbackText": "螃蟹",
 							"audio": {
@@ -834,7 +809,6 @@
 						},
 						"L1": {
 							"text": "螃蟹横着走。",
-							"romanization": "pang xie heng zhe zou",
 							"audioText": "螃蟹横着走。",
 							"fallbackText": "螃蟹",
 							"audio": {
@@ -845,7 +819,6 @@
 						},
 						"L2": {
 							"text": "小小的螃蟹",
-							"romanization": "xiao xiao de pang xie",
 							"audioText": "小小的螃蟹",
 							"fallbackText": "螃蟹",
 							"audio": {
@@ -856,7 +829,6 @@
 						},
 						"L3": {
 							"text": "螃蟹在沙子上走。",
-							"romanization": "pang xie zai sha zi shang zou",
 							"audioText": "螃蟹在沙子上走。",
 							"fallbackText": "螃蟹",
 							"audio": {
@@ -867,7 +839,6 @@
 						},
 						"L4": {
 							"text": "谁横着走？螃蟹横着走。",
-							"romanization": "shui heng zhe zou pang xie heng zhe zou",
 							"audioText": "谁横着走？螃蟹横着走。",
 							"fallbackText": "螃蟹",
 							"audio": {
@@ -879,8 +850,7 @@
 						"L5": {
 							"text": "螃蟹在软软的沙子上轻轻走。",
 							"audioText": "螃蟹在软软的沙子上轻轻走。",
-							"fallbackText": "这是螃蟹。",
-							"romanization": "pang xie zai ruan ruan de sha zi shang qing qing zou"
+							"fallbackText": "这是螃蟹。"
 						}
 					}
 				}
@@ -979,7 +949,6 @@
 					"levels": {
 						"L0": {
 							"text": "章鱼",
-							"romanization": "zhang yu",
 							"audioText": "章鱼",
 							"fallbackText": "章鱼",
 							"audio": {
@@ -990,7 +959,6 @@
 						},
 						"L1": {
 							"text": "章鱼挥挥手。",
-							"romanization": "zhang yu hui hui shou",
 							"audioText": "章鱼挥挥手。",
 							"fallbackText": "章鱼",
 							"audio": {
@@ -1001,7 +969,6 @@
 						},
 						"L2": {
 							"text": "软软的章鱼",
-							"romanization": "ruan ruan de zhang yu",
 							"audioText": "软软的章鱼",
 							"fallbackText": "章鱼",
 							"audio": {
@@ -1012,7 +979,6 @@
 						},
 						"L3": {
 							"text": "章鱼挥动小手。",
-							"romanization": "zhang yu hui dong xiao shou",
 							"audioText": "章鱼挥动小手。",
 							"fallbackText": "章鱼",
 							"audio": {
@@ -1023,7 +989,6 @@
 						},
 						"L4": {
 							"text": "谁有很多手？章鱼有很多手。",
-							"romanization": "shui you hen duo shou zhang yu you hen duo shou",
 							"audioText": "谁有很多手？章鱼有很多手。",
 							"fallbackText": "章鱼",
 							"audio": {
@@ -1035,8 +1000,7 @@
 						"L5": {
 							"text": "章鱼挥挥八只柔软的手臂。",
 							"audioText": "章鱼挥挥八只柔软的手臂。",
-							"fallbackText": "这是章鱼。",
-							"romanization": "zhang yu hui hui ba zhi rou ruan de shou bi"
+							"fallbackText": "这是章鱼。"
 						}
 					}
 				}
@@ -1135,7 +1099,6 @@
 					"levels": {
 						"L0": {
 							"text": "海马",
-							"romanization": "hai ma",
 							"audioText": "海马",
 							"fallbackText": "海马",
 							"audio": {
@@ -1146,7 +1109,6 @@
 						},
 						"L1": {
 							"text": "海马轻轻飘。",
-							"romanization": "hai ma qing qing piao",
 							"audioText": "海马轻轻飘。",
 							"fallbackText": "海马",
 							"audio": {
@@ -1157,7 +1119,6 @@
 						},
 						"L2": {
 							"text": "小小的海马",
-							"romanization": "xiao xiao de hai ma",
 							"audioText": "小小的海马",
 							"fallbackText": "海马",
 							"audio": {
@@ -1168,7 +1129,6 @@
 						},
 						"L3": {
 							"text": "海马在海草旁飘。",
-							"romanization": "hai ma zai hai cao pang piao",
 							"audioText": "海马在海草旁飘。",
 							"fallbackText": "海马",
 							"audio": {
@@ -1179,7 +1139,6 @@
 						},
 						"L4": {
 							"text": "谁轻轻飘？海马轻轻飘。",
-							"romanization": "shui qing qing piao hai ma qing qing piao",
 							"audioText": "谁轻轻飘？海马轻轻飘。",
 							"fallbackText": "海马",
 							"audio": {
@@ -1191,8 +1150,7 @@
 						"L5": {
 							"text": "海马在海草旁卷起尾巴。",
 							"audioText": "海马在海草旁卷起尾巴。",
-							"fallbackText": "这是海马。",
-							"romanization": "hai ma zai hai cao pang juan qi wei ba"
+							"fallbackText": "这是海马。"
 						}
 					}
 				}
@@ -1291,7 +1249,6 @@
 					"levels": {
 						"L0": {
 							"text": "海星",
-							"romanization": "hai xing",
 							"audioText": "海星",
 							"fallbackText": "海星",
 							"audio": {
@@ -1302,7 +1259,6 @@
 						},
 						"L1": {
 							"text": "海星静静躺。",
-							"romanization": "hai xing jing jing tang",
 							"audioText": "海星静静躺。",
 							"fallbackText": "海星",
 							"audio": {
@@ -1313,7 +1269,6 @@
 						},
 						"L2": {
 							"text": "亮亮的海星",
-							"romanization": "liang liang de hai xing",
 							"audioText": "亮亮的海星",
 							"fallbackText": "海星",
 							"audio": {
@@ -1324,7 +1279,6 @@
 						},
 						"L3": {
 							"text": "海星躺在沙子上。",
-							"romanization": "hai xing tang zai sha zi shang",
 							"audioText": "海星躺在沙子上。",
 							"fallbackText": "海星",
 							"audio": {
@@ -1335,7 +1289,6 @@
 						},
 						"L4": {
 							"text": "谁躺在沙子上？海星躺在沙子上。",
-							"romanization": "shui tang zai sha zi shang hai xing tang zai sha zi shang",
 							"audioText": "谁躺在沙子上？海星躺在沙子上。",
 							"fallbackText": "海星",
 							"audio": {
@@ -1347,8 +1300,7 @@
 						"L5": {
 							"text": "海星像星星一样躺在沙子上。",
 							"audioText": "海星像星星一样躺在沙子上。",
-							"fallbackText": "这是海星。",
-							"romanization": "hai xing xiang xing xing yi yang tang zai sha zi shang"
+							"fallbackText": "这是海星。"
 						}
 					}
 				}
@@ -1447,7 +1399,6 @@
 					"levels": {
 						"L0": {
 							"text": "水母",
-							"romanization": "shui mu",
 							"audioText": "水母",
 							"fallbackText": "水母",
 							"audio": {
@@ -1458,7 +1409,6 @@
 						},
 						"L1": {
 							"text": "水母轻轻飘。",
-							"romanization": "shui mu qing qing piao",
 							"audioText": "水母轻轻飘。",
 							"fallbackText": "水母",
 							"audio": {
@@ -1469,7 +1419,6 @@
 						},
 						"L2": {
 							"text": "软软的水母",
-							"romanization": "ruan ruan de shui mu",
 							"audioText": "软软的水母",
 							"fallbackText": "水母",
 							"audio": {
@@ -1480,7 +1429,6 @@
 						},
 						"L3": {
 							"text": "水母轻轻地飘。",
-							"romanization": "shui mu qing qing de piao",
 							"audioText": "水母轻轻地飘。",
 							"fallbackText": "水母",
 							"audio": {
@@ -1491,7 +1439,6 @@
 						},
 						"L4": {
 							"text": "谁软软地飘？水母软软地飘。",
-							"romanization": "shui ruan ruan de piao shui mu ruan ruan de piao",
 							"audioText": "谁软软地飘？水母软软地飘。",
 							"fallbackText": "水母",
 							"audio": {
@@ -1503,8 +1450,7 @@
 						"L5": {
 							"text": "水母在泡泡下面轻轻漂。",
 							"audioText": "水母在泡泡下面轻轻漂。",
-							"fallbackText": "这是水母。",
-							"romanization": "shui mu zai pao pao xia mian qing qing piao"
+							"fallbackText": "这是水母。"
 						}
 					}
 				}
@@ -1603,7 +1549,6 @@
 					"levels": {
 						"L0": {
 							"text": "海豹",
-							"romanization": "hai bao",
 							"audioText": "海豹",
 							"fallbackText": "海豹",
 							"audio": {
@@ -1614,7 +1559,6 @@
 						},
 						"L1": {
 							"text": "海豹拍拍手。",
-							"romanization": "hai bao pai pai shou",
 							"audioText": "海豹拍拍手。",
 							"fallbackText": "海豹",
 							"audio": {
@@ -1625,7 +1569,6 @@
 						},
 						"L2": {
 							"text": "爱玩的海豹",
-							"romanization": "ai wan de hai bao",
 							"audioText": "爱玩的海豹",
 							"fallbackText": "海豹",
 							"audio": {
@@ -1636,7 +1579,6 @@
 						},
 						"L3": {
 							"text": "海豹在水边拍手。",
-							"romanization": "hai bao zai shui bian pai shou",
 							"audioText": "海豹在水边拍手。",
 							"fallbackText": "海豹",
 							"audio": {
@@ -1647,7 +1589,6 @@
 						},
 						"L4": {
 							"text": "谁轻轻拍手？海豹轻轻拍手。",
-							"romanization": "shui qing qing pai shou hai bao qing qing pai shou",
 							"audioText": "谁轻轻拍手？海豹轻轻拍手。",
 							"fallbackText": "海豹",
 							"audio": {
@@ -1659,8 +1600,7 @@
 						"L5": {
 							"text": "海豹在水边轻轻拍手。",
 							"audioText": "海豹在水边轻轻拍手。",
-							"fallbackText": "这是海豹。",
-							"romanization": "hai bao zai shui bian qing qing pai shou"
+							"fallbackText": "这是海豹。"
 						}
 					}
 				}

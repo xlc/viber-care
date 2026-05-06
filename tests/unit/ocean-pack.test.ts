@@ -23,16 +23,15 @@ describe('ocean animals content pack', () => {
 		}
 	})
 
-	it('provides Simplified Chinese romanization and keeps existing generated audio targets', () => {
+	it('keeps existing generated audio targets', () => {
 		const [validatedPack] = validateContentPacks([oceanPack])
 
 		for (const object of validatedPack.objects) {
 			const levels = object.content['zh-Hans'].levels as Record<
 				LearningLevel,
-				{ romanization?: string; audio?: { path: string } }
+				{ audio?: { path: string } }
 			>
 			for (const level of LEARNING_LEVELS) {
-				expect(levels[level]?.romanization).toBeTruthy()
 				if (level !== 'L5') {
 					expect(levels[level]?.audio?.path).toContain(
 						'/assets/generated/ocean-animals/audio/',

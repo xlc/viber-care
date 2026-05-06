@@ -2,7 +2,7 @@
 
 ## Project Goal
 
-Word Garden is a complete static PWA game for toddlers to learn words and objects. It should feel like a gentle digital toy, not a quiz. The MVP is bilingual with English and Simplified Chinese, but the content architecture must remain ready for more supported language codes, levels, scenes, packs, image assets, and audio clips.
+Word Garden is a complete static PWA game for toddlers to learn words and objects. It should feel like a gentle digital toy, not a quiz. The product is bilingual with English and Simplified Chinese only, while the content architecture remains ready for more levels, scenes, packs, image assets, and audio clips.
 
 ## Commands
 
@@ -45,7 +45,7 @@ generation package script.
 Core schemas live in `src/content/schema.ts`. Content validation logic lives in
 `src/content/validation.ts`.
 
-Do not hard-code object language content in the engine. Object labels, prompts, success phrases, fallback text, romanization, audio text, visual prompts, and asset paths belong in content files.
+Do not hard-code object language content in the engine. Object labels, prompts, success phrases, fallback text, audio text, visual prompts, and asset paths belong in content files.
 
 ## Toddler Design Safety Rules
 
@@ -70,7 +70,7 @@ Do not hard-code object language content in the engine. Object labels, prompts, 
 4. Add object image asset paths and visual generation prompts.
 5. Add interaction animation metadata.
 6. Add per-language content and per-level content.
-7. For MVP-quality bilingual packs, include English and Simplified Chinese L0/L1 text, audio text, find prompt, success phrase, fallback text, and Simplified Chinese romanization.
+7. For production-quality bilingual packs, include English and Simplified Chinese L0/L1 text, audio text, find prompt, success phrase, and fallback text.
 8. Run `bun run validate:content`.
 9. Run `bun run test`.
 10. Run `bun run test:e2e`.

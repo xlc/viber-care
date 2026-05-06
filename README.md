@@ -37,13 +37,13 @@ To add a content pack:
 2. Follow the Zod schemas in `src/content/schema.ts`.
 3. Include scene placements with percentage-based positions.
 4. Include image asset paths and generation prompts for each object.
-5. Include English and Simplified Chinese L0/L1 content for MVP-quality packs.
+5. Include English and Simplified Chinese L0/L1 content for production-quality packs.
 6. Run `bun run validate:content`.
 7. Run `bun run test`.
 8. Run `bun run test:e2e`.
 9. Run `bun run check:secrets` and `bun run build`.
 
-The engine does not need code changes for new objects, scenes, packs, language codes already supported by the schema, learning levels, generated image paths, or generated audio target paths.
+The engine does not need code changes for new objects, scenes, packs, learning levels, generated image paths, or generated audio target paths.
 
 ## Assets
 

@@ -3,11 +3,6 @@ import type { LearningPresentation } from '../learning/engine'
 const speechLanguageMap: Record<string, string> = {
 	en: 'en-US',
 	'zh-Hans': 'zh-CN',
-	'zh-Hant': 'zh-TW',
-	es: 'es-ES',
-	fr: 'fr-FR',
-	ja: 'ja-JP',
-	ko: 'ko-KR',
 }
 
 export function speakSequence(

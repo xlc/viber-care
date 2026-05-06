@@ -10,7 +10,7 @@ describe('runtime catalog', () => {
 
 		expect(parsed.schemaVersion).toBe('1')
 		expect(parsed.defaultLanguageOrder).toEqual(['en', 'zh-Hans'])
-		expect(parsed.supportedLanguages).toContain('ko')
+		expect(parsed.supportedLanguages).toEqual(['en', 'zh-Hans'])
 		expect(parsed.learningLevels).toEqual(['L0', 'L1', 'L2', 'L3', 'L4', 'L5'])
 		expect(parsed.packs.map((pack) => pack.id)).toEqual([
 			'garden',
@@ -79,9 +79,6 @@ describe('runtime catalog', () => {
 					expect(object.content['zh-Hans'].levels[level]?.text).toBeTruthy()
 					expect(
 						object.content['zh-Hans'].levels[level]?.audioText,
-					).toBeTruthy()
-					expect(
-						object.content['zh-Hans'].levels[level]?.romanization,
 					).toBeTruthy()
 				}
 			}

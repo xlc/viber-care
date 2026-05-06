@@ -9,7 +9,6 @@ import {
 	type ObjectConcept,
 	type RuntimeCatalog,
 	type Scene,
-	SUPPORTED_LANGUAGE_CODES,
 } from './content/schema'
 import {
 	createFindRound,
@@ -38,11 +37,6 @@ import {
 const languageLabels: Record<LanguageCode, string> = {
 	en: 'English',
 	'zh-Hans': 'Simplified Chinese',
-	'zh-Hant': 'Traditional Chinese',
-	es: 'Spanish',
-	fr: 'French',
-	ja: 'Japanese',
-	ko: 'Korean',
 }
 
 const presetLabels: Record<LanguageOrderPreset, string> = {
@@ -50,7 +44,6 @@ const presetLabels: Record<LanguageOrderPreset, string> = {
 	'zh-only': 'Chinese only',
 	'en-then-zh': 'English then Chinese',
 	'zh-then-en': 'Chinese then English',
-	custom: 'Custom',
 }
 
 const modeLabels: Record<GameMode, string> = {
@@ -103,11 +96,7 @@ function preloadSceneAssets(scene: Scene, placements: PlacementWithObject[]) {
 	}
 }
 
-function Icon({
-	name,
-}: {
-	name: 'gear' | 'volume' | 'muted' | 'close' | 'up' | 'down'
-}) {
+function Icon({ name }: { name: 'gear' | 'volume' | 'muted' | 'close' }) {
 	const common = {
 		width: 22,
 		height: 22,
@@ -169,30 +158,10 @@ function Icon({
 		)
 	}
 
-	if (name === 'up') {
-		return (
-			<svg {...common}>
-				<title>Up</title>
-				<path d="m7 14 5-5 5 5" />
-			</svg>
-		)
-	}
-
-	return (
-		<svg {...common}>
-			<title>Down</title>
-			<path d="m7 10 5 5 5-5" />
-		</svg>
-	)
+	return null
 }
 
-function SequenceText({
-	sequence,
-	showRomanization,
-}: {
-	sequence: LearningPresentation[]
-	showRomanization: boolean
-}) {
+function SequenceText({ sequence }: { sequence: LearningPresentation[] }) {
 	return (
 		<div className="sequence-text" data-testid="word-tray">
 			{sequence.map((item) => (
@@ -201,9 +170,6 @@ function SequenceText({
 					key={`${item.requestedLanguage}-${item.text}`}
 				>
 					<span lang={item.resolvedLanguage}>{item.text}</span>
-					{showRomanization && item.romanization ? (
-						<small lang="en">{item.romanization}</small>
-					) : null}
 				</div>
 			))}
 		</div>
@@ -281,32 +247,8 @@ function ParentSettings({
 	onChange: (settings: WordGardenSettings) => void
 	onClose: () => void
 }) {
-	const customOrder = settings.customLanguageOrder
-
 	function update(partial: Partial<WordGardenSettings>) {
 		onChange({ ...settings, ...partial })
-	}
-
-	function toggleCustomLanguage(language: LanguageCode) {
-		const nextOrder = customOrder.includes(language)
-			? customOrder.filter((candidate) => candidate !== language)
-			: [...customOrder, language]
-		update({
-			languageOrderPreset: 'custom',
-			customLanguageOrder: nextOrder.length > 0 ? nextOrder : [language],
-		})
-	}
-
-	function moveCustomLanguage(language: LanguageCode, direction: -1 | 1) {
-		const index = customOrder.indexOf(language)
-		const nextIndex = index + direction
-		if (index < 0 || nextIndex < 0 || nextIndex >= customOrder.length) {
-			return
-		}
-		const nextOrder = [...customOrder]
-		const [item] = nextOrder.splice(index, 1)
-		nextOrder.splice(nextIndex, 0, item)
-		update({ languageOrderPreset: 'custom', customLanguageOrder: nextOrder })
 	}
 
 	return (
@@ -398,56 +340,9 @@ function ParentSettings({
 							</button>
 						))}
 					</div>
-
-					<div className="custom-language-grid">
-						{SUPPORTED_LANGUAGE_CODES.map((language) => (
-							<label key={language}>
-								<input
-									type="checkbox"
-									checked={customOrder.includes(language)}
-									onChange={() => toggleCustomLanguage(language)}
-								/>
-								<span>{languageLabels[language]}</span>
-							</label>
-						))}
-					</div>
-
-					<ol className="custom-order-list" aria-label="Custom language order">
-						{customOrder.map((language) => (
-							<li key={language}>
-								<span>{languageLabels[language]}</span>
-								<button
-									type="button"
-									className="mini-icon-button"
-									aria-label={`Move ${languageLabels[language]} up`}
-									onClick={() => moveCustomLanguage(language, -1)}
-								>
-									<Icon name="up" />
-								</button>
-								<button
-									type="button"
-									className="mini-icon-button"
-									aria-label={`Move ${languageLabels[language]} down`}
-									onClick={() => moveCustomLanguage(language, 1)}
-								>
-									<Icon name="down" />
-								</button>
-							</li>
-						))}
-					</ol>
 				</div>
 
 				<div className="settings-section compact">
-					<label>
-						<input
-							type="checkbox"
-							checked={settings.showRomanization}
-							onChange={(event) =>
-								update({ showRomanization: event.currentTarget.checked })
-							}
-						/>
-						<span>Show romanization</span>
-					</label>
 					<label>
 						<input
 							type="checkbox"
@@ -548,7 +443,6 @@ export function App() {
 		settings.mode,
 		settings.activeLevel,
 		settings.languageOrderPreset,
-		settings.customLanguageOrder,
 		targetObject,
 	])
 
@@ -687,10 +581,7 @@ export function App() {
 				<div className={`prompt-ribbon is-${toast.kind}`} data-testid="prompt">
 					{settings.mode === 'story' ? <strong>Story garden</strong> : null}
 					{promptSequence.length > 0 ? (
-						<SequenceText
-							sequence={promptSequence}
-							showRomanization={settings.showRomanization}
-						/>
+						<SequenceText sequence={promptSequence} />
 					) : (
 						<strong>Hello, garden.</strong>
 					)}

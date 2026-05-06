@@ -184,7 +184,6 @@
 					"levels": {
 						"L0": {
 							"text": "鸭子",
-							"romanization": "ya zi",
 							"audioText": "鸭子",
 							"fallbackText": "鸭子",
 							"audio": {
@@ -195,7 +194,6 @@
 						},
 						"L1": {
 							"text": "鸭子嘎嘎叫。",
-							"romanization": "ya zi ga ga jiao",
 							"audioText": "鸭子嘎嘎叫。",
 							"fallbackText": "鸭子",
 							"audio": {
@@ -207,26 +205,22 @@
 						"L2": {
 							"text": "黄色小鸭子",
 							"audioText": "黄色小鸭子",
-							"fallbackText": "鸭子",
-							"romanization": "huang se xiao ya zi"
+							"fallbackText": "鸭子"
 						},
 						"L3": {
 							"text": "鸭子在池塘边游。",
 							"audioText": "鸭子在池塘边游。",
-							"fallbackText": "鸭子",
-							"romanization": "ya zi zai chi tang bian you"
+							"fallbackText": "鸭子"
 						},
 						"L4": {
 							"text": "谁嘎嘎叫？鸭子嘎嘎叫。",
 							"audioText": "谁嘎嘎叫？鸭子嘎嘎叫。",
-							"fallbackText": "鸭子",
-							"romanization": "shei ga ga jiao ya zi ga ga jiao"
+							"fallbackText": "鸭子"
 						},
 						"L5": {
 							"text": "鸭子找到池塘，轻轻嘎嘎叫。",
 							"audioText": "鸭子找到池塘，轻轻嘎嘎叫。",
-							"fallbackText": "鸭子",
-							"romanization": "ya zi zhao dao chi tang qing qing ga ga jiao"
+							"fallbackText": "鸭子"
 						}
 					}
 				}
@@ -310,7 +304,6 @@
 					"levels": {
 						"L0": {
 							"text": "小狗",
-							"romanization": "xiao gou",
 							"audioText": "小狗",
 							"fallbackText": "小狗",
 							"audio": {
@@ -321,7 +314,6 @@
 						},
 						"L1": {
 							"text": "小狗汪汪叫。",
-							"romanization": "xiao gou wang wang jiao",
 							"audioText": "小狗汪汪叫。",
 							"fallbackText": "小狗",
 							"audio": {
@@ -333,26 +325,22 @@
 						"L2": {
 							"text": "友好的棕色小狗",
 							"audioText": "友好的棕色小狗",
-							"fallbackText": "小狗",
-							"romanization": "you hao de zong se xiao gou"
+							"fallbackText": "小狗"
 						},
 						"L3": {
 							"text": "小狗摇摇尾巴。",
 							"audioText": "小狗摇摇尾巴。",
-							"fallbackText": "小狗",
-							"romanization": "xiao gou yao yao wei ba"
+							"fallbackText": "小狗"
 						},
 						"L4": {
 							"text": "谁汪汪叫？小狗汪汪叫。",
 							"audioText": "谁汪汪叫？小狗汪汪叫。",
-							"fallbackText": "小狗",
-							"romanization": "shei wang wang jiao xiao gou wang wang jiao"
+							"fallbackText": "小狗"
 						},
 						"L5": {
 							"text": "小狗坐在草地上，开心地汪汪叫。",
 							"audioText": "小狗坐在草地上，开心地汪汪叫。",
-							"fallbackText": "小狗",
-							"romanization": "xiao gou zuo zai cao di shang kai xin de wang wang jiao"
+							"fallbackText": "小狗"
 						}
 					}
 				}
@@ -436,7 +424,6 @@
 					"levels": {
 						"L0": {
 							"text": "小猫",
-							"romanization": "xiao mao",
 							"audioText": "小猫",
 							"fallbackText": "小猫",
 							"audio": {
@@ -447,7 +434,6 @@
 						},
 						"L1": {
 							"text": "小猫喵喵叫。",
-							"romanization": "xiao mao miao miao jiao",
 							"audioText": "小猫喵喵叫。",
 							"fallbackText": "小猫",
 							"audio": {
@@ -459,26 +445,22 @@
 						"L2": {
 							"text": "柔软的橙色小猫",
 							"audioText": "柔软的橙色小猫",
-							"fallbackText": "小猫",
-							"romanization": "rou ruan de cheng se xiao mao"
+							"fallbackText": "小猫"
 						},
 						"L3": {
 							"text": "小猫坐在阳光里。",
 							"audioText": "小猫坐在阳光里。",
-							"fallbackText": "小猫",
-							"romanization": "xiao mao zuo zai yang guang li"
+							"fallbackText": "小猫"
 						},
 						"L4": {
 							"text": "谁喵喵叫？小猫喵喵叫。",
 							"audioText": "谁喵喵叫？小猫喵喵叫。",
-							"fallbackText": "小猫",
-							"romanization": "shei miao miao jiao xiao mao miao miao jiao"
+							"fallbackText": "小猫"
 						},
 						"L5": {
 							"text": "小猫在暖暖的阳光里伸伸懒腰。",
 							"audioText": "小猫在暖暖的阳光里伸伸懒腰。",
-							"fallbackText": "小猫",
-							"romanization": "xiao mao zai nuan nuan de yang guang li shen shen lan yao"
+							"fallbackText": "小猫"
 						}
 					}
 				}
@@ -562,7 +544,6 @@
 					"levels": {
 						"L0": {
 							"text": "小鱼",
-							"romanization": "xiao yu",
 							"audioText": "小鱼",
 							"fallbackText": "小鱼",
 							"audio": {
@@ -573,7 +554,6 @@
 						},
 						"L1": {
 							"text": "小鱼游一游。",
-							"romanization": "xiao yu you yi you",
 							"audioText": "小鱼游一游。",
 							"fallbackText": "小鱼",
 							"audio": {
@@ -585,26 +565,22 @@
 						"L2": {
 							"text": "亮蓝色的小鱼",
 							"audioText": "亮蓝色的小鱼",
-							"fallbackText": "小鱼",
-							"romanization": "liang lan se de xiao yu"
+							"fallbackText": "小鱼"
 						},
 						"L3": {
 							"text": "小鱼在池塘里游。",
 							"audioText": "小鱼在池塘里游。",
-							"fallbackText": "小鱼",
-							"romanization": "xiao yu zai chi tang li you"
+							"fallbackText": "小鱼"
 						},
 						"L4": {
 							"text": "谁在水里游？小鱼在水里游。",
 							"audioText": "谁在水里游？小鱼在水里游。",
-							"fallbackText": "小鱼",
-							"romanization": "shei zai shui li you xiao yu zai shui li you"
+							"fallbackText": "小鱼"
 						},
 						"L5": {
 							"text": "小鱼在安静的池塘里吹小泡泡。",
 							"audioText": "小鱼在安静的池塘里吹小泡泡。",
-							"fallbackText": "小鱼",
-							"romanization": "xiao yu zai an jing de chi tang li chui xiao pao pao"
+							"fallbackText": "小鱼"
 						}
 					}
 				}
@@ -688,7 +664,6 @@
 					"levels": {
 						"L0": {
 							"text": "苹果",
-							"romanization": "ping guo",
 							"audioText": "苹果",
 							"fallbackText": "苹果",
 							"audio": {
@@ -699,7 +674,6 @@
 						},
 						"L1": {
 							"text": "苹果脆脆的。",
-							"romanization": "ping guo cui cui de",
 							"audioText": "苹果脆脆的。",
 							"fallbackText": "苹果",
 							"audio": {
@@ -711,26 +685,22 @@
 						"L2": {
 							"text": "圆圆的红苹果",
 							"audioText": "圆圆的红苹果",
-							"fallbackText": "苹果",
-							"romanization": "yuan yuan de hong ping guo"
+							"fallbackText": "苹果"
 						},
 						"L3": {
 							"text": "苹果挂在树上。",
 							"audioText": "苹果挂在树上。",
-							"fallbackText": "苹果",
-							"romanization": "ping guo gua zai shu shang"
+							"fallbackText": "苹果"
 						},
 						"L4": {
 							"text": "什么又红又圆？苹果又红又圆。",
 							"audioText": "什么又红又圆？苹果又红又圆。",
-							"fallbackText": "苹果",
-							"romanization": "shen me you hong you yuan ping guo you hong you yuan"
+							"fallbackText": "苹果"
 						},
 						"L5": {
 							"text": "苹果躺在叶子上，晒着温暖的太阳。",
 							"audioText": "苹果躺在叶子上，晒着温暖的太阳。",
-							"fallbackText": "苹果",
-							"romanization": "ping guo tang zai ye zi shang shai zhe wen nuan de tai yang"
+							"fallbackText": "苹果"
 						}
 					}
 				}
@@ -814,7 +784,6 @@
 					"levels": {
 						"L0": {
 							"text": "香蕉",
-							"romanization": "xiang jiao",
 							"audioText": "香蕉",
 							"fallbackText": "香蕉",
 							"audio": {
@@ -825,7 +794,6 @@
 						},
 						"L1": {
 							"text": "香蕉甜甜的。",
-							"romanization": "xiang jiao tian tian de",
 							"audioText": "香蕉甜甜的。",
 							"fallbackText": "香蕉",
 							"audio": {
@@ -837,26 +805,22 @@
 						"L2": {
 							"text": "弯弯的黄香蕉",
 							"audioText": "弯弯的黄香蕉",
-							"fallbackText": "香蕉",
-							"romanization": "wan wan de huang xiang jiao"
+							"fallbackText": "香蕉"
 						},
 						"L3": {
 							"text": "香蕉又黄又长。",
 							"audioText": "香蕉又黄又长。",
-							"fallbackText": "香蕉",
-							"romanization": "xiang jiao you huang you chang"
+							"fallbackText": "香蕉"
 						},
 						"L4": {
 							"text": "什么水果是黄色的？香蕉是黄色的。",
 							"audioText": "什么水果是黄色的？香蕉是黄色的。",
-							"fallbackText": "香蕉",
-							"romanization": "shen me shui guo shi huang se de xiang jiao shi huang se de"
+							"fallbackText": "香蕉"
 						},
 						"L5": {
 							"text": "香蕉像小月亮一样在花园里微笑。",
 							"audioText": "香蕉像小月亮一样在花园里微笑。",
-							"fallbackText": "香蕉",
-							"romanization": "xiang jiao xiang xiao yue liang yi yang zai hua yuan li wei xiao"
+							"fallbackText": "香蕉"
 						}
 					}
 				}
@@ -940,7 +904,6 @@
 					"levels": {
 						"L0": {
 							"text": "花儿",
-							"romanization": "hua er",
 							"audioText": "花儿",
 							"fallbackText": "花儿",
 							"audio": {
@@ -951,7 +914,6 @@
 						},
 						"L1": {
 							"text": "花儿轻轻摇。",
-							"romanization": "hua er qing qing yao",
 							"audioText": "花儿轻轻摇。",
 							"fallbackText": "花儿",
 							"audio": {
@@ -963,26 +925,22 @@
 						"L2": {
 							"text": "粉色的花",
 							"audioText": "粉色的花",
-							"fallbackText": "花儿",
-							"romanization": "fen se de hua"
+							"fallbackText": "花儿"
 						},
 						"L3": {
 							"text": "花在草地上长大。",
 							"audioText": "花在草地上长大。",
-							"fallbackText": "花儿",
-							"romanization": "hua zai cao di shang zhang da"
+							"fallbackText": "花儿"
 						},
 						"L4": {
 							"text": "什么香香的？花香香的。",
 							"audioText": "什么香香的？花香香的。",
-							"fallbackText": "花儿",
-							"romanization": "shen me xiang xiang de hua xiang xiang de"
+							"fallbackText": "花儿"
 						},
 						"L5": {
 							"text": "花在阳光花园里慢慢开放。",
 							"audioText": "花在阳光花园里慢慢开放。",
-							"fallbackText": "花儿",
-							"romanization": "hua zai yang guang hua yuan li man man kai fang"
+							"fallbackText": "花儿"
 						}
 					}
 				}
@@ -1066,7 +1024,6 @@
 					"levels": {
 						"L0": {
 							"text": "大树",
-							"romanization": "da shu",
 							"audioText": "大树",
 							"fallbackText": "大树",
 							"audio": {
@@ -1077,7 +1034,6 @@
 						},
 						"L1": {
 							"text": "大树高高的。",
-							"romanization": "da shu gao gao de",
 							"audioText": "大树高高的。",
 							"fallbackText": "大树",
 							"audio": {
@@ -1089,26 +1045,22 @@
 						"L2": {
 							"text": "高高的绿树",
 							"audioText": "高高的绿树",
-							"fallbackText": "大树",
-							"romanization": "gao gao de lu shu"
+							"fallbackText": "大树"
 						},
 						"L3": {
 							"text": "大树带来凉凉的树荫。",
 							"audioText": "大树带来凉凉的树荫。",
-							"fallbackText": "大树",
-							"romanization": "da shu dai lai liang liang de shu yin"
+							"fallbackText": "大树"
 						},
 						"L4": {
 							"text": "什么有叶子？大树有叶子。",
 							"audioText": "什么有叶子？大树有叶子。",
-							"fallbackText": "大树",
-							"romanization": "shen me you ye zi da shu you ye zi"
+							"fallbackText": "大树"
 						},
 						"L5": {
 							"text": "大树轻轻摇，小鸟在旁边休息。",
 							"audioText": "大树轻轻摇，小鸟在旁边休息。",
-							"fallbackText": "大树",
-							"romanization": "da shu qing qing yao xiao niao zai pang bian xiu xi"
+							"fallbackText": "大树"
 						}
 					}
 				}
@@ -1192,7 +1144,6 @@
 					"levels": {
 						"L0": {
 							"text": "太阳",
-							"romanization": "tai yang",
 							"audioText": "太阳",
 							"fallbackText": "太阳",
 							"audio": {
@@ -1203,7 +1154,6 @@
 						},
 						"L1": {
 							"text": "太阳暖暖的。",
-							"romanization": "tai yang nuan nuan de",
 							"audioText": "太阳暖暖的。",
 							"fallbackText": "太阳",
 							"audio": {
@@ -1215,26 +1165,22 @@
 						"L2": {
 							"text": "温暖的黄色太阳",
 							"audioText": "温暖的黄色太阳",
-							"fallbackText": "太阳",
-							"romanization": "wen nuan de huang se tai yang"
+							"fallbackText": "太阳"
 						},
 						"L3": {
 							"text": "太阳照着花园。",
 							"audioText": "太阳照着花园。",
-							"fallbackText": "太阳",
-							"romanization": "tai yang zhao zhe hua yuan"
+							"fallbackText": "太阳"
 						},
 						"L4": {
 							"text": "什么会发光？太阳会发光。",
 							"audioText": "什么会发光？太阳会发光。",
-							"fallbackText": "太阳",
-							"romanization": "shen me hui fa guang tai yang hui fa guang"
+							"fallbackText": "太阳"
 						},
 						"L5": {
 							"text": "太阳温暖着花朵、大树和池塘。",
 							"audioText": "太阳温暖着花朵、大树和池塘。",
-							"fallbackText": "太阳",
-							"romanization": "tai yang wen nuan zhe hua duo da shu he chi tang"
+							"fallbackText": "太阳"
 						}
 					}
 				}
@@ -1318,7 +1264,6 @@
 					"levels": {
 						"L0": {
 							"text": "小球",
-							"romanization": "xiao qiu",
 							"audioText": "小球",
 							"fallbackText": "小球",
 							"audio": {
@@ -1329,7 +1274,6 @@
 						},
 						"L1": {
 							"text": "小球滚一滚。",
-							"romanization": "xiao qiu gun yi gun",
 							"audioText": "小球滚一滚。",
 							"fallbackText": "小球",
 							"audio": {
@@ -1341,26 +1285,22 @@
 						"L2": {
 							"text": "彩色的圆球",
 							"audioText": "彩色的圆球",
-							"fallbackText": "小球",
-							"romanization": "cai se de yuan qiu"
+							"fallbackText": "小球"
 						},
 						"L3": {
 							"text": "球在草地上滚。",
 							"audioText": "球在草地上滚。",
-							"fallbackText": "小球",
-							"romanization": "qiu zai cao di shang gun"
+							"fallbackText": "小球"
 						},
 						"L4": {
 							"text": "什么会滚？球会滚。",
 							"audioText": "什么会滚？球会滚。",
-							"fallbackText": "小球",
-							"romanization": "shen me hui gun qiu hui gun"
+							"fallbackText": "小球"
 						},
 						"L5": {
 							"text": "球轻轻滚到花朵旁边停下。",
 							"audioText": "球轻轻滚到花朵旁边停下。",
-							"fallbackText": "小球",
-							"romanization": "qiu qing qing gun dao hua duo pang bian ting xia"
+							"fallbackText": "小球"
 						}
 					}
 				}

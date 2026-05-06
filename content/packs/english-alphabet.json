@@ -286,39 +286,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 A",
-							"romanization": "zi mu A",
 							"audioText": "字母 A",
 							"fallbackText": "字母 A"
 						},
 						"L1": {
 							"text": "A 代表苹果。",
-							"romanization": "A dai biao ping guo",
 							"audioText": "A 代表苹果。",
 							"fallbackText": "字母 A"
 						},
 						"L2": {
 							"text": "大写字母 A",
 							"audioText": "大写字母 A",
-							"fallbackText": "字母 A",
-							"romanization": "da xie zi mu A"
+							"fallbackText": "字母 A"
 						},
 						"L3": {
 							"text": "A 是苹果的开头。",
 							"audioText": "A 是苹果的开头。",
-							"fallbackText": "字母 A",
-							"romanization": "A shi ping guo de kai tou"
+							"fallbackText": "字母 A"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 A。",
 							"audioText": "这是什么字母？这是 A。",
-							"fallbackText": "字母 A",
-							"romanization": "zhe shi shen me zi mu zhe shi A"
+							"fallbackText": "字母 A"
 						},
 						"L5": {
 							"text": "A 在卡片上，轻轻说苹果。",
 							"audioText": "A 在卡片上，轻轻说苹果。",
-							"fallbackText": "字母 A",
-							"romanization": "A zai ka pian shang qing qing shuo ping guo"
+							"fallbackText": "字母 A"
 						}
 					}
 				}
@@ -392,39 +386,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 B",
-							"romanization": "zi mu B",
 							"audioText": "字母 B",
 							"fallbackText": "字母 B"
 						},
 						"L1": {
 							"text": "B 代表球。",
-							"romanization": "B dai biao qiu",
 							"audioText": "B 代表球。",
 							"fallbackText": "字母 B"
 						},
 						"L2": {
 							"text": "大写字母 B",
 							"audioText": "大写字母 B",
-							"fallbackText": "字母 B",
-							"romanization": "da xie zi mu B"
+							"fallbackText": "字母 B"
 						},
 						"L3": {
 							"text": "B 是球的开头。",
 							"audioText": "B 是球的开头。",
-							"fallbackText": "字母 B",
-							"romanization": "B shi qiu de kai tou"
+							"fallbackText": "字母 B"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 B。",
 							"audioText": "这是什么字母？这是 B。",
-							"fallbackText": "字母 B",
-							"romanization": "zhe shi shen me zi mu zhe shi B"
+							"fallbackText": "字母 B"
 						},
 						"L5": {
 							"text": "B 在卡片上，轻轻说球。",
 							"audioText": "B 在卡片上，轻轻说球。",
-							"fallbackText": "字母 B",
-							"romanization": "B zai ka pian shang qing qing shuo qiu"
+							"fallbackText": "字母 B"
 						}
 					}
 				}
@@ -498,39 +486,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 C",
-							"romanization": "zi mu C",
 							"audioText": "字母 C",
 							"fallbackText": "字母 C"
 						},
 						"L1": {
 							"text": "C 代表小猫。",
-							"romanization": "C dai biao xiao mao",
 							"audioText": "C 代表小猫。",
 							"fallbackText": "字母 C"
 						},
 						"L2": {
 							"text": "大写字母 C",
 							"audioText": "大写字母 C",
-							"fallbackText": "字母 C",
-							"romanization": "da xie zi mu C"
+							"fallbackText": "字母 C"
 						},
 						"L3": {
 							"text": "C 是小猫的开头。",
 							"audioText": "C 是小猫的开头。",
-							"fallbackText": "字母 C",
-							"romanization": "C shi xiao mao de kai tou"
+							"fallbackText": "字母 C"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 C。",
 							"audioText": "这是什么字母？这是 C。",
-							"fallbackText": "字母 C",
-							"romanization": "zhe shi shen me zi mu zhe shi C"
+							"fallbackText": "字母 C"
 						},
 						"L5": {
 							"text": "C 在卡片上，轻轻说小猫。",
 							"audioText": "C 在卡片上，轻轻说小猫。",
-							"fallbackText": "字母 C",
-							"romanization": "C zai ka pian shang qing qing shuo xiao mao"
+							"fallbackText": "字母 C"
 						}
 					}
 				}
@@ -604,39 +586,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 D",
-							"romanization": "zi mu D",
 							"audioText": "字母 D",
 							"fallbackText": "字母 D"
 						},
 						"L1": {
 							"text": "D 代表鸭子。",
-							"romanization": "D dai biao ya zi",
 							"audioText": "D 代表鸭子。",
 							"fallbackText": "字母 D"
 						},
 						"L2": {
 							"text": "大写字母 D",
 							"audioText": "大写字母 D",
-							"fallbackText": "字母 D",
-							"romanization": "da xie zi mu D"
+							"fallbackText": "字母 D"
 						},
 						"L3": {
 							"text": "D 是鸭子的开头。",
 							"audioText": "D 是鸭子的开头。",
-							"fallbackText": "字母 D",
-							"romanization": "D shi ya zi de kai tou"
+							"fallbackText": "字母 D"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 D。",
 							"audioText": "这是什么字母？这是 D。",
-							"fallbackText": "字母 D",
-							"romanization": "zhe shi shen me zi mu zhe shi D"
+							"fallbackText": "字母 D"
 						},
 						"L5": {
 							"text": "D 在卡片上，轻轻说鸭子。",
 							"audioText": "D 在卡片上，轻轻说鸭子。",
-							"fallbackText": "字母 D",
-							"romanization": "D zai ka pian shang qing qing shuo ya zi"
+							"fallbackText": "字母 D"
 						}
 					}
 				}
@@ -710,39 +686,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 E",
-							"romanization": "zi mu E",
 							"audioText": "字母 E",
 							"fallbackText": "字母 E"
 						},
 						"L1": {
 							"text": "E 代表鸡蛋。",
-							"romanization": "E dai biao ji dan",
 							"audioText": "E 代表鸡蛋。",
 							"fallbackText": "字母 E"
 						},
 						"L2": {
 							"text": "大写字母 E",
 							"audioText": "大写字母 E",
-							"fallbackText": "字母 E",
-							"romanization": "da xie zi mu E"
+							"fallbackText": "字母 E"
 						},
 						"L3": {
 							"text": "E 是鸡蛋的开头。",
 							"audioText": "E 是鸡蛋的开头。",
-							"fallbackText": "字母 E",
-							"romanization": "E shi ji dan de kai tou"
+							"fallbackText": "字母 E"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 E。",
 							"audioText": "这是什么字母？这是 E。",
-							"fallbackText": "字母 E",
-							"romanization": "zhe shi shen me zi mu zhe shi E"
+							"fallbackText": "字母 E"
 						},
 						"L5": {
 							"text": "E 在卡片上，轻轻说鸡蛋。",
 							"audioText": "E 在卡片上，轻轻说鸡蛋。",
-							"fallbackText": "字母 E",
-							"romanization": "E zai ka pian shang qing qing shuo ji dan"
+							"fallbackText": "字母 E"
 						}
 					}
 				}
@@ -816,39 +786,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 F",
-							"romanization": "zi mu F",
 							"audioText": "字母 F",
 							"fallbackText": "字母 F"
 						},
 						"L1": {
 							"text": "F 代表鱼。",
-							"romanization": "F dai biao yu",
 							"audioText": "F 代表鱼。",
 							"fallbackText": "字母 F"
 						},
 						"L2": {
 							"text": "大写字母 F",
 							"audioText": "大写字母 F",
-							"fallbackText": "字母 F",
-							"romanization": "da xie zi mu F"
+							"fallbackText": "字母 F"
 						},
 						"L3": {
 							"text": "F 是鱼的开头。",
 							"audioText": "F 是鱼的开头。",
-							"fallbackText": "字母 F",
-							"romanization": "F shi yu de kai tou"
+							"fallbackText": "字母 F"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 F。",
 							"audioText": "这是什么字母？这是 F。",
-							"fallbackText": "字母 F",
-							"romanization": "zhe shi shen me zi mu zhe shi F"
+							"fallbackText": "字母 F"
 						},
 						"L5": {
 							"text": "F 在卡片上，轻轻说鱼。",
 							"audioText": "F 在卡片上，轻轻说鱼。",
-							"fallbackText": "字母 F",
-							"romanization": "F zai ka pian shang qing qing shuo yu"
+							"fallbackText": "字母 F"
 						}
 					}
 				}
@@ -922,39 +886,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 G",
-							"romanization": "zi mu G",
 							"audioText": "字母 G",
 							"fallbackText": "字母 G"
 						},
 						"L1": {
 							"text": "G 代表花园。",
-							"romanization": "G dai biao hua yuan",
 							"audioText": "G 代表花园。",
 							"fallbackText": "字母 G"
 						},
 						"L2": {
 							"text": "大写字母 G",
 							"audioText": "大写字母 G",
-							"fallbackText": "字母 G",
-							"romanization": "da xie zi mu G"
+							"fallbackText": "字母 G"
 						},
 						"L3": {
 							"text": "G 是花园的开头。",
 							"audioText": "G 是花园的开头。",
-							"fallbackText": "字母 G",
-							"romanization": "G shi hua yuan de kai tou"
+							"fallbackText": "字母 G"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 G。",
 							"audioText": "这是什么字母？这是 G。",
-							"fallbackText": "字母 G",
-							"romanization": "zhe shi shen me zi mu zhe shi G"
+							"fallbackText": "字母 G"
 						},
 						"L5": {
 							"text": "G 在卡片上，轻轻说花园。",
 							"audioText": "G 在卡片上，轻轻说花园。",
-							"fallbackText": "字母 G",
-							"romanization": "G zai ka pian shang qing qing shuo hua yuan"
+							"fallbackText": "字母 G"
 						}
 					}
 				}
@@ -1028,39 +986,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 H",
-							"romanization": "zi mu H",
 							"audioText": "字母 H",
 							"fallbackText": "字母 H"
 						},
 						"L1": {
 							"text": "H 代表帽子。",
-							"romanization": "H dai biao mao zi",
 							"audioText": "H 代表帽子。",
 							"fallbackText": "字母 H"
 						},
 						"L2": {
 							"text": "大写字母 H",
 							"audioText": "大写字母 H",
-							"fallbackText": "字母 H",
-							"romanization": "da xie zi mu H"
+							"fallbackText": "字母 H"
 						},
 						"L3": {
 							"text": "H 是帽子的开头。",
 							"audioText": "H 是帽子的开头。",
-							"fallbackText": "字母 H",
-							"romanization": "H shi mao zi de kai tou"
+							"fallbackText": "字母 H"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 H。",
 							"audioText": "这是什么字母？这是 H。",
-							"fallbackText": "字母 H",
-							"romanization": "zhe shi shen me zi mu zhe shi H"
+							"fallbackText": "字母 H"
 						},
 						"L5": {
 							"text": "H 在卡片上，轻轻说帽子。",
 							"audioText": "H 在卡片上，轻轻说帽子。",
-							"fallbackText": "字母 H",
-							"romanization": "H zai ka pian shang qing qing shuo mao zi"
+							"fallbackText": "字母 H"
 						}
 					}
 				}
@@ -1134,39 +1086,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 I",
-							"romanization": "zi mu I",
 							"audioText": "字母 I",
 							"fallbackText": "字母 I"
 						},
 						"L1": {
 							"text": "I 代表冰屋。",
-							"romanization": "I dai biao bing wu",
 							"audioText": "I 代表冰屋。",
 							"fallbackText": "字母 I"
 						},
 						"L2": {
 							"text": "大写字母 I",
 							"audioText": "大写字母 I",
-							"fallbackText": "字母 I",
-							"romanization": "da xie zi mu I"
+							"fallbackText": "字母 I"
 						},
 						"L3": {
 							"text": "I 是冰屋的开头。",
 							"audioText": "I 是冰屋的开头。",
-							"fallbackText": "字母 I",
-							"romanization": "I shi bing wu de kai tou"
+							"fallbackText": "字母 I"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 I。",
 							"audioText": "这是什么字母？这是 I。",
-							"fallbackText": "字母 I",
-							"romanization": "zhe shi shen me zi mu zhe shi I"
+							"fallbackText": "字母 I"
 						},
 						"L5": {
 							"text": "I 在卡片上，轻轻说冰屋。",
 							"audioText": "I 在卡片上，轻轻说冰屋。",
-							"fallbackText": "字母 I",
-							"romanization": "I zai ka pian shang qing qing shuo bing wu"
+							"fallbackText": "字母 I"
 						}
 					}
 				}
@@ -1240,39 +1186,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 J",
-							"romanization": "zi mu J",
 							"audioText": "字母 J",
 							"fallbackText": "字母 J"
 						},
 						"L1": {
 							"text": "J 代表果酱。",
-							"romanization": "J dai biao guo jiang",
 							"audioText": "J 代表果酱。",
 							"fallbackText": "字母 J"
 						},
 						"L2": {
 							"text": "大写字母 J",
 							"audioText": "大写字母 J",
-							"fallbackText": "字母 J",
-							"romanization": "da xie zi mu J"
+							"fallbackText": "字母 J"
 						},
 						"L3": {
 							"text": "J 是果酱的开头。",
 							"audioText": "J 是果酱的开头。",
-							"fallbackText": "字母 J",
-							"romanization": "J shi guo jiang de kai tou"
+							"fallbackText": "字母 J"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 J。",
 							"audioText": "这是什么字母？这是 J。",
-							"fallbackText": "字母 J",
-							"romanization": "zhe shi shen me zi mu zhe shi J"
+							"fallbackText": "字母 J"
 						},
 						"L5": {
 							"text": "J 在卡片上，轻轻说果酱。",
 							"audioText": "J 在卡片上，轻轻说果酱。",
-							"fallbackText": "字母 J",
-							"romanization": "J zai ka pian shang qing qing shuo guo jiang"
+							"fallbackText": "字母 J"
 						}
 					}
 				}
@@ -1346,39 +1286,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 K",
-							"romanization": "zi mu K",
 							"audioText": "字母 K",
 							"fallbackText": "字母 K"
 						},
 						"L1": {
 							"text": "K 代表风筝。",
-							"romanization": "K dai biao feng zheng",
 							"audioText": "K 代表风筝。",
 							"fallbackText": "字母 K"
 						},
 						"L2": {
 							"text": "大写字母 K",
 							"audioText": "大写字母 K",
-							"fallbackText": "字母 K",
-							"romanization": "da xie zi mu K"
+							"fallbackText": "字母 K"
 						},
 						"L3": {
 							"text": "K 是风筝的开头。",
 							"audioText": "K 是风筝的开头。",
-							"fallbackText": "字母 K",
-							"romanization": "K shi feng zheng de kai tou"
+							"fallbackText": "字母 K"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 K。",
 							"audioText": "这是什么字母？这是 K。",
-							"fallbackText": "字母 K",
-							"romanization": "zhe shi shen me zi mu zhe shi K"
+							"fallbackText": "字母 K"
 						},
 						"L5": {
 							"text": "K 在卡片上，轻轻说风筝。",
 							"audioText": "K 在卡片上，轻轻说风筝。",
-							"fallbackText": "字母 K",
-							"romanization": "K zai ka pian shang qing qing shuo feng zheng"
+							"fallbackText": "字母 K"
 						}
 					}
 				}
@@ -1452,39 +1386,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 L",
-							"romanization": "zi mu L",
 							"audioText": "字母 L",
 							"fallbackText": "字母 L"
 						},
 						"L1": {
 							"text": "L 代表叶子。",
-							"romanization": "L dai biao ye zi",
 							"audioText": "L 代表叶子。",
 							"fallbackText": "字母 L"
 						},
 						"L2": {
 							"text": "大写字母 L",
 							"audioText": "大写字母 L",
-							"fallbackText": "字母 L",
-							"romanization": "da xie zi mu L"
+							"fallbackText": "字母 L"
 						},
 						"L3": {
 							"text": "L 是叶子的开头。",
 							"audioText": "L 是叶子的开头。",
-							"fallbackText": "字母 L",
-							"romanization": "L shi ye zi de kai tou"
+							"fallbackText": "字母 L"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 L。",
 							"audioText": "这是什么字母？这是 L。",
-							"fallbackText": "字母 L",
-							"romanization": "zhe shi shen me zi mu zhe shi L"
+							"fallbackText": "字母 L"
 						},
 						"L5": {
 							"text": "L 在卡片上，轻轻说叶子。",
 							"audioText": "L 在卡片上，轻轻说叶子。",
-							"fallbackText": "字母 L",
-							"romanization": "L zai ka pian shang qing qing shuo ye zi"
+							"fallbackText": "字母 L"
 						}
 					}
 				}
@@ -1558,39 +1486,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 M",
-							"romanization": "zi mu M",
 							"audioText": "字母 M",
 							"fallbackText": "字母 M"
 						},
 						"L1": {
 							"text": "M 代表月亮。",
-							"romanization": "M dai biao yue liang",
 							"audioText": "M 代表月亮。",
 							"fallbackText": "字母 M"
 						},
 						"L2": {
 							"text": "大写字母 M",
 							"audioText": "大写字母 M",
-							"fallbackText": "字母 M",
-							"romanization": "da xie zi mu M"
+							"fallbackText": "字母 M"
 						},
 						"L3": {
 							"text": "M 是月亮的开头。",
 							"audioText": "M 是月亮的开头。",
-							"fallbackText": "字母 M",
-							"romanization": "M shi yue liang de kai tou"
+							"fallbackText": "字母 M"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 M。",
 							"audioText": "这是什么字母？这是 M。",
-							"fallbackText": "字母 M",
-							"romanization": "zhe shi shen me zi mu zhe shi M"
+							"fallbackText": "字母 M"
 						},
 						"L5": {
 							"text": "M 在卡片上，轻轻说月亮。",
 							"audioText": "M 在卡片上，轻轻说月亮。",
-							"fallbackText": "字母 M",
-							"romanization": "M zai ka pian shang qing qing shuo yue liang"
+							"fallbackText": "字母 M"
 						}
 					}
 				}
@@ -1664,39 +1586,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 N",
-							"romanization": "zi mu N",
 							"audioText": "字母 N",
 							"fallbackText": "字母 N"
 						},
 						"L1": {
 							"text": "N 代表鸟巢。",
-							"romanization": "N dai biao niao chao",
 							"audioText": "N 代表鸟巢。",
 							"fallbackText": "字母 N"
 						},
 						"L2": {
 							"text": "大写字母 N",
 							"audioText": "大写字母 N",
-							"fallbackText": "字母 N",
-							"romanization": "da xie zi mu N"
+							"fallbackText": "字母 N"
 						},
 						"L3": {
 							"text": "N 是鸟巢的开头。",
 							"audioText": "N 是鸟巢的开头。",
-							"fallbackText": "字母 N",
-							"romanization": "N shi niao chao de kai tou"
+							"fallbackText": "字母 N"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 N。",
 							"audioText": "这是什么字母？这是 N。",
-							"fallbackText": "字母 N",
-							"romanization": "zhe shi shen me zi mu zhe shi N"
+							"fallbackText": "字母 N"
 						},
 						"L5": {
 							"text": "N 在卡片上，轻轻说鸟巢。",
 							"audioText": "N 在卡片上，轻轻说鸟巢。",
-							"fallbackText": "字母 N",
-							"romanization": "N zai ka pian shang qing qing shuo niao chao"
+							"fallbackText": "字母 N"
 						}
 					}
 				}
@@ -1770,39 +1686,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 O",
-							"romanization": "zi mu O",
 							"audioText": "字母 O",
 							"fallbackText": "字母 O"
 						},
 						"L1": {
 							"text": "O 代表橙子。",
-							"romanization": "O dai biao cheng zi",
 							"audioText": "O 代表橙子。",
 							"fallbackText": "字母 O"
 						},
 						"L2": {
 							"text": "大写字母 O",
 							"audioText": "大写字母 O",
-							"fallbackText": "字母 O",
-							"romanization": "da xie zi mu O"
+							"fallbackText": "字母 O"
 						},
 						"L3": {
 							"text": "O 是橙子的开头。",
 							"audioText": "O 是橙子的开头。",
-							"fallbackText": "字母 O",
-							"romanization": "O shi cheng zi de kai tou"
+							"fallbackText": "字母 O"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 O。",
 							"audioText": "这是什么字母？这是 O。",
-							"fallbackText": "字母 O",
-							"romanization": "zhe shi shen me zi mu zhe shi O"
+							"fallbackText": "字母 O"
 						},
 						"L5": {
 							"text": "O 在卡片上，轻轻说橙子。",
 							"audioText": "O 在卡片上，轻轻说橙子。",
-							"fallbackText": "字母 O",
-							"romanization": "O zai ka pian shang qing qing shuo cheng zi"
+							"fallbackText": "字母 O"
 						}
 					}
 				}
@@ -1876,39 +1786,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 P",
-							"romanization": "zi mu P",
 							"audioText": "字母 P",
 							"fallbackText": "字母 P"
 						},
 						"L1": {
 							"text": "P 代表小狗。",
-							"romanization": "P dai biao xiao gou",
 							"audioText": "P 代表小狗。",
 							"fallbackText": "字母 P"
 						},
 						"L2": {
 							"text": "大写字母 P",
 							"audioText": "大写字母 P",
-							"fallbackText": "字母 P",
-							"romanization": "da xie zi mu P"
+							"fallbackText": "字母 P"
 						},
 						"L3": {
 							"text": "P 是小狗的开头。",
 							"audioText": "P 是小狗的开头。",
-							"fallbackText": "字母 P",
-							"romanization": "P shi xiao gou de kai tou"
+							"fallbackText": "字母 P"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 P。",
 							"audioText": "这是什么字母？这是 P。",
-							"fallbackText": "字母 P",
-							"romanization": "zhe shi shen me zi mu zhe shi P"
+							"fallbackText": "字母 P"
 						},
 						"L5": {
 							"text": "P 在卡片上，轻轻说小狗。",
 							"audioText": "P 在卡片上，轻轻说小狗。",
-							"fallbackText": "字母 P",
-							"romanization": "P zai ka pian shang qing qing shuo xiao gou"
+							"fallbackText": "字母 P"
 						}
 					}
 				}
@@ -1982,39 +1886,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 Q",
-							"romanization": "zi mu Q",
 							"audioText": "字母 Q",
 							"fallbackText": "字母 Q"
 						},
 						"L1": {
 							"text": "Q 代表被子。",
-							"romanization": "Q dai biao bei zi",
 							"audioText": "Q 代表被子。",
 							"fallbackText": "字母 Q"
 						},
 						"L2": {
 							"text": "大写字母 Q",
 							"audioText": "大写字母 Q",
-							"fallbackText": "字母 Q",
-							"romanization": "da xie zi mu Q"
+							"fallbackText": "字母 Q"
 						},
 						"L3": {
 							"text": "Q 是被子的开头。",
 							"audioText": "Q 是被子的开头。",
-							"fallbackText": "字母 Q",
-							"romanization": "Q shi bei zi de kai tou"
+							"fallbackText": "字母 Q"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 Q。",
 							"audioText": "这是什么字母？这是 Q。",
-							"fallbackText": "字母 Q",
-							"romanization": "zhe shi shen me zi mu zhe shi Q"
+							"fallbackText": "字母 Q"
 						},
 						"L5": {
 							"text": "Q 在卡片上，轻轻说被子。",
 							"audioText": "Q 在卡片上，轻轻说被子。",
-							"fallbackText": "字母 Q",
-							"romanization": "Q zai ka pian shang qing qing shuo bei zi"
+							"fallbackText": "字母 Q"
 						}
 					}
 				}
@@ -2088,39 +1986,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 R",
-							"romanization": "zi mu R",
 							"audioText": "字母 R",
 							"fallbackText": "字母 R"
 						},
 						"L1": {
 							"text": "R 代表彩虹。",
-							"romanization": "R dai biao cai hong",
 							"audioText": "R 代表彩虹。",
 							"fallbackText": "字母 R"
 						},
 						"L2": {
 							"text": "大写字母 R",
 							"audioText": "大写字母 R",
-							"fallbackText": "字母 R",
-							"romanization": "da xie zi mu R"
+							"fallbackText": "字母 R"
 						},
 						"L3": {
 							"text": "R 是彩虹的开头。",
 							"audioText": "R 是彩虹的开头。",
-							"fallbackText": "字母 R",
-							"romanization": "R shi cai hong de kai tou"
+							"fallbackText": "字母 R"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 R。",
 							"audioText": "这是什么字母？这是 R。",
-							"fallbackText": "字母 R",
-							"romanization": "zhe shi shen me zi mu zhe shi R"
+							"fallbackText": "字母 R"
 						},
 						"L5": {
 							"text": "R 在卡片上，轻轻说彩虹。",
 							"audioText": "R 在卡片上，轻轻说彩虹。",
-							"fallbackText": "字母 R",
-							"romanization": "R zai ka pian shang qing qing shuo cai hong"
+							"fallbackText": "字母 R"
 						}
 					}
 				}
@@ -2194,39 +2086,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 S",
-							"romanization": "zi mu S",
 							"audioText": "字母 S",
 							"fallbackText": "字母 S"
 						},
 						"L1": {
 							"text": "S 代表太阳。",
-							"romanization": "S dai biao tai yang",
 							"audioText": "S 代表太阳。",
 							"fallbackText": "字母 S"
 						},
 						"L2": {
 							"text": "大写字母 S",
 							"audioText": "大写字母 S",
-							"fallbackText": "字母 S",
-							"romanization": "da xie zi mu S"
+							"fallbackText": "字母 S"
 						},
 						"L3": {
 							"text": "S 是太阳的开头。",
 							"audioText": "S 是太阳的开头。",
-							"fallbackText": "字母 S",
-							"romanization": "S shi tai yang de kai tou"
+							"fallbackText": "字母 S"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 S。",
 							"audioText": "这是什么字母？这是 S。",
-							"fallbackText": "字母 S",
-							"romanization": "zhe shi shen me zi mu zhe shi S"
+							"fallbackText": "字母 S"
 						},
 						"L5": {
 							"text": "S 在卡片上，轻轻说太阳。",
 							"audioText": "S 在卡片上，轻轻说太阳。",
-							"fallbackText": "字母 S",
-							"romanization": "S zai ka pian shang qing qing shuo tai yang"
+							"fallbackText": "字母 S"
 						}
 					}
 				}
@@ -2300,39 +2186,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 T",
-							"romanization": "zi mu T",
 							"audioText": "字母 T",
 							"fallbackText": "字母 T"
 						},
 						"L1": {
 							"text": "T 代表树。",
-							"romanization": "T dai biao shu",
 							"audioText": "T 代表树。",
 							"fallbackText": "字母 T"
 						},
 						"L2": {
 							"text": "大写字母 T",
 							"audioText": "大写字母 T",
-							"fallbackText": "字母 T",
-							"romanization": "da xie zi mu T"
+							"fallbackText": "字母 T"
 						},
 						"L3": {
 							"text": "T 是树的开头。",
 							"audioText": "T 是树的开头。",
-							"fallbackText": "字母 T",
-							"romanization": "T shi shu de kai tou"
+							"fallbackText": "字母 T"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 T。",
 							"audioText": "这是什么字母？这是 T。",
-							"fallbackText": "字母 T",
-							"romanization": "zhe shi shen me zi mu zhe shi T"
+							"fallbackText": "字母 T"
 						},
 						"L5": {
 							"text": "T 在卡片上，轻轻说树。",
 							"audioText": "T 在卡片上，轻轻说树。",
-							"fallbackText": "字母 T",
-							"romanization": "T zai ka pian shang qing qing shuo shu"
+							"fallbackText": "字母 T"
 						}
 					}
 				}
@@ -2406,39 +2286,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 U",
-							"romanization": "zi mu U",
 							"audioText": "字母 U",
 							"fallbackText": "字母 U"
 						},
 						"L1": {
 							"text": "U 代表雨伞。",
-							"romanization": "U dai biao yu san",
 							"audioText": "U 代表雨伞。",
 							"fallbackText": "字母 U"
 						},
 						"L2": {
 							"text": "大写字母 U",
 							"audioText": "大写字母 U",
-							"fallbackText": "字母 U",
-							"romanization": "da xie zi mu U"
+							"fallbackText": "字母 U"
 						},
 						"L3": {
 							"text": "U 是雨伞的开头。",
 							"audioText": "U 是雨伞的开头。",
-							"fallbackText": "字母 U",
-							"romanization": "U shi yu san de kai tou"
+							"fallbackText": "字母 U"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 U。",
 							"audioText": "这是什么字母？这是 U。",
-							"fallbackText": "字母 U",
-							"romanization": "zhe shi shen me zi mu zhe shi U"
+							"fallbackText": "字母 U"
 						},
 						"L5": {
 							"text": "U 在卡片上，轻轻说雨伞。",
 							"audioText": "U 在卡片上，轻轻说雨伞。",
-							"fallbackText": "字母 U",
-							"romanization": "U zai ka pian shang qing qing shuo yu san"
+							"fallbackText": "字母 U"
 						}
 					}
 				}
@@ -2512,39 +2386,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 V",
-							"romanization": "zi mu V",
 							"audioText": "字母 V",
 							"fallbackText": "字母 V"
 						},
 						"L1": {
 							"text": "V 代表小提琴。",
-							"romanization": "V dai biao xiao ti qin",
 							"audioText": "V 代表小提琴。",
 							"fallbackText": "字母 V"
 						},
 						"L2": {
 							"text": "大写字母 V",
 							"audioText": "大写字母 V",
-							"fallbackText": "字母 V",
-							"romanization": "da xie zi mu V"
+							"fallbackText": "字母 V"
 						},
 						"L3": {
 							"text": "V 是小提琴的开头。",
 							"audioText": "V 是小提琴的开头。",
-							"fallbackText": "字母 V",
-							"romanization": "V shi xiao ti qin de kai tou"
+							"fallbackText": "字母 V"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 V。",
 							"audioText": "这是什么字母？这是 V。",
-							"fallbackText": "字母 V",
-							"romanization": "zhe shi shen me zi mu zhe shi V"
+							"fallbackText": "字母 V"
 						},
 						"L5": {
 							"text": "V 在卡片上，轻轻说小提琴。",
 							"audioText": "V 在卡片上，轻轻说小提琴。",
-							"fallbackText": "字母 V",
-							"romanization": "V zai ka pian shang qing qing shuo xiao ti qin"
+							"fallbackText": "字母 V"
 						}
 					}
 				}
@@ -2618,39 +2486,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 W",
-							"romanization": "zi mu W",
 							"audioText": "字母 W",
 							"fallbackText": "字母 W"
 						},
 						"L1": {
 							"text": "W 代表鲸鱼。",
-							"romanization": "W dai biao jing yu",
 							"audioText": "W 代表鲸鱼。",
 							"fallbackText": "字母 W"
 						},
 						"L2": {
 							"text": "大写字母 W",
 							"audioText": "大写字母 W",
-							"fallbackText": "字母 W",
-							"romanization": "da xie zi mu W"
+							"fallbackText": "字母 W"
 						},
 						"L3": {
 							"text": "W 是鲸鱼的开头。",
 							"audioText": "W 是鲸鱼的开头。",
-							"fallbackText": "字母 W",
-							"romanization": "W shi jing yu de kai tou"
+							"fallbackText": "字母 W"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 W。",
 							"audioText": "这是什么字母？这是 W。",
-							"fallbackText": "字母 W",
-							"romanization": "zhe shi shen me zi mu zhe shi W"
+							"fallbackText": "字母 W"
 						},
 						"L5": {
 							"text": "W 在卡片上，轻轻说鲸鱼。",
 							"audioText": "W 在卡片上，轻轻说鲸鱼。",
-							"fallbackText": "字母 W",
-							"romanization": "W zai ka pian shang qing qing shuo jing yu"
+							"fallbackText": "字母 W"
 						}
 					}
 				}
@@ -2724,39 +2586,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 X",
-							"romanization": "zi mu X",
 							"audioText": "字母 X",
 							"fallbackText": "字母 X"
 						},
 						"L1": {
 							"text": "X 代表木琴。",
-							"romanization": "X dai biao mu qin",
 							"audioText": "X 代表木琴。",
 							"fallbackText": "字母 X"
 						},
 						"L2": {
 							"text": "大写字母 X",
 							"audioText": "大写字母 X",
-							"fallbackText": "字母 X",
-							"romanization": "da xie zi mu X"
+							"fallbackText": "字母 X"
 						},
 						"L3": {
 							"text": "X 是木琴的开头。",
 							"audioText": "X 是木琴的开头。",
-							"fallbackText": "字母 X",
-							"romanization": "X shi mu qin de kai tou"
+							"fallbackText": "字母 X"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 X。",
 							"audioText": "这是什么字母？这是 X。",
-							"fallbackText": "字母 X",
-							"romanization": "zhe shi shen me zi mu zhe shi X"
+							"fallbackText": "字母 X"
 						},
 						"L5": {
 							"text": "X 在卡片上，轻轻说木琴。",
 							"audioText": "X 在卡片上，轻轻说木琴。",
-							"fallbackText": "字母 X",
-							"romanization": "X zai ka pian shang qing qing shuo mu qin"
+							"fallbackText": "字母 X"
 						}
 					}
 				}
@@ -2830,39 +2686,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 Y",
-							"romanization": "zi mu Y",
 							"audioText": "字母 Y",
 							"fallbackText": "字母 Y"
 						},
 						"L1": {
 							"text": "Y 代表溜溜球。",
-							"romanization": "Y dai biao liu liu qiu",
 							"audioText": "Y 代表溜溜球。",
 							"fallbackText": "字母 Y"
 						},
 						"L2": {
 							"text": "大写字母 Y",
 							"audioText": "大写字母 Y",
-							"fallbackText": "字母 Y",
-							"romanization": "da xie zi mu Y"
+							"fallbackText": "字母 Y"
 						},
 						"L3": {
 							"text": "Y 是溜溜球的开头。",
 							"audioText": "Y 是溜溜球的开头。",
-							"fallbackText": "字母 Y",
-							"romanization": "Y shi liu liu qiu de kai tou"
+							"fallbackText": "字母 Y"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 Y。",
 							"audioText": "这是什么字母？这是 Y。",
-							"fallbackText": "字母 Y",
-							"romanization": "zhe shi shen me zi mu zhe shi Y"
+							"fallbackText": "字母 Y"
 						},
 						"L5": {
 							"text": "Y 在卡片上，轻轻说溜溜球。",
 							"audioText": "Y 在卡片上，轻轻说溜溜球。",
-							"fallbackText": "字母 Y",
-							"romanization": "Y zai ka pian shang qing qing shuo liu liu qiu"
+							"fallbackText": "字母 Y"
 						}
 					}
 				}
@@ -2936,39 +2786,33 @@
 					"levels": {
 						"L0": {
 							"text": "字母 Z",
-							"romanization": "zi mu Z",
 							"audioText": "字母 Z",
 							"fallbackText": "字母 Z"
 						},
 						"L1": {
 							"text": "Z 代表斑马。",
-							"romanization": "Z dai biao ban ma",
 							"audioText": "Z 代表斑马。",
 							"fallbackText": "字母 Z"
 						},
 						"L2": {
 							"text": "大写字母 Z",
 							"audioText": "大写字母 Z",
-							"fallbackText": "字母 Z",
-							"romanization": "da xie zi mu Z"
+							"fallbackText": "字母 Z"
 						},
 						"L3": {
 							"text": "Z 是斑马的开头。",
 							"audioText": "Z 是斑马的开头。",
-							"fallbackText": "字母 Z",
-							"romanization": "Z shi ban ma de kai tou"
+							"fallbackText": "字母 Z"
 						},
 						"L4": {
 							"text": "这是什么字母？这是 Z。",
 							"audioText": "这是什么字母？这是 Z。",
-							"fallbackText": "字母 Z",
-							"romanization": "zhe shi shen me zi mu zhe shi Z"
+							"fallbackText": "字母 Z"
 						},
 						"L5": {
 							"text": "Z 在卡片上，轻轻说斑马。",
 							"audioText": "Z 在卡片上，轻轻说斑马。",
-							"fallbackText": "字母 Z",
-							"romanization": "Z zai ka pian shang qing qing shuo ban ma"
+							"fallbackText": "字母 Z"
 						}
 					}
 				}

@@ -19,9 +19,9 @@ committed source content directly.
 - Write source content as committed JSON under `content/packs/*.json`.
 - Write static image/audio files under `public/assets/` and reference them from
   the content pack.
-- Keep pack content bilingual for MVP-quality packs: English and Simplified
-  Chinese L0/L1 text, audio text, find prompt, success phrase, fallback text,
-  and Simplified Chinese romanization.
+- Keep pack content bilingual for production-quality packs: English and
+  Simplified Chinese L0/L1 text, audio text, find prompt, success phrase, and
+  fallback text.
 
 ## Content Pack Checklist
 

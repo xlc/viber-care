@@ -177,8 +177,7 @@ input:focus-visible {
 	gap: 10px;
 }
 
-.icon-button,
-.mini-icon-button {
+.icon-button {
 	display: inline-grid;
 	place-items: center;
 	border: 1px solid var(--line);
@@ -197,12 +196,6 @@ input:focus-visible {
 .icon-button[aria-pressed="true"] {
 	background: #17323a;
 	color: white;
-}
-
-.mini-icon-button {
-	width: 36px;
-	height: 36px;
-	border-radius: 50%;
 }
 
 .play-area {
@@ -431,34 +424,6 @@ input:focus-visible {
 	accent-color: var(--pond);
 }
 
-.custom-language-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 6px 12px;
-	margin-top: 12px;
-}
-
-.custom-order-list {
-	display: grid;
-	gap: 8px;
-	margin: 12px 0 0;
-	padding: 0;
-	list-style: none;
-}
-
-.custom-order-list li {
-	display: grid;
-	grid-template-columns: 1fr auto auto;
-	align-items: center;
-	gap: 8px;
-	min-height: 44px;
-	padding: 6px 8px 6px 14px;
-	border-radius: 8px;
-	background: #f3fbfd;
-	border: 1px solid rgba(17, 138, 178, 0.16);
-	font-weight: 840;
-}
-
 .loading-screen {
 	min-height: 100vh;
 	display: grid;
@@ -575,10 +540,6 @@ input:focus-visible {
 
 	.word-line span {
 		font-size: 1.32rem;
-	}
-
-	.custom-language-grid {
-		grid-template-columns: 1fr;
 	}
 }
 

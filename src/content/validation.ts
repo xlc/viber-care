@@ -51,12 +51,6 @@ export function validateContentPacks(input: unknown[]): ContentPack[] {
 						messages.push(
 							`Object "${object.id}" is missing ${language} ${level} content.`,
 						)
-						continue
-					}
-					if (language === 'zh-Hans' && !levelContent.romanization) {
-						messages.push(
-							`Object "${object.id}" is missing zh-Hans ${level} romanization.`,
-						)
 					}
 				}
 			}

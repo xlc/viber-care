@@ -1,14 +1,6 @@
 import { z } from 'zod'
 
-export const SUPPORTED_LANGUAGE_CODES = [
-	'en',
-	'zh-Hans',
-	'zh-Hant',
-	'es',
-	'fr',
-	'ja',
-	'ko',
-] as const
+export const SUPPORTED_LANGUAGE_CODES = ['en', 'zh-Hans'] as const
 
 export const LEARNING_LEVELS = ['L0', 'L1', 'L2', 'L3', 'L4', 'L5'] as const
 
@@ -55,7 +47,6 @@ export const InteractionSchema = z.object({
 export const LevelContentSchema = z.object({
 	text: z.string().min(1),
 	audioText: z.string().min(1),
-	romanization: z.string().min(1).optional(),
 	fallbackText: z.string().min(1).optional(),
 	audio: AssetReferenceSchema.optional(),
 })

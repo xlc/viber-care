@@ -30,9 +30,7 @@ describe('content schema validation', () => {
 		expect(Object.keys(numbers.objects[0]?.content.en.levels ?? {})).toEqual([
 			...LEARNING_LEVELS,
 		])
-		expect(numbers.objects[0]?.content['zh-Hans'].levels.L0.romanization).toBe(
-			'yi',
-		)
+		expect(numbers.objects[0]?.content['zh-Hans'].levels.L0.text).toBe('一')
 
 		expect(alphabet.id).toBe('english-alphabet')
 		expect(alphabet.objects).toHaveLength(26)

@@ -29,8 +29,7 @@ describe('settings persistence', () => {
 		const storage = new MemoryStorage()
 		const settings: WordGardenSettings = {
 			...DEFAULT_SETTINGS,
-			languageOrderPreset: 'custom',
-			customLanguageOrder: ['ja', 'en'],
+			languageOrderPreset: 'zh-then-en',
 			activeLevel: 'L3',
 			muted: true,
 		}
@@ -39,6 +38,6 @@ describe('settings persistence', () => {
 		const loaded = loadSettings(storage)
 
 		expect(loaded).toEqual(settings)
-		expect(resolveLanguageOrder(loaded)).toEqual(['ja', 'en'])
+		expect(resolveLanguageOrder(loaded)).toEqual(['zh-Hans', 'en'])
 	})
 })
