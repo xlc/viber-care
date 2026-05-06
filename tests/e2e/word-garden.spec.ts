@@ -32,6 +32,37 @@ test('find mode accepts target tap', async ({ page }) => {
 	await expect(page.getByTestId('prompt')).toContainText('Find the sun.')
 	await page.getByTestId('object-sun').click()
 	await expect(page.getByTestId('prompt')).toContainText('You found the sun.')
+	await expect(page.getByTestId('prompt')).toContainText('Find the tree.', {
+		timeout: 3_000,
+	})
+})
+
+test('find mode names non-target taps without failure language', async ({
+	page,
+}) => {
+	await page.goto('/')
+	await page.getByTestId('mode-find').click()
+
+	await expect(page.getByTestId('prompt')).toContainText('Find the sun.')
+	await page.getByTestId('object-dog').click()
+	await expect(page.getByTestId('word-tray')).toContainText('dog')
+	await expect(page.getByTestId('prompt')).not.toContainText(/wrong|try again/i)
+})
+
+test('find mode handles immediate taps after alphabet scene changes', async ({
+	page,
+}) => {
+	await page.goto('/')
+	await page.getByTestId('mute-button').click()
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('pack-english-alphabet').click()
+	await page.getByLabel('Close settings').click()
+	await page.getByTestId('mode-find').click()
+
+	await page.getByTestId('scene-next').click()
+	await page.getByTestId('object-letter-f').click()
+
+	await expect(page.getByTestId('prompt')).toContainText('You found letter F.')
 })
 
 test('settings panel can change language order', async ({ page }) => {
@@ -80,9 +111,17 @@ test('settings panel can switch to numbers and English alphabet packs', async ({
 	await page.getByTestId('pack-english-alphabet').click()
 	await page.getByLabel('Close settings').click()
 
-	await expect(page.getByText('Alphabet Park')).toBeVisible()
+	await expect(page.getByTestId('scene-title')).toContainText('Letters A-E')
+	await expect(page.getByTestId('object-letter-a')).toBeVisible()
+	await expect(page.locator('.garden-object')).toHaveCount(5)
+
+	for (let i = 0; i < 4; i++) {
+		await page.getByTestId('scene-next').click()
+	}
+
+	await expect(page.getByTestId('scene-title')).toContainText('Letters U-Z')
 	await expect(page.getByTestId('object-letter-z')).toBeVisible()
-	await expect(page.locator('.garden-object')).toHaveCount(26)
+	await expect(page.locator('.garden-object')).toHaveCount(6)
 	await page.getByTestId('object-letter-z').click()
 	await expect(page.getByTestId('word-tray')).toContainText('Z')
 	await expect(page.getByTestId('word-tray')).toContainText('字母 Z')
@@ -114,4 +153,26 @@ test('runtime makes no calls to OpenAI or AI endpoints', async ({ page }) => {
 
 	expect(forbiddenRequests).toEqual([])
 	expect(publicJsonRequests).toEqual([])
+})
+
+test('mobile alphabet scenes keep toddler tap targets readable', async ({
+	page,
+}, testInfo) => {
+	test.skip(testInfo.project.name !== 'mobile-chromium', 'mobile only')
+
+	await page.goto('/')
+	await page.getByTestId('mute-button').click()
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('pack-english-alphabet').click()
+	await page.getByLabel('Close settings').click()
+
+	await expect(page.getByTestId('scene-title')).toContainText('Letters A-E')
+	await expect(page.locator('.garden-object')).toHaveCount(5)
+	await expect(page.getByTestId('scene-next')).toBeVisible()
+
+	for (const objectButton of await page.locator('.garden-object').all()) {
+		const box = await objectButton.boundingBox()
+		expect(box?.width ?? 0).toBeGreaterThanOrEqual(44)
+		expect(box?.height ?? 0).toBeGreaterThanOrEqual(44)
+	}
 })

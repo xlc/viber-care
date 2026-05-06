@@ -34,7 +34,9 @@ describe('content schema validation', () => {
 
 		expect(alphabet.id).toBe('english-alphabet')
 		expect(alphabet.objects).toHaveLength(26)
-		expect(alphabet.scenes[0]?.objects).toHaveLength(26)
+		expect(alphabet.scenes).toHaveLength(5)
+		expect(alphabet.scenes[0]?.objects).toHaveLength(5)
+		expect(alphabet.scenes[4]?.objects).toHaveLength(6)
 		expect(alphabet.objects[0]?.content.en.levels.L1.text).toBe(
 			'A is for apple.',
 		)

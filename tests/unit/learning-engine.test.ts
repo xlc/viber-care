@@ -28,6 +28,17 @@ describe('learning engine', () => {
 		expect(sequence.map((item) => item.text)).toEqual(['鸭子', 'duck'])
 	})
 
+	it('keeps committed audio paths on learning presentations', () => {
+		const sequence = buildLearningSequence(duck, DEFAULT_SETTINGS)
+
+		expect(sequence[0]?.audioPath).toBe(
+			'/assets/generated/audio/duck-en-L0.mp3',
+		)
+		expect(sequence[1]?.audioPath).toBe(
+			'/assets/generated/audio/duck-zh-Hans-L0.mp3',
+		)
+	})
+
 	it('falls back from incomplete advanced levels to available content', () => {
 		const incompleteDuck = JSON.parse(JSON.stringify(duck)) as ObjectConcept
 		delete incompleteDuck.content.en.levels.L2

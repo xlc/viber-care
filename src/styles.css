@@ -207,6 +207,10 @@ input:focus-visible {
 	gap: 12px;
 }
 
+.play-area.has-scene-nav {
+	grid-template-rows: auto auto minmax(360px, 1fr);
+}
+
 .prompt-ribbon {
 	min-height: 94px;
 	display: flex;
@@ -338,6 +342,34 @@ input:focus-visible {
 
 .garden-object.is-active.is-glow img {
 	animation: glow 1700ms ease-in-out;
+}
+
+.scene-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	min-height: 58px;
+}
+
+.scene-nav span {
+	min-height: 44px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 18px;
+	border-radius: 999px;
+	background: rgba(255, 253, 248, 0.86);
+	border: 1px solid rgba(23, 50, 58, 0.12);
+	color: var(--ink);
+	font-size: 1rem;
+	font-weight: 850;
+	box-shadow: 0 8px 18px rgba(41, 83, 92, 0.08);
+}
+
+.scene-nav .icon-button:disabled {
+	opacity: 0.42;
+	cursor: default;
 }
 
 .language-strip {
@@ -524,6 +556,10 @@ input:focus-visible {
 		grid-template-rows: auto minmax(420px, 1fr);
 	}
 
+	.play-area.has-scene-nav {
+		grid-template-rows: auto auto minmax(420px, 1fr);
+	}
+
 	.prompt-ribbon {
 		min-height: 88px;
 		padding: 12px;
@@ -565,6 +601,10 @@ input:focus-visible {
 
 	.play-area {
 		grid-template-rows: auto minmax(390px, 1fr);
+	}
+
+	.play-area.has-scene-nav {
+		grid-template-rows: auto auto minmax(390px, 1fr);
 	}
 
 	.garden-stage {

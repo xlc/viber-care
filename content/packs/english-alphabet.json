@@ -6,14 +6,14 @@
 		"zh-Hans": "英语字母"
 	},
 	"languages": ["en", "zh-Hans"],
-	"defaultSceneId": "alphabet-park",
+	"defaultSceneId": "alphabet-a-e",
 	"scenes": [
 		{
-			"id": "alphabet-park",
+			"id": "alphabet-a-e",
 			"packId": "english-alphabet",
 			"title": {
-				"en": "Alphabet Park",
-				"zh-Hans": "字母公园"
+				"en": "Letters A-E",
+				"zh-Hans": "字母 A-E"
 			},
 			"background": {
 				"prompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
@@ -31,185 +31,289 @@
 			"objects": [
 				{
 					"objectId": "letter-a",
-					"x": 9,
-					"y": 13,
-					"scale": 0.48,
+					"x": 20,
+					"y": 28,
+					"scale": 0.82,
 					"zIndex": 2
 				},
 				{
 					"objectId": "letter-b",
-					"x": 29.5,
-					"y": 13,
-					"scale": 0.48,
+					"x": 50,
+					"y": 24,
+					"scale": 0.82,
 					"zIndex": 3
 				},
 				{
 					"objectId": "letter-c",
-					"x": 50,
-					"y": 13,
-					"scale": 0.48,
+					"x": 80,
+					"y": 28,
+					"scale": 0.82,
 					"zIndex": 4
 				},
 				{
 					"objectId": "letter-d",
-					"x": 70.5,
-					"y": 13,
-					"scale": 0.48,
+					"x": 34,
+					"y": 66,
+					"scale": 0.82,
 					"zIndex": 5
 				},
 				{
 					"objectId": "letter-e",
-					"x": 91,
-					"y": 13,
-					"scale": 0.48,
+					"x": 66,
+					"y": 66,
+					"scale": 0.82,
 					"zIndex": 6
-				},
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		},
+		{
+			"id": "alphabet-f-j",
+			"packId": "english-alphabet",
+			"title": {
+				"en": "Letters F-J",
+				"zh-Hans": "字母 F-J"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/english-alphabet/alphabet-park.webp",
+					"alt": "A calm alphabet park",
+					"generationPrompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+					"placeholder": {
+						"label": "Alphabet Park",
+						"emoji": "🌈"
+					}
+				}
+			},
+			"objects": [
 				{
 					"objectId": "letter-f",
-					"x": 9,
+					"x": 20,
 					"y": 28,
-					"scale": 0.48,
-					"zIndex": 7
+					"scale": 0.82,
+					"zIndex": 2
 				},
 				{
 					"objectId": "letter-g",
-					"x": 29.5,
-					"y": 28,
-					"scale": 0.48,
-					"zIndex": 8
+					"x": 50,
+					"y": 24,
+					"scale": 0.82,
+					"zIndex": 3
 				},
 				{
 					"objectId": "letter-h",
-					"x": 50,
+					"x": 80,
 					"y": 28,
-					"scale": 0.48,
-					"zIndex": 9
+					"scale": 0.82,
+					"zIndex": 4
 				},
 				{
 					"objectId": "letter-i",
-					"x": 70.5,
-					"y": 28,
-					"scale": 0.48,
-					"zIndex": 10
+					"x": 34,
+					"y": 66,
+					"scale": 0.82,
+					"zIndex": 5
 				},
 				{
 					"objectId": "letter-j",
-					"x": 91,
-					"y": 28,
-					"scale": 0.48,
-					"zIndex": 11
-				},
+					"x": 66,
+					"y": 66,
+					"scale": 0.82,
+					"zIndex": 6
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		},
+		{
+			"id": "alphabet-k-o",
+			"packId": "english-alphabet",
+			"title": {
+				"en": "Letters K-O",
+				"zh-Hans": "字母 K-O"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/english-alphabet/alphabet-park.webp",
+					"alt": "A calm alphabet park",
+					"generationPrompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+					"placeholder": {
+						"label": "Alphabet Park",
+						"emoji": "🌈"
+					}
+				}
+			},
+			"objects": [
 				{
 					"objectId": "letter-k",
-					"x": 9,
-					"y": 43,
-					"scale": 0.48,
-					"zIndex": 12
+					"x": 20,
+					"y": 28,
+					"scale": 0.82,
+					"zIndex": 2
 				},
 				{
 					"objectId": "letter-l",
-					"x": 29.5,
-					"y": 43,
-					"scale": 0.48,
-					"zIndex": 13
+					"x": 50,
+					"y": 24,
+					"scale": 0.82,
+					"zIndex": 3
 				},
 				{
 					"objectId": "letter-m",
-					"x": 50,
-					"y": 43,
-					"scale": 0.48,
-					"zIndex": 14
+					"x": 80,
+					"y": 28,
+					"scale": 0.82,
+					"zIndex": 4
 				},
 				{
 					"objectId": "letter-n",
-					"x": 70.5,
-					"y": 43,
-					"scale": 0.48,
-					"zIndex": 15
+					"x": 34,
+					"y": 66,
+					"scale": 0.82,
+					"zIndex": 5
 				},
 				{
 					"objectId": "letter-o",
-					"x": 91,
-					"y": 43,
-					"scale": 0.48,
-					"zIndex": 16
-				},
+					"x": 66,
+					"y": 66,
+					"scale": 0.82,
+					"zIndex": 6
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		},
+		{
+			"id": "alphabet-p-t",
+			"packId": "english-alphabet",
+			"title": {
+				"en": "Letters P-T",
+				"zh-Hans": "字母 P-T"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/english-alphabet/alphabet-park.webp",
+					"alt": "A calm alphabet park",
+					"generationPrompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+					"placeholder": {
+						"label": "Alphabet Park",
+						"emoji": "🌈"
+					}
+				}
+			},
+			"objects": [
 				{
 					"objectId": "letter-p",
-					"x": 9,
-					"y": 58,
-					"scale": 0.48,
-					"zIndex": 17
+					"x": 20,
+					"y": 28,
+					"scale": 0.82,
+					"zIndex": 2
 				},
 				{
 					"objectId": "letter-q",
-					"x": 29.5,
-					"y": 58,
-					"scale": 0.48,
-					"zIndex": 18
+					"x": 50,
+					"y": 24,
+					"scale": 0.82,
+					"zIndex": 3
 				},
 				{
 					"objectId": "letter-r",
-					"x": 50,
-					"y": 58,
-					"scale": 0.48,
-					"zIndex": 19
+					"x": 80,
+					"y": 28,
+					"scale": 0.82,
+					"zIndex": 4
 				},
 				{
 					"objectId": "letter-s",
-					"x": 70.5,
-					"y": 58,
-					"scale": 0.48,
-					"zIndex": 20
+					"x": 34,
+					"y": 66,
+					"scale": 0.82,
+					"zIndex": 5
 				},
 				{
 					"objectId": "letter-t",
-					"x": 91,
-					"y": 58,
-					"scale": 0.48,
-					"zIndex": 21
-				},
+					"x": 66,
+					"y": 66,
+					"scale": 0.82,
+					"zIndex": 6
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		},
+		{
+			"id": "alphabet-u-z",
+			"packId": "english-alphabet",
+			"title": {
+				"en": "Letters U-Z",
+				"zh-Hans": "字母 U-Z"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/english-alphabet/alphabet-park.webp",
+					"alt": "A calm alphabet park",
+					"generationPrompt": "A calm toddler-friendly alphabet park with soft grass, rounded stepping stones, gentle sky, and quiet open space for letter cards. No background text, no clutter, static PWA game background.",
+					"placeholder": {
+						"label": "Alphabet Park",
+						"emoji": "🌈"
+					}
+				}
+			},
+			"objects": [
 				{
 					"objectId": "letter-u",
-					"x": 9,
-					"y": 73,
-					"scale": 0.48,
-					"zIndex": 22
+					"x": 18,
+					"y": 25,
+					"scale": 0.82,
+					"zIndex": 2
 				},
 				{
 					"objectId": "letter-v",
-					"x": 29.5,
-					"y": 73,
-					"scale": 0.48,
-					"zIndex": 23
+					"x": 50,
+					"y": 25,
+					"scale": 0.82,
+					"zIndex": 3
 				},
 				{
 					"objectId": "letter-w",
-					"x": 50,
-					"y": 73,
-					"scale": 0.48,
-					"zIndex": 24
+					"x": 82,
+					"y": 25,
+					"scale": 0.82,
+					"zIndex": 4
 				},
 				{
 					"objectId": "letter-x",
-					"x": 70.5,
-					"y": 73,
-					"scale": 0.48,
-					"zIndex": 25
+					"x": 18,
+					"y": 66,
+					"scale": 0.82,
+					"zIndex": 5
 				},
 				{
 					"objectId": "letter-y",
-					"x": 91,
-					"y": 73,
-					"scale": 0.48,
-					"zIndex": 26
+					"x": 50,
+					"y": 66,
+					"scale": 0.82,
+					"zIndex": 6
 				},
 				{
 					"objectId": "letter-z",
-					"x": 50,
-					"y": 88,
-					"scale": 0.48,
-					"zIndex": 27
+					"x": 82,
+					"y": 66,
+					"scale": 0.82,
+					"zIndex": 7
 				}
 			],
 			"music": {

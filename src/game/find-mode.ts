@@ -14,9 +14,21 @@ export function createFindRound(
 	objects: ObjectConcept[],
 	previousTargetId?: string,
 ): FindRound {
-	const firstDifferent =
-		objects.find((object) => object.id !== previousTargetId) ?? objects[0]
-	return { targetObjectId: firstDifferent?.id ?? '' }
+	if (objects.length === 0) {
+		return { targetObjectId: '' }
+	}
+
+	if (!previousTargetId) {
+		return { targetObjectId: objects[0]?.id ?? '' }
+	}
+
+	const previousIndex = objects.findIndex(
+		(object) => object.id === previousTargetId,
+	)
+	const nextIndex =
+		previousIndex >= 0 ? (previousIndex + 1) % objects.length : 0
+
+	return { targetObjectId: objects[nextIndex]?.id ?? '' }
 }
 
 export function handleFindTap(

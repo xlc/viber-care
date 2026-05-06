@@ -1,5 +1,5 @@
 import type { JSX } from 'preact'
-import { useEffect, useMemo, useState } from 'preact/hooks'
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { playSoftTap, speakSequence } from './audio/speech'
 import { catalog } from './content/catalog'
 import {
@@ -70,9 +70,12 @@ function useCatalog(): { catalog: RuntimeCatalog; error: null } {
 function getPlacements(
 	catalog: RuntimeCatalog,
 	packId: string,
+	sceneId?: string,
 ): PlacementWithObject[] {
 	const pack = getPack(catalog, packId)
-	const scene = getDefaultScene(catalog, packId)
+	const scene =
+		pack.scenes.find((candidate) => candidate.id === sceneId) ??
+		getDefaultScene(catalog, packId)
 	const objectMap = new Map(pack.objects.map((object) => [object.id, object]))
 
 	return scene.objects
@@ -96,7 +99,11 @@ function preloadSceneAssets(scene: Scene, placements: PlacementWithObject[]) {
 	}
 }
 
-function Icon({ name }: { name: 'gear' | 'volume' | 'muted' | 'close' }) {
+function Icon({
+	name,
+}: {
+	name: 'gear' | 'volume' | 'muted' | 'close' | 'previous' | 'next'
+}) {
 	const common = {
 		width: 22,
 		height: 22,
@@ -154,6 +161,24 @@ function Icon({ name }: { name: 'gear' | 'volume' | 'muted' | 'close' }) {
 				<title>Close</title>
 				<path d="M6 6 18 18" />
 				<path d="M18 6 6 18" />
+			</svg>
+		)
+	}
+
+	if (name === 'previous') {
+		return (
+			<svg {...common}>
+				<title>Previous</title>
+				<path d="M15 18 9 12l6-6" />
+			</svg>
+		)
+	}
+
+	if (name === 'next') {
+		return (
+			<svg {...common}>
+				<title>Next</title>
+				<path d="m9 18 6-6-6-6" />
 			</svg>
 		)
 	}
@@ -366,6 +391,7 @@ export function App() {
 			typeof window === 'undefined' ? undefined : window.localStorage,
 		),
 	)
+	const [sceneIndex, setSceneIndex] = useState(0)
 	const [settingsOpen, setSettingsOpen] = useState(false)
 	const [activeObjectId, setActiveObjectId] = useState<string | null>(null)
 	const [findRound, setFindRound] = useState<FindRound | null>(null)
@@ -373,6 +399,7 @@ export function App() {
 		kind: 'hello',
 		sequence: [],
 	})
+	const shouldSpeakPromptRef = useRef(false)
 
 	const selectedPackId = catalog?.packs.some(
 		(packOption) => packOption.id === settings.selectedPackId,
@@ -380,10 +407,16 @@ export function App() {
 		? settings.selectedPackId
 		: DEFAULT_SETTINGS.selectedPackId
 	const pack = catalog ? getPack(catalog, selectedPackId) : null
-	const scene = catalog ? getDefaultScene(catalog, selectedPackId) : null
+	const normalizedSceneIndex = pack
+		? Math.min(sceneIndex, Math.max(pack.scenes.length - 1, 0))
+		: 0
+	const scene =
+		pack?.scenes[normalizedSceneIndex] ??
+		(catalog ? getDefaultScene(catalog, selectedPackId) : null)
 	const placements = useMemo(
-		() => (catalog ? getPlacements(catalog, selectedPackId) : []),
-		[catalog, selectedPackId],
+		() =>
+			catalog && scene ? getPlacements(catalog, selectedPackId, scene.id) : [],
+		[catalog, selectedPackId, scene],
 	)
 	const objects = useMemo(
 		() => placements.map((placement) => placement.object),
@@ -420,25 +453,43 @@ export function App() {
 	}, [findRound, objects, settings.mode])
 
 	useEffect(() => {
+		setSceneIndex(0)
 		setActiveObjectId(null)
 		setFindRound(null)
 		setToast({ kind: 'hello', sequence: [] })
 	}, [selectedPackId])
 
 	useEffect(() => {
+		setActiveObjectId(null)
+		setFindRound(null)
+		setToast({ kind: 'hello', sequence: [] })
+	}, [scene?.id])
+
+	useEffect(() => {
+		let nextToast: ToastState | null = null
 		if (settings.mode === 'story' && targetObject) {
-			setToast({
+			nextToast = {
 				kind: 'story',
 				sequence: buildLearningSequence(targetObject, settings),
-			})
+			}
 		} else if (settings.mode === 'find' && targetObject) {
-			setToast({
+			nextToast = {
 				kind: 'find',
 				sequence: getFindPrompt(targetObject, settings),
-			})
+			}
 		} else if (toast.kind === 'find' || toast.kind === 'story') {
-			setToast({ kind: 'hello', sequence: [] })
+			nextToast = { kind: 'hello', sequence: [] }
 		}
+
+		if (!nextToast) {
+			return
+		}
+
+		setToast(nextToast)
+		if (shouldSpeakPromptRef.current && nextToast.sequence.length > 0) {
+			speakSequence(nextToast.sequence, settings.muted)
+		}
+		shouldSpeakPromptRef.current = false
 	}, [
 		settings.mode,
 		settings.activeLevel,
@@ -454,7 +505,26 @@ export function App() {
 	}
 
 	function selectMode(mode: GameMode) {
+		shouldSpeakPromptRef.current = mode === 'find' || mode === 'story'
 		updateSettings({ ...settings, mode })
+	}
+
+	function selectScene(nextSceneIndex: number) {
+		if (!pack) {
+			return
+		}
+
+		const boundedIndex = Math.max(
+			0,
+			Math.min(nextSceneIndex, pack.scenes.length - 1),
+		)
+		if (boundedIndex === normalizedSceneIndex) {
+			return
+		}
+
+		shouldSpeakPromptRef.current =
+			settings.mode === 'find' || settings.mode === 'story'
+		setSceneIndex(boundedIndex)
 	}
 
 	function handleObjectTap(object: ObjectConcept) {
@@ -468,8 +538,17 @@ export function App() {
 			return
 		}
 
-		if (settings.mode === 'find' && targetObject && findRound) {
-			const result = handleFindTap(findRound, object.id)
+		if (settings.mode === 'find' && targetObject && objects.length > 0) {
+			const activeFindRound = findRound ?? createFindRound(objects)
+			const activeTargetObject =
+				objects.find(
+					(candidate) => candidate.id === activeFindRound.targetObjectId,
+				) ?? targetObject
+			if (!findRound) {
+				setFindRound(activeFindRound)
+			}
+
+			const result = handleFindTap(activeFindRound, object.id)
 			if (result.isTarget) {
 				const successSequence = getSuccessPhrase(object, settings)
 				setToast({ kind: 'success', sequence: successSequence })
@@ -481,17 +560,19 @@ export function App() {
 					)
 					setFindRound(nextRound)
 					if (nextTarget) {
+						const nextPrompt = getFindPrompt(nextTarget, settings)
 						setToast({
 							kind: 'find',
-							sequence: getFindPrompt(nextTarget, settings),
+							sequence: nextPrompt,
 						})
+						speakSequence(nextPrompt, settings.muted)
 					}
 				}, 1400)
 				return
 			}
 
 			const identifiedSequence = buildLearningSequence(object, settings)
-			const promptSequence = getFindPrompt(targetObject, settings)
+			const promptSequence = getFindPrompt(activeTargetObject, settings)
 			setToast({ kind: 'word', sequence: identifiedSequence })
 			speakSequence([...identifiedSequence, ...promptSequence], settings.muted)
 			window.setTimeout(() => {
@@ -524,6 +605,7 @@ export function App() {
 
 	const title = pack.title.en
 	const sceneTitle = scene.title.en
+	const hasSceneNavigation = (pack.scenes.length ?? 0) > 1
 	const promptSequence =
 		toast.sequence.length > 0
 			? toast.sequence
@@ -577,7 +659,10 @@ export function App() {
 				</div>
 			</header>
 
-			<section className="play-area" aria-label={sceneTitle}>
+			<section
+				className={`play-area ${hasSceneNavigation ? 'has-scene-nav' : ''}`}
+				aria-label={sceneTitle}
+			>
 				<div className={`prompt-ribbon is-${toast.kind}`} data-testid="prompt">
 					{settings.mode === 'story' ? <strong>Story garden</strong> : null}
 					{promptSequence.length > 0 ? (
@@ -586,6 +671,32 @@ export function App() {
 						<strong>Hello, garden.</strong>
 					)}
 				</div>
+
+				{hasSceneNavigation ? (
+					<nav className="scene-nav" aria-label="Scene">
+						<button
+							type="button"
+							className="icon-button"
+							aria-label="Previous scene"
+							data-testid="scene-previous"
+							disabled={normalizedSceneIndex === 0}
+							onClick={() => selectScene(normalizedSceneIndex - 1)}
+						>
+							<Icon name="previous" />
+						</button>
+						<span data-testid="scene-title">{sceneTitle}</span>
+						<button
+							type="button"
+							className="icon-button"
+							aria-label="Next scene"
+							data-testid="scene-next"
+							disabled={normalizedSceneIndex === pack.scenes.length - 1}
+							onClick={() => selectScene(normalizedSceneIndex + 1)}
+						>
+							<Icon name="next" />
+						</button>
+					</nav>
+				) : null}
 
 				<div className="garden-stage" style={backgroundStyle}>
 					{placements.map((placement) => (

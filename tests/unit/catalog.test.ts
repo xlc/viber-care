@@ -29,6 +29,11 @@ describe('runtime catalog', () => {
 		expect(parsed.packs[4]?.objects.map((object) => object.id)).toContain(
 			'letter-z',
 		)
+		expect(parsed.packs[4]?.defaultSceneId).toBe('alphabet-a-e')
+		expect(parsed.packs[4]?.scenes).toHaveLength(5)
+		for (const scene of parsed.packs[4]?.scenes ?? []) {
+			expect(scene.objects.length).toBeLessThanOrEqual(6)
+		}
 	})
 
 	it('uses committed imagegen raster assets for every content image reference', () => {

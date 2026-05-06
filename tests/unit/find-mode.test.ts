@@ -14,6 +14,16 @@ describe('Find mode target behavior', () => {
 		expect(result.shouldRepeatPrompt).toBe(false)
 	})
 
+	it('rotates through every object instead of repeating the first pair', () => {
+		const firstRound = createFindRound(objects)
+		const secondRound = createFindRound(objects, firstRound.targetObjectId)
+		const thirdRound = createFindRound(objects, secondRound.targetObjectId)
+
+		expect(firstRound.targetObjectId).toBe(objects[0]?.id)
+		expect(secondRound.targetObjectId).toBe(objects[1]?.id)
+		expect(thirdRound.targetObjectId).toBe(objects[2]?.id)
+	})
+
 	it('identifies another object positively and repeats the prompt', () => {
 		const round = { targetObjectId: 'duck' }
 		const result = handleFindTap(round, 'dog')
