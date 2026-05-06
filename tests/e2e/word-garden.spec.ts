@@ -1,4 +1,53 @@
-import { expect, test } from '@playwright/test'
+import { expect, type Page, test } from '@playwright/test'
+
+type SpeechCaptureWindow = Window & {
+	__spokenUtterances?: string[]
+}
+
+async function installSpeechCapture(page: Page) {
+	await page.addInitScript(() => {
+		const spokenUtterances: string[] = []
+		Object.defineProperty(window, '__spokenUtterances', {
+			configurable: true,
+			value: spokenUtterances,
+		})
+
+		class MockSpeechSynthesisUtterance extends EventTarget {
+			lang = ''
+			pitch = 1
+			rate = 1
+			text: string
+			volume = 1
+
+			constructor(text?: string) {
+				super()
+				this.text = text ?? ''
+			}
+		}
+
+		Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+			configurable: true,
+			value: MockSpeechSynthesisUtterance,
+		})
+		Object.defineProperty(window, 'speechSynthesis', {
+			configurable: true,
+			value: {
+				cancel() {},
+				speak(utterance: SpeechSynthesisUtterance) {
+					spokenUtterances.push(utterance.text)
+					queueMicrotask(() => utterance.dispatchEvent(new Event('end')))
+				},
+			},
+		})
+	})
+}
+
+async function getSpokenUtterances(page: Page) {
+	return page.evaluate(() => {
+		const captureWindow = window as SpeechCaptureWindow
+		return captureWindow.__spokenUtterances ?? []
+	})
+}
 
 test('app loads', async ({ page }) => {
 	await page.goto('/')
@@ -65,6 +114,17 @@ test('find mode handles immediate taps after alphabet scene changes', async ({
 	await expect(page.getByTestId('prompt')).toContainText('You found letter F.')
 })
 
+test('find mode announces the task when selected from settings', async ({
+	page,
+}) => {
+	await installSpeechCapture(page)
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+	await page.getByRole('dialog').getByTestId('mode-find').click()
+
+	await expect.poll(() => getSpokenUtterances(page)).toContain('Find the sun.')
+})
+
 test('settings panel can change language order', async ({ page }) => {
 	await page.goto('/')
 	await page.getByTestId('settings-button').click()
@@ -74,6 +134,20 @@ test('settings panel can change language order', async ({ page }) => {
 
 	const firstWord = page.getByTestId('word-tray').locator('.word-line').first()
 	await expect(firstWord).toContainText('鸭子')
+})
+
+test('story mode shows only the primary language line', async ({ page }) => {
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('preset-zh-then-en').click()
+	await page.getByLabel('Close settings').click()
+	await page.getByTestId('mode-story').click()
+
+	const prompt = page.getByTestId('prompt')
+	await expect(prompt).toContainText('Story garden')
+	await expect(prompt).toContainText('太阳')
+	await expect(prompt).not.toContainText('sun')
+	await expect(prompt.locator('.word-line')).toHaveCount(1)
 })
 
 test('settings panel can switch to the ocean animals pack', async ({

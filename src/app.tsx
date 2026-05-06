@@ -17,6 +17,7 @@ import {
 } from './game/find-mode'
 import {
 	buildLearningSequence,
+	buildStorySequence,
 	getDefaultScene,
 	getFindPrompt,
 	getPack,
@@ -470,7 +471,7 @@ export function App() {
 		if (settings.mode === 'story' && targetObject) {
 			nextToast = {
 				kind: 'story',
-				sequence: buildLearningSequence(targetObject, settings),
+				sequence: buildStorySequence(targetObject, settings),
 			}
 		} else if (settings.mode === 'find' && targetObject) {
 			nextToast = {
@@ -498,15 +499,16 @@ export function App() {
 	])
 
 	function updateSettings(nextSettings: WordGardenSettings) {
+		if (
+			settings.mode !== nextSettings.mode &&
+			(nextSettings.mode === 'find' || nextSettings.mode === 'story')
+		) {
+			shouldSpeakPromptRef.current = true
+		}
 		setSettings(nextSettings)
 		if (nextSettings.mode === 'find' && objects.length > 0) {
 			setFindRound((round) => round ?? createFindRound(objects))
 		}
-	}
-
-	function selectMode(mode: GameMode) {
-		shouldSpeakPromptRef.current = mode === 'find' || mode === 'story'
-		updateSettings({ ...settings, mode })
 	}
 
 	function selectScene(nextSceneIndex: number) {
@@ -532,7 +534,7 @@ export function App() {
 		playSoftTap(settings.muted)
 
 		if (settings.mode === 'story') {
-			const sequence = buildLearningSequence(object, settings)
+			const sequence = buildStorySequence(object, settings)
 			setToast({ kind: 'story', sequence })
 			speakSequence(sequence, settings.muted)
 			return
@@ -632,7 +634,10 @@ export function App() {
 					</div>
 				</div>
 
-				<ModeSegment mode={settings.mode} onChange={selectMode} />
+				<ModeSegment
+					mode={settings.mode}
+					onChange={(mode) => updateSettings({ ...settings, mode })}
+				/>
 
 				<div className="topbar-actions">
 					<button
