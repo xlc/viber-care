@@ -19,6 +19,9 @@ committed source content directly.
 - Write source content as committed JSON under `content/packs/*.json`.
 - Write static image/audio files under `public/assets/` and reference them from
   the content pack.
+- Use the `imagegen` skill for image generation. Do not substitute hand-coded
+  SVGs, script-only placeholders, or deterministic drawing code when the task
+  calls for generated image assets.
 - Keep pack content bilingual for production-quality packs: English and
   Simplified Chinese L0/L1 text, audio text, find prompt, success phrase, and
   fallback text.

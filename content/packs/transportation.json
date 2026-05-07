@@ -19,7 +19,7 @@
 				"prompt": "A calm toddler-friendly transportation park with a soft road, small rail track, quiet pond, blue sky, gentle hills, and open space for vehicle objects. No text, no logos, no traffic danger, static PWA game background.",
 				"asset": {
 					"type": "background",
-					"path": "/assets/generated/transportation/gentle-transit-park.svg",
+					"path": "/assets/generated/imagegen/transportation/gentle-transit-park.png",
 					"alt": "Gentle transit park",
 					"generationPrompt": "A calm toddler-friendly transportation park with a soft road, small rail track, quiet pond, blue sky, gentle hills, and open space for vehicle objects. No text, no logos, no traffic danger, static PWA game background.",
 					"placeholder": {
@@ -113,7 +113,7 @@
 			"visualPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/car.svg",
+				"path": "/assets/generated/imagegen/transportation/car.png",
 				"alt": "red car",
 				"generationPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
 				"placeholder": {
@@ -213,7 +213,7 @@
 			"visualPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/bus.svg",
+				"path": "/assets/generated/imagegen/transportation/bus.png",
 				"alt": "yellow bus",
 				"generationPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
 				"placeholder": {
@@ -313,7 +313,7 @@
 			"visualPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/train.svg",
+				"path": "/assets/generated/imagegen/transportation/train.png",
 				"alt": "green train",
 				"generationPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
 				"placeholder": {
@@ -413,7 +413,7 @@
 			"visualPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/airplane.svg",
+				"path": "/assets/generated/imagegen/transportation/airplane.png",
 				"alt": "white airplane",
 				"generationPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
 				"placeholder": {
@@ -513,7 +513,7 @@
 			"visualPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/boat.svg",
+				"path": "/assets/generated/imagegen/transportation/boat.png",
 				"alt": "blue boat",
 				"generationPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
 				"placeholder": {
@@ -613,7 +613,7 @@
 			"visualPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/bicycle.svg",
+				"path": "/assets/generated/imagegen/transportation/bicycle.png",
 				"alt": "little bicycle",
 				"generationPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
 				"placeholder": {
@@ -713,7 +713,7 @@
 			"visualPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/truck.svg",
+				"path": "/assets/generated/imagegen/transportation/truck.png",
 				"alt": "green truck",
 				"generationPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
 				"placeholder": {
@@ -813,7 +813,7 @@
 			"visualPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/taxi.svg",
+				"path": "/assets/generated/imagegen/transportation/taxi.png",
 				"alt": "yellow taxi",
 				"generationPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
 				"placeholder": {
@@ -913,7 +913,7 @@
 			"visualPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/scooter.svg",
+				"path": "/assets/generated/imagegen/transportation/scooter.png",
 				"alt": "blue scooter",
 				"generationPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
 				"placeholder": {
@@ -1013,7 +1013,7 @@
 			"visualPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
 			"image": {
 				"type": "image",
-				"path": "/assets/generated/transportation/helicopter.svg",
+				"path": "/assets/generated/imagegen/transportation/helicopter.png",
 				"alt": "green helicopter",
 				"generationPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
 				"placeholder": {
