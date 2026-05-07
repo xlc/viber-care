@@ -21,6 +21,7 @@ export type GameMode = (typeof GAME_MODES)[number]
 export type WordGardenSettings = {
 	mode: GameMode
 	selectedPackId: string
+	selectedSubPackId: string | null
 	languageOrderPreset: LanguageOrderPreset
 	activeLevel: LearningLevel
 	muted: boolean
@@ -31,6 +32,7 @@ export type StorageLike = Pick<Storage, 'getItem' | 'setItem'>
 export const DEFAULT_SETTINGS: WordGardenSettings = {
 	mode: 'explore',
 	selectedPackId: 'garden',
+	selectedSubPackId: null,
 	languageOrderPreset: 'en-then-zh',
 	activeLevel: 'L0',
 	muted: false,
@@ -57,6 +59,11 @@ export function sanitizeSettings(input: unknown): WordGardenSettings {
 			value.selectedPackId.length > 0
 				? value.selectedPackId
 				: DEFAULT_SETTINGS.selectedPackId,
+		selectedSubPackId:
+			typeof value.selectedSubPackId === 'string' &&
+			value.selectedSubPackId.length > 0
+				? value.selectedSubPackId
+				: null,
 		languageOrderPreset:
 			value.languageOrderPreset && presetSet.has(value.languageOrderPreset)
 				? value.languageOrderPreset

@@ -29,6 +29,8 @@ describe('settings persistence', () => {
 		const storage = new MemoryStorage()
 		const settings: WordGardenSettings = {
 			...DEFAULT_SETTINGS,
+			selectedPackId: 'english-alphabet',
+			selectedSubPackId: 'alphabet-u-z',
 			languageOrderPreset: 'zh-then-en',
 			activeLevel: 'L3',
 			muted: true,

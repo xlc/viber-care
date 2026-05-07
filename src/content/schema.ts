@@ -104,12 +104,19 @@ export const SceneSchema = z.object({
 		.optional(),
 })
 
+export const ContentSubPackSchema = z.object({
+	id: z.string().min(1),
+	title: languageMapSchema(z.string().min(1)),
+	sceneIds: z.array(z.string().min(1)).min(1),
+})
+
 export const ContentPackSchema = z.object({
 	id: z.string().min(1),
 	version: z.string().min(1),
 	title: languageMapSchema(z.string().min(1)),
 	languages: z.array(LanguageCodeSchema).min(1),
 	defaultSceneId: z.string().min(1),
+	subPacks: z.array(ContentSubPackSchema).optional(),
 	scenes: z.array(SceneSchema).min(1),
 	objects: z.array(ObjectConceptSchema).min(1),
 })
@@ -128,5 +135,6 @@ export type LevelContent = z.infer<typeof LevelContentSchema>
 export type LanguageContent = z.infer<typeof LanguageContentSchema>
 export type ObjectConcept = z.infer<typeof ObjectConceptSchema>
 export type Scene = z.infer<typeof SceneSchema>
+export type ContentSubPack = z.infer<typeof ContentSubPackSchema>
 export type ContentPack = z.infer<typeof ContentPackSchema>
 export type RuntimeCatalog = z.infer<typeof RuntimeCatalogSchema>

@@ -82,6 +82,24 @@ export function validateContentPacks(input: unknown[]): ContentPack[] {
 				`Pack "${pack.id}" default scene "${pack.defaultSceneId}" does not exist.`,
 			)
 		}
+
+		const subPackIds = new Set<string>()
+		for (const subPack of pack.subPacks ?? []) {
+			if (subPackIds.has(subPack.id)) {
+				messages.push(
+					`Pack "${pack.id}" has duplicate sub-pack id "${subPack.id}".`,
+				)
+			}
+			subPackIds.add(subPack.id)
+
+			for (const sceneId of subPack.sceneIds) {
+				if (!sceneIds.has(sceneId)) {
+					messages.push(
+						`Sub-pack "${subPack.id}" references unknown scene "${sceneId}".`,
+					)
+				}
+			}
+		}
 	}
 
 	if (messages.length > 0) {

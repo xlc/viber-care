@@ -1,6 +1,6 @@
 # Word Garden
 
-Word Garden is a static PWA game for toddlers to learn objects and words in gentle bilingual scenes. The MVP supports English and Simplified Chinese, Explore mode, Find mode, a Story-mode placeholder, garden, ocean, dinosaur, numbers, and English alphabet packs, and runtime fallbacks for L2-L5.
+Word Garden is a static PWA game for toddlers to learn objects and words in gentle bilingual scenes. The MVP supports English and Simplified Chinese, Explore mode, Find mode, a Story-mode placeholder, garden, ocean, dinosaur, numbers, and English alphabet packs, content sets inside packs, and runtime fallbacks for advanced word detail.
 
 ## Commands
 
@@ -37,13 +37,14 @@ To add a content pack:
 2. Follow the Zod schemas in `src/content/schema.ts`.
 3. Include scene placements with percentage-based positions.
 4. Include image asset paths and generation prompts for each object.
-5. Include English and Simplified Chinese L0/L1 content for production-quality packs.
-6. Run `bun run validate:content`.
-7. Run `bun run test`.
-8. Run `bun run test:e2e`.
-9. Run `bun run check:secrets` and `bun run build`.
+5. Add optional `subPacks` when a pack should expose smaller sets, with each set referencing one or more scene ids.
+6. Include English and Simplified Chinese L0/L1 content for production-quality packs.
+7. Run `bun run validate:content`.
+8. Run `bun run test`.
+9. Run `bun run test:e2e`.
+10. Run `bun run check:secrets` and `bun run build`.
 
-The engine does not need code changes for new objects, scenes, packs, learning levels, generated image paths, or generated audio target paths.
+The engine does not need code changes for new objects, scenes, packs, content sets, learning levels, generated image paths, or generated audio target paths.
 
 ## Assets
 
@@ -114,16 +115,17 @@ bun run deploy:pages
 - Settings are stored only in `localStorage`.
 - The app does not load remote content.
 
-## Learning Levels
+## Word Detail
 
-- L0: single word
-- L1: word plus sound/action phrase
-- L2: short phrase
-- L3: simple sentence
-- L4: question/answer
-- L5: mini story or guided sequence
+- Single word maps to L0.
+- Tiny phrase maps to L1.
+- Short label maps to L2.
+- Simple sentence maps to L3.
+- Question maps to L4.
+- Little story maps to L5.
 
 Every committed content pack includes English and Simplified Chinese L0-L5 text
-for each object. L0-L1 keep bundled audio targets where production audio exists;
-higher levels use the runtime's soft speech synthesis until matching static
-audio clips are added.
+for each object. The parent UI uses word-detail names instead of raw level codes.
+L0-L1 keep bundled audio targets where production audio exists; higher levels
+use the runtime's soft speech synthesis until matching static audio clips are
+added.

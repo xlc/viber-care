@@ -7,6 +7,48 @@
 	},
 	"languages": ["en", "zh-Hans"],
 	"defaultSceneId": "alphabet-a-e",
+	"subPacks": [
+		{
+			"id": "alphabet-a-e",
+			"title": {
+				"en": "Letters A-E",
+				"zh-Hans": "字母 A-E"
+			},
+			"sceneIds": ["alphabet-a-e"]
+		},
+		{
+			"id": "alphabet-f-j",
+			"title": {
+				"en": "Letters F-J",
+				"zh-Hans": "字母 F-J"
+			},
+			"sceneIds": ["alphabet-f-j"]
+		},
+		{
+			"id": "alphabet-k-o",
+			"title": {
+				"en": "Letters K-O",
+				"zh-Hans": "字母 K-O"
+			},
+			"sceneIds": ["alphabet-k-o"]
+		},
+		{
+			"id": "alphabet-p-t",
+			"title": {
+				"en": "Letters P-T",
+				"zh-Hans": "字母 P-T"
+			},
+			"sceneIds": ["alphabet-p-t"]
+		},
+		{
+			"id": "alphabet-u-z",
+			"title": {
+				"en": "Letters U-Z",
+				"zh-Hans": "字母 U-Z"
+			},
+			"sceneIds": ["alphabet-u-z"]
+		}
+	],
 	"scenes": [
 		{
 			"id": "alphabet-a-e",

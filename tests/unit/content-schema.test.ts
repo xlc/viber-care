@@ -32,4 +32,22 @@ describe('content schema validation', () => {
 			/Pack "garden" is missing zh-Hans language/,
 		)
 	})
+
+	it('reports sub-packs that reference missing scenes', () => {
+		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
+		brokenPack.subPacks = [
+			{
+				id: 'missing-scene-set',
+				title: {
+					en: 'Missing scene',
+					'zh-Hans': '缺少场景',
+				},
+				sceneIds: ['not-a-scene'],
+			},
+		]
+
+		expect(() => validateContentPacks([brokenPack])).toThrow(
+			/Sub-pack "missing-scene-set" references unknown scene "not-a-scene"/,
+		)
+	})
 })

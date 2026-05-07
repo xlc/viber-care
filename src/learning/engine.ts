@@ -1,10 +1,13 @@
 import {
+	type ContentPack,
+	type ContentSubPack,
 	type LanguageCode,
 	LEARNING_LEVELS,
 	type LearningLevel,
 	type LevelContent,
 	type ObjectConcept,
 	type RuntimeCatalog,
+	type Scene,
 } from '../content/schema'
 import {
 	resolveLanguageOrder,
@@ -25,24 +28,56 @@ export function getPack(catalog: RuntimeCatalog, packId = 'garden') {
 	return catalog.packs.find((pack) => pack.id === packId) ?? catalog.packs[0]
 }
 
-export function getDefaultScene(catalog: RuntimeCatalog, packId = 'garden') {
-	const pack = getPack(catalog, packId)
+export function getPackSubPacks(pack: ContentPack): ContentSubPack[] {
+	if (pack.subPacks && pack.subPacks.length > 0) {
+		return pack.subPacks
+	}
+
+	return pack.scenes.map((scene) => ({
+		id: scene.id,
+		title: scene.title,
+		sceneIds: [scene.id],
+	}))
+}
+
+export function getSelectedSubPack(
+	pack: ContentPack,
+	subPackId: string | null | undefined,
+): ContentSubPack {
+	const subPacks = getPackSubPacks(pack)
 	return (
-		pack.scenes.find((scene) => scene.id === pack.defaultSceneId) ??
-		pack.scenes[0]
+		subPacks.find((subPack) => subPack.id === subPackId) ??
+		subPacks.find((subPack) =>
+			subPack.sceneIds.includes(pack.defaultSceneId),
+		) ??
+		subPacks[0]
 	)
 }
 
-export function getSceneObjects(
+export function getSubPackScenes(
+	pack: ContentPack,
+	subPackId: string | null | undefined,
+): Scene[] {
+	const subPack = getSelectedSubPack(pack, subPackId)
+	const sceneMap = new Map(pack.scenes.map((scene) => [scene.id, scene]))
+	const scenes = subPack.sceneIds
+		.map((sceneId) => sceneMap.get(sceneId))
+		.filter((scene): scene is Scene => Boolean(scene))
+	return scenes.length > 0 ? scenes : pack.scenes
+}
+
+export function getDefaultScene(
 	catalog: RuntimeCatalog,
 	packId = 'garden',
-): ObjectConcept[] {
+	subPackId?: string | null,
+) {
 	const pack = getPack(catalog, packId)
-	const scene = getDefaultScene(catalog, packId)
-	const objectMap = new Map(pack.objects.map((object) => [object.id, object]))
-	return scene.objects
-		.map((placement) => objectMap.get(placement.objectId))
-		.filter((object): object is ObjectConcept => Boolean(object))
+	const subPackScenes = getSubPackScenes(pack, subPackId)
+	return (
+		subPackScenes.find((scene) => scene.id === pack.defaultSceneId) ??
+		subPackScenes[0] ??
+		pack.scenes[0]
+	)
 }
 
 function levelFallbackOrder(level: LearningLevel): LearningLevel[] {

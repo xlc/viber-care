@@ -125,11 +125,26 @@ input:focus-visible {
 }
 
 .mode-segment,
-.level-grid,
 .preset-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 8px;
+}
+
+.pack-list,
+.set-grid,
+.detail-list {
+	display: grid;
+	gap: 10px;
+}
+
+.pack-list {
+	grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.set-grid,
+.detail-list {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .mode-segment {
@@ -141,7 +156,6 @@ input:focus-visible {
 }
 
 .mode-segment button,
-.level-grid button,
 .preset-list button {
 	min-height: 44px;
 	border: 0;
@@ -157,16 +171,61 @@ input:focus-visible {
 	padding: 0 18px;
 }
 
-.level-grid button,
 .preset-list button {
 	padding: 0 14px;
 	background: #f3fbfd;
 	border: 1px solid rgba(17, 138, 178, 0.16);
 }
 
+.pack-card,
+.set-card,
+.detail-list button {
+	--card-muted: var(--muted);
+	--card-meta: rgba(23, 50, 58, 0.74);
+	min-height: 76px;
+	display: grid;
+	gap: 3px;
+	padding: 12px;
+	border: 1px solid rgba(17, 138, 178, 0.16);
+	border-radius: 8px;
+	background: #f3fbfd;
+	color: var(--ink);
+	text-align: left;
+	cursor: pointer;
+}
+
+.pack-card-title,
+.set-card-title,
+.detail-option-label {
+	font-size: 1rem;
+	font-weight: 900;
+	line-height: 1.12;
+}
+
+.pack-card-subtitle,
+.set-card-subtitle,
+.detail-option-hint {
+	color: var(--card-muted);
+	font-size: 0.82rem;
+	font-weight: 760;
+	line-height: 1.2;
+}
+
+.pack-card-meta,
+.set-card-meta {
+	color: var(--card-meta);
+	font-size: 0.76rem;
+	font-weight: 820;
+	line-height: 1.2;
+}
+
 .mode-segment button.is-selected,
-.level-grid button.is-selected,
-.preset-list button.is-selected {
+.preset-list button.is-selected,
+.pack-card.is-selected,
+.set-card.is-selected,
+.detail-list button.is-selected {
+	--card-muted: rgba(255, 255, 255, 0.82);
+	--card-meta: rgba(255, 255, 255, 0.82);
 	background: #17323a;
 	color: white;
 }
@@ -528,6 +587,12 @@ input:focus-visible {
 
 	.mode-segment button {
 		flex: 1 1 86px;
+	}
+
+	.pack-list,
+	.set-grid,
+	.detail-list {
+		grid-template-columns: 1fr;
 	}
 
 	.play-area {

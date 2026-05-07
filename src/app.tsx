@@ -2,12 +2,13 @@ import type { JSX } from 'preact'
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { playSoftTap, speakSequence } from './audio/speech'
 import { catalog } from './content/catalog'
-import {
-	LEARNING_LEVELS,
-	type LearningLevel,
-	type ObjectConcept,
-	type RuntimeCatalog,
-	type Scene,
+import type {
+	ContentPack,
+	ContentSubPack,
+	LearningLevel,
+	ObjectConcept,
+	RuntimeCatalog,
+	Scene,
 } from './content/schema'
 import {
 	createFindRound,
@@ -20,6 +21,9 @@ import {
 	getDefaultScene,
 	getFindPrompt,
 	getPack,
+	getPackSubPacks,
+	getSelectedSubPack,
+	getSubPackScenes,
 	getSuccessPhrase,
 	type LearningPresentation,
 } from './learning/engine'
@@ -45,6 +49,19 @@ const modeLabels: Record<GameMode, string> = {
 	find: 'Find',
 	story: 'Story',
 }
+
+const wordDetailOptions: ReadonlyArray<{
+	level: LearningLevel
+	label: string
+	hint: string
+}> = [
+	{ level: 'L0', label: 'Single word', hint: 'One clear name' },
+	{ level: 'L1', label: 'Tiny phrase', hint: 'Name plus action' },
+	{ level: 'L2', label: 'Short label', hint: 'Two or three words' },
+	{ level: 'L3', label: 'Simple sentence', hint: 'One calm sentence' },
+	{ level: 'L4', label: 'Question', hint: 'Prompt and answer' },
+	{ level: 'L5', label: 'Little story', hint: 'Short narrated line' },
+]
 
 type PlacementWithObject = Scene['objects'][number] & {
 	object: ObjectConcept
@@ -91,6 +108,23 @@ function preloadSceneAssets(scene: Scene, placements: PlacementWithObject[]) {
 		image.decoding = 'async'
 		image.src = path
 	}
+}
+
+function getSubPackObjectCount(
+	pack: ContentPack,
+	subPack: ContentSubPack,
+): number {
+	const sceneIds = new Set(subPack.sceneIds)
+	const objectIds = new Set<string>()
+	for (const scene of pack.scenes) {
+		if (!sceneIds.has(scene.id)) {
+			continue
+		}
+		for (const placement of scene.objects) {
+			objectIds.add(placement.objectId)
+		}
+	}
+	return objectIds.size
 }
 
 function Icon({
@@ -270,6 +304,13 @@ function ParentSettings({
 		onChange({ ...settings, ...partial })
 	}
 
+	const selectedPack = getPack(catalog, settings.selectedPackId)
+	const selectedPackSubPacks = getPackSubPacks(selectedPack)
+	const selectedSubPack = getSelectedSubPack(
+		selectedPack,
+		settings.selectedSubPackId,
+	)
+
 	return (
 		<div className="settings-backdrop" role="presentation">
 			<section
@@ -291,26 +332,92 @@ function ParentSettings({
 				</header>
 
 				<div className="settings-section">
-					<h3>Content Pack</h3>
-					<div className="preset-list" role="group" aria-label="Content pack">
-						{catalog.packs.map((pack) => (
-							<button
-								key={pack.id}
-								type="button"
-								className={
-									settings.selectedPackId === pack.id ? 'is-selected' : ''
-								}
-								aria-pressed={settings.selectedPackId === pack.id}
-								data-testid={`pack-${pack.id}`}
-								onClick={() =>
-									update({ selectedPackId: pack.id, mode: 'explore' })
-								}
-							>
-								{pack.title.en ?? pack.id}
-							</button>
-						))}
+					<h3>Pack</h3>
+					<div className="pack-list" role="group" aria-label="Content pack">
+						{catalog.packs.map((pack) => {
+							const subPacks = getPackSubPacks(pack)
+							const defaultSubPack = getSelectedSubPack(pack, null)
+							const objectLabel =
+								pack.objects.length === 1
+									? '1 word'
+									: `${pack.objects.length} words`
+							const setLabel =
+								subPacks.length === 1 ? '1 set' : `${subPacks.length} sets`
+
+							return (
+								<button
+									key={pack.id}
+									type="button"
+									className={
+										selectedPack.id === pack.id
+											? 'pack-card is-selected'
+											: 'pack-card'
+									}
+									aria-pressed={selectedPack.id === pack.id}
+									data-testid={`pack-${pack.id}`}
+									onClick={() =>
+										update({
+											selectedPackId: pack.id,
+											selectedSubPackId: defaultSubPack.id,
+											mode: 'explore',
+										})
+									}
+								>
+									<span className="pack-card-title">
+										{pack.title.en ?? pack.id}
+									</span>
+									<span className="pack-card-subtitle">
+										{pack.title['zh-Hans'] ?? ''}
+									</span>
+									<span className="pack-card-meta">
+										{objectLabel} / {setLabel}
+									</span>
+								</button>
+							)
+						})}
 					</div>
 				</div>
+
+				{selectedPackSubPacks.length > 1 ? (
+					<div className="settings-section">
+						<h3>Set</h3>
+						<div className="set-grid" role="group" aria-label="Content set">
+							{selectedPackSubPacks.map((subPack) => {
+								const objectCount = getSubPackObjectCount(selectedPack, subPack)
+								const objectLabel =
+									objectCount === 1 ? '1 word' : `${objectCount} words`
+
+								return (
+									<button
+										key={subPack.id}
+										type="button"
+										className={
+											selectedSubPack.id === subPack.id
+												? 'set-card is-selected'
+												: 'set-card'
+										}
+										aria-pressed={selectedSubPack.id === subPack.id}
+										data-testid={`set-${subPack.id}`}
+										onClick={() =>
+											update({
+												selectedSubPackId: subPack.id,
+												mode: 'explore',
+											})
+										}
+									>
+										<span className="set-card-title">
+											{subPack.title.en ?? subPack.id}
+										</span>
+										<span className="set-card-subtitle">
+											{subPack.title['zh-Hans'] ?? ''}
+										</span>
+										<span className="set-card-meta">{objectLabel}</span>
+									</button>
+								)
+							})}
+						</div>
+					</div>
+				) : null}
 
 				<div className="settings-section">
 					<h3>Mode</h3>
@@ -321,21 +428,21 @@ function ParentSettings({
 				</div>
 
 				<div className="settings-section">
-					<h3>Level</h3>
-					<div
-						className="level-grid"
-						role="radiogroup"
-						aria-label="Learning level"
-					>
-						{LEARNING_LEVELS.map((level) => (
+					<h3>Word Detail</h3>
+					<div className="detail-list" role="group" aria-label="Word detail">
+						{wordDetailOptions.map((option) => (
 							<button
-								key={level}
+								key={option.level}
 								type="button"
-								className={settings.activeLevel === level ? 'is-selected' : ''}
-								aria-pressed={settings.activeLevel === level}
-								onClick={() => update({ activeLevel: level as LearningLevel })}
+								className={
+									settings.activeLevel === option.level ? 'is-selected' : ''
+								}
+								aria-pressed={settings.activeLevel === option.level}
+								data-testid={`detail-${option.level}`}
+								onClick={() => update({ activeLevel: option.level })}
 							>
-								{level}
+								<span className="detail-option-label">{option.label}</span>
+								<small className="detail-option-hint">{option.hint}</small>
 							</button>
 						))}
 					</div>
@@ -401,12 +508,17 @@ export function App() {
 		? settings.selectedPackId
 		: DEFAULT_SETTINGS.selectedPackId
 	const pack = catalog ? getPack(catalog, selectedPackId) : null
-	const normalizedSceneIndex = pack
-		? Math.min(sceneIndex, Math.max(pack.scenes.length - 1, 0))
-		: 0
+	const activeSubPackId = pack
+		? getSelectedSubPack(pack, settings.selectedSubPackId).id
+		: null
+	const activeScenes = pack ? getSubPackScenes(pack, activeSubPackId) : []
+	const normalizedSceneIndex =
+		activeScenes.length > 0
+			? Math.min(sceneIndex, Math.max(activeScenes.length - 1, 0))
+			: 0
 	const scene =
-		pack?.scenes[normalizedSceneIndex] ??
-		(catalog ? getDefaultScene(catalog, selectedPackId) : null)
+		activeScenes[normalizedSceneIndex] ??
+		(catalog ? getDefaultScene(catalog, selectedPackId, activeSubPackId) : null)
 	const placements = useMemo(
 		() =>
 			catalog && scene ? getPlacements(catalog, selectedPackId, scene.id) : [],
@@ -451,7 +563,7 @@ export function App() {
 		setActiveObjectId(null)
 		setFindRound(null)
 		setToast({ kind: 'hello', sequence: [] })
-	}, [selectedPackId])
+	}, [selectedPackId, activeSubPackId])
 
 	useEffect(() => {
 		setActiveObjectId(null)
@@ -505,13 +617,13 @@ export function App() {
 	}
 
 	function selectScene(nextSceneIndex: number) {
-		if (!pack) {
+		if (!pack || activeScenes.length === 0) {
 			return
 		}
 
 		const boundedIndex = Math.max(
 			0,
-			Math.min(nextSceneIndex, pack.scenes.length - 1),
+			Math.min(nextSceneIndex, activeScenes.length - 1),
 		)
 		if (boundedIndex === normalizedSceneIndex) {
 			return
@@ -600,7 +712,7 @@ export function App() {
 
 	const title = pack.title.en
 	const sceneTitle = scene.title.en
-	const hasSceneNavigation = (pack.scenes.length ?? 0) > 1
+	const hasSceneNavigation = activeScenes.length > 1
 	const promptSequence =
 		toast.sequence.length > 0
 			? toast.sequence
@@ -622,7 +734,7 @@ export function App() {
 					</span>
 					<div>
 						<h1>{title}</h1>
-						<p>{sceneTitle}</p>
+						<p data-testid="scene-title">{sceneTitle}</p>
 					</div>
 				</div>
 
@@ -681,13 +793,13 @@ export function App() {
 						>
 							<Icon name="previous" />
 						</button>
-						<span data-testid="scene-title">{sceneTitle}</span>
+						<span>{sceneTitle}</span>
 						<button
 							type="button"
 							className="icon-button"
 							aria-label="Next scene"
 							data-testid="scene-next"
-							disabled={normalizedSceneIndex === pack.scenes.length - 1}
+							disabled={normalizedSceneIndex === activeScenes.length - 1}
 							onClick={() => selectScene(normalizedSceneIndex + 1)}
 						>
 							<Icon name="next" />

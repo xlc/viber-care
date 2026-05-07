@@ -98,17 +98,17 @@ test('find mode names non-target taps without failure language', async ({
 	await expect(page.getByTestId('prompt')).not.toContainText(/wrong|try again/i)
 })
 
-test('find mode handles immediate taps after alphabet scene changes', async ({
+test('find mode handles immediate taps after alphabet set changes', async ({
 	page,
 }) => {
 	await page.goto('/')
 	await page.getByTestId('mute-button').click()
 	await page.getByTestId('settings-button').click()
 	await page.getByTestId('pack-english-alphabet').click()
+	await page.getByTestId('set-alphabet-f-j').click()
 	await page.getByLabel('Close settings').click()
 	await page.getByTestId('mode-find').click()
 
-	await page.getByTestId('scene-next').click()
 	await page.getByTestId('object-letter-f').click()
 
 	await expect(page.getByTestId('prompt')).toContainText('You found letter F.')
@@ -134,6 +134,25 @@ test('settings panel can change language order', async ({ page }) => {
 
 	const firstWord = page.getByTestId('word-tray').locator('.word-line').first()
 	await expect(firstWord).toContainText('鸭子')
+})
+
+test('settings panel can change word detail without raw level labels', async ({
+	page,
+}) => {
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+	const dialog = page.getByRole('dialog')
+
+	await expect(dialog.getByText('Word Detail')).toBeVisible()
+	await expect(dialog.getByTestId('detail-L3')).toContainText('Simple sentence')
+	await expect(dialog.getByText('L3', { exact: true })).toHaveCount(0)
+	await dialog.getByTestId('detail-L3').click()
+	await page.getByLabel('Close settings').click()
+	await page.getByTestId('object-duck').click()
+
+	await expect(page.getByTestId('word-tray')).toContainText(
+		'The duck paddles by the pond.',
+	)
 })
 
 test('story mode shows only the primary language line', async ({ page }) => {
@@ -189,9 +208,9 @@ test('settings panel can switch to numbers and English alphabet packs', async ({
 	await expect(page.getByTestId('object-letter-a')).toBeVisible()
 	await expect(page.locator('.garden-object')).toHaveCount(5)
 
-	for (let i = 0; i < 4; i++) {
-		await page.getByTestId('scene-next').click()
-	}
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('set-alphabet-u-z').click()
+	await page.getByLabel('Close settings').click()
 
 	await expect(page.getByTestId('scene-title')).toContainText('Letters U-Z')
 	await expect(page.getByTestId('object-letter-z')).toBeVisible()
@@ -242,7 +261,6 @@ test('mobile alphabet scenes keep toddler tap targets readable', async ({
 
 	await expect(page.getByTestId('scene-title')).toContainText('Letters A-E')
 	await expect(page.locator('.garden-object')).toHaveCount(5)
-	await expect(page.getByTestId('scene-next')).toBeVisible()
 
 	for (const objectButton of await page.locator('.garden-object').all()) {
 		const box = await objectButton.boundingBox()
