@@ -33,6 +33,31 @@ describe('content schema validation', () => {
 		)
 	})
 
+	it('reports objects without two variants', () => {
+		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
+		brokenPack.objects[0].variants = [brokenPack.objects[0].variants[0]]
+
+		expect(() => validateContentPacks([brokenPack])).toThrow(/variants/)
+	})
+
+	it('reports scene placements with missing region tags', () => {
+		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
+		brokenPack.scenes[0].objects[0].regionTags = ['not-a-region']
+
+		expect(() => validateContentPacks([brokenPack])).toThrow(
+			/references missing region tags "not-a-region"/,
+		)
+	})
+
+	it('reports scene placement anchors outside matching regions', () => {
+		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
+		brokenPack.scenes[0].objects[0].y = 90
+
+		expect(() => validateContentPacks([brokenPack])).toThrow(
+			/anchor is outside its region/,
+		)
+	})
+
 	it('reports sub-packs that reference missing scenes', () => {
 		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
 		brokenPack.subPacks = [

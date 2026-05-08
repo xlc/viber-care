@@ -34,74 +34,410 @@
 					"x": 22,
 					"y": 35,
 					"scale": 1.24,
-					"zIndex": 2
+					"zIndex": 2,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 1.14,
+						"max": 1.36
+					}
 				},
 				{
 					"objectId": "dolphin",
 					"x": 56,
 					"y": 27,
 					"scale": 1.02,
-					"zIndex": 3
+					"zIndex": 3,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.94,
+						"max": 1.12
+					}
 				},
 				{
 					"objectId": "sea-turtle",
 					"x": 78,
 					"y": 42,
 					"scale": 1,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.92,
+						"max": 1.1
+					}
 				},
 				{
 					"objectId": "fish",
 					"x": 38,
 					"y": 56,
 					"scale": 0.86,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
 				},
 				{
 					"objectId": "octopus",
 					"x": 58,
 					"y": 66,
 					"scale": 0.98,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.9,
+						"max": 1.08
+					}
 				},
 				{
 					"objectId": "seahorse",
 					"x": 83,
 					"y": 68,
 					"scale": 0.78,
-					"zIndex": 7
+					"zIndex": 7,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
 				},
 				{
 					"objectId": "crab",
 					"x": 25,
 					"y": 80,
 					"scale": 0.88,
-					"zIndex": 7
+					"zIndex": 7,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.81,
+						"max": 0.97
+					}
 				},
 				{
 					"objectId": "starfish",
 					"x": 45,
 					"y": 84,
 					"scale": 0.78,
-					"zIndex": 8
+					"zIndex": 8,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
 				},
 				{
 					"objectId": "jellyfish",
 					"x": 67,
 					"y": 50,
 					"scale": 0.84,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.77,
+						"max": 0.92
+					}
 				},
 				{
 					"objectId": "seal",
 					"x": 75,
 					"y": 82,
 					"scale": 0.94,
-					"zIndex": 8
+					"zIndex": 8,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "water",
+					"tags": ["water", "ocean"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 15,
+							"width": 100,
+							"height": 62
+						}
+					]
+				},
+				{
+					"id": "seabed",
+					"tags": ["sand", "seabed", "shore"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 70,
+							"width": 100,
+							"height": 30
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
+			}
+		},
+		{
+			"id": "tide-pool",
+			"packId": "ocean-animals",
+			"title": {
+				"en": "Tide Pool",
+				"zh-Hans": "潮池"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly tide pool with soft blue water, sandy seabed, gentle sea plants, bubbles, and open space for ocean animals. No text, no clutter, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/ocean-animals/tide-pool.webp",
+					"alt": "Calm tide pool",
+					"generationPrompt": "A calm toddler-friendly tide pool with soft blue water, sandy seabed, gentle sea plants, bubbles, and open space for ocean animals. No text, no clutter, static PWA game background.",
+					"placeholder": {
+						"label": "Tide Pool",
+						"emoji": "🌊"
+					}
+				}
+			},
+			"objects": [
+				{
+					"objectId": "whale",
+					"x": 72,
+					"y": 35,
+					"scale": 1.24,
+					"zIndex": 2,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 1.14,
+						"max": 1.36
+					}
+				},
+				{
+					"objectId": "dolphin",
+					"x": 30,
+					"y": 27,
+					"scale": 1.02,
+					"zIndex": 3,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.94,
+						"max": 1.12
+					}
+				},
+				{
+					"objectId": "sea-turtle",
+					"x": 48,
+					"y": 43,
+					"scale": 1,
+					"zIndex": 4,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.92,
+						"max": 1.1
+					}
+				},
+				{
+					"objectId": "fish",
+					"x": 62,
+					"y": 56,
+					"scale": 0.86,
+					"zIndex": 5,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
+				},
+				{
+					"objectId": "octopus",
+					"x": 40,
+					"y": 66,
+					"scale": 0.98,
+					"zIndex": 6,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.9,
+						"max": 1.08
+					}
+				},
+				{
+					"objectId": "seahorse",
+					"x": 18,
+					"y": 68,
+					"scale": 0.78,
+					"zIndex": 7,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				},
+				{
+					"objectId": "crab",
+					"x": 74,
+					"y": 82,
+					"scale": 0.88,
+					"zIndex": 7,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.81,
+						"max": 0.97
+					}
+				},
+				{
+					"objectId": "starfish",
+					"x": 55,
+					"y": 84,
+					"scale": 0.78,
+					"zIndex": 8,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				},
+				{
+					"objectId": "jellyfish",
+					"x": 86,
+					"y": 50,
+					"scale": 0.84,
+					"zIndex": 6,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.77,
+						"max": 0.92
+					}
+				},
+				{
+					"objectId": "seal",
+					"x": 25,
+					"y": 82,
+					"scale": 0.94,
+					"zIndex": 8,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "water",
+					"tags": ["water", "ocean"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 15,
+							"width": 100,
+							"height": 62
+						}
+					]
+				},
+				{
+					"id": "seabed",
+					"tags": ["sand", "seabed", "shore"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 70,
+							"width": 100,
+							"height": 30
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
 			}
 		}
 	],
@@ -111,16 +447,6 @@
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "swimmer"],
 			"visualPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/fish.webp",
-				"alt": "fish",
-				"generationPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "fish",
-					"emoji": "🐟"
-				}
-			},
 			"interaction": {
 				"id": "fish-bob",
 				"animation": "bob"
@@ -252,23 +578,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/fish.webp",
+						"alt": "fish",
+						"generationPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "fish",
+							"emoji": "🐟"
+						}
+					},
+					"visualPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/fish-bright.webp",
+						"alt": "fish bright large",
+						"generationPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "fish",
+							"emoji": "🐟"
+						}
+					},
+					"visualPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "sea-turtle",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "shell"],
 			"visualPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/sea-turtle.webp",
-				"alt": "sea turtle",
-				"generationPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "sea turtle",
-					"emoji": "🐢"
-				}
-			},
 			"interaction": {
 				"id": "sea-turtle-sway",
 				"animation": "sway"
@@ -400,23 +750,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/sea-turtle.webp",
+						"alt": "sea turtle",
+						"generationPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "sea turtle",
+							"emoji": "🐢"
+						}
+					},
+					"visualPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/sea-turtle-bright.webp",
+						"alt": "sea turtle bright large",
+						"generationPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "sea turtle",
+							"emoji": "🐢"
+						}
+					},
+					"visualPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "dolphin",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "jumper"],
 			"visualPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/dolphin.webp",
-				"alt": "dolphin",
-				"generationPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "dolphin",
-					"emoji": "🐬"
-				}
-			},
 			"interaction": {
 				"id": "dolphin-bounce",
 				"animation": "bounce"
@@ -548,23 +922,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/dolphin.webp",
+						"alt": "dolphin",
+						"generationPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "dolphin",
+							"emoji": "🐬"
+						}
+					},
+					"visualPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/dolphin-bright.webp",
+						"alt": "dolphin bright large",
+						"generationPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "dolphin",
+							"emoji": "🐬"
+						}
+					},
+					"visualPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "whale",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "big"],
 			"visualPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/whale.webp",
-				"alt": "whale",
-				"generationPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "whale",
-					"emoji": "🐋"
-				}
-			},
 			"interaction": {
 				"id": "whale-glow",
 				"animation": "glow"
@@ -696,23 +1094,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/whale.webp",
+						"alt": "whale",
+						"generationPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "whale",
+							"emoji": "🐋"
+						}
+					},
+					"visualPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/whale-bright.webp",
+						"alt": "whale bright large",
+						"generationPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "whale",
+							"emoji": "🐋"
+						}
+					},
+					"visualPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "crab",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "beach"],
 			"visualPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/crab.webp",
-				"alt": "crab",
-				"generationPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "crab",
-					"emoji": "🦀"
-				}
-			},
 			"interaction": {
 				"id": "crab-wiggle",
 				"animation": "wiggle"
@@ -844,23 +1266,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/crab.webp",
+						"alt": "crab",
+						"generationPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "crab",
+							"emoji": "🦀"
+						}
+					},
+					"visualPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/crab-bright.webp",
+						"alt": "crab bright large",
+						"generationPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "crab",
+							"emoji": "🦀"
+						}
+					},
+					"visualPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "octopus",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "arms"],
 			"visualPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/octopus.webp",
-				"alt": "octopus",
-				"generationPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "octopus",
-					"emoji": "🐙"
-				}
-			},
 			"interaction": {
 				"id": "octopus-sway",
 				"animation": "sway"
@@ -992,23 +1438,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/octopus.webp",
+						"alt": "octopus",
+						"generationPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "octopus",
+							"emoji": "🐙"
+						}
+					},
+					"visualPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/octopus-bright.webp",
+						"alt": "octopus bright large",
+						"generationPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "octopus",
+							"emoji": "🐙"
+						}
+					},
+					"visualPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "seahorse",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "tiny"],
 			"visualPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/seahorse.webp",
-				"alt": "seahorse",
-				"generationPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "seahorse",
-					"emoji": "🐠"
-				}
-			},
 			"interaction": {
 				"id": "seahorse-bob",
 				"animation": "bob"
@@ -1140,23 +1610,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/seahorse.webp",
+						"alt": "seahorse",
+						"generationPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "seahorse",
+							"emoji": "🐠"
+						}
+					},
+					"visualPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/seahorse-bright.webp",
+						"alt": "seahorse bright large",
+						"generationPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "seahorse",
+							"emoji": "🐠"
+						}
+					},
+					"visualPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "starfish",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "beach"],
 			"visualPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/starfish.webp",
-				"alt": "starfish",
-				"generationPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "starfish",
-					"emoji": "⭐"
-				}
-			},
 			"interaction": {
 				"id": "starfish-glow",
 				"animation": "glow"
@@ -1288,23 +1782,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/starfish.webp",
+						"alt": "starfish",
+						"generationPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "starfish",
+							"emoji": "⭐"
+						}
+					},
+					"visualPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/starfish-bright.webp",
+						"alt": "starfish bright large",
+						"generationPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "starfish",
+							"emoji": "⭐"
+						}
+					},
+					"visualPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "jellyfish",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "floater"],
 			"visualPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/jellyfish.webp",
-				"alt": "jellyfish",
-				"generationPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "jellyfish",
-					"emoji": "🪼"
-				}
-			},
 			"interaction": {
 				"id": "jellyfish-sway",
 				"animation": "sway"
@@ -1436,23 +1954,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/jellyfish.webp",
+						"alt": "jellyfish",
+						"generationPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "jellyfish",
+							"emoji": "🪼"
+						}
+					},
+					"visualPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/jellyfish-bright.webp",
+						"alt": "jellyfish bright large",
+						"generationPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "jellyfish",
+							"emoji": "🪼"
+						}
+					},
+					"visualPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "seal",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "playful"],
 			"visualPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/ocean-animals/seal.webp",
-				"alt": "seal",
-				"generationPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "seal",
-					"emoji": "🦭"
-				}
-			},
 			"interaction": {
 				"id": "seal-bounce",
 				"animation": "bounce"
@@ -1584,7 +2126,41 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/seal.webp",
+						"alt": "seal",
+						"generationPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "seal",
+							"emoji": "🦭"
+						}
+					},
+					"visualPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/seal-bright.webp",
+						"alt": "seal bright large",
+						"generationPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "seal",
+							"emoji": "🦭"
+						}
+					},
+					"visualPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		}
 	]
 }

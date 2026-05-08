@@ -34,74 +34,458 @@
 					"x": 70,
 					"y": 22,
 					"scale": 0.82,
-					"zIndex": 2
+					"zIndex": 2,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "helicopter",
 					"x": 34,
 					"y": 25,
 					"scale": 0.78,
-					"zIndex": 3
+					"zIndex": 3,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
 				},
 				{
 					"objectId": "truck",
 					"x": 88,
 					"y": 55,
 					"scale": 0.8,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.74,
+						"max": 0.88
+					}
 				},
 				{
 					"objectId": "car",
 					"x": 28,
 					"y": 65,
 					"scale": 0.82,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "bus",
 					"x": 55,
 					"y": 65,
 					"scale": 0.92,
-					"zIndex": 7
+					"zIndex": 7,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.85,
+						"max": 1.01
+					}
 				},
 				{
 					"objectId": "taxi",
 					"x": 76,
 					"y": 70,
 					"scale": 0.74,
-					"zIndex": 8
+					"zIndex": 8,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					}
 				},
 				{
 					"objectId": "bicycle",
 					"x": 13,
 					"y": 72,
 					"scale": 0.72,
-					"zIndex": 9
+					"zIndex": 9,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
 				},
 				{
 					"objectId": "scooter",
 					"x": 41,
 					"y": 78,
 					"scale": 0.66,
-					"zIndex": 10
+					"zIndex": 10,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
 				},
 				{
 					"objectId": "boat",
 					"x": 76,
 					"y": 84,
 					"scale": 0.74,
-					"zIndex": 11
+					"zIndex": 11,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					}
 				},
 				{
 					"objectId": "train",
 					"x": 25,
 					"y": 86,
 					"scale": 0.9,
-					"zIndex": 12
+					"zIndex": 12,
+					"regionTags": ["rail"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.83,
+						"max": 0.99
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky", "air"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 36
+						}
+					]
+				},
+				{
+					"id": "road",
+					"tags": ["road", "wheels"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 48,
+							"width": 100,
+							"height": 34
+						}
+					]
+				},
+				{
+					"id": "rail",
+					"tags": ["rail", "track"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 78,
+							"width": 55,
+							"height": 18
+						}
+					]
+				},
+				{
+					"id": "water",
+					"tags": ["water", "pond"],
+					"rects": [
+						{
+							"x": 58,
+							"y": 74,
+							"width": 42,
+							"height": 24
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
+			}
+		},
+		{
+			"id": "soft-road",
+			"packId": "transportation",
+			"title": {
+				"en": "Soft Road",
+				"zh-Hans": "温柔道路"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly transit scene with a soft road, small rail track, quiet pond, blue sky, gentle hills, and open safe space for vehicle objects. No text, no logos, no traffic danger, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/transportation/soft-road.png",
+					"alt": "Soft transit road",
+					"generationPrompt": "A calm toddler-friendly transit scene with a soft road, small rail track, quiet pond, blue sky, gentle hills, and open safe space for vehicle objects. No text, no logos, no traffic danger, static PWA game background.",
+					"placeholder": {
+						"label": "Soft Road",
+						"emoji": "🚗"
+					}
+				}
+			},
+			"objects": [
+				{
+					"objectId": "airplane",
+					"x": 28,
+					"y": 22,
+					"scale": 0.82,
+					"zIndex": 2,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "helicopter",
+					"x": 70,
+					"y": 25,
+					"scale": 0.78,
+					"zIndex": 3,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				},
+				{
+					"objectId": "truck",
+					"x": 22,
+					"y": 56,
+					"scale": 0.8,
+					"zIndex": 5,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.74,
+						"max": 0.88
+					}
+				},
+				{
+					"objectId": "car",
+					"x": 46,
+					"y": 64,
+					"scale": 0.82,
+					"zIndex": 6,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "bus",
+					"x": 72,
+					"y": 65,
+					"scale": 0.92,
+					"zIndex": 7,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.85,
+						"max": 1.01
+					}
+				},
+				{
+					"objectId": "taxi",
+					"x": 88,
+					"y": 70,
+					"scale": 0.74,
+					"zIndex": 8,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					}
+				},
+				{
+					"objectId": "bicycle",
+					"x": 12,
+					"y": 72,
+					"scale": 0.72,
+					"zIndex": 9,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"objectId": "scooter",
+					"x": 34,
+					"y": 78,
+					"scale": 0.66,
+					"zIndex": 10,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"objectId": "boat",
+					"x": 78,
+					"y": 84,
+					"scale": 0.74,
+					"zIndex": 11,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					}
+				},
+				{
+					"objectId": "train",
+					"x": 25,
+					"y": 86,
+					"scale": 0.9,
+					"zIndex": 12,
+					"regionTags": ["rail"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.83,
+						"max": 0.99
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky", "air"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 36
+						}
+					]
+				},
+				{
+					"id": "road",
+					"tags": ["road", "wheels"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 48,
+							"width": 100,
+							"height": 34
+						}
+					]
+				},
+				{
+					"id": "rail",
+					"tags": ["rail", "track"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 78,
+							"width": 55,
+							"height": 18
+						}
+					]
+				},
+				{
+					"id": "water",
+					"tags": ["water", "pond"],
+					"rects": [
+						{
+							"x": 58,
+							"y": 74,
+							"width": 42,
+							"height": 24
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
 			}
 		}
 	],
@@ -111,16 +495,6 @@
 			"category": "transportation",
 			"tags": ["transportation", "road", "wheels"],
 			"visualPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/car.png",
-				"alt": "red car",
-				"generationPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "car",
-					"emoji": "🚗"
-				}
-			},
 			"interaction": {
 				"id": "car-bob",
 				"animation": "bob"
@@ -252,23 +626,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/car.png",
+						"alt": "red car",
+						"generationPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "car",
+							"emoji": "🚗"
+						}
+					},
+					"visualPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/car-bright.png",
+						"alt": "red car bright large",
+						"generationPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "car",
+							"emoji": "🚗"
+						}
+					},
+					"visualPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "bus",
 			"category": "transportation",
 			"tags": ["transportation", "road", "public transit"],
 			"visualPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/bus.png",
-				"alt": "yellow bus",
-				"generationPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
-				"placeholder": {
-					"label": "bus",
-					"emoji": "🚌"
-				}
-			},
 			"interaction": {
 				"id": "bus-bounce",
 				"animation": "bounce"
@@ -400,23 +798,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/bus.png",
+						"alt": "yellow bus",
+						"generationPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
+						"placeholder": {
+							"label": "bus",
+							"emoji": "🚌"
+						}
+					},
+					"visualPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/bus-bright.png",
+						"alt": "yellow bus bright large",
+						"generationPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "bus",
+							"emoji": "🚌"
+						}
+					},
+					"visualPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "train",
 			"category": "transportation",
 			"tags": ["transportation", "rail", "wheels"],
 			"visualPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/train.png",
-				"alt": "green train",
-				"generationPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
-				"placeholder": {
-					"label": "train",
-					"emoji": "🚆"
-				}
-			},
 			"interaction": {
 				"id": "train-sway",
 				"animation": "sway"
@@ -548,23 +970,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/train.png",
+						"alt": "green train",
+						"generationPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
+						"placeholder": {
+							"label": "train",
+							"emoji": "🚆"
+						}
+					},
+					"visualPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/train-bright.png",
+						"alt": "green train bright large",
+						"generationPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "train",
+							"emoji": "🚆"
+						}
+					},
+					"visualPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "airplane",
 			"category": "transportation",
 			"tags": ["transportation", "sky", "flying"],
 			"visualPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/airplane.png",
-				"alt": "white airplane",
-				"generationPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
-				"placeholder": {
-					"label": "airplane",
-					"emoji": "✈️"
-				}
-			},
 			"interaction": {
 				"id": "airplane-glow",
 				"animation": "glow"
@@ -696,23 +1142,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/airplane.png",
+						"alt": "white airplane",
+						"generationPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
+						"placeholder": {
+							"label": "airplane",
+							"emoji": "✈️"
+						}
+					},
+					"visualPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/airplane-bright.png",
+						"alt": "white airplane bright large",
+						"generationPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "airplane",
+							"emoji": "✈️"
+						}
+					},
+					"visualPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "boat",
 			"category": "transportation",
 			"tags": ["transportation", "water", "floating"],
 			"visualPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/boat.png",
-				"alt": "blue boat",
-				"generationPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
-				"placeholder": {
-					"label": "boat",
-					"emoji": "⛵"
-				}
-			},
 			"interaction": {
 				"id": "boat-bob",
 				"animation": "bob"
@@ -844,23 +1314,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/boat.png",
+						"alt": "blue boat",
+						"generationPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "boat",
+							"emoji": "⛵"
+						}
+					},
+					"visualPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/boat-bright.png",
+						"alt": "blue boat bright large",
+						"generationPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "boat",
+							"emoji": "⛵"
+						}
+					},
+					"visualPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "bicycle",
 			"category": "transportation",
 			"tags": ["transportation", "road", "wheels"],
 			"visualPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/bicycle.png",
-				"alt": "little bicycle",
-				"generationPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
-				"placeholder": {
-					"label": "bicycle",
-					"emoji": "🚲"
-				}
-			},
 			"interaction": {
 				"id": "bicycle-wiggle",
 				"animation": "wiggle"
@@ -992,23 +1486,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/bicycle.png",
+						"alt": "little bicycle",
+						"generationPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
+						"placeholder": {
+							"label": "bicycle",
+							"emoji": "🚲"
+						}
+					},
+					"visualPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/bicycle-bright.png",
+						"alt": "little bicycle bright large",
+						"generationPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "bicycle",
+							"emoji": "🚲"
+						}
+					},
+					"visualPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "truck",
 			"category": "transportation",
 			"tags": ["transportation", "road", "wheels"],
 			"visualPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/truck.png",
-				"alt": "green truck",
-				"generationPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
-				"placeholder": {
-					"label": "truck",
-					"emoji": "🚚"
-				}
-			},
 			"interaction": {
 				"id": "truck-bounce",
 				"animation": "bounce"
@@ -1140,23 +1658,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/truck.png",
+						"alt": "green truck",
+						"generationPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
+						"placeholder": {
+							"label": "truck",
+							"emoji": "🚚"
+						}
+					},
+					"visualPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/truck-bright.png",
+						"alt": "green truck bright large",
+						"generationPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "truck",
+							"emoji": "🚚"
+						}
+					},
+					"visualPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "taxi",
 			"category": "transportation",
 			"tags": ["transportation", "road", "wheels"],
 			"visualPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/taxi.png",
-				"alt": "yellow taxi",
-				"generationPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
-				"placeholder": {
-					"label": "taxi",
-					"emoji": "🚕"
-				}
-			},
 			"interaction": {
 				"id": "taxi-bob",
 				"animation": "bob"
@@ -1288,23 +1830,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/taxi.png",
+						"alt": "yellow taxi",
+						"generationPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
+						"placeholder": {
+							"label": "taxi",
+							"emoji": "🚕"
+						}
+					},
+					"visualPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/taxi-bright.png",
+						"alt": "yellow taxi bright large",
+						"generationPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "taxi",
+							"emoji": "🚕"
+						}
+					},
+					"visualPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "scooter",
 			"category": "transportation",
 			"tags": ["transportation", "road", "wheels"],
 			"visualPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/scooter.png",
-				"alt": "blue scooter",
-				"generationPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
-				"placeholder": {
-					"label": "scooter",
-					"emoji": "🛴"
-				}
-			},
 			"interaction": {
 				"id": "scooter-sway",
 				"animation": "sway"
@@ -1436,23 +2002,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/scooter.png",
+						"alt": "blue scooter",
+						"generationPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
+						"placeholder": {
+							"label": "scooter",
+							"emoji": "🛴"
+						}
+					},
+					"visualPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/scooter-bright.png",
+						"alt": "blue scooter bright large",
+						"generationPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "scooter",
+							"emoji": "🛴"
+						}
+					},
+					"visualPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "helicopter",
 			"category": "transportation",
 			"tags": ["transportation", "sky", "flying"],
 			"visualPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/transportation/helicopter.png",
-				"alt": "green helicopter",
-				"generationPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
-				"placeholder": {
-					"label": "helicopter",
-					"emoji": "🚁"
-				}
-			},
 			"interaction": {
 				"id": "helicopter-wiggle",
 				"animation": "wiggle"
@@ -1584,7 +2174,41 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/helicopter.png",
+						"alt": "green helicopter",
+						"generationPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
+						"placeholder": {
+							"label": "helicopter",
+							"emoji": "🚁"
+						}
+					},
+					"visualPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/helicopter-bright.png",
+						"alt": "green helicopter bright large",
+						"generationPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "helicopter",
+							"emoji": "🚁"
+						}
+					},
+					"visualPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		}
 	]
 }

@@ -1,6 +1,6 @@
 # Word Garden
 
-Word Garden is a static PWA game for toddlers to learn objects and words in gentle bilingual scenes. The MVP supports English and Simplified Chinese, Explore mode, Find mode, Puzzle mode, garden, ocean, dinosaur, numbers, and English alphabet packs, content sets inside packs, and runtime fallbacks for advanced word detail.
+Word Garden is a static PWA game for toddlers to learn objects and words in gentle bilingual scenes. The MVP supports English and Simplified Chinese, Explore mode, Find mode, Puzzle mode, garden, ocean, dinosaur, numbers, English alphabet, and transportation packs, content sets inside packs, multi-scene navigation, object variants, region-aware randomized placement, and runtime fallbacks for advanced word detail.
 
 ## Commands
 
@@ -35,16 +35,18 @@ To add a content pack:
 
 1. Add a JSON pack under `content/packs/`.
 2. Follow the Zod schemas in `src/content/schema.ts`.
-3. Include scene placements with percentage-based positions.
-4. Include image asset paths and generation prompts for each object.
-5. Add optional `subPacks` when a pack should expose smaller sets, with each set referencing one or more scene ids.
-6. Include English and Simplified Chinese L0/L1 content for production-quality packs.
-7. Run `bun run validate:content`.
-8. Run `bun run test`.
-9. Run `bun run test:e2e`.
-10. Run `bun run check:secrets` and `bun run build`.
+3. Include at least two scenes per pack, each with a calm background asset.
+4. Define scene `regions` as percentage rectangles tied to the background image, such as `sky`, `water`, `grass`, `road`, or `card-field`.
+5. Add scene spawn candidates with `regionTags`, anchor positions, jitter, scale ranges, and per-scene visible object limits.
+6. Include at least two static visual variants for every object. Existing object art can be the `classic` variant; add a second real static variant for size, color, or style variety.
+7. Add optional `subPacks` when a pack should expose smaller sets, with each set referencing one or more scene ids.
+8. Include English and Simplified Chinese L0-L5 content for production-quality packs.
+9. Run `bun run validate:content`.
+10. Run `bun run test`.
+11. Run `bun run test:e2e`.
+12. Run `bun run check:secrets` and `bun run build`.
 
-The engine does not need code changes for new objects, scenes, packs, content sets, learning levels, generated image paths, or generated audio target paths.
+The engine does not need code changes for new objects, variants, scenes, packs, content sets, learning levels, generated image paths, or generated audio target paths.
 
 ## Assets
 
@@ -65,10 +67,12 @@ any secret or network access.
 Review assets before deployment:
 
 1. Check the visual files under `public/assets/generated/` or replacement production paths.
-2. Confirm each object is friendly, clear, age-appropriate, and not scary or noisy.
-3. Confirm audio text in the pack matches the intended spoken words.
-4. Run `bun run check:secrets` after build output exists.
-5. Run `bun run test`, `bun run test:e2e`, and `bun run build`.
+2. Confirm each object variant is friendly, clear, age-appropriate, and not scary or noisy.
+3. Confirm each scene background is calm and has usable regions for its spawn tags.
+4. Confirm objects can only spawn in appropriate regions, for example fish in water, sun in sky, and vehicles on road/rail/water/sky.
+5. Confirm audio text in the pack matches the intended spoken words.
+6. Run `bun run check:secrets` after build output exists.
+7. Run `bun run test`, `bun run test:e2e`, and `bun run build`.
 
 ## Cloudflare Pages
 

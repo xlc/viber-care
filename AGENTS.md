@@ -46,7 +46,10 @@ generation package script.
 Core schemas live in `src/content/schema.ts`. Content validation logic lives in
 `src/content/validation.ts`.
 
-Do not hard-code object language content in the engine. Object labels, prompts, success phrases, fallback text, audio text, visual prompts, and asset paths belong in content files.
+Do not hard-code object language content or placement rules in the engine.
+Object labels, prompts, success phrases, fallback text, audio text, visual
+prompts, asset paths, variants, scene regions, region tags, and spawn constraints
+belong in content files.
 
 ## Toddler Design Safety Rules
 
@@ -66,17 +69,18 @@ Do not hard-code object language content in the engine. Object labels, prompts, 
 ## Adding a Content Pack
 
 1. Create `content/packs/<pack-id>.json`.
-2. Add pack metadata, languages, one or more scenes, and objects.
-3. Add scene object positions as percentages.
-4. Add object image asset paths and visual generation prompts.
-5. Add interaction animation metadata.
-6. Add per-language content and per-level content.
-7. For production-quality bilingual packs, include English and Simplified Chinese L0/L1 text, audio text, find prompt, success phrase, and fallback text.
-8. Run `bun run validate:content`.
-9. Run `bun run test`.
-10. Run `bun run test:e2e`.
-11. Run `bun run check:secrets`.
-12. Run `bun run build`.
+2. Add pack metadata, languages, at least two scenes, and objects.
+3. Add scene background assets and `regions` as percentage rectangles tied to the background image.
+4. Add scene spawn candidates with percentage anchors, `regionTags`, jitter, scale ranges, and visible object limits.
+5. Add at least two static variants for every object. Existing object art can be the `classic` variant; add another real static variant for size, color, or style variety.
+6. Add interaction animation metadata.
+7. Add per-language content and per-level content.
+8. For production-quality bilingual packs, include English and Simplified Chinese L0-L5 text, audio text, find prompt, success phrase, and fallback text.
+9. Run `bun run validate:content`.
+10. Run `bun run test`.
+11. Run `bun run test:e2e`.
+12. Run `bun run check:secrets`.
+13. Run `bun run build`.
 
 ## Generating Content And Assets
 
@@ -92,16 +96,23 @@ Generate or edit content and static assets directly, place static files in
 content/assets. Do not create generated JSON catalogs or generated content
 manifests.
 
+Future content generation must preserve the richer pack shape: multiple scenes
+per pack, two or more variants per item, region-tagged spawn candidates, and
+randomized visible object counts so a scene can contain more candidates than it
+shows at once.
+
 ## Reviewing Assets
 
 Before completion or deployment:
 
 1. Confirm every object is friendly, clear, and toddler-safe.
-2. Confirm the scene is calm and uncluttered.
-3. Confirm no asset contains ads, purchases, scary imagery, unsafe behavior, or unwanted text.
-4. Confirm audio text matches the target L0/L1 content.
-5. Confirm the runtime imports only committed static content and static paths.
-6. Run the completion checks before production release.
+2. Confirm every object variant is visibly distinct enough to justify the variant.
+3. Confirm each scene is calm, uncluttered, and has regions that match the background image.
+4. Confirm each object can only spawn in appropriate regions, for example fish in water, sun in sky, and vehicles on road/rail/water/sky.
+5. Confirm no asset contains ads, purchases, scary imagery, unsafe behavior, or unwanted text.
+6. Confirm audio text matches the target content.
+7. Confirm the runtime imports only committed static content and static paths.
+8. Run the completion checks before production release.
 
 ## Completion Checks
 

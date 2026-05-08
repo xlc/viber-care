@@ -33,11 +33,13 @@ export function getPackSubPacks(pack: ContentPack): ContentSubPack[] {
 		return pack.subPacks
 	}
 
-	return pack.scenes.map((scene) => ({
-		id: scene.id,
-		title: scene.title,
-		sceneIds: [scene.id],
-	}))
+	return [
+		{
+			id: `${pack.id}-scenes`,
+			title: pack.title,
+			sceneIds: pack.scenes.map((scene) => scene.id),
+		},
+	]
 }
 
 export function getSelectedSubPack(

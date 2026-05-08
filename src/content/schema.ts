@@ -44,6 +44,14 @@ export const InteractionSchema = z.object({
 	soundEffect: AssetReferenceSchema.optional(),
 })
 
+export const ObjectVariantSchema = z.object({
+	id: z.string().min(1),
+	label: z.string().min(1),
+	image: AssetReferenceSchema,
+	visualPrompt: z.string().min(1),
+	scaleMultiplier: z.number().min(0.6).max(1.6).default(1),
+})
+
 export const LevelContentSchema = z.object({
 	text: z.string().min(1),
 	audioText: z.string().min(1),
@@ -74,9 +82,22 @@ export const ObjectConceptSchema = z.object({
 	category: z.string().min(1),
 	tags: z.array(z.string().min(1)).min(1),
 	visualPrompt: z.string().min(1),
-	image: AssetReferenceSchema,
+	variants: z.array(ObjectVariantSchema).min(2),
 	interaction: InteractionSchema,
 	content: languageMapSchema(LanguageContentSchema),
+})
+
+export const SceneRegionRectSchema = z.object({
+	x: z.number().min(0).max(100),
+	y: z.number().min(0).max(100),
+	width: z.number().min(1).max(100),
+	height: z.number().min(1).max(100),
+})
+
+export const SceneRegionSchema = z.object({
+	id: z.string().min(1),
+	tags: z.array(z.string().min(1)).min(1),
+	rects: z.array(SceneRegionRectSchema).min(1),
 })
 
 export const SceneObjectPlacementSchema = z.object({
@@ -85,6 +106,19 @@ export const SceneObjectPlacementSchema = z.object({
 	y: z.number().min(0).max(100),
 	scale: z.number().min(0.4).max(2),
 	zIndex: z.number().int().optional(),
+	regionTags: z.array(z.string().min(1)).min(1),
+	jitter: z
+		.object({
+			x: z.number().min(0).max(40),
+			y: z.number().min(0).max(40),
+		})
+		.optional(),
+	scaleRange: z
+		.object({
+			min: z.number().min(0.4).max(2),
+			max: z.number().min(0.4).max(2),
+		})
+		.optional(),
 })
 
 export const SceneSchema = z.object({
@@ -94,6 +128,11 @@ export const SceneSchema = z.object({
 	background: z.object({
 		prompt: z.string().min(1).optional(),
 		asset: AssetReferenceSchema.optional(),
+	}),
+	regions: z.array(SceneRegionSchema).min(1),
+	visibleObjectCount: z.object({
+		min: z.number().int().min(1),
+		max: z.number().int().min(1),
 	}),
 	objects: z.array(SceneObjectPlacementSchema).min(1),
 	music: z
@@ -131,9 +170,12 @@ export const RuntimeCatalogSchema = z.object({
 
 export type AssetReference = z.infer<typeof AssetReferenceSchema>
 export type Interaction = z.infer<typeof InteractionSchema>
+export type ObjectVariant = z.infer<typeof ObjectVariantSchema>
 export type LevelContent = z.infer<typeof LevelContentSchema>
 export type LanguageContent = z.infer<typeof LanguageContentSchema>
 export type ObjectConcept = z.infer<typeof ObjectConceptSchema>
+export type SceneRegion = z.infer<typeof SceneRegionSchema>
+export type SceneRegionRect = z.infer<typeof SceneRegionRectSchema>
 export type Scene = z.infer<typeof SceneSchema>
 export type ContentSubPack = z.infer<typeof ContentSubPackSchema>
 export type ContentPack = z.infer<typeof ContentPackSchema>

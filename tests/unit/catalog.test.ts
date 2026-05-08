@@ -22,17 +22,39 @@ describe('runtime catalog', () => {
 		)
 
 		for (const pack of parsed.packs) {
+			expect(
+				pack.scenes.length,
+				`${pack.id} should have multiple scenes`,
+			).toBeGreaterThanOrEqual(2)
 			const objectIds = new Set(pack.objects.map((object) => object.id))
 
 			for (const scene of pack.scenes) {
 				expectStaticAsset(scene.background.asset, `${pack.id}/${scene.id}`)
+				expect(
+					scene.regions.length,
+					`${pack.id}/${scene.id} regions`,
+				).toBeGreaterThan(0)
+				expect(scene.visibleObjectCount.min).toBeGreaterThan(0)
+				expect(scene.visibleObjectCount.max).toBeLessThanOrEqual(
+					scene.objects.length,
+				)
 				for (const placement of scene.objects) {
 					expect(objectIds.has(placement.objectId)).toBe(true)
+					expect(placement.regionTags.length).toBeGreaterThan(0)
 				}
 			}
 
 			for (const object of pack.objects) {
-				expectStaticAsset(object.image, `${pack.id}/${object.id}`)
+				expect(
+					object.variants.length,
+					`${pack.id}/${object.id} variants`,
+				).toBeGreaterThanOrEqual(2)
+				for (const variant of object.variants) {
+					expectStaticAsset(
+						variant.image,
+						`${pack.id}/${object.id}/${variant.id}`,
+					)
+				}
 				for (const language of REQUIRED_MVP_LANGUAGES) {
 					const levels = object.content[language]?.levels
 

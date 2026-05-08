@@ -49,20 +49,50 @@ async function getSpokenUtterances(page: Page) {
 	})
 }
 
+async function getPuzzlePieceIds(page: Page) {
+	return page.locator('.puzzle-piece').evaluateAll((elements) =>
+		elements
+			.map((element) => element.getAttribute('data-testid') ?? '')
+			.filter((testId) => testId.startsWith('puzzle-piece-'))
+			.map((testId) => testId.replace('puzzle-piece-', '')),
+	)
+}
+
+async function expectObjectCountBetween(
+	page: Page,
+	min: number,
+	max: number,
+	selector = '.garden-object',
+) {
+	await expect(page.locator(selector).first()).toBeVisible()
+	const count = await page.locator(selector).count()
+	expect(count).toBeGreaterThanOrEqual(min)
+	expect(count).toBeLessThanOrEqual(max)
+	return count
+}
+
 test('app loads', async ({ page }) => {
 	await page.goto('/')
 
 	await expect(page.getByRole('heading', { name: 'Word Garden' })).toBeVisible()
-	await expect(page.getByTestId('object-duck')).toBeVisible()
-	await expect(page.locator('.garden-object')).toHaveCount(10)
+	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
+	await expectObjectCountBetween(page, 5, 6)
+	await expect(page.locator('.garden-object').first()).toHaveAttribute(
+		'data-variant-id',
+		/classic|bright-large/,
+	)
 })
 
 test('explore tap displays the word', async ({ page }) => {
 	await page.goto('/')
-	await page.getByTestId('object-duck').click()
+	const firstObject = page.locator('.garden-object').first()
+	const label = await firstObject.getAttribute('aria-label')
+	await firstObject.click()
 
-	await expect(page.getByTestId('word-tray')).toContainText('duck')
-	await expect(page.getByTestId('word-tray')).toContainText('鸭子')
+	await expect(page.getByTestId('word-tray')).toContainText(label ?? '')
+	await expect(page.getByTestId('word-tray').locator('.word-line')).toHaveCount(
+		2,
+	)
 })
 
 test('mute toggles', async ({ page }) => {
@@ -78,10 +108,10 @@ test('find mode accepts target tap', async ({ page }) => {
 	await page.goto('/')
 	await page.getByTestId('mode-find').click()
 
-	await expect(page.getByTestId('prompt')).toContainText('Find the sun.')
-	await page.getByTestId('object-sun').click()
-	await expect(page.getByTestId('prompt')).toContainText('You found the sun.')
-	await expect(page.getByTestId('prompt')).toContainText('Find the tree.', {
+	await expect(page.getByTestId('prompt')).toContainText('Find')
+	await page.locator('.garden-object').first().click()
+	await expect(page.getByTestId('prompt')).toContainText('You found')
+	await expect(page.getByTestId('prompt')).toContainText('Find', {
 		timeout: 3_000,
 	})
 })
@@ -92,9 +122,11 @@ test('find mode names non-target taps without failure language', async ({
 	await page.goto('/')
 	await page.getByTestId('mode-find').click()
 
-	await expect(page.getByTestId('prompt')).toContainText('Find the sun.')
-	await page.getByTestId('object-dog').click()
-	await expect(page.getByTestId('word-tray')).toContainText('dog')
+	await expect(page.getByTestId('prompt')).toContainText('Find')
+	const secondObject = page.locator('.garden-object').nth(1)
+	const label = await secondObject.getAttribute('aria-label')
+	await secondObject.click()
+	await expect(page.getByTestId('word-tray')).toContainText(label ?? '')
 	await expect(page.getByTestId('prompt')).not.toContainText(/wrong|try again/i)
 })
 
@@ -109,9 +141,9 @@ test('find mode handles immediate taps after alphabet set changes', async ({
 	await page.getByLabel('Close settings').click()
 	await page.getByTestId('mode-find').click()
 
-	await page.getByTestId('object-letter-f').click()
+	await page.locator('.garden-object').first().click()
 
-	await expect(page.getByTestId('prompt')).toContainText('You found letter F.')
+	await expect(page.getByTestId('prompt')).toContainText('You found')
 })
 
 test('find mode announces the task when selected from settings', async ({
@@ -122,7 +154,9 @@ test('find mode announces the task when selected from settings', async ({
 	await page.getByTestId('settings-button').click()
 	await page.getByRole('dialog').getByTestId('mode-find').click()
 
-	await expect.poll(() => getSpokenUtterances(page)).toContain('Find the sun.')
+	await expect
+		.poll(() => getSpokenUtterances(page))
+		.toContainEqual(expect.stringMatching(/^Find /))
 })
 
 test('settings panel can change language order', async ({ page }) => {
@@ -130,10 +164,10 @@ test('settings panel can change language order', async ({ page }) => {
 	await page.getByTestId('settings-button').click()
 	await page.getByTestId('preset-zh-then-en').click()
 	await page.getByLabel('Close settings').click()
-	await page.getByTestId('object-duck').click()
+	await page.locator('.garden-object').first().click()
 
 	const firstWord = page.getByTestId('word-tray').locator('.word-line').first()
-	await expect(firstWord).toContainText('鸭子')
+	await expect(firstWord.locator('span')).toHaveAttribute('lang', 'zh-Hans')
 })
 
 test('settings panel can change word detail without raw level labels', async ({
@@ -148,11 +182,11 @@ test('settings panel can change word detail without raw level labels', async ({
 	await expect(dialog.getByText('L3', { exact: true })).toHaveCount(0)
 	await dialog.getByTestId('detail-L3').click()
 	await page.getByLabel('Close settings').click()
-	await page.getByTestId('object-duck').click()
+	await page.locator('.garden-object').first().click()
 
-	await expect(page.getByTestId('word-tray')).toContainText(
-		'The duck paddles by the pond.',
-	)
+	await expect(
+		page.getByTestId('word-tray').locator('.word-line').first(),
+	).toContainText(/[.!?]/)
 })
 
 test('puzzle mode fills scene gaps', async ({ page }) => {
@@ -167,32 +201,34 @@ test('puzzle mode fills scene gaps', async ({ page }) => {
 
 	await page.getByTestId('mode-puzzle').click()
 	await expect(page.getByTestId('prompt')).toContainText('Puzzle garden.')
-	await expect(page.locator('.puzzle-gap')).toHaveCount(10)
-	await expect(page.locator('.puzzle-piece')).toHaveCount(10)
+	const initialCount = await expectObjectCountBetween(
+		page,
+		5,
+		6,
+		'.puzzle-piece',
+	)
+	await expect(page.locator('.puzzle-gap')).toHaveCount(initialCount)
 
-	await page
-		.getByTestId('puzzle-piece-sun')
-		.dragTo(page.getByTestId('puzzle-gap-sun'))
-	await expect(page.getByTestId('object-sun')).toBeVisible()
-	await expect(page.getByTestId('puzzle-piece-sun')).toHaveCount(0)
+	const [firstPieceId] = await getPuzzlePieceIds(page)
+	if (!firstPieceId) {
+		throw new Error('Expected at least one puzzle piece')
+	}
+	await page.getByTestId(`puzzle-piece-${firstPieceId}`).click()
+	await page.getByTestId(`puzzle-gap-${firstPieceId}`).click()
+	await expect(page.getByTestId(`object-${firstPieceId}`)).toBeVisible()
+	await expect(page.getByTestId(`puzzle-piece-${firstPieceId}`)).toHaveCount(0)
 
-	await page.getByTestId('puzzle-piece-tree').click()
-	await page.getByTestId('puzzle-gap-duck').click()
-	await expect(page.getByTestId('puzzle-piece-tree')).toBeVisible()
+	const mismatchIds = await getPuzzlePieceIds(page)
+	if (mismatchIds.length >= 2) {
+		await page.getByTestId(`puzzle-piece-${mismatchIds[0]}`).click()
+		await page.getByTestId(`puzzle-gap-${mismatchIds[1]}`).click()
+		await expect(
+			page.getByTestId(`puzzle-piece-${mismatchIds[0]}`),
+		).toBeVisible()
+	}
 	await expect(page.getByTestId('prompt')).not.toContainText(/wrong|try again/i)
 
-	const remainingObjectIds = [
-		'tree',
-		'flower',
-		'duck',
-		'fish',
-		'dog',
-		'cat',
-		'apple',
-		'banana',
-		'ball',
-	]
-	for (const objectId of remainingObjectIds) {
+	for (const objectId of await getPuzzlePieceIds(page)) {
 		await page.getByTestId(`puzzle-piece-${objectId}`).click()
 		await page.getByTestId(`puzzle-gap-${objectId}`).click()
 	}
@@ -200,8 +236,8 @@ test('puzzle mode fills scene gaps', async ({ page }) => {
 	await expect(page.getByTestId('prompt')).toContainText('Puzzle garden.', {
 		timeout: 3_000,
 	})
-	await expect(page.locator('.puzzle-gap')).toHaveCount(10)
-	await expect(page.locator('.puzzle-piece')).toHaveCount(10)
+	await expect(page.locator('.puzzle-gap')).toHaveCount(initialCount)
+	await expect(page.locator('.puzzle-piece')).toHaveCount(initialCount)
 
 	await page.getByTestId('mode-explore').click()
 	await expect(page.getByTestId('prompt')).toContainText('Hello, garden.')
@@ -216,11 +252,12 @@ test('settings panel can switch to the ocean animals pack', async ({
 	await page.getByTestId('pack-ocean-animals').click()
 	await page.getByLabel('Close settings').click()
 
-	await expect(page.getByText('Ocean Cove')).toBeVisible()
-	await expect(page.getByTestId('object-whale')).toBeVisible()
-	await page.getByTestId('object-whale').click()
-	await expect(page.getByTestId('word-tray')).toContainText('whale')
-	await expect(page.getByTestId('word-tray')).toContainText('鲸鱼')
+	await expect(page.getByTestId('scene-title')).toContainText('Ocean Cove')
+	await expectObjectCountBetween(page, 5, 6)
+	await page.locator('.garden-object').first().click()
+	await expect(page.getByTestId('word-tray').locator('.word-line')).toHaveCount(
+		2,
+	)
 })
 
 test('settings panel can switch to numbers and English alphabet packs', async ({
@@ -232,31 +269,41 @@ test('settings panel can switch to numbers and English alphabet packs', async ({
 	await page.getByTestId('pack-numbers').click()
 	await page.getByLabel('Close settings').click()
 
-	await expect(page.getByText('Number Meadow')).toBeVisible()
-	await expect(page.getByTestId('object-number-one')).toBeVisible()
-	await expect(page.locator('.garden-object')).toHaveCount(10)
-	await page.getByTestId('object-number-one').click()
-	await expect(page.getByTestId('word-tray')).toContainText('one')
-	await expect(page.getByTestId('word-tray')).toContainText('一')
+	await expect(page.getByTestId('scene-title')).toContainText('Number Meadow')
+	await expectObjectCountBetween(page, 5, 6)
+	await page.locator('.garden-object').first().click()
+	await expect(page.getByTestId('word-tray').locator('.word-line')).toHaveCount(
+		2,
+	)
 
 	await page.getByTestId('settings-button').click()
 	await page.getByTestId('pack-english-alphabet').click()
 	await page.getByLabel('Close settings').click()
 
 	await expect(page.getByTestId('scene-title')).toContainText('Letters A-E')
-	await expect(page.getByTestId('object-letter-a')).toBeVisible()
-	await expect(page.locator('.garden-object')).toHaveCount(5)
+	await expectObjectCountBetween(page, 4, 5)
 
 	await page.getByTestId('settings-button').click()
 	await page.getByTestId('set-alphabet-u-z').click()
 	await page.getByLabel('Close settings').click()
 
 	await expect(page.getByTestId('scene-title')).toContainText('Letters U-Z')
-	await expect(page.getByTestId('object-letter-z')).toBeVisible()
-	await expect(page.locator('.garden-object')).toHaveCount(6)
-	await page.getByTestId('object-letter-z').click()
-	await expect(page.getByTestId('word-tray')).toContainText('Z')
-	await expect(page.getByTestId('word-tray')).toContainText('字母 Z')
+	await expectObjectCountBetween(page, 4, 5)
+	await page.locator('.garden-object').first().click()
+	await expect(page.getByTestId('word-tray').locator('.word-line')).toHaveCount(
+		2,
+	)
+})
+
+test('scene navigation shows another randomized scene', async ({ page }) => {
+	await page.goto('/')
+
+	await expectObjectCountBetween(page, 5, 6)
+	await page.getByTestId('scene-next').click()
+
+	await expect(page.getByTestId('scene-title')).toContainText('Pond Garden')
+	await expectObjectCountBetween(page, 5, 6)
+	await expect(page.getByTestId('scene-previous')).toBeEnabled()
 })
 
 test('runtime makes no calls to OpenAI or AI endpoints', async ({ page }) => {
@@ -279,9 +326,9 @@ test('runtime makes no calls to OpenAI or AI endpoints', async ({ page }) => {
 	})
 
 	await page.goto('/')
-	await page.getByTestId('object-duck').click()
+	await page.locator('.garden-object').first().click()
 	await page.getByTestId('mode-find').click()
-	await page.getByTestId('object-sun').click()
+	await page.locator('.garden-object').first().click()
 
 	expect(forbiddenRequests).toEqual([])
 	expect(publicJsonRequests).toEqual([])
@@ -299,7 +346,7 @@ test('mobile alphabet scenes keep toddler tap targets readable', async ({
 	await page.getByLabel('Close settings').click()
 
 	await expect(page.getByTestId('scene-title')).toContainText('Letters A-E')
-	await expect(page.locator('.garden-object')).toHaveCount(5)
+	await expectObjectCountBetween(page, 4, 5)
 
 	for (const objectButton of await page.locator('.garden-object').all()) {
 		const box = await objectButton.boundingBox()

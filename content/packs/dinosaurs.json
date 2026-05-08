@@ -34,74 +34,434 @@
 					"x": 18,
 					"y": 45,
 					"scale": 1.22,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 1.12,
+						"max": 1.34
+					}
 				},
 				{
 					"objectId": "pteranodon",
 					"x": 69,
 					"y": 23,
 					"scale": 0.86,
-					"zIndex": 3
+					"zIndex": 3,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
 				},
 				{
 					"objectId": "t-rex",
 					"x": 52,
 					"y": 56,
 					"scale": 1.04,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.96,
+						"max": 1.14
+					}
 				},
 				{
 					"objectId": "triceratops",
 					"x": 30,
 					"y": 69,
 					"scale": 0.94,
-					"zIndex": 7
+					"zIndex": 7,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
 				},
 				{
 					"objectId": "stegosaurus",
 					"x": 73,
 					"y": 66,
 					"scale": 0.98,
-					"zIndex": 7
+					"zIndex": 7,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.9,
+						"max": 1.08
+					}
 				},
 				{
 					"objectId": "ankylosaurus",
 					"x": 86,
 					"y": 79,
 					"scale": 0.82,
-					"zIndex": 8
+					"zIndex": 8,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "baby-dinosaur",
 					"x": 47,
 					"y": 80,
 					"scale": 0.76,
-					"zIndex": 8
+					"zIndex": 8,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
 				},
 				{
 					"objectId": "dinosaur-egg",
 					"x": 59,
 					"y": 84,
 					"scale": 0.64,
-					"zIndex": 9
+					"zIndex": 9,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.59,
+						"max": 0.7
+					}
 				},
 				{
 					"objectId": "fossil",
 					"x": 16,
 					"y": 82,
 					"scale": 0.66,
-					"zIndex": 9
+					"zIndex": 9,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
 				},
 				{
 					"objectId": "fern",
 					"x": 90,
 					"y": 55,
 					"scale": 0.78,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["foliage"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 35
+						}
+					]
+				},
+				{
+					"id": "ground",
+					"tags": ["ground", "valley"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 38,
+							"width": 100,
+							"height": 62
+						}
+					]
+				},
+				{
+					"id": "foliage",
+					"tags": ["fern", "plant", "grass"],
+					"rects": [
+						{
+							"x": 78,
+							"y": 38,
+							"width": 22,
+							"height": 38
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
+			}
+		},
+		{
+			"id": "fern-valley",
+			"packId": "dinosaurs",
+			"title": {
+				"en": "Fern Valley",
+				"zh-Hans": "蕨叶山谷"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly fern valley with soft green hills, rounded rocks, simple ferns, blue sky, and open safe space for friendly dinosaurs. No lava, no danger, no text, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/dinosaurs/fern-valley.webp",
+					"alt": "Gentle fern valley",
+					"generationPrompt": "A calm toddler-friendly fern valley with soft green hills, rounded rocks, simple ferns, blue sky, and open safe space for friendly dinosaurs. No lava, no danger, no text, static PWA game background.",
+					"placeholder": {
+						"label": "Fern Valley",
+						"emoji": "🦕"
+					}
+				}
+			},
+			"objects": [
+				{
+					"objectId": "long-neck",
+					"x": 76,
+					"y": 45,
+					"scale": 1.22,
+					"zIndex": 4,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 1.12,
+						"max": 1.34
+					}
+				},
+				{
+					"objectId": "pteranodon",
+					"x": 28,
+					"y": 23,
+					"scale": 0.86,
+					"zIndex": 3,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
+				},
+				{
+					"objectId": "t-rex",
+					"x": 46,
+					"y": 58,
+					"scale": 1.04,
+					"zIndex": 6,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.96,
+						"max": 1.14
+					}
+				},
+				{
+					"objectId": "triceratops",
+					"x": 68,
+					"y": 69,
+					"scale": 0.94,
+					"zIndex": 7,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
+				},
+				{
+					"objectId": "stegosaurus",
+					"x": 28,
+					"y": 66,
+					"scale": 0.98,
+					"zIndex": 7,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.9,
+						"max": 1.08
+					}
+				},
+				{
+					"objectId": "ankylosaurus",
+					"x": 14,
+					"y": 79,
+					"scale": 0.82,
+					"zIndex": 8,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "baby-dinosaur",
+					"x": 52,
+					"y": 80,
+					"scale": 0.76,
+					"zIndex": 8,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
+				},
+				{
+					"objectId": "dinosaur-egg",
+					"x": 42,
+					"y": 84,
+					"scale": 0.64,
+					"zIndex": 9,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.59,
+						"max": 0.7
+					}
+				},
+				{
+					"objectId": "fossil",
+					"x": 84,
+					"y": 82,
+					"scale": 0.66,
+					"zIndex": 9,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"objectId": "fern",
+					"x": 88,
+					"y": 55,
+					"scale": 0.78,
+					"zIndex": 5,
+					"regionTags": ["foliage"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 35
+						}
+					]
+				},
+				{
+					"id": "ground",
+					"tags": ["ground", "valley"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 38,
+							"width": 100,
+							"height": 62
+						}
+					]
+				},
+				{
+					"id": "foliage",
+					"tags": ["fern", "plant", "grass"],
+					"rects": [
+						{
+							"x": 78,
+							"y": 38,
+							"width": 22,
+							"height": 38
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
 			}
 		}
 	],
@@ -111,16 +471,6 @@
 			"category": "dinosaur",
 			"tags": ["dinosaur", "green", "walker"],
 			"visualPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/t-rex.webp",
-				"alt": "T. rex",
-				"generationPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
-				"placeholder": {
-					"label": "T. rex",
-					"emoji": "🦖"
-				}
-			},
 			"interaction": {
 				"id": "t-rex-wiggle",
 				"animation": "wiggle"
@@ -252,23 +602,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/t-rex.webp",
+						"alt": "T. rex",
+						"generationPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
+						"placeholder": {
+							"label": "T. rex",
+							"emoji": "🦖"
+						}
+					},
+					"visualPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/t-rex-bright.webp",
+						"alt": "T. rex bright large",
+						"generationPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "T. rex",
+							"emoji": "🦖"
+						}
+					},
+					"visualPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "triceratops",
 			"category": "dinosaur",
 			"tags": ["dinosaur", "horns", "blue"],
 			"visualPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/triceratops.webp",
-				"alt": "triceratops",
-				"generationPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
-				"placeholder": {
-					"label": "triceratops",
-					"emoji": "🦕"
-				}
-			},
 			"interaction": {
 				"id": "triceratops-bob",
 				"animation": "bob"
@@ -400,23 +774,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/triceratops.webp",
+						"alt": "triceratops",
+						"generationPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
+						"placeholder": {
+							"label": "triceratops",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/triceratops-bright.webp",
+						"alt": "triceratops bright large",
+						"generationPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "triceratops",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "stegosaurus",
 			"category": "dinosaur",
 			"tags": ["dinosaur", "plates", "orange"],
 			"visualPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/stegosaurus.webp",
-				"alt": "stegosaurus",
-				"generationPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
-				"placeholder": {
-					"label": "stegosaurus",
-					"emoji": "🦕"
-				}
-			},
 			"interaction": {
 				"id": "stegosaurus-sway",
 				"animation": "sway"
@@ -548,23 +946,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/stegosaurus.webp",
+						"alt": "stegosaurus",
+						"generationPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
+						"placeholder": {
+							"label": "stegosaurus",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/stegosaurus-bright.webp",
+						"alt": "stegosaurus bright large",
+						"generationPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "stegosaurus",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "long-neck",
 			"category": "dinosaur",
 			"tags": ["dinosaur", "long neck", "leaf"],
 			"visualPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/long-neck.webp",
-				"alt": "long-neck dinosaur",
-				"generationPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
-				"placeholder": {
-					"label": "long-neck dinosaur",
-					"emoji": "🦕"
-				}
-			},
 			"interaction": {
 				"id": "long-neck-sway",
 				"animation": "sway"
@@ -696,23 +1118,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/long-neck.webp",
+						"alt": "long-neck dinosaur",
+						"generationPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
+						"placeholder": {
+							"label": "long-neck dinosaur",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/long-neck-bright.webp",
+						"alt": "long-neck dinosaur bright large",
+						"generationPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "long-neck dinosaur",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "pteranodon",
 			"category": "dinosaur",
 			"tags": ["pterosaur", "wings", "purple"],
 			"visualPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/pteranodon.webp",
-				"alt": "pteranodon",
-				"generationPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
-				"placeholder": {
-					"label": "pteranodon",
-					"emoji": "🪽"
-				}
-			},
 			"interaction": {
 				"id": "pteranodon-bob",
 				"animation": "bob"
@@ -844,23 +1290,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/pteranodon.webp",
+						"alt": "pteranodon",
+						"generationPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
+						"placeholder": {
+							"label": "pteranodon",
+							"emoji": "🪽"
+						}
+					},
+					"visualPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/pteranodon-bright.webp",
+						"alt": "pteranodon bright large",
+						"generationPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "pteranodon",
+							"emoji": "🪽"
+						}
+					},
+					"visualPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "ankylosaurus",
 			"category": "dinosaur",
 			"tags": ["dinosaur", "armor", "tail"],
 			"visualPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/ankylosaurus.webp",
-				"alt": "ankylosaurus",
-				"generationPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
-				"placeholder": {
-					"label": "ankylosaurus",
-					"emoji": "🦕"
-				}
-			},
 			"interaction": {
 				"id": "ankylosaurus-glow",
 				"animation": "glow"
@@ -992,23 +1462,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/ankylosaurus.webp",
+						"alt": "ankylosaurus",
+						"generationPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
+						"placeholder": {
+							"label": "ankylosaurus",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/ankylosaurus-bright.webp",
+						"alt": "ankylosaurus bright large",
+						"generationPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "ankylosaurus",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "dinosaur-egg",
 			"category": "dinosaur-object",
 			"tags": ["egg", "nest", "dinosaur"],
 			"visualPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/dinosaur-egg.webp",
-				"alt": "dinosaur egg",
-				"generationPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
-				"placeholder": {
-					"label": "dinosaur egg",
-					"emoji": "🥚"
-				}
-			},
 			"interaction": {
 				"id": "dinosaur-egg-glow",
 				"animation": "glow"
@@ -1140,23 +1634,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/dinosaur-egg.webp",
+						"alt": "dinosaur egg",
+						"generationPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
+						"placeholder": {
+							"label": "dinosaur egg",
+							"emoji": "🥚"
+						}
+					},
+					"visualPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/dinosaur-egg-bright.webp",
+						"alt": "dinosaur egg bright large",
+						"generationPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "dinosaur egg",
+							"emoji": "🥚"
+						}
+					},
+					"visualPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "baby-dinosaur",
 			"category": "dinosaur",
 			"tags": ["baby", "dinosaur", "smile"],
 			"visualPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/baby-dinosaur.webp",
-				"alt": "baby dinosaur",
-				"generationPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
-				"placeholder": {
-					"label": "baby dinosaur",
-					"emoji": "🦖"
-				}
-			},
 			"interaction": {
 				"id": "baby-dinosaur-bounce",
 				"animation": "bounce"
@@ -1288,23 +1806,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/baby-dinosaur.webp",
+						"alt": "baby dinosaur",
+						"generationPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
+						"placeholder": {
+							"label": "baby dinosaur",
+							"emoji": "🦖"
+						}
+					},
+					"visualPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/baby-dinosaur-bright.webp",
+						"alt": "baby dinosaur bright large",
+						"generationPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "baby dinosaur",
+							"emoji": "🦖"
+						}
+					},
+					"visualPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "fossil",
 			"category": "nature-object",
 			"tags": ["fossil", "rock", "bone"],
 			"visualPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/fossil.webp",
-				"alt": "fossil",
-				"generationPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
-				"placeholder": {
-					"label": "fossil",
-					"emoji": "🦴"
-				}
-			},
 			"interaction": {
 				"id": "fossil-glow",
 				"animation": "glow"
@@ -1436,23 +1978,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/fossil.webp",
+						"alt": "fossil",
+						"generationPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
+						"placeholder": {
+							"label": "fossil",
+							"emoji": "🦴"
+						}
+					},
+					"visualPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/fossil-bright.webp",
+						"alt": "fossil bright large",
+						"generationPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "fossil",
+							"emoji": "🦴"
+						}
+					},
+					"visualPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "fern",
 			"category": "plant",
 			"tags": ["plant", "green", "leaf"],
 			"visualPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/dinosaurs/fern.webp",
-				"alt": "fern",
-				"generationPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
-				"placeholder": {
-					"label": "fern",
-					"emoji": "🌿"
-				}
-			},
 			"interaction": {
 				"id": "fern-sway",
 				"animation": "sway"
@@ -1584,7 +2150,41 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/fern.webp",
+						"alt": "fern",
+						"generationPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
+						"placeholder": {
+							"label": "fern",
+							"emoji": "🌿"
+						}
+					},
+					"visualPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/fern-bright.webp",
+						"alt": "fern bright large",
+						"generationPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "fern",
+							"emoji": "🌿"
+						}
+					},
+					"visualPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		}
 	]
 }

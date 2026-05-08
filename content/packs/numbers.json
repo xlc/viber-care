@@ -34,74 +34,386 @@
 					"x": 18,
 					"y": 22,
 					"scale": 0.68,
-					"zIndex": 2
+					"zIndex": 2,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				},
 				{
 					"objectId": "number-two",
 					"x": 50,
 					"y": 22,
 					"scale": 0.68,
-					"zIndex": 3
+					"zIndex": 3,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				},
 				{
 					"objectId": "number-three",
 					"x": 82,
 					"y": 22,
 					"scale": 0.68,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				},
 				{
 					"objectId": "number-four",
 					"x": 18,
 					"y": 44,
 					"scale": 0.68,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				},
 				{
 					"objectId": "number-five",
 					"x": 50,
 					"y": 44,
 					"scale": 0.68,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				},
 				{
 					"objectId": "number-six",
 					"x": 82,
 					"y": 44,
 					"scale": 0.68,
-					"zIndex": 7
+					"zIndex": 7,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				},
 				{
 					"objectId": "number-seven",
 					"x": 18,
 					"y": 66,
 					"scale": 0.68,
-					"zIndex": 8
+					"zIndex": 8,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				},
 				{
 					"objectId": "number-eight",
 					"x": 50,
 					"y": 66,
 					"scale": 0.68,
-					"zIndex": 9
+					"zIndex": 9,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				},
 				{
 					"objectId": "number-nine",
 					"x": 82,
 					"y": 66,
 					"scale": 0.68,
-					"zIndex": 10
+					"zIndex": 10,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				},
 				{
 					"objectId": "number-ten",
 					"x": 50,
 					"y": 86,
 					"scale": 0.68,
-					"zIndex": 11
+					"zIndex": 11,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "card-field",
+					"tags": ["card", "meadow", "grass"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 10,
+							"width": 100,
+							"height": 82
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
+			}
+		},
+		{
+			"id": "counting-hill",
+			"packId": "numbers",
+			"title": {
+				"en": "Counting Hill",
+				"zh-Hans": "数数小山"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly counting hill with soft grass, gentle clouds, a quiet path, and open space for number cards. No text, no clutter, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/numbers/counting-hill.webp",
+					"alt": "A calm counting hill",
+					"generationPrompt": "A calm toddler-friendly counting hill with soft grass, gentle clouds, a quiet path, and open space for number cards. No text, no clutter, static PWA game background.",
+					"placeholder": {
+						"label": "Counting Hill",
+						"emoji": "🌿"
+					}
+				}
+			},
+			"objects": [
+				{
+					"objectId": "number-one",
+					"x": 50,
+					"y": 18,
+					"scale": 0.68,
+					"zIndex": 2,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "number-two",
+					"x": 28,
+					"y": 34,
+					"scale": 0.68,
+					"zIndex": 3,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "number-three",
+					"x": 72,
+					"y": 34,
+					"scale": 0.68,
+					"zIndex": 4,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "number-four",
+					"x": 18,
+					"y": 52,
+					"scale": 0.68,
+					"zIndex": 5,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "number-five",
+					"x": 50,
+					"y": 52,
+					"scale": 0.68,
+					"zIndex": 6,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "number-six",
+					"x": 82,
+					"y": 52,
+					"scale": 0.68,
+					"zIndex": 7,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "number-seven",
+					"x": 28,
+					"y": 72,
+					"scale": 0.68,
+					"zIndex": 8,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "number-eight",
+					"x": 72,
+					"y": 72,
+					"scale": 0.68,
+					"zIndex": 9,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "number-nine",
+					"x": 18,
+					"y": 86,
+					"scale": 0.68,
+					"zIndex": 10,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "number-ten",
+					"x": 82,
+					"y": 86,
+					"scale": 0.68,
+					"zIndex": 11,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "card-field",
+					"tags": ["card", "meadow", "grass"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 10,
+							"width": 100,
+							"height": 82
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
 			}
 		}
 	],
@@ -111,16 +423,6 @@
 			"category": "number",
 			"tags": ["number", "counting", "one"],
 			"visualPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-one.webp",
-				"alt": "number one",
-				"generationPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "one",
-					"emoji": "1️⃣"
-				}
-			},
 			"interaction": {
 				"id": "number-one-bob",
 				"animation": "bob"
@@ -252,23 +554,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-one.webp",
+						"alt": "number one",
+						"generationPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "one",
+							"emoji": "1️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-one-bright.webp",
+						"alt": "number one bright large",
+						"generationPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "one",
+							"emoji": "1️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "number-two",
 			"category": "number",
 			"tags": ["number", "counting", "two"],
 			"visualPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-two.webp",
-				"alt": "number two",
-				"generationPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "two",
-					"emoji": "2️⃣"
-				}
-			},
 			"interaction": {
 				"id": "number-two-bounce",
 				"animation": "bounce"
@@ -400,23 +726,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-two.webp",
+						"alt": "number two",
+						"generationPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "two",
+							"emoji": "2️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-two-bright.webp",
+						"alt": "number two bright large",
+						"generationPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "two",
+							"emoji": "2️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "number-three",
 			"category": "number",
 			"tags": ["number", "counting", "three"],
 			"visualPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-three.webp",
-				"alt": "number three",
-				"generationPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "three",
-					"emoji": "3️⃣"
-				}
-			},
 			"interaction": {
 				"id": "number-three-bob",
 				"animation": "bob"
@@ -548,23 +898,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-three.webp",
+						"alt": "number three",
+						"generationPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "three",
+							"emoji": "3️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-three-bright.webp",
+						"alt": "number three bright large",
+						"generationPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "three",
+							"emoji": "3️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "number-four",
 			"category": "number",
 			"tags": ["number", "counting", "four"],
 			"visualPrompt": "A large friendly number four on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-four.webp",
-				"alt": "number four",
-				"generationPrompt": "A large friendly number four on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "four",
-					"emoji": "4️⃣"
-				}
-			},
 			"interaction": {
 				"id": "number-four-sway",
 				"animation": "sway"
@@ -696,23 +1070,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-four.webp",
+						"alt": "number four",
+						"generationPrompt": "A large friendly number four on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "four",
+							"emoji": "4️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number four on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-four-bright.webp",
+						"alt": "number four bright large",
+						"generationPrompt": "A large friendly number four on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "four",
+							"emoji": "4️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number four on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "number-five",
 			"category": "number",
 			"tags": ["number", "counting", "five"],
 			"visualPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-five.webp",
-				"alt": "number five",
-				"generationPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "five",
-					"emoji": "5️⃣"
-				}
-			},
 			"interaction": {
 				"id": "number-five-bob",
 				"animation": "bob"
@@ -844,23 +1242,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-five.webp",
+						"alt": "number five",
+						"generationPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "five",
+							"emoji": "5️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-five-bright.webp",
+						"alt": "number five bright large",
+						"generationPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "five",
+							"emoji": "5️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "number-six",
 			"category": "number",
 			"tags": ["number", "counting", "six"],
 			"visualPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-six.webp",
-				"alt": "number six",
-				"generationPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "six",
-					"emoji": "6️⃣"
-				}
-			},
 			"interaction": {
 				"id": "number-six-wiggle",
 				"animation": "wiggle"
@@ -992,23 +1414,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-six.webp",
+						"alt": "number six",
+						"generationPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "six",
+							"emoji": "6️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-six-bright.webp",
+						"alt": "number six bright large",
+						"generationPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "six",
+							"emoji": "6️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "number-seven",
 			"category": "number",
 			"tags": ["number", "counting", "seven"],
 			"visualPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-seven.webp",
-				"alt": "number seven",
-				"generationPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "seven",
-					"emoji": "7️⃣"
-				}
-			},
 			"interaction": {
 				"id": "number-seven-wiggle",
 				"animation": "wiggle"
@@ -1140,23 +1586,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-seven.webp",
+						"alt": "number seven",
+						"generationPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "seven",
+							"emoji": "7️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-seven-bright.webp",
+						"alt": "number seven bright large",
+						"generationPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "seven",
+							"emoji": "7️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "number-eight",
 			"category": "number",
 			"tags": ["number", "counting", "eight"],
 			"visualPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-eight.webp",
-				"alt": "number eight",
-				"generationPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "eight",
-					"emoji": "8️⃣"
-				}
-			},
 			"interaction": {
 				"id": "number-eight-wiggle",
 				"animation": "wiggle"
@@ -1288,23 +1758,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-eight.webp",
+						"alt": "number eight",
+						"generationPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "eight",
+							"emoji": "8️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-eight-bright.webp",
+						"alt": "number eight bright large",
+						"generationPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "eight",
+							"emoji": "8️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "number-nine",
 			"category": "number",
 			"tags": ["number", "counting", "nine"],
 			"visualPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-nine.webp",
-				"alt": "number nine",
-				"generationPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "nine",
-					"emoji": "9️⃣"
-				}
-			},
 			"interaction": {
 				"id": "number-nine-bob",
 				"animation": "bob"
@@ -1436,23 +1930,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-nine.webp",
+						"alt": "number nine",
+						"generationPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "nine",
+							"emoji": "9️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-nine-bright.webp",
+						"alt": "number nine bright large",
+						"generationPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "nine",
+							"emoji": "9️⃣"
+						}
+					},
+					"visualPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "number-ten",
 			"category": "number",
 			"tags": ["number", "counting", "ten"],
 			"visualPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/numbers/number-ten.webp",
-				"alt": "number ten",
-				"generationPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "ten",
-					"emoji": "🔟"
-				}
-			},
 			"interaction": {
 				"id": "number-ten-wiggle",
 				"animation": "wiggle"
@@ -1584,7 +2102,41 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-ten.webp",
+						"alt": "number ten",
+						"generationPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "ten",
+							"emoji": "🔟"
+						}
+					},
+					"visualPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/numbers/number-ten-bright.webp",
+						"alt": "number ten bright large",
+						"generationPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "ten",
+							"emoji": "🔟"
+						}
+					},
+					"visualPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		}
 	]
 }

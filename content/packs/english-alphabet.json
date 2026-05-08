@@ -76,39 +76,102 @@
 					"x": 20,
 					"y": 28,
 					"scale": 0.82,
-					"zIndex": 2
+					"zIndex": 2,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-b",
 					"x": 50,
 					"y": 24,
 					"scale": 0.82,
-					"zIndex": 3
+					"zIndex": 3,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-c",
 					"x": 80,
 					"y": 28,
 					"scale": 0.82,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-d",
 					"x": 34,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-e",
 					"x": 66,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "card-field",
+					"tags": ["card", "letter", "park"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 12,
+							"width": 100,
+							"height": 80
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 4,
+				"max": 5
 			}
 		},
 		{
@@ -137,39 +200,102 @@
 					"x": 20,
 					"y": 28,
 					"scale": 0.82,
-					"zIndex": 2
+					"zIndex": 2,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-g",
 					"x": 50,
 					"y": 24,
 					"scale": 0.82,
-					"zIndex": 3
+					"zIndex": 3,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-h",
 					"x": 80,
 					"y": 28,
 					"scale": 0.82,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-i",
 					"x": 34,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-j",
 					"x": 66,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "card-field",
+					"tags": ["card", "letter", "park"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 12,
+							"width": 100,
+							"height": 80
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 4,
+				"max": 5
 			}
 		},
 		{
@@ -198,39 +324,102 @@
 					"x": 20,
 					"y": 28,
 					"scale": 0.82,
-					"zIndex": 2
+					"zIndex": 2,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-l",
 					"x": 50,
 					"y": 24,
 					"scale": 0.82,
-					"zIndex": 3
+					"zIndex": 3,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-m",
 					"x": 80,
 					"y": 28,
 					"scale": 0.82,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-n",
 					"x": 34,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-o",
 					"x": 66,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "card-field",
+					"tags": ["card", "letter", "park"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 12,
+							"width": 100,
+							"height": 80
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 4,
+				"max": 5
 			}
 		},
 		{
@@ -259,39 +448,102 @@
 					"x": 20,
 					"y": 28,
 					"scale": 0.82,
-					"zIndex": 2
+					"zIndex": 2,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-q",
 					"x": 50,
 					"y": 24,
 					"scale": 0.82,
-					"zIndex": 3
+					"zIndex": 3,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-r",
 					"x": 80,
 					"y": 28,
 					"scale": 0.82,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-s",
 					"x": 34,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-t",
 					"x": 66,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "card-field",
+					"tags": ["card", "letter", "park"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 12,
+							"width": 100,
+							"height": 80
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 4,
+				"max": 5
 			}
 		},
 		{
@@ -320,46 +572,118 @@
 					"x": 18,
 					"y": 25,
 					"scale": 0.82,
-					"zIndex": 2
+					"zIndex": 2,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-v",
 					"x": 50,
 					"y": 25,
 					"scale": 0.82,
-					"zIndex": 3
+					"zIndex": 3,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-w",
 					"x": 82,
 					"y": 25,
 					"scale": 0.82,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-x",
 					"x": 18,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-y",
 					"x": 50,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				},
 				{
 					"objectId": "letter-z",
 					"x": 82,
 					"y": 66,
 					"scale": 0.82,
-					"zIndex": 7
+					"zIndex": 7,
+					"regionTags": ["card-field"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "card-field",
+					"tags": ["card", "letter", "park"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 12,
+							"width": 100,
+							"height": 80
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 4,
+				"max": 5
 			}
 		}
 	],
@@ -369,16 +693,6 @@
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "a"],
 			"visualPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-a.webp",
-				"alt": "letter A",
-				"generationPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "A",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-a-bob",
 				"animation": "bob"
@@ -510,23 +824,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-a.webp",
+						"alt": "letter A",
+						"generationPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "A",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-a-bright.webp",
+						"alt": "letter A bright large",
+						"generationPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "A",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-b",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "b"],
 			"visualPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-b.webp",
-				"alt": "letter B",
-				"generationPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "B",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-b-bounce",
 				"animation": "bounce"
@@ -658,23 +996,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-b.webp",
+						"alt": "letter B",
+						"generationPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "B",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-b-bright.webp",
+						"alt": "letter B bright large",
+						"generationPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "B",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-c",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "c"],
 			"visualPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-c.webp",
-				"alt": "letter C",
-				"generationPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "C",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-c-glow",
 				"animation": "glow"
@@ -806,23 +1168,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-c.webp",
+						"alt": "letter C",
+						"generationPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "C",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-c-bright.webp",
+						"alt": "letter C bright large",
+						"generationPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "C",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-d",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "d"],
 			"visualPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-d.webp",
-				"alt": "letter D",
-				"generationPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "D",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-d-sway",
 				"animation": "sway"
@@ -954,23 +1340,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-d.webp",
+						"alt": "letter D",
+						"generationPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "D",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-d-bright.webp",
+						"alt": "letter D bright large",
+						"generationPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "D",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-e",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "e"],
 			"visualPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-e.webp",
-				"alt": "letter E",
-				"generationPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "E",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-e-bob",
 				"animation": "bob"
@@ -1102,23 +1512,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-e.webp",
+						"alt": "letter E",
+						"generationPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "E",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-e-bright.webp",
+						"alt": "letter E bright large",
+						"generationPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "E",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-f",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "f"],
 			"visualPrompt": "A large friendly uppercase F letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-f.webp",
-				"alt": "letter F",
-				"generationPrompt": "A large friendly uppercase F letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "F",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-f-wiggle",
 				"animation": "wiggle"
@@ -1250,23 +1684,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-f.webp",
+						"alt": "letter F",
+						"generationPrompt": "A large friendly uppercase F letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "F",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase F letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-f-bright.webp",
+						"alt": "letter F bright large",
+						"generationPrompt": "A large friendly uppercase F letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "F",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase F letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-g",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "g"],
 			"visualPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-g.webp",
-				"alt": "letter G",
-				"generationPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "G",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-g-wiggle",
 				"animation": "wiggle"
@@ -1398,23 +1856,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-g.webp",
+						"alt": "letter G",
+						"generationPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "G",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-g-bright.webp",
+						"alt": "letter G bright large",
+						"generationPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "G",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-h",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "h"],
 			"visualPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-h.webp",
-				"alt": "letter H",
-				"generationPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "H",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-h-wiggle",
 				"animation": "wiggle"
@@ -1546,23 +2028,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-h.webp",
+						"alt": "letter H",
+						"generationPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "H",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-h-bright.webp",
+						"alt": "letter H bright large",
+						"generationPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "H",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-i",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "i"],
 			"visualPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-i.webp",
-				"alt": "letter I",
-				"generationPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "I",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-i-wiggle",
 				"animation": "wiggle"
@@ -1694,23 +2200,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-i.webp",
+						"alt": "letter I",
+						"generationPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "I",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-i-bright.webp",
+						"alt": "letter I bright large",
+						"generationPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "I",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-j",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "j"],
 			"visualPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-j.webp",
-				"alt": "letter J",
-				"generationPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "J",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-j-wiggle",
 				"animation": "wiggle"
@@ -1842,23 +2372,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-j.webp",
+						"alt": "letter J",
+						"generationPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "J",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-j-bright.webp",
+						"alt": "letter J bright large",
+						"generationPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "J",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-k",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "k"],
 			"visualPrompt": "A large friendly uppercase K letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-k.webp",
-				"alt": "letter K",
-				"generationPrompt": "A large friendly uppercase K letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "K",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-k-wiggle",
 				"animation": "wiggle"
@@ -1990,23 +2544,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-k.webp",
+						"alt": "letter K",
+						"generationPrompt": "A large friendly uppercase K letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "K",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase K letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-k-bright.webp",
+						"alt": "letter K bright large",
+						"generationPrompt": "A large friendly uppercase K letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "K",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase K letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-l",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "l"],
 			"visualPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-l.webp",
-				"alt": "letter L",
-				"generationPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "L",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-l-wiggle",
 				"animation": "wiggle"
@@ -2138,23 +2716,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-l.webp",
+						"alt": "letter L",
+						"generationPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "L",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-l-bright.webp",
+						"alt": "letter L bright large",
+						"generationPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "L",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-m",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "m"],
 			"visualPrompt": "A large friendly uppercase M letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-m.webp",
-				"alt": "letter M",
-				"generationPrompt": "A large friendly uppercase M letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "M",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-m-wiggle",
 				"animation": "wiggle"
@@ -2286,23 +2888,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-m.webp",
+						"alt": "letter M",
+						"generationPrompt": "A large friendly uppercase M letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "M",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase M letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-m-bright.webp",
+						"alt": "letter M bright large",
+						"generationPrompt": "A large friendly uppercase M letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "M",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase M letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-n",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "n"],
 			"visualPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-n.webp",
-				"alt": "letter N",
-				"generationPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "N",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-n-wiggle",
 				"animation": "wiggle"
@@ -2434,23 +3060,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-n.webp",
+						"alt": "letter N",
+						"generationPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "N",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-n-bright.webp",
+						"alt": "letter N bright large",
+						"generationPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "N",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-o",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "o"],
 			"visualPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-o.webp",
-				"alt": "letter O",
-				"generationPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "O",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-o-wiggle",
 				"animation": "wiggle"
@@ -2582,23 +3232,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-o.webp",
+						"alt": "letter O",
+						"generationPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "O",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-o-bright.webp",
+						"alt": "letter O bright large",
+						"generationPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "O",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-p",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "p"],
 			"visualPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-p.webp",
-				"alt": "letter P",
-				"generationPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "P",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-p-wiggle",
 				"animation": "wiggle"
@@ -2730,23 +3404,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-p.webp",
+						"alt": "letter P",
+						"generationPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "P",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-p-bright.webp",
+						"alt": "letter P bright large",
+						"generationPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "P",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-q",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "q"],
 			"visualPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-q.webp",
-				"alt": "letter Q",
-				"generationPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "Q",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-q-wiggle",
 				"animation": "wiggle"
@@ -2878,23 +3576,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-q.webp",
+						"alt": "letter Q",
+						"generationPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "Q",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-q-bright.webp",
+						"alt": "letter Q bright large",
+						"generationPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "Q",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-r",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "r"],
 			"visualPrompt": "A large friendly uppercase R letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-r.webp",
-				"alt": "letter R",
-				"generationPrompt": "A large friendly uppercase R letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "R",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-r-wiggle",
 				"animation": "wiggle"
@@ -3026,23 +3748,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-r.webp",
+						"alt": "letter R",
+						"generationPrompt": "A large friendly uppercase R letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "R",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase R letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-r-bright.webp",
+						"alt": "letter R bright large",
+						"generationPrompt": "A large friendly uppercase R letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "R",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase R letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-s",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "s"],
 			"visualPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-s.webp",
-				"alt": "letter S",
-				"generationPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "S",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-s-wiggle",
 				"animation": "wiggle"
@@ -3174,23 +3920,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-s.webp",
+						"alt": "letter S",
+						"generationPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "S",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-s-bright.webp",
+						"alt": "letter S bright large",
+						"generationPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "S",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-t",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "t"],
 			"visualPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-t.webp",
-				"alt": "letter T",
-				"generationPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "T",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-t-wiggle",
 				"animation": "wiggle"
@@ -3322,23 +4092,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-t.webp",
+						"alt": "letter T",
+						"generationPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "T",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-t-bright.webp",
+						"alt": "letter T bright large",
+						"generationPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "T",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-u",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "u"],
 			"visualPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-u.webp",
-				"alt": "letter U",
-				"generationPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "U",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-u-wiggle",
 				"animation": "wiggle"
@@ -3470,23 +4264,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-u.webp",
+						"alt": "letter U",
+						"generationPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "U",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-u-bright.webp",
+						"alt": "letter U bright large",
+						"generationPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "U",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-v",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "v"],
 			"visualPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-v.webp",
-				"alt": "letter V",
-				"generationPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "V",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-v-wiggle",
 				"animation": "wiggle"
@@ -3618,23 +4436,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-v.webp",
+						"alt": "letter V",
+						"generationPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "V",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-v-bright.webp",
+						"alt": "letter V bright large",
+						"generationPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "V",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-w",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "w"],
 			"visualPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-w.webp",
-				"alt": "letter W",
-				"generationPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "W",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-w-wiggle",
 				"animation": "wiggle"
@@ -3766,23 +4608,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-w.webp",
+						"alt": "letter W",
+						"generationPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "W",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-w-bright.webp",
+						"alt": "letter W bright large",
+						"generationPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "W",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-x",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "x"],
 			"visualPrompt": "A large friendly uppercase X letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-x.webp",
-				"alt": "letter X",
-				"generationPrompt": "A large friendly uppercase X letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "X",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-x-wiggle",
 				"animation": "wiggle"
@@ -3914,23 +4780,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-x.webp",
+						"alt": "letter X",
+						"generationPrompt": "A large friendly uppercase X letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "X",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase X letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-x-bright.webp",
+						"alt": "letter X bright large",
+						"generationPrompt": "A large friendly uppercase X letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "X",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase X letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-y",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "y"],
 			"visualPrompt": "A large friendly uppercase Y letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-y.webp",
-				"alt": "letter Y",
-				"generationPrompt": "A large friendly uppercase Y letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "Y",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-y-wiggle",
 				"animation": "wiggle"
@@ -4062,23 +4952,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-y.webp",
+						"alt": "letter Y",
+						"generationPrompt": "A large friendly uppercase Y letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "Y",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase Y letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-y-bright.webp",
+						"alt": "letter Y bright large",
+						"generationPrompt": "A large friendly uppercase Y letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "Y",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase Y letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "letter-z",
 			"category": "letter",
 			"tags": ["letter", "alphabet", "uppercase", "z"],
 			"visualPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/english-alphabet/letter-z.webp",
-				"alt": "letter Z",
-				"generationPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
-				"placeholder": {
-					"label": "Z",
-					"emoji": "🔤"
-				}
-			},
 			"interaction": {
 				"id": "letter-z-wiggle",
 				"animation": "wiggle"
@@ -4210,7 +5124,41 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-z.webp",
+						"alt": "letter Z",
+						"generationPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+						"placeholder": {
+							"label": "Z",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/english-alphabet/letter-z-bright.webp",
+						"alt": "letter Z bright large",
+						"generationPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "Z",
+							"emoji": "🔤"
+						}
+					},
+					"visualPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		}
 	]
 }

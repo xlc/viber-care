@@ -34,74 +34,470 @@
 					"x": 82,
 					"y": 12,
 					"scale": 1.2,
-					"zIndex": 1
+					"zIndex": 1,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 1.1,
+						"max": 1.32
+					}
 				},
 				{
 					"objectId": "tree",
 					"x": 14,
 					"y": 34,
 					"scale": 1.35,
-					"zIndex": 2
+					"zIndex": 2,
+					"regionTags": ["tree"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 1.24,
+						"max": 1.49
+					}
 				},
 				{
 					"objectId": "flower",
 					"x": 64,
 					"y": 62,
 					"scale": 0.88,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.81,
+						"max": 0.97
+					}
 				},
 				{
 					"objectId": "duck",
 					"x": 34,
 					"y": 64,
 					"scale": 0.96,
-					"zIndex": 4
+					"zIndex": 4,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.88,
+						"max": 1.06
+					}
 				},
 				{
 					"objectId": "fish",
 					"x": 47,
 					"y": 78,
 					"scale": 0.84,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.77,
+						"max": 0.92
+					}
 				},
 				{
 					"objectId": "dog",
 					"x": 22,
 					"y": 72,
 					"scale": 1.02,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.94,
+						"max": 1.12
+					}
 				},
 				{
 					"objectId": "cat",
 					"x": 76,
 					"y": 72,
 					"scale": 0.94,
-					"zIndex": 5
+					"zIndex": 5,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
 				},
 				{
 					"objectId": "apple",
 					"x": 18,
 					"y": 51,
 					"scale": 0.72,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["tree"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
 				},
 				{
 					"objectId": "banana",
 					"x": 55,
 					"y": 48,
 					"scale": 0.72,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
 				},
 				{
 					"objectId": "ball",
 					"x": 86,
 					"y": 83,
 					"scale": 0.86,
-					"zIndex": 6
+					"zIndex": 6,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
 				}
 			],
 			"music": {
 				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 34
+						}
+					]
+				},
+				{
+					"id": "water",
+					"tags": ["water", "pond"],
+					"rects": [
+						{
+							"x": 28,
+							"y": 55,
+							"width": 30,
+							"height": 34
+						}
+					]
+				},
+				{
+					"id": "tree",
+					"tags": ["tree", "branch"],
+					"rects": [
+						{
+							"x": 5,
+							"y": 20,
+							"width": 28,
+							"height": 42
+						},
+						{
+							"x": 70,
+							"y": 20,
+							"width": 25,
+							"height": 42
+						}
+					]
+				},
+				{
+					"id": "grass",
+					"tags": ["grass", "ground"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 34,
+							"width": 100,
+							"height": 66
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
+			}
+		},
+		{
+			"id": "pond-garden",
+			"packId": "garden",
+			"title": {
+				"en": "Pond Garden",
+				"zh-Hans": "池塘花园"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly pond garden with soft grass, a blue sky, rounded trees, a quiet pond, warm sunlight, and open space for friendly objects. No text, no clutter, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/garden/pond-garden.webp",
+					"alt": "A calm pond garden",
+					"generationPrompt": "A calm toddler-friendly pond garden with soft grass, a blue sky, rounded trees, a quiet pond, warm sunlight, and open space for friendly objects. No text, no clutter, static PWA game background.",
+					"placeholder": {
+						"label": "Pond Garden",
+						"emoji": "🌼"
+					}
+				}
+			},
+			"objects": [
+				{
+					"objectId": "sun",
+					"x": 22,
+					"y": 13,
+					"scale": 1.2,
+					"zIndex": 1,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 1.1,
+						"max": 1.32
+					}
+				},
+				{
+					"objectId": "tree",
+					"x": 82,
+					"y": 34,
+					"scale": 1.35,
+					"zIndex": 2,
+					"regionTags": ["tree"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 1.24,
+						"max": 1.49
+					}
+				},
+				{
+					"objectId": "flower",
+					"x": 27,
+					"y": 69,
+					"scale": 0.88,
+					"zIndex": 4,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.81,
+						"max": 0.97
+					}
+				},
+				{
+					"objectId": "duck",
+					"x": 45,
+					"y": 65,
+					"scale": 0.96,
+					"zIndex": 4,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.88,
+						"max": 1.06
+					}
+				},
+				{
+					"objectId": "fish",
+					"x": 36,
+					"y": 78,
+					"scale": 0.84,
+					"zIndex": 5,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.77,
+						"max": 0.92
+					}
+				},
+				{
+					"objectId": "dog",
+					"x": 62,
+					"y": 73,
+					"scale": 1.02,
+					"zIndex": 5,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.94,
+						"max": 1.12
+					}
+				},
+				{
+					"objectId": "cat",
+					"x": 14,
+					"y": 75,
+					"scale": 0.94,
+					"zIndex": 5,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
+				},
+				{
+					"objectId": "apple",
+					"x": 76,
+					"y": 52,
+					"scale": 0.72,
+					"zIndex": 6,
+					"regionTags": ["tree"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"objectId": "banana",
+					"x": 53,
+					"y": 49,
+					"scale": 0.72,
+					"zIndex": 6,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"objectId": "ball",
+					"x": 88,
+					"y": 83,
+					"scale": 0.86,
+					"zIndex": 6,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 34
+						}
+					]
+				},
+				{
+					"id": "water",
+					"tags": ["water", "pond"],
+					"rects": [
+						{
+							"x": 28,
+							"y": 55,
+							"width": 30,
+							"height": 34
+						}
+					]
+				},
+				{
+					"id": "tree",
+					"tags": ["tree", "branch"],
+					"rects": [
+						{
+							"x": 5,
+							"y": 20,
+							"width": 28,
+							"height": 42
+						},
+						{
+							"x": 70,
+							"y": 20,
+							"width": 25,
+							"height": 42
+						}
+					]
+				},
+				{
+					"id": "grass",
+					"tags": ["grass", "ground"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 34,
+							"width": 100,
+							"height": 66
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
 			}
 		}
 	],
@@ -111,16 +507,6 @@
 			"category": "animal",
 			"tags": ["pond", "bird", "yellow"],
 			"visualPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/duck.webp",
-				"alt": "duck",
-				"generationPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
-				"placeholder": {
-					"label": "duck",
-					"emoji": "🦆"
-				}
-			},
 			"interaction": {
 				"id": "duck-bob",
 				"animation": "bob"
@@ -252,23 +638,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/duck.webp",
+						"alt": "duck",
+						"generationPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
+						"placeholder": {
+							"label": "duck",
+							"emoji": "🦆"
+						}
+					},
+					"visualPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/duck-bright.webp",
+						"alt": "duck bright large",
+						"generationPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "duck",
+							"emoji": "🦆"
+						}
+					},
+					"visualPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "dog",
 			"category": "animal",
 			"tags": ["pet", "friendly", "brown"],
 			"visualPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/dog.webp",
-				"alt": "dog",
-				"generationPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
-				"placeholder": {
-					"label": "dog",
-					"emoji": "🐶"
-				}
-			},
 			"interaction": {
 				"id": "dog-wiggle",
 				"animation": "wiggle"
@@ -400,23 +810,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/dog.webp",
+						"alt": "dog",
+						"generationPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
+						"placeholder": {
+							"label": "dog",
+							"emoji": "🐶"
+						}
+					},
+					"visualPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/dog-bright.webp",
+						"alt": "dog bright large",
+						"generationPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "dog",
+							"emoji": "🐶"
+						}
+					},
+					"visualPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "cat",
 			"category": "animal",
 			"tags": ["pet", "soft", "orange"],
 			"visualPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/cat.webp",
-				"alt": "cat",
-				"generationPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background.",
-				"placeholder": {
-					"label": "cat",
-					"emoji": "🐱"
-				}
-			},
 			"interaction": {
 				"id": "cat-sway",
 				"animation": "sway"
@@ -548,23 +982,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/cat.webp",
+						"alt": "cat",
+						"generationPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background.",
+						"placeholder": {
+							"label": "cat",
+							"emoji": "🐱"
+						}
+					},
+					"visualPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/cat-bright.webp",
+						"alt": "cat bright large",
+						"generationPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "cat",
+							"emoji": "🐱"
+						}
+					},
+					"visualPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "fish",
 			"category": "animal",
 			"tags": ["pond", "water", "blue"],
 			"visualPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/fish.webp",
-				"alt": "fish",
-				"generationPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
-				"placeholder": {
-					"label": "fish",
-					"emoji": "🐟"
-				}
-			},
 			"interaction": {
 				"id": "fish-bounce",
 				"animation": "bounce"
@@ -696,23 +1154,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/fish.webp",
+						"alt": "fish",
+						"generationPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
+						"placeholder": {
+							"label": "fish",
+							"emoji": "🐟"
+						}
+					},
+					"visualPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/fish-bright.webp",
+						"alt": "fish bright large",
+						"generationPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "fish",
+							"emoji": "🐟"
+						}
+					},
+					"visualPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "apple",
 			"category": "food",
 			"tags": ["fruit", "red", "tree"],
 			"visualPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/apple.webp",
-				"alt": "apple",
-				"generationPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background.",
-				"placeholder": {
-					"label": "apple",
-					"emoji": "🍎"
-				}
-			},
 			"interaction": {
 				"id": "apple-bounce",
 				"animation": "bounce"
@@ -844,23 +1326,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/apple.webp",
+						"alt": "apple",
+						"generationPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background.",
+						"placeholder": {
+							"label": "apple",
+							"emoji": "🍎"
+						}
+					},
+					"visualPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/apple-bright.webp",
+						"alt": "apple bright large",
+						"generationPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "apple",
+							"emoji": "🍎"
+						}
+					},
+					"visualPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "banana",
 			"category": "food",
 			"tags": ["fruit", "yellow", "snack"],
 			"visualPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/banana.webp",
-				"alt": "banana",
-				"generationPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background.",
-				"placeholder": {
-					"label": "banana",
-					"emoji": "🍌"
-				}
-			},
 			"interaction": {
 				"id": "banana-sway",
 				"animation": "sway"
@@ -992,23 +1498,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/banana.webp",
+						"alt": "banana",
+						"generationPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background.",
+						"placeholder": {
+							"label": "banana",
+							"emoji": "🍌"
+						}
+					},
+					"visualPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/banana-bright.webp",
+						"alt": "banana bright large",
+						"generationPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "banana",
+							"emoji": "🍌"
+						}
+					},
+					"visualPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "flower",
 			"category": "plant",
 			"tags": ["garden", "pink", "petals"],
 			"visualPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/flower.webp",
-				"alt": "flower",
-				"generationPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
-				"placeholder": {
-					"label": "flower",
-					"emoji": "🌸"
-				}
-			},
 			"interaction": {
 				"id": "flower-sway",
 				"animation": "sway"
@@ -1140,23 +1670,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/flower.webp",
+						"alt": "flower",
+						"generationPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
+						"placeholder": {
+							"label": "flower",
+							"emoji": "🌸"
+						}
+					},
+					"visualPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/flower-bright.webp",
+						"alt": "flower bright large",
+						"generationPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "flower",
+							"emoji": "🌸"
+						}
+					},
+					"visualPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "tree",
 			"category": "plant",
 			"tags": ["garden", "green", "shade"],
 			"visualPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/tree.webp",
-				"alt": "tree",
-				"generationPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background.",
-				"placeholder": {
-					"label": "tree",
-					"emoji": "🌳"
-				}
-			},
 			"interaction": {
 				"id": "tree-sway",
 				"animation": "sway"
@@ -1288,23 +1842,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/tree.webp",
+						"alt": "tree",
+						"generationPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background.",
+						"placeholder": {
+							"label": "tree",
+							"emoji": "🌳"
+						}
+					},
+					"visualPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/tree-bright.webp",
+						"alt": "tree bright large",
+						"generationPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "tree",
+							"emoji": "🌳"
+						}
+					},
+					"visualPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "sun",
 			"category": "nature",
 			"tags": ["sky", "warm", "yellow"],
 			"visualPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/sun.webp",
-				"alt": "sun",
-				"generationPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background.",
-				"placeholder": {
-					"label": "sun",
-					"emoji": "☀️"
-				}
-			},
 			"interaction": {
 				"id": "sun-glow",
 				"animation": "glow"
@@ -1436,23 +2014,47 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/sun.webp",
+						"alt": "sun",
+						"generationPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background.",
+						"placeholder": {
+							"label": "sun",
+							"emoji": "☀️"
+						}
+					},
+					"visualPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/sun-bright.webp",
+						"alt": "sun bright large",
+						"generationPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "sun",
+							"emoji": "☀️"
+						}
+					},
+					"visualPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		},
 		{
 			"id": "ball",
 			"category": "toy",
 			"tags": ["play", "round", "colorful"],
 			"visualPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
-			"image": {
-				"type": "image",
-				"path": "/assets/generated/imagegen/garden/ball.webp",
-				"alt": "ball",
-				"generationPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
-				"placeholder": {
-					"label": "ball",
-					"emoji": "⚽"
-				}
-			},
 			"interaction": {
 				"id": "ball-bounce",
 				"animation": "bounce"
@@ -1584,7 +2186,41 @@
 						}
 					}
 				}
-			}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/ball.webp",
+						"alt": "ball",
+						"generationPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
+						"placeholder": {
+							"label": "ball",
+							"emoji": "⚽"
+						}
+					},
+					"visualPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/ball-bright.webp",
+						"alt": "ball bright large",
+						"generationPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "ball",
+							"emoji": "⚽"
+						}
+					},
+					"visualPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
 		}
 	]
 }

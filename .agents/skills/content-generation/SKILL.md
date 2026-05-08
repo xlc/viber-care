@@ -19,6 +19,13 @@ committed source content directly.
 - Write source content as committed JSON under `content/packs/*.json`.
 - Write static image/audio files under `public/assets/` and reference them from
   the content pack.
+- Every production pack should have at least two scenes. Every object should
+  have at least two static visual variants.
+- Scene backgrounds must define percentage-based `regions`; scene spawn
+  candidates must use `regionTags` so objects only appear in appropriate areas
+  such as sky, water, grass, road, rail, or card fields.
+- Use scene `visibleObjectCount` to show a randomized subset when a scene has
+  more candidates than should be visible at once.
 - Generate level audio with
   `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts`.
   It reads `OPENROUTER_API_KEY` from `.env`, writes static MP3 files under
@@ -34,28 +41,39 @@ committed source content directly.
 ## Content Pack Checklist
 
 1. Add or edit `content/packs/<pack-id>.json`.
-2. Include pack metadata, languages, scenes, scene object placements, objects,
-   interaction animation metadata, image paths, visual prompts, and audio paths.
-3. Make every scene placement reference an object defined in the same pack.
-4. Keep object language content in the pack, not in runtime engine code.
-5. Generate or refresh static level audio:
+2. Include pack metadata, languages, at least two scenes, objects, interaction
+   animation metadata, variant image paths, visual prompts, and audio paths.
+3. Define scene `regions` as background-relative percentage rectangles.
+4. Add spawn candidates with `regionTags`, anchor positions, jitter, scale
+   ranges, and `visibleObjectCount`.
+5. Add two or more object variants with static image assets. Keep variant image
+   paths under `public/assets/`.
+6. Make every scene spawn candidate reference an object defined in the same pack.
+7. Keep object language content and placement rules in the pack, not in runtime
+   engine code.
+8. Generate or refresh static level audio:
    `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts --generate --pack <pack-id>`.
-6. Format content JSON after generation:
+9. Format content JSON after generation:
    `bunx biome format --write content/packs/<pack-id>.json`.
-7. Audit static level audio:
+10. Audit static level audio:
    `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts --audit --pack <pack-id>`.
-8. Register new packs in `src/content/catalog.ts`.
-9. Run `bun run validate:content`.
-10. Run `bun run test`.
-11. Run `bun run test:e2e`.
-12. Run `bun run check:secrets`.
-13. Run `bun run build`.
+11. Register new packs in `src/content/catalog.ts`.
+12. Run `bun run validate:content`.
+13. Run `bun run test`.
+14. Run `bun run test:e2e`.
+15. Run `bun run check:secrets`.
+16. Run `bun run build`.
 
 ## Static Asset Guidance
 
 - Object images should be clear at small sizes, friendly, toddler-safe, and free
   of text, logos, ads, watermarks, scary imagery, and unsafe behavior.
+- Object variants should be visibly distinct through size, color, or gentle
+  style differences while preserving the same object identity.
 - Backgrounds should be calm, uncluttered, and should not hide placed objects.
+- Region maps must match the actual background. Do not place fish outside water,
+  sun outside sky, vehicles outside their travel area, or cards outside the
+  intended card field.
 - Audio should match the content pack text for the target language and level.
 - Audio file names should use the canonical shape
   `/assets/generated/<pack-id>/audio/<object-id>-<language>-<level>.mp3`.

@@ -22,6 +22,11 @@ import {
 	type PuzzleRound,
 } from './game/puzzle-mode'
 import {
+	buildSceneLayout,
+	createSceneLayoutSeed,
+	type VisibleScenePlacement,
+} from './game/scene-layout'
+import {
 	buildLearningSequence,
 	getDefaultScene,
 	getFindPrompt,
@@ -68,10 +73,6 @@ const wordDetailOptions: ReadonlyArray<{
 	{ level: 'L5', label: 'Little scene', hint: 'Short narrated line' },
 ]
 
-type PlacementWithObject = Scene['objects'][number] & {
-	object: ObjectConcept
-}
-
 type ToastKind = 'hello' | 'word' | 'find' | 'success' | 'puzzle'
 
 type ToastState = {
@@ -83,29 +84,10 @@ function useCatalog(): { catalog: RuntimeCatalog; error: null } {
 	return { catalog, error: null }
 }
 
-function getPlacements(
-	catalog: RuntimeCatalog,
-	packId: string,
-	sceneId?: string,
-): PlacementWithObject[] {
-	const pack = getPack(catalog, packId)
-	const scene =
-		pack.scenes.find((candidate) => candidate.id === sceneId) ??
-		getDefaultScene(catalog, packId)
-	const objectMap = new Map(pack.objects.map((object) => [object.id, object]))
-
-	return scene.objects
-		.map((placement) => {
-			const object = objectMap.get(placement.objectId)
-			return object ? { ...placement, object } : null
-		})
-		.filter((placement): placement is PlacementWithObject => Boolean(placement))
-}
-
-function preloadSceneAssets(scene: Scene, placements: PlacementWithObject[]) {
+function preloadSceneAssets(scene: Scene, placements: VisibleScenePlacement[]) {
 	const paths = [
 		scene.background.asset?.path,
-		...placements.map((placement) => placement.object.image.path),
+		...placements.map((placement) => placement.variant.image.path),
 	].filter((path): path is string => Boolean(path))
 
 	for (const path of paths) {
@@ -234,7 +216,9 @@ function SequenceText({ sequence }: { sequence: LearningPresentation[] }) {
 	)
 }
 
-function getPlacementStyle(placement: PlacementWithObject): JSX.CSSProperties {
+function getPlacementStyle(
+	placement: VisibleScenePlacement,
+): JSX.CSSProperties {
 	return {
 		left: `${placement.x}%`,
 		top: `${placement.y}%`,
@@ -249,7 +233,7 @@ function GardenObjectButton({
 	onTap,
 	settings,
 }: {
-	placement: PlacementWithObject
+	placement: VisibleScenePlacement
 	active: boolean
 	onTap: (object: ObjectConcept) => void
 	settings: WordGardenSettings
@@ -265,10 +249,11 @@ function GardenObjectButton({
 			style={style}
 			type="button"
 			data-testid={`object-${placement.object.id}`}
+			data-variant-id={placement.variant.id}
 			aria-label={firstPresentation?.text ?? placement.object.id}
 			onClick={() => onTap(placement.object)}
 		>
-			<img src={placement.object.image.path} alt="" draggable={false} />
+			<img src={placement.variant.image.path} alt="" draggable={false} />
 		</button>
 	)
 }
@@ -278,7 +263,7 @@ function PuzzleGapButton({
 	selectedObjectId,
 	onPuzzleDrop,
 }: {
-	placement: PlacementWithObject
+	placement: VisibleScenePlacement
 	selectedObjectId: string | null
 	onPuzzleDrop: (objectId: string, targetObjectId: string) => void
 }) {
@@ -291,7 +276,9 @@ function PuzzleGapButton({
 			style={style}
 			type="button"
 			data-testid={`puzzle-gap-${placement.object.id}`}
-			aria-label={`Puzzle spot for ${placement.object.image.alt ?? placement.object.id}`}
+			aria-label={`Puzzle spot for ${
+				placement.variant.image.alt ?? placement.object.id
+			}`}
 			onClick={() => {
 				if (selectedObjectId) {
 					onPuzzleDrop(selectedObjectId, placement.object.id)
@@ -312,7 +299,7 @@ function PuzzleGapButton({
 				}
 			}}
 		>
-			<img src={placement.object.image.path} alt="" draggable={false} />
+			<img src={placement.variant.image.path} alt="" draggable={false} />
 		</button>
 	)
 }
@@ -323,7 +310,7 @@ function PuzzleTray({
 	settings,
 	onSelect,
 }: {
-	placements: PlacementWithObject[]
+	placements: VisibleScenePlacement[]
 	selectedObjectId: string | null
 	settings: WordGardenSettings
 	onSelect: (objectId: string) => void
@@ -361,7 +348,7 @@ function PuzzleTray({
 							transfer.setData('text/plain', placement.object.id)
 						}}
 					>
-						<img src={placement.object.image.path} alt="" draggable={false} />
+						<img src={placement.variant.image.path} alt="" draggable={false} />
 					</button>
 				)
 			})}
@@ -590,6 +577,7 @@ export function App() {
 		),
 	)
 	const [sceneIndex, setSceneIndex] = useState(0)
+	const [layoutSeed, setLayoutSeed] = useState(() => createSceneLayoutSeed())
 	const [settingsOpen, setSettingsOpen] = useState(false)
 	const [activeObjectId, setActiveObjectId] = useState<string | null>(null)
 	const [findRound, setFindRound] = useState<FindRound | null>(null)
@@ -624,8 +612,8 @@ export function App() {
 		(catalog ? getDefaultScene(catalog, selectedPackId, activeSubPackId) : null)
 	const placements = useMemo(
 		() =>
-			catalog && scene ? getPlacements(catalog, selectedPackId, scene.id) : [],
-		[catalog, selectedPackId, scene],
+			scene && pack ? buildSceneLayout(scene, pack.objects, layoutSeed) : [],
+		[layoutSeed, pack, scene],
 	)
 	const objects = useMemo(
 		() => placements.map((placement) => placement.object),
@@ -657,7 +645,7 @@ export function App() {
 
 		return getPuzzleTrayObjectIds(puzzleRound)
 			.map((objectId) => placementByObjectId.get(objectId))
-			.filter((placement): placement is PlacementWithObject =>
+			.filter((placement): placement is VisibleScenePlacement =>
 				Boolean(placement),
 			)
 	}, [placementByObjectId, puzzleRound])
@@ -681,7 +669,12 @@ export function App() {
 	}, [])
 
 	useEffect(() => {
-		if (settings.mode === 'find' && objects.length > 0 && !findRound) {
+		if (
+			settings.mode === 'find' &&
+			objects.length > 0 &&
+			(!findRound ||
+				!objects.some((object) => object.id === findRound.targetObjectId))
+		) {
 			setFindRound(createFindRound(objects))
 		}
 	}, [findRound, objects, settings.mode])
@@ -689,6 +682,7 @@ export function App() {
 	useEffect(() => {
 		clearPuzzleResetTimeout()
 		setSceneIndex(0)
+		setLayoutSeed(createSceneLayoutSeed())
 		setActiveObjectId(null)
 		setFindRound(null)
 		setPuzzleRound(null)
@@ -772,6 +766,7 @@ export function App() {
 
 		clearPuzzleResetTimeout()
 		shouldSpeakPromptRef.current = settings.mode === 'find'
+		setLayoutSeed(createSceneLayoutSeed())
 		setSceneIndex(boundedIndex)
 	}
 
