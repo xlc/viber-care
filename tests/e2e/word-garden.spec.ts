@@ -1,46 +1,88 @@
 import { expect, type Page, test } from '@playwright/test'
+import {
+	DEFAULT_SETTINGS,
+	SETTINGS_STORAGE_KEY,
+} from '../../src/state/settings'
 
 type SpeechCaptureWindow = Window & {
 	__spokenUtterances?: string[]
 }
 
-async function installSpeechCapture(page: Page) {
-	await page.addInitScript(() => {
-		const spokenUtterances: string[] = []
-		Object.defineProperty(window, '__spokenUtterances', {
-			configurable: true,
-			value: spokenUtterances,
-		})
+test.beforeEach(async ({ page }) => {
+	await page.addInitScript(
+		({
+			settingsKey,
+			mutedSettings,
+		}: {
+			settingsKey: string
+			mutedSettings: typeof DEFAULT_SETTINGS
+		}) => {
+			window.localStorage.setItem(settingsKey, JSON.stringify(mutedSettings))
 
-		class MockSpeechSynthesisUtterance extends EventTarget {
-			lang = ''
-			pitch = 1
-			rate = 1
-			text: string
-			volume = 1
+			const spokenUtterances: string[] = []
+			Object.defineProperty(window, '__spokenUtterances', {
+				configurable: true,
+				value: spokenUtterances,
+			})
 
-			constructor(text?: string) {
-				super()
-				this.text = text ?? ''
+			class MockSpeechSynthesisUtterance extends EventTarget {
+				lang = ''
+				pitch = 1
+				rate = 1
+				text: string
+				volume = 1
+
+				constructor(text?: string) {
+					super()
+					this.text = text ?? ''
+				}
 			}
-		}
 
-		Object.defineProperty(window, 'SpeechSynthesisUtterance', {
-			configurable: true,
-			value: MockSpeechSynthesisUtterance,
-		})
-		Object.defineProperty(window, 'speechSynthesis', {
-			configurable: true,
-			value: {
-				cancel() {},
-				speak(utterance: SpeechSynthesisUtterance) {
-					spokenUtterances.push(utterance.text)
-					queueMicrotask(() => utterance.dispatchEvent(new Event('end')))
+			Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+				configurable: true,
+				value: MockSpeechSynthesisUtterance,
+			})
+			Object.defineProperty(window, 'speechSynthesis', {
+				configurable: true,
+				value: {
+					cancel() {},
+					speak(utterance: SpeechSynthesisUtterance) {
+						spokenUtterances.push(utterance.text)
+						queueMicrotask(() => utterance.dispatchEvent(new Event('end')))
+					},
 				},
-			},
-		})
-	})
-}
+			})
+		},
+		{
+			settingsKey: SETTINGS_STORAGE_KEY,
+			mutedSettings: { ...DEFAULT_SETTINGS, muted: true },
+		},
+	)
+})
+
+test.afterEach(async ({ page }) => {
+	if (page.isClosed()) {
+		return
+	}
+	if (!page.url().startsWith('http://127.0.0.1:5173')) {
+		return
+	}
+
+	const audioState = await page.evaluate((settingsKey) => {
+		const captureWindow = window as SpeechCaptureWindow
+		const storedSettings = JSON.parse(
+			window.localStorage.getItem(settingsKey) ?? '{}',
+		) as { muted?: unknown }
+
+		return {
+			muted: storedSettings.muted,
+			spokenUtterances: captureWindow.__spokenUtterances ?? [],
+		}
+	}, SETTINGS_STORAGE_KEY)
+
+	expect(audioState.muted).toBe(true)
+	expect(audioState.spokenUtterances).toEqual([])
+})
 
 async function getSpokenUtterances(page: Page) {
 	return page.evaluate(() => {
@@ -95,12 +137,10 @@ test('explore tap displays the word', async ({ page }) => {
 	)
 })
 
-test('mute toggles', async ({ page }) => {
+test('e2e starts muted', async ({ page }) => {
 	await page.goto('/')
 	const muteButton = page.getByTestId('mute-button')
 
-	await expect(muteButton).toHaveAttribute('aria-pressed', 'false')
-	await muteButton.click()
 	await expect(muteButton).toHaveAttribute('aria-pressed', 'true')
 })
 
@@ -134,7 +174,6 @@ test('find mode handles immediate taps after alphabet set changes', async ({
 	page,
 }) => {
 	await page.goto('/')
-	await page.getByTestId('mute-button').click()
 	await page.getByTestId('settings-button').click()
 	await page.getByTestId('pack-english-alphabet').click()
 	await page.getByTestId('set-alphabet-f-j').click()
@@ -146,17 +185,13 @@ test('find mode handles immediate taps after alphabet set changes', async ({
 	await expect(page.getByTestId('prompt')).toContainText('You found')
 })
 
-test('find mode announces the task when selected from settings', async ({
-	page,
-}) => {
-	await installSpeechCapture(page)
+test('find mode stays silent while muted from settings', async ({ page }) => {
 	await page.goto('/')
 	await page.getByTestId('settings-button').click()
 	await page.getByRole('dialog').getByTestId('mode-find').click()
 
-	await expect
-		.poll(() => getSpokenUtterances(page))
-		.toContainEqual(expect.stringMatching(/^Find /))
+	await expect.poll(() => getSpokenUtterances(page)).toEqual([])
+	await expect(page.getByTestId('prompt')).toContainText('Find')
 })
 
 test('settings panel can change language order', async ({ page }) => {
@@ -264,7 +299,6 @@ test('settings panel can switch to numbers and English alphabet packs', async ({
 	page,
 }) => {
 	await page.goto('/')
-	await page.getByTestId('mute-button').click()
 	await page.getByTestId('settings-button').click()
 	await page.getByTestId('pack-numbers').click()
 	await page.getByLabel('Close settings').click()
@@ -340,7 +374,6 @@ test('mobile alphabet scenes keep toddler tap targets readable', async ({
 	test.skip(testInfo.project.name !== 'mobile-chromium', 'mobile only')
 
 	await page.goto('/')
-	await page.getByTestId('mute-button').click()
 	await page.getByTestId('settings-button').click()
 	await page.getByTestId('pack-english-alphabet').click()
 	await page.getByLabel('Close settings').click()
