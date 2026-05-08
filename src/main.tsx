@@ -7,8 +7,15 @@ if (root) {
 	render(<App />, root)
 }
 
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
+function registerServiceWorker() {
 	window.addEventListener('load', () => {
-		void navigator.serviceWorker.register('/sw.js')
+		void navigator.serviceWorker
+			.register('/sw.js', { updateViaCache: 'none' })
+			.then((registration) => registration.update())
+			.catch(() => undefined)
 	})
+}
+
+if ('serviceWorker' in navigator && import.meta.env.PROD) {
+	registerServiceWorker()
 }
