@@ -15,6 +15,7 @@ bun run test
 bun run test:e2e
 bun run check:secrets
 bun run build
+bun run deploy
 bun run dev
 ```
 
@@ -115,3 +116,7 @@ bun run build
 ```
 
 If `dist` did not exist before `check:secrets`, run `bun run build` first and then rerun `bun run check:secrets`.
+
+For production release, run `bun run deploy` after completion checks pass. The
+deploy script builds the static app and uploads `dist` to the configured
+Cloudflare Pages project.

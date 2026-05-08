@@ -11,6 +11,7 @@
 		"test": "vitest run",
 		"test:e2e": "playwright test",
 		"build": "tsc --noEmit && vite build",
+		"deploy": "bun run deploy:pages",
 		"deploy:pages": "bun run build && bunx wrangler@4.88.0 pages deploy dist --project-name=word-garden",
 		"preview": "vite preview",
 		"check": "tsc --noEmit && biome check .",
