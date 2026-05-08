@@ -51,6 +51,7 @@ input {
 
 button {
 	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
 }
 
 button:focus-visible,
@@ -132,7 +133,11 @@ input:focus-visible {
 }
 
 .pack-list,
-.set-grid,
+.set-grid {
+	display: grid;
+	gap: 14px;
+}
+
 .detail-list {
 	display: grid;
 	gap: 10px;
@@ -182,16 +187,25 @@ input:focus-visible {
 .detail-list button {
 	--card-muted: var(--muted);
 	--card-meta: rgba(23, 50, 58, 0.74);
-	min-height: 76px;
 	display: grid;
 	gap: 3px;
-	padding: 12px;
 	border: 1px solid rgba(17, 138, 178, 0.16);
 	border-radius: 8px;
 	background: #f3fbfd;
 	color: var(--ink);
 	text-align: left;
 	cursor: pointer;
+}
+
+.pack-card,
+.set-card {
+	min-height: 88px;
+	padding: 14px;
+}
+
+.detail-list button {
+	min-height: 76px;
+	padding: 12px;
 }
 
 .pack-card-title,
@@ -221,8 +235,6 @@ input:focus-visible {
 
 .mode-segment button.is-selected,
 .preset-list button.is-selected,
-.pack-card.is-selected,
-.set-card.is-selected,
 .detail-list button.is-selected {
 	--card-muted: rgba(255, 255, 255, 0.82);
 	--card-meta: rgba(255, 255, 255, 0.82);
@@ -344,6 +356,7 @@ input:focus-visible {
 	background-size: cover;
 	box-shadow: var(--shadow);
 	isolation: isolate;
+	touch-action: manipulation;
 }
 
 .garden-object {
@@ -360,9 +373,7 @@ input:focus-visible {
 	cursor: pointer;
 	transform: translate(-50%, -50%) scale(var(--object-scale));
 	transform-origin: center;
-	transition:
-		transform 420ms ease,
-		filter 420ms ease;
+	transition: filter 420ms ease;
 }
 
 .garden-object img {
@@ -372,11 +383,6 @@ input:focus-visible {
 	object-fit: contain;
 	pointer-events: none;
 	filter: drop-shadow(0 12px 14px rgba(28, 67, 72, 0.16));
-}
-
-.garden-object:hover,
-.garden-object:focus-visible {
-	transform: translate(-50%, -52%) scale(calc(var(--object-scale) * 1.04));
 }
 
 .garden-object.is-active {
@@ -520,7 +526,7 @@ input:focus-visible {
 		transform: translate(-50%, -50%) scale(var(--object-scale));
 	}
 	50% {
-		transform: translate(-50%, -59%) scale(calc(var(--object-scale) * 1.04));
+		transform: translate(-50%, -59%) scale(var(--object-scale));
 	}
 }
 
@@ -530,7 +536,7 @@ input:focus-visible {
 		transform: translate(-50%, -50%) scale(var(--object-scale));
 	}
 	45% {
-		transform: translate(-50%, -62%) scale(calc(var(--object-scale) * 1.05));
+		transform: translate(-50%, -62%) scale(var(--object-scale));
 	}
 }
 

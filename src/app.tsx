@@ -348,11 +348,7 @@ function ParentSettings({
 								<button
 									key={pack.id}
 									type="button"
-									className={
-										selectedPack.id === pack.id
-											? 'pack-card is-selected'
-											: 'pack-card'
-									}
+									className="pack-card"
 									aria-pressed={selectedPack.id === pack.id}
 									data-testid={`pack-${pack.id}`}
 									onClick={() =>
@@ -391,11 +387,7 @@ function ParentSettings({
 									<button
 										key={subPack.id}
 										type="button"
-										className={
-											selectedSubPack.id === subPack.id
-												? 'set-card is-selected'
-												: 'set-card'
-										}
+										className="set-card"
 										aria-pressed={selectedSubPack.id === subPack.id}
 										data-testid={`set-${subPack.id}`}
 										onClick={() =>
