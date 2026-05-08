@@ -394,32 +394,56 @@
 						"L0": {
 							"text": "A",
 							"audioText": "A",
-							"fallbackText": "A"
+							"fallbackText": "A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "A is for apple.",
 							"audioText": "A is for apple.",
-							"fallbackText": "A"
+							"fallbackText": "A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase A",
 							"audioText": "uppercase A",
-							"fallbackText": "A"
+							"fallbackText": "A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "A starts the word apple.",
 							"audioText": "A starts the word apple.",
-							"fallbackText": "A"
+							"fallbackText": "A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is A.",
 							"audioText": "What letter is this? It is A.",
-							"fallbackText": "A"
+							"fallbackText": "A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "A sits on the card and says apple.",
 							"audioText": "A sits on the card and says apple.",
-							"fallbackText": "A"
+							"fallbackText": "A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -433,32 +457,56 @@
 						"L0": {
 							"text": "字母 A",
 							"audioText": "字母 A",
-							"fallbackText": "字母 A"
+							"fallbackText": "字母 A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "A 代表苹果。",
 							"audioText": "A 代表苹果。",
-							"fallbackText": "字母 A"
+							"fallbackText": "字母 A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 A",
 							"audioText": "大写字母 A",
-							"fallbackText": "字母 A"
+							"fallbackText": "字母 A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "A 是苹果的开头。",
 							"audioText": "A 是苹果的开头。",
-							"fallbackText": "字母 A"
+							"fallbackText": "字母 A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 A。",
 							"audioText": "这是什么字母？这是 A。",
-							"fallbackText": "字母 A"
+							"fallbackText": "字母 A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "A 在卡片上，轻轻说苹果。",
 							"audioText": "A 在卡片上，轻轻说苹果。",
-							"fallbackText": "字母 A"
+							"fallbackText": "字母 A",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -494,32 +542,56 @@
 						"L0": {
 							"text": "B",
 							"audioText": "B",
-							"fallbackText": "B"
+							"fallbackText": "B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "B is for ball.",
 							"audioText": "B is for ball.",
-							"fallbackText": "B"
+							"fallbackText": "B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase B",
 							"audioText": "uppercase B",
-							"fallbackText": "B"
+							"fallbackText": "B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "B starts the word ball.",
 							"audioText": "B starts the word ball.",
-							"fallbackText": "B"
+							"fallbackText": "B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is B.",
 							"audioText": "What letter is this? It is B.",
-							"fallbackText": "B"
+							"fallbackText": "B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "B sits on the card and says ball.",
 							"audioText": "B sits on the card and says ball.",
-							"fallbackText": "B"
+							"fallbackText": "B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -533,32 +605,56 @@
 						"L0": {
 							"text": "字母 B",
 							"audioText": "字母 B",
-							"fallbackText": "字母 B"
+							"fallbackText": "字母 B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "B 代表球。",
 							"audioText": "B 代表球。",
-							"fallbackText": "字母 B"
+							"fallbackText": "字母 B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 B",
 							"audioText": "大写字母 B",
-							"fallbackText": "字母 B"
+							"fallbackText": "字母 B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "B 是球的开头。",
 							"audioText": "B 是球的开头。",
-							"fallbackText": "字母 B"
+							"fallbackText": "字母 B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 B。",
 							"audioText": "这是什么字母？这是 B。",
-							"fallbackText": "字母 B"
+							"fallbackText": "字母 B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "B 在卡片上，轻轻说球。",
 							"audioText": "B 在卡片上，轻轻说球。",
-							"fallbackText": "字母 B"
+							"fallbackText": "字母 B",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -594,32 +690,56 @@
 						"L0": {
 							"text": "C",
 							"audioText": "C",
-							"fallbackText": "C"
+							"fallbackText": "C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "C is for cat.",
 							"audioText": "C is for cat.",
-							"fallbackText": "C"
+							"fallbackText": "C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase C",
 							"audioText": "uppercase C",
-							"fallbackText": "C"
+							"fallbackText": "C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "C starts the word cat.",
 							"audioText": "C starts the word cat.",
-							"fallbackText": "C"
+							"fallbackText": "C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is C.",
 							"audioText": "What letter is this? It is C.",
-							"fallbackText": "C"
+							"fallbackText": "C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "C sits on the card and says cat.",
 							"audioText": "C sits on the card and says cat.",
-							"fallbackText": "C"
+							"fallbackText": "C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -633,32 +753,56 @@
 						"L0": {
 							"text": "字母 C",
 							"audioText": "字母 C",
-							"fallbackText": "字母 C"
+							"fallbackText": "字母 C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "C 代表小猫。",
 							"audioText": "C 代表小猫。",
-							"fallbackText": "字母 C"
+							"fallbackText": "字母 C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 C",
 							"audioText": "大写字母 C",
-							"fallbackText": "字母 C"
+							"fallbackText": "字母 C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "C 是小猫的开头。",
 							"audioText": "C 是小猫的开头。",
-							"fallbackText": "字母 C"
+							"fallbackText": "字母 C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 C。",
 							"audioText": "这是什么字母？这是 C。",
-							"fallbackText": "字母 C"
+							"fallbackText": "字母 C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "C 在卡片上，轻轻说小猫。",
 							"audioText": "C 在卡片上，轻轻说小猫。",
-							"fallbackText": "字母 C"
+							"fallbackText": "字母 C",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -694,32 +838,56 @@
 						"L0": {
 							"text": "D",
 							"audioText": "D",
-							"fallbackText": "D"
+							"fallbackText": "D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "D is for duck.",
 							"audioText": "D is for duck.",
-							"fallbackText": "D"
+							"fallbackText": "D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase D",
 							"audioText": "uppercase D",
-							"fallbackText": "D"
+							"fallbackText": "D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "D starts the word duck.",
 							"audioText": "D starts the word duck.",
-							"fallbackText": "D"
+							"fallbackText": "D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is D.",
 							"audioText": "What letter is this? It is D.",
-							"fallbackText": "D"
+							"fallbackText": "D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "D sits on the card and says duck.",
 							"audioText": "D sits on the card and says duck.",
-							"fallbackText": "D"
+							"fallbackText": "D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -733,32 +901,56 @@
 						"L0": {
 							"text": "字母 D",
 							"audioText": "字母 D",
-							"fallbackText": "字母 D"
+							"fallbackText": "字母 D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "D 代表鸭子。",
 							"audioText": "D 代表鸭子。",
-							"fallbackText": "字母 D"
+							"fallbackText": "字母 D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 D",
 							"audioText": "大写字母 D",
-							"fallbackText": "字母 D"
+							"fallbackText": "字母 D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "D 是鸭子的开头。",
 							"audioText": "D 是鸭子的开头。",
-							"fallbackText": "字母 D"
+							"fallbackText": "字母 D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 D。",
 							"audioText": "这是什么字母？这是 D。",
-							"fallbackText": "字母 D"
+							"fallbackText": "字母 D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "D 在卡片上，轻轻说鸭子。",
 							"audioText": "D 在卡片上，轻轻说鸭子。",
-							"fallbackText": "字母 D"
+							"fallbackText": "字母 D",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -794,32 +986,56 @@
 						"L0": {
 							"text": "E",
 							"audioText": "E",
-							"fallbackText": "E"
+							"fallbackText": "E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "E is for egg.",
 							"audioText": "E is for egg.",
-							"fallbackText": "E"
+							"fallbackText": "E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase E",
 							"audioText": "uppercase E",
-							"fallbackText": "E"
+							"fallbackText": "E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "E starts the word egg.",
 							"audioText": "E starts the word egg.",
-							"fallbackText": "E"
+							"fallbackText": "E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is E.",
 							"audioText": "What letter is this? It is E.",
-							"fallbackText": "E"
+							"fallbackText": "E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "E sits on the card and says egg.",
 							"audioText": "E sits on the card and says egg.",
-							"fallbackText": "E"
+							"fallbackText": "E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -833,32 +1049,56 @@
 						"L0": {
 							"text": "字母 E",
 							"audioText": "字母 E",
-							"fallbackText": "字母 E"
+							"fallbackText": "字母 E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "E 代表鸡蛋。",
 							"audioText": "E 代表鸡蛋。",
-							"fallbackText": "字母 E"
+							"fallbackText": "字母 E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 E",
 							"audioText": "大写字母 E",
-							"fallbackText": "字母 E"
+							"fallbackText": "字母 E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "E 是鸡蛋的开头。",
 							"audioText": "E 是鸡蛋的开头。",
-							"fallbackText": "字母 E"
+							"fallbackText": "字母 E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 E。",
 							"audioText": "这是什么字母？这是 E。",
-							"fallbackText": "字母 E"
+							"fallbackText": "字母 E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "E 在卡片上，轻轻说鸡蛋。",
 							"audioText": "E 在卡片上，轻轻说鸡蛋。",
-							"fallbackText": "字母 E"
+							"fallbackText": "字母 E",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -894,32 +1134,56 @@
 						"L0": {
 							"text": "F",
 							"audioText": "F",
-							"fallbackText": "F"
+							"fallbackText": "F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "F is for fish.",
 							"audioText": "F is for fish.",
-							"fallbackText": "F"
+							"fallbackText": "F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase F",
 							"audioText": "uppercase F",
-							"fallbackText": "F"
+							"fallbackText": "F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "F starts the word fish.",
 							"audioText": "F starts the word fish.",
-							"fallbackText": "F"
+							"fallbackText": "F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is F.",
 							"audioText": "What letter is this? It is F.",
-							"fallbackText": "F"
+							"fallbackText": "F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "F sits on the card and says fish.",
 							"audioText": "F sits on the card and says fish.",
-							"fallbackText": "F"
+							"fallbackText": "F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -933,32 +1197,56 @@
 						"L0": {
 							"text": "字母 F",
 							"audioText": "字母 F",
-							"fallbackText": "字母 F"
+							"fallbackText": "字母 F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "F 代表鱼。",
 							"audioText": "F 代表鱼。",
-							"fallbackText": "字母 F"
+							"fallbackText": "字母 F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 F",
 							"audioText": "大写字母 F",
-							"fallbackText": "字母 F"
+							"fallbackText": "字母 F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "F 是鱼的开头。",
 							"audioText": "F 是鱼的开头。",
-							"fallbackText": "字母 F"
+							"fallbackText": "字母 F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 F。",
 							"audioText": "这是什么字母？这是 F。",
-							"fallbackText": "字母 F"
+							"fallbackText": "字母 F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "F 在卡片上，轻轻说鱼。",
 							"audioText": "F 在卡片上，轻轻说鱼。",
-							"fallbackText": "字母 F"
+							"fallbackText": "字母 F",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-f-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -994,32 +1282,56 @@
 						"L0": {
 							"text": "G",
 							"audioText": "G",
-							"fallbackText": "G"
+							"fallbackText": "G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "G is for garden.",
 							"audioText": "G is for garden.",
-							"fallbackText": "G"
+							"fallbackText": "G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase G",
 							"audioText": "uppercase G",
-							"fallbackText": "G"
+							"fallbackText": "G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "G starts the word garden.",
 							"audioText": "G starts the word garden.",
-							"fallbackText": "G"
+							"fallbackText": "G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is G.",
 							"audioText": "What letter is this? It is G.",
-							"fallbackText": "G"
+							"fallbackText": "G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "G sits on the card and says garden.",
 							"audioText": "G sits on the card and says garden.",
-							"fallbackText": "G"
+							"fallbackText": "G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1033,32 +1345,56 @@
 						"L0": {
 							"text": "字母 G",
 							"audioText": "字母 G",
-							"fallbackText": "字母 G"
+							"fallbackText": "字母 G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "G 代表花园。",
 							"audioText": "G 代表花园。",
-							"fallbackText": "字母 G"
+							"fallbackText": "字母 G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 G",
 							"audioText": "大写字母 G",
-							"fallbackText": "字母 G"
+							"fallbackText": "字母 G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "G 是花园的开头。",
 							"audioText": "G 是花园的开头。",
-							"fallbackText": "字母 G"
+							"fallbackText": "字母 G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 G。",
 							"audioText": "这是什么字母？这是 G。",
-							"fallbackText": "字母 G"
+							"fallbackText": "字母 G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "G 在卡片上，轻轻说花园。",
 							"audioText": "G 在卡片上，轻轻说花园。",
-							"fallbackText": "字母 G"
+							"fallbackText": "字母 G",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1094,32 +1430,56 @@
 						"L0": {
 							"text": "H",
 							"audioText": "H",
-							"fallbackText": "H"
+							"fallbackText": "H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "H is for hat.",
 							"audioText": "H is for hat.",
-							"fallbackText": "H"
+							"fallbackText": "H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase H",
 							"audioText": "uppercase H",
-							"fallbackText": "H"
+							"fallbackText": "H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "H starts the word hat.",
 							"audioText": "H starts the word hat.",
-							"fallbackText": "H"
+							"fallbackText": "H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is H.",
 							"audioText": "What letter is this? It is H.",
-							"fallbackText": "H"
+							"fallbackText": "H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "H sits on the card and says hat.",
 							"audioText": "H sits on the card and says hat.",
-							"fallbackText": "H"
+							"fallbackText": "H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1133,32 +1493,56 @@
 						"L0": {
 							"text": "字母 H",
 							"audioText": "字母 H",
-							"fallbackText": "字母 H"
+							"fallbackText": "字母 H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "H 代表帽子。",
 							"audioText": "H 代表帽子。",
-							"fallbackText": "字母 H"
+							"fallbackText": "字母 H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 H",
 							"audioText": "大写字母 H",
-							"fallbackText": "字母 H"
+							"fallbackText": "字母 H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "H 是帽子的开头。",
 							"audioText": "H 是帽子的开头。",
-							"fallbackText": "字母 H"
+							"fallbackText": "字母 H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 H。",
 							"audioText": "这是什么字母？这是 H。",
-							"fallbackText": "字母 H"
+							"fallbackText": "字母 H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "H 在卡片上，轻轻说帽子。",
 							"audioText": "H 在卡片上，轻轻说帽子。",
-							"fallbackText": "字母 H"
+							"fallbackText": "字母 H",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1194,32 +1578,56 @@
 						"L0": {
 							"text": "I",
 							"audioText": "I",
-							"fallbackText": "I"
+							"fallbackText": "I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "I is for igloo.",
 							"audioText": "I is for igloo.",
-							"fallbackText": "I"
+							"fallbackText": "I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase I",
 							"audioText": "uppercase I",
-							"fallbackText": "I"
+							"fallbackText": "I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "I starts the word igloo.",
 							"audioText": "I starts the word igloo.",
-							"fallbackText": "I"
+							"fallbackText": "I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is I.",
 							"audioText": "What letter is this? It is I.",
-							"fallbackText": "I"
+							"fallbackText": "I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "I sits on the card and says igloo.",
 							"audioText": "I sits on the card and says igloo.",
-							"fallbackText": "I"
+							"fallbackText": "I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1233,32 +1641,56 @@
 						"L0": {
 							"text": "字母 I",
 							"audioText": "字母 I",
-							"fallbackText": "字母 I"
+							"fallbackText": "字母 I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "I 代表冰屋。",
 							"audioText": "I 代表冰屋。",
-							"fallbackText": "字母 I"
+							"fallbackText": "字母 I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 I",
 							"audioText": "大写字母 I",
-							"fallbackText": "字母 I"
+							"fallbackText": "字母 I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "I 是冰屋的开头。",
 							"audioText": "I 是冰屋的开头。",
-							"fallbackText": "字母 I"
+							"fallbackText": "字母 I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 I。",
 							"audioText": "这是什么字母？这是 I。",
-							"fallbackText": "字母 I"
+							"fallbackText": "字母 I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "I 在卡片上，轻轻说冰屋。",
 							"audioText": "I 在卡片上，轻轻说冰屋。",
-							"fallbackText": "字母 I"
+							"fallbackText": "字母 I",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1294,32 +1726,56 @@
 						"L0": {
 							"text": "J",
 							"audioText": "J",
-							"fallbackText": "J"
+							"fallbackText": "J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "J is for jam.",
 							"audioText": "J is for jam.",
-							"fallbackText": "J"
+							"fallbackText": "J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase J",
 							"audioText": "uppercase J",
-							"fallbackText": "J"
+							"fallbackText": "J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "J starts the word jam.",
 							"audioText": "J starts the word jam.",
-							"fallbackText": "J"
+							"fallbackText": "J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is J.",
 							"audioText": "What letter is this? It is J.",
-							"fallbackText": "J"
+							"fallbackText": "J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "J sits on the card and says jam.",
 							"audioText": "J sits on the card and says jam.",
-							"fallbackText": "J"
+							"fallbackText": "J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1333,32 +1789,56 @@
 						"L0": {
 							"text": "字母 J",
 							"audioText": "字母 J",
-							"fallbackText": "字母 J"
+							"fallbackText": "字母 J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "J 代表果酱。",
 							"audioText": "J 代表果酱。",
-							"fallbackText": "字母 J"
+							"fallbackText": "字母 J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 J",
 							"audioText": "大写字母 J",
-							"fallbackText": "字母 J"
+							"fallbackText": "字母 J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "J 是果酱的开头。",
 							"audioText": "J 是果酱的开头。",
-							"fallbackText": "字母 J"
+							"fallbackText": "字母 J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 J。",
 							"audioText": "这是什么字母？这是 J。",
-							"fallbackText": "字母 J"
+							"fallbackText": "字母 J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "J 在卡片上，轻轻说果酱。",
 							"audioText": "J 在卡片上，轻轻说果酱。",
-							"fallbackText": "字母 J"
+							"fallbackText": "字母 J",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1394,32 +1874,56 @@
 						"L0": {
 							"text": "K",
 							"audioText": "K",
-							"fallbackText": "K"
+							"fallbackText": "K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "K is for kite.",
 							"audioText": "K is for kite.",
-							"fallbackText": "K"
+							"fallbackText": "K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase K",
 							"audioText": "uppercase K",
-							"fallbackText": "K"
+							"fallbackText": "K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "K starts the word kite.",
 							"audioText": "K starts the word kite.",
-							"fallbackText": "K"
+							"fallbackText": "K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is K.",
 							"audioText": "What letter is this? It is K.",
-							"fallbackText": "K"
+							"fallbackText": "K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "K sits on the card and says kite.",
 							"audioText": "K sits on the card and says kite.",
-							"fallbackText": "K"
+							"fallbackText": "K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1433,32 +1937,56 @@
 						"L0": {
 							"text": "字母 K",
 							"audioText": "字母 K",
-							"fallbackText": "字母 K"
+							"fallbackText": "字母 K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "K 代表风筝。",
 							"audioText": "K 代表风筝。",
-							"fallbackText": "字母 K"
+							"fallbackText": "字母 K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 K",
 							"audioText": "大写字母 K",
-							"fallbackText": "字母 K"
+							"fallbackText": "字母 K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "K 是风筝的开头。",
 							"audioText": "K 是风筝的开头。",
-							"fallbackText": "字母 K"
+							"fallbackText": "字母 K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 K。",
 							"audioText": "这是什么字母？这是 K。",
-							"fallbackText": "字母 K"
+							"fallbackText": "字母 K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "K 在卡片上，轻轻说风筝。",
 							"audioText": "K 在卡片上，轻轻说风筝。",
-							"fallbackText": "字母 K"
+							"fallbackText": "字母 K",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-k-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1494,32 +2022,56 @@
 						"L0": {
 							"text": "L",
 							"audioText": "L",
-							"fallbackText": "L"
+							"fallbackText": "L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "L is for leaf.",
 							"audioText": "L is for leaf.",
-							"fallbackText": "L"
+							"fallbackText": "L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase L",
 							"audioText": "uppercase L",
-							"fallbackText": "L"
+							"fallbackText": "L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "L starts the word leaf.",
 							"audioText": "L starts the word leaf.",
-							"fallbackText": "L"
+							"fallbackText": "L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is L.",
 							"audioText": "What letter is this? It is L.",
-							"fallbackText": "L"
+							"fallbackText": "L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "L sits on the card and says leaf.",
 							"audioText": "L sits on the card and says leaf.",
-							"fallbackText": "L"
+							"fallbackText": "L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1533,32 +2085,56 @@
 						"L0": {
 							"text": "字母 L",
 							"audioText": "字母 L",
-							"fallbackText": "字母 L"
+							"fallbackText": "字母 L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "L 代表叶子。",
 							"audioText": "L 代表叶子。",
-							"fallbackText": "字母 L"
+							"fallbackText": "字母 L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 L",
 							"audioText": "大写字母 L",
-							"fallbackText": "字母 L"
+							"fallbackText": "字母 L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "L 是叶子的开头。",
 							"audioText": "L 是叶子的开头。",
-							"fallbackText": "字母 L"
+							"fallbackText": "字母 L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 L。",
 							"audioText": "这是什么字母？这是 L。",
-							"fallbackText": "字母 L"
+							"fallbackText": "字母 L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "L 在卡片上，轻轻说叶子。",
 							"audioText": "L 在卡片上，轻轻说叶子。",
-							"fallbackText": "字母 L"
+							"fallbackText": "字母 L",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1594,32 +2170,56 @@
 						"L0": {
 							"text": "M",
 							"audioText": "M",
-							"fallbackText": "M"
+							"fallbackText": "M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "M is for moon.",
 							"audioText": "M is for moon.",
-							"fallbackText": "M"
+							"fallbackText": "M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase M",
 							"audioText": "uppercase M",
-							"fallbackText": "M"
+							"fallbackText": "M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "M starts the word moon.",
 							"audioText": "M starts the word moon.",
-							"fallbackText": "M"
+							"fallbackText": "M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is M.",
 							"audioText": "What letter is this? It is M.",
-							"fallbackText": "M"
+							"fallbackText": "M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "M sits on the card and says moon.",
 							"audioText": "M sits on the card and says moon.",
-							"fallbackText": "M"
+							"fallbackText": "M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1633,32 +2233,56 @@
 						"L0": {
 							"text": "字母 M",
 							"audioText": "字母 M",
-							"fallbackText": "字母 M"
+							"fallbackText": "字母 M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "M 代表月亮。",
 							"audioText": "M 代表月亮。",
-							"fallbackText": "字母 M"
+							"fallbackText": "字母 M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 M",
 							"audioText": "大写字母 M",
-							"fallbackText": "字母 M"
+							"fallbackText": "字母 M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "M 是月亮的开头。",
 							"audioText": "M 是月亮的开头。",
-							"fallbackText": "字母 M"
+							"fallbackText": "字母 M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 M。",
 							"audioText": "这是什么字母？这是 M。",
-							"fallbackText": "字母 M"
+							"fallbackText": "字母 M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "M 在卡片上，轻轻说月亮。",
 							"audioText": "M 在卡片上，轻轻说月亮。",
-							"fallbackText": "字母 M"
+							"fallbackText": "字母 M",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-m-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1694,32 +2318,56 @@
 						"L0": {
 							"text": "N",
 							"audioText": "N",
-							"fallbackText": "N"
+							"fallbackText": "N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "N is for nest.",
 							"audioText": "N is for nest.",
-							"fallbackText": "N"
+							"fallbackText": "N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase N",
 							"audioText": "uppercase N",
-							"fallbackText": "N"
+							"fallbackText": "N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "N starts the word nest.",
 							"audioText": "N starts the word nest.",
-							"fallbackText": "N"
+							"fallbackText": "N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is N.",
 							"audioText": "What letter is this? It is N.",
-							"fallbackText": "N"
+							"fallbackText": "N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "N sits on the card and says nest.",
 							"audioText": "N sits on the card and says nest.",
-							"fallbackText": "N"
+							"fallbackText": "N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1733,32 +2381,56 @@
 						"L0": {
 							"text": "字母 N",
 							"audioText": "字母 N",
-							"fallbackText": "字母 N"
+							"fallbackText": "字母 N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "N 代表鸟巢。",
 							"audioText": "N 代表鸟巢。",
-							"fallbackText": "字母 N"
+							"fallbackText": "字母 N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 N",
 							"audioText": "大写字母 N",
-							"fallbackText": "字母 N"
+							"fallbackText": "字母 N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "N 是鸟巢的开头。",
 							"audioText": "N 是鸟巢的开头。",
-							"fallbackText": "字母 N"
+							"fallbackText": "字母 N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 N。",
 							"audioText": "这是什么字母？这是 N。",
-							"fallbackText": "字母 N"
+							"fallbackText": "字母 N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "N 在卡片上，轻轻说鸟巢。",
 							"audioText": "N 在卡片上，轻轻说鸟巢。",
-							"fallbackText": "字母 N"
+							"fallbackText": "字母 N",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1794,32 +2466,56 @@
 						"L0": {
 							"text": "O",
 							"audioText": "O",
-							"fallbackText": "O"
+							"fallbackText": "O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "O is for orange.",
 							"audioText": "O is for orange.",
-							"fallbackText": "O"
+							"fallbackText": "O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase O",
 							"audioText": "uppercase O",
-							"fallbackText": "O"
+							"fallbackText": "O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "O starts the word orange.",
 							"audioText": "O starts the word orange.",
-							"fallbackText": "O"
+							"fallbackText": "O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is O.",
 							"audioText": "What letter is this? It is O.",
-							"fallbackText": "O"
+							"fallbackText": "O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "O sits on the card and says orange.",
 							"audioText": "O sits on the card and says orange.",
-							"fallbackText": "O"
+							"fallbackText": "O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1833,32 +2529,56 @@
 						"L0": {
 							"text": "字母 O",
 							"audioText": "字母 O",
-							"fallbackText": "字母 O"
+							"fallbackText": "字母 O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "O 代表橙子。",
 							"audioText": "O 代表橙子。",
-							"fallbackText": "字母 O"
+							"fallbackText": "字母 O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 O",
 							"audioText": "大写字母 O",
-							"fallbackText": "字母 O"
+							"fallbackText": "字母 O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "O 是橙子的开头。",
 							"audioText": "O 是橙子的开头。",
-							"fallbackText": "字母 O"
+							"fallbackText": "字母 O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 O。",
 							"audioText": "这是什么字母？这是 O。",
-							"fallbackText": "字母 O"
+							"fallbackText": "字母 O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "O 在卡片上，轻轻说橙子。",
 							"audioText": "O 在卡片上，轻轻说橙子。",
-							"fallbackText": "字母 O"
+							"fallbackText": "字母 O",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1894,32 +2614,56 @@
 						"L0": {
 							"text": "P",
 							"audioText": "P",
-							"fallbackText": "P"
+							"fallbackText": "P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "P is for puppy.",
 							"audioText": "P is for puppy.",
-							"fallbackText": "P"
+							"fallbackText": "P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase P",
 							"audioText": "uppercase P",
-							"fallbackText": "P"
+							"fallbackText": "P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "P starts the word puppy.",
 							"audioText": "P starts the word puppy.",
-							"fallbackText": "P"
+							"fallbackText": "P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is P.",
 							"audioText": "What letter is this? It is P.",
-							"fallbackText": "P"
+							"fallbackText": "P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "P sits on the card and says puppy.",
 							"audioText": "P sits on the card and says puppy.",
-							"fallbackText": "P"
+							"fallbackText": "P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1933,32 +2677,56 @@
 						"L0": {
 							"text": "字母 P",
 							"audioText": "字母 P",
-							"fallbackText": "字母 P"
+							"fallbackText": "字母 P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "P 代表小狗。",
 							"audioText": "P 代表小狗。",
-							"fallbackText": "字母 P"
+							"fallbackText": "字母 P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 P",
 							"audioText": "大写字母 P",
-							"fallbackText": "字母 P"
+							"fallbackText": "字母 P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "P 是小狗的开头。",
 							"audioText": "P 是小狗的开头。",
-							"fallbackText": "字母 P"
+							"fallbackText": "字母 P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 P。",
 							"audioText": "这是什么字母？这是 P。",
-							"fallbackText": "字母 P"
+							"fallbackText": "字母 P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "P 在卡片上，轻轻说小狗。",
 							"audioText": "P 在卡片上，轻轻说小狗。",
-							"fallbackText": "字母 P"
+							"fallbackText": "字母 P",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1994,32 +2762,56 @@
 						"L0": {
 							"text": "Q",
 							"audioText": "Q",
-							"fallbackText": "Q"
+							"fallbackText": "Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "Q is for quilt.",
 							"audioText": "Q is for quilt.",
-							"fallbackText": "Q"
+							"fallbackText": "Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase Q",
 							"audioText": "uppercase Q",
-							"fallbackText": "Q"
+							"fallbackText": "Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "Q starts the word quilt.",
 							"audioText": "Q starts the word quilt.",
-							"fallbackText": "Q"
+							"fallbackText": "Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is Q.",
 							"audioText": "What letter is this? It is Q.",
-							"fallbackText": "Q"
+							"fallbackText": "Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "Q sits on the card and says quilt.",
 							"audioText": "Q sits on the card and says quilt.",
-							"fallbackText": "Q"
+							"fallbackText": "Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2033,32 +2825,56 @@
 						"L0": {
 							"text": "字母 Q",
 							"audioText": "字母 Q",
-							"fallbackText": "字母 Q"
+							"fallbackText": "字母 Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "Q 代表被子。",
 							"audioText": "Q 代表被子。",
-							"fallbackText": "字母 Q"
+							"fallbackText": "字母 Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 Q",
 							"audioText": "大写字母 Q",
-							"fallbackText": "字母 Q"
+							"fallbackText": "字母 Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "Q 是被子的开头。",
 							"audioText": "Q 是被子的开头。",
-							"fallbackText": "字母 Q"
+							"fallbackText": "字母 Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 Q。",
 							"audioText": "这是什么字母？这是 Q。",
-							"fallbackText": "字母 Q"
+							"fallbackText": "字母 Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "Q 在卡片上，轻轻说被子。",
 							"audioText": "Q 在卡片上，轻轻说被子。",
-							"fallbackText": "字母 Q"
+							"fallbackText": "字母 Q",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -2094,32 +2910,56 @@
 						"L0": {
 							"text": "R",
 							"audioText": "R",
-							"fallbackText": "R"
+							"fallbackText": "R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "R is for rainbow.",
 							"audioText": "R is for rainbow.",
-							"fallbackText": "R"
+							"fallbackText": "R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase R",
 							"audioText": "uppercase R",
-							"fallbackText": "R"
+							"fallbackText": "R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "R starts the word rainbow.",
 							"audioText": "R starts the word rainbow.",
-							"fallbackText": "R"
+							"fallbackText": "R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is R.",
 							"audioText": "What letter is this? It is R.",
-							"fallbackText": "R"
+							"fallbackText": "R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "R sits on the card and says rainbow.",
 							"audioText": "R sits on the card and says rainbow.",
-							"fallbackText": "R"
+							"fallbackText": "R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2133,32 +2973,56 @@
 						"L0": {
 							"text": "字母 R",
 							"audioText": "字母 R",
-							"fallbackText": "字母 R"
+							"fallbackText": "字母 R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "R 代表彩虹。",
 							"audioText": "R 代表彩虹。",
-							"fallbackText": "字母 R"
+							"fallbackText": "字母 R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 R",
 							"audioText": "大写字母 R",
-							"fallbackText": "字母 R"
+							"fallbackText": "字母 R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "R 是彩虹的开头。",
 							"audioText": "R 是彩虹的开头。",
-							"fallbackText": "字母 R"
+							"fallbackText": "字母 R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 R。",
 							"audioText": "这是什么字母？这是 R。",
-							"fallbackText": "字母 R"
+							"fallbackText": "字母 R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "R 在卡片上，轻轻说彩虹。",
 							"audioText": "R 在卡片上，轻轻说彩虹。",
-							"fallbackText": "字母 R"
+							"fallbackText": "字母 R",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-r-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -2194,32 +3058,56 @@
 						"L0": {
 							"text": "S",
 							"audioText": "S",
-							"fallbackText": "S"
+							"fallbackText": "S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "S is for sun.",
 							"audioText": "S is for sun.",
-							"fallbackText": "S"
+							"fallbackText": "S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase S",
 							"audioText": "uppercase S",
-							"fallbackText": "S"
+							"fallbackText": "S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "S starts the word sun.",
 							"audioText": "S starts the word sun.",
-							"fallbackText": "S"
+							"fallbackText": "S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is S.",
 							"audioText": "What letter is this? It is S.",
-							"fallbackText": "S"
+							"fallbackText": "S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "S sits on the card and says sun.",
 							"audioText": "S sits on the card and says sun.",
-							"fallbackText": "S"
+							"fallbackText": "S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2233,32 +3121,56 @@
 						"L0": {
 							"text": "字母 S",
 							"audioText": "字母 S",
-							"fallbackText": "字母 S"
+							"fallbackText": "字母 S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "S 代表太阳。",
 							"audioText": "S 代表太阳。",
-							"fallbackText": "字母 S"
+							"fallbackText": "字母 S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 S",
 							"audioText": "大写字母 S",
-							"fallbackText": "字母 S"
+							"fallbackText": "字母 S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "S 是太阳的开头。",
 							"audioText": "S 是太阳的开头。",
-							"fallbackText": "字母 S"
+							"fallbackText": "字母 S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 S。",
 							"audioText": "这是什么字母？这是 S。",
-							"fallbackText": "字母 S"
+							"fallbackText": "字母 S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "S 在卡片上，轻轻说太阳。",
 							"audioText": "S 在卡片上，轻轻说太阳。",
-							"fallbackText": "字母 S"
+							"fallbackText": "字母 S",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -2294,32 +3206,56 @@
 						"L0": {
 							"text": "T",
 							"audioText": "T",
-							"fallbackText": "T"
+							"fallbackText": "T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "T is for tree.",
 							"audioText": "T is for tree.",
-							"fallbackText": "T"
+							"fallbackText": "T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase T",
 							"audioText": "uppercase T",
-							"fallbackText": "T"
+							"fallbackText": "T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "T starts the word tree.",
 							"audioText": "T starts the word tree.",
-							"fallbackText": "T"
+							"fallbackText": "T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is T.",
 							"audioText": "What letter is this? It is T.",
-							"fallbackText": "T"
+							"fallbackText": "T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "T sits on the card and says tree.",
 							"audioText": "T sits on the card and says tree.",
-							"fallbackText": "T"
+							"fallbackText": "T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2333,32 +3269,56 @@
 						"L0": {
 							"text": "字母 T",
 							"audioText": "字母 T",
-							"fallbackText": "字母 T"
+							"fallbackText": "字母 T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "T 代表树。",
 							"audioText": "T 代表树。",
-							"fallbackText": "字母 T"
+							"fallbackText": "字母 T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 T",
 							"audioText": "大写字母 T",
-							"fallbackText": "字母 T"
+							"fallbackText": "字母 T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "T 是树的开头。",
 							"audioText": "T 是树的开头。",
-							"fallbackText": "字母 T"
+							"fallbackText": "字母 T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 T。",
 							"audioText": "这是什么字母？这是 T。",
-							"fallbackText": "字母 T"
+							"fallbackText": "字母 T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "T 在卡片上，轻轻说树。",
 							"audioText": "T 在卡片上，轻轻说树。",
-							"fallbackText": "字母 T"
+							"fallbackText": "字母 T",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -2394,32 +3354,56 @@
 						"L0": {
 							"text": "U",
 							"audioText": "U",
-							"fallbackText": "U"
+							"fallbackText": "U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "U is for umbrella.",
 							"audioText": "U is for umbrella.",
-							"fallbackText": "U"
+							"fallbackText": "U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase U",
 							"audioText": "uppercase U",
-							"fallbackText": "U"
+							"fallbackText": "U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "U starts the word umbrella.",
 							"audioText": "U starts the word umbrella.",
-							"fallbackText": "U"
+							"fallbackText": "U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is U.",
 							"audioText": "What letter is this? It is U.",
-							"fallbackText": "U"
+							"fallbackText": "U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "U sits on the card and says umbrella.",
 							"audioText": "U sits on the card and says umbrella.",
-							"fallbackText": "U"
+							"fallbackText": "U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2433,32 +3417,56 @@
 						"L0": {
 							"text": "字母 U",
 							"audioText": "字母 U",
-							"fallbackText": "字母 U"
+							"fallbackText": "字母 U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "U 代表雨伞。",
 							"audioText": "U 代表雨伞。",
-							"fallbackText": "字母 U"
+							"fallbackText": "字母 U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 U",
 							"audioText": "大写字母 U",
-							"fallbackText": "字母 U"
+							"fallbackText": "字母 U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "U 是雨伞的开头。",
 							"audioText": "U 是雨伞的开头。",
-							"fallbackText": "字母 U"
+							"fallbackText": "字母 U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 U。",
 							"audioText": "这是什么字母？这是 U。",
-							"fallbackText": "字母 U"
+							"fallbackText": "字母 U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "U 在卡片上，轻轻说雨伞。",
 							"audioText": "U 在卡片上，轻轻说雨伞。",
-							"fallbackText": "字母 U"
+							"fallbackText": "字母 U",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -2494,32 +3502,56 @@
 						"L0": {
 							"text": "V",
 							"audioText": "V",
-							"fallbackText": "V"
+							"fallbackText": "V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "V is for violin.",
 							"audioText": "V is for violin.",
-							"fallbackText": "V"
+							"fallbackText": "V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase V",
 							"audioText": "uppercase V",
-							"fallbackText": "V"
+							"fallbackText": "V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "V starts the word violin.",
 							"audioText": "V starts the word violin.",
-							"fallbackText": "V"
+							"fallbackText": "V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is V.",
 							"audioText": "What letter is this? It is V.",
-							"fallbackText": "V"
+							"fallbackText": "V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "V sits on the card and says violin.",
 							"audioText": "V sits on the card and says violin.",
-							"fallbackText": "V"
+							"fallbackText": "V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2533,32 +3565,56 @@
 						"L0": {
 							"text": "字母 V",
 							"audioText": "字母 V",
-							"fallbackText": "字母 V"
+							"fallbackText": "字母 V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "V 代表小提琴。",
 							"audioText": "V 代表小提琴。",
-							"fallbackText": "字母 V"
+							"fallbackText": "字母 V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 V",
 							"audioText": "大写字母 V",
-							"fallbackText": "字母 V"
+							"fallbackText": "字母 V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "V 是小提琴的开头。",
 							"audioText": "V 是小提琴的开头。",
-							"fallbackText": "字母 V"
+							"fallbackText": "字母 V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 V。",
 							"audioText": "这是什么字母？这是 V。",
-							"fallbackText": "字母 V"
+							"fallbackText": "字母 V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "V 在卡片上，轻轻说小提琴。",
 							"audioText": "V 在卡片上，轻轻说小提琴。",
-							"fallbackText": "字母 V"
+							"fallbackText": "字母 V",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -2594,32 +3650,56 @@
 						"L0": {
 							"text": "W",
 							"audioText": "W",
-							"fallbackText": "W"
+							"fallbackText": "W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "W is for whale.",
 							"audioText": "W is for whale.",
-							"fallbackText": "W"
+							"fallbackText": "W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase W",
 							"audioText": "uppercase W",
-							"fallbackText": "W"
+							"fallbackText": "W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "W starts the word whale.",
 							"audioText": "W starts the word whale.",
-							"fallbackText": "W"
+							"fallbackText": "W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is W.",
 							"audioText": "What letter is this? It is W.",
-							"fallbackText": "W"
+							"fallbackText": "W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "W sits on the card and says whale.",
 							"audioText": "W sits on the card and says whale.",
-							"fallbackText": "W"
+							"fallbackText": "W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2633,32 +3713,56 @@
 						"L0": {
 							"text": "字母 W",
 							"audioText": "字母 W",
-							"fallbackText": "字母 W"
+							"fallbackText": "字母 W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "W 代表鲸鱼。",
 							"audioText": "W 代表鲸鱼。",
-							"fallbackText": "字母 W"
+							"fallbackText": "字母 W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 W",
 							"audioText": "大写字母 W",
-							"fallbackText": "字母 W"
+							"fallbackText": "字母 W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "W 是鲸鱼的开头。",
 							"audioText": "W 是鲸鱼的开头。",
-							"fallbackText": "字母 W"
+							"fallbackText": "字母 W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 W。",
 							"audioText": "这是什么字母？这是 W。",
-							"fallbackText": "字母 W"
+							"fallbackText": "字母 W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "W 在卡片上，轻轻说鲸鱼。",
 							"audioText": "W 在卡片上，轻轻说鲸鱼。",
-							"fallbackText": "字母 W"
+							"fallbackText": "字母 W",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -2694,32 +3798,56 @@
 						"L0": {
 							"text": "X",
 							"audioText": "X",
-							"fallbackText": "X"
+							"fallbackText": "X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "X is for xylophone.",
 							"audioText": "X is for xylophone.",
-							"fallbackText": "X"
+							"fallbackText": "X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase X",
 							"audioText": "uppercase X",
-							"fallbackText": "X"
+							"fallbackText": "X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "X starts the word xylophone.",
 							"audioText": "X starts the word xylophone.",
-							"fallbackText": "X"
+							"fallbackText": "X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is X.",
 							"audioText": "What letter is this? It is X.",
-							"fallbackText": "X"
+							"fallbackText": "X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "X sits on the card and says xylophone.",
 							"audioText": "X sits on the card and says xylophone.",
-							"fallbackText": "X"
+							"fallbackText": "X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2733,32 +3861,56 @@
 						"L0": {
 							"text": "字母 X",
 							"audioText": "字母 X",
-							"fallbackText": "字母 X"
+							"fallbackText": "字母 X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "X 代表木琴。",
 							"audioText": "X 代表木琴。",
-							"fallbackText": "字母 X"
+							"fallbackText": "字母 X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 X",
 							"audioText": "大写字母 X",
-							"fallbackText": "字母 X"
+							"fallbackText": "字母 X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "X 是木琴的开头。",
 							"audioText": "X 是木琴的开头。",
-							"fallbackText": "字母 X"
+							"fallbackText": "字母 X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 X。",
 							"audioText": "这是什么字母？这是 X。",
-							"fallbackText": "字母 X"
+							"fallbackText": "字母 X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "X 在卡片上，轻轻说木琴。",
 							"audioText": "X 在卡片上，轻轻说木琴。",
-							"fallbackText": "字母 X"
+							"fallbackText": "字母 X",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-x-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -2794,32 +3946,56 @@
 						"L0": {
 							"text": "Y",
 							"audioText": "Y",
-							"fallbackText": "Y"
+							"fallbackText": "Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "Y is for yo-yo.",
 							"audioText": "Y is for yo-yo.",
-							"fallbackText": "Y"
+							"fallbackText": "Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase Y",
 							"audioText": "uppercase Y",
-							"fallbackText": "Y"
+							"fallbackText": "Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "Y starts the word yo-yo.",
 							"audioText": "Y starts the word yo-yo.",
-							"fallbackText": "Y"
+							"fallbackText": "Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is Y.",
 							"audioText": "What letter is this? It is Y.",
-							"fallbackText": "Y"
+							"fallbackText": "Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "Y sits on the card and says yo-yo.",
 							"audioText": "Y sits on the card and says yo-yo.",
-							"fallbackText": "Y"
+							"fallbackText": "Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2833,32 +4009,56 @@
 						"L0": {
 							"text": "字母 Y",
 							"audioText": "字母 Y",
-							"fallbackText": "字母 Y"
+							"fallbackText": "字母 Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "Y 代表溜溜球。",
 							"audioText": "Y 代表溜溜球。",
-							"fallbackText": "字母 Y"
+							"fallbackText": "字母 Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 Y",
 							"audioText": "大写字母 Y",
-							"fallbackText": "字母 Y"
+							"fallbackText": "字母 Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "Y 是溜溜球的开头。",
 							"audioText": "Y 是溜溜球的开头。",
-							"fallbackText": "字母 Y"
+							"fallbackText": "字母 Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 Y。",
 							"audioText": "这是什么字母？这是 Y。",
-							"fallbackText": "字母 Y"
+							"fallbackText": "字母 Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "Y 在卡片上，轻轻说溜溜球。",
 							"audioText": "Y 在卡片上，轻轻说溜溜球。",
-							"fallbackText": "字母 Y"
+							"fallbackText": "字母 Y",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-y-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -2894,32 +4094,56 @@
 						"L0": {
 							"text": "Z",
 							"audioText": "Z",
-							"fallbackText": "Z"
+							"fallbackText": "Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "Z is for zebra.",
 							"audioText": "Z is for zebra.",
-							"fallbackText": "Z"
+							"fallbackText": "Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "uppercase Z",
 							"audioText": "uppercase Z",
-							"fallbackText": "Z"
+							"fallbackText": "Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "Z starts the word zebra.",
 							"audioText": "Z starts the word zebra.",
-							"fallbackText": "Z"
+							"fallbackText": "Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What letter is this? It is Z.",
 							"audioText": "What letter is this? It is Z.",
-							"fallbackText": "Z"
+							"fallbackText": "Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "Z sits on the card and says zebra.",
 							"audioText": "Z sits on the card and says zebra.",
-							"fallbackText": "Z"
+							"fallbackText": "Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -2933,32 +4157,56 @@
 						"L0": {
 							"text": "字母 Z",
 							"audioText": "字母 Z",
-							"fallbackText": "字母 Z"
+							"fallbackText": "字母 Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "Z 代表斑马。",
 							"audioText": "Z 代表斑马。",
-							"fallbackText": "字母 Z"
+							"fallbackText": "字母 Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "大写字母 Z",
 							"audioText": "大写字母 Z",
-							"fallbackText": "字母 Z"
+							"fallbackText": "字母 Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "Z 是斑马的开头。",
 							"audioText": "Z 是斑马的开头。",
-							"fallbackText": "字母 Z"
+							"fallbackText": "字母 Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "这是什么字母？这是 Z。",
 							"audioText": "这是什么字母？这是 Z。",
-							"fallbackText": "字母 Z"
+							"fallbackText": "字母 Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "Z 在卡片上，轻轻说斑马。",
 							"audioText": "Z 在卡片上，轻轻说斑马。",
-							"fallbackText": "字母 Z"
+							"fallbackText": "字母 Z",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}

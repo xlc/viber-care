@@ -32,10 +32,10 @@ describe('learning engine', () => {
 		const sequence = buildLearningSequence(duck, DEFAULT_SETTINGS)
 
 		expect(sequence[0]?.audioPath).toBe(
-			'/assets/generated/audio/duck-en-L0.mp3',
+			'/assets/generated/garden/audio/duck-en-L0.mp3',
 		)
 		expect(sequence[1]?.audioPath).toBe(
-			'/assets/generated/audio/duck-zh-Hans-L0.mp3',
+			'/assets/generated/garden/audio/duck-zh-Hans-L0.mp3',
 		)
 	})
 

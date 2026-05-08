@@ -139,8 +139,7 @@
 							"fallbackText": "T. rex",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L0.wav",
-								"generationText": "T. rex"
+								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -149,29 +148,44 @@
 							"fallbackText": "The T. rex takes tiny steps.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L1.wav",
-								"generationText": "The T. rex takes tiny steps."
+								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "friendly green T. rex",
 							"audioText": "friendly green T. rex",
-							"fallbackText": "That's the T. rex."
+							"fallbackText": "That's the T. rex.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The T. rex takes tiny steps.",
 							"audioText": "The T. rex takes tiny steps.",
-							"fallbackText": "That's the T. rex."
+							"fallbackText": "That's the T. rex.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "Who has tiny arms? The T. rex has tiny arms.",
 							"audioText": "Who has tiny arms? The T. rex has tiny arms.",
-							"fallbackText": "That's the T. rex."
+							"fallbackText": "That's the T. rex.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The T. rex walks softly past the fern.",
 							"audioText": "The T. rex walks softly past the fern.",
-							"fallbackText": "That's the T. rex."
+							"fallbackText": "That's the T. rex.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -188,8 +202,7 @@
 							"fallbackText": "霸王龙",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L0.wav",
-								"generationText": "霸王龙"
+								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -198,29 +211,44 @@
 							"fallbackText": "霸王龙轻轻走。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L1.wav",
-								"generationText": "霸王龙轻轻走。"
+								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "友好的绿色霸王龙",
 							"audioText": "友好的绿色霸王龙",
-							"fallbackText": "这是霸王龙。"
+							"fallbackText": "这是霸王龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "霸王龙迈着小小的步子。",
 							"audioText": "霸王龙迈着小小的步子。",
-							"fallbackText": "这是霸王龙。"
+							"fallbackText": "这是霸王龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有小小的手臂？霸王龙有小小的手臂。",
 							"audioText": "谁有小小的手臂？霸王龙有小小的手臂。",
-							"fallbackText": "这是霸王龙。"
+							"fallbackText": "这是霸王龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "霸王龙轻轻走过蕨类植物旁边。",
 							"audioText": "霸王龙轻轻走过蕨类植物旁边。",
-							"fallbackText": "这是霸王龙。"
+							"fallbackText": "这是霸王龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -259,8 +287,7 @@
 							"fallbackText": "triceratops",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L0.wav",
-								"generationText": "triceratops"
+								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -269,29 +296,44 @@
 							"fallbackText": "The triceratops has three horns.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L1.wav",
-								"generationText": "The triceratops has three horns."
+								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "gentle blue triceratops",
 							"audioText": "gentle blue triceratops",
-							"fallbackText": "That's the triceratops."
+							"fallbackText": "That's the triceratops.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The triceratops has three soft horns.",
 							"audioText": "The triceratops has three soft horns.",
-							"fallbackText": "That's the triceratops."
+							"fallbackText": "That's the triceratops.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "Who has a big frill? The triceratops has a big frill.",
 							"audioText": "Who has a big frill? The triceratops has a big frill.",
-							"fallbackText": "That's the triceratops."
+							"fallbackText": "That's the triceratops.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The triceratops nods hello in the valley.",
 							"audioText": "The triceratops nods hello in the valley.",
-							"fallbackText": "That's the triceratops."
+							"fallbackText": "That's the triceratops.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -308,8 +350,7 @@
 							"fallbackText": "三角龙",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L0.wav",
-								"generationText": "三角龙"
+								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -318,29 +359,44 @@
 							"fallbackText": "三角龙有三个角。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L1.wav",
-								"generationText": "三角龙有三个角。"
+								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "温柔的蓝色三角龙",
 							"audioText": "温柔的蓝色三角龙",
-							"fallbackText": "这是三角龙。"
+							"fallbackText": "这是三角龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "三角龙有三只软软的角。",
 							"audioText": "三角龙有三只软软的角。",
-							"fallbackText": "这是三角龙。"
+							"fallbackText": "这是三角龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有大头盾？三角龙有大头盾。",
 							"audioText": "谁有大头盾？三角龙有大头盾。",
-							"fallbackText": "这是三角龙。"
+							"fallbackText": "这是三角龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "三角龙在山谷里点头问好。",
 							"audioText": "三角龙在山谷里点头问好。",
-							"fallbackText": "这是三角龙。"
+							"fallbackText": "这是三角龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -379,8 +435,7 @@
 							"fallbackText": "stegosaurus",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L0.wav",
-								"generationText": "stegosaurus"
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -389,29 +444,44 @@
 							"fallbackText": "The stegosaurus has back plates.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L1.wav",
-								"generationText": "The stegosaurus has back plates."
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "orange stegosaurus",
 							"audioText": "orange stegosaurus",
-							"fallbackText": "That's the stegosaurus."
+							"fallbackText": "That's the stegosaurus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The stegosaurus has soft back plates.",
 							"audioText": "The stegosaurus has soft back plates.",
-							"fallbackText": "That's the stegosaurus."
+							"fallbackText": "That's the stegosaurus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What has plates on its back? The stegosaurus does.",
 							"audioText": "What has plates on its back? The stegosaurus does.",
-							"fallbackText": "That's the stegosaurus."
+							"fallbackText": "That's the stegosaurus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The stegosaurus sways beside the warm rocks.",
 							"audioText": "The stegosaurus sways beside the warm rocks.",
-							"fallbackText": "That's the stegosaurus."
+							"fallbackText": "That's the stegosaurus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -428,8 +498,7 @@
 							"fallbackText": "剑龙",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L0.wav",
-								"generationText": "剑龙"
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -438,29 +507,44 @@
 							"fallbackText": "剑龙背上有板板。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L1.wav",
-								"generationText": "剑龙背上有板板。"
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "橙色剑龙",
 							"audioText": "橙色剑龙",
-							"fallbackText": "这是剑龙。"
+							"fallbackText": "这是剑龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "剑龙背上有软软的骨板。",
 							"audioText": "剑龙背上有软软的骨板。",
-							"fallbackText": "这是剑龙。"
+							"fallbackText": "这是剑龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁背上有骨板？剑龙背上有骨板。",
 							"audioText": "谁背上有骨板？剑龙背上有骨板。",
-							"fallbackText": "这是剑龙。"
+							"fallbackText": "这是剑龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "剑龙在温暖的石头旁轻轻摇摆。",
 							"audioText": "剑龙在温暖的石头旁轻轻摇摆。",
-							"fallbackText": "这是剑龙。"
+							"fallbackText": "这是剑龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -499,8 +583,7 @@
 							"fallbackText": "long-neck dinosaur",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L0.wav",
-								"generationText": "long-neck dinosaur"
+								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -509,29 +592,44 @@
 							"fallbackText": "The long-neck reaches a leaf.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L1.wav",
-								"generationText": "The long-neck reaches a leaf."
+								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "tall long-neck dinosaur",
 							"audioText": "tall long-neck dinosaur",
-							"fallbackText": "That's the long-neck dinosaur."
+							"fallbackText": "That's the long-neck dinosaur.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The long-neck reaches for a leaf.",
 							"audioText": "The long-neck reaches for a leaf.",
-							"fallbackText": "That's the long-neck dinosaur."
+							"fallbackText": "That's the long-neck dinosaur.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "Who has a long neck? The long-neck dinosaur does.",
 							"audioText": "Who has a long neck? The long-neck dinosaur does.",
-							"fallbackText": "That's the long-neck dinosaur."
+							"fallbackText": "That's the long-neck dinosaur.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The long-neck gently nibbles a high leaf.",
 							"audioText": "The long-neck gently nibbles a high leaf.",
-							"fallbackText": "That's the long-neck dinosaur."
+							"fallbackText": "That's the long-neck dinosaur.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -548,8 +646,7 @@
 							"fallbackText": "长颈龙",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L0.wav",
-								"generationText": "长颈龙"
+								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -558,29 +655,44 @@
 							"fallbackText": "长颈龙够到叶子。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L1.wav",
-								"generationText": "长颈龙够到叶子。"
+								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "高高的长颈龙",
 							"audioText": "高高的长颈龙",
-							"fallbackText": "这是长颈龙。"
+							"fallbackText": "这是长颈龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "长颈龙伸向叶子。",
 							"audioText": "长颈龙伸向叶子。",
-							"fallbackText": "这是长颈龙。"
+							"fallbackText": "这是长颈龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有长长的脖子？长颈龙有长长的脖子。",
 							"audioText": "谁有长长的脖子？长颈龙有长长的脖子。",
-							"fallbackText": "这是长颈龙。"
+							"fallbackText": "这是长颈龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "长颈龙轻轻吃到高高的叶子。",
 							"audioText": "长颈龙轻轻吃到高高的叶子。",
-							"fallbackText": "这是长颈龙。"
+							"fallbackText": "这是长颈龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -619,8 +731,7 @@
 							"fallbackText": "pteranodon",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L0.wav",
-								"generationText": "pteranodon"
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -629,29 +740,44 @@
 							"fallbackText": "The pteranodon glides softly.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L1.wav",
-								"generationText": "The pteranodon glides softly."
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "soft flying pteranodon",
 							"audioText": "soft flying pteranodon",
-							"fallbackText": "That's the pteranodon."
+							"fallbackText": "That's the pteranodon.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The pteranodon glides in the sky.",
 							"audioText": "The pteranodon glides in the sky.",
-							"fallbackText": "That's the pteranodon."
+							"fallbackText": "That's the pteranodon.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "Who can glide? The pteranodon can glide.",
 							"audioText": "Who can glide? The pteranodon can glide.",
-							"fallbackText": "That's the pteranodon."
+							"fallbackText": "That's the pteranodon.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The pteranodon floats above the quiet valley.",
 							"audioText": "The pteranodon floats above the quiet valley.",
-							"fallbackText": "That's the pteranodon."
+							"fallbackText": "That's the pteranodon.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -668,8 +794,7 @@
 							"fallbackText": "翼龙",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L0.wav",
-								"generationText": "翼龙"
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -678,29 +803,44 @@
 							"fallbackText": "翼龙轻轻飞。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L1.wav",
-								"generationText": "翼龙轻轻飞。"
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "柔软的翼龙",
 							"audioText": "柔软的翼龙",
-							"fallbackText": "这是翼龙。"
+							"fallbackText": "这是翼龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "翼龙在天空滑翔。",
 							"audioText": "翼龙在天空滑翔。",
-							"fallbackText": "这是翼龙。"
+							"fallbackText": "这是翼龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁会滑翔？翼龙会滑翔。",
 							"audioText": "谁会滑翔？翼龙会滑翔。",
-							"fallbackText": "这是翼龙。"
+							"fallbackText": "这是翼龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "翼龙在安静的山谷上方飞过。",
 							"audioText": "翼龙在安静的山谷上方飞过。",
-							"fallbackText": "这是翼龙。"
+							"fallbackText": "这是翼龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -739,8 +879,7 @@
 							"fallbackText": "ankylosaurus",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L0.wav",
-								"generationText": "ankylosaurus"
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -749,29 +888,44 @@
 							"fallbackText": "The ankylosaurus has a bumpy back.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L1.wav",
-								"generationText": "The ankylosaurus has a bumpy back."
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "round ankylosaurus",
 							"audioText": "round ankylosaurus",
-							"fallbackText": "That's the ankylosaurus."
+							"fallbackText": "That's the ankylosaurus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The ankylosaurus has a bumpy back.",
 							"audioText": "The ankylosaurus has a bumpy back.",
-							"fallbackText": "That's the ankylosaurus."
+							"fallbackText": "That's the ankylosaurus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "Who has a strong tail? The ankylosaurus has a strong tail.",
 							"audioText": "Who has a strong tail? The ankylosaurus has a strong tail.",
-							"fallbackText": "That's the ankylosaurus."
+							"fallbackText": "That's the ankylosaurus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The ankylosaurus rests near the fern.",
 							"audioText": "The ankylosaurus rests near the fern.",
-							"fallbackText": "That's the ankylosaurus."
+							"fallbackText": "That's the ankylosaurus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -788,8 +942,7 @@
 							"fallbackText": "甲龙",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L0.wav",
-								"generationText": "甲龙"
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -798,29 +951,44 @@
 							"fallbackText": "甲龙背上有小包。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L1.wav",
-								"generationText": "甲龙背上有小包。"
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "圆圆的甲龙",
 							"audioText": "圆圆的甲龙",
-							"fallbackText": "这是甲龙。"
+							"fallbackText": "这是甲龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "甲龙背上有小鼓包。",
 							"audioText": "甲龙背上有小鼓包。",
-							"fallbackText": "这是甲龙。"
+							"fallbackText": "这是甲龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有有力的尾巴？甲龙有有力的尾巴。",
 							"audioText": "谁有有力的尾巴？甲龙有有力的尾巴。",
-							"fallbackText": "这是甲龙。"
+							"fallbackText": "这是甲龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "甲龙在蕨类植物旁边休息。",
 							"audioText": "甲龙在蕨类植物旁边休息。",
-							"fallbackText": "这是甲龙。"
+							"fallbackText": "这是甲龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -859,8 +1027,7 @@
 							"fallbackText": "dinosaur egg",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L0.wav",
-								"generationText": "dinosaur egg"
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -869,29 +1036,44 @@
 							"fallbackText": "The dinosaur egg rests in the nest.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L1.wav",
-								"generationText": "The dinosaur egg rests in the nest."
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "speckled dinosaur egg",
 							"audioText": "speckled dinosaur egg",
-							"fallbackText": "That's the dinosaur egg."
+							"fallbackText": "That's the dinosaur egg.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The dinosaur egg sits in a nest.",
 							"audioText": "The dinosaur egg sits in a nest.",
-							"fallbackText": "That's the dinosaur egg."
+							"fallbackText": "That's the dinosaur egg.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What is in the nest? A dinosaur egg is in the nest.",
 							"audioText": "What is in the nest? A dinosaur egg is in the nest.",
-							"fallbackText": "That's the dinosaur egg."
+							"fallbackText": "That's the dinosaur egg.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The dinosaur egg rests quietly in the warm nest.",
 							"audioText": "The dinosaur egg rests quietly in the warm nest.",
-							"fallbackText": "That's the dinosaur egg."
+							"fallbackText": "That's the dinosaur egg.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -908,8 +1090,7 @@
 							"fallbackText": "恐龙蛋",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L0.wav",
-								"generationText": "恐龙蛋"
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -918,29 +1099,44 @@
 							"fallbackText": "恐龙蛋在窝里。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L1.wav",
-								"generationText": "恐龙蛋在窝里。"
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "有斑点的恐龙蛋",
 							"audioText": "有斑点的恐龙蛋",
-							"fallbackText": "这是恐龙蛋。"
+							"fallbackText": "这是恐龙蛋。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "恐龙蛋在窝里。",
 							"audioText": "恐龙蛋在窝里。",
-							"fallbackText": "这是恐龙蛋。"
+							"fallbackText": "这是恐龙蛋。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "窝里有什么？窝里有恐龙蛋。",
 							"audioText": "窝里有什么？窝里有恐龙蛋。",
-							"fallbackText": "这是恐龙蛋。"
+							"fallbackText": "这是恐龙蛋。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "恐龙蛋安静地躺在温暖的窝里。",
 							"audioText": "恐龙蛋安静地躺在温暖的窝里。",
-							"fallbackText": "这是恐龙蛋。"
+							"fallbackText": "这是恐龙蛋。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -979,8 +1175,7 @@
 							"fallbackText": "baby dinosaur",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L0.wav",
-								"generationText": "baby dinosaur"
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -989,29 +1184,44 @@
 							"fallbackText": "The baby dinosaur smiles.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L1.wav",
-								"generationText": "The baby dinosaur smiles."
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "tiny baby dinosaur",
 							"audioText": "tiny baby dinosaur",
-							"fallbackText": "That's the baby dinosaur."
+							"fallbackText": "That's the baby dinosaur.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The baby dinosaur peeks out.",
 							"audioText": "The baby dinosaur peeks out.",
-							"fallbackText": "That's the baby dinosaur."
+							"fallbackText": "That's the baby dinosaur.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "Who is tiny? The baby dinosaur is tiny.",
 							"audioText": "Who is tiny? The baby dinosaur is tiny.",
-							"fallbackText": "That's the baby dinosaur."
+							"fallbackText": "That's the baby dinosaur.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The baby dinosaur smiles at the gentle valley.",
 							"audioText": "The baby dinosaur smiles at the gentle valley.",
-							"fallbackText": "That's the baby dinosaur."
+							"fallbackText": "That's the baby dinosaur.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1028,8 +1238,7 @@
 							"fallbackText": "小恐龙",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L0.wav",
-								"generationText": "小恐龙"
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1038,29 +1247,44 @@
 							"fallbackText": "小恐龙笑一笑。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L1.wav",
-								"generationText": "小恐龙笑一笑。"
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "小小的恐龙宝宝",
 							"audioText": "小小的恐龙宝宝",
-							"fallbackText": "这是小恐龙。"
+							"fallbackText": "这是小恐龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "恐龙宝宝探出头。",
 							"audioText": "恐龙宝宝探出头。",
-							"fallbackText": "这是小恐龙。"
+							"fallbackText": "这是小恐龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁小小的？恐龙宝宝小小的。",
 							"audioText": "谁小小的？恐龙宝宝小小的。",
-							"fallbackText": "这是小恐龙。"
+							"fallbackText": "这是小恐龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "恐龙宝宝对温柔的山谷微笑。",
 							"audioText": "恐龙宝宝对温柔的山谷微笑。",
-							"fallbackText": "这是小恐龙。"
+							"fallbackText": "这是小恐龙。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1099,8 +1323,7 @@
 							"fallbackText": "fossil",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/fossil-en-L0.wav",
-								"generationText": "fossil"
+								"path": "/assets/generated/dinosaurs/audio/fossil-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1109,29 +1332,44 @@
 							"fallbackText": "The fossil rests in the rock.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/fossil-en-L1.wav",
-								"generationText": "The fossil rests in the rock."
+								"path": "/assets/generated/dinosaurs/audio/fossil-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "quiet fossil stone",
 							"audioText": "quiet fossil stone",
-							"fallbackText": "That's the fossil."
+							"fallbackText": "That's the fossil.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The fossil rests in the rock.",
 							"audioText": "The fossil rests in the rock.",
-							"fallbackText": "That's the fossil."
+							"fallbackText": "That's the fossil.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What is inside the rock? A fossil is inside.",
 							"audioText": "What is inside the rock? A fossil is inside.",
-							"fallbackText": "That's the fossil."
+							"fallbackText": "That's the fossil.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The fossil waits quietly beside the path.",
 							"audioText": "The fossil waits quietly beside the path.",
-							"fallbackText": "That's the fossil."
+							"fallbackText": "That's the fossil.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1148,8 +1386,7 @@
 							"fallbackText": "化石",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L0.wav",
-								"generationText": "化石"
+								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1158,29 +1395,44 @@
 							"fallbackText": "化石在石头里。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L1.wav",
-								"generationText": "化石在石头里。"
+								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "安静的化石石头",
 							"audioText": "安静的化石石头",
-							"fallbackText": "这是化石。"
+							"fallbackText": "这是化石。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "化石在石头里。",
 							"audioText": "化石在石头里。",
-							"fallbackText": "这是化石。"
+							"fallbackText": "这是化石。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "石头里有什么？石头里有化石。",
 							"audioText": "石头里有什么？石头里有化石。",
-							"fallbackText": "这是化石。"
+							"fallbackText": "这是化石。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "化石在小路旁安静地等着。",
 							"audioText": "化石在小路旁安静地等着。",
-							"fallbackText": "这是化石。"
+							"fallbackText": "这是化石。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1219,8 +1471,7 @@
 							"fallbackText": "fern",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/fern-en-L0.wav",
-								"generationText": "fern"
+								"path": "/assets/generated/dinosaurs/audio/fern-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1229,29 +1480,44 @@
 							"fallbackText": "The fern is soft and green.",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/fern-en-L1.wav",
-								"generationText": "The fern is soft and green."
+								"path": "/assets/generated/dinosaurs/audio/fern-en-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "soft green fern",
 							"audioText": "soft green fern",
-							"fallbackText": "That's the fern."
+							"fallbackText": "That's the fern.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The fern grows by the rocks.",
 							"audioText": "The fern grows by the rocks.",
-							"fallbackText": "That's the fern."
+							"fallbackText": "That's the fern.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What plant is green? The fern is green.",
 							"audioText": "What plant is green? The fern is green.",
-							"fallbackText": "That's the fern."
+							"fallbackText": "That's the fern.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The fern sways softly in the dinosaur valley.",
 							"audioText": "The fern sways softly in the dinosaur valley.",
-							"fallbackText": "That's the fern."
+							"fallbackText": "That's the fern.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1268,8 +1534,7 @@
 							"fallbackText": "蕨叶",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L0.wav",
-								"generationText": "蕨叶"
+								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1278,29 +1543,44 @@
 							"fallbackText": "蕨叶绿绿的。",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L1.wav",
-								"generationText": "蕨叶绿绿的。"
+								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
 							"text": "柔软的绿色蕨类植物",
 							"audioText": "柔软的绿色蕨类植物",
-							"fallbackText": "这是蕨叶。"
+							"fallbackText": "这是蕨叶。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "蕨类植物长在石头旁。",
 							"audioText": "蕨类植物长在石头旁。",
-							"fallbackText": "这是蕨叶。"
+							"fallbackText": "这是蕨叶。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "什么植物是绿色的？蕨类植物是绿色的。",
 							"audioText": "什么植物是绿色的？蕨类植物是绿色的。",
-							"fallbackText": "这是蕨叶。"
+							"fallbackText": "这是蕨叶。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "蕨类植物在恐龙山谷里轻轻摇。",
 							"audioText": "蕨类植物在恐龙山谷里轻轻摇。",
-							"fallbackText": "这是蕨叶。"
+							"fallbackText": "这是蕨叶。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}

@@ -139,8 +139,7 @@
 							"fallbackText": "fish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-en-L0.wav",
-								"generationText": "fish"
+								"path": "/assets/generated/ocean-animals/audio/fish-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -149,8 +148,7 @@
 							"fallbackText": "fish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-en-L1.wav",
-								"generationText": "The fish swims."
+								"path": "/assets/generated/ocean-animals/audio/fish-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -159,8 +157,7 @@
 							"fallbackText": "fish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-en-L2.wav",
-								"generationText": "little fish"
+								"path": "/assets/generated/ocean-animals/audio/fish-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -169,8 +166,7 @@
 							"fallbackText": "fish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-en-L3.wav",
-								"generationText": "The fish swims in the blue sea."
+								"path": "/assets/generated/ocean-animals/audio/fish-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -179,14 +175,17 @@
 							"fallbackText": "fish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-en-L4.wav",
-								"generationText": "Who swims fast? The fish swims."
+								"path": "/assets/generated/ocean-animals/audio/fish-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The fish swims past bubbles and waves hello.",
 							"audioText": "The fish swims past bubbles and waves hello.",
-							"fallbackText": "That's the fish."
+							"fallbackText": "That's the fish.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/fish-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -203,8 +202,7 @@
 							"fallbackText": "小鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L0.wav",
-								"generationText": "小鱼"
+								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -213,8 +211,7 @@
 							"fallbackText": "小鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L1.wav",
-								"generationText": "小鱼游一游。"
+								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -223,8 +220,7 @@
 							"fallbackText": "小鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L2.wav",
-								"generationText": "小小的鱼"
+								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -233,8 +229,7 @@
 							"fallbackText": "小鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L3.wav",
-								"generationText": "小鱼在蓝色海里游。"
+								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -243,14 +238,17 @@
 							"fallbackText": "小鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L4.wav",
-								"generationText": "谁游得快？小鱼游得快。"
+								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "小鱼游过泡泡，轻轻打招呼。",
 							"audioText": "小鱼游过泡泡，轻轻打招呼。",
-							"fallbackText": "这是小鱼。"
+							"fallbackText": "这是小鱼。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -289,8 +287,7 @@
 							"fallbackText": "sea turtle",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L0.wav",
-								"generationText": "sea turtle"
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -299,8 +296,7 @@
 							"fallbackText": "sea turtle",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L1.wav",
-								"generationText": "The sea turtle glides."
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -309,8 +305,7 @@
 							"fallbackText": "sea turtle",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L2.wav",
-								"generationText": "gentle sea turtle"
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -319,8 +314,7 @@
 							"fallbackText": "sea turtle",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L3.wav",
-								"generationText": "The sea turtle moves slowly."
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -329,14 +323,17 @@
 							"fallbackText": "sea turtle",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L4.wav",
-								"generationText": "Who has a shell? The sea turtle has a shell."
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The sea turtle glides slowly through the cove.",
 							"audioText": "The sea turtle glides slowly through the cove.",
-							"fallbackText": "That's the sea turtle."
+							"fallbackText": "That's the sea turtle.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -353,8 +350,7 @@
 							"fallbackText": "海龟",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L0.wav",
-								"generationText": "海龟"
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -363,8 +359,7 @@
 							"fallbackText": "海龟",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L1.wav",
-								"generationText": "海龟慢慢游。"
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -373,8 +368,7 @@
 							"fallbackText": "海龟",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L2.wav",
-								"generationText": "温柔的海龟"
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -383,8 +377,7 @@
 							"fallbackText": "海龟",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L3.wav",
-								"generationText": "海龟慢慢向前游。"
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -393,14 +386,17 @@
 							"fallbackText": "海龟",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L4.wav",
-								"generationText": "谁有壳？海龟有壳。"
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "海龟慢慢滑过海湾。",
 							"audioText": "海龟慢慢滑过海湾。",
-							"fallbackText": "这是海龟。"
+							"fallbackText": "这是海龟。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -439,8 +435,7 @@
 							"fallbackText": "dolphin",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L0.wav",
-								"generationText": "dolphin"
+								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -449,8 +444,7 @@
 							"fallbackText": "dolphin",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L1.wav",
-								"generationText": "The dolphin jumps."
+								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -459,8 +453,7 @@
 							"fallbackText": "dolphin",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L2.wav",
-								"generationText": "happy dolphin"
+								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -469,8 +462,7 @@
 							"fallbackText": "dolphin",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L3.wav",
-								"generationText": "The dolphin jumps over a wave."
+								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -479,14 +471,17 @@
 							"fallbackText": "dolphin",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L4.wav",
-								"generationText": "Who jumps high? The dolphin jumps high."
+								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The dolphin jumps up and splashes softly.",
 							"audioText": "The dolphin jumps up and splashes softly.",
-							"fallbackText": "That's the dolphin."
+							"fallbackText": "That's the dolphin.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -503,8 +498,7 @@
 							"fallbackText": "海豚",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L0.wav",
-								"generationText": "海豚"
+								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -513,8 +507,7 @@
 							"fallbackText": "海豚",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L1.wav",
-								"generationText": "海豚跳一跳。"
+								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -523,8 +516,7 @@
 							"fallbackText": "海豚",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L2.wav",
-								"generationText": "快乐的海豚"
+								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -533,8 +525,7 @@
 							"fallbackText": "海豚",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L3.wav",
-								"generationText": "海豚跳过小浪花。"
+								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -543,14 +534,17 @@
 							"fallbackText": "海豚",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L4.wav",
-								"generationText": "谁跳得高？海豚跳得高。"
+								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "海豚跳起来，轻轻溅起水花。",
 							"audioText": "海豚跳起来，轻轻溅起水花。",
-							"fallbackText": "这是海豚。"
+							"fallbackText": "这是海豚。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -589,8 +583,7 @@
 							"fallbackText": "whale",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-en-L0.wav",
-								"generationText": "whale"
+								"path": "/assets/generated/ocean-animals/audio/whale-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -599,8 +592,7 @@
 							"fallbackText": "whale",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-en-L1.wav",
-								"generationText": "The whale sings."
+								"path": "/assets/generated/ocean-animals/audio/whale-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -609,8 +601,7 @@
 							"fallbackText": "whale",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-en-L2.wav",
-								"generationText": "big whale"
+								"path": "/assets/generated/ocean-animals/audio/whale-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -619,8 +610,7 @@
 							"fallbackText": "whale",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-en-L3.wav",
-								"generationText": "The whale swims slowly."
+								"path": "/assets/generated/ocean-animals/audio/whale-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -629,14 +619,17 @@
 							"fallbackText": "whale",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-en-L4.wav",
-								"generationText": "Who is very big? The whale is very big."
+								"path": "/assets/generated/ocean-animals/audio/whale-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The whale sings a low song in the blue water.",
 							"audioText": "The whale sings a low song in the blue water.",
-							"fallbackText": "That's the whale."
+							"fallbackText": "That's the whale.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/whale-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -653,8 +646,7 @@
 							"fallbackText": "鲸鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L0.wav",
-								"generationText": "鲸鱼"
+								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -663,8 +655,7 @@
 							"fallbackText": "鲸鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L1.wav",
-								"generationText": "鲸鱼轻轻唱。"
+								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -673,8 +664,7 @@
 							"fallbackText": "鲸鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L2.wav",
-								"generationText": "大大的鲸鱼"
+								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -683,8 +673,7 @@
 							"fallbackText": "鲸鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L3.wav",
-								"generationText": "鲸鱼慢慢地游。"
+								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -693,14 +682,17 @@
 							"fallbackText": "鲸鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L4.wav",
-								"generationText": "谁很大？鲸鱼很大。"
+								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "鲸鱼在蓝蓝的水里轻声唱歌。",
 							"audioText": "鲸鱼在蓝蓝的水里轻声唱歌。",
-							"fallbackText": "这是鲸鱼。"
+							"fallbackText": "这是鲸鱼。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -739,8 +731,7 @@
 							"fallbackText": "crab",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-en-L0.wav",
-								"generationText": "crab"
+								"path": "/assets/generated/ocean-animals/audio/crab-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -749,8 +740,7 @@
 							"fallbackText": "crab",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-en-L1.wav",
-								"generationText": "The crab walks sideways."
+								"path": "/assets/generated/ocean-animals/audio/crab-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -759,8 +749,7 @@
 							"fallbackText": "crab",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-en-L2.wav",
-								"generationText": "small crab"
+								"path": "/assets/generated/ocean-animals/audio/crab-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -769,8 +758,7 @@
 							"fallbackText": "crab",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-en-L3.wav",
-								"generationText": "The crab walks on the sand."
+								"path": "/assets/generated/ocean-animals/audio/crab-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -779,14 +767,17 @@
 							"fallbackText": "crab",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-en-L4.wav",
-								"generationText": "Who walks sideways? The crab walks sideways."
+								"path": "/assets/generated/ocean-animals/audio/crab-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The crab tiptoes across the soft sand.",
 							"audioText": "The crab tiptoes across the soft sand.",
-							"fallbackText": "That's the crab."
+							"fallbackText": "That's the crab.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/crab-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -803,8 +794,7 @@
 							"fallbackText": "螃蟹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L0.wav",
-								"generationText": "螃蟹"
+								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -813,8 +803,7 @@
 							"fallbackText": "螃蟹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L1.wav",
-								"generationText": "螃蟹横着走。"
+								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -823,8 +812,7 @@
 							"fallbackText": "螃蟹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L2.wav",
-								"generationText": "小小的螃蟹"
+								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -833,8 +821,7 @@
 							"fallbackText": "螃蟹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L3.wav",
-								"generationText": "螃蟹在沙子上走。"
+								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -843,14 +830,17 @@
 							"fallbackText": "螃蟹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L4.wav",
-								"generationText": "谁横着走？螃蟹横着走。"
+								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "螃蟹在软软的沙子上轻轻走。",
 							"audioText": "螃蟹在软软的沙子上轻轻走。",
-							"fallbackText": "这是螃蟹。"
+							"fallbackText": "这是螃蟹。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -889,8 +879,7 @@
 							"fallbackText": "octopus",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-en-L0.wav",
-								"generationText": "octopus"
+								"path": "/assets/generated/ocean-animals/audio/octopus-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -899,8 +888,7 @@
 							"fallbackText": "octopus",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-en-L1.wav",
-								"generationText": "The octopus waves."
+								"path": "/assets/generated/ocean-animals/audio/octopus-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -909,8 +897,7 @@
 							"fallbackText": "octopus",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-en-L2.wav",
-								"generationText": "soft octopus"
+								"path": "/assets/generated/ocean-animals/audio/octopus-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -919,8 +906,7 @@
 							"fallbackText": "octopus",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-en-L3.wav",
-								"generationText": "The octopus waves its arms."
+								"path": "/assets/generated/ocean-animals/audio/octopus-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -929,14 +915,17 @@
 							"fallbackText": "octopus",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-en-L4.wav",
-								"generationText": "Who has many arms? The octopus has many arms."
+								"path": "/assets/generated/ocean-animals/audio/octopus-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The octopus waves eight gentle arms.",
 							"audioText": "The octopus waves eight gentle arms.",
-							"fallbackText": "That's the octopus."
+							"fallbackText": "That's the octopus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/octopus-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -953,8 +942,7 @@
 							"fallbackText": "章鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L0.wav",
-								"generationText": "章鱼"
+								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -963,8 +951,7 @@
 							"fallbackText": "章鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L1.wav",
-								"generationText": "章鱼挥挥手。"
+								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -973,8 +960,7 @@
 							"fallbackText": "章鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L2.wav",
-								"generationText": "软软的章鱼"
+								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -983,8 +969,7 @@
 							"fallbackText": "章鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L3.wav",
-								"generationText": "章鱼挥动小手。"
+								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -993,14 +978,17 @@
 							"fallbackText": "章鱼",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L4.wav",
-								"generationText": "谁有很多手？章鱼有很多手。"
+								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "章鱼挥挥八只柔软的手臂。",
 							"audioText": "章鱼挥挥八只柔软的手臂。",
-							"fallbackText": "这是章鱼。"
+							"fallbackText": "这是章鱼。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1039,8 +1027,7 @@
 							"fallbackText": "seahorse",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L0.wav",
-								"generationText": "seahorse"
+								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1049,8 +1036,7 @@
 							"fallbackText": "seahorse",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L1.wav",
-								"generationText": "The seahorse floats."
+								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -1059,8 +1045,7 @@
 							"fallbackText": "seahorse",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L2.wav",
-								"generationText": "tiny seahorse"
+								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -1069,8 +1054,7 @@
 							"fallbackText": "seahorse",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L3.wav",
-								"generationText": "The seahorse floats near sea grass."
+								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -1079,14 +1063,17 @@
 							"fallbackText": "seahorse",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L4.wav",
-								"generationText": "Who floats gently? The seahorse floats gently."
+								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The seahorse curls its tail by the sea grass.",
 							"audioText": "The seahorse curls its tail by the sea grass.",
-							"fallbackText": "That's the seahorse."
+							"fallbackText": "That's the seahorse.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1103,8 +1090,7 @@
 							"fallbackText": "海马",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L0.wav",
-								"generationText": "海马"
+								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1113,8 +1099,7 @@
 							"fallbackText": "海马",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L1.wav",
-								"generationText": "海马轻轻飘。"
+								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -1123,8 +1108,7 @@
 							"fallbackText": "海马",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L2.wav",
-								"generationText": "小小的海马"
+								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -1133,8 +1117,7 @@
 							"fallbackText": "海马",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L3.wav",
-								"generationText": "海马在海草旁飘。"
+								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -1143,14 +1126,17 @@
 							"fallbackText": "海马",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L4.wav",
-								"generationText": "谁轻轻飘？海马轻轻飘。"
+								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "海马在海草旁卷起尾巴。",
 							"audioText": "海马在海草旁卷起尾巴。",
-							"fallbackText": "这是海马。"
+							"fallbackText": "这是海马。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1189,8 +1175,7 @@
 							"fallbackText": "starfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-en-L0.wav",
-								"generationText": "starfish"
+								"path": "/assets/generated/ocean-animals/audio/starfish-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1199,8 +1184,7 @@
 							"fallbackText": "starfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-en-L1.wav",
-								"generationText": "The starfish rests."
+								"path": "/assets/generated/ocean-animals/audio/starfish-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -1209,8 +1193,7 @@
 							"fallbackText": "starfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-en-L2.wav",
-								"generationText": "bright starfish"
+								"path": "/assets/generated/ocean-animals/audio/starfish-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -1219,8 +1202,7 @@
 							"fallbackText": "starfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-en-L3.wav",
-								"generationText": "The starfish rests on the sand."
+								"path": "/assets/generated/ocean-animals/audio/starfish-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -1229,14 +1211,17 @@
 							"fallbackText": "starfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-en-L4.wav",
-								"generationText": "Who rests on sand? The starfish rests on sand."
+								"path": "/assets/generated/ocean-animals/audio/starfish-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The starfish rests like a star on the sand.",
 							"audioText": "The starfish rests like a star on the sand.",
-							"fallbackText": "That's the starfish."
+							"fallbackText": "That's the starfish.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/starfish-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1253,8 +1238,7 @@
 							"fallbackText": "海星",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L0.wav",
-								"generationText": "海星"
+								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1263,8 +1247,7 @@
 							"fallbackText": "海星",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L1.wav",
-								"generationText": "海星静静躺。"
+								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -1273,8 +1256,7 @@
 							"fallbackText": "海星",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L2.wav",
-								"generationText": "亮亮的海星"
+								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -1283,8 +1265,7 @@
 							"fallbackText": "海星",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L3.wav",
-								"generationText": "海星躺在沙子上。"
+								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -1293,14 +1274,17 @@
 							"fallbackText": "海星",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L4.wav",
-								"generationText": "谁躺在沙子上？海星躺在沙子上。"
+								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "海星像星星一样躺在沙子上。",
 							"audioText": "海星像星星一样躺在沙子上。",
-							"fallbackText": "这是海星。"
+							"fallbackText": "这是海星。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1339,8 +1323,7 @@
 							"fallbackText": "jellyfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L0.wav",
-								"generationText": "jellyfish"
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1349,8 +1332,7 @@
 							"fallbackText": "jellyfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L1.wav",
-								"generationText": "The jellyfish floats."
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -1359,8 +1341,7 @@
 							"fallbackText": "jellyfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L2.wav",
-								"generationText": "soft jellyfish"
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -1369,8 +1350,7 @@
 							"fallbackText": "jellyfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L3.wav",
-								"generationText": "The jellyfish floats gently."
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -1379,14 +1359,17 @@
 							"fallbackText": "jellyfish",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L4.wav",
-								"generationText": "Who floats softly? The jellyfish floats softly."
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The jellyfish floats gently under the bubbles.",
 							"audioText": "The jellyfish floats gently under the bubbles.",
-							"fallbackText": "That's the jellyfish."
+							"fallbackText": "That's the jellyfish.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1403,8 +1386,7 @@
 							"fallbackText": "水母",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L0.wav",
-								"generationText": "水母"
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1413,8 +1395,7 @@
 							"fallbackText": "水母",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L1.wav",
-								"generationText": "水母轻轻飘。"
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -1423,8 +1404,7 @@
 							"fallbackText": "水母",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L2.wav",
-								"generationText": "软软的水母"
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -1433,8 +1413,7 @@
 							"fallbackText": "水母",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L3.wav",
-								"generationText": "水母轻轻地飘。"
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -1443,14 +1422,17 @@
 							"fallbackText": "水母",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L4.wav",
-								"generationText": "谁软软地飘？水母软软地飘。"
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "水母在泡泡下面轻轻漂。",
 							"audioText": "水母在泡泡下面轻轻漂。",
-							"fallbackText": "这是水母。"
+							"fallbackText": "这是水母。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1489,8 +1471,7 @@
 							"fallbackText": "seal",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-en-L0.wav",
-								"generationText": "seal"
+								"path": "/assets/generated/ocean-animals/audio/seal-en-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1499,8 +1480,7 @@
 							"fallbackText": "seal",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-en-L1.wav",
-								"generationText": "The seal claps."
+								"path": "/assets/generated/ocean-animals/audio/seal-en-L1.mp3"
 							}
 						},
 						"L2": {
@@ -1509,8 +1489,7 @@
 							"fallbackText": "seal",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-en-L2.wav",
-								"generationText": "playful seal"
+								"path": "/assets/generated/ocean-animals/audio/seal-en-L2.mp3"
 							}
 						},
 						"L3": {
@@ -1519,8 +1498,7 @@
 							"fallbackText": "seal",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-en-L3.wav",
-								"generationText": "The seal claps by the water."
+								"path": "/assets/generated/ocean-animals/audio/seal-en-L3.mp3"
 							}
 						},
 						"L4": {
@@ -1529,14 +1507,17 @@
 							"fallbackText": "seal",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-en-L4.wav",
-								"generationText": "Who claps softly? The seal claps softly."
+								"path": "/assets/generated/ocean-animals/audio/seal-en-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "The seal claps softly beside the water.",
 							"audioText": "The seal claps softly beside the water.",
-							"fallbackText": "That's the seal."
+							"fallbackText": "That's the seal.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/seal-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1553,8 +1534,7 @@
 							"fallbackText": "海豹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L0.wav",
-								"generationText": "海豹"
+								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L0.mp3"
 							}
 						},
 						"L1": {
@@ -1563,8 +1543,7 @@
 							"fallbackText": "海豹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L1.wav",
-								"generationText": "海豹拍拍手。"
+								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L1.mp3"
 							}
 						},
 						"L2": {
@@ -1573,8 +1552,7 @@
 							"fallbackText": "海豹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L2.wav",
-								"generationText": "爱玩的海豹"
+								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L2.mp3"
 							}
 						},
 						"L3": {
@@ -1583,8 +1561,7 @@
 							"fallbackText": "海豹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L3.wav",
-								"generationText": "海豹在水边拍手。"
+								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L3.mp3"
 							}
 						},
 						"L4": {
@@ -1593,14 +1570,17 @@
 							"fallbackText": "海豹",
 							"audio": {
 								"type": "audio",
-								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L4.wav",
-								"generationText": "谁轻轻拍手？海豹轻轻拍手。"
+								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L4.mp3"
 							}
 						},
 						"L5": {
 							"text": "海豹在水边轻轻拍手。",
 							"audioText": "海豹在水边轻轻拍手。",
-							"fallbackText": "这是海豹。"
+							"fallbackText": "这是海豹。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}

@@ -136,32 +136,56 @@
 						"L0": {
 							"text": "car",
 							"audioText": "car",
-							"fallbackText": "car"
+							"fallbackText": "car",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The car rolls.",
 							"audioText": "The car rolls.",
-							"fallbackText": "car"
+							"fallbackText": "car",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "red car",
 							"audioText": "red car",
-							"fallbackText": "car"
+							"fallbackText": "car",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The car rolls on the path.",
 							"audioText": "The car rolls on the path.",
-							"fallbackText": "car"
+							"fallbackText": "car",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What rolls on wheels? The car rolls.",
 							"audioText": "What rolls on wheels? The car rolls.",
-							"fallbackText": "car"
+							"fallbackText": "car",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The car rolls slowly through the transit park.",
 							"audioText": "The car rolls slowly through the transit park.",
-							"fallbackText": "That's the car."
+							"fallbackText": "That's the car.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -175,32 +199,56 @@
 						"L0": {
 							"text": "小汽车",
 							"audioText": "小汽车",
-							"fallbackText": "小汽车"
+							"fallbackText": "小汽车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "小汽车开一开。",
 							"audioText": "小汽车开一开。",
-							"fallbackText": "小汽车"
+							"fallbackText": "小汽车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "红色小汽车",
 							"audioText": "红色小汽车",
-							"fallbackText": "小汽车"
+							"fallbackText": "小汽车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "小汽车在小路上开。",
 							"audioText": "小汽车在小路上开。",
-							"fallbackText": "小汽车"
+							"fallbackText": "小汽车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁在轮子上开？小汽车在轮子上开。",
 							"audioText": "谁在轮子上开？小汽车在轮子上开。",
-							"fallbackText": "小汽车"
+							"fallbackText": "小汽车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "小汽车慢慢开过交通公园。",
 							"audioText": "小汽车慢慢开过交通公园。",
-							"fallbackText": "这是小汽车。"
+							"fallbackText": "这是小汽车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/car-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -236,32 +284,56 @@
 						"L0": {
 							"text": "bus",
 							"audioText": "bus",
-							"fallbackText": "bus"
+							"fallbackText": "bus",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The bus goes by.",
 							"audioText": "The bus goes by.",
-							"fallbackText": "bus"
+							"fallbackText": "bus",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "yellow bus",
 							"audioText": "yellow bus",
-							"fallbackText": "bus"
+							"fallbackText": "bus",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The bus carries friends on the road.",
 							"audioText": "The bus carries friends on the road.",
-							"fallbackText": "bus"
+							"fallbackText": "bus",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What has big windows? The bus has big windows.",
 							"audioText": "What has big windows? The bus has big windows.",
-							"fallbackText": "bus"
+							"fallbackText": "bus",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The bus stops softly beside the path.",
 							"audioText": "The bus stops softly beside the path.",
-							"fallbackText": "That's the bus."
+							"fallbackText": "That's the bus.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -275,32 +347,56 @@
 						"L0": {
 							"text": "公交车",
 							"audioText": "公交车",
-							"fallbackText": "公交车"
+							"fallbackText": "公交车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "公交车开过来。",
 							"audioText": "公交车开过来。",
-							"fallbackText": "公交车"
+							"fallbackText": "公交车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "黄色公交车",
 							"audioText": "黄色公交车",
-							"fallbackText": "公交车"
+							"fallbackText": "公交车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "公交车载着朋友在路上走。",
 							"audioText": "公交车载着朋友在路上走。",
-							"fallbackText": "公交车"
+							"fallbackText": "公交车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有大大的窗户？公交车有大大的窗户。",
 							"audioText": "谁有大大的窗户？公交车有大大的窗户。",
-							"fallbackText": "公交车"
+							"fallbackText": "公交车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "公交车轻轻停在小路旁。",
 							"audioText": "公交车轻轻停在小路旁。",
-							"fallbackText": "这是公交车。"
+							"fallbackText": "这是公交车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bus-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -336,32 +432,56 @@
 						"L0": {
 							"text": "train",
 							"audioText": "train",
-							"fallbackText": "train"
+							"fallbackText": "train",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The train rolls along.",
 							"audioText": "The train rolls along.",
-							"fallbackText": "train"
+							"fallbackText": "train",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "green train",
 							"audioText": "green train",
-							"fallbackText": "train"
+							"fallbackText": "train",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The train rolls on the track.",
 							"audioText": "The train rolls on the track.",
-							"fallbackText": "train"
+							"fallbackText": "train",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What rides on tracks? The train rides on tracks.",
 							"audioText": "What rides on tracks? The train rides on tracks.",
-							"fallbackText": "train"
+							"fallbackText": "train",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The train makes a gentle trip past the grass.",
 							"audioText": "The train makes a gentle trip past the grass.",
-							"fallbackText": "That's the train."
+							"fallbackText": "That's the train.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -375,32 +495,56 @@
 						"L0": {
 							"text": "火车",
 							"audioText": "火车",
-							"fallbackText": "火车"
+							"fallbackText": "火车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "火车向前开。",
 							"audioText": "火车向前开。",
-							"fallbackText": "火车"
+							"fallbackText": "火车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "绿色火车",
 							"audioText": "绿色火车",
-							"fallbackText": "火车"
+							"fallbackText": "火车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "火车在轨道上开。",
 							"audioText": "火车在轨道上开。",
-							"fallbackText": "火车"
+							"fallbackText": "火车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁在轨道上走？火车在轨道上走。",
 							"audioText": "谁在轨道上走？火车在轨道上走。",
-							"fallbackText": "火车"
+							"fallbackText": "火车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "火车轻轻开过草地旁边。",
 							"audioText": "火车轻轻开过草地旁边。",
-							"fallbackText": "这是火车。"
+							"fallbackText": "这是火车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/train-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -436,32 +580,56 @@
 						"L0": {
 							"text": "airplane",
 							"audioText": "airplane",
-							"fallbackText": "airplane"
+							"fallbackText": "airplane",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The airplane flies.",
 							"audioText": "The airplane flies.",
-							"fallbackText": "airplane"
+							"fallbackText": "airplane",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "white airplane",
 							"audioText": "white airplane",
-							"fallbackText": "airplane"
+							"fallbackText": "airplane",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The airplane flies in the blue sky.",
 							"audioText": "The airplane flies in the blue sky.",
-							"fallbackText": "airplane"
+							"fallbackText": "airplane",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What flies high? The airplane flies high.",
 							"audioText": "What flies high? The airplane flies high.",
-							"fallbackText": "airplane"
+							"fallbackText": "airplane",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The airplane glides softly over the transit park.",
 							"audioText": "The airplane glides softly over the transit park.",
-							"fallbackText": "That's the airplane."
+							"fallbackText": "That's the airplane.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -475,32 +643,56 @@
 						"L0": {
 							"text": "飞机",
 							"audioText": "飞机",
-							"fallbackText": "飞机"
+							"fallbackText": "飞机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "飞机飞一飞。",
 							"audioText": "飞机飞一飞。",
-							"fallbackText": "飞机"
+							"fallbackText": "飞机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "白色飞机",
 							"audioText": "白色飞机",
-							"fallbackText": "飞机"
+							"fallbackText": "飞机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "飞机在蓝天里飞。",
 							"audioText": "飞机在蓝天里飞。",
-							"fallbackText": "飞机"
+							"fallbackText": "飞机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁飞得高？飞机飞得高。",
 							"audioText": "谁飞得高？飞机飞得高。",
-							"fallbackText": "飞机"
+							"fallbackText": "飞机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "飞机轻轻飞过交通公园上空。",
 							"audioText": "飞机轻轻飞过交通公园上空。",
-							"fallbackText": "这是飞机。"
+							"fallbackText": "这是飞机。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -536,32 +728,56 @@
 						"L0": {
 							"text": "boat",
 							"audioText": "boat",
-							"fallbackText": "boat"
+							"fallbackText": "boat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The boat floats.",
 							"audioText": "The boat floats.",
-							"fallbackText": "boat"
+							"fallbackText": "boat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "blue boat",
 							"audioText": "blue boat",
-							"fallbackText": "boat"
+							"fallbackText": "boat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The boat floats on the water.",
 							"audioText": "The boat floats on the water.",
-							"fallbackText": "boat"
+							"fallbackText": "boat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What floats on water? The boat floats on water.",
 							"audioText": "What floats on water? The boat floats on water.",
-							"fallbackText": "boat"
+							"fallbackText": "boat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The boat bobs gently in the quiet pond.",
 							"audioText": "The boat bobs gently in the quiet pond.",
-							"fallbackText": "That's the boat."
+							"fallbackText": "That's the boat.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -575,32 +791,56 @@
 						"L0": {
 							"text": "小船",
 							"audioText": "小船",
-							"fallbackText": "小船"
+							"fallbackText": "小船",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "小船漂一漂。",
 							"audioText": "小船漂一漂。",
-							"fallbackText": "小船"
+							"fallbackText": "小船",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "蓝色小船",
 							"audioText": "蓝色小船",
-							"fallbackText": "小船"
+							"fallbackText": "小船",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "小船在水面上漂。",
 							"audioText": "小船在水面上漂。",
-							"fallbackText": "小船"
+							"fallbackText": "小船",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁在水面上漂？小船在水面上漂。",
 							"audioText": "谁在水面上漂？小船在水面上漂。",
-							"fallbackText": "小船"
+							"fallbackText": "小船",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "小船在安静的池塘里轻轻摇。",
 							"audioText": "小船在安静的池塘里轻轻摇。",
-							"fallbackText": "这是小船。"
+							"fallbackText": "这是小船。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/boat-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -636,32 +876,56 @@
 						"L0": {
 							"text": "bicycle",
 							"audioText": "bicycle",
-							"fallbackText": "bicycle"
+							"fallbackText": "bicycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The bicycle rolls.",
 							"audioText": "The bicycle rolls.",
-							"fallbackText": "bicycle"
+							"fallbackText": "bicycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "little bicycle",
 							"audioText": "little bicycle",
-							"fallbackText": "bicycle"
+							"fallbackText": "bicycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The bicycle rolls on two wheels.",
 							"audioText": "The bicycle rolls on two wheels.",
-							"fallbackText": "bicycle"
+							"fallbackText": "bicycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What has two wheels? The bicycle has two wheels.",
 							"audioText": "What has two wheels? The bicycle has two wheels.",
-							"fallbackText": "bicycle"
+							"fallbackText": "bicycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The bicycle waits beside the sunny path.",
 							"audioText": "The bicycle waits beside the sunny path.",
-							"fallbackText": "That's the bicycle."
+							"fallbackText": "That's the bicycle.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -675,32 +939,56 @@
 						"L0": {
 							"text": "自行车",
 							"audioText": "自行车",
-							"fallbackText": "自行车"
+							"fallbackText": "自行车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "自行车转一转。",
 							"audioText": "自行车转一转。",
-							"fallbackText": "自行车"
+							"fallbackText": "自行车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "小小自行车",
 							"audioText": "小小自行车",
-							"fallbackText": "自行车"
+							"fallbackText": "自行车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "自行车用两个轮子前进。",
 							"audioText": "自行车用两个轮子前进。",
-							"fallbackText": "自行车"
+							"fallbackText": "自行车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有两个轮子？自行车有两个轮子。",
 							"audioText": "谁有两个轮子？自行车有两个轮子。",
-							"fallbackText": "自行车"
+							"fallbackText": "自行车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "自行车在阳光小路旁等一等。",
 							"audioText": "自行车在阳光小路旁等一等。",
-							"fallbackText": "这是自行车。"
+							"fallbackText": "这是自行车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -736,32 +1024,56 @@
 						"L0": {
 							"text": "truck",
 							"audioText": "truck",
-							"fallbackText": "truck"
+							"fallbackText": "truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The truck rolls.",
 							"audioText": "The truck rolls.",
-							"fallbackText": "truck"
+							"fallbackText": "truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "green truck",
 							"audioText": "green truck",
-							"fallbackText": "truck"
+							"fallbackText": "truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The truck carries a gentle load.",
 							"audioText": "The truck carries a gentle load.",
-							"fallbackText": "truck"
+							"fallbackText": "truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What has a big back? The truck has a big back.",
 							"audioText": "What has a big back? The truck has a big back.",
-							"fallbackText": "truck"
+							"fallbackText": "truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The truck rolls carefully beside the trees.",
 							"audioText": "The truck rolls carefully beside the trees.",
-							"fallbackText": "That's the truck."
+							"fallbackText": "That's the truck.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -775,32 +1087,56 @@
 						"L0": {
 							"text": "卡车",
 							"audioText": "卡车",
-							"fallbackText": "卡车"
+							"fallbackText": "卡车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "卡车开一开。",
 							"audioText": "卡车开一开。",
-							"fallbackText": "卡车"
+							"fallbackText": "卡车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "绿色卡车",
 							"audioText": "绿色卡车",
-							"fallbackText": "卡车"
+							"fallbackText": "卡车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "卡车运着轻轻的东西。",
 							"audioText": "卡车运着轻轻的东西。",
-							"fallbackText": "卡车"
+							"fallbackText": "卡车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有大大的车厢？卡车有大大的车厢。",
 							"audioText": "谁有大大的车厢？卡车有大大的车厢。",
-							"fallbackText": "卡车"
+							"fallbackText": "卡车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "卡车小心地开过树旁。",
 							"audioText": "卡车小心地开过树旁。",
-							"fallbackText": "这是卡车。"
+							"fallbackText": "这是卡车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/truck-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -836,32 +1172,56 @@
 						"L0": {
 							"text": "taxi",
 							"audioText": "taxi",
-							"fallbackText": "taxi"
+							"fallbackText": "taxi",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The taxi rolls by.",
 							"audioText": "The taxi rolls by.",
-							"fallbackText": "taxi"
+							"fallbackText": "taxi",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "yellow taxi",
 							"audioText": "yellow taxi",
-							"fallbackText": "taxi"
+							"fallbackText": "taxi",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The taxi rolls along the road.",
 							"audioText": "The taxi rolls along the road.",
-							"fallbackText": "taxi"
+							"fallbackText": "taxi",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What has a small roof light? The taxi has a roof light.",
 							"audioText": "What has a small roof light? The taxi has a roof light.",
-							"fallbackText": "taxi"
+							"fallbackText": "taxi",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The taxi waits kindly near the station.",
 							"audioText": "The taxi waits kindly near the station.",
-							"fallbackText": "That's the taxi."
+							"fallbackText": "That's the taxi.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -875,32 +1235,56 @@
 						"L0": {
 							"text": "出租车",
 							"audioText": "出租车",
-							"fallbackText": "出租车"
+							"fallbackText": "出租车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "出租车开过来。",
 							"audioText": "出租车开过来。",
-							"fallbackText": "出租车"
+							"fallbackText": "出租车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "黄色出租车",
 							"audioText": "黄色出租车",
-							"fallbackText": "出租车"
+							"fallbackText": "出租车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "出租车沿着小路开。",
 							"audioText": "出租车沿着小路开。",
-							"fallbackText": "出租车"
+							"fallbackText": "出租车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有小小的车顶灯？出租车有车顶灯。",
 							"audioText": "谁有小小的车顶灯？出租车有车顶灯。",
-							"fallbackText": "出租车"
+							"fallbackText": "出租车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "出租车温柔地等在车站旁。",
 							"audioText": "出租车温柔地等在车站旁。",
-							"fallbackText": "这是出租车。"
+							"fallbackText": "这是出租车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -936,32 +1320,56 @@
 						"L0": {
 							"text": "scooter",
 							"audioText": "scooter",
-							"fallbackText": "scooter"
+							"fallbackText": "scooter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The scooter glides.",
 							"audioText": "The scooter glides.",
-							"fallbackText": "scooter"
+							"fallbackText": "scooter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "blue scooter",
 							"audioText": "blue scooter",
-							"fallbackText": "scooter"
+							"fallbackText": "scooter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The scooter glides on the path.",
 							"audioText": "The scooter glides on the path.",
-							"fallbackText": "scooter"
+							"fallbackText": "scooter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What has a tall handle? The scooter has a tall handle.",
 							"audioText": "What has a tall handle? The scooter has a tall handle.",
-							"fallbackText": "scooter"
+							"fallbackText": "scooter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The scooter rests beside the soft road.",
 							"audioText": "The scooter rests beside the soft road.",
-							"fallbackText": "That's the scooter."
+							"fallbackText": "That's the scooter.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -975,32 +1383,56 @@
 						"L0": {
 							"text": "滑板车",
 							"audioText": "滑板车",
-							"fallbackText": "滑板车"
+							"fallbackText": "滑板车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "滑板车滑一滑。",
 							"audioText": "滑板车滑一滑。",
-							"fallbackText": "滑板车"
+							"fallbackText": "滑板车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "蓝色滑板车",
 							"audioText": "蓝色滑板车",
-							"fallbackText": "滑板车"
+							"fallbackText": "滑板车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "滑板车在小路上滑。",
 							"audioText": "滑板车在小路上滑。",
-							"fallbackText": "滑板车"
+							"fallbackText": "滑板车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有高高的把手？滑板车有高高的把手。",
 							"audioText": "谁有高高的把手？滑板车有高高的把手。",
-							"fallbackText": "滑板车"
+							"fallbackText": "滑板车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "滑板车停在柔软的小路旁。",
 							"audioText": "滑板车停在柔软的小路旁。",
-							"fallbackText": "这是滑板车。"
+							"fallbackText": "这是滑板车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
@@ -1036,32 +1468,56 @@
 						"L0": {
 							"text": "helicopter",
 							"audioText": "helicopter",
-							"fallbackText": "helicopter"
+							"fallbackText": "helicopter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-en-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "The helicopter hovers.",
 							"audioText": "The helicopter hovers.",
-							"fallbackText": "helicopter"
+							"fallbackText": "helicopter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-en-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "green helicopter",
 							"audioText": "green helicopter",
-							"fallbackText": "helicopter"
+							"fallbackText": "helicopter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-en-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "The helicopter hovers in the sky.",
 							"audioText": "The helicopter hovers in the sky.",
-							"fallbackText": "helicopter"
+							"fallbackText": "helicopter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-en-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "What has a spinning rotor? The helicopter has a rotor.",
 							"audioText": "What has a spinning rotor? The helicopter has a rotor.",
-							"fallbackText": "helicopter"
+							"fallbackText": "helicopter",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-en-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "The helicopter hums softly above the trees.",
 							"audioText": "The helicopter hums softly above the trees.",
-							"fallbackText": "That's the helicopter."
+							"fallbackText": "That's the helicopter.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-en-L5.mp3"
+							}
 						}
 					}
 				},
@@ -1075,32 +1531,56 @@
 						"L0": {
 							"text": "直升机",
 							"audioText": "直升机",
-							"fallbackText": "直升机"
+							"fallbackText": "直升机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L0.mp3"
+							}
 						},
 						"L1": {
 							"text": "直升机停在空中。",
 							"audioText": "直升机停在空中。",
-							"fallbackText": "直升机"
+							"fallbackText": "直升机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L1.mp3"
+							}
 						},
 						"L2": {
 							"text": "绿色直升机",
 							"audioText": "绿色直升机",
-							"fallbackText": "直升机"
+							"fallbackText": "直升机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L2.mp3"
+							}
 						},
 						"L3": {
 							"text": "直升机在天空中停一停。",
 							"audioText": "直升机在天空中停一停。",
-							"fallbackText": "直升机"
+							"fallbackText": "直升机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L3.mp3"
+							}
 						},
 						"L4": {
 							"text": "谁有旋转的桨叶？直升机有桨叶。",
 							"audioText": "谁有旋转的桨叶？直升机有桨叶。",
-							"fallbackText": "直升机"
+							"fallbackText": "直升机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L4.mp3"
+							}
 						},
 						"L5": {
 							"text": "直升机在树上方轻轻嗡嗡响。",
 							"audioText": "直升机在树上方轻轻嗡嗡响。",
-							"fallbackText": "这是直升机。"
+							"fallbackText": "这是直升机。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L5.mp3"
+							}
 						}
 					}
 				}
