@@ -155,18 +155,57 @@ test('settings panel can change word detail without raw level labels', async ({
 	)
 })
 
-test('story mode shows only the primary language line', async ({ page }) => {
+test('puzzle mode fills scene gaps', async ({ page }) => {
 	await page.goto('/')
-	await page.getByTestId('settings-button').click()
-	await page.getByTestId('preset-zh-then-en').click()
-	await page.getByLabel('Close settings').click()
-	await page.getByTestId('mode-story').click()
 
-	const prompt = page.getByTestId('prompt')
-	await expect(prompt).toContainText('Story garden')
-	await expect(prompt).toContainText('太阳')
-	await expect(prompt).not.toContainText('sun')
-	await expect(prompt.locator('.word-line')).toHaveCount(1)
+	await expect(page.getByTestId('mode-puzzle')).toBeVisible()
+
+	await page.getByTestId('settings-button').click()
+	const dialog = page.getByRole('dialog')
+	await expect(dialog.getByTestId('mode-puzzle')).toBeVisible()
+	await page.getByLabel('Close settings').click()
+
+	await page.getByTestId('mode-puzzle').click()
+	await expect(page.getByTestId('prompt')).toContainText('Puzzle garden.')
+	await expect(page.locator('.puzzle-gap')).toHaveCount(10)
+	await expect(page.locator('.puzzle-piece')).toHaveCount(10)
+
+	await page
+		.getByTestId('puzzle-piece-sun')
+		.dragTo(page.getByTestId('puzzle-gap-sun'))
+	await expect(page.getByTestId('object-sun')).toBeVisible()
+	await expect(page.getByTestId('puzzle-piece-sun')).toHaveCount(0)
+
+	await page.getByTestId('puzzle-piece-tree').click()
+	await page.getByTestId('puzzle-gap-duck').click()
+	await expect(page.getByTestId('puzzle-piece-tree')).toBeVisible()
+	await expect(page.getByTestId('prompt')).not.toContainText(/wrong|try again/i)
+
+	const remainingObjectIds = [
+		'tree',
+		'flower',
+		'duck',
+		'fish',
+		'dog',
+		'cat',
+		'apple',
+		'banana',
+		'ball',
+	]
+	for (const objectId of remainingObjectIds) {
+		await page.getByTestId(`puzzle-piece-${objectId}`).click()
+		await page.getByTestId(`puzzle-gap-${objectId}`).click()
+	}
+
+	await expect(page.getByTestId('prompt')).toContainText('Puzzle garden.', {
+		timeout: 3_000,
+	})
+	await expect(page.locator('.puzzle-gap')).toHaveCount(10)
+	await expect(page.locator('.puzzle-piece')).toHaveCount(10)
+
+	await page.getByTestId('mode-explore').click()
+	await expect(page.getByTestId('prompt')).toContainText('Hello, garden.')
+	await expect(page.getByTestId('prompt')).not.toHaveClass(/is-puzzle/)
 })
 
 test('settings panel can switch to the ocean animals pack', async ({

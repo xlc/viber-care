@@ -1,11 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { catalog } from '../../src/content/catalog'
 import type { ObjectConcept } from '../../src/content/schema'
-import {
-	buildLearningSequence,
-	buildStorySequence,
-	getPack,
-} from '../../src/learning/engine'
+import { buildLearningSequence, getPack } from '../../src/learning/engine'
 import {
 	DEFAULT_SETTINGS,
 	type WordGardenSettings,
@@ -41,18 +37,6 @@ describe('learning engine', () => {
 		expect(sequence[1]?.audioPath).toBe(
 			'/assets/generated/audio/duck-zh-Hans-L0.mp3',
 		)
-	})
-
-	it('uses only the primary language in story mode', () => {
-		const settings: WordGardenSettings = {
-			...DEFAULT_SETTINGS,
-			languageOrderPreset: 'zh-then-en',
-		}
-
-		const sequence = buildStorySequence(duck, settings)
-
-		expect(sequence.map((item) => item.resolvedLanguage)).toEqual(['zh-Hans'])
-		expect(sequence.map((item) => item.text)).toEqual(['鸭子'])
 	})
 
 	it('falls back from incomplete advanced levels to available content', () => {

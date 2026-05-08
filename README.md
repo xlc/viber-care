@@ -1,6 +1,6 @@
 # Word Garden
 
-Word Garden is a static PWA game for toddlers to learn objects and words in gentle bilingual scenes. The MVP supports English and Simplified Chinese, Explore mode, Find mode, a Story-mode placeholder, garden, ocean, dinosaur, numbers, and English alphabet packs, content sets inside packs, and runtime fallbacks for advanced word detail.
+Word Garden is a static PWA game for toddlers to learn objects and words in gentle bilingual scenes. The MVP supports English and Simplified Chinese, Explore mode, Find mode, Puzzle mode, garden, ocean, dinosaur, numbers, and English alphabet packs, content sets inside packs, and runtime fallbacks for advanced word detail.
 
 ## Commands
 
@@ -122,7 +122,7 @@ bun run deploy:pages
 - Short label maps to L2.
 - Simple sentence maps to L3.
 - Question maps to L4.
-- Little story maps to L5.
+- Little scene maps to L5.
 
 Every committed content pack includes English and Simplified Chinese L0-L5 text
 for each object. The parent UI uses word-detail names instead of raw level codes.

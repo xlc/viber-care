@@ -16,8 +16,13 @@ import {
 	handleFindTap,
 } from './game/find-mode'
 import {
+	createPuzzleRound,
+	getPuzzleTrayObjectIds,
+	handlePuzzleDrop,
+	type PuzzleRound,
+} from './game/puzzle-mode'
+import {
 	buildLearningSequence,
-	buildStorySequence,
 	getDefaultScene,
 	getFindPrompt,
 	getPack,
@@ -47,7 +52,7 @@ const presetLabels: Record<LanguageOrderPreset, string> = {
 const modeLabels: Record<GameMode, string> = {
 	explore: 'Explore',
 	find: 'Find',
-	story: 'Story',
+	puzzle: 'Puzzle',
 }
 
 const wordDetailOptions: ReadonlyArray<{
@@ -60,14 +65,14 @@ const wordDetailOptions: ReadonlyArray<{
 	{ level: 'L2', label: 'Short label', hint: 'Two or three words' },
 	{ level: 'L3', label: 'Simple sentence', hint: 'One calm sentence' },
 	{ level: 'L4', label: 'Question', hint: 'Prompt and answer' },
-	{ level: 'L5', label: 'Little story', hint: 'Short narrated line' },
+	{ level: 'L5', label: 'Little scene', hint: 'Short narrated line' },
 ]
 
 type PlacementWithObject = Scene['objects'][number] & {
 	object: ObjectConcept
 }
 
-type ToastKind = 'hello' | 'word' | 'find' | 'success' | 'story'
+type ToastKind = 'hello' | 'word' | 'find' | 'success' | 'puzzle'
 
 type ToastState = {
 	kind: ToastKind
@@ -229,6 +234,15 @@ function SequenceText({ sequence }: { sequence: LearningPresentation[] }) {
 	)
 }
 
+function getPlacementStyle(placement: PlacementWithObject): JSX.CSSProperties {
+	return {
+		left: `${placement.x}%`,
+		top: `${placement.y}%`,
+		zIndex: placement.zIndex ?? 1,
+		'--object-scale': placement.scale,
+	} as JSX.CSSProperties
+}
+
 function GardenObjectButton({
 	placement,
 	active,
@@ -241,12 +255,7 @@ function GardenObjectButton({
 	settings: WordGardenSettings
 }) {
 	const firstPresentation = buildLearningSequence(placement.object, settings)[0]
-	const style = {
-		left: `${placement.x}%`,
-		top: `${placement.y}%`,
-		zIndex: placement.zIndex ?? 1,
-		'--object-scale': placement.scale,
-	} as JSX.CSSProperties
+	const style = getPlacementStyle(placement)
 
 	return (
 		<button
@@ -264,6 +273,102 @@ function GardenObjectButton({
 	)
 }
 
+function PuzzleGapButton({
+	placement,
+	selectedObjectId,
+	onPuzzleDrop,
+}: {
+	placement: PlacementWithObject
+	selectedObjectId: string | null
+	onPuzzleDrop: (objectId: string, targetObjectId: string) => void
+}) {
+	const style = getPlacementStyle(placement)
+	const selected = selectedObjectId === placement.object.id
+
+	return (
+		<button
+			className={`puzzle-gap ${selected ? 'is-selected' : ''}`}
+			style={style}
+			type="button"
+			data-testid={`puzzle-gap-${placement.object.id}`}
+			aria-label={`Puzzle spot for ${placement.object.image.alt ?? placement.object.id}`}
+			onClick={() => {
+				if (selectedObjectId) {
+					onPuzzleDrop(selectedObjectId, placement.object.id)
+				}
+			}}
+			onDragOver={(event) => event.preventDefault()}
+			onDrop={(event) => {
+				event.preventDefault()
+				const transfer = event.dataTransfer
+				if (!transfer) {
+					return
+				}
+				const objectId =
+					transfer.getData('application/x-word-garden-object-id') ||
+					transfer.getData('text/plain')
+				if (objectId) {
+					onPuzzleDrop(objectId, placement.object.id)
+				}
+			}}
+		>
+			<img src={placement.object.image.path} alt="" draggable={false} />
+		</button>
+	)
+}
+
+function PuzzleTray({
+	placements,
+	selectedObjectId,
+	settings,
+	onSelect,
+}: {
+	placements: PlacementWithObject[]
+	selectedObjectId: string | null
+	settings: WordGardenSettings
+	onSelect: (objectId: string) => void
+}) {
+	return (
+		<section className="puzzle-tray" aria-label="Puzzle pieces">
+			{placements.map((placement) => {
+				const firstPresentation = buildLearningSequence(
+					placement.object,
+					settings,
+				)[0]
+
+				return (
+					<button
+						key={placement.object.id}
+						type="button"
+						className={`puzzle-piece ${
+							selectedObjectId === placement.object.id ? 'is-selected' : ''
+						}`}
+						data-testid={`puzzle-piece-${placement.object.id}`}
+						aria-pressed={selectedObjectId === placement.object.id}
+						aria-label={firstPresentation?.text ?? placement.object.id}
+						draggable
+						onClick={() => onSelect(placement.object.id)}
+						onDragStart={(event) => {
+							const transfer = event.dataTransfer
+							if (!transfer) {
+								return
+							}
+							transfer.effectAllowed = 'move'
+							transfer.setData(
+								'application/x-word-garden-object-id',
+								placement.object.id,
+							)
+							transfer.setData('text/plain', placement.object.id)
+						}}
+					>
+						<img src={placement.object.image.path} alt="" draggable={false} />
+					</button>
+				)
+			})}
+		</section>
+	)
+}
+
 function ModeSegment({
 	mode,
 	onChange,
@@ -273,7 +378,7 @@ function ModeSegment({
 }) {
 	return (
 		<div className="mode-segment" role="group" aria-label="Game mode">
-			{(['explore', 'find', 'story'] as const).map((candidate) => (
+			{(['explore', 'find', 'puzzle'] as const).map((candidate) => (
 				<button
 					key={candidate}
 					type="button"
@@ -488,11 +593,17 @@ export function App() {
 	const [settingsOpen, setSettingsOpen] = useState(false)
 	const [activeObjectId, setActiveObjectId] = useState<string | null>(null)
 	const [findRound, setFindRound] = useState<FindRound | null>(null)
+	const [puzzleRound, setPuzzleRound] = useState<PuzzleRound | null>(null)
+	const [puzzleRoundIndex, setPuzzleRoundIndex] = useState(0)
+	const [selectedPuzzleObjectId, setSelectedPuzzleObjectId] = useState<
+		string | null
+	>(null)
 	const [toast, setToast] = useState<ToastState>({
 		kind: 'hello',
 		sequence: [],
 	})
 	const shouldSpeakPromptRef = useRef(false)
+	const puzzleResetTimeoutRef = useRef<number | null>(null)
 
 	const selectedPackId = catalog?.packs.some(
 		(packOption) => packOption.id === settings.selectedPackId,
@@ -520,6 +631,15 @@ export function App() {
 		() => placements.map((placement) => placement.object),
 		[placements],
 	)
+	const placementByObjectId = useMemo(
+		() =>
+			new Map(placements.map((placement) => [placement.object.id, placement])),
+		[placements],
+	)
+	const objectById = useMemo(
+		() => new Map(objects.map((object) => [object.id, object])),
+		[objects],
+	)
 	const targetObject = useMemo(() => {
 		if (!findRound) {
 			return objects[0] ?? null
@@ -530,6 +650,18 @@ export function App() {
 			null
 		)
 	}, [findRound, objects])
+	const puzzleTrayPlacements = useMemo(() => {
+		if (!puzzleRound) {
+			return []
+		}
+
+		return getPuzzleTrayObjectIds(puzzleRound)
+			.map((objectId) => placementByObjectId.get(objectId))
+			.filter((placement): placement is PlacementWithObject =>
+				Boolean(placement),
+			)
+	}, [placementByObjectId, puzzleRound])
+	const placedPuzzleObjectIds = puzzleRound?.placedObjectIds ?? []
 
 	useEffect(() => {
 		saveSettings(
@@ -545,37 +677,50 @@ export function App() {
 	}, [scene, placements])
 
 	useEffect(() => {
+		return () => clearPuzzleResetTimeout()
+	}, [])
+
+	useEffect(() => {
 		if (settings.mode === 'find' && objects.length > 0 && !findRound) {
 			setFindRound(createFindRound(objects))
 		}
 	}, [findRound, objects, settings.mode])
 
 	useEffect(() => {
+		clearPuzzleResetTimeout()
 		setSceneIndex(0)
 		setActiveObjectId(null)
 		setFindRound(null)
+		setPuzzleRound(null)
+		setPuzzleRoundIndex(0)
+		setSelectedPuzzleObjectId(null)
 		setToast({ kind: 'hello', sequence: [] })
 	}, [selectedPackId, activeSubPackId])
 
 	useEffect(() => {
+		clearPuzzleResetTimeout()
 		setActiveObjectId(null)
 		setFindRound(null)
+		setPuzzleRound(null)
+		setPuzzleRoundIndex(0)
+		setSelectedPuzzleObjectId(null)
 		setToast({ kind: 'hello', sequence: [] })
 	}, [scene?.id])
 
 	useEffect(() => {
+		if (settings.mode === 'puzzle' && placements.length > 0 && !puzzleRound) {
+			setPuzzleRound(createPuzzleRound(placements, puzzleRoundIndex))
+		}
+	}, [placements, puzzleRound, puzzleRoundIndex, settings.mode])
+
+	useEffect(() => {
 		let nextToast: ToastState | null = null
-		if (settings.mode === 'story' && targetObject) {
-			nextToast = {
-				kind: 'story',
-				sequence: buildStorySequence(targetObject, settings),
-			}
-		} else if (settings.mode === 'find' && targetObject) {
+		if (settings.mode === 'find' && targetObject) {
 			nextToast = {
 				kind: 'find',
 				sequence: getFindPrompt(targetObject, settings),
 			}
-		} else if (toast.kind === 'find' || toast.kind === 'story') {
+		} else if (toast.kind === 'find' || toast.kind === 'puzzle') {
 			nextToast = { kind: 'hello', sequence: [] }
 		}
 
@@ -596,15 +741,19 @@ export function App() {
 	])
 
 	function updateSettings(nextSettings: WordGardenSettings) {
-		if (
-			settings.mode !== nextSettings.mode &&
-			(nextSettings.mode === 'find' || nextSettings.mode === 'story')
-		) {
+		if (settings.mode !== nextSettings.mode && nextSettings.mode === 'find') {
 			shouldSpeakPromptRef.current = true
+		}
+		if (settings.mode !== nextSettings.mode) {
+			clearPuzzleResetTimeout()
 		}
 		setSettings(nextSettings)
 		if (nextSettings.mode === 'find' && objects.length > 0) {
 			setFindRound((round) => round ?? createFindRound(objects))
+		}
+		if (nextSettings.mode === 'puzzle') {
+			setSelectedPuzzleObjectId(null)
+			setToast({ kind: 'puzzle', sequence: [] })
 		}
 	}
 
@@ -621,21 +770,14 @@ export function App() {
 			return
 		}
 
-		shouldSpeakPromptRef.current =
-			settings.mode === 'find' || settings.mode === 'story'
+		clearPuzzleResetTimeout()
+		shouldSpeakPromptRef.current = settings.mode === 'find'
 		setSceneIndex(boundedIndex)
 	}
 
 	function handleObjectTap(object: ObjectConcept) {
 		setActiveObjectId(object.id)
 		playSoftTap(settings.muted)
-
-		if (settings.mode === 'story') {
-			const sequence = buildStorySequence(object, settings)
-			setToast({ kind: 'story', sequence })
-			speakSequence(sequence, settings.muted)
-			return
-		}
 
 		if (settings.mode === 'find' && targetObject && objects.length > 0) {
 			const activeFindRound = findRound ?? createFindRound(objects)
@@ -685,6 +827,62 @@ export function App() {
 		speakSequence(sequence, settings.muted)
 	}
 
+	function handlePuzzleAttempt(objectId: string, targetObjectId: string) {
+		if (!puzzleRound) {
+			return
+		}
+
+		const object = objectById.get(objectId)
+		if (!object) {
+			setSelectedPuzzleObjectId(null)
+			return
+		}
+
+		playSoftTap(settings.muted)
+		setActiveObjectId(objectId)
+		setSelectedPuzzleObjectId(null)
+
+		const result = handlePuzzleDrop(puzzleRound, objectId, targetObjectId)
+		if (!result.isMatch) {
+			const sequence = buildLearningSequence(object, settings)
+			setToast({ kind: 'word', sequence })
+			speakSequence(sequence, settings.muted)
+			return
+		}
+
+		const nextRound = {
+			...puzzleRound,
+			placedObjectIds: result.placedObjectIds,
+		}
+		setPuzzleRound(nextRound)
+
+		const successSequence = getSuccessPhrase(object, settings)
+		setToast({ kind: 'success', sequence: successSequence })
+		speakSequence(successSequence, settings.muted)
+
+		if (result.isComplete) {
+			const nextRoundIndex = puzzleRoundIndex + 1
+			clearPuzzleResetTimeout()
+			puzzleResetTimeoutRef.current = window.setTimeout(() => {
+				puzzleResetTimeoutRef.current = null
+				setPuzzleRoundIndex(nextRoundIndex)
+				setPuzzleRound(createPuzzleRound(placements, nextRoundIndex))
+				setActiveObjectId(null)
+				setSelectedPuzzleObjectId(null)
+				setToast({ kind: 'puzzle', sequence: [] })
+			}, 1400)
+		}
+	}
+
+	function clearPuzzleResetTimeout() {
+		if (puzzleResetTimeoutRef.current === null) {
+			return
+		}
+
+		window.clearTimeout(puzzleResetTimeoutRef.current)
+		puzzleResetTimeoutRef.current = null
+	}
+
 	if (error) {
 		return (
 			<main className="loading-screen">
@@ -711,6 +909,12 @@ export function App() {
 			: settings.mode === 'find' && targetObject
 				? getFindPrompt(targetObject, settings)
 				: []
+	const promptKind =
+		promptSequence.length > 0
+			? toast.kind
+			: settings.mode === 'puzzle'
+				? 'puzzle'
+				: 'hello'
 	const backgroundStyle = scene.background.asset
 		? ({
 				backgroundImage: `url(${scene.background.asset.path})`,
@@ -764,10 +968,11 @@ export function App() {
 				className={`play-area ${hasSceneNavigation ? 'has-scene-nav' : ''}`}
 				aria-label={sceneTitle}
 			>
-				<div className={`prompt-ribbon is-${toast.kind}`} data-testid="prompt">
-					{settings.mode === 'story' ? <strong>Story garden</strong> : null}
+				<div className={`prompt-ribbon is-${promptKind}`} data-testid="prompt">
 					{promptSequence.length > 0 ? (
 						<SequenceText sequence={promptSequence} />
+					) : settings.mode === 'puzzle' ? (
+						<strong>Puzzle garden.</strong>
 					) : (
 						<strong>Hello, garden.</strong>
 					)}
@@ -799,17 +1004,51 @@ export function App() {
 					</nav>
 				) : null}
 
-				<div className="garden-stage" style={backgroundStyle}>
-					{placements.map((placement) => (
-						<GardenObjectButton
-							key={placement.object.id}
-							placement={placement}
-							active={activeObjectId === placement.object.id}
-							onTap={handleObjectTap}
+				{settings.mode === 'puzzle' ? (
+					<div className="puzzle-layout">
+						<div className="garden-stage is-puzzle" style={backgroundStyle}>
+							{placements.map((placement) =>
+								placedPuzzleObjectIds.includes(placement.object.id) ? null : (
+									<PuzzleGapButton
+										key={placement.object.id}
+										placement={placement}
+										selectedObjectId={selectedPuzzleObjectId}
+										onPuzzleDrop={handlePuzzleAttempt}
+									/>
+								),
+							)}
+							{placements.map((placement) =>
+								placedPuzzleObjectIds.includes(placement.object.id) ? (
+									<GardenObjectButton
+										key={placement.object.id}
+										placement={placement}
+										active={activeObjectId === placement.object.id}
+										onTap={handleObjectTap}
+										settings={settings}
+									/>
+								) : null,
+							)}
+						</div>
+						<PuzzleTray
+							placements={puzzleTrayPlacements}
+							selectedObjectId={selectedPuzzleObjectId}
 							settings={settings}
+							onSelect={setSelectedPuzzleObjectId}
 						/>
-					))}
-				</div>
+					</div>
+				) : (
+					<div className="garden-stage" style={backgroundStyle}>
+						{placements.map((placement) => (
+							<GardenObjectButton
+								key={placement.object.id}
+								placement={placement}
+								active={activeObjectId === placement.object.id}
+								onTap={handleObjectTap}
+								settings={settings}
+							/>
+						))}
+					</div>
+				)}
 			</section>
 
 			{settingsOpen ? (

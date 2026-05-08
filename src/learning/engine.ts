@@ -156,14 +156,6 @@ export function buildLearningSequence(
 	)
 }
 
-export function buildStorySequence(
-	object: ObjectConcept,
-	settings: WordGardenSettings,
-): LearningPresentation[] {
-	const [language = 'en'] = resolveLanguageOrder(settings)
-	return [getLevelPresentation(object, language, settings.activeLevel)]
-}
-
 export function getFindPrompt(
 	object: ObjectConcept,
 	settings: WordGardenSettings,

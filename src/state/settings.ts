@@ -13,7 +13,7 @@ export const LANGUAGE_ORDER_PRESETS = [
 	'zh-then-en',
 ] as const
 
-export const GAME_MODES = ['explore', 'find', 'story'] as const
+export const GAME_MODES = ['explore', 'find', 'puzzle'] as const
 
 export type LanguageOrderPreset = (typeof LANGUAGE_ORDER_PRESETS)[number]
 export type GameMode = (typeof GAME_MODES)[number]
