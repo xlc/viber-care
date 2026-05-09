@@ -4,8 +4,8 @@ import {
 	SETTINGS_STORAGE_KEY,
 } from '../../src/state/settings'
 
-type SpeechCaptureWindow = Window & {
-	__spokenUtterances?: string[]
+type AudioCaptureWindow = Window & {
+	__audioPlayCount?: { count: number }
 }
 
 test.beforeEach(async ({ page }) => {
@@ -19,39 +19,16 @@ test.beforeEach(async ({ page }) => {
 		}) => {
 			window.localStorage.setItem(settingsKey, JSON.stringify(mutedSettings))
 
-			const spokenUtterances: string[] = []
-			Object.defineProperty(window, '__spokenUtterances', {
+			const audioPlayCount = { count: 0 }
+			Object.defineProperty(window, '__audioPlayCount', {
 				configurable: true,
-				value: spokenUtterances,
+				value: audioPlayCount,
 			})
 
-			class MockSpeechSynthesisUtterance extends EventTarget {
-				lang = ''
-				pitch = 1
-				rate = 1
-				text: string
-				volume = 1
-
-				constructor(text?: string) {
-					super()
-					this.text = text ?? ''
-				}
+			HTMLMediaElement.prototype.play = () => {
+				audioPlayCount.count += 1
+				return Promise.resolve()
 			}
-
-			Object.defineProperty(window, 'SpeechSynthesisUtterance', {
-				configurable: true,
-				value: MockSpeechSynthesisUtterance,
-			})
-			Object.defineProperty(window, 'speechSynthesis', {
-				configurable: true,
-				value: {
-					cancel() {},
-					speak(utterance: SpeechSynthesisUtterance) {
-						spokenUtterances.push(utterance.text)
-						queueMicrotask(() => utterance.dispatchEvent(new Event('end')))
-					},
-				},
-			})
 		},
 		{
 			settingsKey: SETTINGS_STORAGE_KEY,
@@ -69,25 +46,25 @@ test.afterEach(async ({ page }) => {
 	}
 
 	const audioState = await page.evaluate((settingsKey) => {
-		const captureWindow = window as SpeechCaptureWindow
+		const captureWindow = window as AudioCaptureWindow
 		const storedSettings = JSON.parse(
 			window.localStorage.getItem(settingsKey) ?? '{}',
 		) as { muted?: unknown }
 
 		return {
+			audioPlayCount: captureWindow.__audioPlayCount?.count ?? 0,
 			muted: storedSettings.muted,
-			spokenUtterances: captureWindow.__spokenUtterances ?? [],
 		}
 	}, SETTINGS_STORAGE_KEY)
 
 	expect(audioState.muted).toBe(true)
-	expect(audioState.spokenUtterances).toEqual([])
+	expect(audioState.audioPlayCount).toBe(0)
 })
 
-async function getSpokenUtterances(page: Page) {
+async function getAudioPlayCount(page: Page) {
 	return page.evaluate(() => {
-		const captureWindow = window as SpeechCaptureWindow
-		return captureWindow.__spokenUtterances ?? []
+		const captureWindow = window as AudioCaptureWindow
+		return captureWindow.__audioPlayCount?.count ?? 0
 	})
 }
 
@@ -203,7 +180,7 @@ test('find mode stays silent while muted from settings', async ({ page }) => {
 	await page.getByTestId('settings-button').click()
 	await page.getByRole('dialog').getByTestId('mode-find').click()
 
-	await expect.poll(() => getSpokenUtterances(page)).toEqual([])
+	await expect.poll(() => getAudioPlayCount(page)).toBe(0)
 	await expect(page.getByTestId('prompt')).toContainText('Find')
 })
 
@@ -356,13 +333,13 @@ test('scene navigation shows another randomized scene', async ({ page }) => {
 	await expect(page.getByTestId('scene-previous')).toBeEnabled()
 })
 
-test('runtime makes no calls to OpenAI or AI endpoints', async ({ page }) => {
+test('runtime makes no calls to AI endpoints', async ({ page }) => {
 	const forbiddenRequests: string[] = []
 	const publicJsonRequests: string[] = []
 	await page.route('**/*', async (route) => {
 		const url = route.request().url()
 		if (
-			/openai|anthropic|\/v1\/responses|\/v1\/images|\/v1\/chat\/completions/i.test(
+			/openai|openrouter|anthropic|\/v1\/responses|\/v1\/images|\/v1\/chat\/completions/i.test(
 				url,
 			)
 		) {

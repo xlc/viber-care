@@ -23,6 +23,7 @@ const voiceInstructions = [
 type JsonObject = Record<string, unknown>
 
 type Mode = 'sample' | 'generate' | 'audit'
+type AudioProperty = 'audio' | 'findPromptAudio' | 'successPhraseAudio'
 
 type RunOptions = {
 	concurrency: number
@@ -37,15 +38,16 @@ type PackRecord = {
 	pack: JsonObject
 }
 
-type LevelEntry = {
+type AudioEntry = {
 	absolutePath: string
+	audioProperty: AudioProperty
 	input: string
 	languageCode: string
-	level: JsonObject
-	levelId: string
+	label: string
 	objectId: string
 	packId: string
 	publicPath: string
+	target: JsonObject
 }
 
 async function main() {
@@ -70,7 +72,7 @@ async function main() {
 	}
 
 	for (const entry of entries) {
-		entry.level.audio = {
+		entry.target[entry.audioProperty] = {
 			type: 'audio',
 			path: entry.publicPath,
 		}
@@ -133,13 +135,14 @@ function parseMode(args: string[]): Mode {
 
 async function loadOpenRouterKey(): Promise<string> {
 	const envPath = path.join(repoRoot, '.env')
-	const env = parseDotEnv(await readFile(envPath, 'utf8'))
+	const envText = await readFile(envPath, 'utf8').catch(() => '')
+	const env = parseDotEnv(envText)
+	if (process.env.VITE_OPENROUTER_API_KEY || env.VITE_OPENROUTER_API_KEY) {
+		throw new Error('Refusing to use a client-exposed OpenRouter key name.')
+	}
 	const key = process.env.OPENROUTER_API_KEY ?? env.OPENROUTER_API_KEY
 	if (!key) {
 		throw new Error('OPENROUTER_API_KEY is missing from .env.')
-	}
-	if (key.startsWith('VITE_')) {
-		throw new Error('Refusing to use a client-exposed key value.')
 	}
 	return key
 }
@@ -173,12 +176,12 @@ function parseDotEnv(source: string): Record<string, string> {
 
 async function loadEntries(
 	packIds: Set<string>,
-): Promise<{ entries: LevelEntry[]; packs: PackRecord[] }> {
+): Promise<{ entries: AudioEntry[]; packs: PackRecord[] }> {
 	const packsDir = path.join(repoRoot, 'content', 'packs')
 	const fileNames = (await readdir(packsDir))
 		.filter((fileName) => fileName.endsWith('.json'))
 		.sort()
-	const entries: LevelEntry[] = []
+	const entries: AudioEntry[] = []
 	const packs: PackRecord[] = []
 
 	for (const fileName of fileNames) {
@@ -206,6 +209,48 @@ async function loadEntries(
 					content[languageCode],
 					`${packId}/${objectId}/${languageCode}`,
 				)
+				const findPrompt = readString(
+					language,
+					'findPrompt',
+					`${packId}/${objectId}/${languageCode}`,
+				)
+				entries.push({
+					absolutePath: path.join(
+						repoRoot,
+						'public',
+						`assets/generated/${packId}/audio/${objectId}-${languageCode}-find.mp3`,
+					),
+					audioProperty: 'findPromptAudio',
+					input: findPrompt,
+					languageCode,
+					label: `${packId}/${objectId}/${languageCode}/find`,
+					objectId,
+					packId,
+					publicPath: `/assets/generated/${packId}/audio/${objectId}-${languageCode}-find.mp3`,
+					target: language,
+				})
+
+				const successPhrase = readString(
+					language,
+					'successPhrase',
+					`${packId}/${objectId}/${languageCode}`,
+				)
+				entries.push({
+					absolutePath: path.join(
+						repoRoot,
+						'public',
+						`assets/generated/${packId}/audio/${objectId}-${languageCode}-success.mp3`,
+					),
+					audioProperty: 'successPhraseAudio',
+					input: successPhrase,
+					languageCode,
+					label: `${packId}/${objectId}/${languageCode}/success`,
+					objectId,
+					packId,
+					publicPath: `/assets/generated/${packId}/audio/${objectId}-${languageCode}-success.mp3`,
+					target: language,
+				})
+
 				const levels = readObject(
 					language.levels,
 					`${packId}/${objectId}/${languageCode}/levels`,
@@ -224,13 +269,14 @@ async function loadEntries(
 					const publicPath = `/assets/generated/${packId}/audio/${objectId}-${languageCode}-${levelId}.mp3`
 					entries.push({
 						absolutePath: path.join(repoRoot, 'public', publicPath.slice(1)),
+						audioProperty: 'audio',
 						input,
 						languageCode,
-						level,
-						levelId,
+						label: `${packId}/${objectId}/${languageCode}/${levelId}`,
 						objectId,
 						packId,
 						publicPath,
+						target: level,
 					})
 				}
 			}
@@ -240,15 +286,15 @@ async function loadEntries(
 	return { entries, packs }
 }
 
-function getAudioPath(level: JsonObject): string | undefined {
-	if (
-		!level.audio ||
-		typeof level.audio !== 'object' ||
-		Array.isArray(level.audio)
-	) {
+function getAudioPath(
+	target: JsonObject,
+	audioProperty: AudioProperty,
+): string | undefined {
+	const value = target[audioProperty]
+	if (!value || typeof value !== 'object' || Array.isArray(value)) {
 		return undefined
 	}
-	const audio = level.audio as JsonObject
+	const audio = value as JsonObject
 	return typeof audio.path === 'string' ? audio.path : undefined
 }
 
@@ -277,7 +323,7 @@ function readObject(value: unknown, label: string): JsonObject {
 
 async function generateAll(
 	key: string,
-	entries: LevelEntry[],
+	entries: AudioEntry[],
 	options: RunOptions,
 ): Promise<void> {
 	let cursor = 0
@@ -294,17 +340,21 @@ async function generateAll(
 				return
 			}
 
-			const label = `${entry.packId}/${entry.objectId}/${entry.languageCode}/${entry.levelId}`
 			try {
 				if (!options.refresh && (await isValidAudioFile(entry.absolutePath))) {
 					skipped += 1
-					console.log(`skip ${label} ${entry.publicPath}`)
+					console.log(`skip ${entry.label} ${entry.publicPath}`)
 					continue
 				}
-				await synthesizeToFile(key, entry.input, entry.absolutePath, label)
+				await synthesizeToFile(
+					key,
+					entry.input,
+					entry.absolutePath,
+					entry.label,
+				)
 				generated += 1
 			} catch (error) {
-				failures.push(`${label}: ${errorMessage(error)}`)
+				failures.push(`${entry.label}: ${errorMessage(error)}`)
 			}
 		}
 	}
@@ -439,15 +489,13 @@ async function writePackFiles(packs: PackRecord[]): Promise<void> {
 	}
 }
 
-async function audit(entries: LevelEntry[]): Promise<void> {
+async function audit(entries: AudioEntry[]): Promise<void> {
 	const seen = new Set<string>()
 	const failures: string[] = []
 
 	for (const entry of entries) {
-		if (getAudioPath(entry.level) !== entry.publicPath) {
-			failures.push(
-				`${entry.packId}/${entry.objectId}/${entry.languageCode}/${entry.levelId} should use ${entry.publicPath}`,
-			)
+		if (getAudioPath(entry.target, entry.audioProperty) !== entry.publicPath) {
+			failures.push(`${entry.label} should use ${entry.publicPath}`)
 		}
 		if (!entry.publicPath.startsWith('/assets/')) {
 			failures.push(`${entry.publicPath} is not an /assets path`)

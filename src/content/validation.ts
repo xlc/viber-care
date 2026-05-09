@@ -68,12 +68,40 @@ export function validateContentPacks(input: unknown[]): ContentPack[] {
 					messages.push(`Object "${object.id}" is missing ${language} content.`)
 					continue
 				}
+				if (!languageContent.findPromptAudio) {
+					messages.push(
+						`Object "${object.id}" is missing ${language} find prompt audio.`,
+					)
+				} else if (languageContent.findPromptAudio.type !== 'audio') {
+					messages.push(
+						`Object "${object.id}" ${language} find prompt audio must be an audio asset.`,
+					)
+				}
+				if (!languageContent.successPhraseAudio) {
+					messages.push(
+						`Object "${object.id}" is missing ${language} success phrase audio.`,
+					)
+				} else if (languageContent.successPhraseAudio.type !== 'audio') {
+					messages.push(
+						`Object "${object.id}" ${language} success phrase audio must be an audio asset.`,
+					)
+				}
 
 				for (const level of LEARNING_LEVELS) {
 					const levelContent = languageContent.levels[level]
 					if (!levelContent) {
 						messages.push(
 							`Object "${object.id}" is missing ${language} ${level} content.`,
+						)
+						continue
+					}
+					if (!levelContent.audio) {
+						messages.push(
+							`Object "${object.id}" is missing ${language} ${level} audio.`,
+						)
+					} else if (levelContent.audio.type !== 'audio') {
+						messages.push(
+							`Object "${object.id}" ${language} ${level} audio must be an audio asset.`,
 						)
 					}
 				}

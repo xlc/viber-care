@@ -176,7 +176,7 @@ export function getFindPrompt(
 			resolvedLevel: fallback.resolvedLevel,
 			text: languageContent?.findPrompt ?? fallback.text,
 			audioText: languageContent?.findPrompt ?? fallback.audioText,
-			audioPath: undefined,
+			audioPath: languageContent?.findPromptAudio?.path,
 		}
 	})
 }
@@ -199,7 +199,7 @@ export function getSuccessPhrase(
 			resolvedLevel: fallback.resolvedLevel,
 			text: languageContent?.successPhrase ?? fallback.text,
 			audioText: languageContent?.successPhrase ?? fallback.audioText,
-			audioPath: undefined,
+			audioPath: languageContent?.successPhraseAudio?.path,
 		}
 	})
 }

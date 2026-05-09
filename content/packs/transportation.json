@@ -561,6 +561,14 @@
 								"path": "/assets/generated/transportation/audio/car-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -624,6 +632,14 @@
 								"path": "/assets/generated/transportation/audio/car-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -733,6 +749,14 @@
 								"path": "/assets/generated/transportation/audio/bus-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -796,6 +820,14 @@
 								"path": "/assets/generated/transportation/audio/bus-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -905,6 +937,14 @@
 								"path": "/assets/generated/transportation/audio/train-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -968,6 +1008,14 @@
 								"path": "/assets/generated/transportation/audio/train-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1077,6 +1125,14 @@
 								"path": "/assets/generated/transportation/audio/airplane-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1140,6 +1196,14 @@
 								"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1249,6 +1313,14 @@
 								"path": "/assets/generated/transportation/audio/boat-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1312,6 +1384,14 @@
 								"path": "/assets/generated/transportation/audio/boat-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1421,6 +1501,14 @@
 								"path": "/assets/generated/transportation/audio/bicycle-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1484,6 +1572,14 @@
 								"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1593,6 +1689,14 @@
 								"path": "/assets/generated/transportation/audio/truck-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1656,6 +1760,14 @@
 								"path": "/assets/generated/transportation/audio/truck-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1765,6 +1877,14 @@
 								"path": "/assets/generated/transportation/audio/taxi-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1828,6 +1948,14 @@
 								"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1937,6 +2065,14 @@
 								"path": "/assets/generated/transportation/audio/scooter-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2000,6 +2136,14 @@
 								"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2109,6 +2253,14 @@
 								"path": "/assets/generated/transportation/audio/helicopter-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2172,6 +2324,14 @@
 								"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-success.mp3"
 					}
 				}
 			},

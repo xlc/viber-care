@@ -17,11 +17,16 @@ const patterns = [
 		regex:
 			/api\.openai\.com|\/v1\/chat\/completions|\/v1\/responses|\/v1\/images/g,
 	},
+	{ name: 'OpenRouter runtime endpoint', regex: /openrouter\.ai/g },
 	{ name: 'Anthropic runtime endpoint', regex: /api\.anthropic\.com/g },
 	{ name: 'Google API key', regex: /\bAIza[A-Za-z0-9_-]{20,}\b/g },
 	{
 		name: 'OpenAI key-like environment variable name',
 		regex: /\b(?:VITE_)?OPENAI_[A-Z0-9_]*KEY\b/g,
+	},
+	{
+		name: 'OpenRouter key-like environment variable name',
+		regex: /\b(?:VITE_)?OPENROUTER_[A-Z0-9_]*KEY\b/g,
 	},
 ]
 
@@ -67,6 +72,9 @@ async function collectFiles(path: string): Promise<string[]> {
 async function main() {
 	for (const [key] of Object.entries(process.env)) {
 		if (/^VITE_.*OPENAI.*KEY$/.test(key)) {
+			throw new Error(`${key} must not be exposed to the client build.`)
+		}
+		if (/^VITE_.*OPENROUTER.*KEY$/.test(key)) {
 			throw new Error(`${key} must not be exposed to the client build.`)
 		}
 	}

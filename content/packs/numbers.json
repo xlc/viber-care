@@ -489,6 +489,14 @@
 								"path": "/assets/generated/numbers/audio/number-one-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -552,6 +560,14 @@
 								"path": "/assets/generated/numbers/audio/number-one-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -661,6 +677,14 @@
 								"path": "/assets/generated/numbers/audio/number-two-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -724,6 +748,14 @@
 								"path": "/assets/generated/numbers/audio/number-two-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -833,6 +865,14 @@
 								"path": "/assets/generated/numbers/audio/number-three-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -896,6 +936,14 @@
 								"path": "/assets/generated/numbers/audio/number-three-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1005,6 +1053,14 @@
 								"path": "/assets/generated/numbers/audio/number-four-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-four-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-four-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1068,6 +1124,14 @@
 								"path": "/assets/generated/numbers/audio/number-four-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-four-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-four-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1177,6 +1241,14 @@
 								"path": "/assets/generated/numbers/audio/number-five-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1240,6 +1312,14 @@
 								"path": "/assets/generated/numbers/audio/number-five-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1349,6 +1429,14 @@
 								"path": "/assets/generated/numbers/audio/number-six-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1412,6 +1500,14 @@
 								"path": "/assets/generated/numbers/audio/number-six-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1521,6 +1617,14 @@
 								"path": "/assets/generated/numbers/audio/number-seven-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1584,6 +1688,14 @@
 								"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1693,6 +1805,14 @@
 								"path": "/assets/generated/numbers/audio/number-eight-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1756,6 +1876,14 @@
 								"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1865,6 +1993,14 @@
 								"path": "/assets/generated/numbers/audio/number-nine-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1928,6 +2064,14 @@
 								"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2037,6 +2181,14 @@
 								"path": "/assets/generated/numbers/audio/number-ten-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2100,6 +2252,14 @@
 								"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-success.mp3"
 					}
 				}
 			},

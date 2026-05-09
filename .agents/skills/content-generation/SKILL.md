@@ -26,11 +26,11 @@ committed source content directly.
   such as sky, water, grass, road, rail, or card fields.
 - Use scene `visibleObjectCount` to show a randomized subset when a scene has
   more candidates than should be visible at once.
-- Generate level audio with
+- Generate level audio and the functional find/success prompt audio with
   `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts`.
   It reads `OPENROUTER_API_KEY` from `.env`, writes static MP3 files under
-  `public/assets/generated/<pack-id>/audio/`, and updates level `audio.path`
-  values to canonical static paths.
+  `public/assets/generated/<pack-id>/audio/`, and updates level and prompt
+  audio path values to canonical static paths.
 - Use the `imagegen` skill for image generation. Do not substitute hand-coded
   SVGs, script-only placeholders, or deterministic drawing code when the task
   calls for generated image assets.
@@ -51,11 +51,11 @@ committed source content directly.
 6. Make every scene spawn candidate reference an object defined in the same pack.
 7. Keep object language content and placement rules in the pack, not in runtime
    engine code.
-8. Generate or refresh static level audio:
+8. Generate or refresh static level and prompt audio:
    `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts --generate --pack <pack-id>`.
 9. Format content JSON after generation:
    `bunx biome format --write content/packs/<pack-id>.json`.
-10. Audit static level audio:
+10. Audit static level and prompt audio:
    `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts --audit --pack <pack-id>`.
 11. Register new packs in `src/content/catalog.ts`.
 12. Run `bun run validate:content`.
@@ -75,8 +75,10 @@ committed source content directly.
   sun outside sky, vehicles outside their travel area, or cards outside the
   intended card field.
 - Audio should match the content pack text for the target language and level.
-- Audio file names should use the canonical shape
-  `/assets/generated/<pack-id>/audio/<object-id>-<language>-<level>.mp3`.
+- Audio file names should use the canonical shapes
+  `/assets/generated/<pack-id>/audio/<object-id>-<language>-<level>.mp3`,
+  `/assets/generated/<pack-id>/audio/<object-id>-<language>-find.mp3`, and
+  `/assets/generated/<pack-id>/audio/<object-id>-<language>-success.mp3`.
 - For a full voice refresh, run the audio helper with `--generate --refresh`.
   Prune old audio only after the content references and `--audit` prove it is
   unreferenced.

@@ -759,6 +759,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-a-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -822,6 +830,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -931,6 +947,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-b-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -994,6 +1018,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1103,6 +1135,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-c-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1166,6 +1206,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1275,6 +1323,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-d-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1338,6 +1394,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1447,6 +1511,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-e-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1510,6 +1582,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1619,6 +1699,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-f-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-f-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-f-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1682,6 +1770,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-f-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-f-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-f-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1791,6 +1887,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-g-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1854,6 +1958,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1963,6 +2075,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-h-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2026,6 +2146,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2135,6 +2263,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-i-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2198,6 +2334,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2307,6 +2451,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-j-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2370,6 +2522,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2479,6 +2639,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-k-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-k-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-k-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2542,6 +2710,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-k-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-k-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-k-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2651,6 +2827,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-l-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2714,6 +2898,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2823,6 +3015,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-m-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-m-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-m-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2886,6 +3086,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-m-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-m-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-m-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2995,6 +3203,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-n-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -3058,6 +3274,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -3167,6 +3391,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-o-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -3230,6 +3462,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -3339,6 +3579,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-p-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -3402,6 +3650,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -3511,6 +3767,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-q-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -3574,6 +3838,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -3683,6 +3955,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-r-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-r-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-r-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -3746,6 +4026,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-r-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-r-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-r-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -3855,6 +4143,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-s-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -3918,6 +4214,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -4027,6 +4331,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-t-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -4090,6 +4402,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -4199,6 +4519,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-u-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -4262,6 +4590,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -4371,6 +4707,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-v-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -4434,6 +4778,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -4543,6 +4895,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-w-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -4606,6 +4966,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -4715,6 +5083,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-x-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-x-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-x-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -4778,6 +5154,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-x-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-x-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-x-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -4887,6 +5271,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-y-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-y-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-y-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -4950,6 +5342,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-y-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-y-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-y-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -5059,6 +5459,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-z-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -5122,6 +5530,14 @@
 								"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-success.mp3"
 					}
 				}
 			},

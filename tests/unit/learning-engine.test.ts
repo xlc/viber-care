@@ -1,7 +1,12 @@
 import { describe, expect, it } from 'vitest'
 import { catalog } from '../../src/content/catalog'
 import type { ObjectConcept } from '../../src/content/schema'
-import { buildLearningSequence, getPack } from '../../src/learning/engine'
+import {
+	buildLearningSequence,
+	getFindPrompt,
+	getPack,
+	getSuccessPhrase,
+} from '../../src/learning/engine'
 import {
 	DEFAULT_SETTINGS,
 	type WordGardenSettings,
@@ -36,6 +41,18 @@ describe('learning engine', () => {
 		)
 		expect(sequence[1]?.audioPath).toBe(
 			'/assets/generated/garden/audio/duck-zh-Hans-L0.mp3',
+		)
+	})
+
+	it('keeps committed audio paths on functional prompts', () => {
+		const findPrompt = getFindPrompt(duck, DEFAULT_SETTINGS)
+		const successPhrase = getSuccessPhrase(duck, DEFAULT_SETTINGS)
+
+		expect(findPrompt[0]?.audioPath).toBe(
+			'/assets/generated/garden/audio/duck-en-find.mp3',
+		)
+		expect(successPhrase[1]?.audioPath).toBe(
+			'/assets/generated/garden/audio/duck-zh-Hans-success.mp3',
 		)
 	})
 

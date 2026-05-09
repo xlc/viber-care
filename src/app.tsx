@@ -5,7 +5,7 @@ import {
 } from '@atlaskit/pragmatic-drag-and-drop/element/adapter'
 import type { JSX } from 'preact'
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
-import { playSoftTap, speakSequence } from './audio/speech'
+import { speakSequence, stopSpeech } from './audio/speech'
 import { catalog } from './content/catalog'
 import type {
 	ContentPack,
@@ -719,6 +719,12 @@ export function App() {
 	}, [settings])
 
 	useEffect(() => {
+		if (settings.muted) {
+			stopSpeech()
+		}
+	}, [settings.muted])
+
+	useEffect(() => {
 		if (scene && placements.length > 0) {
 			preloadSceneAssets(scene, placements)
 		}
@@ -853,7 +859,6 @@ export function App() {
 
 	function handleObjectTap(object: ObjectConcept) {
 		setActiveObjectId(object.id)
-		playSoftTap(settings.muted)
 
 		if (settings.mode === 'find' && targetObject && objects.length > 0) {
 			const activeFindRound = findRound ?? createFindRound(objects)
@@ -913,7 +918,6 @@ export function App() {
 			return
 		}
 
-		playSoftTap(settings.muted)
 		setActiveObjectId(objectId)
 
 		const result = handlePuzzleDrop(puzzleRound, objectId, targetObjectId)

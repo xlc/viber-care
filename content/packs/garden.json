@@ -573,6 +573,14 @@
 								"path": "/assets/generated/garden/audio/duck-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/duck-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/duck-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -636,6 +644,14 @@
 								"path": "/assets/generated/garden/audio/duck-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/duck-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/duck-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -745,6 +761,14 @@
 								"path": "/assets/generated/garden/audio/dog-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -808,6 +832,14 @@
 								"path": "/assets/generated/garden/audio/dog-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -917,6 +949,14 @@
 								"path": "/assets/generated/garden/audio/cat-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -980,6 +1020,14 @@
 								"path": "/assets/generated/garden/audio/cat-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1089,6 +1137,14 @@
 								"path": "/assets/generated/garden/audio/fish-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1152,6 +1208,14 @@
 								"path": "/assets/generated/garden/audio/fish-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1261,6 +1325,14 @@
 								"path": "/assets/generated/garden/audio/apple-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/apple-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/apple-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1324,6 +1396,14 @@
 								"path": "/assets/generated/garden/audio/apple-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/apple-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/apple-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1433,6 +1513,14 @@
 								"path": "/assets/generated/garden/audio/banana-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/banana-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/banana-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1496,6 +1584,14 @@
 								"path": "/assets/generated/garden/audio/banana-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/banana-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/banana-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1605,6 +1701,14 @@
 								"path": "/assets/generated/garden/audio/flower-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1668,6 +1772,14 @@
 								"path": "/assets/generated/garden/audio/flower-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1777,6 +1889,14 @@
 								"path": "/assets/generated/garden/audio/tree-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1840,6 +1960,14 @@
 								"path": "/assets/generated/garden/audio/tree-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1949,6 +2077,14 @@
 								"path": "/assets/generated/garden/audio/sun-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2012,6 +2148,14 @@
 								"path": "/assets/generated/garden/audio/sun-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2121,6 +2265,14 @@
 								"path": "/assets/generated/garden/audio/ball-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2184,6 +2336,14 @@
 								"path": "/assets/generated/garden/audio/ball-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-zh-Hans-success.mp3"
 					}
 				}
 			},

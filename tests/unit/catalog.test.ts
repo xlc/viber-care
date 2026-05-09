@@ -56,18 +56,25 @@ describe('runtime catalog', () => {
 					)
 				}
 				for (const language of REQUIRED_MVP_LANGUAGES) {
-					const levels = object.content[language]?.levels
+					const languageContent = object.content[language]
+					expectStaticAsset(
+						languageContent?.findPromptAudio,
+						`${pack.id}/${object.id}/${language}/findPrompt`,
+					)
+					expectStaticAsset(
+						languageContent?.successPhraseAudio,
+						`${pack.id}/${object.id}/${language}/successPhrase`,
+					)
+					const levels = languageContent?.levels
 
 					for (const level of LEARNING_LEVELS) {
 						const content = levels?.[level]
 						expect(content?.text).toBeTruthy()
 						expect(content?.audioText).toBeTruthy()
-						if (content?.audio) {
-							expectStaticAsset(
-								content.audio,
-								`${pack.id}/${object.id}/${language}/${level}`,
-							)
-						}
+						expectStaticAsset(
+							content?.audio,
+							`${pack.id}/${object.id}/${language}/${level}`,
+						)
 					}
 				}
 			}

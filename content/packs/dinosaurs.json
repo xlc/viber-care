@@ -537,6 +537,14 @@
 								"path": "/assets/generated/dinosaurs/audio/t-rex-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -600,6 +608,14 @@
 								"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -709,6 +725,14 @@
 								"path": "/assets/generated/dinosaurs/audio/triceratops-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -772,6 +796,14 @@
 								"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -881,6 +913,14 @@
 								"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -944,6 +984,14 @@
 								"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1053,6 +1101,14 @@
 								"path": "/assets/generated/dinosaurs/audio/long-neck-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1116,6 +1172,14 @@
 								"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1225,6 +1289,14 @@
 								"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1288,6 +1360,14 @@
 								"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1397,6 +1477,14 @@
 								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1460,6 +1548,14 @@
 								"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1569,6 +1665,14 @@
 								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1632,6 +1736,14 @@
 								"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1741,6 +1853,14 @@
 								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1804,6 +1924,14 @@
 								"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1913,6 +2041,14 @@
 								"path": "/assets/generated/dinosaurs/audio/fossil-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1976,6 +2112,14 @@
 								"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2085,6 +2229,14 @@
 								"path": "/assets/generated/dinosaurs/audio/fern-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2148,6 +2300,14 @@
 								"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-success.mp3"
 					}
 				}
 			},

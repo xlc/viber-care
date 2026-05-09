@@ -41,7 +41,6 @@ export const AssetReferenceSchema = z.object({
 export const InteractionSchema = z.object({
 	id: z.string().min(1),
 	animation: z.enum(['bob', 'bounce', 'glow', 'sway', 'wiggle']),
-	soundEffect: AssetReferenceSchema.optional(),
 })
 
 export const ObjectVariantSchema = z.object({
@@ -63,7 +62,9 @@ export const LanguageContentSchema = z.object({
 	language: LanguageCodeSchema,
 	displayName: z.string().min(1),
 	findPrompt: z.string().min(1),
+	findPromptAudio: AssetReferenceSchema.optional(),
 	successPhrase: z.string().min(1),
+	successPhraseAudio: AssetReferenceSchema.optional(),
 	fallbackText: z.string().min(1),
 	levels: z.record(z.string(), LevelContentSchema).superRefine((value, ctx) => {
 		for (const key of Object.keys(value)) {

@@ -513,6 +513,14 @@
 								"path": "/assets/generated/ocean-animals/audio/fish-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/fish-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/fish-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -576,6 +584,14 @@
 								"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/fish-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -685,6 +701,14 @@
 								"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -748,6 +772,14 @@
 								"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -857,6 +889,14 @@
 								"path": "/assets/generated/ocean-animals/audio/dolphin-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -920,6 +960,14 @@
 								"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1029,6 +1077,14 @@
 								"path": "/assets/generated/ocean-animals/audio/whale-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1092,6 +1148,14 @@
 								"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1201,6 +1265,14 @@
 								"path": "/assets/generated/ocean-animals/audio/crab-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1264,6 +1336,14 @@
 								"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1373,6 +1453,14 @@
 								"path": "/assets/generated/ocean-animals/audio/octopus-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1436,6 +1524,14 @@
 								"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1545,6 +1641,14 @@
 								"path": "/assets/generated/ocean-animals/audio/seahorse-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1608,6 +1712,14 @@
 								"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1717,6 +1829,14 @@
 								"path": "/assets/generated/ocean-animals/audio/starfish-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1780,6 +1900,14 @@
 								"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -1889,6 +2017,14 @@
 								"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -1952,6 +2088,14 @@
 								"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-success.mp3"
 					}
 				}
 			},
@@ -2061,6 +2205,14 @@
 								"path": "/assets/generated/ocean-animals/audio/seal-en-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-en-success.mp3"
 					}
 				},
 				"zh-Hans": {
@@ -2124,6 +2276,14 @@
 								"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L5.mp3"
 							}
 						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-success.mp3"
 					}
 				}
 			},
