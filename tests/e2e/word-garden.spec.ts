@@ -100,6 +100,19 @@ async function getPuzzlePieceIds(page: Page) {
 	)
 }
 
+async function dragPuzzlePieceToGap(
+	page: Page,
+	objectId: string,
+	targetObjectId = objectId,
+) {
+	const piece = page.getByTestId(`puzzle-piece-${objectId}`)
+	const gap = page.getByTestId(`puzzle-gap-${targetObjectId}`)
+	await expect(piece).toBeVisible()
+	await expect(piece).toHaveAttribute('draggable', 'true')
+	await expect(gap).toBeVisible()
+	await piece.dragTo(gap)
+}
+
 async function expectObjectCountBetween(
 	page: Page,
 	min: number,
@@ -224,7 +237,7 @@ test('settings panel can change word detail without raw level labels', async ({
 	).toContainText(/[.!?]/)
 })
 
-test('puzzle mode fills scene gaps', async ({ page }) => {
+test('puzzle mode fills scene gaps by dragging pieces', async ({ page }) => {
 	await page.goto('/')
 
 	await expect(page.getByTestId('mode-puzzle')).toBeVisible()
@@ -250,13 +263,16 @@ test('puzzle mode fills scene gaps', async ({ page }) => {
 	}
 	await page.getByTestId(`puzzle-piece-${firstPieceId}`).click()
 	await page.getByTestId(`puzzle-gap-${firstPieceId}`).click()
+	await expect(page.getByTestId(`object-${firstPieceId}`)).toHaveCount(0)
+	await expect(page.getByTestId(`puzzle-piece-${firstPieceId}`)).toBeVisible()
+
+	await dragPuzzlePieceToGap(page, firstPieceId)
 	await expect(page.getByTestId(`object-${firstPieceId}`)).toBeVisible()
 	await expect(page.getByTestId(`puzzle-piece-${firstPieceId}`)).toHaveCount(0)
 
 	const mismatchIds = await getPuzzlePieceIds(page)
 	if (mismatchIds.length >= 2) {
-		await page.getByTestId(`puzzle-piece-${mismatchIds[0]}`).click()
-		await page.getByTestId(`puzzle-gap-${mismatchIds[1]}`).click()
+		await dragPuzzlePieceToGap(page, mismatchIds[0], mismatchIds[1])
 		await expect(
 			page.getByTestId(`puzzle-piece-${mismatchIds[0]}`),
 		).toBeVisible()
@@ -264,8 +280,8 @@ test('puzzle mode fills scene gaps', async ({ page }) => {
 	await expect(page.getByTestId('prompt')).not.toContainText(/wrong|try again/i)
 
 	for (const objectId of await getPuzzlePieceIds(page)) {
-		await page.getByTestId(`puzzle-piece-${objectId}`).click()
-		await page.getByTestId(`puzzle-gap-${objectId}`).click()
+		await dragPuzzlePieceToGap(page, objectId)
+		await expect(page.getByTestId(`puzzle-piece-${objectId}`)).toHaveCount(0)
 	}
 
 	await expect(page.getByTestId('prompt')).toContainText('Puzzle garden.', {

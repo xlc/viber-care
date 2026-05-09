@@ -1,3 +1,8 @@
+import {
+	draggable,
+	dropTargetForElements,
+	monitorForElements,
+} from '@atlaskit/pragmatic-drag-and-drop/element/adapter'
 import type { JSX } from 'preact'
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { playSoftTap, speakSequence } from './audio/speech'
@@ -78,6 +83,25 @@ type ToastKind = 'hello' | 'word' | 'find' | 'success' | 'puzzle'
 type ToastState = {
 	kind: ToastKind
 	sequence: LearningPresentation[]
+}
+
+const PUZZLE_DRAG_TYPE = 'word-garden-puzzle-piece'
+const PUZZLE_GAP_TYPE = 'word-garden-puzzle-gap'
+
+function getPuzzlePieceObjectId(data: Record<string, unknown>) {
+	if (data.type !== PUZZLE_DRAG_TYPE || typeof data.objectId !== 'string') {
+		return null
+	}
+
+	return data.objectId
+}
+
+function getPuzzleGapObjectId(data: Record<string | symbol, unknown>) {
+	if (data.type !== PUZZLE_GAP_TYPE || typeof data.objectId !== 'string') {
+		return null
+	}
+
+	return data.objectId
 }
 
 function useCatalog(): { catalog: RuntimeCatalog; error: null } {
@@ -260,44 +284,53 @@ function GardenObjectButton({
 
 function PuzzleGapButton({
 	placement,
-	selectedObjectId,
-	onPuzzleDrop,
+	draggedObjectId,
+	hoveredTargetObjectId,
+	onHoverTargetChange,
 }: {
 	placement: VisibleScenePlacement
-	selectedObjectId: string | null
-	onPuzzleDrop: (objectId: string, targetObjectId: string) => void
+	draggedObjectId: string | null
+	hoveredTargetObjectId: string | null
+	onHoverTargetChange: (objectId: string | null) => void
 }) {
 	const style = getPlacementStyle(placement)
-	const selected = selectedObjectId === placement.object.id
+	const elementRef = useRef<HTMLButtonElement | null>(null)
+	const targetObjectId = placement.object.id
+	const active = hoveredTargetObjectId === targetObjectId
+	const valid = active && draggedObjectId === targetObjectId
+
+	useEffect(() => {
+		const element = elementRef.current
+		if (!element) {
+			return
+		}
+
+		return dropTargetForElements({
+			element,
+			getData: () => ({
+				type: PUZZLE_GAP_TYPE,
+				objectId: targetObjectId,
+			}),
+			canDrop: ({ source }) => getPuzzlePieceObjectId(source.data) !== null,
+			getDropEffect: () => 'move',
+			onDragEnter: () => onHoverTargetChange(targetObjectId),
+			onDragLeave: () => onHoverTargetChange(null),
+			onDrop: () => onHoverTargetChange(null),
+		})
+	}, [onHoverTargetChange, targetObjectId])
 
 	return (
 		<button
-			className={`puzzle-gap ${selected ? 'is-selected' : ''}`}
+			ref={elementRef}
+			className={`puzzle-gap ${active ? 'is-drop-hover' : ''} ${
+				valid ? 'is-valid-drop' : ''
+			}`}
 			style={style}
 			type="button"
 			data-testid={`puzzle-gap-${placement.object.id}`}
 			aria-label={`Puzzle spot for ${
 				placement.variant.image.alt ?? placement.object.id
 			}`}
-			onClick={() => {
-				if (selectedObjectId) {
-					onPuzzleDrop(selectedObjectId, placement.object.id)
-				}
-			}}
-			onDragOver={(event) => event.preventDefault()}
-			onDrop={(event) => {
-				event.preventDefault()
-				const transfer = event.dataTransfer
-				if (!transfer) {
-					return
-				}
-				const objectId =
-					transfer.getData('application/x-word-garden-object-id') ||
-					transfer.getData('text/plain')
-				if (objectId) {
-					onPuzzleDrop(objectId, placement.object.id)
-				}
-			}}
 		>
 			<img src={placement.variant.image.path} alt="" draggable={false} />
 		</button>
@@ -306,53 +339,74 @@ function PuzzleGapButton({
 
 function PuzzleTray({
 	placements,
-	selectedObjectId,
 	settings,
-	onSelect,
+	onDraggingObjectChange,
 }: {
 	placements: VisibleScenePlacement[]
-	selectedObjectId: string | null
 	settings: WordGardenSettings
-	onSelect: (objectId: string) => void
+	onDraggingObjectChange: (objectId: string | null) => void
 }) {
 	return (
 		<section className="puzzle-tray" aria-label="Puzzle pieces">
-			{placements.map((placement) => {
-				const firstPresentation = buildLearningSequence(
-					placement.object,
-					settings,
-				)[0]
-
-				return (
-					<button
-						key={placement.object.id}
-						type="button"
-						className={`puzzle-piece ${
-							selectedObjectId === placement.object.id ? 'is-selected' : ''
-						}`}
-						data-testid={`puzzle-piece-${placement.object.id}`}
-						aria-pressed={selectedObjectId === placement.object.id}
-						aria-label={firstPresentation?.text ?? placement.object.id}
-						draggable
-						onClick={() => onSelect(placement.object.id)}
-						onDragStart={(event) => {
-							const transfer = event.dataTransfer
-							if (!transfer) {
-								return
-							}
-							transfer.effectAllowed = 'move'
-							transfer.setData(
-								'application/x-word-garden-object-id',
-								placement.object.id,
-							)
-							transfer.setData('text/plain', placement.object.id)
-						}}
-					>
-						<img src={placement.variant.image.path} alt="" draggable={false} />
-					</button>
-				)
-			})}
+			{placements.map((placement) => (
+				<PuzzlePieceButton
+					key={placement.object.id}
+					placement={placement}
+					settings={settings}
+					onDraggingObjectChange={onDraggingObjectChange}
+				/>
+			))}
 		</section>
+	)
+}
+
+function PuzzlePieceButton({
+	placement,
+	settings,
+	onDraggingObjectChange,
+}: {
+	placement: VisibleScenePlacement
+	settings: WordGardenSettings
+	onDraggingObjectChange: (objectId: string | null) => void
+}) {
+	const elementRef = useRef<HTMLButtonElement | null>(null)
+	const [isDragging, setIsDragging] = useState(false)
+	const objectId = placement.object.id
+	const firstPresentation = buildLearningSequence(placement.object, settings)[0]
+
+	useEffect(() => {
+		const element = elementRef.current
+		if (!element) {
+			return
+		}
+
+		return draggable({
+			element,
+			getInitialData: () => ({
+				type: PUZZLE_DRAG_TYPE,
+				objectId,
+			}),
+			onDragStart: () => {
+				setIsDragging(true)
+				onDraggingObjectChange(objectId)
+			},
+			onDrop: () => {
+				setIsDragging(false)
+				onDraggingObjectChange(null)
+			},
+		})
+	}, [objectId, onDraggingObjectChange])
+
+	return (
+		<button
+			ref={elementRef}
+			type="button"
+			className={`puzzle-piece ${isDragging ? 'is-dragging' : ''}`}
+			data-testid={`puzzle-piece-${objectId}`}
+			aria-label={firstPresentation?.text ?? objectId}
+		>
+			<img src={placement.variant.image.path} alt="" draggable={false} />
+		</button>
 	)
 }
 
@@ -583,7 +637,10 @@ export function App() {
 	const [findRound, setFindRound] = useState<FindRound | null>(null)
 	const [puzzleRound, setPuzzleRound] = useState<PuzzleRound | null>(null)
 	const [puzzleRoundIndex, setPuzzleRoundIndex] = useState(0)
-	const [selectedPuzzleObjectId, setSelectedPuzzleObjectId] = useState<
+	const [draggedPuzzleObjectId, setDraggedPuzzleObjectId] = useState<
+		string | null
+	>(null)
+	const [hoveredPuzzleTargetId, setHoveredPuzzleTargetId] = useState<
 		string | null
 	>(null)
 	const [toast, setToast] = useState<ToastState>({
@@ -592,6 +649,9 @@ export function App() {
 	})
 	const shouldSpeakPromptRef = useRef(false)
 	const puzzleResetTimeoutRef = useRef<number | null>(null)
+	const puzzleDropRef = useRef<
+		(objectId: string, targetObjectId: string) => void
+	>(() => {})
 
 	const selectedPackId = catalog?.packs.some(
 		(packOption) => packOption.id === settings.selectedPackId,
@@ -669,6 +729,24 @@ export function App() {
 	}, [])
 
 	useEffect(() => {
+		return monitorForElements({
+			canMonitor: ({ source }) => getPuzzlePieceObjectId(source.data) !== null,
+			onDrop: ({ source, location }) => {
+				const objectId = getPuzzlePieceObjectId(source.data)
+				const targetObjectId =
+					location.current.dropTargets
+						.map((target) => getPuzzleGapObjectId(target.data))
+						.find((target): target is string => Boolean(target)) ?? null
+				if (objectId && targetObjectId) {
+					puzzleDropRef.current(objectId, targetObjectId)
+				}
+				setDraggedPuzzleObjectId(null)
+				setHoveredPuzzleTargetId(null)
+			},
+		})
+	}, [])
+
+	useEffect(() => {
 		if (
 			settings.mode === 'find' &&
 			objects.length > 0 &&
@@ -687,7 +765,8 @@ export function App() {
 		setFindRound(null)
 		setPuzzleRound(null)
 		setPuzzleRoundIndex(0)
-		setSelectedPuzzleObjectId(null)
+		setDraggedPuzzleObjectId(null)
+		setHoveredPuzzleTargetId(null)
 		setToast({ kind: 'hello', sequence: [] })
 	}, [selectedPackId, activeSubPackId])
 
@@ -697,7 +776,8 @@ export function App() {
 		setFindRound(null)
 		setPuzzleRound(null)
 		setPuzzleRoundIndex(0)
-		setSelectedPuzzleObjectId(null)
+		setDraggedPuzzleObjectId(null)
+		setHoveredPuzzleTargetId(null)
 		setToast({ kind: 'hello', sequence: [] })
 	}, [scene?.id])
 
@@ -746,7 +826,8 @@ export function App() {
 			setFindRound((round) => round ?? createFindRound(objects))
 		}
 		if (nextSettings.mode === 'puzzle') {
-			setSelectedPuzzleObjectId(null)
+			setDraggedPuzzleObjectId(null)
+			setHoveredPuzzleTargetId(null)
 			setToast({ kind: 'puzzle', sequence: [] })
 		}
 	}
@@ -829,13 +910,11 @@ export function App() {
 
 		const object = objectById.get(objectId)
 		if (!object) {
-			setSelectedPuzzleObjectId(null)
 			return
 		}
 
 		playSoftTap(settings.muted)
 		setActiveObjectId(objectId)
-		setSelectedPuzzleObjectId(null)
 
 		const result = handlePuzzleDrop(puzzleRound, objectId, targetObjectId)
 		if (!result.isMatch) {
@@ -863,11 +942,13 @@ export function App() {
 				setPuzzleRoundIndex(nextRoundIndex)
 				setPuzzleRound(createPuzzleRound(placements, nextRoundIndex))
 				setActiveObjectId(null)
-				setSelectedPuzzleObjectId(null)
+				setDraggedPuzzleObjectId(null)
+				setHoveredPuzzleTargetId(null)
 				setToast({ kind: 'puzzle', sequence: [] })
 			}, 1400)
 		}
 	}
+	puzzleDropRef.current = handlePuzzleAttempt
 
 	function clearPuzzleResetTimeout() {
 		if (puzzleResetTimeoutRef.current === null) {
@@ -1007,8 +1088,9 @@ export function App() {
 									<PuzzleGapButton
 										key={placement.object.id}
 										placement={placement}
-										selectedObjectId={selectedPuzzleObjectId}
-										onPuzzleDrop={handlePuzzleAttempt}
+										draggedObjectId={draggedPuzzleObjectId}
+										hoveredTargetObjectId={hoveredPuzzleTargetId}
+										onHoverTargetChange={setHoveredPuzzleTargetId}
 									/>
 								),
 							)}
@@ -1026,9 +1108,8 @@ export function App() {
 						</div>
 						<PuzzleTray
 							placements={puzzleTrayPlacements}
-							selectedObjectId={selectedPuzzleObjectId}
 							settings={settings}
-							onSelect={setSelectedPuzzleObjectId}
+							onDraggingObjectChange={setDraggedPuzzleObjectId}
 						/>
 					</div>
 				) : (
