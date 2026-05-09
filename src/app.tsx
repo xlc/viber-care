@@ -980,7 +980,6 @@ export function App() {
 		)
 	}
 
-	const title = pack.title.en
 	const sceneTitle = scene.title.en
 	const hasSceneNavigation = activeScenes.length > 1
 	const promptSequence =
@@ -1002,22 +1001,49 @@ export function App() {
 		: undefined
 
 	return (
-		<main className="app-shell" data-mode={settings.mode}>
+		<main
+			className="app-shell"
+			data-mode={settings.mode}
+			aria-label="Word Garden"
+		>
 			<header className="topbar">
-				<div className="brand">
-					<span className="brand-mark" aria-hidden="true">
-						W
-					</span>
-					<div>
-						<h1>{title}</h1>
-						<p data-testid="scene-title">{sceneTitle}</p>
-					</div>
-				</div>
-
 				<ModeSegment
 					mode={settings.mode}
 					onChange={(mode) => updateSettings({ ...settings, mode })}
 				/>
+
+				<nav
+					className={
+						hasSceneNavigation ? 'scene-nav' : 'scene-nav is-single-scene'
+					}
+					aria-label="Scene"
+				>
+					{hasSceneNavigation ? (
+						<button
+							type="button"
+							className="icon-button"
+							aria-label="Previous scene"
+							data-testid="scene-previous"
+							disabled={normalizedSceneIndex === 0}
+							onClick={() => selectScene(normalizedSceneIndex - 1)}
+						>
+							<Icon name="previous" />
+						</button>
+					) : null}
+					<span data-testid="scene-title">{sceneTitle}</span>
+					{hasSceneNavigation ? (
+						<button
+							type="button"
+							className="icon-button"
+							aria-label="Next scene"
+							data-testid="scene-next"
+							disabled={normalizedSceneIndex === activeScenes.length - 1}
+							onClick={() => selectScene(normalizedSceneIndex + 1)}
+						>
+							<Icon name="next" />
+						</button>
+					) : null}
+				</nav>
 
 				<div className="topbar-actions">
 					<button
@@ -1044,10 +1070,7 @@ export function App() {
 				</div>
 			</header>
 
-			<section
-				className={`play-area ${hasSceneNavigation ? 'has-scene-nav' : ''}`}
-				aria-label={sceneTitle}
-			>
+			<section className="play-area" aria-label={sceneTitle}>
 				<div className={`prompt-ribbon is-${promptKind}`} data-testid="prompt">
 					{promptSequence.length > 0 ? (
 						<SequenceText sequence={promptSequence} />
@@ -1057,32 +1080,6 @@ export function App() {
 						<strong>Hello, garden.</strong>
 					)}
 				</div>
-
-				{hasSceneNavigation ? (
-					<nav className="scene-nav" aria-label="Scene">
-						<button
-							type="button"
-							className="icon-button"
-							aria-label="Previous scene"
-							data-testid="scene-previous"
-							disabled={normalizedSceneIndex === 0}
-							onClick={() => selectScene(normalizedSceneIndex - 1)}
-						>
-							<Icon name="previous" />
-						</button>
-						<span>{sceneTitle}</span>
-						<button
-							type="button"
-							className="icon-button"
-							aria-label="Next scene"
-							data-testid="scene-next"
-							disabled={normalizedSceneIndex === activeScenes.length - 1}
-							onClick={() => selectScene(normalizedSceneIndex + 1)}
-						>
-							<Icon name="next" />
-						</button>
-					</nav>
-				) : null}
 
 				{settings.mode === 'puzzle' ? (
 					<div className="puzzle-layout">

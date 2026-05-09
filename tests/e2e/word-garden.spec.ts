@@ -106,7 +106,7 @@ async function expectObjectCountBetween(
 test('app loads', async ({ page }) => {
 	await page.goto('/')
 
-	await expect(page.getByRole('heading', { name: 'Word Garden' })).toBeVisible()
+	await expect(page).toHaveTitle('Word Garden')
 	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
 	await expectObjectCountBetween(page, 5, 6)
 	await expect(page.locator('.garden-object').first()).toHaveAttribute(
