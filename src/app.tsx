@@ -583,7 +583,11 @@ function ParentSettings({
 								<button
 									key={pack.id}
 									type="button"
-									className="pack-card"
+									className={
+										selectedPack.id === pack.id
+											? 'pack-card is-selected'
+											: 'pack-card'
+									}
 									aria-pressed={selectedPack.id === pack.id}
 									data-testid={`pack-${pack.id}`}
 									onClick={() =>
@@ -622,7 +626,11 @@ function ParentSettings({
 									<button
 										key={subPack.id}
 										type="button"
-										className="set-card"
+										className={
+											selectedSubPack.id === subPack.id
+												? 'set-card is-selected'
+												: 'set-card'
+										}
 										aria-pressed={selectedSubPack.id === subPack.id}
 										data-testid={`set-${subPack.id}`}
 										onClick={() =>
@@ -645,14 +653,6 @@ function ParentSettings({
 						</div>
 					</div>
 				) : null}
-
-				<div className="settings-section">
-					<h3>Mode</h3>
-					<ModeSegment
-						mode={settings.mode}
-						onChange={(mode) => update({ mode })}
-					/>
-				</div>
 
 				<div className="settings-section">
 					<h3>Word Detail</h3>

@@ -109,6 +109,18 @@ async function getPuzzlePieceIds(page: Page) {
 	)
 }
 
+async function getLanguageCardSize(page: Page) {
+	const box = await page.getByTestId('language-card').boundingBox()
+	if (!box) {
+		throw new Error('Expected language card to have a layout box')
+	}
+
+	return {
+		width: Math.round(box.width),
+		height: Math.round(box.height),
+	}
+}
+
 async function dragPuzzlePieceToGap(
 	page: Page,
 	objectId: string,
@@ -207,10 +219,9 @@ test('find mode handles immediate taps after alphabet set changes', async ({
 	await expect(page.getByTestId('prompt')).toContainText('You found')
 })
 
-test('find mode stays silent while muted from settings', async ({ page }) => {
+test('find mode stays silent while muted', async ({ page }) => {
 	await page.goto('/')
-	await page.getByTestId('settings-button').click()
-	await page.getByRole('dialog').getByTestId('mode-find').click()
+	await page.getByTestId('mode-find').click()
 
 	await expect.poll(() => getAudioPlayCount(page)).toBe(0)
 	await expect(page.getByTestId('prompt')).toContainText('Find')
@@ -225,6 +236,39 @@ test('settings panel can change language order', async ({ page }) => {
 
 	const firstWord = page.getByTestId('word-tray').locator('.word-line').first()
 	await expect(firstWord.locator('span')).toHaveAttribute('lang', 'zh-Hans')
+})
+
+test('settings panel highlights the current pack selection', async ({
+	page,
+}) => {
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+
+	const gardenPack = page.getByTestId('pack-garden')
+	const numbersPack = page.getByTestId('pack-numbers')
+	await expect(gardenPack).toHaveAttribute('aria-pressed', 'true')
+	await expect(gardenPack).toHaveClass(/is-selected/)
+	await expect(numbersPack).toHaveAttribute('aria-pressed', 'false')
+	await expect(numbersPack).not.toHaveClass(/is-selected/)
+
+	await numbersPack.click()
+
+	await expect(numbersPack).toHaveAttribute('aria-pressed', 'true')
+	await expect(numbersPack).toHaveClass(/is-selected/)
+	await expect(gardenPack).toHaveAttribute('aria-pressed', 'false')
+	await expect(gardenPack).not.toHaveClass(/is-selected/)
+})
+
+test('settings panel does not expose mode controls', async ({ page }) => {
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+	const dialog = page.getByRole('dialog')
+
+	await expect(dialog.getByText('Mode', { exact: true })).toHaveCount(0)
+	await expect(dialog.getByTestId('mode-explore')).toHaveCount(0)
+	await expect(dialog.getByTestId('mode-find')).toHaveCount(0)
+	await expect(dialog.getByTestId('mode-puzzle')).toHaveCount(0)
+	await expect(dialog.getByTestId('mode-cards')).toHaveCount(0)
 })
 
 test('settings panel can change word detail without raw level labels', async ({
@@ -250,11 +294,6 @@ test('cards mode shows pack-wide language cards', async ({ page }) => {
 	await page.goto('/')
 
 	await expect(page.getByTestId('mode-cards')).toBeVisible()
-	await page.getByTestId('settings-button').click()
-	const dialog = page.getByRole('dialog')
-	await expect(dialog.getByTestId('mode-cards')).toBeVisible()
-	await page.getByLabel('Close settings').click()
-
 	await page.getByTestId('mode-cards').click()
 	await expect(page.getByTestId('deck-title')).toContainText('Garden')
 	await expect(page.getByTestId('language-card')).toBeVisible()
@@ -297,6 +336,25 @@ test('cards mode shows pack-wide language cards', async ({ page }) => {
 		'data-object-id',
 		gardenObjectIds[0],
 	)
+})
+
+test('cards mode keeps a fixed card size across the deck', async ({ page }) => {
+	await page.goto('/')
+	await page.getByTestId('mode-cards').click()
+	await expect(page.getByTestId('language-card')).toBeVisible()
+
+	const firstSize = await getLanguageCardSize(page)
+	const visitedSizes = [firstSize]
+
+	for (let index = 0; index < 4; index += 1) {
+		await page.getByTestId('card-next').click()
+		visitedSizes.push(await getLanguageCardSize(page))
+	}
+
+	for (const size of visitedSizes) {
+		expect(Math.abs(size.width - firstSize.width)).toBeLessThanOrEqual(1)
+		expect(Math.abs(size.height - firstSize.height)).toBeLessThanOrEqual(1)
+	}
 })
 
 test('cards mode uses the whole selected pack deck', async ({ page }) => {
@@ -358,12 +416,6 @@ test('puzzle mode fills scene gaps by dragging pieces', async ({ page }) => {
 	await page.goto('/')
 
 	await expect(page.getByTestId('mode-puzzle')).toBeVisible()
-
-	await page.getByTestId('settings-button').click()
-	const dialog = page.getByRole('dialog')
-	await expect(dialog.getByTestId('mode-puzzle')).toBeVisible()
-	await page.getByLabel('Close settings').click()
-
 	await page.getByTestId('mode-puzzle').click()
 	await expect(page.getByTestId('prompt')).toContainText('Puzzle garden.')
 	const initialCount = await expectObjectCountBetween(
