@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs'
+import path from 'node:path'
 import { expect, type Page, test } from '@playwright/test'
 import {
 	DEFAULT_SETTINGS,
@@ -65,6 +67,36 @@ async function getAudioPlayCount(page: Page) {
 	return page.evaluate(() => {
 		const captureWindow = window as AudioCaptureWindow
 		return captureWindow.__audioPlayCount?.count ?? 0
+	})
+}
+
+async function resetAudioPlayCount(page: Page) {
+	await page.evaluate(() => {
+		const captureWindow = window as AudioCaptureWindow
+		if (captureWindow.__audioPlayCount) {
+			captureWindow.__audioPlayCount.count = 0
+		}
+	})
+}
+
+function getPackObjectIds(packId: string) {
+	const packPath = path.join(
+		process.cwd(),
+		'content',
+		'packs',
+		`${packId}.json`,
+	)
+	const pack = JSON.parse(readFileSync(packPath, 'utf8')) as {
+		objects?: Array<{ id?: unknown }>
+	}
+	if (!pack.objects) {
+		throw new Error(`Pack ${packId} has no objects`)
+	}
+	return pack.objects.map((object) => {
+		if (typeof object.id !== 'string') {
+			throw new Error(`Pack ${packId} has an object without an id`)
+		}
+		return object.id
 	})
 }
 
@@ -212,6 +244,114 @@ test('settings panel can change word detail without raw level labels', async ({
 	await expect(
 		page.getByTestId('word-tray').locator('.word-line').first(),
 	).toContainText(/[.!?]/)
+})
+
+test('cards mode shows pack-wide language cards', async ({ page }) => {
+	await page.goto('/')
+
+	await expect(page.getByTestId('mode-cards')).toBeVisible()
+	await page.getByTestId('settings-button').click()
+	const dialog = page.getByRole('dialog')
+	await expect(dialog.getByTestId('mode-cards')).toBeVisible()
+	await page.getByLabel('Close settings').click()
+
+	await page.getByTestId('mode-cards').click()
+	await expect(page.getByTestId('deck-title')).toContainText('Garden')
+	await expect(page.getByTestId('language-card')).toBeVisible()
+	await expect(
+		page.getByTestId('card-words').locator('.word-line'),
+	).toHaveCount(2)
+	await expect(
+		page
+			.getByTestId('card-words')
+			.locator('.word-line')
+			.first()
+			.locator('span'),
+	).toHaveAttribute('lang', 'en')
+
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('preset-zh-then-en').click()
+	await page.getByLabel('Close settings').click()
+	await expect(
+		page
+			.getByTestId('card-words')
+			.locator('.word-line')
+			.first()
+			.locator('span'),
+	).toHaveAttribute('lang', 'zh-Hans')
+
+	const gardenObjectIds = getPackObjectIds('garden')
+	const visitedObjectIds = new Set<string>()
+	for (let index = 0; index < gardenObjectIds.length; index += 1) {
+		const objectId = await page
+			.getByTestId('language-card')
+			.getAttribute('data-object-id')
+		if (objectId) {
+			visitedObjectIds.add(objectId)
+		}
+		await page.getByTestId('card-next').click()
+	}
+
+	expect([...visitedObjectIds].sort()).toEqual([...gardenObjectIds].sort())
+	await expect(page.getByTestId('language-card')).toHaveAttribute(
+		'data-object-id',
+		gardenObjectIds[0],
+	)
+})
+
+test('cards mode uses the whole selected pack deck', async ({ page }) => {
+	await page.goto('/')
+	await page.getByTestId('mode-cards').click()
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('pack-english-alphabet').click()
+	await page.getByLabel('Close settings').click()
+
+	const alphabetObjectIds = getPackObjectIds('english-alphabet')
+	await expect(page.getByTestId('mode-cards')).toHaveAttribute(
+		'aria-pressed',
+		'true',
+	)
+	await expect(page.getByTestId('deck-title')).toContainText('English Alphabet')
+	await expect(page.getByTestId('card-count')).toContainText(
+		`1 / ${alphabetObjectIds.length}`,
+	)
+
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('set-alphabet-u-z').click()
+	await page.getByLabel('Close settings').click()
+	await expect(page.getByTestId('mode-cards')).toHaveAttribute(
+		'aria-pressed',
+		'true',
+	)
+	await expect(page.getByTestId('card-count')).toContainText(
+		`1 / ${alphabetObjectIds.length}`,
+	)
+})
+
+test('cards audio is user initiated and respects mute', async ({ page }) => {
+	await page.goto('/')
+	await page.getByTestId('mute-button').click()
+	await expect(page.getByTestId('mute-button')).toHaveAttribute(
+		'aria-pressed',
+		'false',
+	)
+	await resetAudioPlayCount(page)
+
+	await page.getByTestId('mode-cards').click()
+	await expect(page.getByTestId('language-card')).toBeVisible()
+	await expect.poll(() => getAudioPlayCount(page)).toBe(0)
+
+	await page.getByTestId('card-speak').click()
+	await expect.poll(() => getAudioPlayCount(page)).toBeGreaterThan(0)
+
+	await page.getByTestId('mute-button').click()
+	await expect(page.getByTestId('mute-button')).toHaveAttribute(
+		'aria-pressed',
+		'true',
+	)
+	await resetAudioPlayCount(page)
+	await page.getByTestId('card-main').click()
+	await expect.poll(() => getAudioPlayCount(page)).toBe(0)
 })
 
 test('puzzle mode fills scene gaps by dragging pieces', async ({ page }) => {

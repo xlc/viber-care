@@ -3,6 +3,7 @@ import {
 	DEFAULT_SETTINGS,
 	loadSettings,
 	resolveLanguageOrder,
+	SETTINGS_STORAGE_KEY,
 	type StorageLike,
 	saveSettings,
 	type WordGardenSettings,
@@ -29,6 +30,7 @@ describe('settings persistence', () => {
 		const storage = new MemoryStorage()
 		const settings: WordGardenSettings = {
 			...DEFAULT_SETTINGS,
+			mode: 'cards',
 			selectedPackId: 'english-alphabet',
 			selectedSubPackId: 'alphabet-u-z',
 			languageOrderPreset: 'zh-then-en',
@@ -41,5 +43,15 @@ describe('settings persistence', () => {
 
 		expect(loaded).toEqual(settings)
 		expect(resolveLanguageOrder(loaded)).toEqual(['zh-Hans', 'en'])
+	})
+
+	it('falls back from invalid stored modes', () => {
+		const storage = new MemoryStorage()
+		storage.setItem(
+			SETTINGS_STORAGE_KEY,
+			JSON.stringify({ ...DEFAULT_SETTINGS, mode: 'story' }),
+		)
+
+		expect(loadSettings(storage).mode).toBe(DEFAULT_SETTINGS.mode)
 	})
 })

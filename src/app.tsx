@@ -44,6 +44,7 @@ import {
 } from './learning/engine'
 import {
 	DEFAULT_SETTINGS,
+	GAME_MODES,
 	type GameMode,
 	LANGUAGE_ORDER_PRESETS,
 	type LanguageOrderPreset,
@@ -63,6 +64,7 @@ const modeLabels: Record<GameMode, string> = {
 	explore: 'Explore',
 	find: 'Find',
 	puzzle: 'Puzzle',
+	cards: 'Cards',
 }
 
 const wordDetailOptions: ReadonlyArray<{
@@ -225,18 +227,104 @@ function Icon({
 	return null
 }
 
-function SequenceText({ sequence }: { sequence: LearningPresentation[] }) {
+function SequenceText({
+	sequence,
+	testId = 'word-tray',
+}: {
+	sequence: LearningPresentation[]
+	testId?: string
+}) {
 	return (
-		<div className="sequence-text" data-testid="word-tray">
+		<span className="sequence-text" data-testid={testId}>
 			{sequence.map((item) => (
-				<div
+				<span
 					className="word-line"
 					key={`${item.requestedLanguage}-${item.text}`}
 				>
 					<span lang={item.resolvedLanguage}>{item.text}</span>
-				</div>
+				</span>
 			))}
-		</div>
+		</span>
+	)
+}
+
+function LanguageCard({
+	object,
+	cardIndex,
+	totalCards,
+	settings,
+	onPrevious,
+	onNext,
+	onSpeak,
+}: {
+	object: ObjectConcept
+	cardIndex: number
+	totalCards: number
+	settings: WordGardenSettings
+	onPrevious: () => void
+	onNext: () => void
+	onSpeak: () => void
+}) {
+	const sequence = buildLearningSequence(object, settings)
+	const variantIndex = cardIndex % object.variants.length
+	const variant = object.variants[variantIndex]
+	const firstPresentation = sequence[0]
+
+	return (
+		<section className="cards-stage" aria-label="Language cards">
+			<article
+				className="language-card"
+				data-testid="language-card"
+				data-object-id={object.id}
+			>
+				<button
+					type="button"
+					className="language-card-main"
+					aria-label={`Hear ${firstPresentation?.text ?? object.id}`}
+					data-testid="card-main"
+					onClick={onSpeak}
+				>
+					<img src={variant.image.path} alt="" draggable={false} />
+					<SequenceText sequence={sequence} testId="card-words" />
+				</button>
+				<div className="card-controls" role="group" aria-label="Card controls">
+					<button
+						type="button"
+						className="icon-button"
+						aria-label="Previous card"
+						data-testid="card-previous"
+						onClick={onPrevious}
+					>
+						<Icon name="previous" />
+					</button>
+					<span
+						className="card-count"
+						aria-live="polite"
+						data-testid="card-count"
+					>
+						{cardIndex + 1} / {totalCards}
+					</span>
+					<button
+						type="button"
+						className="icon-button"
+						aria-label="Hear card"
+						data-testid="card-speak"
+						onClick={onSpeak}
+					>
+						<Icon name="volume" />
+					</button>
+					<button
+						type="button"
+						className="icon-button"
+						aria-label="Next card"
+						data-testid="card-next"
+						onClick={onNext}
+					>
+						<Icon name="next" />
+					</button>
+				</div>
+			</article>
+		</section>
 	)
 }
 
@@ -419,7 +507,7 @@ function ModeSegment({
 }) {
 	return (
 		<div className="mode-segment" role="group" aria-label="Game mode">
-			{(['explore', 'find', 'puzzle'] as const).map((candidate) => (
+			{GAME_MODES.map((candidate) => (
 				<button
 					key={candidate}
 					type="button"
@@ -449,6 +537,7 @@ function ParentSettings({
 	function update(partial: Partial<WordGardenSettings>) {
 		onChange({ ...settings, ...partial })
 	}
+	const contentChangeMode = settings.mode === 'cards' ? 'cards' : 'explore'
 
 	const selectedPack = getPack(catalog, settings.selectedPackId)
 	const selectedPackSubPacks = getPackSubPacks(selectedPack)
@@ -501,7 +590,7 @@ function ParentSettings({
 										update({
 											selectedPackId: pack.id,
 											selectedSubPackId: defaultSubPack.id,
-											mode: 'explore',
+											mode: contentChangeMode,
 										})
 									}
 								>
@@ -539,7 +628,7 @@ function ParentSettings({
 										onClick={() =>
 											update({
 												selectedSubPackId: subPack.id,
-												mode: 'explore',
+												mode: contentChangeMode,
 											})
 										}
 									>
@@ -637,6 +726,7 @@ export function App() {
 	const [findRound, setFindRound] = useState<FindRound | null>(null)
 	const [puzzleRound, setPuzzleRound] = useState<PuzzleRound | null>(null)
 	const [puzzleRoundIndex, setPuzzleRoundIndex] = useState(0)
+	const [cardIndex, setCardIndex] = useState(0)
 	const [draggedPuzzleObjectId, setDraggedPuzzleObjectId] = useState<
 		string | null
 	>(null)
@@ -659,6 +749,10 @@ export function App() {
 		? settings.selectedPackId
 		: DEFAULT_SETTINGS.selectedPackId
 	const pack = catalog ? getPack(catalog, selectedPackId) : null
+	const cardObjects = pack?.objects ?? []
+	const normalizedCardIndex =
+		cardObjects.length > 0 ? Math.min(cardIndex, cardObjects.length - 1) : 0
+	const activeCardObject = cardObjects[normalizedCardIndex] ?? null
 	const activeSubPackId = pack
 		? getSelectedSubPack(pack, settings.selectedSubPackId).id
 		: null
@@ -729,6 +823,10 @@ export function App() {
 			preloadSceneAssets(scene, placements)
 		}
 	}, [scene, placements])
+
+	useEffect(() => {
+		setCardIndex(0)
+	}, [selectedPackId])
 
 	useEffect(() => {
 		return () => clearPuzzleResetTimeout()
@@ -836,6 +934,32 @@ export function App() {
 			setHoveredPuzzleTargetId(null)
 			setToast({ kind: 'puzzle', sequence: [] })
 		}
+		if (nextSettings.mode === 'cards') {
+			setDraggedPuzzleObjectId(null)
+			setHoveredPuzzleTargetId(null)
+			setToast({ kind: 'hello', sequence: [] })
+		}
+	}
+
+	function selectCard(offset: number) {
+		if (cardObjects.length === 0) {
+			return
+		}
+
+		setCardIndex((currentIndex) => {
+			return (currentIndex + offset + cardObjects.length) % cardObjects.length
+		})
+	}
+
+	function speakCard() {
+		if (!activeCardObject) {
+			return
+		}
+
+		speakSequence(
+			buildLearningSequence(activeCardObject, settings),
+			settings.muted,
+		)
 	}
 
 	function selectScene(nextSceneIndex: number) {
@@ -981,6 +1105,8 @@ export function App() {
 	}
 
 	const sceneTitle = scene.title.en
+	const deckTitle = pack.title.en ?? pack.id
+	const isCardsMode = settings.mode === 'cards'
 	const hasSceneNavigation = activeScenes.length > 1
 	const promptSequence =
 		toast.sequence.length > 0
@@ -1012,38 +1138,44 @@ export function App() {
 					onChange={(mode) => updateSettings({ ...settings, mode })}
 				/>
 
-				<nav
-					className={
-						hasSceneNavigation ? 'scene-nav' : 'scene-nav is-single-scene'
-					}
-					aria-label="Scene"
-				>
-					{hasSceneNavigation ? (
-						<button
-							type="button"
-							className="icon-button"
-							aria-label="Previous scene"
-							data-testid="scene-previous"
-							disabled={normalizedSceneIndex === 0}
-							onClick={() => selectScene(normalizedSceneIndex - 1)}
-						>
-							<Icon name="previous" />
-						</button>
-					) : null}
-					<span data-testid="scene-title">{sceneTitle}</span>
-					{hasSceneNavigation ? (
-						<button
-							type="button"
-							className="icon-button"
-							aria-label="Next scene"
-							data-testid="scene-next"
-							disabled={normalizedSceneIndex === activeScenes.length - 1}
-							onClick={() => selectScene(normalizedSceneIndex + 1)}
-						>
-							<Icon name="next" />
-						</button>
-					) : null}
-				</nav>
+				{isCardsMode ? (
+					<div className="scene-nav is-single-scene">
+						<span data-testid="deck-title">{deckTitle}</span>
+					</div>
+				) : (
+					<nav
+						className={
+							hasSceneNavigation ? 'scene-nav' : 'scene-nav is-single-scene'
+						}
+						aria-label="Scene"
+					>
+						{hasSceneNavigation ? (
+							<button
+								type="button"
+								className="icon-button"
+								aria-label="Previous scene"
+								data-testid="scene-previous"
+								disabled={normalizedSceneIndex === 0}
+								onClick={() => selectScene(normalizedSceneIndex - 1)}
+							>
+								<Icon name="previous" />
+							</button>
+						) : null}
+						<span data-testid="scene-title">{sceneTitle}</span>
+						{hasSceneNavigation ? (
+							<button
+								type="button"
+								className="icon-button"
+								aria-label="Next scene"
+								data-testid="scene-next"
+								disabled={normalizedSceneIndex === activeScenes.length - 1}
+								onClick={() => selectScene(normalizedSceneIndex + 1)}
+							>
+								<Icon name="next" />
+							</button>
+						) : null}
+					</nav>
+				)}
 
 				<div className="topbar-actions">
 					<button
@@ -1070,33 +1202,72 @@ export function App() {
 				</div>
 			</header>
 
-			<section className="play-area" aria-label={sceneTitle}>
-				<div className={`prompt-ribbon is-${promptKind}`} data-testid="prompt">
-					{promptSequence.length > 0 ? (
-						<SequenceText sequence={promptSequence} />
-					) : settings.mode === 'puzzle' ? (
-						<strong>Puzzle garden.</strong>
-					) : (
-						<strong>Hello, garden.</strong>
-					)}
-				</div>
-
-				{settings.mode === 'puzzle' ? (
-					<div className="puzzle-layout">
-						<div className="garden-stage is-puzzle" style={backgroundStyle}>
-							{placements.map((placement) =>
-								placedPuzzleObjectIds.includes(placement.object.id) ? null : (
-									<PuzzleGapButton
-										key={placement.object.id}
-										placement={placement}
-										draggedObjectId={draggedPuzzleObjectId}
-										hoveredTargetObjectId={hoveredPuzzleTargetId}
-										onHoverTargetChange={setHoveredPuzzleTargetId}
-									/>
-								),
+			<section
+				className={`play-area ${isCardsMode ? 'is-cards' : ''}`}
+				aria-label={isCardsMode ? deckTitle : sceneTitle}
+			>
+				{isCardsMode && activeCardObject ? (
+					<LanguageCard
+						object={activeCardObject}
+						cardIndex={normalizedCardIndex}
+						totalCards={cardObjects.length}
+						settings={settings}
+						onPrevious={() => selectCard(-1)}
+						onNext={() => selectCard(1)}
+						onSpeak={speakCard}
+					/>
+				) : (
+					<>
+						<div
+							className={`prompt-ribbon is-${promptKind}`}
+							data-testid="prompt"
+						>
+							{promptSequence.length > 0 ? (
+								<SequenceText sequence={promptSequence} />
+							) : settings.mode === 'puzzle' ? (
+								<strong>Puzzle garden.</strong>
+							) : (
+								<strong>Hello, garden.</strong>
 							)}
-							{placements.map((placement) =>
-								placedPuzzleObjectIds.includes(placement.object.id) ? (
+						</div>
+
+						{settings.mode === 'puzzle' ? (
+							<div className="puzzle-layout">
+								<div className="garden-stage is-puzzle" style={backgroundStyle}>
+									{placements.map((placement) =>
+										placedPuzzleObjectIds.includes(
+											placement.object.id,
+										) ? null : (
+											<PuzzleGapButton
+												key={placement.object.id}
+												placement={placement}
+												draggedObjectId={draggedPuzzleObjectId}
+												hoveredTargetObjectId={hoveredPuzzleTargetId}
+												onHoverTargetChange={setHoveredPuzzleTargetId}
+											/>
+										),
+									)}
+									{placements.map((placement) =>
+										placedPuzzleObjectIds.includes(placement.object.id) ? (
+											<GardenObjectButton
+												key={placement.object.id}
+												placement={placement}
+												active={activeObjectId === placement.object.id}
+												onTap={handleObjectTap}
+												settings={settings}
+											/>
+										) : null,
+									)}
+								</div>
+								<PuzzleTray
+									placements={puzzleTrayPlacements}
+									settings={settings}
+									onDraggingObjectChange={setDraggedPuzzleObjectId}
+								/>
+							</div>
+						) : (
+							<div className="garden-stage" style={backgroundStyle}>
+								{placements.map((placement) => (
 									<GardenObjectButton
 										key={placement.object.id}
 										placement={placement}
@@ -1104,27 +1275,10 @@ export function App() {
 										onTap={handleObjectTap}
 										settings={settings}
 									/>
-								) : null,
-							)}
-						</div>
-						<PuzzleTray
-							placements={puzzleTrayPlacements}
-							settings={settings}
-							onDraggingObjectChange={setDraggedPuzzleObjectId}
-						/>
-					</div>
-				) : (
-					<div className="garden-stage" style={backgroundStyle}>
-						{placements.map((placement) => (
-							<GardenObjectButton
-								key={placement.object.id}
-								placement={placement}
-								active={activeObjectId === placement.object.id}
-								onTap={handleObjectTap}
-								settings={settings}
-							/>
-						))}
-					</div>
+								))}
+							</div>
+						)}
+					</>
 				)}
 			</section>
 
