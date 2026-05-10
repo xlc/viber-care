@@ -140,7 +140,7 @@ test('app loads', async ({ page }) => {
 
 	await expect(page).toHaveTitle('Word Garden')
 	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
-	await expectObjectCountBetween(page, 5, 6)
+	await expectObjectCountBetween(page, 8, 10)
 	await expect(page.locator('.garden-object').first()).toHaveAttribute(
 		'data-variant-id',
 		/classic|bright-large/,
@@ -368,8 +368,8 @@ test('puzzle mode fills scene gaps by dragging pieces', async ({ page }) => {
 	await expect(page.getByTestId('prompt')).toContainText('Puzzle garden.')
 	const initialCount = await expectObjectCountBetween(
 		page,
-		5,
-		6,
+		8,
+		10,
 		'.puzzle-piece',
 	)
 	await expect(page.locator('.puzzle-gap')).toHaveCount(initialCount)
@@ -421,7 +421,7 @@ test('settings panel can switch to the ocean animals pack', async ({
 	await page.getByLabel('Close settings').click()
 
 	await expect(page.getByTestId('scene-title')).toContainText('Ocean Cove')
-	await expectObjectCountBetween(page, 5, 6)
+	await expectObjectCountBetween(page, 8, 10)
 	await page.locator('.garden-object').first().click()
 	await expect(page.getByTestId('word-tray').locator('.word-line')).toHaveCount(
 		2,
@@ -465,11 +465,11 @@ test('settings panel can switch to numbers and English alphabet packs', async ({
 test('scene navigation shows another randomized scene', async ({ page }) => {
 	await page.goto('/')
 
-	await expectObjectCountBetween(page, 5, 6)
+	await expectObjectCountBetween(page, 8, 10)
 	await page.getByTestId('scene-next').click()
 
 	await expect(page.getByTestId('scene-title')).toContainText('Pond Garden')
-	await expectObjectCountBetween(page, 5, 6)
+	await expectObjectCountBetween(page, 8, 10)
 	await expect(page.getByTestId('scene-previous')).toBeEnabled()
 })
 

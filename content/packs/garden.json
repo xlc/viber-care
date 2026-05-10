@@ -188,6 +188,86 @@
 						"min": 0.79,
 						"max": 0.95
 					}
+				},
+				{
+					"objectId": "butterfly",
+					"x": 52,
+					"y": 20,
+					"scale": 0.7,
+					"zIndex": 3,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.64,
+						"max": 0.77
+					}
+				},
+				{
+					"objectId": "bee",
+					"x": 72,
+					"y": 37,
+					"scale": 0.6,
+					"zIndex": 5,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.55,
+						"max": 0.66
+					}
+				},
+				{
+					"objectId": "frog",
+					"x": 55,
+					"y": 70,
+					"scale": 0.74,
+					"zIndex": 6,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					}
+				},
+				{
+					"objectId": "mushroom",
+					"x": 42,
+					"y": 88,
+					"scale": 0.66,
+					"zIndex": 7,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"objectId": "bird",
+					"x": 84,
+					"y": 42,
+					"scale": 0.64,
+					"zIndex": 5,
+					"regionTags": ["tree"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.59,
+						"max": 0.7
+					}
 				}
 			],
 			"music": {
@@ -250,8 +330,8 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 5,
-				"max": 6
+				"min": 8,
+				"max": 10
 			}
 		},
 		{
@@ -434,6 +514,86 @@
 						"min": 0.79,
 						"max": 0.95
 					}
+				},
+				{
+					"objectId": "butterfly",
+					"x": 74,
+					"y": 20,
+					"scale": 0.7,
+					"zIndex": 3,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.64,
+						"max": 0.77
+					}
+				},
+				{
+					"objectId": "bee",
+					"x": 31,
+					"y": 40,
+					"scale": 0.6,
+					"zIndex": 5,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.55,
+						"max": 0.66
+					}
+				},
+				{
+					"objectId": "frog",
+					"x": 33,
+					"y": 70,
+					"scale": 0.74,
+					"zIndex": 6,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					}
+				},
+				{
+					"objectId": "mushroom",
+					"x": 68,
+					"y": 86,
+					"scale": 0.66,
+					"zIndex": 7,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"objectId": "bird",
+					"x": 16,
+					"y": 42,
+					"scale": 0.64,
+					"zIndex": 5,
+					"regionTags": ["tree"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.59,
+						"max": 0.7
+					}
 				}
 			],
 			"music": {
@@ -496,8 +656,8 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 5,
-				"max": 6
+				"min": 8,
+				"max": 10
 			}
 		}
 	],
@@ -2378,6 +2538,946 @@
 						}
 					},
 					"visualPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "butterfly",
+			"category": "animal",
+			"tags": ["garden", "insect", "wings", "sky"],
+			"visualPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background.",
+			"interaction": {
+				"id": "butterfly-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the butterfly.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-en-find.mp3"
+					},
+					"successPhrase": "You found the butterfly.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-en-success.mp3"
+					},
+					"fallbackText": "butterfly",
+					"levels": {
+						"L0": {
+							"text": "butterfly",
+							"audioText": "butterfly",
+							"fallbackText": "butterfly",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The butterfly flutters.",
+							"audioText": "The butterfly flutters.",
+							"fallbackText": "butterfly",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "colorful butterfly",
+							"audioText": "colorful butterfly",
+							"fallbackText": "butterfly",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The butterfly floats above the flowers.",
+							"audioText": "The butterfly floats above the flowers.",
+							"fallbackText": "butterfly",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has soft wings? The butterfly has soft wings.",
+							"audioText": "Who has soft wings? The butterfly has soft wings.",
+							"fallbackText": "butterfly",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The butterfly gently flutters in the sunny garden.",
+							"audioText": "The butterfly gently flutters in the sunny garden.",
+							"fallbackText": "butterfly",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找蝴蝶。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到蝴蝶了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-zh-Hans-success.mp3"
+					},
+					"fallbackText": "蝴蝶",
+					"levels": {
+						"L0": {
+							"text": "蝴蝶",
+							"audioText": "蝴蝶",
+							"fallbackText": "蝴蝶",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "蝴蝶轻轻飞。",
+							"audioText": "蝴蝶轻轻飞。",
+							"fallbackText": "蝴蝶",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "彩色的蝴蝶",
+							"audioText": "彩色的蝴蝶",
+							"fallbackText": "蝴蝶",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "蝴蝶在花上方飞。",
+							"audioText": "蝴蝶在花上方飞。",
+							"fallbackText": "蝴蝶",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有柔软的翅膀？蝴蝶有柔软的翅膀。",
+							"audioText": "谁有柔软的翅膀？蝴蝶有柔软的翅膀。",
+							"fallbackText": "蝴蝶",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "蝴蝶在阳光花园里轻轻飞。",
+							"audioText": "蝴蝶在阳光花园里轻轻飞。",
+							"fallbackText": "蝴蝶",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/butterfly.webp",
+						"alt": "butterfly",
+						"generationPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background.",
+						"placeholder": {
+							"label": "butterfly",
+							"emoji": "🦋"
+						}
+					},
+					"visualPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/butterfly-bright.webp",
+						"alt": "butterfly bright large",
+						"generationPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "butterfly",
+							"emoji": "🦋"
+						}
+					},
+					"visualPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "bee",
+			"category": "animal",
+			"tags": ["garden", "insect", "wings", "flower"],
+			"visualPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background.",
+			"interaction": {
+				"id": "bee-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the bee.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-en-find.mp3"
+					},
+					"successPhrase": "You found the bee.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-en-success.mp3"
+					},
+					"fallbackText": "bee",
+					"levels": {
+						"L0": {
+							"text": "bee",
+							"audioText": "bee",
+							"fallbackText": "bee",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The bee buzzes softly.",
+							"audioText": "The bee buzzes softly.",
+							"fallbackText": "bee",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "little garden bee",
+							"audioText": "little garden bee",
+							"fallbackText": "bee",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The bee visits a flower.",
+							"audioText": "The bee visits a flower.",
+							"fallbackText": "bee",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who buzzes by the flower? The bee buzzes by.",
+							"audioText": "Who buzzes by the flower? The bee buzzes by.",
+							"fallbackText": "bee",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The bee gently buzzes through the garden.",
+							"audioText": "The bee gently buzzes through the garden.",
+							"fallbackText": "bee",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找蜜蜂。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到蜜蜂了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-zh-Hans-success.mp3"
+					},
+					"fallbackText": "蜜蜂",
+					"levels": {
+						"L0": {
+							"text": "蜜蜂",
+							"audioText": "蜜蜂",
+							"fallbackText": "蜜蜂",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "蜜蜂轻轻嗡嗡叫。",
+							"audioText": "蜜蜂轻轻嗡嗡叫。",
+							"fallbackText": "蜜蜂",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "花园小蜜蜂",
+							"audioText": "花园小蜜蜂",
+							"fallbackText": "蜜蜂",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "蜜蜂来到花旁边。",
+							"audioText": "蜜蜂来到花旁边。",
+							"fallbackText": "蜜蜂",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁在花旁嗡嗡叫？蜜蜂飞过来了。",
+							"audioText": "谁在花旁嗡嗡叫？蜜蜂飞过来了。",
+							"fallbackText": "蜜蜂",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "蜜蜂在花园里轻轻飞。",
+							"audioText": "蜜蜂在花园里轻轻飞。",
+							"fallbackText": "蜜蜂",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bee-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/bee.webp",
+						"alt": "bee",
+						"generationPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background.",
+						"placeholder": {
+							"label": "bee",
+							"emoji": "🐝"
+						}
+					},
+					"visualPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/bee-bright.webp",
+						"alt": "bee bright large",
+						"generationPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "bee",
+							"emoji": "🐝"
+						}
+					},
+					"visualPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "frog",
+			"category": "animal",
+			"tags": ["garden", "pond", "animal", "green"],
+			"visualPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background.",
+			"interaction": {
+				"id": "frog-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the frog.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-en-find.mp3"
+					},
+					"successPhrase": "You found the frog.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-en-success.mp3"
+					},
+					"fallbackText": "frog",
+					"levels": {
+						"L0": {
+							"text": "frog",
+							"audioText": "frog",
+							"fallbackText": "frog",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The frog hops.",
+							"audioText": "The frog hops.",
+							"fallbackText": "frog",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "green pond frog",
+							"audioText": "green pond frog",
+							"fallbackText": "frog",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The frog sits by the pond.",
+							"audioText": "The frog sits by the pond.",
+							"fallbackText": "frog",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who can hop? The frog can hop.",
+							"audioText": "Who can hop? The frog can hop.",
+							"fallbackText": "frog",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The frog makes a soft hop near the water.",
+							"audioText": "The frog makes a soft hop near the water.",
+							"fallbackText": "frog",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找青蛙。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到青蛙了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-zh-Hans-success.mp3"
+					},
+					"fallbackText": "青蛙",
+					"levels": {
+						"L0": {
+							"text": "青蛙",
+							"audioText": "青蛙",
+							"fallbackText": "青蛙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "青蛙跳一跳。",
+							"audioText": "青蛙跳一跳。",
+							"fallbackText": "青蛙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "绿色的池塘青蛙",
+							"audioText": "绿色的池塘青蛙",
+							"fallbackText": "青蛙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "青蛙坐在池塘边。",
+							"audioText": "青蛙坐在池塘边。",
+							"fallbackText": "青蛙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁会跳？青蛙会跳。",
+							"audioText": "谁会跳？青蛙会跳。",
+							"fallbackText": "青蛙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "青蛙在水边轻轻跳一下。",
+							"audioText": "青蛙在水边轻轻跳一下。",
+							"fallbackText": "青蛙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/frog-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/frog.webp",
+						"alt": "frog",
+						"generationPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background.",
+						"placeholder": {
+							"label": "frog",
+							"emoji": "🐸"
+						}
+					},
+					"visualPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/frog-bright.webp",
+						"alt": "frog bright large",
+						"generationPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "frog",
+							"emoji": "🐸"
+						}
+					},
+					"visualPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "mushroom",
+			"category": "plant",
+			"tags": ["garden", "plant", "ground", "mushroom"],
+			"visualPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background.",
+			"interaction": {
+				"id": "mushroom-glow",
+				"animation": "glow"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the mushroom.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-en-find.mp3"
+					},
+					"successPhrase": "You found the mushroom.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-en-success.mp3"
+					},
+					"fallbackText": "mushroom",
+					"levels": {
+						"L0": {
+							"text": "mushroom",
+							"audioText": "mushroom",
+							"fallbackText": "mushroom",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The mushroom is round.",
+							"audioText": "The mushroom is round.",
+							"fallbackText": "mushroom",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "red garden mushroom",
+							"audioText": "red garden mushroom",
+							"fallbackText": "mushroom",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The mushroom grows in the grass.",
+							"audioText": "The mushroom grows in the grass.",
+							"fallbackText": "mushroom",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What has a little cap? The mushroom has a cap.",
+							"audioText": "What has a little cap? The mushroom has a cap.",
+							"fallbackText": "mushroom",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The mushroom rests quietly in the soft grass.",
+							"audioText": "The mushroom rests quietly in the soft grass.",
+							"fallbackText": "mushroom",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找蘑菇。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到蘑菇了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-zh-Hans-success.mp3"
+					},
+					"fallbackText": "蘑菇",
+					"levels": {
+						"L0": {
+							"text": "蘑菇",
+							"audioText": "蘑菇",
+							"fallbackText": "蘑菇",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "蘑菇圆圆的。",
+							"audioText": "蘑菇圆圆的。",
+							"fallbackText": "蘑菇",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "红色的花园蘑菇",
+							"audioText": "红色的花园蘑菇",
+							"fallbackText": "蘑菇",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "蘑菇长在草地上。",
+							"audioText": "蘑菇长在草地上。",
+							"fallbackText": "蘑菇",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么有小伞盖？蘑菇有小伞盖。",
+							"audioText": "什么有小伞盖？蘑菇有小伞盖。",
+							"fallbackText": "蘑菇",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "蘑菇安静地待在软软的草地上。",
+							"audioText": "蘑菇安静地待在软软的草地上。",
+							"fallbackText": "蘑菇",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/mushroom.webp",
+						"alt": "mushroom",
+						"generationPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background.",
+						"placeholder": {
+							"label": "mushroom",
+							"emoji": "🍄"
+						}
+					},
+					"visualPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/mushroom-bright.webp",
+						"alt": "mushroom bright large",
+						"generationPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "mushroom",
+							"emoji": "🍄"
+						}
+					},
+					"visualPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "bird",
+			"category": "animal",
+			"tags": ["garden", "bird", "tree", "sky"],
+			"visualPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background.",
+			"interaction": {
+				"id": "bird-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the bird.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-en-find.mp3"
+					},
+					"successPhrase": "You found the bird.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-en-success.mp3"
+					},
+					"fallbackText": "bird",
+					"levels": {
+						"L0": {
+							"text": "bird",
+							"audioText": "bird",
+							"fallbackText": "bird",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The bird chirps softly.",
+							"audioText": "The bird chirps softly.",
+							"fallbackText": "bird",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "little blue bird",
+							"audioText": "little blue bird",
+							"fallbackText": "bird",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The bird sits near the tree.",
+							"audioText": "The bird sits near the tree.",
+							"fallbackText": "bird",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who sings in the garden? The bird sings.",
+							"audioText": "Who sings in the garden? The bird sings.",
+							"fallbackText": "bird",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The bird gives a gentle chirp from the tree.",
+							"audioText": "The bird gives a gentle chirp from the tree.",
+							"fallbackText": "bird",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找小鸟。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到小鸟了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-zh-Hans-success.mp3"
+					},
+					"fallbackText": "小鸟",
+					"levels": {
+						"L0": {
+							"text": "小鸟",
+							"audioText": "小鸟",
+							"fallbackText": "小鸟",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "小鸟轻轻叫。",
+							"audioText": "小鸟轻轻叫。",
+							"fallbackText": "小鸟",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "蓝色的小鸟",
+							"audioText": "蓝色的小鸟",
+							"fallbackText": "小鸟",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "小鸟停在树旁边。",
+							"audioText": "小鸟停在树旁边。",
+							"fallbackText": "小鸟",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁在花园里唱歌？小鸟在唱歌。",
+							"audioText": "谁在花园里唱歌？小鸟在唱歌。",
+							"fallbackText": "小鸟",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "小鸟在树边轻轻叫一声。",
+							"audioText": "小鸟在树边轻轻叫一声。",
+							"fallbackText": "小鸟",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/garden/audio/bird-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/bird.webp",
+						"alt": "bird",
+						"generationPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background.",
+						"placeholder": {
+							"label": "bird",
+							"emoji": "🐦"
+						}
+					},
+					"visualPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/garden/bird-bright.webp",
+						"alt": "bird bright large",
+						"generationPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "bird",
+							"emoji": "🐦"
+						}
+					},
+					"visualPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
 					"scaleMultiplier": 1.12
 				}
 			]

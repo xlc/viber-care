@@ -188,6 +188,86 @@
 						"min": 0.86,
 						"max": 1.03
 					}
+				},
+				{
+					"objectId": "ray",
+					"x": 18,
+					"y": 49,
+					"scale": 0.94,
+					"zIndex": 5,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
+				},
+				{
+					"objectId": "lobster",
+					"x": 15,
+					"y": 86,
+					"scale": 0.78,
+					"zIndex": 9,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				},
+				{
+					"objectId": "clam",
+					"x": 62,
+					"y": 84,
+					"scale": 0.66,
+					"zIndex": 9,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"objectId": "shrimp",
+					"x": 70,
+					"y": 61,
+					"scale": 0.66,
+					"zIndex": 7,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"objectId": "squid",
+					"x": 88,
+					"y": 55,
+					"scale": 0.78,
+					"zIndex": 7,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
 				}
 			],
 			"music": {
@@ -220,8 +300,8 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 5,
-				"max": 6
+				"min": 8,
+				"max": 10
 			}
 		},
 		{
@@ -404,6 +484,86 @@
 						"min": 0.86,
 						"max": 1.03
 					}
+				},
+				{
+					"objectId": "ray",
+					"x": 83,
+					"y": 49,
+					"scale": 0.94,
+					"zIndex": 5,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
+				},
+				{
+					"objectId": "lobster",
+					"x": 15,
+					"y": 86,
+					"scale": 0.78,
+					"zIndex": 9,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				},
+				{
+					"objectId": "clam",
+					"x": 42,
+					"y": 84,
+					"scale": 0.66,
+					"zIndex": 9,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"objectId": "shrimp",
+					"x": 72,
+					"y": 60,
+					"scale": 0.66,
+					"zIndex": 7,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"objectId": "squid",
+					"x": 90,
+					"y": 55,
+					"scale": 0.78,
+					"zIndex": 7,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
 				}
 			],
 			"music": {
@@ -436,8 +596,8 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 5,
-				"max": 6
+				"min": 8,
+				"max": 10
 			}
 		}
 	],
@@ -2318,6 +2478,946 @@
 						}
 					},
 					"visualPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "ray",
+			"category": "animal",
+			"tags": ["ocean", "water", "animal", "ray"],
+			"visualPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background.",
+			"interaction": {
+				"id": "ray-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the ray.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-en-find.mp3"
+					},
+					"successPhrase": "You found the ray.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-en-success.mp3"
+					},
+					"fallbackText": "ray",
+					"levels": {
+						"L0": {
+							"text": "ray",
+							"audioText": "ray",
+							"fallbackText": "ray",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The ray glides.",
+							"audioText": "The ray glides.",
+							"fallbackText": "ray",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "wide blue ray",
+							"audioText": "wide blue ray",
+							"fallbackText": "ray",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The ray glides through the water.",
+							"audioText": "The ray glides through the water.",
+							"fallbackText": "ray",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has wide fins? The ray has wide fins.",
+							"audioText": "Who has wide fins? The ray has wide fins.",
+							"fallbackText": "ray",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The ray floats calmly in the ocean water.",
+							"audioText": "The ray floats calmly in the ocean water.",
+							"fallbackText": "ray",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找鳐鱼。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到鳐鱼了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-success.mp3"
+					},
+					"fallbackText": "鳐鱼",
+					"levels": {
+						"L0": {
+							"text": "鳐鱼",
+							"audioText": "鳐鱼",
+							"fallbackText": "鳐鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "鳐鱼滑滑地游。",
+							"audioText": "鳐鱼滑滑地游。",
+							"fallbackText": "鳐鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "宽宽的蓝色鳐鱼",
+							"audioText": "宽宽的蓝色鳐鱼",
+							"fallbackText": "鳐鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "鳐鱼在水里滑行。",
+							"audioText": "鳐鱼在水里滑行。",
+							"fallbackText": "鳐鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有宽宽的鳍？鳐鱼有宽宽的鳍。",
+							"audioText": "谁有宽宽的鳍？鳐鱼有宽宽的鳍。",
+							"fallbackText": "鳐鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "鳐鱼在海水里安静地游。",
+							"audioText": "鳐鱼在海水里安静地游。",
+							"fallbackText": "鳐鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/ray.webp",
+						"alt": "ray",
+						"generationPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background.",
+						"placeholder": {
+							"label": "ray",
+							"emoji": "🐟"
+						}
+					},
+					"visualPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/ray-bright.webp",
+						"alt": "ray bright large",
+						"generationPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "ray",
+							"emoji": "🐟"
+						}
+					},
+					"visualPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "lobster",
+			"category": "animal",
+			"tags": ["ocean", "seabed", "animal", "claws"],
+			"visualPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background.",
+			"interaction": {
+				"id": "lobster-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the lobster.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-en-find.mp3"
+					},
+					"successPhrase": "You found the lobster.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-en-success.mp3"
+					},
+					"fallbackText": "lobster",
+					"levels": {
+						"L0": {
+							"text": "lobster",
+							"audioText": "lobster",
+							"fallbackText": "lobster",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The lobster waves.",
+							"audioText": "The lobster waves.",
+							"fallbackText": "lobster",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "red ocean lobster",
+							"audioText": "red ocean lobster",
+							"fallbackText": "lobster",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The lobster walks on the seabed.",
+							"audioText": "The lobster walks on the seabed.",
+							"fallbackText": "lobster",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has little claws? The lobster has claws.",
+							"audioText": "Who has little claws? The lobster has claws.",
+							"fallbackText": "lobster",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The lobster gently waves on the sandy seabed.",
+							"audioText": "The lobster gently waves on the sandy seabed.",
+							"fallbackText": "lobster",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找龙虾。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到龙虾了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-success.mp3"
+					},
+					"fallbackText": "龙虾",
+					"levels": {
+						"L0": {
+							"text": "龙虾",
+							"audioText": "龙虾",
+							"fallbackText": "龙虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "龙虾挥一挥。",
+							"audioText": "龙虾挥一挥。",
+							"fallbackText": "龙虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "红色的海洋龙虾",
+							"audioText": "红色的海洋龙虾",
+							"fallbackText": "龙虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "龙虾在海底走。",
+							"audioText": "龙虾在海底走。",
+							"fallbackText": "龙虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有小钳子？龙虾有小钳子。",
+							"audioText": "谁有小钳子？龙虾有小钳子。",
+							"fallbackText": "龙虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "龙虾在沙沙的海底轻轻挥一挥。",
+							"audioText": "龙虾在沙沙的海底轻轻挥一挥。",
+							"fallbackText": "龙虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/lobster.webp",
+						"alt": "lobster",
+						"generationPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background.",
+						"placeholder": {
+							"label": "lobster",
+							"emoji": "🦞"
+						}
+					},
+					"visualPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/lobster-bright.webp",
+						"alt": "lobster bright large",
+						"generationPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "lobster",
+							"emoji": "🦞"
+						}
+					},
+					"visualPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "clam",
+			"category": "animal",
+			"tags": ["ocean", "seabed", "shell", "shore"],
+			"visualPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background.",
+			"interaction": {
+				"id": "clam-glow",
+				"animation": "glow"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the clam.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-en-find.mp3"
+					},
+					"successPhrase": "You found the clam.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-en-success.mp3"
+					},
+					"fallbackText": "clam",
+					"levels": {
+						"L0": {
+							"text": "clam",
+							"audioText": "clam",
+							"fallbackText": "clam",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The clam opens.",
+							"audioText": "The clam opens.",
+							"fallbackText": "clam",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "pretty shell clam",
+							"audioText": "pretty shell clam",
+							"fallbackText": "clam",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The clam rests on the sand.",
+							"audioText": "The clam rests on the sand.",
+							"fallbackText": "clam",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What has a shell? The clam has a shell.",
+							"audioText": "What has a shell? The clam has a shell.",
+							"fallbackText": "clam",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The clam sits quietly on the ocean sand.",
+							"audioText": "The clam sits quietly on the ocean sand.",
+							"fallbackText": "clam",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找蛤蜊。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到蛤蜊了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-success.mp3"
+					},
+					"fallbackText": "蛤蜊",
+					"levels": {
+						"L0": {
+							"text": "蛤蜊",
+							"audioText": "蛤蜊",
+							"fallbackText": "蛤蜊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "蛤蜊打开了。",
+							"audioText": "蛤蜊打开了。",
+							"fallbackText": "蛤蜊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "漂亮贝壳蛤蜊",
+							"audioText": "漂亮贝壳蛤蜊",
+							"fallbackText": "蛤蜊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "蛤蜊躺在沙子上。",
+							"audioText": "蛤蜊躺在沙子上。",
+							"fallbackText": "蛤蜊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么有贝壳？蛤蜊有贝壳。",
+							"audioText": "什么有贝壳？蛤蜊有贝壳。",
+							"fallbackText": "蛤蜊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "蛤蜊安静地待在海底沙子上。",
+							"audioText": "蛤蜊安静地待在海底沙子上。",
+							"fallbackText": "蛤蜊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/clam.webp",
+						"alt": "clam",
+						"generationPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background.",
+						"placeholder": {
+							"label": "clam",
+							"emoji": "🦪"
+						}
+					},
+					"visualPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/clam-bright.webp",
+						"alt": "clam bright large",
+						"generationPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "clam",
+							"emoji": "🦪"
+						}
+					},
+					"visualPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "shrimp",
+			"category": "animal",
+			"tags": ["ocean", "water", "animal", "shrimp"],
+			"visualPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background.",
+			"interaction": {
+				"id": "shrimp-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the shrimp.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-en-find.mp3"
+					},
+					"successPhrase": "You found the shrimp.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-en-success.mp3"
+					},
+					"fallbackText": "shrimp",
+					"levels": {
+						"L0": {
+							"text": "shrimp",
+							"audioText": "shrimp",
+							"fallbackText": "shrimp",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The shrimp curls.",
+							"audioText": "The shrimp curls.",
+							"fallbackText": "shrimp",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "little orange shrimp",
+							"audioText": "little orange shrimp",
+							"fallbackText": "shrimp",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The shrimp swims near the sand.",
+							"audioText": "The shrimp swims near the sand.",
+							"fallbackText": "shrimp",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who is small and curly? The shrimp is small and curly.",
+							"audioText": "Who is small and curly? The shrimp is small and curly.",
+							"fallbackText": "shrimp",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The shrimp wiggles softly through the water.",
+							"audioText": "The shrimp wiggles softly through the water.",
+							"fallbackText": "shrimp",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找虾。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到虾了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-success.mp3"
+					},
+					"fallbackText": "虾",
+					"levels": {
+						"L0": {
+							"text": "虾",
+							"audioText": "虾",
+							"fallbackText": "虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "虾弯弯的。",
+							"audioText": "虾弯弯的。",
+							"fallbackText": "虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "小小的橙色虾",
+							"audioText": "小小的橙色虾",
+							"fallbackText": "虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "虾在沙子旁边游。",
+							"audioText": "虾在沙子旁边游。",
+							"fallbackText": "虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁小小弯弯的？虾小小弯弯的。",
+							"audioText": "谁小小弯弯的？虾小小弯弯的。",
+							"fallbackText": "虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "虾在水里轻轻摆一摆。",
+							"audioText": "虾在水里轻轻摆一摆。",
+							"fallbackText": "虾",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/shrimp.webp",
+						"alt": "shrimp",
+						"generationPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background.",
+						"placeholder": {
+							"label": "shrimp",
+							"emoji": "🦐"
+						}
+					},
+					"visualPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/shrimp-bright.webp",
+						"alt": "shrimp bright large",
+						"generationPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "shrimp",
+							"emoji": "🦐"
+						}
+					},
+					"visualPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "squid",
+			"category": "animal",
+			"tags": ["ocean", "water", "animal", "tentacles"],
+			"visualPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background.",
+			"interaction": {
+				"id": "squid-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the squid.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-en-find.mp3"
+					},
+					"successPhrase": "You found the squid.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-en-success.mp3"
+					},
+					"fallbackText": "squid",
+					"levels": {
+						"L0": {
+							"text": "squid",
+							"audioText": "squid",
+							"fallbackText": "squid",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The squid floats.",
+							"audioText": "The squid floats.",
+							"fallbackText": "squid",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "soft ocean squid",
+							"audioText": "soft ocean squid",
+							"fallbackText": "squid",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The squid floats in blue water.",
+							"audioText": "The squid floats in blue water.",
+							"fallbackText": "squid",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has gentle arms? The squid has gentle arms.",
+							"audioText": "Who has gentle arms? The squid has gentle arms.",
+							"fallbackText": "squid",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The squid drifts calmly through the ocean.",
+							"audioText": "The squid drifts calmly through the ocean.",
+							"fallbackText": "squid",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找鱿鱼。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到鱿鱼了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-success.mp3"
+					},
+					"fallbackText": "鱿鱼",
+					"levels": {
+						"L0": {
+							"text": "鱿鱼",
+							"audioText": "鱿鱼",
+							"fallbackText": "鱿鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "鱿鱼漂一漂。",
+							"audioText": "鱿鱼漂一漂。",
+							"fallbackText": "鱿鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "软软的海洋鱿鱼",
+							"audioText": "软软的海洋鱿鱼",
+							"fallbackText": "鱿鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "鱿鱼在蓝色水里漂。",
+							"audioText": "鱿鱼在蓝色水里漂。",
+							"fallbackText": "鱿鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有柔软的小手？鱿鱼有柔软的小手。",
+							"audioText": "谁有柔软的小手？鱿鱼有柔软的小手。",
+							"fallbackText": "鱿鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "鱿鱼在海里安静地漂。",
+							"audioText": "鱿鱼在海里安静地漂。",
+							"fallbackText": "鱿鱼",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/squid.webp",
+						"alt": "squid",
+						"generationPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background.",
+						"placeholder": {
+							"label": "squid",
+							"emoji": "🦑"
+						}
+					},
+					"visualPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/ocean-animals/squid-bright.webp",
+						"alt": "squid bright large",
+						"generationPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "squid",
+							"emoji": "🦑"
+						}
+					},
+					"visualPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
 					"scaleMultiplier": 1.12
 				}
 			]

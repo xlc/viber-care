@@ -188,6 +188,86 @@
 						"min": 0.72,
 						"max": 0.86
 					}
+				},
+				{
+					"objectId": "duck-bill-dinosaur",
+					"x": 38,
+					"y": 48,
+					"scale": 0.9,
+					"zIndex": 6,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.83,
+						"max": 0.99
+					}
+				},
+				{
+					"objectId": "iguanodon",
+					"x": 67,
+					"y": 48,
+					"scale": 0.94,
+					"zIndex": 6,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
+				},
+				{
+					"objectId": "dino-footprint",
+					"x": 38,
+					"y": 86,
+					"scale": 0.64,
+					"zIndex": 10,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.59,
+						"max": 0.7
+					}
+				},
+				{
+					"objectId": "dino-nest",
+					"x": 70,
+					"y": 84,
+					"scale": 0.72,
+					"zIndex": 10,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"objectId": "cycad",
+					"x": 88,
+					"y": 62,
+					"scale": 0.74,
+					"zIndex": 5,
+					"regionTags": ["foliage"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					}
 				}
 			],
 			"music": {
@@ -232,8 +312,8 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 5,
-				"max": 6
+				"min": 8,
+				"max": 10
 			}
 		},
 		{
@@ -416,6 +496,86 @@
 						"min": 0.72,
 						"max": 0.86
 					}
+				},
+				{
+					"objectId": "duck-bill-dinosaur",
+					"x": 62,
+					"y": 48,
+					"scale": 0.9,
+					"zIndex": 6,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.83,
+						"max": 0.99
+					}
+				},
+				{
+					"objectId": "iguanodon",
+					"x": 35,
+					"y": 48,
+					"scale": 0.94,
+					"zIndex": 6,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
+				},
+				{
+					"objectId": "dino-footprint",
+					"x": 58,
+					"y": 86,
+					"scale": 0.64,
+					"zIndex": 10,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.59,
+						"max": 0.7
+					}
+				},
+				{
+					"objectId": "dino-nest",
+					"x": 24,
+					"y": 84,
+					"scale": 0.72,
+					"zIndex": 10,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"objectId": "cycad",
+					"x": 90,
+					"y": 62,
+					"scale": 0.74,
+					"zIndex": 5,
+					"regionTags": ["foliage"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					}
 				}
 			],
 			"music": {
@@ -460,8 +620,8 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 5,
-				"max": 6
+				"min": 8,
+				"max": 10
 			}
 		}
 	],
@@ -2342,6 +2502,946 @@
 						}
 					},
 					"visualPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "duck-bill-dinosaur",
+			"category": "dinosaur",
+			"tags": ["dinosaur", "ground", "herbivore", "duck-bill"],
+			"visualPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+			"interaction": {
+				"id": "duck-bill-dinosaur-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the duck-bill dinosaur.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-find.mp3"
+					},
+					"successPhrase": "You found the duck-bill dinosaur.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-success.mp3"
+					},
+					"fallbackText": "duck-bill dinosaur",
+					"levels": {
+						"L0": {
+							"text": "duck-bill dinosaur",
+							"audioText": "duck-bill dinosaur",
+							"fallbackText": "duck-bill dinosaur",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The duck-bill dinosaur smiles.",
+							"audioText": "The duck-bill dinosaur smiles.",
+							"fallbackText": "duck-bill dinosaur",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "gentle duck-bill dinosaur",
+							"audioText": "gentle duck-bill dinosaur",
+							"fallbackText": "duck-bill dinosaur",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The duck-bill dinosaur walks in the valley.",
+							"audioText": "The duck-bill dinosaur walks in the valley.",
+							"fallbackText": "duck-bill dinosaur",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has a wide bill? The duck-bill dinosaur has a wide bill.",
+							"audioText": "Who has a wide bill? The duck-bill dinosaur has a wide bill.",
+							"fallbackText": "duck-bill dinosaur",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The duck-bill dinosaur takes slow steps by the ferns.",
+							"audioText": "The duck-bill dinosaur takes slow steps by the ferns.",
+							"fallbackText": "duck-bill dinosaur",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找鸭嘴龙。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到鸭嘴龙了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-success.mp3"
+					},
+					"fallbackText": "鸭嘴龙",
+					"levels": {
+						"L0": {
+							"text": "鸭嘴龙",
+							"audioText": "鸭嘴龙",
+							"fallbackText": "鸭嘴龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "鸭嘴龙笑一笑。",
+							"audioText": "鸭嘴龙笑一笑。",
+							"fallbackText": "鸭嘴龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "温和的鸭嘴龙",
+							"audioText": "温和的鸭嘴龙",
+							"fallbackText": "鸭嘴龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "鸭嘴龙在山谷里走。",
+							"audioText": "鸭嘴龙在山谷里走。",
+							"fallbackText": "鸭嘴龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有宽宽的嘴？鸭嘴龙有宽宽的嘴。",
+							"audioText": "谁有宽宽的嘴？鸭嘴龙有宽宽的嘴。",
+							"fallbackText": "鸭嘴龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "鸭嘴龙在蕨草旁边慢慢走。",
+							"audioText": "鸭嘴龙在蕨草旁边慢慢走。",
+							"fallbackText": "鸭嘴龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/duck-bill-dinosaur.webp",
+						"alt": "duck-bill dinosaur",
+						"generationPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+						"placeholder": {
+							"label": "duck-bill dinosaur",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/duck-bill-dinosaur-bright.webp",
+						"alt": "duck-bill dinosaur bright large",
+						"generationPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "duck-bill dinosaur",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "iguanodon",
+			"category": "dinosaur",
+			"tags": ["dinosaur", "ground", "herbivore", "valley"],
+			"visualPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+			"interaction": {
+				"id": "iguanodon-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the iguanodon.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-en-find.mp3"
+					},
+					"successPhrase": "You found the iguanodon.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-en-success.mp3"
+					},
+					"fallbackText": "iguanodon",
+					"levels": {
+						"L0": {
+							"text": "iguanodon",
+							"audioText": "iguanodon",
+							"fallbackText": "iguanodon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The iguanodon stands tall.",
+							"audioText": "The iguanodon stands tall.",
+							"fallbackText": "iguanodon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "blue iguanodon",
+							"audioText": "blue iguanodon",
+							"fallbackText": "iguanodon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The iguanodon looks across the valley.",
+							"audioText": "The iguanodon looks across the valley.",
+							"fallbackText": "iguanodon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who stands on strong legs? The iguanodon stands tall.",
+							"audioText": "Who stands on strong legs? The iguanodon stands tall.",
+							"fallbackText": "iguanodon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The iguanodon slowly walks through the dinosaur valley.",
+							"audioText": "The iguanodon slowly walks through the dinosaur valley.",
+							"fallbackText": "iguanodon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找禽龙。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到禽龙了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-success.mp3"
+					},
+					"fallbackText": "禽龙",
+					"levels": {
+						"L0": {
+							"text": "禽龙",
+							"audioText": "禽龙",
+							"fallbackText": "禽龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "禽龙站得高高的。",
+							"audioText": "禽龙站得高高的。",
+							"fallbackText": "禽龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "蓝色的禽龙",
+							"audioText": "蓝色的禽龙",
+							"fallbackText": "禽龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "禽龙望着山谷。",
+							"audioText": "禽龙望着山谷。",
+							"fallbackText": "禽龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有有力的腿？禽龙站得高高的。",
+							"audioText": "谁有有力的腿？禽龙站得高高的。",
+							"fallbackText": "禽龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "禽龙在恐龙山谷里慢慢走。",
+							"audioText": "禽龙在恐龙山谷里慢慢走。",
+							"fallbackText": "禽龙",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/iguanodon.webp",
+						"alt": "iguanodon",
+						"generationPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+						"placeholder": {
+							"label": "iguanodon",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/iguanodon-bright.webp",
+						"alt": "iguanodon bright large",
+						"generationPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "iguanodon",
+							"emoji": "🦕"
+						}
+					},
+					"visualPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "dino-footprint",
+			"category": "trace",
+			"tags": ["dinosaur", "ground", "footprint", "fossil"],
+			"visualPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background.",
+			"interaction": {
+				"id": "dino-footprint-glow",
+				"animation": "glow"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the dinosaur footprint.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-find.mp3"
+					},
+					"successPhrase": "You found the dinosaur footprint.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-success.mp3"
+					},
+					"fallbackText": "dinosaur footprint",
+					"levels": {
+						"L0": {
+							"text": "dinosaur footprint",
+							"audioText": "dinosaur footprint",
+							"fallbackText": "dinosaur footprint",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The footprint is big.",
+							"audioText": "The footprint is big.",
+							"fallbackText": "dinosaur footprint",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "big dinosaur footprint",
+							"audioText": "big dinosaur footprint",
+							"fallbackText": "dinosaur footprint",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The footprint sits on the ground.",
+							"audioText": "The footprint sits on the ground.",
+							"fallbackText": "dinosaur footprint",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What did the dinosaur leave? A footprint.",
+							"audioText": "What did the dinosaur leave? A footprint.",
+							"fallbackText": "dinosaur footprint",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The big footprint rests quietly in the valley.",
+							"audioText": "The big footprint rests quietly in the valley.",
+							"fallbackText": "dinosaur footprint",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找恐龙脚印。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到恐龙脚印了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-success.mp3"
+					},
+					"fallbackText": "恐龙脚印",
+					"levels": {
+						"L0": {
+							"text": "恐龙脚印",
+							"audioText": "恐龙脚印",
+							"fallbackText": "恐龙脚印",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "脚印大大的。",
+							"audioText": "脚印大大的。",
+							"fallbackText": "恐龙脚印",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "大大的恐龙脚印",
+							"audioText": "大大的恐龙脚印",
+							"fallbackText": "恐龙脚印",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "脚印在地上。",
+							"audioText": "脚印在地上。",
+							"fallbackText": "恐龙脚印",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "恐龙留下了什么？一个脚印。",
+							"audioText": "恐龙留下了什么？一个脚印。",
+							"fallbackText": "恐龙脚印",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "大脚印安静地留在山谷地上。",
+							"audioText": "大脚印安静地留在山谷地上。",
+							"fallbackText": "恐龙脚印",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/dino-footprint.webp",
+						"alt": "dinosaur footprint",
+						"generationPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background.",
+						"placeholder": {
+							"label": "dinosaur footprint",
+							"emoji": "🐾"
+						}
+					},
+					"visualPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/dino-footprint-bright.webp",
+						"alt": "dinosaur footprint bright large",
+						"generationPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "dinosaur footprint",
+							"emoji": "🐾"
+						}
+					},
+					"visualPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "dino-nest",
+			"category": "nature",
+			"tags": ["dinosaur", "ground", "nest", "egg"],
+			"visualPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background.",
+			"interaction": {
+				"id": "dino-nest-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the dinosaur nest.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-en-find.mp3"
+					},
+					"successPhrase": "You found the dinosaur nest.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-en-success.mp3"
+					},
+					"fallbackText": "dinosaur nest",
+					"levels": {
+						"L0": {
+							"text": "dinosaur nest",
+							"audioText": "dinosaur nest",
+							"fallbackText": "dinosaur nest",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The nest holds eggs.",
+							"audioText": "The nest holds eggs.",
+							"fallbackText": "dinosaur nest",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "cozy dinosaur nest",
+							"audioText": "cozy dinosaur nest",
+							"fallbackText": "dinosaur nest",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The nest sits near the ferns.",
+							"audioText": "The nest sits near the ferns.",
+							"fallbackText": "dinosaur nest",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What holds the eggs? The dinosaur nest holds the eggs.",
+							"audioText": "What holds the eggs? The dinosaur nest holds the eggs.",
+							"fallbackText": "dinosaur nest",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The dinosaur nest rests softly on the valley ground.",
+							"audioText": "The dinosaur nest rests softly on the valley ground.",
+							"fallbackText": "dinosaur nest",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找恐龙窝。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到恐龙窝了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-success.mp3"
+					},
+					"fallbackText": "恐龙窝",
+					"levels": {
+						"L0": {
+							"text": "恐龙窝",
+							"audioText": "恐龙窝",
+							"fallbackText": "恐龙窝",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "窝里有蛋。",
+							"audioText": "窝里有蛋。",
+							"fallbackText": "恐龙窝",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "暖暖的恐龙窝",
+							"audioText": "暖暖的恐龙窝",
+							"fallbackText": "恐龙窝",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "恐龙窝在蕨草旁边。",
+							"audioText": "恐龙窝在蕨草旁边。",
+							"fallbackText": "恐龙窝",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么放着蛋？恐龙窝放着蛋。",
+							"audioText": "什么放着蛋？恐龙窝放着蛋。",
+							"fallbackText": "恐龙窝",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "恐龙窝轻轻地待在山谷地上。",
+							"audioText": "恐龙窝轻轻地待在山谷地上。",
+							"fallbackText": "恐龙窝",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/dino-nest.webp",
+						"alt": "dinosaur nest",
+						"generationPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background.",
+						"placeholder": {
+							"label": "dinosaur nest",
+							"emoji": "🥚"
+						}
+					},
+					"visualPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/dino-nest-bright.webp",
+						"alt": "dinosaur nest bright large",
+						"generationPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "dinosaur nest",
+							"emoji": "🥚"
+						}
+					},
+					"visualPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "cycad",
+			"category": "plant",
+			"tags": ["dinosaur", "plant", "fern", "foliage"],
+			"visualPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background.",
+			"interaction": {
+				"id": "cycad-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the cycad.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-en-find.mp3"
+					},
+					"successPhrase": "You found the cycad.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-en-success.mp3"
+					},
+					"fallbackText": "cycad",
+					"levels": {
+						"L0": {
+							"text": "cycad",
+							"audioText": "cycad",
+							"fallbackText": "cycad",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The cycad has green leaves.",
+							"audioText": "The cycad has green leaves.",
+							"fallbackText": "cycad",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "green cycad plant",
+							"audioText": "green cycad plant",
+							"fallbackText": "cycad",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The cycad grows by the ferns.",
+							"audioText": "The cycad grows by the ferns.",
+							"fallbackText": "cycad",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What plant has wide leaves? The cycad has wide leaves.",
+							"audioText": "What plant has wide leaves? The cycad has wide leaves.",
+							"fallbackText": "cycad",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The cycad gently sways in the dinosaur valley.",
+							"audioText": "The cycad gently sways in the dinosaur valley.",
+							"fallbackText": "cycad",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找苏铁。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到苏铁了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-success.mp3"
+					},
+					"fallbackText": "苏铁",
+					"levels": {
+						"L0": {
+							"text": "苏铁",
+							"audioText": "苏铁",
+							"fallbackText": "苏铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "苏铁有绿色叶子。",
+							"audioText": "苏铁有绿色叶子。",
+							"fallbackText": "苏铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "绿色的苏铁",
+							"audioText": "绿色的苏铁",
+							"fallbackText": "苏铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "苏铁长在蕨草旁边。",
+							"audioText": "苏铁长在蕨草旁边。",
+							"fallbackText": "苏铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么植物有宽叶子？苏铁有宽叶子。",
+							"audioText": "什么植物有宽叶子？苏铁有宽叶子。",
+							"fallbackText": "苏铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "苏铁在恐龙山谷里轻轻摇。",
+							"audioText": "苏铁在恐龙山谷里轻轻摇。",
+							"fallbackText": "苏铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/cycad.webp",
+						"alt": "cycad",
+						"generationPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background.",
+						"placeholder": {
+							"label": "cycad",
+							"emoji": "🌿"
+						}
+					},
+					"visualPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/dinosaurs/cycad-bright.webp",
+						"alt": "cycad bright large",
+						"generationPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "cycad",
+							"emoji": "🌿"
+						}
+					},
+					"visualPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
 					"scaleMultiplier": 1.12
 				}
 			]

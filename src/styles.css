@@ -347,6 +347,10 @@ input:focus-visible {
 	filter: drop-shadow(0 12px 14px rgba(28, 67, 72, 0.16));
 }
 
+.garden-stage.is-puzzle .garden-object {
+	pointer-events: none;
+}
+
 .garden-object.is-active {
 	filter: saturate(1.08);
 }

@@ -188,6 +188,86 @@
 						"min": 0.83,
 						"max": 0.99
 					}
+				},
+				{
+					"objectId": "fire-truck",
+					"x": 42,
+					"y": 56,
+					"scale": 0.86,
+					"zIndex": 8,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
+				},
+				{
+					"objectId": "ambulance",
+					"x": 68,
+					"y": 56,
+					"scale": 0.82,
+					"zIndex": 8,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "motorcycle",
+					"x": 18,
+					"y": 58,
+					"scale": 0.7,
+					"zIndex": 9,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.64,
+						"max": 0.77
+					}
+				},
+				{
+					"objectId": "tram",
+					"x": 43,
+					"y": 86,
+					"scale": 0.82,
+					"zIndex": 12,
+					"regionTags": ["rail"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "rocket",
+					"x": 18,
+					"y": 20,
+					"scale": 0.76,
+					"zIndex": 3,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
 				}
 			],
 			"music": {
@@ -244,8 +324,8 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 5,
-				"max": 6
+				"min": 8,
+				"max": 10
 			}
 		},
 		{
@@ -428,6 +508,86 @@
 						"min": 0.83,
 						"max": 0.99
 					}
+				},
+				{
+					"objectId": "fire-truck",
+					"x": 56,
+					"y": 56,
+					"scale": 0.86,
+					"zIndex": 8,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
+				},
+				{
+					"objectId": "ambulance",
+					"x": 28,
+					"y": 56,
+					"scale": 0.82,
+					"zIndex": 8,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "motorcycle",
+					"x": 58,
+					"y": 74,
+					"scale": 0.7,
+					"zIndex": 9,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.64,
+						"max": 0.77
+					}
+				},
+				{
+					"objectId": "tram",
+					"x": 42,
+					"y": 86,
+					"scale": 0.82,
+					"zIndex": 12,
+					"regionTags": ["rail"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "rocket",
+					"x": 86,
+					"y": 20,
+					"scale": 0.76,
+					"zIndex": 3,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
 				}
 			],
 			"music": {
@@ -484,8 +644,8 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 5,
-				"max": 6
+				"min": 8,
+				"max": 10
 			}
 		}
 	],
@@ -2366,6 +2526,946 @@
 						}
 					},
 					"visualPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "fire-truck",
+			"category": "vehicle",
+			"tags": ["transportation", "road", "truck", "wheels"],
+			"visualPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background.",
+			"interaction": {
+				"id": "fire-truck-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the fire truck.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-en-find.mp3"
+					},
+					"successPhrase": "You found the fire truck.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-en-success.mp3"
+					},
+					"fallbackText": "fire truck",
+					"levels": {
+						"L0": {
+							"text": "fire truck",
+							"audioText": "fire truck",
+							"fallbackText": "fire truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The fire truck rolls.",
+							"audioText": "The fire truck rolls.",
+							"fallbackText": "fire truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "red fire truck",
+							"audioText": "red fire truck",
+							"fallbackText": "fire truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The fire truck drives on the road.",
+							"audioText": "The fire truck drives on the road.",
+							"fallbackText": "fire truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What truck is red? The fire truck is red.",
+							"audioText": "What truck is red? The fire truck is red.",
+							"fallbackText": "fire truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The fire truck rolls slowly through the transit park.",
+							"audioText": "The fire truck rolls slowly through the transit park.",
+							"fallbackText": "fire truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找消防车。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到消防车了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-success.mp3"
+					},
+					"fallbackText": "消防车",
+					"levels": {
+						"L0": {
+							"text": "消防车",
+							"audioText": "消防车",
+							"fallbackText": "消防车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "消防车开来了。",
+							"audioText": "消防车开来了。",
+							"fallbackText": "消防车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "红色的消防车",
+							"audioText": "红色的消防车",
+							"fallbackText": "消防车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "消防车在路上开。",
+							"audioText": "消防车在路上开。",
+							"fallbackText": "消防车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么车是红色的？消防车是红色的。",
+							"audioText": "什么车是红色的？消防车是红色的。",
+							"fallbackText": "消防车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "消防车在交通公园里慢慢开。",
+							"audioText": "消防车在交通公园里慢慢开。",
+							"fallbackText": "消防车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/fire-truck.png",
+						"alt": "fire truck",
+						"generationPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background.",
+						"placeholder": {
+							"label": "fire truck",
+							"emoji": "🚒"
+						}
+					},
+					"visualPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/fire-truck-bright.png",
+						"alt": "fire truck bright large",
+						"generationPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "fire truck",
+							"emoji": "🚒"
+						}
+					},
+					"visualPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "ambulance",
+			"category": "vehicle",
+			"tags": ["transportation", "road", "van", "wheels"],
+			"visualPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background.",
+			"interaction": {
+				"id": "ambulance-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the ambulance.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-en-find.mp3"
+					},
+					"successPhrase": "You found the ambulance.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-en-success.mp3"
+					},
+					"fallbackText": "ambulance",
+					"levels": {
+						"L0": {
+							"text": "ambulance",
+							"audioText": "ambulance",
+							"fallbackText": "ambulance",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The ambulance drives gently.",
+							"audioText": "The ambulance drives gently.",
+							"fallbackText": "ambulance",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "white ambulance",
+							"audioText": "white ambulance",
+							"fallbackText": "ambulance",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The ambulance drives on the road.",
+							"audioText": "The ambulance drives on the road.",
+							"fallbackText": "ambulance",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What vehicle has a red cross? The ambulance has a red cross.",
+							"audioText": "What vehicle has a red cross? The ambulance has a red cross.",
+							"fallbackText": "ambulance",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The ambulance moves calmly along the soft road.",
+							"audioText": "The ambulance moves calmly along the soft road.",
+							"fallbackText": "ambulance",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找救护车。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到救护车了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-success.mp3"
+					},
+					"fallbackText": "救护车",
+					"levels": {
+						"L0": {
+							"text": "救护车",
+							"audioText": "救护车",
+							"fallbackText": "救护车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "救护车轻轻开。",
+							"audioText": "救护车轻轻开。",
+							"fallbackText": "救护车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "白色的救护车",
+							"audioText": "白色的救护车",
+							"fallbackText": "救护车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "救护车在路上开。",
+							"audioText": "救护车在路上开。",
+							"fallbackText": "救护车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么车有红十字？救护车有红十字。",
+							"audioText": "什么车有红十字？救护车有红十字。",
+							"fallbackText": "救护车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "救护车沿着柔软的路慢慢开。",
+							"audioText": "救护车沿着柔软的路慢慢开。",
+							"fallbackText": "救护车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/ambulance.png",
+						"alt": "ambulance",
+						"generationPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background.",
+						"placeholder": {
+							"label": "ambulance",
+							"emoji": "🚑"
+						}
+					},
+					"visualPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/ambulance-bright.png",
+						"alt": "ambulance bright large",
+						"generationPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "ambulance",
+							"emoji": "🚑"
+						}
+					},
+					"visualPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "motorcycle",
+			"category": "vehicle",
+			"tags": ["transportation", "road", "wheels", "motorcycle"],
+			"visualPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background.",
+			"interaction": {
+				"id": "motorcycle-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the motorcycle.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-en-find.mp3"
+					},
+					"successPhrase": "You found the motorcycle.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-en-success.mp3"
+					},
+					"fallbackText": "motorcycle",
+					"levels": {
+						"L0": {
+							"text": "motorcycle",
+							"audioText": "motorcycle",
+							"fallbackText": "motorcycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The motorcycle has two wheels.",
+							"audioText": "The motorcycle has two wheels.",
+							"fallbackText": "motorcycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "red motorcycle",
+							"audioText": "red motorcycle",
+							"fallbackText": "motorcycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The motorcycle rests on the road.",
+							"audioText": "The motorcycle rests on the road.",
+							"fallbackText": "motorcycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What has two wheels? The motorcycle has two wheels.",
+							"audioText": "What has two wheels? The motorcycle has two wheels.",
+							"fallbackText": "motorcycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The motorcycle waits quietly on the road.",
+							"audioText": "The motorcycle waits quietly on the road.",
+							"fallbackText": "motorcycle",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找摩托车。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到摩托车了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-success.mp3"
+					},
+					"fallbackText": "摩托车",
+					"levels": {
+						"L0": {
+							"text": "摩托车",
+							"audioText": "摩托车",
+							"fallbackText": "摩托车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "摩托车有两个轮子。",
+							"audioText": "摩托车有两个轮子。",
+							"fallbackText": "摩托车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "红色的摩托车",
+							"audioText": "红色的摩托车",
+							"fallbackText": "摩托车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "摩托车停在路上。",
+							"audioText": "摩托车停在路上。",
+							"fallbackText": "摩托车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么有两个轮子？摩托车有两个轮子。",
+							"audioText": "什么有两个轮子？摩托车有两个轮子。",
+							"fallbackText": "摩托车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "摩托车安静地停在路上。",
+							"audioText": "摩托车安静地停在路上。",
+							"fallbackText": "摩托车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/motorcycle.png",
+						"alt": "motorcycle",
+						"generationPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background.",
+						"placeholder": {
+							"label": "motorcycle",
+							"emoji": "🏍️"
+						}
+					},
+					"visualPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/motorcycle-bright.png",
+						"alt": "motorcycle bright large",
+						"generationPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "motorcycle",
+							"emoji": "🏍️"
+						}
+					},
+					"visualPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "tram",
+			"category": "vehicle",
+			"tags": ["transportation", "rail", "track", "tram"],
+			"visualPrompt": "A friendly city tram for a toddler transportation word-learning game, rounded toy-like shape, clear windows, transparent background.",
+			"interaction": {
+				"id": "tram-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the tram.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/tram-en-find.mp3"
+					},
+					"successPhrase": "You found the tram.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/tram-en-success.mp3"
+					},
+					"fallbackText": "tram",
+					"levels": {
+						"L0": {
+							"text": "tram",
+							"audioText": "tram",
+							"fallbackText": "tram",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The tram rides the track.",
+							"audioText": "The tram rides the track.",
+							"fallbackText": "tram",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "city tram",
+							"audioText": "city tram",
+							"fallbackText": "tram",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The tram moves on the rail.",
+							"audioText": "The tram moves on the rail.",
+							"fallbackText": "tram",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What rides on rails? The tram rides on rails.",
+							"audioText": "What rides on rails? The tram rides on rails.",
+							"fallbackText": "tram",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The tram glides gently along the track.",
+							"audioText": "The tram glides gently along the track.",
+							"fallbackText": "tram",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找有轨电车。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/tram-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到有轨电车了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/tram-zh-Hans-success.mp3"
+					},
+					"fallbackText": "有轨电车",
+					"levels": {
+						"L0": {
+							"text": "有轨电车",
+							"audioText": "有轨电车",
+							"fallbackText": "有轨电车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "有轨电车在轨道上走。",
+							"audioText": "有轨电车在轨道上走。",
+							"fallbackText": "有轨电车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "城市有轨电车",
+							"audioText": "城市有轨电车",
+							"fallbackText": "有轨电车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "有轨电车沿着轨道开。",
+							"audioText": "有轨电车沿着轨道开。",
+							"fallbackText": "有轨电车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么在轨道上走？有轨电车在轨道上走。",
+							"audioText": "什么在轨道上走？有轨电车在轨道上走。",
+							"fallbackText": "有轨电车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "有轨电车沿着轨道轻轻滑过。",
+							"audioText": "有轨电车沿着轨道轻轻滑过。",
+							"fallbackText": "有轨电车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/tram-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/tram.png",
+						"alt": "tram",
+						"generationPrompt": "A friendly city tram for a toddler transportation word-learning game, rounded toy-like shape, clear windows, transparent background.",
+						"placeholder": {
+							"label": "tram",
+							"emoji": "🚋"
+						}
+					},
+					"visualPrompt": "A friendly city tram for a toddler transportation word-learning game, rounded toy-like shape, clear windows, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/tram-bright.png",
+						"alt": "tram bright large",
+						"generationPrompt": "A friendly city tram for a toddler transportation word-learning game, rounded toy-like shape, clear windows, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "tram",
+							"emoji": "🚋"
+						}
+					},
+					"visualPrompt": "A friendly city tram for a toddler transportation word-learning game, rounded toy-like shape, clear windows, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "rocket",
+			"category": "vehicle",
+			"tags": ["transportation", "sky", "air", "rocket"],
+			"visualPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background.",
+			"interaction": {
+				"id": "rocket-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the rocket.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-en-find.mp3"
+					},
+					"successPhrase": "You found the rocket.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-en-success.mp3"
+					},
+					"fallbackText": "rocket",
+					"levels": {
+						"L0": {
+							"text": "rocket",
+							"audioText": "rocket",
+							"fallbackText": "rocket",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The rocket goes up.",
+							"audioText": "The rocket goes up.",
+							"fallbackText": "rocket",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "bright toy rocket",
+							"audioText": "bright toy rocket",
+							"fallbackText": "rocket",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The rocket points to the sky.",
+							"audioText": "The rocket points to the sky.",
+							"fallbackText": "rocket",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What goes up to the sky? The rocket goes up.",
+							"audioText": "What goes up to the sky? The rocket goes up.",
+							"fallbackText": "rocket",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The rocket gently lifts toward the blue sky.",
+							"audioText": "The rocket gently lifts toward the blue sky.",
+							"fallbackText": "rocket",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找火箭。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到火箭了。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-zh-Hans-success.mp3"
+					},
+					"fallbackText": "火箭",
+					"levels": {
+						"L0": {
+							"text": "火箭",
+							"audioText": "火箭",
+							"fallbackText": "火箭",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "火箭向上飞。",
+							"audioText": "火箭向上飞。",
+							"fallbackText": "火箭",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "明亮的玩具火箭",
+							"audioText": "明亮的玩具火箭",
+							"fallbackText": "火箭",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "火箭指向天空。",
+							"audioText": "火箭指向天空。",
+							"fallbackText": "火箭",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么飞向天空？火箭飞向天空。",
+							"audioText": "什么飞向天空？火箭飞向天空。",
+							"fallbackText": "火箭",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "火箭轻轻飞向蓝蓝的天空。",
+							"audioText": "火箭轻轻飞向蓝蓝的天空。",
+							"fallbackText": "火箭",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/rocket.png",
+						"alt": "rocket",
+						"generationPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background.",
+						"placeholder": {
+							"label": "rocket",
+							"emoji": "🚀"
+						}
+					},
+					"visualPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/rocket-bright.png",
+						"alt": "rocket bright large",
+						"generationPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "rocket",
+							"emoji": "🚀"
+						}
+					},
+					"visualPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
 					"scaleMultiplier": 1.12
 				}
 			]
