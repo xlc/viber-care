@@ -1,5 +1,6 @@
 import dinosaursPack from '../../content/packs/dinosaurs.json'
 import englishAlphabetPack from '../../content/packs/english-alphabet.json'
+import farmFriendsPack from '../../content/packs/farm-friends.json'
 import gardenPack from '../../content/packs/garden.json'
 import numbersPack from '../../content/packs/numbers.json'
 import oceanAnimalsPack from '../../content/packs/ocean-animals.json'
@@ -26,6 +27,7 @@ export const catalog = createRuntimeCatalog([
 	gardenPack,
 	oceanAnimalsPack,
 	dinosaursPack,
+	farmFriendsPack,
 	numbersPack,
 	englishAlphabetPack,
 	transportationPack,

@@ -1,0 +1,2428 @@
+{
+	"id": "farm-friends",
+	"version": "1.0.0",
+	"title": {
+		"en": "Farm Friends",
+		"zh-Hans": "农场朋友"
+	},
+	"languages": ["en", "zh-Hans"],
+	"defaultSceneId": "sunny-farmyard",
+	"scenes": [
+		{
+			"id": "sunny-farmyard",
+			"packId": "farm-friends",
+			"title": {
+				"en": "Sunny Farmyard",
+				"zh-Hans": "阳光农场院子"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly sunny farmyard with open meadow, soft barnyard ground, a winding walking path, a small chicken coop area, hay area, and a simple barn area. No text, no logos, no animals or vehicles baked in, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/farm-friends/sunny-farmyard.png",
+					"alt": "Sunny farmyard",
+					"generationPrompt": "A calm toddler-friendly sunny farmyard with open meadow, soft barnyard ground, a winding walking path, a small chicken coop area, hay area, and a simple barn area. No text, no logos, no animals or vehicles baked in, static PWA game background.",
+					"placeholder": {
+						"label": "Sunny farmyard",
+						"emoji": "🌾"
+					}
+				}
+			},
+			"regions": [
+				{
+					"id": "meadow",
+					"tags": ["meadow", "pasture", "grass"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 30,
+							"width": 64,
+							"height": 34
+						}
+					]
+				},
+				{
+					"id": "barnyard",
+					"tags": ["barnyard", "yard", "ground"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 55,
+							"width": 100,
+							"height": 43
+						}
+					]
+				},
+				{
+					"id": "path",
+					"tags": ["path", "ground"],
+					"rects": [
+						{
+							"x": 20,
+							"y": 38,
+							"width": 58,
+							"height": 58
+						}
+					]
+				},
+				{
+					"id": "coop",
+					"tags": ["coop", "chicken"],
+					"rects": [
+						{
+							"x": 70,
+							"y": 48,
+							"width": 28,
+							"height": 24
+						}
+					]
+				},
+				{
+					"id": "hay",
+					"tags": ["hay", "straw"],
+					"rects": [
+						{
+							"x": 62,
+							"y": 38,
+							"width": 30,
+							"height": 21
+						}
+					]
+				},
+				{
+					"id": "building-pad",
+					"tags": ["building", "barn"],
+					"rects": [
+						{
+							"x": 74,
+							"y": 12,
+							"width": 26,
+							"height": 40
+						}
+					]
+				}
+			],
+			"objects": [
+				{
+					"objectId": "cow",
+					"x": 24,
+					"y": 48,
+					"scale": 0.82,
+					"zIndex": 3,
+					"regionTags": ["meadow"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "sheep",
+					"x": 45,
+					"y": 50,
+					"scale": 0.76,
+					"zIndex": 4,
+					"regionTags": ["meadow"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
+				},
+				{
+					"objectId": "pig",
+					"x": 18,
+					"y": 68,
+					"scale": 0.72,
+					"zIndex": 7,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"objectId": "horse",
+					"x": 38,
+					"y": 57,
+					"scale": 0.82,
+					"zIndex": 5,
+					"regionTags": ["meadow"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "chicken",
+					"x": 82,
+					"y": 64,
+					"scale": 0.62,
+					"zIndex": 9,
+					"regionTags": ["coop"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					}
+				},
+				{
+					"objectId": "goat",
+					"x": 55,
+					"y": 54,
+					"scale": 0.72,
+					"zIndex": 6,
+					"regionTags": ["meadow"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"objectId": "tractor",
+					"x": 58,
+					"y": 72,
+					"scale": 0.82,
+					"zIndex": 10,
+					"regionTags": ["path"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"objectId": "barn",
+					"x": 87,
+					"y": 39,
+					"scale": 0.86,
+					"zIndex": 2,
+					"regionTags": ["building"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
+				},
+				{
+					"objectId": "haystack",
+					"x": 73,
+					"y": 51,
+					"scale": 0.76,
+					"zIndex": 8,
+					"regionTags": ["hay"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
+				},
+				{
+					"objectId": "carrot",
+					"x": 30,
+					"y": 76,
+					"scale": 0.58,
+					"zIndex": 11,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			},
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
+			}
+		},
+		{
+			"id": "vegetable-patch",
+			"packId": "farm-friends",
+			"title": {
+				"en": "Vegetable Patch",
+				"zh-Hans": "小小菜地"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly vegetable patch farm scene with garden beds, open pasture, soft dirt path, small barnyard edge, hay area, and a simple building-pad area. No text, no logos, no animals or vehicles baked in, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/farm-friends/vegetable-patch.png",
+					"alt": "Vegetable patch",
+					"generationPrompt": "A calm toddler-friendly vegetable patch farm scene with garden beds, open pasture, soft dirt path, small barnyard edge, hay area, and a simple building-pad area. No text, no logos, no animals or vehicles baked in, static PWA game background.",
+					"placeholder": {
+						"label": "Vegetable patch",
+						"emoji": "🥕"
+					}
+				}
+			},
+			"regions": [
+				{
+					"id": "garden-bed",
+					"tags": ["garden-bed", "vegetable", "soil"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 49,
+							"width": 42,
+							"height": 38
+						},
+						{
+							"x": 67,
+							"y": 62,
+							"width": 32,
+							"height": 27
+						}
+					]
+				},
+				{
+					"id": "pasture",
+					"tags": ["pasture", "meadow", "grass"],
+					"rects": [
+						{
+							"x": 25,
+							"y": 20,
+							"width": 66,
+							"height": 28
+						}
+					]
+				},
+				{
+					"id": "path",
+					"tags": ["path", "ground"],
+					"rects": [
+						{
+							"x": 30,
+							"y": 42,
+							"width": 48,
+							"height": 44
+						}
+					]
+				},
+				{
+					"id": "barnyard",
+					"tags": ["barnyard", "yard"],
+					"rects": [
+						{
+							"x": 42,
+							"y": 48,
+							"width": 45,
+							"height": 25
+						}
+					]
+				},
+				{
+					"id": "hay",
+					"tags": ["hay", "straw"],
+					"rects": [
+						{
+							"x": 84,
+							"y": 39,
+							"width": 16,
+							"height": 14
+						}
+					]
+				},
+				{
+					"id": "building-pad",
+					"tags": ["building", "barn"],
+					"rects": [
+						{
+							"x": 86,
+							"y": 0,
+							"width": 14,
+							"height": 42
+						}
+					]
+				}
+			],
+			"objects": [
+				{
+					"objectId": "cow",
+					"x": 56,
+					"y": 34,
+					"scale": 0.78,
+					"zIndex": 3,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				},
+				{
+					"objectId": "sheep",
+					"x": 70,
+					"y": 36,
+					"scale": 0.72,
+					"zIndex": 4,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"objectId": "pig",
+					"x": 61,
+					"y": 57,
+					"scale": 0.7,
+					"zIndex": 7,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.64,
+						"max": 0.77
+					}
+				},
+				{
+					"objectId": "horse",
+					"x": 82,
+					"y": 36,
+					"scale": 0.8,
+					"zIndex": 5,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.74,
+						"max": 0.88
+					}
+				},
+				{
+					"objectId": "chicken",
+					"x": 45,
+					"y": 58,
+					"scale": 0.58,
+					"zIndex": 8,
+					"regionTags": ["path"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"objectId": "goat",
+					"x": 39,
+					"y": 41,
+					"scale": 0.7,
+					"zIndex": 6,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.64,
+						"max": 0.77
+					}
+				},
+				{
+					"objectId": "tractor",
+					"x": 57,
+					"y": 68,
+					"scale": 0.8,
+					"zIndex": 10,
+					"regionTags": ["path"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.74,
+						"max": 0.88
+					}
+				},
+				{
+					"objectId": "barn",
+					"x": 92,
+					"y": 28,
+					"scale": 0.78,
+					"zIndex": 2,
+					"regionTags": ["building"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				},
+				{
+					"objectId": "haystack",
+					"x": 90,
+					"y": 47,
+					"scale": 0.68,
+					"zIndex": 9,
+					"regionTags": ["hay"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"objectId": "carrot",
+					"x": 22,
+					"y": 66,
+					"scale": 0.62,
+					"zIndex": 11,
+					"regionTags": ["garden-bed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			},
+			"visibleObjectCount": {
+				"min": 5,
+				"max": 6
+			}
+		}
+	],
+	"objects": [
+		{
+			"id": "cow",
+			"category": "farm-animal",
+			"tags": ["farm", "animal", "meadow"],
+			"visualPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "cow-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the cow.",
+					"successPhrase": "You found the cow.",
+					"fallbackText": "That is the cow.",
+					"levels": {
+						"L0": {
+							"text": "cow",
+							"audioText": "cow",
+							"fallbackText": "cow",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The cow says moo.",
+							"audioText": "The cow says moo.",
+							"fallbackText": "cow",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "gentle cow",
+							"audioText": "gentle cow",
+							"fallbackText": "cow",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The cow stands in the meadow.",
+							"audioText": "The cow stands in the meadow.",
+							"fallbackText": "cow",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who says moo? The cow says moo.",
+							"audioText": "Who says moo? The cow says moo.",
+							"fallbackText": "cow",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The cow walks slowly by the barn.",
+							"audioText": "The cow walks slowly by the barn.",
+							"fallbackText": "cow",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找奶牛。",
+					"successPhrase": "你找到奶牛了。",
+					"fallbackText": "这是奶牛。",
+					"levels": {
+						"L0": {
+							"text": "奶牛",
+							"audioText": "奶牛",
+							"fallbackText": "奶牛",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "奶牛哞哞叫。",
+							"audioText": "奶牛哞哞叫。",
+							"fallbackText": "奶牛",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "温柔的奶牛",
+							"audioText": "温柔的奶牛",
+							"fallbackText": "奶牛",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "奶牛站在草地上。",
+							"audioText": "奶牛站在草地上。",
+							"fallbackText": "奶牛",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁哞哞叫？奶牛哞哞叫。",
+							"audioText": "谁哞哞叫？奶牛哞哞叫。",
+							"fallbackText": "奶牛",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "奶牛慢慢走过谷仓旁。",
+							"audioText": "奶牛慢慢走过谷仓旁。",
+							"fallbackText": "奶牛",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/cow.png",
+						"alt": "cow",
+						"generationPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "cow",
+							"emoji": "🐄"
+						}
+					},
+					"visualPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/cow-bright.png",
+						"alt": "cow bright large",
+						"generationPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "cow bright large",
+							"emoji": "🐄"
+						}
+					},
+					"visualPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "sheep",
+			"category": "farm-animal",
+			"tags": ["farm", "animal", "pasture"],
+			"visualPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "sheep-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the sheep.",
+					"successPhrase": "You found the sheep.",
+					"fallbackText": "That is the sheep.",
+					"levels": {
+						"L0": {
+							"text": "sheep",
+							"audioText": "sheep",
+							"fallbackText": "sheep",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The sheep says baa.",
+							"audioText": "The sheep says baa.",
+							"fallbackText": "sheep",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "fluffy sheep",
+							"audioText": "fluffy sheep",
+							"fallbackText": "sheep",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The sheep rests in the pasture.",
+							"audioText": "The sheep rests in the pasture.",
+							"fallbackText": "sheep",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has soft wool? The sheep has soft wool.",
+							"audioText": "Who has soft wool? The sheep has soft wool.",
+							"fallbackText": "sheep",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The sheep stands near the quiet fence.",
+							"audioText": "The sheep stands near the quiet fence.",
+							"fallbackText": "sheep",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找绵羊。",
+					"successPhrase": "你找到绵羊了。",
+					"fallbackText": "这是绵羊。",
+					"levels": {
+						"L0": {
+							"text": "绵羊",
+							"audioText": "绵羊",
+							"fallbackText": "绵羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "绵羊咩咩叫。",
+							"audioText": "绵羊咩咩叫。",
+							"fallbackText": "绵羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "毛茸茸的绵羊",
+							"audioText": "毛茸茸的绵羊",
+							"fallbackText": "绵羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "绵羊在牧场里休息。",
+							"audioText": "绵羊在牧场里休息。",
+							"fallbackText": "绵羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有软软的羊毛？绵羊有软软的羊毛。",
+							"audioText": "谁有软软的羊毛？绵羊有软软的羊毛。",
+							"fallbackText": "绵羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "绵羊站在安静的栅栏旁。",
+							"audioText": "绵羊站在安静的栅栏旁。",
+							"fallbackText": "绵羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/sheep.png",
+						"alt": "sheep",
+						"generationPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "sheep",
+							"emoji": "🐑"
+						}
+					},
+					"visualPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/sheep-bright.png",
+						"alt": "sheep bright large",
+						"generationPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "sheep bright large",
+							"emoji": "🐑"
+						}
+					},
+					"visualPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "pig",
+			"category": "farm-animal",
+			"tags": ["farm", "animal", "barnyard"],
+			"visualPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "pig-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the pig.",
+					"successPhrase": "You found the pig.",
+					"fallbackText": "That is the pig.",
+					"levels": {
+						"L0": {
+							"text": "pig",
+							"audioText": "pig",
+							"fallbackText": "pig",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The pig gives a soft oink.",
+							"audioText": "The pig gives a soft oink.",
+							"fallbackText": "pig",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "round pink pig",
+							"audioText": "round pink pig",
+							"fallbackText": "pig",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The pig stands in the farmyard.",
+							"audioText": "The pig stands in the farmyard.",
+							"fallbackText": "pig",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has a round snout? The pig has a round snout.",
+							"audioText": "Who has a round snout? The pig has a round snout.",
+							"fallbackText": "pig",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The pig wiggles happily by the path.",
+							"audioText": "The pig wiggles happily by the path.",
+							"fallbackText": "pig",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找小猪。",
+					"successPhrase": "你找到小猪了。",
+					"fallbackText": "这是小猪。",
+					"levels": {
+						"L0": {
+							"text": "小猪",
+							"audioText": "小猪",
+							"fallbackText": "小猪",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "小猪轻轻哼哼叫。",
+							"audioText": "小猪轻轻哼哼叫。",
+							"fallbackText": "小猪",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "粉色圆圆的小猪",
+							"audioText": "粉色圆圆的小猪",
+							"fallbackText": "小猪",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "小猪站在农场院子里。",
+							"audioText": "小猪站在农场院子里。",
+							"fallbackText": "小猪",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有圆圆的鼻子？小猪有圆圆的鼻子。",
+							"audioText": "谁有圆圆的鼻子？小猪有圆圆的鼻子。",
+							"fallbackText": "小猪",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "小猪在小路旁开心地动一动。",
+							"audioText": "小猪在小路旁开心地动一动。",
+							"fallbackText": "小猪",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/pig.png",
+						"alt": "pig",
+						"generationPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "pig",
+							"emoji": "🐖"
+						}
+					},
+					"visualPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/pig-bright.png",
+						"alt": "pig bright large",
+						"generationPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "pig bright large",
+							"emoji": "🐖"
+						}
+					},
+					"visualPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "horse",
+			"category": "farm-animal",
+			"tags": ["farm", "animal", "pasture"],
+			"visualPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "horse-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the horse.",
+					"successPhrase": "You found the horse.",
+					"fallbackText": "That is the horse.",
+					"levels": {
+						"L0": {
+							"text": "horse",
+							"audioText": "horse",
+							"fallbackText": "horse",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The horse walks softly.",
+							"audioText": "The horse walks softly.",
+							"fallbackText": "horse",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "brown little horse",
+							"audioText": "brown little horse",
+							"fallbackText": "horse",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The horse walks across the meadow.",
+							"audioText": "The horse walks across the meadow.",
+							"fallbackText": "horse",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has a swishy tail? The horse has a swishy tail.",
+							"audioText": "Who has a swishy tail? The horse has a swishy tail.",
+							"fallbackText": "horse",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The horse looks at the sunny farm.",
+							"audioText": "The horse looks at the sunny farm.",
+							"fallbackText": "horse",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找小马。",
+					"successPhrase": "你找到小马了。",
+					"fallbackText": "这是小马。",
+					"levels": {
+						"L0": {
+							"text": "小马",
+							"audioText": "小马",
+							"fallbackText": "小马",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "小马轻轻走。",
+							"audioText": "小马轻轻走。",
+							"fallbackText": "小马",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "棕色的小马",
+							"audioText": "棕色的小马",
+							"fallbackText": "小马",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "小马走过草地。",
+							"audioText": "小马走过草地。",
+							"fallbackText": "小马",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有摇摇的尾巴？小马有摇摇的尾巴。",
+							"audioText": "谁有摇摇的尾巴？小马有摇摇的尾巴。",
+							"fallbackText": "小马",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "小马看着阳光下的农场。",
+							"audioText": "小马看着阳光下的农场。",
+							"fallbackText": "小马",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/horse.png",
+						"alt": "horse",
+						"generationPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "horse",
+							"emoji": "🐴"
+						}
+					},
+					"visualPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/horse-bright.png",
+						"alt": "horse bright large",
+						"generationPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "horse bright large",
+							"emoji": "🐴"
+						}
+					},
+					"visualPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "chicken",
+			"category": "farm-animal",
+			"tags": ["farm", "animal", "coop"],
+			"visualPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "chicken-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the chicken.",
+					"successPhrase": "You found the chicken.",
+					"fallbackText": "That is the chicken.",
+					"levels": {
+						"L0": {
+							"text": "chicken",
+							"audioText": "chicken",
+							"fallbackText": "chicken",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The chicken says cluck.",
+							"audioText": "The chicken says cluck.",
+							"fallbackText": "chicken",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "small yellow chicken",
+							"audioText": "small yellow chicken",
+							"fallbackText": "chicken",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The chicken pecks by the coop.",
+							"audioText": "The chicken pecks by the coop.",
+							"fallbackText": "chicken",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who says cluck? The chicken says cluck.",
+							"audioText": "Who says cluck? The chicken says cluck.",
+							"fallbackText": "chicken",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The chicken hops near the sunny coop.",
+							"audioText": "The chicken hops near the sunny coop.",
+							"fallbackText": "chicken",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找小鸡。",
+					"successPhrase": "你找到小鸡了。",
+					"fallbackText": "这是小鸡。",
+					"levels": {
+						"L0": {
+							"text": "小鸡",
+							"audioText": "小鸡",
+							"fallbackText": "小鸡",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "小鸡咯咯叫。",
+							"audioText": "小鸡咯咯叫。",
+							"fallbackText": "小鸡",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "黄色的小鸡",
+							"audioText": "黄色的小鸡",
+							"fallbackText": "小鸡",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "小鸡在鸡舍旁啄一啄。",
+							"audioText": "小鸡在鸡舍旁啄一啄。",
+							"fallbackText": "小鸡",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁咯咯叫？小鸡咯咯叫。",
+							"audioText": "谁咯咯叫？小鸡咯咯叫。",
+							"fallbackText": "小鸡",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "小鸡在阳光下的鸡舍旁跳一跳。",
+							"audioText": "小鸡在阳光下的鸡舍旁跳一跳。",
+							"fallbackText": "小鸡",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/chicken.png",
+						"alt": "chicken",
+						"generationPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "chicken",
+							"emoji": "🐔"
+						}
+					},
+					"visualPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/chicken-bright.png",
+						"alt": "chicken bright large",
+						"generationPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "chicken bright large",
+							"emoji": "🐔"
+						}
+					},
+					"visualPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "goat",
+			"category": "farm-animal",
+			"tags": ["farm", "animal", "pasture"],
+			"visualPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "goat-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the goat.",
+					"successPhrase": "You found the goat.",
+					"fallbackText": "That is the goat.",
+					"levels": {
+						"L0": {
+							"text": "goat",
+							"audioText": "goat",
+							"fallbackText": "goat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The goat gives a little bleat.",
+							"audioText": "The goat gives a little bleat.",
+							"fallbackText": "goat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "little farm goat",
+							"audioText": "little farm goat",
+							"fallbackText": "goat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The goat stands near the hill.",
+							"audioText": "The goat stands near the hill.",
+							"fallbackText": "goat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has tiny horns? The goat has tiny horns.",
+							"audioText": "Who has tiny horns? The goat has tiny horns.",
+							"fallbackText": "goat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The goat looks around the green pasture.",
+							"audioText": "The goat looks around the green pasture.",
+							"fallbackText": "goat",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找山羊。",
+					"successPhrase": "你找到山羊了。",
+					"fallbackText": "这是山羊。",
+					"levels": {
+						"L0": {
+							"text": "山羊",
+							"audioText": "山羊",
+							"fallbackText": "山羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "山羊轻轻咩咩叫。",
+							"audioText": "山羊轻轻咩咩叫。",
+							"fallbackText": "山羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "农场里的小山羊",
+							"audioText": "农场里的小山羊",
+							"fallbackText": "山羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "山羊站在小山坡旁。",
+							"audioText": "山羊站在小山坡旁。",
+							"fallbackText": "山羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有小小的角？山羊有小小的角。",
+							"audioText": "谁有小小的角？山羊有小小的角。",
+							"fallbackText": "山羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "山羊看看绿色的牧场。",
+							"audioText": "山羊看看绿色的牧场。",
+							"fallbackText": "山羊",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/goat.png",
+						"alt": "goat",
+						"generationPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "goat",
+							"emoji": "🐐"
+						}
+					},
+					"visualPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/goat-bright.png",
+						"alt": "goat bright large",
+						"generationPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "goat bright large",
+							"emoji": "🐐"
+						}
+					},
+					"visualPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "tractor",
+			"category": "farm-vehicle",
+			"tags": ["farm", "vehicle", "path"],
+			"visualPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "tractor-wiggle",
+				"animation": "wiggle"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the tractor.",
+					"successPhrase": "You found the tractor.",
+					"fallbackText": "That is the tractor.",
+					"levels": {
+						"L0": {
+							"text": "tractor",
+							"audioText": "tractor",
+							"fallbackText": "tractor",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The tractor rolls slowly.",
+							"audioText": "The tractor rolls slowly.",
+							"fallbackText": "tractor",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "small farm tractor",
+							"audioText": "small farm tractor",
+							"fallbackText": "tractor",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The tractor waits on the path.",
+							"audioText": "The tractor waits on the path.",
+							"fallbackText": "tractor",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "Who has big wheels? The tractor has big wheels.",
+							"audioText": "Who has big wheels? The tractor has big wheels.",
+							"fallbackText": "tractor",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The tractor rolls by the vegetable patch.",
+							"audioText": "The tractor rolls by the vegetable patch.",
+							"fallbackText": "tractor",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找拖拉机。",
+					"successPhrase": "你找到拖拉机了。",
+					"fallbackText": "这是拖拉机。",
+					"levels": {
+						"L0": {
+							"text": "拖拉机",
+							"audioText": "拖拉机",
+							"fallbackText": "拖拉机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "拖拉机慢慢开。",
+							"audioText": "拖拉机慢慢开。",
+							"fallbackText": "拖拉机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "小小的拖拉机",
+							"audioText": "小小的拖拉机",
+							"fallbackText": "拖拉机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "拖拉机停在小路上。",
+							"audioText": "拖拉机停在小路上。",
+							"fallbackText": "拖拉机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有大轮子？拖拉机有大轮子。",
+							"audioText": "谁有大轮子？拖拉机有大轮子。",
+							"fallbackText": "拖拉机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "拖拉机开过菜地旁。",
+							"audioText": "拖拉机开过菜地旁。",
+							"fallbackText": "拖拉机",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/tractor.png",
+						"alt": "tractor",
+						"generationPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "tractor",
+							"emoji": "🚜"
+						}
+					},
+					"visualPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/tractor-bright.png",
+						"alt": "tractor bright large",
+						"generationPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "tractor bright large",
+							"emoji": "🚜"
+						}
+					},
+					"visualPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "barn",
+			"category": "farm-place",
+			"tags": ["farm", "building", "barn"],
+			"visualPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "barn-glow",
+				"animation": "glow"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the barn.",
+					"successPhrase": "You found the barn.",
+					"fallbackText": "That is the barn.",
+					"levels": {
+						"L0": {
+							"text": "barn",
+							"audioText": "barn",
+							"fallbackText": "barn",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The barn is red.",
+							"audioText": "The barn is red.",
+							"fallbackText": "barn",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "bright red barn",
+							"audioText": "bright red barn",
+							"fallbackText": "barn",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The barn stands by the farmyard.",
+							"audioText": "The barn stands by the farmyard.",
+							"fallbackText": "barn",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What is red? The barn is red.",
+							"audioText": "What is red? The barn is red.",
+							"fallbackText": "barn",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The barn keeps the farm feeling cozy.",
+							"audioText": "The barn keeps the farm feeling cozy.",
+							"fallbackText": "barn",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找谷仓。",
+					"successPhrase": "你找到谷仓了。",
+					"fallbackText": "这是谷仓。",
+					"levels": {
+						"L0": {
+							"text": "谷仓",
+							"audioText": "谷仓",
+							"fallbackText": "谷仓",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "谷仓是红色的。",
+							"audioText": "谷仓是红色的。",
+							"fallbackText": "谷仓",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "亮亮的红谷仓",
+							"audioText": "亮亮的红谷仓",
+							"fallbackText": "谷仓",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "谷仓站在农场院子旁。",
+							"audioText": "谷仓站在农场院子旁。",
+							"fallbackText": "谷仓",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么是红色的？谷仓是红色的。",
+							"audioText": "什么是红色的？谷仓是红色的。",
+							"fallbackText": "谷仓",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "谷仓让农场感觉暖暖的。",
+							"audioText": "谷仓让农场感觉暖暖的。",
+							"fallbackText": "谷仓",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/barn.png",
+						"alt": "barn",
+						"generationPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "barn",
+							"emoji": "🏠"
+						}
+					},
+					"visualPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/barn-bright.png",
+						"alt": "barn bright large",
+						"generationPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "barn bright large",
+							"emoji": "🏠"
+						}
+					},
+					"visualPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "haystack",
+			"category": "farm-object",
+			"tags": ["farm", "hay", "straw"],
+			"visualPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "haystack-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the haystack.",
+					"successPhrase": "You found the haystack.",
+					"fallbackText": "That is the haystack.",
+					"levels": {
+						"L0": {
+							"text": "haystack",
+							"audioText": "haystack",
+							"fallbackText": "haystack",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The haystack is soft and golden.",
+							"audioText": "The haystack is soft and golden.",
+							"fallbackText": "haystack",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "golden haystack",
+							"audioText": "golden haystack",
+							"fallbackText": "haystack",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The haystack sits near the barn.",
+							"audioText": "The haystack sits near the barn.",
+							"fallbackText": "haystack",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What is golden? The haystack is golden.",
+							"audioText": "What is golden? The haystack is golden.",
+							"fallbackText": "haystack",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The haystack rests quietly in the sun.",
+							"audioText": "The haystack rests quietly in the sun.",
+							"fallbackText": "haystack",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找干草堆。",
+					"successPhrase": "你找到干草堆了。",
+					"fallbackText": "这是干草堆。",
+					"levels": {
+						"L0": {
+							"text": "干草堆",
+							"audioText": "干草堆",
+							"fallbackText": "干草堆",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "干草堆金黄金黄的。",
+							"audioText": "干草堆金黄金黄的。",
+							"fallbackText": "干草堆",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "金色的干草堆",
+							"audioText": "金色的干草堆",
+							"fallbackText": "干草堆",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "干草堆在谷仓旁。",
+							"audioText": "干草堆在谷仓旁。",
+							"fallbackText": "干草堆",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么是金色的？干草堆是金色的。",
+							"audioText": "什么是金色的？干草堆是金色的。",
+							"fallbackText": "干草堆",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "干草堆安静地晒着太阳。",
+							"audioText": "干草堆安静地晒着太阳。",
+							"fallbackText": "干草堆",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/haystack.png",
+						"alt": "haystack",
+						"generationPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "haystack",
+							"emoji": "🌾"
+						}
+					},
+					"visualPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/haystack-bright.png",
+						"alt": "haystack bright large",
+						"generationPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "haystack bright large",
+							"emoji": "🌾"
+						}
+					},
+					"visualPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "carrot",
+			"category": "farm-food",
+			"tags": ["farm", "vegetable", "garden-bed"],
+			"visualPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "carrot-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "English",
+					"findPrompt": "Find the carrot.",
+					"successPhrase": "You found the carrot.",
+					"fallbackText": "That is the carrot.",
+					"levels": {
+						"L0": {
+							"text": "carrot",
+							"audioText": "carrot",
+							"fallbackText": "carrot",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The carrot grows in the garden.",
+							"audioText": "The carrot grows in the garden.",
+							"fallbackText": "carrot",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "orange carrot",
+							"audioText": "orange carrot",
+							"fallbackText": "carrot",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The carrot sits in the vegetable patch.",
+							"audioText": "The carrot sits in the vegetable patch.",
+							"fallbackText": "carrot",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What is orange? The carrot is orange.",
+							"audioText": "What is orange? The carrot is orange.",
+							"fallbackText": "carrot",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The carrot peeks out of the soft garden bed.",
+							"audioText": "The carrot peeks out of the soft garden bed.",
+							"fallbackText": "carrot",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-en-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-en-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-en-success.mp3"
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "Simplified Chinese",
+					"findPrompt": "找一找胡萝卜。",
+					"successPhrase": "你找到胡萝卜了。",
+					"fallbackText": "这是胡萝卜。",
+					"levels": {
+						"L0": {
+							"text": "胡萝卜",
+							"audioText": "胡萝卜",
+							"fallbackText": "胡萝卜",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "胡萝卜长在菜园里。",
+							"audioText": "胡萝卜长在菜园里。",
+							"fallbackText": "胡萝卜",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "橙色的胡萝卜",
+							"audioText": "橙色的胡萝卜",
+							"fallbackText": "胡萝卜",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "胡萝卜在菜地里。",
+							"audioText": "胡萝卜在菜地里。",
+							"fallbackText": "胡萝卜",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "什么是橙色的？胡萝卜是橙色的。",
+							"audioText": "什么是橙色的？胡萝卜是橙色的。",
+							"fallbackText": "胡萝卜",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "胡萝卜从软软的菜地里露出来。",
+							"audioText": "胡萝卜从软软的菜地里露出来。",
+							"fallbackText": "胡萝卜",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L5.mp3"
+							}
+						}
+					},
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-find.mp3"
+					},
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-success.mp3"
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "Classic",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/carrot.png",
+						"alt": "carrot",
+						"generationPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "carrot",
+							"emoji": "🥕"
+						}
+					},
+					"visualPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "Bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/farm-friends/carrot-bright.png",
+						"alt": "carrot bright large",
+						"generationPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "carrot bright large",
+							"emoji": "🥕"
+						}
+					},
+					"visualPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		}
+	]
+}
