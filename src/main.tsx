@@ -1,6 +1,9 @@
 import { render } from 'preact'
 import { App } from './app'
+import { installIosZoomLock } from './input/ios-zoom-lock'
 import './styles.css'
+
+installIosZoomLock()
 
 const root = document.getElementById('app')
 if (root) {

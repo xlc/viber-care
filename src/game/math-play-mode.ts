@@ -1,5 +1,8 @@
 import type { ObjectConcept } from '../content/schema'
-import type { MathFocus as MathPlayFocus } from '../state/settings'
+import {
+	MATH_FOCUS_OPTIONS,
+	type MathFocus as MathPlayFocus,
+} from '../state/settings'
 
 export type MathPlayPlacement = {
 	object: ObjectConcept
@@ -131,6 +134,16 @@ export function createMathPlayRound(
 		}
 	}
 	return null
+}
+
+export function getAvailableMathFocuses(
+	placements: readonly MathPlayPlacement[],
+): MathPlayFocus[] {
+	return MATH_FOCUS_OPTIONS.filter((focus) =>
+		getOrderedRoundTypes(focus).some((roundType) =>
+			Boolean(createRoundByType(placements, roundType, {})),
+		),
+	)
 }
 
 export function handleMathCollect(

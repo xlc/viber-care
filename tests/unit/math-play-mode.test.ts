@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type { ObjectConcept } from '../../src/content/schema'
 import {
 	createMathPlayRound,
+	getAvailableMathFocuses,
 	getMathCountableObjects,
 	handleColorSort,
 	handleDotMatch,
@@ -202,6 +203,19 @@ describe('Math Play round behavior', () => {
 		expect(
 			createMathPlayRound([{ object: sun }], { focus: 'colors' }),
 		).toBeNull()
+	})
+
+	it('reports only playable learning focuses for the available content', () => {
+		expect(getAvailableMathFocuses(placements)).toEqual([
+			'mixed',
+			'counting-1-3',
+			'colors',
+		])
+		expect(getAvailableMathFocuses([{ object: rabbit }])).toEqual([
+			'mixed',
+			'counting-1-3',
+		])
+		expect(getAvailableMathFocuses([{ object: sun }])).toEqual([])
 	})
 })
 

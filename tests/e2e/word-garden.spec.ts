@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
-import { expect, type Page, test } from '@playwright/test'
+import { expect, type Locator, type Page, test } from '@playwright/test'
 import {
 	DEFAULT_SETTINGS,
 	SETTINGS_STORAGE_KEY,
@@ -163,6 +163,21 @@ async function expectObjectCountBetween(
 	return count
 }
 
+async function expectUnhighlightable(locator: Locator) {
+	await expect(locator).toBeVisible()
+	const styles = await locator.evaluate((element) => {
+		const style = window.getComputedStyle(element)
+		return {
+			tapHighlightColor: style.getPropertyValue('-webkit-tap-highlight-color'),
+			userSelect: style.userSelect,
+			webkitUserSelect: style.getPropertyValue('-webkit-user-select'),
+		}
+	})
+
+	expect([styles.userSelect, styles.webkitUserSelect]).toContain('none')
+	expect(styles.tapHighlightColor).toMatch(/^(rgba\(0, 0, 0, 0\)|transparent)$/)
+}
+
 async function completeMathRound(page: Page) {
 	const stage = page.getByTestId('math-stage')
 	await expect(stage).toBeVisible()
@@ -221,6 +236,44 @@ test('app loads', async ({ page }) => {
 		'data-variant-id',
 		/classic|bright-large/,
 	)
+})
+
+test('viewport locks iOS pinch zoom', async ({ page }) => {
+	await page.goto('/')
+
+	const viewportContent = await page
+		.locator('meta[name="viewport"]')
+		.getAttribute('content')
+
+	expect(viewportContent?.split(',').map((part) => part.trim())).toEqual([
+		'width=device-width',
+		'initial-scale=1',
+		'minimum-scale=1',
+		'maximum-scale=1',
+		'user-scalable=no',
+		'viewport-fit=cover',
+	])
+})
+
+test('scene and item surfaces cannot be browser-highlighted', async ({
+	page,
+}) => {
+	await page.goto('/')
+
+	await expectObjectCountBetween(page, 8, 10)
+	await expectUnhighlightable(page.locator('.garden-stage'))
+	await expectUnhighlightable(page.locator('.garden-object').first())
+	await expectUnhighlightable(page.locator('.garden-object img').first())
+
+	await page.getByTestId('mode-puzzle').click()
+	await expectUnhighlightable(page.locator('.puzzle-gap').first())
+	await expectUnhighlightable(page.locator('.puzzle-piece').first())
+	await expectUnhighlightable(page.locator('.puzzle-piece img').first())
+
+	await page.getByTestId('mode-math').click()
+	await expectUnhighlightable(page.getByTestId('math-stage'))
+	await expectUnhighlightable(page.locator('.math-object').first())
+	await expectUnhighlightable(page.locator('.math-object img').first())
 })
 
 test('explore tap displays the word', async ({ page }) => {
@@ -321,6 +374,23 @@ test('settings panel highlights the current pack selection', async ({
 	await expect(numbersPack).toHaveClass(/is-selected/)
 	await expect(gardenPack).toHaveAttribute('aria-pressed', 'false')
 	await expect(gardenPack).not.toHaveClass(/is-selected/)
+})
+
+test('settings panel closes from the blurred background only', async ({
+	page,
+}) => {
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+	const dialog = page.getByRole('dialog')
+
+	await expect(dialog).toBeVisible()
+	await page.getByTestId('pack-numbers').click()
+	await expect(dialog).toBeVisible()
+
+	await page
+		.locator('.settings-backdrop-button')
+		.click({ position: { x: 8, y: 8 } })
+	await expect(dialog).toHaveCount(0)
 })
 
 test('settings panel does not expose mode controls', async ({ page }) => {
@@ -551,6 +621,49 @@ test('settings panel can bias Math Play learning focus', async ({ page }) => {
 	await expect(page.getByTestId('math-stage')).toHaveAttribute(
 		'data-round-type',
 		'color-sort',
+	)
+})
+
+test('settings panel only offers playable Math Play learning focuses', async ({
+	page,
+}) => {
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+
+	await expect(page.getByTestId('math-focus-mixed')).toBeVisible()
+	await expect(page.getByTestId('math-focus-counting-1-3')).toBeVisible()
+	await expect(page.getByTestId('math-focus-colors')).toBeVisible()
+
+	await page.getByTestId('pack-ocean-animals').click()
+	await expect(page.getByTestId('math-focus-mixed')).toBeVisible()
+	await expect(page.getByTestId('math-focus-counting-1-3')).toBeVisible()
+	await expect(page.getByTestId('math-focus-colors')).toHaveCount(0)
+
+	await page.getByTestId('pack-dinosaurs').click()
+	await expect(page.getByText('Learning Focus')).toHaveCount(0)
+	await page.getByLabel('Close settings').click()
+	await expect(page.getByTestId('mode-math')).toBeDisabled()
+})
+
+test('unavailable learning focus falls back to playful Math Play', async ({
+	page,
+}) => {
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('pack-fruits-and-vegetables').click()
+	await page.getByTestId('math-focus-colors').click()
+	await page.getByTestId('pack-ocean-animals').click()
+	await expect(page.getByTestId('math-focus-colors')).toHaveCount(0)
+	await page.getByLabel('Close settings').click()
+
+	await page.getByTestId('mode-math').click()
+	await expect(page.getByTestId('math-stage')).toHaveAttribute(
+		'data-round-type',
+		'count-and-collect',
+	)
+	await expect(page.getByTestId('prompt')).toContainText(/Put \d/)
+	await expect(page.getByTestId('prompt')).not.toContainText(
+		/Try another set|wrong|try again/i,
 	)
 })
 

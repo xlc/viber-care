@@ -22,9 +22,11 @@ import {
 	type ColorSortItem,
 	createMathPlayRound,
 	type DotMatchChoice,
+	getAvailableMathFocuses,
 	handleColorSort,
 	handleDotMatch,
 	handleMathCollect,
+	type MathPlayPlacement,
 	type MathPlayRound,
 } from './game/math-play-mode'
 import {
@@ -661,8 +663,27 @@ function PuzzlePieceButton({
 	)
 }
 
+function getMathVisual(
+	objectId: string,
+	objectById: Map<string, ObjectConcept>,
+	placementByObjectId: Map<string, VisibleScenePlacement>,
+) {
+	const placement = placementByObjectId.get(objectId)
+	const object = objectById.get(objectId) ?? placement?.object
+	const variant = placement?.variant ?? object?.variants[0]
+	if (!object || !variant) {
+		return null
+	}
+
+	return {
+		object,
+		image: variant.image,
+	}
+}
+
 function MathPlayStage({
 	round,
+	objectById,
 	placementByObjectId,
 	selectedSortItemId,
 	onCollect,
@@ -671,6 +692,7 @@ function MathPlayStage({
 	onColorSort,
 }: {
 	round: MathPlayRound
+	objectById: Map<string, ObjectConcept>
 	placementByObjectId: Map<string, VisibleScenePlacement>
 	selectedSortItemId: string | null
 	onCollect: (object: ObjectConcept) => void
@@ -679,8 +701,12 @@ function MathPlayStage({
 	onColorSort: (item: ColorSortItem, basketColor: string) => void
 }) {
 	if (round.type === 'dot-match') {
-		const targetPlacement = placementByObjectId.get(round.targetObjectId)
-		if (!targetPlacement) {
+		const targetVisual = getMathVisual(
+			round.targetObjectId,
+			objectById,
+			placementByObjectId,
+		)
+		if (!targetVisual) {
 			return null
 		}
 
@@ -713,7 +739,7 @@ function MathPlayStage({
 							{Array.from({ length: choice.quantity }, (_, index) => (
 								<img
 									key={index}
-									src={targetPlacement.variant.image.path}
+									src={targetVisual.image.path}
 									alt=""
 									draggable={false}
 								/>
@@ -739,8 +765,12 @@ function MathPlayStage({
 					{round.items
 						.filter((item) => !item.placed)
 						.map((item) => {
-							const placement = placementByObjectId.get(item.objectId)
-							if (!placement) {
+							const visual = getMathVisual(
+								item.objectId,
+								objectById,
+								placementByObjectId,
+							)
+							if (!visual) {
 								return null
 							}
 							return (
@@ -755,11 +785,7 @@ function MathPlayStage({
 									aria-pressed={selectedSortItemId === item.id}
 									onClick={() => onSelectSortItem(item.id)}
 								>
-									<img
-										src={placement.variant.image.path}
-										alt=""
-										draggable={false}
-									/>
+									<img src={visual.image.path} alt="" draggable={false} />
 								</button>
 							)
 						})}
@@ -784,11 +810,15 @@ function MathPlayStage({
 								{round.items
 									.filter((item) => item.placed && item.color === color)
 									.map((item) => {
-										const placement = placementByObjectId.get(item.objectId)
-										return placement ? (
+										const visual = getMathVisual(
+											item.objectId,
+											objectById,
+											placementByObjectId,
+										)
+										return visual ? (
 											<img
 												key={item.id}
-												src={placement.variant.image.path}
+												src={visual.image.path}
 												alt=""
 												draggable={false}
 											/>
@@ -804,13 +834,13 @@ function MathPlayStage({
 
 	const objectId =
 		round.type === 'feed-the-friend' ? round.itemObjectId : round.targetObjectId
-	const placement = placementByObjectId.get(objectId)
-	if (!placement) {
+	const visual = getMathVisual(objectId, objectById, placementByObjectId)
+	if (!visual) {
 		return null
 	}
-	const friendPlacement =
+	const friendVisual =
 		round.type === 'feed-the-friend'
-			? placementByObjectId.get(round.friendObjectId)
+			? getMathVisual(round.friendObjectId, objectById, placementByObjectId)
 			: null
 	const itemIndexes = Array.from(
 		{ length: round.targetQuantity },
@@ -827,13 +857,9 @@ function MathPlayStage({
 			data-testid="math-stage"
 			data-round-type={round.type}
 		>
-			{friendPlacement ? (
+			{friendVisual ? (
 				<div className="math-friend" data-testid="math-friend">
-					<img
-						src={friendPlacement.variant.image.path}
-						alt=""
-						draggable={false}
-					/>
+					<img src={friendVisual.image.path} alt="" draggable={false} />
 				</div>
 			) : null}
 			<div className="math-targets" role="group" aria-label="Counting objects">
@@ -842,11 +868,11 @@ function MathPlayStage({
 						key={index}
 						type="button"
 						className="math-object"
-						data-testid={`math-object-${placement.object.id}`}
-						aria-label={`Collect ${placement.object.id}`}
-						onClick={() => onCollect(placement.object)}
+						data-testid={`math-object-${visual.object.id}`}
+						aria-label={`Collect ${visual.object.id}`}
+						onClick={() => onCollect(visual.object)}
 					>
-						<img src={placement.variant.image.path} alt="" draggable={false} />
+						<img src={visual.image.path} alt="" draggable={false} />
 					</button>
 				))}
 			</div>
@@ -858,12 +884,7 @@ function MathPlayStage({
 			>
 				<div className="math-basket-items">
 					{collectedIndexes.map((index) => (
-						<img
-							key={index}
-							src={placement.variant.image.path}
-							alt=""
-							draggable={false}
-						/>
+						<img key={index} src={visual.image.path} alt="" draggable={false} />
 					))}
 				</div>
 			</div>
@@ -874,24 +895,30 @@ function MathPlayStage({
 function ModeSegment({
 	mode,
 	onChange,
+	disabledModes = new Set<GameMode>(),
 }: {
 	mode: GameMode
 	onChange: (mode: GameMode) => void
+	disabledModes?: ReadonlySet<GameMode>
 }) {
 	return (
 		<div className="mode-segment" role="group" aria-label="Game mode">
-			{GAME_MODES.map((candidate) => (
-				<button
-					key={candidate}
-					type="button"
-					className={mode === candidate ? 'is-selected' : ''}
-					aria-pressed={mode === candidate}
-					data-testid={`mode-${candidate}`}
-					onClick={() => onChange(candidate)}
-				>
-					{modeLabels[candidate]}
-				</button>
-			))}
+			{GAME_MODES.map((candidate) => {
+				const isDisabled = disabledModes.has(candidate)
+				return (
+					<button
+						key={candidate}
+						type="button"
+						className={mode === candidate ? 'is-selected' : ''}
+						aria-pressed={mode === candidate}
+						data-testid={`mode-${candidate}`}
+						disabled={isDisabled}
+						onClick={() => onChange(candidate)}
+					>
+						{modeLabels[candidate]}
+					</button>
+				)
+			})}
 		</div>
 	)
 }
@@ -899,11 +926,13 @@ function ModeSegment({
 function ParentSettings({
 	catalog,
 	settings,
+	availableMathFocuses,
 	onChange,
 	onClose,
 }: {
 	catalog: RuntimeCatalog
 	settings: WordGardenSettings
+	availableMathFocuses: readonly MathFocus[]
 	onChange: (settings: WordGardenSettings) => void
 	onClose: () => void
 }) {
@@ -915,9 +944,19 @@ function ParentSettings({
 	const selectedPack = getPack(catalog, settings.selectedPackId)
 	const selectedPackSets = getPackSets(selectedPack)
 	const selectedSet = getSelectedSet(selectedPack, settings.selectedSetId)
+	const mathFocusOptions = MATH_FOCUS_OPTIONS.filter((focus) =>
+		availableMathFocuses.includes(focus),
+	)
 
 	return (
 		<div className="settings-backdrop" role="presentation">
+			<button
+				type="button"
+				className="settings-backdrop-button"
+				aria-label="Dismiss backdrop"
+				tabIndex={-1}
+				onClick={onClose}
+			/>
 			<section
 				className="settings-panel"
 				role="dialog"
@@ -1045,23 +1084,29 @@ function ParentSettings({
 					</div>
 				</div>
 
-				<div className="settings-section">
-					<h3>Learning Focus</h3>
-					<div className="preset-list" role="group" aria-label="Learning focus">
-						{MATH_FOCUS_OPTIONS.map((focus) => (
-							<button
-								key={focus}
-								type="button"
-								className={settings.mathFocus === focus ? 'is-selected' : ''}
-								aria-pressed={settings.mathFocus === focus}
-								data-testid={`math-focus-${focus}`}
-								onClick={() => update({ mathFocus: focus })}
-							>
-								{mathFocusLabels[focus]}
-							</button>
-						))}
+				{mathFocusOptions.length > 1 ? (
+					<div className="settings-section">
+						<h3>Learning Focus</h3>
+						<div
+							className="preset-list"
+							role="group"
+							aria-label="Learning focus"
+						>
+							{mathFocusOptions.map((focus) => (
+								<button
+									key={focus}
+									type="button"
+									className={settings.mathFocus === focus ? 'is-selected' : ''}
+									aria-pressed={settings.mathFocus === focus}
+									data-testid={`math-focus-${focus}`}
+									onClick={() => update({ mathFocus: focus })}
+								>
+									{mathFocusLabels[focus]}
+								</button>
+							))}
+						</div>
 					</div>
-				</div>
+				) : null}
 
 				<div className="settings-section">
 					<h3>Language Order</h3>
@@ -1147,9 +1192,8 @@ export function App() {
 	const normalizedCardIndex =
 		cardObjects.length > 0 ? Math.min(cardIndex, cardObjects.length - 1) : 0
 	const activeCardObject = cardObjects[normalizedCardIndex] ?? null
-	const activeSetId = pack
-		? getSelectedSet(pack, settings.selectedSetId).id
-		: null
+	const activeSet = pack ? getSelectedSet(pack, settings.selectedSetId) : null
+	const activeSetId = activeSet?.id ?? null
 	const activeScenes = pack ? getSetScenes(pack, activeSetId) : []
 	const normalizedSceneIndex =
 		activeScenes.length > 0
@@ -1167,6 +1211,17 @@ export function App() {
 		() => placements.map((placement) => placement.object),
 		[placements],
 	)
+	const mathObjects = useMemo(() => {
+		if (!pack || !activeSet) {
+			return []
+		}
+		const activeObjectIds = new Set(activeSet.itemIds)
+		return pack.objects.filter((object) => activeObjectIds.has(object.id))
+	}, [activeSet, pack])
+	const mathPlacements = useMemo<MathPlayPlacement[]>(
+		() => mathObjects.map((object) => ({ object })),
+		[mathObjects],
+	)
 	const placementByObjectId = useMemo(
 		() =>
 			new Map(placements.map((placement) => [placement.object.id, placement])),
@@ -1176,6 +1231,24 @@ export function App() {
 		() => new Map(objects.map((object) => [object.id, object])),
 		[objects],
 	)
+	const mathObjectById = useMemo(
+		() => new Map(mathObjects.map((object) => [object.id, object])),
+		[mathObjects],
+	)
+	const availableMathFocuses = useMemo(
+		() => getAvailableMathFocuses(mathPlacements),
+		[mathPlacements],
+	)
+	const playableMathFocus = availableMathFocuses.includes(settings.mathFocus)
+		? settings.mathFocus
+		: (availableMathFocuses[0] ?? 'mixed')
+	const disabledModes = useMemo(() => {
+		const modes = new Set<GameMode>()
+		if (availableMathFocuses.length === 0) {
+			modes.add('math')
+		}
+		return modes
+	}, [availableMathFocuses.length])
 	const targetObject = useMemo(() => {
 		if (!findRound) {
 			return objects[0] ?? null
@@ -1216,6 +1289,34 @@ export function App() {
 			preloadSceneAssets(scene, placements)
 		}
 	}, [scene, placements])
+
+	useEffect(() => {
+		const nextFocus = availableMathFocuses[0]
+		if (!nextFocus || availableMathFocuses.includes(settings.mathFocus)) {
+			return
+		}
+		setSettings((current) =>
+			availableMathFocuses.includes(current.mathFocus)
+				? current
+				: { ...current, mathFocus: nextFocus },
+		)
+	}, [availableMathFocuses, settings.mathFocus])
+
+	useEffect(() => {
+		if (settings.mode !== 'math' || availableMathFocuses.length > 0) {
+			return
+		}
+		clearMathResetTimeout()
+		setMathRound(null)
+		setMathRoundIndex(0)
+		setSelectedSortItemId(null)
+		setToast({ kind: 'hello', sequence: [] })
+		setSettings((current) =>
+			current.mode === 'math'
+				? { ...current, mode: 'explore', mathFocus: 'mixed' }
+				: current,
+		)
+	}, [availableMathFocuses.length, settings.mode])
 
 	useEffect(() => {
 		setCardIndex(0)
@@ -1306,15 +1407,21 @@ export function App() {
 	}, [placements, puzzleRound, puzzleRoundIndex, settings.mode])
 
 	useEffect(() => {
-		if (settings.mode === 'math' && placements.length > 0 && !mathRound) {
+		if (settings.mode === 'math' && mathPlacements.length > 0 && !mathRound) {
 			setMathRound(
-				createMathPlayRound(placements, {
+				createMathPlayRound(mathPlacements, {
 					roundIndex: mathRoundIndex,
-					focus: settings.mathFocus,
+					focus: playableMathFocus,
 				}),
 			)
 		}
-	}, [mathRound, mathRoundIndex, placements, settings.mathFocus, settings.mode])
+	}, [
+		mathPlacements,
+		mathRound,
+		mathRoundIndex,
+		playableMathFocus,
+		settings.mode,
+	])
 
 	useEffect(() => {
 		let nextToast: ToastState | null = null
@@ -1370,9 +1477,11 @@ export function App() {
 			setMathRound(
 				(round) =>
 					round ??
-					createMathPlayRound(placements, {
+					createMathPlayRound(mathPlacements, {
 						roundIndex: mathRoundIndex,
-						focus: nextSettings.mathFocus,
+						focus: availableMathFocuses.includes(nextSettings.mathFocus)
+							? nextSettings.mathFocus
+							: (availableMathFocuses[0] ?? 'mixed'),
 					}),
 			)
 			setToast({ kind: 'hello', sequence: [] })
@@ -1563,10 +1672,10 @@ export function App() {
 				mathResetTimeoutRef.current = null
 				setMathRoundIndex(nextRoundIndex)
 				setMathRound(
-					createMathPlayRound(placements, {
+					createMathPlayRound(mathPlacements, {
 						roundIndex: nextRoundIndex,
 						previousTargetId: object.id,
-						focus: settings.mathFocus,
+						focus: playableMathFocus,
 					}),
 				)
 				setActiveObjectId(null)
@@ -1588,7 +1697,7 @@ export function App() {
 			return
 		}
 
-		const object = objectById.get(choice.objectId)
+		const object = mathObjectById.get(choice.objectId)
 		const result = handleDotMatch(mathRound, choice.id)
 		const nextRound = {
 			...mathRound,
@@ -1606,13 +1715,13 @@ export function App() {
 						)}.`,
 						'zh-Hans': `${getChineseQuantityText(object, choice.quantity)}。`,
 					})
-				: getMathPrompt(mathRound, objectById, settings)
+				: getMathPrompt(mathRound, mathObjectById, settings)
 			setToast({ kind: 'math', sequence })
 			speakSequence(sequence, settings.muted)
 			window.setTimeout(() => {
 				setToast({
 					kind: 'math',
-					sequence: getMathPrompt(mathRound, objectById, settings),
+					sequence: getMathPrompt(mathRound, mathObjectById, settings),
 				})
 			}, 1200)
 			return
@@ -1634,10 +1743,10 @@ export function App() {
 
 		const result = handleColorSort(mathRound, item.id, basketColor)
 		if (!result.isTarget) {
-			const object = objectById.get(item.objectId)
+			const object = mathObjectById.get(item.objectId)
 			const sequence = object
 				? buildLearningSequence(object, settings)
-				: getMathPrompt(mathRound, objectById, settings)
+				: getMathPrompt(mathRound, mathObjectById, settings)
 			setToast({ kind: 'math', sequence })
 			speakSequence(sequence, settings.muted)
 			return
@@ -1647,7 +1756,7 @@ export function App() {
 		setMathRound(nextRound)
 		setSelectedSortItemId(null)
 		const placedSequence = createMathPresentation(settings, {
-			en: `${item.color} ${objectById.get(item.objectId)?.math?.englishPlural ?? 'thing'}.`,
+			en: `${item.color} ${mathObjectById.get(item.objectId)?.math?.englishPlural ?? 'thing'}.`,
 			'zh-Hans': `${getChineseColorName(item.color)}。`,
 		})
 		setToast({ kind: 'math', sequence: placedSequence })
@@ -1666,10 +1775,10 @@ export function App() {
 			setMathRoundIndex(nextRoundIndex)
 			setSelectedSortItemId(null)
 			setMathRound(
-				createMathPlayRound(placements, {
+				createMathPlayRound(mathPlacements, {
 					roundIndex: nextRoundIndex,
 					previousTargetId,
-					focus: settings.mathFocus,
+					focus: playableMathFocus,
 				}),
 			)
 			setActiveObjectId(null)
@@ -1723,7 +1832,7 @@ export function App() {
 			: settings.mode === 'find' && targetObject
 				? getFindPrompt(targetObject, settings)
 				: isMathMode && mathRound
-					? getMathPrompt(mathRound, objectById, settings)
+					? getMathPrompt(mathRound, mathObjectById, settings)
 					: isMathMode
 						? getMathFallbackPrompt(settings)
 						: []
@@ -1750,6 +1859,7 @@ export function App() {
 			<header className="topbar">
 				<ModeSegment
 					mode={settings.mode}
+					disabledModes={disabledModes}
 					onChange={(mode) => updateSettings({ ...settings, mode })}
 				/>
 
@@ -1850,6 +1960,7 @@ export function App() {
 							<div className="garden-stage is-math" style={backgroundStyle}>
 								<MathPlayStage
 									round={mathRound}
+									objectById={mathObjectById}
 									placementByObjectId={placementByObjectId}
 									selectedSortItemId={selectedSortItemId}
 									onCollect={handleMathCollectObject}
@@ -1919,6 +2030,7 @@ export function App() {
 				<ParentSettings
 					catalog={catalog}
 					settings={settings}
+					availableMathFocuses={availableMathFocuses}
 					onChange={updateSettings}
 					onClose={() => setSettingsOpen(false)}
 				/>

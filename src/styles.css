@@ -136,6 +136,12 @@ input:focus-visible {
 	padding: 0 14px;
 }
 
+.mode-segment button:disabled {
+	color: rgba(23, 50, 58, 0.42);
+	cursor: default;
+	opacity: 0.62;
+}
+
 .preset-list button {
 	padding: 0 14px;
 	background: #f3fbfd;
@@ -326,6 +332,24 @@ input:focus-visible {
 	box-shadow: var(--shadow);
 	isolation: isolate;
 	touch-action: manipulation;
+}
+
+.garden-stage,
+.garden-stage *,
+.puzzle-tray,
+.puzzle-tray *,
+.math-stage,
+.math-stage * {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.garden-stage img,
+.puzzle-tray img,
+.math-stage img {
+	-webkit-user-drag: none;
 }
 
 .garden-object {
@@ -862,8 +886,19 @@ input:focus-visible {
 	backdrop-filter: blur(4px);
 }
 
+.settings-backdrop-button {
+	position: absolute;
+	inset: 0;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
 .settings-panel {
-	width: min(480px, 100%);
+	position: relative;
+	z-index: 1;
+	width: 480px;
+	max-width: calc(100% - 28px);
 	height: 100%;
 	overflow: auto;
 	padding: 20px;
