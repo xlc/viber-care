@@ -30,59 +30,10 @@
 			},
 			"objects": [
 				{
-					"objectId": "airplane",
-					"x": 70,
-					"y": 22,
-					"scale": 0.82,
-					"zIndex": 2,
-					"regionTags": ["sky"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.75,
-						"max": 0.9
-					}
-				},
-				{
-					"objectId": "helicopter",
-					"x": 34,
-					"y": 25,
-					"scale": 0.78,
-					"zIndex": 3,
-					"regionTags": ["sky"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.72,
-						"max": 0.86
-					}
-				},
-				{
-					"objectId": "truck",
-					"x": 88,
-					"y": 55,
-					"scale": 0.8,
-					"zIndex": 5,
-					"regionTags": ["road"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.74,
-						"max": 0.88
-					}
-				},
-				{
 					"objectId": "car",
-					"x": 28,
-					"y": 65,
+					"x": 20,
+					"y": 64,
 					"scale": 0.82,
-					"zIndex": 6,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
@@ -91,14 +42,14 @@
 					"scaleRange": {
 						"min": 0.75,
 						"max": 0.9
-					}
+					},
+					"zIndex": 5
 				},
 				{
 					"objectId": "bus",
-					"x": 55,
-					"y": 65,
+					"x": 40,
+					"y": 62,
 					"scale": 0.92,
-					"zIndex": 7,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
@@ -107,14 +58,14 @@
 					"scaleRange": {
 						"min": 0.85,
 						"max": 1.01
-					}
+					},
+					"zIndex": 6
 				},
 				{
 					"objectId": "taxi",
-					"x": 76,
-					"y": 70,
+					"x": 60,
+					"y": 68,
 					"scale": 0.74,
-					"zIndex": 8,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
@@ -123,14 +74,14 @@
 					"scaleRange": {
 						"min": 0.68,
 						"max": 0.81
-					}
+					},
+					"zIndex": 7
 				},
 				{
 					"objectId": "bicycle",
-					"x": 13,
+					"x": 78,
 					"y": 72,
 					"scale": 0.72,
-					"zIndex": 9,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
@@ -139,14 +90,14 @@
 					"scaleRange": {
 						"min": 0.66,
 						"max": 0.79
-					}
+					},
+					"zIndex": 8
 				},
 				{
 					"objectId": "scooter",
-					"x": 41,
-					"y": 78,
+					"x": 32,
+					"y": 76,
 					"scale": 0.66,
-					"zIndex": 10,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
@@ -155,119 +106,24 @@
 					"scaleRange": {
 						"min": 0.61,
 						"max": 0.73
-					}
-				},
-				{
-					"objectId": "boat",
-					"x": 76,
-					"y": 84,
-					"scale": 0.74,
-					"zIndex": 11,
-					"regionTags": ["water"],
-					"jitter": {
-						"x": 4,
-						"y": 4
 					},
-					"scaleRange": {
-						"min": 0.68,
-						"max": 0.81
-					}
+					"zIndex": 9
 				},
 				{
-					"objectId": "train",
-					"x": 25,
-					"y": 86,
-					"scale": 0.9,
-					"zIndex": 12,
-					"regionTags": ["rail"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.83,
-						"max": 0.99
-					}
-				},
-				{
-					"objectId": "fire-truck",
-					"x": 42,
-					"y": 56,
-					"scale": 0.86,
-					"zIndex": 8,
+					"objectId": "wagon",
+					"x": 88,
+					"y": 66,
+					"scale": 0.66,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
 						"y": 4
 					},
 					"scaleRange": {
-						"min": 0.79,
-						"max": 0.95
-					}
-				},
-				{
-					"objectId": "ambulance",
-					"x": 68,
-					"y": 56,
-					"scale": 0.82,
-					"zIndex": 8,
-					"regionTags": ["road"],
-					"jitter": {
-						"x": 4,
-						"y": 4
+						"min": 0.6,
+						"max": 0.74
 					},
-					"scaleRange": {
-						"min": 0.75,
-						"max": 0.9
-					}
-				},
-				{
-					"objectId": "motorcycle",
-					"x": 18,
-					"y": 58,
-					"scale": 0.7,
-					"zIndex": 9,
-					"regionTags": ["road"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.64,
-						"max": 0.77
-					}
-				},
-				{
-					"objectId": "tram",
-					"x": 43,
-					"y": 86,
-					"scale": 0.82,
-					"zIndex": 12,
-					"regionTags": ["rail"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.75,
-						"max": 0.9
-					}
-				},
-				{
-					"objectId": "rocket",
-					"x": 18,
-					"y": 20,
-					"scale": 0.76,
-					"zIndex": 3,
-					"regionTags": ["sky"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.7,
-						"max": 0.84
-					}
+					"zIndex": 8
 				}
 			],
 			"music": {
@@ -324,8 +180,8 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 8,
-				"max": 10
+				"min": 4,
+				"max": 5
 			}
 		},
 		{
@@ -350,43 +206,10 @@
 			},
 			"objects": [
 				{
-					"objectId": "airplane",
-					"x": 28,
-					"y": 22,
-					"scale": 0.82,
-					"zIndex": 2,
-					"regionTags": ["sky"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.75,
-						"max": 0.9
-					}
-				},
-				{
-					"objectId": "helicopter",
-					"x": 70,
-					"y": 25,
-					"scale": 0.78,
-					"zIndex": 3,
-					"regionTags": ["sky"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.72,
-						"max": 0.86
-					}
-				},
-				{
 					"objectId": "truck",
-					"x": 22,
+					"x": 16,
 					"y": 56,
 					"scale": 0.8,
-					"zIndex": 5,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
@@ -395,126 +218,30 @@
 					"scaleRange": {
 						"min": 0.74,
 						"max": 0.88
-					}
-				},
-				{
-					"objectId": "car",
-					"x": 46,
-					"y": 64,
-					"scale": 0.82,
-					"zIndex": 6,
-					"regionTags": ["road"],
-					"jitter": {
-						"x": 4,
-						"y": 4
 					},
-					"scaleRange": {
-						"min": 0.75,
-						"max": 0.9
-					}
+					"zIndex": 5
 				},
 				{
-					"objectId": "bus",
-					"x": 72,
-					"y": 65,
-					"scale": 0.92,
-					"zIndex": 7,
-					"regionTags": ["road"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.85,
-						"max": 1.01
-					}
-				},
-				{
-					"objectId": "taxi",
-					"x": 88,
-					"y": 70,
-					"scale": 0.74,
-					"zIndex": 8,
-					"regionTags": ["road"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.68,
-						"max": 0.81
-					}
-				},
-				{
-					"objectId": "bicycle",
-					"x": 12,
-					"y": 72,
-					"scale": 0.72,
-					"zIndex": 9,
-					"regionTags": ["road"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.66,
-						"max": 0.79
-					}
-				},
-				{
-					"objectId": "scooter",
+					"objectId": "delivery-van",
 					"x": 34,
-					"y": 78,
-					"scale": 0.66,
-					"zIndex": 10,
+					"y": 62,
+					"scale": 0.78,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
 						"y": 4
 					},
 					"scaleRange": {
-						"min": 0.61,
-						"max": 0.73
-					}
-				},
-				{
-					"objectId": "boat",
-					"x": 78,
-					"y": 84,
-					"scale": 0.74,
-					"zIndex": 11,
-					"regionTags": ["water"],
-					"jitter": {
-						"x": 4,
-						"y": 4
+						"min": 0.72,
+						"max": 0.88
 					},
-					"scaleRange": {
-						"min": 0.68,
-						"max": 0.81
-					}
+					"zIndex": 6
 				},
 				{
-					"objectId": "train",
-					"x": 25,
-					"y": 86,
-					"scale": 0.9,
-					"zIndex": 12,
-					"regionTags": ["rail"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.83,
-						"max": 0.99
-					}
-				},
-				{
-					"objectId": "fire-truck",
-					"x": 56,
-					"y": 56,
+					"objectId": "garbage-truck",
+					"x": 52,
+					"y": 58,
 					"scale": 0.86,
-					"zIndex": 8,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
@@ -523,14 +250,30 @@
 					"scaleRange": {
 						"min": 0.79,
 						"max": 0.95
-					}
+					},
+					"zIndex": 7
+				},
+				{
+					"objectId": "fire-truck",
+					"x": 70,
+					"y": 56,
+					"scale": 0.86,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					},
+					"zIndex": 8
 				},
 				{
 					"objectId": "ambulance",
-					"x": 28,
-					"y": 56,
+					"x": 86,
+					"y": 62,
 					"scale": 0.82,
-					"zIndex": 8,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
@@ -539,14 +282,14 @@
 					"scaleRange": {
 						"min": 0.75,
 						"max": 0.9
-					}
+					},
+					"zIndex": 8
 				},
 				{
 					"objectId": "motorcycle",
-					"x": 58,
+					"x": 62,
 					"y": 74,
 					"scale": 0.7,
-					"zIndex": 9,
 					"regionTags": ["road"],
 					"jitter": {
 						"x": 4,
@@ -555,39 +298,8 @@
 					"scaleRange": {
 						"min": 0.64,
 						"max": 0.77
-					}
-				},
-				{
-					"objectId": "tram",
-					"x": 42,
-					"y": 86,
-					"scale": 0.82,
-					"zIndex": 12,
-					"regionTags": ["rail"],
-					"jitter": {
-						"x": 4,
-						"y": 4
 					},
-					"scaleRange": {
-						"min": 0.75,
-						"max": 0.9
-					}
-				},
-				{
-					"objectId": "rocket",
-					"x": 86,
-					"y": 20,
-					"scale": 0.76,
-					"zIndex": 3,
-					"regionTags": ["sky"],
-					"jitter": {
-						"x": 4,
-						"y": 4
-					},
-					"scaleRange": {
-						"min": 0.7,
-						"max": 0.84
-					}
+					"zIndex": 9
 				}
 			],
 			"music": {
@@ -644,9 +356,263 @@
 				}
 			],
 			"visibleObjectCount": {
-				"min": 8,
-				"max": 10
+				"min": 4,
+				"max": 5
 			}
+		},
+		{
+			"id": "tracks-and-water",
+			"packId": "transportation",
+			"title": {
+				"en": "Tracks and Water",
+				"zh-Hans": "轨道和水上"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly transportation park with a clear rail track, calm water area, gentle hills, blue sky, and open space for train, tram, subway, boat, and ferry objects. No text, no logos, no traffic danger, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/transportation/tracks-and-water.png",
+					"alt": "tracks and water transportation scene",
+					"generationPrompt": "A calm toddler-friendly transportation park with a clear rail track, calm water area, gentle hills, blue sky, and open space for train, tram, subway, boat, and ferry objects. No text, no logos, no traffic danger, static PWA game background."
+				}
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky", "air"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 42
+						}
+					]
+				},
+				{
+					"id": "rail",
+					"tags": ["rail", "track"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 60,
+							"width": 64,
+							"height": 22
+						}
+					]
+				},
+				{
+					"id": "water",
+					"tags": ["water", "pond"],
+					"rects": [
+						{
+							"x": 60,
+							"y": 60,
+							"width": 40,
+							"height": 36
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 4,
+				"max": 5
+			},
+			"objects": [
+				{
+					"objectId": "train",
+					"x": 16,
+					"y": 68,
+					"scale": 0.9,
+					"regionTags": ["rail"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.83,
+						"max": 0.99
+					},
+					"zIndex": 8
+				},
+				{
+					"objectId": "tram",
+					"x": 37,
+					"y": 70,
+					"scale": 0.82,
+					"regionTags": ["rail"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					},
+					"zIndex": 9
+				},
+				{
+					"objectId": "subway",
+					"x": 56,
+					"y": 67,
+					"scale": 0.84,
+					"regionTags": ["rail"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.77,
+						"max": 0.92
+					},
+					"zIndex": 10
+				},
+				{
+					"objectId": "boat",
+					"x": 75,
+					"y": 78,
+					"scale": 0.74,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					},
+					"zIndex": 8
+				},
+				{
+					"objectId": "ferry",
+					"x": 88,
+					"y": 72,
+					"scale": 0.84,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.76,
+						"max": 0.94
+					},
+					"zIndex": 9
+				}
+			]
+		},
+		{
+			"id": "sky-trips",
+			"packId": "transportation",
+			"title": {
+				"en": "Sky Trips",
+				"zh-Hans": "天空旅行"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly sky travel meadow with broad blue sky, gentle clouds, rolling green hills, and open space for airplane, helicopter, hot-air balloon, and rocket objects. No text, no logos, no traffic danger, static PWA game background.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/transportation/sky-trips.png",
+					"alt": "sky trips transportation scene",
+					"generationPrompt": "A calm toddler-friendly sky travel meadow with broad blue sky, gentle clouds, rolling green hills, and open space for airplane, helicopter, hot-air balloon, and rocket objects. No text, no logos, no traffic danger, static PWA game background."
+				}
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky", "air"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 76
+						}
+					]
+				},
+				{
+					"id": "meadow",
+					"tags": ["meadow", "ground"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 76,
+							"width": 100,
+							"height": 24
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 3,
+				"max": 4
+			},
+			"objects": [
+				{
+					"objectId": "airplane",
+					"x": 24,
+					"y": 24,
+					"scale": 0.82,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					},
+					"zIndex": 3
+				},
+				{
+					"objectId": "helicopter",
+					"x": 68,
+					"y": 27,
+					"scale": 0.78,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					},
+					"zIndex": 4
+				},
+				{
+					"objectId": "hot-air-balloon",
+					"x": 44,
+					"y": 42,
+					"scale": 0.78,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.88
+					},
+					"zIndex": 5
+				},
+				{
+					"objectId": "rocket",
+					"x": 84,
+					"y": 20,
+					"scale": 0.76,
+					"regionTags": ["sky"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					},
+					"zIndex": 4
+				}
+			]
 		}
 	],
 	"objects": [
@@ -3469,6 +3435,1156 @@
 					"scaleMultiplier": 1.12
 				}
 			]
+		},
+		{
+			"id": "delivery-van",
+			"category": "vehicle",
+			"tags": ["transportation", "road", "van", "wheels"],
+			"visualPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "delivery-van-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "delivery van",
+					"findPrompt": "Find the delivery van.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-en-find.mp3"
+					},
+					"successPhrase": "You found the delivery van.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-en-success.mp3"
+					},
+					"fallbackText": "delivery van",
+					"levels": {
+						"L0": {
+							"text": "delivery van",
+							"audioText": "delivery van",
+							"fallbackText": "van",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The delivery van rolls.",
+							"audioText": "The delivery van rolls.",
+							"fallbackText": "delivery van",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "blue delivery van",
+							"audioText": "blue delivery van",
+							"fallbackText": "delivery van",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The delivery van rolls along the road.",
+							"audioText": "The delivery van rolls along the road.",
+							"fallbackText": "delivery van",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What brings a package? The delivery van brings it.",
+							"audioText": "What brings a package? The delivery van brings it.",
+							"fallbackText": "delivery van",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The delivery van rolls slowly with a small package.",
+							"audioText": "The delivery van rolls slowly with a small package.",
+							"fallbackText": "That is the delivery van.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "送货车",
+					"findPrompt": "找一找送货车。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到了送货车。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-success.mp3"
+					},
+					"fallbackText": "送货车",
+					"levels": {
+						"L0": {
+							"text": "送货车",
+							"audioText": "送货车",
+							"fallbackText": "送货车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "送货车慢慢开。",
+							"audioText": "送货车慢慢开。",
+							"fallbackText": "送货车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "蓝色送货车",
+							"audioText": "蓝色送货车",
+							"fallbackText": "送货车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "送货车在路上慢慢开。",
+							"audioText": "送货车在路上慢慢开。",
+							"fallbackText": "送货车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁带来小包裹？送货车带来。",
+							"audioText": "谁带来小包裹？送货车带来。",
+							"fallbackText": "送货车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "送货车带着小包裹，轻轻开过来。",
+							"audioText": "送货车带着小包裹，轻轻开过来。",
+							"fallbackText": "这是送货车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "blue delivery van",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/delivery-van.png",
+						"alt": "blue delivery van",
+						"generationPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "blue delivery van"
+						}
+					},
+					"visualPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "blue delivery van bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/delivery-van-bright.png",
+						"alt": "blue delivery van bright large",
+						"generationPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "blue delivery van bright large"
+						}
+					},
+					"visualPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "garbage-truck",
+			"category": "vehicle",
+			"tags": ["transportation", "road", "truck", "wheels", "helper"],
+			"visualPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "garbage-truck-bounce",
+				"animation": "bounce"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "garbage truck",
+					"findPrompt": "Find the garbage truck.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-en-find.mp3"
+					},
+					"successPhrase": "You found the garbage truck.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-en-success.mp3"
+					},
+					"fallbackText": "garbage truck",
+					"levels": {
+						"L0": {
+							"text": "garbage truck",
+							"audioText": "garbage truck",
+							"fallbackText": "truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The garbage truck rolls.",
+							"audioText": "The garbage truck rolls.",
+							"fallbackText": "garbage truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "helpful garbage truck",
+							"audioText": "helpful garbage truck",
+							"fallbackText": "garbage truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The garbage truck keeps the road tidy.",
+							"audioText": "The garbage truck keeps the road tidy.",
+							"fallbackText": "garbage truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What helps clean up? The garbage truck helps.",
+							"audioText": "What helps clean up? The garbage truck helps.",
+							"fallbackText": "garbage truck",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The garbage truck rolls by and helps keep the street clean.",
+							"audioText": "The garbage truck rolls by and helps keep the street clean.",
+							"fallbackText": "That is the garbage truck.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "垃圾车",
+					"findPrompt": "找一找垃圾车。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到了垃圾车。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-success.mp3"
+					},
+					"fallbackText": "垃圾车",
+					"levels": {
+						"L0": {
+							"text": "垃圾车",
+							"audioText": "垃圾车",
+							"fallbackText": "垃圾车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "垃圾车慢慢开。",
+							"audioText": "垃圾车慢慢开。",
+							"fallbackText": "垃圾车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "帮忙的垃圾车",
+							"audioText": "帮忙的垃圾车",
+							"fallbackText": "垃圾车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "垃圾车让道路更干净。",
+							"audioText": "垃圾车让道路更干净。",
+							"fallbackText": "垃圾车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁帮忙清理？垃圾车帮忙。",
+							"audioText": "谁帮忙清理？垃圾车帮忙。",
+							"fallbackText": "垃圾车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "垃圾车慢慢开过，帮忙让街道干干净净。",
+							"audioText": "垃圾车慢慢开过，帮忙让街道干干净净。",
+							"fallbackText": "这是垃圾车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "soft garbage truck",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/garbage-truck.png",
+						"alt": "soft garbage truck",
+						"generationPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "soft garbage truck"
+						}
+					},
+					"visualPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "soft garbage truck bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/garbage-truck-bright.png",
+						"alt": "soft garbage truck bright large",
+						"generationPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "soft garbage truck bright large"
+						}
+					},
+					"visualPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "ferry",
+			"category": "vehicle",
+			"tags": ["transportation", "water", "floating", "boat"],
+			"visualPrompt": "A friendly ferry boat for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "ferry-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "ferry",
+					"findPrompt": "Find the ferry.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ferry-en-find.mp3"
+					},
+					"successPhrase": "You found the ferry.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ferry-en-success.mp3"
+					},
+					"fallbackText": "ferry",
+					"levels": {
+						"L0": {
+							"text": "ferry",
+							"audioText": "ferry",
+							"fallbackText": "ferry",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The ferry floats.",
+							"audioText": "The ferry floats.",
+							"fallbackText": "ferry",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "blue ferry",
+							"audioText": "blue ferry",
+							"fallbackText": "ferry",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The ferry floats on the water.",
+							"audioText": "The ferry floats on the water.",
+							"fallbackText": "ferry",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What floats across the water? The ferry floats.",
+							"audioText": "What floats across the water? The ferry floats.",
+							"fallbackText": "ferry",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The ferry makes a slow gentle trip across the water.",
+							"audioText": "The ferry makes a slow gentle trip across the water.",
+							"fallbackText": "That is the ferry.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "渡轮",
+					"findPrompt": "找一找渡轮。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ferry-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到了渡轮。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ferry-zh-Hans-success.mp3"
+					},
+					"fallbackText": "渡轮",
+					"levels": {
+						"L0": {
+							"text": "渡轮",
+							"audioText": "渡轮",
+							"fallbackText": "渡轮",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "渡轮浮在水上。",
+							"audioText": "渡轮浮在水上。",
+							"fallbackText": "渡轮",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "蓝色渡轮",
+							"audioText": "蓝色渡轮",
+							"fallbackText": "渡轮",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "渡轮在水上慢慢走。",
+							"audioText": "渡轮在水上慢慢走。",
+							"fallbackText": "渡轮",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁在水上开过去？渡轮开过去。",
+							"audioText": "谁在水上开过去？渡轮开过去。",
+							"fallbackText": "渡轮",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "渡轮在蓝蓝的水上，慢慢做一次温柔旅行。",
+							"audioText": "渡轮在蓝蓝的水上，慢慢做一次温柔旅行。",
+							"fallbackText": "这是渡轮。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/ferry-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "blue ferry",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/ferry.png",
+						"alt": "blue ferry",
+						"generationPrompt": "A friendly ferry boat for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "blue ferry"
+						}
+					},
+					"visualPrompt": "A friendly ferry boat for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "blue ferry bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/ferry-bright.png",
+						"alt": "blue ferry bright large",
+						"generationPrompt": "A friendly ferry boat for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "blue ferry bright large"
+						}
+					},
+					"visualPrompt": "A friendly ferry boat for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "subway",
+			"category": "vehicle",
+			"tags": ["transportation", "rail", "track", "train"],
+			"visualPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "subway-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "subway",
+					"findPrompt": "Find the subway.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-en-find.mp3"
+					},
+					"successPhrase": "You found the subway.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-en-success.mp3"
+					},
+					"fallbackText": "subway",
+					"levels": {
+						"L0": {
+							"text": "subway",
+							"audioText": "subway",
+							"fallbackText": "subway",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The subway rides.",
+							"audioText": "The subway rides.",
+							"fallbackText": "subway",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "silver subway",
+							"audioText": "silver subway",
+							"fallbackText": "subway",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The subway rides on the track.",
+							"audioText": "The subway rides on the track.",
+							"fallbackText": "subway",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What rides on rails? The subway rides.",
+							"audioText": "What rides on rails? The subway rides.",
+							"fallbackText": "subway",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The subway makes a calm ride along the track.",
+							"audioText": "The subway makes a calm ride along the track.",
+							"fallbackText": "That is the subway.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "地铁",
+					"findPrompt": "找一找地铁。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到了地铁。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-zh-Hans-success.mp3"
+					},
+					"fallbackText": "地铁",
+					"levels": {
+						"L0": {
+							"text": "地铁",
+							"audioText": "地铁",
+							"fallbackText": "地铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "地铁慢慢开。",
+							"audioText": "地铁慢慢开。",
+							"fallbackText": "地铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "银色地铁",
+							"audioText": "银色地铁",
+							"fallbackText": "地铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "地铁在轨道上慢慢开。",
+							"audioText": "地铁在轨道上慢慢开。",
+							"fallbackText": "地铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁在轨道上开？地铁在轨道上开。",
+							"audioText": "谁在轨道上开？地铁在轨道上开。",
+							"fallbackText": "地铁",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "地铁沿着轨道，安安静静地开过去。",
+							"audioText": "地铁沿着轨道，安安静静地开过去。",
+							"fallbackText": "这是地铁。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/subway-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "silver subway",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/subway.png",
+						"alt": "silver subway",
+						"generationPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "silver subway"
+						}
+					},
+					"visualPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "silver subway bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/subway-bright.png",
+						"alt": "silver subway bright large",
+						"generationPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "silver subway bright large"
+						}
+					},
+					"visualPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "hot-air-balloon",
+			"category": "vehicle",
+			"tags": ["transportation", "sky", "air", "flying"],
+			"visualPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "hot-air-balloon-sway",
+				"animation": "sway"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "hot-air balloon",
+					"findPrompt": "Find the hot-air balloon.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-en-find.mp3"
+					},
+					"successPhrase": "You found the hot-air balloon.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-en-success.mp3"
+					},
+					"fallbackText": "hot-air balloon",
+					"levels": {
+						"L0": {
+							"text": "hot-air balloon",
+							"audioText": "hot-air balloon",
+							"fallbackText": "balloon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The balloon floats.",
+							"audioText": "The balloon floats.",
+							"fallbackText": "hot-air balloon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "colorful hot-air balloon",
+							"audioText": "colorful hot-air balloon",
+							"fallbackText": "hot-air balloon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The hot-air balloon floats in the sky.",
+							"audioText": "The hot-air balloon floats in the sky.",
+							"fallbackText": "hot-air balloon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What floats high and slow? The hot-air balloon floats.",
+							"audioText": "What floats high and slow? The hot-air balloon floats.",
+							"fallbackText": "hot-air balloon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The hot-air balloon floats gently across the big blue sky.",
+							"audioText": "The hot-air balloon floats gently across the big blue sky.",
+							"fallbackText": "That is the hot-air balloon.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "热气球",
+					"findPrompt": "找一找热气球。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到了热气球。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-success.mp3"
+					},
+					"fallbackText": "热气球",
+					"levels": {
+						"L0": {
+							"text": "热气球",
+							"audioText": "热气球",
+							"fallbackText": "热气球",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "热气球飘起来。",
+							"audioText": "热气球飘起来。",
+							"fallbackText": "热气球",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "彩色热气球",
+							"audioText": "彩色热气球",
+							"fallbackText": "热气球",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "热气球在天空中慢慢飘。",
+							"audioText": "热气球在天空中慢慢飘。",
+							"fallbackText": "热气球",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁在高高的天空飘？热气球在飘。",
+							"audioText": "谁在高高的天空飘？热气球在飘。",
+							"fallbackText": "热气球",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "热气球在蓝蓝的天空里，轻轻地飘过去。",
+							"audioText": "热气球在蓝蓝的天空里，轻轻地飘过去。",
+							"fallbackText": "这是热气球。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "hot air balloon",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/hot-air-balloon.png",
+						"alt": "hot air balloon",
+						"generationPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "hot air balloon"
+						}
+					},
+					"visualPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "hot air balloon bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/hot-air-balloon-bright.png",
+						"alt": "hot air balloon bright large",
+						"generationPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "hot air balloon bright large"
+						}
+					},
+					"visualPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		},
+		{
+			"id": "wagon",
+			"category": "transportation",
+			"tags": ["transportation", "road", "wheels", "toy"],
+			"visualPrompt": "A friendly small wagon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"interaction": {
+				"id": "wagon-bob",
+				"animation": "bob"
+			},
+			"content": {
+				"en": {
+					"language": "en",
+					"displayName": "wagon",
+					"findPrompt": "Find the wagon.",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/wagon-en-find.mp3"
+					},
+					"successPhrase": "You found the wagon.",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/wagon-en-success.mp3"
+					},
+					"fallbackText": "wagon",
+					"levels": {
+						"L0": {
+							"text": "wagon",
+							"audioText": "wagon",
+							"fallbackText": "wagon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-en-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "The wagon rolls.",
+							"audioText": "The wagon rolls.",
+							"fallbackText": "wagon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-en-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "red wagon",
+							"audioText": "red wagon",
+							"fallbackText": "wagon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-en-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "The wagon rolls on little wheels.",
+							"audioText": "The wagon rolls on little wheels.",
+							"fallbackText": "wagon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-en-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "What has a little handle? The wagon has a handle.",
+							"audioText": "What has a little handle? The wagon has a handle.",
+							"fallbackText": "wagon",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-en-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "The red wagon rolls gently along the path.",
+							"audioText": "The red wagon rolls gently along the path.",
+							"fallbackText": "That is the wagon.",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-en-L5.mp3"
+							}
+						}
+					}
+				},
+				"zh-Hans": {
+					"language": "zh-Hans",
+					"displayName": "小拖车",
+					"findPrompt": "找一找小拖车。",
+					"findPromptAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/wagon-zh-Hans-find.mp3"
+					},
+					"successPhrase": "你找到了小拖车。",
+					"successPhraseAudio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/wagon-zh-Hans-success.mp3"
+					},
+					"fallbackText": "小拖车",
+					"levels": {
+						"L0": {
+							"text": "小拖车",
+							"audioText": "小拖车",
+							"fallbackText": "小拖车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-zh-Hans-L0.mp3"
+							}
+						},
+						"L1": {
+							"text": "小拖车滚呀滚。",
+							"audioText": "小拖车滚呀滚。",
+							"fallbackText": "小拖车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-zh-Hans-L1.mp3"
+							}
+						},
+						"L2": {
+							"text": "红色小拖车",
+							"audioText": "红色小拖车",
+							"fallbackText": "小拖车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-zh-Hans-L2.mp3"
+							}
+						},
+						"L3": {
+							"text": "小拖车用小轮子慢慢滚。",
+							"audioText": "小拖车用小轮子慢慢滚。",
+							"fallbackText": "小拖车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-zh-Hans-L3.mp3"
+							}
+						},
+						"L4": {
+							"text": "谁有小把手？小拖车有小把手。",
+							"audioText": "谁有小把手？小拖车有小把手。",
+							"fallbackText": "小拖车",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-zh-Hans-L4.mp3"
+							}
+						},
+						"L5": {
+							"text": "红色小拖车沿着小路，轻轻滚过去。",
+							"audioText": "红色小拖车沿着小路，轻轻滚过去。",
+							"fallbackText": "这是小拖车。",
+							"audio": {
+								"type": "audio",
+								"path": "/assets/generated/transportation/audio/wagon-zh-Hans-L5.mp3"
+							}
+						}
+					}
+				}
+			},
+			"variants": [
+				{
+					"id": "classic",
+					"label": "red wagon",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/wagon.png",
+						"alt": "red wagon",
+						"generationPrompt": "A friendly small wagon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+						"placeholder": {
+							"label": "red wagon"
+						}
+					},
+					"visualPrompt": "A friendly small wagon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+					"scaleMultiplier": 1
+				},
+				{
+					"id": "bright-large",
+					"label": "red wagon bright large",
+					"image": {
+						"type": "image",
+						"path": "/assets/generated/imagegen/transportation/wagon-bright.png",
+						"alt": "red wagon bright large",
+						"generationPrompt": "A friendly small wagon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+						"placeholder": {
+							"label": "red wagon bright large"
+						}
+					},
+					"visualPrompt": "A friendly small wagon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+					"scaleMultiplier": 1.12
+				}
+			]
+		}
+	],
+	"subPacks": [
+		{
+			"id": "first-wheels",
+			"title": {
+				"en": "First Wheels",
+				"zh-Hans": "初级车轮"
+			},
+			"sceneIds": ["gentle-transit-park"]
+		},
+		{
+			"id": "helpful-road",
+			"title": {
+				"en": "Helpful Road",
+				"zh-Hans": "帮忙车辆"
+			},
+			"sceneIds": ["soft-road"]
+		},
+		{
+			"id": "tracks-and-water",
+			"title": {
+				"en": "Tracks and Water",
+				"zh-Hans": "轨道和水上"
+			},
+			"sceneIds": ["tracks-and-water"]
+		},
+		{
+			"id": "sky-trips",
+			"title": {
+				"en": "Sky Trips",
+				"zh-Hans": "天空旅行"
+			},
+			"sceneIds": ["sky-trips"]
 		}
 	]
 }
