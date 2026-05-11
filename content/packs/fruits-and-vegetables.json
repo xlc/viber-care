@@ -608,6 +608,24 @@
 			"id": "apple",
 			"category": "fruits",
 			"tags": ["fruits", "food", "apple"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"color-sort",
+					"more-less"
+				],
+				"colors": ["red"],
+				"sceneZones": ["basket", "stand"],
+				"zhMeasureWord": "个",
+				"englishPlural": "apples"
+			},
 			"visualPrompt": "A friendly apple for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
 			"variants": [
 				{
@@ -796,6 +814,24 @@
 			"id": "banana",
 			"category": "fruits",
 			"tags": ["fruits", "food", "banana"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"color-sort",
+					"more-less"
+				],
+				"colors": ["yellow"],
+				"sceneZones": ["basket", "stand"],
+				"zhMeasureWord": "根",
+				"englishPlural": "bananas"
+			},
 			"visualPrompt": "A friendly banana for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
 			"variants": [
 				{
@@ -1172,6 +1208,18 @@
 			"id": "strawberry",
 			"category": "fruits",
 			"tags": ["fruits", "food", "strawberry"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": ["counting", "dot-match", "color-sort", "more-less"],
+				"colors": ["red"],
+				"sceneZones": ["basket", "stand"],
+				"zhMeasureWord": "颗",
+				"englishPlural": "strawberries"
+			},
 			"visualPrompt": "A friendly strawberry for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
 			"variants": [
 				{
@@ -1736,6 +1784,24 @@
 			"id": "carrot",
 			"category": "root-vegetables",
 			"tags": ["root-vegetables", "food", "carrot"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"color-sort",
+					"more-less"
+				],
+				"colors": ["orange"],
+				"sceneZones": ["soil", "basket"],
+				"zhMeasureWord": "根",
+				"englishPlural": "carrots"
+			},
 			"visualPrompt": "A friendly carrot for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
 			"variants": [
 				{
@@ -3992,6 +4058,18 @@
 			"id": "tomato",
 			"category": "garden-vegetables",
 			"tags": ["garden-vegetables", "food", "tomato"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": ["counting", "dot-match", "color-sort", "more-less"],
+				"colors": ["red"],
+				"sceneZones": ["garden", "stand"],
+				"zhMeasureWord": "个",
+				"englishPlural": "tomatoes"
+			},
 			"visualPrompt": "A friendly tomato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
 			"variants": [
 				{
@@ -4368,6 +4446,24 @@
 			"id": "corn",
 			"category": "garden-vegetables",
 			"tags": ["garden-vegetables", "food", "corn"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"color-sort",
+					"more-less"
+				],
+				"colors": ["yellow"],
+				"sceneZones": ["garden", "stand"],
+				"zhMeasureWord": "根",
+				"englishPlural": "corn cobs"
+			},
 			"visualPrompt": "A friendly corn for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
 			"variants": [
 				{

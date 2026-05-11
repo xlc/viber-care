@@ -51,6 +51,34 @@ export const ObjectVariantSchema = z.object({
 	scaleMultiplier: z.number().min(0.6).max(1.6).default(1),
 })
 
+export const MathSkillSchema = z.enum([
+	'counting',
+	'one-to-one',
+	'dot-match',
+	'color-sort',
+	'shape-sort',
+	'more-less',
+	'spatial',
+	'size',
+])
+
+export const MathMetadataSchema = z.object({
+	countable: z.boolean(),
+	quantityRange: z.object({
+		min: z.literal(1),
+		max: z.union([z.literal(3), z.literal(5), z.literal(10)]),
+	}),
+	skills: z.array(MathSkillSchema).min(1),
+	colors: z.array(z.string().min(1)).min(1).optional(),
+	sizes: z
+		.array(z.enum(['big', 'small']))
+		.min(1)
+		.optional(),
+	sceneZones: z.array(z.string().min(1)).min(1).optional(),
+	zhMeasureWord: z.string().min(1).optional(),
+	englishPlural: z.string().min(1).optional(),
+})
+
 export const LevelContentSchema = z.object({
 	text: z.string().min(1),
 	audioText: z.string().min(1),
@@ -86,6 +114,7 @@ export const ObjectConceptSchema = z.object({
 	variants: z.array(ObjectVariantSchema).min(2),
 	interaction: InteractionSchema,
 	content: languageMapSchema(LanguageContentSchema),
+	math: MathMetadataSchema.optional(),
 })
 
 export const SceneRegionRectSchema = z.object({
@@ -172,6 +201,8 @@ export const RuntimeCatalogSchema = z.object({
 export type AssetReference = z.infer<typeof AssetReferenceSchema>
 export type Interaction = z.infer<typeof InteractionSchema>
 export type ObjectVariant = z.infer<typeof ObjectVariantSchema>
+export type MathSkill = z.infer<typeof MathSkillSchema>
+export type MathMetadata = z.infer<typeof MathMetadataSchema>
 export type LevelContent = z.infer<typeof LevelContentSchema>
 export type LanguageContent = z.infer<typeof LanguageContentSchema>
 export type ObjectConcept = z.infer<typeof ObjectConceptSchema>

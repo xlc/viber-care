@@ -13,10 +13,19 @@ export const LANGUAGE_ORDER_PRESETS = [
 	'zh-then-en',
 ] as const
 
-export const GAME_MODES = ['explore', 'find', 'puzzle', 'cards'] as const
+export const GAME_MODES = [
+	'explore',
+	'find',
+	'puzzle',
+	'cards',
+	'math',
+] as const
+
+export const MATH_FOCUS_OPTIONS = ['mixed', 'counting-1-3', 'colors'] as const
 
 export type LanguageOrderPreset = (typeof LANGUAGE_ORDER_PRESETS)[number]
 export type GameMode = (typeof GAME_MODES)[number]
+export type MathFocus = (typeof MATH_FOCUS_OPTIONS)[number]
 
 export type WordGardenSettings = {
 	mode: GameMode
@@ -24,6 +33,7 @@ export type WordGardenSettings = {
 	selectedSubPackId: string | null
 	languageOrderPreset: LanguageOrderPreset
 	activeLevel: LearningLevel
+	mathFocus: MathFocus
 	muted: boolean
 }
 
@@ -35,11 +45,13 @@ export const DEFAULT_SETTINGS: WordGardenSettings = {
 	selectedSubPackId: null,
 	languageOrderPreset: 'en-then-zh',
 	activeLevel: 'L0',
+	mathFocus: 'mixed',
 	muted: false,
 }
 
 const levelSet = new Set<string>(LEARNING_LEVELS)
 const modeSet = new Set<string>(GAME_MODES)
+const mathFocusSet = new Set<string>(MATH_FOCUS_OPTIONS)
 const presetSet = new Set<string>(LANGUAGE_ORDER_PRESETS)
 
 export function sanitizeSettings(input: unknown): WordGardenSettings {
@@ -72,6 +84,10 @@ export function sanitizeSettings(input: unknown): WordGardenSettings {
 			value.activeLevel && levelSet.has(value.activeLevel)
 				? value.activeLevel
 				: DEFAULT_SETTINGS.activeLevel,
+		mathFocus:
+			value.mathFocus && mathFocusSet.has(value.mathFocus)
+				? value.mathFocus
+				: DEFAULT_SETTINGS.mathFocus,
 		muted:
 			typeof value.muted === 'boolean' ? value.muted : DEFAULT_SETTINGS.muted,
 	}

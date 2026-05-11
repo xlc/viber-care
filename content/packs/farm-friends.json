@@ -708,6 +708,24 @@
 			"id": "cow",
 			"category": "farm-animal",
 			"tags": ["farm", "animal", "meadow"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"more-less",
+					"spatial"
+				],
+				"colors": ["black", "white"],
+				"sceneZones": ["pasture", "yard"],
+				"zhMeasureWord": "头",
+				"englishPlural": "cows"
+			},
 			"visualPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
 			"interaction": {
 				"id": "cow-bob",
@@ -2400,6 +2418,24 @@
 			"id": "carrot",
 			"category": "farm-food",
 			"tags": ["farm", "vegetable", "garden-bed"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"color-sort",
+					"more-less"
+				],
+				"colors": ["orange"],
+				"sceneZones": ["garden", "basket"],
+				"zhMeasureWord": "根",
+				"englishPlural": "carrots"
+			},
 			"visualPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background.",
 			"interaction": {
 				"id": "carrot-bounce",
@@ -2588,6 +2624,18 @@
 			"id": "duck",
 			"category": "animal",
 			"tags": ["farm", "bird", "duck", "coop"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": ["counting", "one-to-one", "dot-match", "spatial"],
+				"colors": ["yellow"],
+				"sceneZones": ["yard", "water"],
+				"zhMeasureWord": "只",
+				"englishPlural": "ducks"
+			},
 			"visualPrompt": "A friendly farm duck for a toddler farm word-learning game, soft yellow feathers, happy face, clear simple silhouette, transparent background.",
 			"interaction": {
 				"id": "duck-bob",
@@ -2964,6 +3012,18 @@
 			"id": "rabbit",
 			"category": "animal",
 			"tags": ["farm", "animal", "pasture", "rabbit"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": ["counting", "one-to-one", "dot-match", "spatial"],
+				"colors": ["white"],
+				"sceneZones": ["yard", "garden"],
+				"zhMeasureWord": "只",
+				"englishPlural": "rabbits"
+			},
 			"visualPrompt": "A friendly rabbit for a toddler farm word-learning game, soft ears, round body, happy gentle face, transparent background.",
 			"interaction": {
 				"id": "rabbit-bounce",
@@ -3152,6 +3212,24 @@
 			"id": "corn",
 			"category": "food",
 			"tags": ["farm", "vegetable", "garden-bed", "corn"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"color-sort",
+					"more-less"
+				],
+				"colors": ["yellow"],
+				"sceneZones": ["garden", "basket"],
+				"zhMeasureWord": "根",
+				"englishPlural": "corn cobs"
+			},
 			"visualPrompt": "A friendly ear of corn for a toddler farm word-learning game, bright yellow kernels, soft green leaves, simple clear shape, transparent background.",
 			"interaction": {
 				"id": "corn-glow",
@@ -3340,6 +3418,19 @@
 			"id": "pumpkin",
 			"category": "food",
 			"tags": ["farm", "vegetable", "garden-bed", "pumpkin"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": ["counting", "dot-match", "color-sort", "more-less", "size"],
+				"colors": ["orange"],
+				"sizes": ["big", "small"],
+				"sceneZones": ["garden", "yard"],
+				"zhMeasureWord": "个",
+				"englishPlural": "pumpkins"
+			},
 			"visualPrompt": "A friendly orange pumpkin for a toddler farm word-learning game, rounded soft shape, green stem, simple clear silhouette, transparent background.",
 			"interaction": {
 				"id": "pumpkin-bob",

@@ -666,6 +666,18 @@
 			"id": "duck",
 			"category": "animal",
 			"tags": ["pond", "bird", "yellow"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": ["counting", "one-to-one", "dot-match", "spatial"],
+				"colors": ["yellow"],
+				"sceneZones": ["water", "pond"],
+				"zhMeasureWord": "只",
+				"englishPlural": "ducks"
+			},
 			"visualPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
 			"interaction": {
 				"id": "duck-bob",
@@ -1230,6 +1242,18 @@
 			"id": "fish",
 			"category": "animal",
 			"tags": ["pond", "water", "blue"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": ["counting", "dot-match", "more-less", "spatial"],
+				"colors": ["orange"],
+				"sceneZones": ["water", "pond"],
+				"zhMeasureWord": "条",
+				"englishPlural": "fish"
+			},
 			"visualPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
 			"interaction": {
 				"id": "fish-bounce",
@@ -1418,6 +1442,24 @@
 			"id": "apple",
 			"category": "food",
 			"tags": ["fruit", "red", "tree"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"color-sort",
+					"more-less"
+				],
+				"colors": ["red"],
+				"sceneZones": ["basket", "garden"],
+				"zhMeasureWord": "个",
+				"englishPlural": "apples"
+			},
 			"visualPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background.",
 			"interaction": {
 				"id": "apple-bounce",
@@ -1606,6 +1648,24 @@
 			"id": "banana",
 			"category": "food",
 			"tags": ["fruit", "yellow", "snack"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"color-sort",
+					"more-less"
+				],
+				"colors": ["yellow"],
+				"sceneZones": ["basket", "garden"],
+				"zhMeasureWord": "根",
+				"englishPlural": "bananas"
+			},
 			"visualPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background.",
 			"interaction": {
 				"id": "banana-sway",
@@ -1794,6 +1854,24 @@
 			"id": "flower",
 			"category": "plant",
 			"tags": ["garden", "pink", "petals"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": [
+					"counting",
+					"one-to-one",
+					"dot-match",
+					"color-sort",
+					"more-less"
+				],
+				"colors": ["pink"],
+				"sceneZones": ["garden", "pot"],
+				"zhMeasureWord": "朵",
+				"englishPlural": "flowers"
+			},
 			"visualPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
 			"interaction": {
 				"id": "flower-sway",
@@ -2358,6 +2436,24 @@
 			"id": "ball",
 			"category": "toy",
 			"tags": ["play", "round", "colorful"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": [
+					"counting",
+					"dot-match",
+					"color-sort",
+					"more-less",
+					"spatial"
+				],
+				"colors": ["blue"],
+				"sceneZones": ["grass", "basket"],
+				"zhMeasureWord": "个",
+				"englishPlural": "balls"
+			},
 			"visualPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
 			"interaction": {
 				"id": "ball-bounce",
@@ -2922,6 +3018,18 @@
 			"id": "frog",
 			"category": "animal",
 			"tags": ["garden", "pond", "animal", "green"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": ["counting", "one-to-one", "dot-match", "spatial"],
+				"colors": ["green"],
+				"sceneZones": ["water", "pond", "grass"],
+				"zhMeasureWord": "只",
+				"englishPlural": "frogs"
+			},
 			"visualPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background.",
 			"interaction": {
 				"id": "frog-bounce",
@@ -3298,6 +3406,18 @@
 			"id": "bird",
 			"category": "animal",
 			"tags": ["garden", "bird", "tree", "sky"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": ["counting", "one-to-one", "dot-match", "spatial"],
+				"colors": ["blue"],
+				"sceneZones": ["sky", "tree"],
+				"zhMeasureWord": "只",
+				"englishPlural": "birds"
+			},
 			"visualPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background.",
 			"interaction": {
 				"id": "bird-sway",

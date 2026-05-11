@@ -21,6 +21,15 @@ import {
 	handleFindTap,
 } from './game/find-mode'
 import {
+	type ColorSortItem,
+	createMathPlayRound,
+	type DotMatchChoice,
+	handleColorSort,
+	handleDotMatch,
+	handleMathCollect,
+	type MathPlayRound,
+} from './game/math-play-mode'
+import {
 	createPuzzleRound,
 	getPuzzleTrayObjectIds,
 	handlePuzzleDrop,
@@ -49,6 +58,9 @@ import {
 	LANGUAGE_ORDER_PRESETS,
 	type LanguageOrderPreset,
 	loadSettings,
+	MATH_FOCUS_OPTIONS,
+	type MathFocus,
+	resolveLanguageOrder,
 	saveSettings,
 	type WordGardenSettings,
 } from './state/settings'
@@ -65,6 +77,7 @@ const modeLabels: Record<GameMode, string> = {
 	find: 'Find',
 	puzzle: 'Puzzle',
 	cards: 'Cards',
+	math: 'Math Play',
 }
 
 const wordDetailOptions: ReadonlyArray<{
@@ -80,7 +93,13 @@ const wordDetailOptions: ReadonlyArray<{
 	{ level: 'L5', label: 'Little scene', hint: 'Short narrated line' },
 ]
 
-type ToastKind = 'hello' | 'word' | 'find' | 'success' | 'puzzle'
+const mathFocusLabels: Record<MathFocus, string> = {
+	mixed: 'Mixed Gentle Play',
+	'counting-1-3': 'Counting 1-3',
+	colors: 'Colors',
+}
+
+type ToastKind = 'hello' | 'word' | 'find' | 'success' | 'puzzle' | 'math'
 
 type ToastState = {
 	kind: ToastKind
@@ -246,6 +265,169 @@ function SequenceText({
 			))}
 		</span>
 	)
+}
+
+const englishCountWords = [
+	'Zero',
+	'One',
+	'Two',
+	'Three',
+	'Four',
+	'Five',
+	'Six',
+	'Seven',
+	'Eight',
+	'Nine',
+	'Ten',
+] as const
+
+const chineseCountWords = [
+	'零',
+	'一',
+	'二',
+	'三',
+	'四',
+	'五',
+	'六',
+	'七',
+	'八',
+	'九',
+	'十',
+] as const
+
+function getObjectName(object: ObjectConcept, language: 'en' | 'zh-Hans') {
+	return (
+		object.content[language]?.levels.L0?.text ??
+		object.content[language]?.fallbackText ??
+		object.id
+	)
+}
+
+function getEnglishQuantityName(object: ObjectConcept, quantity: number) {
+	return quantity === 1
+		? getObjectName(object, 'en')
+		: (object.math?.englishPlural ?? `${getObjectName(object, 'en')}s`)
+}
+
+function getChineseQuantityText(object: ObjectConcept, quantity: number) {
+	const numberText =
+		quantity === 2 ? '两' : (chineseCountWords[quantity] ?? `${quantity}`)
+	const measureWord = object.math?.zhMeasureWord ?? '个'
+	return `${numberText}${measureWord}${getObjectName(object, 'zh-Hans')}`
+}
+
+function createMathPresentation(
+	settings: WordGardenSettings,
+	textByLanguage: Record<'en' | 'zh-Hans', string>,
+): LearningPresentation[] {
+	return resolveLanguageOrder(settings).map((language) => ({
+		requestedLanguage: language,
+		resolvedLanguage: language,
+		requestedLevel: settings.activeLevel,
+		resolvedLevel: 'L0',
+		text: textByLanguage[language],
+		audioText: textByLanguage[language],
+	}))
+}
+
+function getMathPrompt(
+	round: MathPlayRound,
+	objects: Map<string, ObjectConcept>,
+	settings: WordGardenSettings,
+): LearningPresentation[] {
+	if (round.type === 'feed-the-friend') {
+		const friend = objects.get(round.friendObjectId)
+		const item = objects.get(round.itemObjectId)
+		if (friend && item) {
+			return createMathPresentation(settings, {
+				en: `Give the ${getObjectName(friend, 'en')} ${round.targetQuantity} ${getEnglishQuantityName(
+					item,
+					round.targetQuantity,
+				)}.`,
+				'zh-Hans': `给${getObjectName(friend, 'zh-Hans')}${getChineseQuantityText(item, round.targetQuantity)}。`,
+			})
+		}
+		return getMathFallbackPrompt(settings)
+	}
+
+	if (round.type === 'dot-match') {
+		const numberText =
+			round.targetQuantity === 2
+				? '两'
+				: (chineseCountWords[round.targetQuantity] ?? `${round.targetQuantity}`)
+		return createMathPresentation(settings, {
+			en: `Match ${round.targetQuantity} dots.`,
+			'zh-Hans': `找${numberText}个点。`,
+		})
+	}
+
+	if (round.type === 'color-sort') {
+		return createMathPresentation(settings, {
+			en: 'Put each color in its basket.',
+			'zh-Hans': '把颜色一样的物品放进篮子。',
+		})
+	}
+
+	const object = objects.get(round.targetObjectId)
+	if (!object) {
+		return createMathPresentation(settings, {
+			en: 'Let us count.',
+			'zh-Hans': '我们来数一数。',
+		})
+	}
+	return createMathPresentation(settings, {
+		en: `Put ${round.targetQuantity} ${getEnglishQuantityName(
+			object,
+			round.targetQuantity,
+		)} in.`,
+		'zh-Hans': `放进${getChineseQuantityText(object, round.targetQuantity)}。`,
+	})
+}
+
+function getMathFallbackPrompt(
+	settings: WordGardenSettings,
+): LearningPresentation[] {
+	return createMathPresentation(settings, {
+		en: 'Try another set for Math Play.',
+		'zh-Hans': '换一个内容来玩数学吧。',
+	})
+}
+
+function getChineseColorName(color: string) {
+	const colorNames: Record<string, string> = {
+		black: '黑色',
+		blue: '蓝色',
+		brown: '棕色',
+		green: '绿色',
+		orange: '橙色',
+		pink: '粉色',
+		purple: '紫色',
+		red: '红色',
+		white: '白色',
+		yellow: '黄色',
+	}
+	return colorNames[color] ?? color
+}
+
+function getMathCountPresentation(
+	countedNumber: number,
+	settings: WordGardenSettings,
+): LearningPresentation[] {
+	return createMathPresentation(settings, {
+		en: englishCountWords[countedNumber] ?? `${countedNumber}`,
+		'zh-Hans': chineseCountWords[countedNumber] ?? `${countedNumber}`,
+	})
+}
+
+function getMathTotalPresentation(
+	quantity: number,
+	object: ObjectConcept,
+	settings: WordGardenSettings,
+): LearningPresentation[] {
+	return createMathPresentation(settings, {
+		en: `${quantity} ${getEnglishQuantityName(object, quantity)}.`,
+		'zh-Hans': `${getChineseQuantityText(object, quantity)}。`,
+	})
 }
 
 function LanguageCard({
@@ -498,6 +680,216 @@ function PuzzlePieceButton({
 	)
 }
 
+function MathPlayStage({
+	round,
+	placementByObjectId,
+	selectedSortItemId,
+	onCollect,
+	onDotChoice,
+	onSelectSortItem,
+	onColorSort,
+}: {
+	round: MathPlayRound
+	placementByObjectId: Map<string, VisibleScenePlacement>
+	selectedSortItemId: string | null
+	onCollect: (object: ObjectConcept) => void
+	onDotChoice: (choice: DotMatchChoice) => void
+	onSelectSortItem: (itemId: string) => void
+	onColorSort: (item: ColorSortItem, basketColor: string) => void
+}) {
+	if (round.type === 'dot-match') {
+		const targetPlacement = placementByObjectId.get(round.targetObjectId)
+		if (!targetPlacement) {
+			return null
+		}
+
+		return (
+			<div
+				className="math-stage is-dot-match"
+				data-testid="math-stage"
+				data-round-type={round.type}
+			>
+				<div
+					className="dot-card"
+					role="group"
+					data-testid="dot-card"
+					aria-label="Dot card"
+				>
+					{Array.from({ length: round.targetQuantity }, (_, index) => (
+						<span key={index} className="dot" />
+					))}
+				</div>
+				<div className="math-choice-grid" role="group" aria-label="Dot choices">
+					{round.choices.map((choice) => (
+						<button
+							key={choice.id}
+							type="button"
+							className="math-choice"
+							data-testid={`dot-choice-${choice.id}`}
+							aria-label={`${choice.quantity} ${choice.objectId}`}
+							onClick={() => onDotChoice(choice)}
+						>
+							{Array.from({ length: choice.quantity }, (_, index) => (
+								<img
+									key={index}
+									src={targetPlacement.variant.image.path}
+									alt=""
+									draggable={false}
+								/>
+							))}
+						</button>
+					))}
+				</div>
+			</div>
+		)
+	}
+
+	if (round.type === 'color-sort') {
+		const selectedSortItem = round.items.find(
+			(item) => item.id === selectedSortItemId && !item.placed,
+		)
+		return (
+			<div
+				className="math-stage is-color-sort"
+				data-testid="math-stage"
+				data-round-type={round.type}
+			>
+				<div className="sort-items" role="group" aria-label="Sorting objects">
+					{round.items
+						.filter((item) => !item.placed)
+						.map((item) => {
+							const placement = placementByObjectId.get(item.objectId)
+							if (!placement) {
+								return null
+							}
+							return (
+								<button
+									key={item.id}
+									type="button"
+									className={`math-object ${
+										selectedSortItemId === item.id ? 'is-selected' : ''
+									}`}
+									data-testid={`sort-item-${item.id}`}
+									aria-label={`Sort ${item.color} ${item.objectId}`}
+									aria-pressed={selectedSortItemId === item.id}
+									onClick={() => onSelectSortItem(item.id)}
+								>
+									<img
+										src={placement.variant.image.path}
+										alt=""
+										draggable={false}
+									/>
+								</button>
+							)
+						})}
+				</div>
+				<div className="sort-baskets" role="group" aria-label="Color baskets">
+					{round.basketColors.map((color) => (
+						<button
+							key={color}
+							type="button"
+							className="sort-basket"
+							data-testid={`sort-basket-${color}`}
+							style={{ '--basket-color': color } as JSX.CSSProperties}
+							onClick={() => {
+								if (selectedSortItem) {
+									onColorSort(selectedSortItem, color)
+								}
+							}}
+						>
+							<span className="color-swatch" />
+							<span>{color}</span>
+							<div className="sort-basket-items">
+								{round.items
+									.filter((item) => item.placed && item.color === color)
+									.map((item) => {
+										const placement = placementByObjectId.get(item.objectId)
+										return placement ? (
+											<img
+												key={item.id}
+												src={placement.variant.image.path}
+												alt=""
+												draggable={false}
+											/>
+										) : null
+									})}
+							</div>
+						</button>
+					))}
+				</div>
+			</div>
+		)
+	}
+
+	const objectId =
+		round.type === 'feed-the-friend' ? round.itemObjectId : round.targetObjectId
+	const placement = placementByObjectId.get(objectId)
+	if (!placement) {
+		return null
+	}
+	const friendPlacement =
+		round.type === 'feed-the-friend'
+			? placementByObjectId.get(round.friendObjectId)
+			: null
+	const itemIndexes = Array.from(
+		{ length: round.targetQuantity },
+		(_, index) => index,
+	)
+	const collectedIndexes = itemIndexes.slice(0, round.collectedCount)
+	const waitingIndexes = itemIndexes.slice(round.collectedCount)
+
+	return (
+		<div
+			className={`math-stage ${
+				round.type === 'feed-the-friend' ? 'is-feed' : 'is-count'
+			}`}
+			data-testid="math-stage"
+			data-round-type={round.type}
+		>
+			{friendPlacement ? (
+				<div className="math-friend" data-testid="math-friend">
+					<img
+						src={friendPlacement.variant.image.path}
+						alt=""
+						draggable={false}
+					/>
+				</div>
+			) : null}
+			<div className="math-targets" role="group" aria-label="Counting objects">
+				{waitingIndexes.map((index) => (
+					<button
+						key={index}
+						type="button"
+						className="math-object"
+						data-testid={`math-object-${placement.object.id}`}
+						aria-label={`Collect ${placement.object.id}`}
+						onClick={() => onCollect(placement.object)}
+					>
+						<img src={placement.variant.image.path} alt="" draggable={false} />
+					</button>
+				))}
+			</div>
+			<div
+				className="math-basket"
+				role="group"
+				aria-label="Basket"
+				data-testid="math-basket"
+			>
+				<div className="math-basket-items">
+					{collectedIndexes.map((index) => (
+						<img
+							key={index}
+							src={placement.variant.image.path}
+							alt=""
+							draggable={false}
+						/>
+					))}
+				</div>
+			</div>
+		</div>
+	)
+}
+
 function ModeSegment({
 	mode,
 	onChange,
@@ -676,6 +1068,24 @@ function ParentSettings({
 				</div>
 
 				<div className="settings-section">
+					<h3>Learning Focus</h3>
+					<div className="preset-list" role="group" aria-label="Learning focus">
+						{MATH_FOCUS_OPTIONS.map((focus) => (
+							<button
+								key={focus}
+								type="button"
+								className={settings.mathFocus === focus ? 'is-selected' : ''}
+								aria-pressed={settings.mathFocus === focus}
+								data-testid={`math-focus-${focus}`}
+								onClick={() => update({ mathFocus: focus })}
+							>
+								{mathFocusLabels[focus]}
+							</button>
+						))}
+					</div>
+				</div>
+
+				<div className="settings-section">
 					<h3>Language Order</h3>
 					<div className="preset-list">
 						{LANGUAGE_ORDER_PRESETS.map((preset) => (
@@ -724,6 +1134,11 @@ export function App() {
 	const [settingsOpen, setSettingsOpen] = useState(false)
 	const [activeObjectId, setActiveObjectId] = useState<string | null>(null)
 	const [findRound, setFindRound] = useState<FindRound | null>(null)
+	const [mathRound, setMathRound] = useState<MathPlayRound | null>(null)
+	const [mathRoundIndex, setMathRoundIndex] = useState(0)
+	const [selectedSortItemId, setSelectedSortItemId] = useState<string | null>(
+		null,
+	)
 	const [puzzleRound, setPuzzleRound] = useState<PuzzleRound | null>(null)
 	const [puzzleRoundIndex, setPuzzleRoundIndex] = useState(0)
 	const [cardIndex, setCardIndex] = useState(0)
@@ -739,6 +1154,7 @@ export function App() {
 	})
 	const shouldSpeakPromptRef = useRef(false)
 	const puzzleResetTimeoutRef = useRef<number | null>(null)
+	const mathResetTimeoutRef = useRef<number | null>(null)
 	const puzzleDropRef = useRef<
 		(objectId: string, targetObjectId: string) => void
 	>(() => {})
@@ -804,7 +1220,6 @@ export function App() {
 			)
 	}, [placementByObjectId, puzzleRound])
 	const placedPuzzleObjectIds = puzzleRound?.placedObjectIds ?? []
-
 	useEffect(() => {
 		saveSettings(
 			typeof window === 'undefined' ? undefined : window.localStorage,
@@ -829,7 +1244,10 @@ export function App() {
 	}, [selectedPackId])
 
 	useEffect(() => {
-		return () => clearPuzzleResetTimeout()
+		return () => {
+			clearPuzzleResetTimeout()
+			clearMathResetTimeout()
+		}
 	}, [])
 
 	useEffect(() => {
@@ -863,10 +1281,14 @@ export function App() {
 
 	useEffect(() => {
 		clearPuzzleResetTimeout()
+		clearMathResetTimeout()
 		setSceneIndex(0)
 		setLayoutSeed(createSceneLayoutSeed())
 		setActiveObjectId(null)
 		setFindRound(null)
+		setMathRound(null)
+		setMathRoundIndex(0)
+		setSelectedSortItemId(null)
 		setPuzzleRound(null)
 		setPuzzleRoundIndex(0)
 		setDraggedPuzzleObjectId(null)
@@ -876,8 +1298,12 @@ export function App() {
 
 	useEffect(() => {
 		clearPuzzleResetTimeout()
+		clearMathResetTimeout()
 		setActiveObjectId(null)
 		setFindRound(null)
+		setMathRound(null)
+		setMathRoundIndex(0)
+		setSelectedSortItemId(null)
 		setPuzzleRound(null)
 		setPuzzleRoundIndex(0)
 		setDraggedPuzzleObjectId(null)
@@ -886,10 +1312,31 @@ export function App() {
 	}, [scene?.id])
 
 	useEffect(() => {
+		clearMathResetTimeout()
+		setMathRound(null)
+		setMathRoundIndex(0)
+		setSelectedSortItemId(null)
+		if (settings.mode === 'math') {
+			setToast({ kind: 'hello', sequence: [] })
+		}
+	}, [settings.mathFocus])
+
+	useEffect(() => {
 		if (settings.mode === 'puzzle' && placements.length > 0 && !puzzleRound) {
 			setPuzzleRound(createPuzzleRound(placements, puzzleRoundIndex))
 		}
 	}, [placements, puzzleRound, puzzleRoundIndex, settings.mode])
+
+	useEffect(() => {
+		if (settings.mode === 'math' && placements.length > 0 && !mathRound) {
+			setMathRound(
+				createMathPlayRound(placements, {
+					roundIndex: mathRoundIndex,
+					focus: settings.mathFocus,
+				}),
+			)
+		}
+	}, [mathRound, mathRoundIndex, placements, settings.mathFocus, settings.mode])
 
 	useEffect(() => {
 		let nextToast: ToastState | null = null
@@ -898,7 +1345,11 @@ export function App() {
 				kind: 'find',
 				sequence: getFindPrompt(targetObject, settings),
 			}
-		} else if (toast.kind === 'find' || toast.kind === 'puzzle') {
+		} else if (
+			toast.kind === 'find' ||
+			toast.kind === 'puzzle' ||
+			toast.kind === 'math'
+		) {
 			nextToast = { kind: 'hello', sequence: [] }
 		}
 
@@ -924,6 +1375,7 @@ export function App() {
 		}
 		if (settings.mode !== nextSettings.mode) {
 			clearPuzzleResetTimeout()
+			clearMathResetTimeout()
 		}
 		setSettings(nextSettings)
 		if (nextSettings.mode === 'find' && objects.length > 0) {
@@ -933,6 +1385,19 @@ export function App() {
 			setDraggedPuzzleObjectId(null)
 			setHoveredPuzzleTargetId(null)
 			setToast({ kind: 'puzzle', sequence: [] })
+		}
+		if (nextSettings.mode === 'math') {
+			setDraggedPuzzleObjectId(null)
+			setHoveredPuzzleTargetId(null)
+			setMathRound(
+				(round) =>
+					round ??
+					createMathPlayRound(placements, {
+						roundIndex: mathRoundIndex,
+						focus: nextSettings.mathFocus,
+					}),
+			)
+			setToast({ kind: 'hello', sequence: [] })
 		}
 		if (nextSettings.mode === 'cards') {
 			setDraggedPuzzleObjectId(null)
@@ -1078,6 +1543,162 @@ export function App() {
 	}
 	puzzleDropRef.current = handlePuzzleAttempt
 
+	function handleMathCollectObject(object: ObjectConcept) {
+		if (
+			!mathRound ||
+			(mathRound.type !== 'count-and-collect' &&
+				mathRound.type !== 'feed-the-friend')
+		) {
+			return
+		}
+
+		setActiveObjectId(object.id)
+		const result = handleMathCollect(mathRound, object.id)
+		if (!result.isTarget) {
+			const sequence = buildLearningSequence(object, settings)
+			setToast({ kind: 'word', sequence })
+			speakSequence(sequence, settings.muted)
+			return
+		}
+
+		const nextRound = {
+			...mathRound,
+			collectedCount: result.collectedCount,
+		}
+		setMathRound(nextRound)
+
+		if (result.isComplete) {
+			const totalSequence = getMathTotalPresentation(
+				nextRound.targetQuantity,
+				object,
+				settings,
+			)
+			const countSequence = result.countedNumber
+				? getMathCountPresentation(result.countedNumber, settings)
+				: []
+			setToast({ kind: 'math', sequence: totalSequence })
+			speakSequence([...countSequence, ...totalSequence], settings.muted)
+
+			const nextRoundIndex = mathRoundIndex + 1
+			clearMathResetTimeout()
+			mathResetTimeoutRef.current = window.setTimeout(() => {
+				mathResetTimeoutRef.current = null
+				setMathRoundIndex(nextRoundIndex)
+				setMathRound(
+					createMathPlayRound(placements, {
+						roundIndex: nextRoundIndex,
+						previousTargetId: object.id,
+						focus: settings.mathFocus,
+					}),
+				)
+				setActiveObjectId(null)
+				setSelectedSortItemId(null)
+				setToast({ kind: 'hello', sequence: [] })
+			}, 1400)
+			return
+		}
+
+		const countSequence = result.countedNumber
+			? getMathCountPresentation(result.countedNumber, settings)
+			: []
+		setToast({ kind: 'math', sequence: countSequence })
+		speakSequence(countSequence, settings.muted)
+	}
+
+	function handleMathDotChoice(choice: DotMatchChoice) {
+		if (!mathRound || mathRound.type !== 'dot-match') {
+			return
+		}
+
+		const object = objectById.get(choice.objectId)
+		const result = handleDotMatch(mathRound, choice.id)
+		const nextRound = {
+			...mathRound,
+			selectedChoiceId: result.selectedChoiceId,
+			isComplete: result.isComplete,
+		}
+		setMathRound(nextRound)
+
+		if (!result.isTarget) {
+			const sequence = object
+				? createMathPresentation(settings, {
+						en: `${choice.quantity} ${getEnglishQuantityName(
+							object,
+							choice.quantity,
+						)}.`,
+						'zh-Hans': `${getChineseQuantityText(object, choice.quantity)}。`,
+					})
+				: getMathPrompt(mathRound, objectById, settings)
+			setToast({ kind: 'math', sequence })
+			speakSequence(sequence, settings.muted)
+			window.setTimeout(() => {
+				setToast({
+					kind: 'math',
+					sequence: getMathPrompt(mathRound, objectById, settings),
+				})
+			}, 1200)
+			return
+		}
+
+		const successSequence = createMathPresentation(settings, {
+			en: 'Same number.',
+			'zh-Hans': '一样多。',
+		})
+		setToast({ kind: 'math', sequence: successSequence })
+		speakSequence(successSequence, settings.muted)
+		advanceMathRound(choice.objectId)
+	}
+
+	function handleMathColorSort(item: ColorSortItem, basketColor: string) {
+		if (!mathRound || mathRound.type !== 'color-sort') {
+			return
+		}
+
+		const result = handleColorSort(mathRound, item.id, basketColor)
+		if (!result.isTarget) {
+			const object = objectById.get(item.objectId)
+			const sequence = object
+				? buildLearningSequence(object, settings)
+				: getMathPrompt(mathRound, objectById, settings)
+			setToast({ kind: 'math', sequence })
+			speakSequence(sequence, settings.muted)
+			return
+		}
+
+		const nextRound = { ...mathRound, items: result.items }
+		setMathRound(nextRound)
+		setSelectedSortItemId(null)
+		const placedSequence = createMathPresentation(settings, {
+			en: `${item.color} ${objectById.get(item.objectId)?.math?.englishPlural ?? 'thing'}.`,
+			'zh-Hans': `${getChineseColorName(item.color)}。`,
+		})
+		setToast({ kind: 'math', sequence: placedSequence })
+		speakSequence(placedSequence, settings.muted)
+
+		if (result.isComplete) {
+			advanceMathRound(item.objectId)
+		}
+	}
+
+	function advanceMathRound(previousTargetId: string) {
+		const nextRoundIndex = mathRoundIndex + 1
+		clearMathResetTimeout()
+		mathResetTimeoutRef.current = window.setTimeout(() => {
+			mathResetTimeoutRef.current = null
+			setMathRoundIndex(nextRoundIndex)
+			setSelectedSortItemId(null)
+			setMathRound(
+				createMathPlayRound(placements, {
+					roundIndex: nextRoundIndex,
+					previousTargetId,
+					focus: settings.mathFocus,
+				}),
+			)
+			setActiveObjectId(null)
+			setToast({ kind: 'hello', sequence: [] })
+		}, 1400)
+	}
+
 	function clearPuzzleResetTimeout() {
 		if (puzzleResetTimeoutRef.current === null) {
 			return
@@ -1085,6 +1706,15 @@ export function App() {
 
 		window.clearTimeout(puzzleResetTimeoutRef.current)
 		puzzleResetTimeoutRef.current = null
+	}
+
+	function clearMathResetTimeout() {
+		if (mathResetTimeoutRef.current === null) {
+			return
+		}
+
+		window.clearTimeout(mathResetTimeoutRef.current)
+		mathResetTimeoutRef.current = null
 	}
 
 	if (error) {
@@ -1107,19 +1737,26 @@ export function App() {
 	const sceneTitle = scene.title.en
 	const deckTitle = pack.title.en ?? pack.id
 	const isCardsMode = settings.mode === 'cards'
+	const isMathMode = settings.mode === 'math'
 	const hasSceneNavigation = activeScenes.length > 1
 	const promptSequence =
 		toast.sequence.length > 0
 			? toast.sequence
 			: settings.mode === 'find' && targetObject
 				? getFindPrompt(targetObject, settings)
-				: []
+				: isMathMode && mathRound
+					? getMathPrompt(mathRound, objectById, settings)
+					: isMathMode
+						? getMathFallbackPrompt(settings)
+						: []
 	const promptKind =
 		promptSequence.length > 0
 			? toast.kind
 			: settings.mode === 'puzzle'
 				? 'puzzle'
-				: 'hello'
+				: isMathMode
+					? 'math'
+					: 'hello'
 	const backgroundStyle = scene.background.asset
 		? ({
 				backgroundImage: `url(${scene.background.asset.path})`,
@@ -1231,7 +1868,25 @@ export function App() {
 							)}
 						</div>
 
-						{settings.mode === 'puzzle' ? (
+						{isMathMode && mathRound ? (
+							<div className="garden-stage is-math" style={backgroundStyle}>
+								<MathPlayStage
+									round={mathRound}
+									placementByObjectId={placementByObjectId}
+									selectedSortItemId={selectedSortItemId}
+									onCollect={handleMathCollectObject}
+									onDotChoice={handleMathDotChoice}
+									onSelectSortItem={setSelectedSortItemId}
+									onColorSort={handleMathColorSort}
+								/>
+							</div>
+						) : isMathMode ? (
+							<div className="garden-stage is-math" style={backgroundStyle}>
+								<div className="math-stage" data-testid="math-stage">
+									<strong>Try another set for Math Play.</strong>
+								</div>
+							</div>
+						) : settings.mode === 'puzzle' ? (
 							<div className="puzzle-layout">
 								<div className="garden-stage is-puzzle" style={backgroundStyle}>
 									{placements.map((placement) =>

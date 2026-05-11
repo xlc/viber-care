@@ -606,6 +606,18 @@
 			"id": "fish",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "swimmer"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": ["counting", "dot-match", "more-less", "spatial"],
+				"colors": ["orange"],
+				"sceneZones": ["water", "reef"],
+				"zhMeasureWord": "条",
+				"englishPlural": "fish"
+			},
 			"visualPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background.",
 			"interaction": {
 				"id": "fish-bob",
@@ -1358,6 +1370,18 @@
 			"id": "crab",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "beach"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 3
+				},
+				"skills": ["counting", "dot-match", "more-less", "spatial"],
+				"colors": ["red"],
+				"sceneZones": ["shore", "sand"],
+				"zhMeasureWord": "只",
+				"englishPlural": "crabs"
+			},
 			"visualPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background.",
 			"interaction": {
 				"id": "crab-wiggle",
@@ -1922,6 +1946,24 @@
 			"id": "starfish",
 			"category": "ocean-animal",
 			"tags": ["ocean", "animal", "beach"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": [
+					"counting",
+					"dot-match",
+					"color-sort",
+					"more-less",
+					"spatial"
+				],
+				"colors": ["orange"],
+				"sceneZones": ["shore", "sand", "seabed"],
+				"zhMeasureWord": "只",
+				"englishPlural": "starfish"
+			},
 			"visualPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background.",
 			"interaction": {
 				"id": "starfish-glow",
@@ -2862,6 +2904,18 @@
 			"id": "clam",
 			"category": "animal",
 			"tags": ["ocean", "seabed", "shell", "shore"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": ["counting", "dot-match", "more-less", "spatial"],
+				"colors": ["purple"],
+				"sceneZones": ["shore", "sand", "seabed"],
+				"zhMeasureWord": "个",
+				"englishPlural": "clams"
+			},
 			"visualPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background.",
 			"interaction": {
 				"id": "clam-glow",
@@ -3050,6 +3104,18 @@
 			"id": "shrimp",
 			"category": "animal",
 			"tags": ["ocean", "water", "animal", "shrimp"],
+			"math": {
+				"countable": true,
+				"quantityRange": {
+					"min": 1,
+					"max": 5
+				},
+				"skills": ["counting", "dot-match", "more-less", "spatial"],
+				"colors": ["pink"],
+				"sceneZones": ["water", "seabed"],
+				"zhMeasureWord": "只",
+				"englishPlural": "shrimp"
+			},
 			"visualPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background.",
 			"interaction": {
 				"id": "shrimp-bob",

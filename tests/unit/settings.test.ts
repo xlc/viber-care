@@ -45,6 +45,20 @@ describe('settings persistence', () => {
 		expect(resolveLanguageOrder(loaded)).toEqual(['zh-Hans', 'en'])
 	})
 
+	it('accepts math as a valid stored mode', () => {
+		const storage = new MemoryStorage()
+		const settings: WordGardenSettings = {
+			...DEFAULT_SETTINGS,
+			mode: 'math',
+			mathFocus: 'colors',
+		}
+
+		saveSettings(storage, settings)
+
+		expect(loadSettings(storage).mode).toBe('math')
+		expect(loadSettings(storage).mathFocus).toBe('colors')
+	})
+
 	it('falls back from invalid stored modes', () => {
 		const storage = new MemoryStorage()
 		storage.setItem(
@@ -53,5 +67,15 @@ describe('settings persistence', () => {
 		)
 
 		expect(loadSettings(storage).mode).toBe(DEFAULT_SETTINGS.mode)
+	})
+
+	it('falls back from invalid stored math focus', () => {
+		const storage = new MemoryStorage()
+		storage.setItem(
+			SETTINGS_STORAGE_KEY,
+			JSON.stringify({ ...DEFAULT_SETTINGS, mathFocus: 'badges' }),
+		)
+
+		expect(loadSettings(storage).mathFocus).toBe(DEFAULT_SETTINGS.mathFocus)
 	})
 })

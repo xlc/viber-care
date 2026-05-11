@@ -79,6 +79,15 @@ async function resetAudioPlayCount(page: Page) {
 	})
 }
 
+async function useDeterministicLayoutSeed(page: Page, seed: string) {
+	await page.addInitScript((layoutSeed) => {
+		Object.defineProperty(window.crypto, 'randomUUID', {
+			configurable: true,
+			value: () => layoutSeed,
+		})
+	}, seed)
+}
+
 function getPackObjectIds(packId: string) {
 	const packPath = path.join(
 		process.cwd(),
@@ -145,6 +154,54 @@ async function expectObjectCountBetween(
 	expect(count).toBeGreaterThanOrEqual(min)
 	expect(count).toBeLessThanOrEqual(max)
 	return count
+}
+
+async function completeMathRound(page: Page) {
+	const stage = page.getByTestId('math-stage')
+	await expect(stage).toBeVisible()
+	const roundType = await stage.getAttribute('data-round-type')
+	if (!roundType) {
+		throw new Error('Expected Math Play round type')
+	}
+
+	if (roundType === 'count-and-collect' || roundType === 'feed-the-friend') {
+		const count = await page.locator('.math-object').count()
+		for (let index = 0; index < count; index += 1) {
+			await page.locator('.math-object').first().click()
+		}
+		return roundType
+	}
+
+	if (roundType === 'dot-match') {
+		const dotCount = await page.locator('.dot-card .dot').count()
+		await page
+			.locator(`[data-testid^="dot-choice-"][data-testid$="-${dotCount}"]`)
+			.first()
+			.click()
+		return roundType
+	}
+
+	if (roundType === 'color-sort') {
+		for (;;) {
+			const remainingItems = page.locator('.sort-items .math-object')
+			const remaining = await remainingItems.count()
+			if (remaining === 0) {
+				break
+			}
+			const item = remainingItems.first()
+			const label = await item.getAttribute('aria-label')
+			const color = label?.match(/^Sort ([^ ]+) /)?.[1]
+			if (!color) {
+				throw new Error(`Expected sort item color in label "${label}"`)
+			}
+			await item.click()
+			await expect(item).toHaveAttribute('aria-pressed', 'true')
+			await page.getByTestId(`sort-basket-${color}`).click()
+		}
+		return roundType
+	}
+
+	throw new Error(`Unhandled Math Play round type ${roundType}`)
 }
 
 test('app loads', async ({ page }) => {
@@ -269,6 +326,7 @@ test('settings panel does not expose mode controls', async ({ page }) => {
 	await expect(dialog.getByTestId('mode-find')).toHaveCount(0)
 	await expect(dialog.getByTestId('mode-puzzle')).toHaveCount(0)
 	await expect(dialog.getByTestId('mode-cards')).toHaveCount(0)
+	await expect(dialog.getByTestId('mode-math')).toHaveCount(0)
 })
 
 test('settings panel can change word detail without raw level labels', async ({
@@ -410,6 +468,83 @@ test('cards audio is user initiated and respects mute', async ({ page }) => {
 	await resetAudioPlayCount(page)
 	await page.getByTestId('card-main').click()
 	await expect.poll(() => getAudioPlayCount(page)).toBe(0)
+})
+
+test('math play count and collect advances a short round', async ({ page }) => {
+	await page.goto('/')
+
+	await expect(page.getByTestId('mode-math')).toBeVisible()
+	await page.getByTestId('mode-math').click()
+
+	await expect(page.getByTestId('prompt')).toContainText(/Put \d/)
+	await expect(page.getByTestId('math-stage')).toBeVisible()
+	await expect(page.getByTestId('math-stage')).toHaveAttribute(
+		'data-round-type',
+		'count-and-collect',
+	)
+	const initialCount = await page.locator('.math-object').count()
+	expect(initialCount).toBeGreaterThan(0)
+	expect(initialCount).toBeLessThanOrEqual(3)
+
+	await page.locator('.math-object').first().click()
+	await expect(page.locator('.math-basket-items img')).toHaveCount(1)
+	await expect(page.getByTestId('prompt')).not.toContainText(/wrong|try again/i)
+
+	for (let count = 1; count < initialCount; count += 1) {
+		await page.locator('.math-object').first().click()
+	}
+
+	await expect(page.locator('.math-basket-items img')).toHaveCount(initialCount)
+	await expect(page.getByTestId('prompt')).toContainText(/\d|两/)
+	await expect.poll(() => getAudioPlayCount(page)).toBe(0)
+})
+
+test('math play rotates through MVP mini-games', async ({ page }) => {
+	await useDeterministicLayoutSeed(page, 'math-0')
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('pack-farm-friends').click()
+	await page.getByLabel('Close settings').click()
+	await page.getByTestId('mode-math').click()
+
+	const seenRoundTypes = new Set<string>()
+	for (let round = 0; round < 6; round += 1) {
+		const roundType = await completeMathRound(page)
+		seenRoundTypes.add(roundType)
+		if (
+			seenRoundTypes.has('count-and-collect') &&
+			seenRoundTypes.has('feed-the-friend') &&
+			seenRoundTypes.has('dot-match') &&
+			seenRoundTypes.has('color-sort')
+		) {
+			break
+		}
+		await page.waitForTimeout(1600)
+	}
+
+	expect([...seenRoundTypes].sort()).toEqual([
+		'color-sort',
+		'count-and-collect',
+		'dot-match',
+		'feed-the-friend',
+	])
+	await expect(page.getByTestId('prompt')).not.toContainText(/wrong|try again/i)
+})
+
+test('settings panel can bias Math Play learning focus', async ({ page }) => {
+	await useDeterministicLayoutSeed(page, 'math-0')
+	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('pack-fruits-and-vegetables').click()
+	await expect(page.getByText('Learning Focus')).toBeVisible()
+	await page.getByTestId('math-focus-colors').click()
+	await page.getByLabel('Close settings').click()
+
+	await page.getByTestId('mode-math').click()
+	await expect(page.getByTestId('math-stage')).toHaveAttribute(
+		'data-round-type',
+		'color-sort',
+	)
 })
 
 test('puzzle mode fills scene gaps by dragging pieces', async ({ page }) => {
