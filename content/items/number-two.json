@@ -1,0 +1,194 @@
+{
+	"id": "number-two",
+	"category": "number",
+	"tags": ["number", "counting", "two"],
+	"visualPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "number-two-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find number two.",
+			"successPhrase": "You found number two.",
+			"fallbackText": "two",
+			"levels": {
+				"L0": {
+					"text": "two",
+					"audioText": "two",
+					"fallbackText": "two",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Number two.",
+					"audioText": "Number two.",
+					"fallbackText": "two",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "count to two",
+					"audioText": "count to two",
+					"fallbackText": "two",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Two little dots are here.",
+					"audioText": "Two little dots are here.",
+					"fallbackText": "two",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What number is this? It is two.",
+					"audioText": "What number is this? It is two.",
+					"fallbackText": "two",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The number two card hops softly in the number meadow.",
+					"audioText": "The number two card hops softly in the number meadow.",
+					"fallbackText": "two",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-two-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-two-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找数字二。",
+			"successPhrase": "你找到数字二了。",
+			"fallbackText": "二",
+			"levels": {
+				"L0": {
+					"text": "二",
+					"audioText": "二",
+					"fallbackText": "二",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "数字二。",
+					"audioText": "数字二。",
+					"fallbackText": "二",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "数到二",
+					"audioText": "数到二",
+					"fallbackText": "二",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "这里有两个小点。",
+					"audioText": "这里有两个小点。",
+					"fallbackText": "二",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是几？这是二。",
+					"audioText": "这是几？这是二。",
+					"fallbackText": "二",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "二号卡片在数字草地上轻轻跳。",
+					"audioText": "二号卡片在数字草地上轻轻跳。",
+					"fallbackText": "二",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-two-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-two-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-two-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-two.webp",
+				"alt": "number two",
+				"generationPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "two",
+					"emoji": "2️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["numbers", "number", "counting", "two"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-two-bright.webp",
+				"alt": "number two bright large",
+				"generationPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "two",
+					"emoji": "2️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number two on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["numbers", "number", "counting", "two"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

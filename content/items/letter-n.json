@@ -1,0 +1,194 @@
+{
+	"id": "letter-n",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "n"],
+	"visualPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-n-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter N.",
+			"successPhrase": "You found letter N.",
+			"fallbackText": "N",
+			"levels": {
+				"L0": {
+					"text": "N",
+					"audioText": "N",
+					"fallbackText": "N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "N is for nest.",
+					"audioText": "N is for nest.",
+					"fallbackText": "N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase N",
+					"audioText": "uppercase N",
+					"fallbackText": "N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "N starts the word nest.",
+					"audioText": "N starts the word nest.",
+					"fallbackText": "N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is N.",
+					"audioText": "What letter is this? It is N.",
+					"fallbackText": "N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "N sits on the card and says nest.",
+					"audioText": "N sits on the card and says nest.",
+					"fallbackText": "N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-n-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-n-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 N。",
+			"successPhrase": "你找到字母 N 了。",
+			"fallbackText": "字母 N",
+			"levels": {
+				"L0": {
+					"text": "字母 N",
+					"audioText": "字母 N",
+					"fallbackText": "字母 N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "N 代表鸟巢。",
+					"audioText": "N 代表鸟巢。",
+					"fallbackText": "字母 N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 N",
+					"audioText": "大写字母 N",
+					"fallbackText": "字母 N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "N 是鸟巢的开头。",
+					"audioText": "N 是鸟巢的开头。",
+					"fallbackText": "字母 N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 N。",
+					"audioText": "这是什么字母？这是 N。",
+					"fallbackText": "字母 N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "N 在卡片上，轻轻说鸟巢。",
+					"audioText": "N 在卡片上，轻轻说鸟巢。",
+					"fallbackText": "字母 N",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-n-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-n.webp",
+				"alt": "letter N",
+				"generationPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "N",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "n"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-n-bright.webp",
+				"alt": "letter N bright large",
+				"generationPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "N",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase N letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "n"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

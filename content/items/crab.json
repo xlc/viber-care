@@ -1,0 +1,206 @@
+{
+	"id": "crab",
+	"category": "ocean-animal",
+	"tags": ["ocean", "animal", "beach"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "dot-match", "more-less", "spatial"],
+		"colors": ["red"],
+		"sceneZones": ["shore", "sand"],
+		"zhMeasureWord": "只",
+		"englishPlural": "crabs"
+	},
+	"visualPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "crab-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the crab.",
+			"successPhrase": "You found the crab.",
+			"fallbackText": "That's the crab.",
+			"levels": {
+				"L0": {
+					"text": "crab",
+					"audioText": "crab",
+					"fallbackText": "crab",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The crab walks sideways.",
+					"audioText": "The crab walks sideways.",
+					"fallbackText": "crab",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "small crab",
+					"audioText": "small crab",
+					"fallbackText": "crab",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The crab walks on the sand.",
+					"audioText": "The crab walks on the sand.",
+					"fallbackText": "crab",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who walks sideways? The crab walks sideways.",
+					"audioText": "Who walks sideways? The crab walks sideways.",
+					"fallbackText": "crab",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The crab tiptoes across the soft sand.",
+					"audioText": "The crab tiptoes across the soft sand.",
+					"fallbackText": "That's the crab.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/crab-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/crab-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找螃蟹。",
+			"successPhrase": "你找到螃蟹了。",
+			"fallbackText": "这是螃蟹。",
+			"levels": {
+				"L0": {
+					"text": "螃蟹",
+					"audioText": "螃蟹",
+					"fallbackText": "螃蟹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "螃蟹横着走。",
+					"audioText": "螃蟹横着走。",
+					"fallbackText": "螃蟹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的螃蟹",
+					"audioText": "小小的螃蟹",
+					"fallbackText": "螃蟹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "螃蟹在沙子上走。",
+					"audioText": "螃蟹在沙子上走。",
+					"fallbackText": "螃蟹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁横着走？螃蟹横着走。",
+					"audioText": "谁横着走？螃蟹横着走。",
+					"fallbackText": "螃蟹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "螃蟹在软软的沙子上轻轻走。",
+					"audioText": "螃蟹在软软的沙子上轻轻走。",
+					"fallbackText": "这是螃蟹。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/crab-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/crab.webp",
+				"alt": "crab",
+				"generationPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "crab",
+					"emoji": "🦀"
+				}
+			},
+			"visualPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "beach"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/crab-bright.webp",
+				"alt": "crab bright large",
+				"generationPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "crab",
+					"emoji": "🦀"
+				}
+			},
+			"visualPrompt": "A friendly crab for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft red-orange color, no scary claws, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "beach"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

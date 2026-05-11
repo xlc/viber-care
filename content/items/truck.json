@@ -1,0 +1,194 @@
+{
+	"id": "truck",
+	"category": "transportation",
+	"tags": ["transportation", "road", "wheels"],
+	"visualPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
+	"interaction": {
+		"id": "truck-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the truck.",
+			"successPhrase": "You found the truck.",
+			"fallbackText": "That's the truck.",
+			"levels": {
+				"L0": {
+					"text": "truck",
+					"audioText": "truck",
+					"fallbackText": "truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The truck rolls.",
+					"audioText": "The truck rolls.",
+					"fallbackText": "truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "green truck",
+					"audioText": "green truck",
+					"fallbackText": "truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The truck carries a gentle load.",
+					"audioText": "The truck carries a gentle load.",
+					"fallbackText": "truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a big back? The truck has a big back.",
+					"audioText": "What has a big back? The truck has a big back.",
+					"fallbackText": "truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The truck rolls carefully beside the trees.",
+					"audioText": "The truck rolls carefully beside the trees.",
+					"fallbackText": "That's the truck.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/truck-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/truck-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找卡车。",
+			"successPhrase": "你找到卡车了。",
+			"fallbackText": "这是卡车。",
+			"levels": {
+				"L0": {
+					"text": "卡车",
+					"audioText": "卡车",
+					"fallbackText": "卡车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "卡车开一开。",
+					"audioText": "卡车开一开。",
+					"fallbackText": "卡车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "绿色卡车",
+					"audioText": "绿色卡车",
+					"fallbackText": "卡车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "卡车运着轻轻的东西。",
+					"audioText": "卡车运着轻轻的东西。",
+					"fallbackText": "卡车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有大大的车厢？卡车有大大的车厢。",
+					"audioText": "谁有大大的车厢？卡车有大大的车厢。",
+					"fallbackText": "卡车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "卡车小心地开过树旁。",
+					"audioText": "卡车小心地开过树旁。",
+					"fallbackText": "这是卡车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/truck-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/truck-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/truck-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/truck.png",
+				"alt": "green truck",
+				"generationPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
+				"placeholder": {
+					"label": "truck",
+					"emoji": "🚚"
+				}
+			},
+			"visualPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/truck-bright.png",
+				"alt": "green truck bright large",
+				"generationPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "truck",
+					"emoji": "🚚"
+				}
+			},
+			"visualPrompt": "A friendly green truck for a toddler transportation word-learning game, rounded cargo box, soft wheels, no brand, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

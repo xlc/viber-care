@@ -1,0 +1,194 @@
+{
+	"id": "letter-a",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "a"],
+	"visualPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-a-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter A.",
+			"successPhrase": "You found letter A.",
+			"fallbackText": "A",
+			"levels": {
+				"L0": {
+					"text": "A",
+					"audioText": "A",
+					"fallbackText": "A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "A is for apple.",
+					"audioText": "A is for apple.",
+					"fallbackText": "A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase A",
+					"audioText": "uppercase A",
+					"fallbackText": "A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "A starts the word apple.",
+					"audioText": "A starts the word apple.",
+					"fallbackText": "A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is A.",
+					"audioText": "What letter is this? It is A.",
+					"fallbackText": "A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "A sits on the card and says apple.",
+					"audioText": "A sits on the card and says apple.",
+					"fallbackText": "A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-a-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-a-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 A。",
+			"successPhrase": "你找到字母 A 了。",
+			"fallbackText": "字母 A",
+			"levels": {
+				"L0": {
+					"text": "字母 A",
+					"audioText": "字母 A",
+					"fallbackText": "字母 A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "A 代表苹果。",
+					"audioText": "A 代表苹果。",
+					"fallbackText": "字母 A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 A",
+					"audioText": "大写字母 A",
+					"fallbackText": "字母 A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "A 是苹果的开头。",
+					"audioText": "A 是苹果的开头。",
+					"fallbackText": "字母 A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 A。",
+					"audioText": "这是什么字母？这是 A。",
+					"fallbackText": "字母 A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "A 在卡片上，轻轻说苹果。",
+					"audioText": "A 在卡片上，轻轻说苹果。",
+					"fallbackText": "字母 A",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-a-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-a.webp",
+				"alt": "letter A",
+				"generationPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "A",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "a"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-a-bright.webp",
+				"alt": "letter A bright large",
+				"generationPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "A",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase A letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "a"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

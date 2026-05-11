@@ -1,0 +1,192 @@
+{
+	"id": "subway",
+	"category": "vehicle",
+	"tags": ["transportation", "rail", "track", "train"],
+	"visualPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "subway-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "subway",
+			"findPrompt": "Find the subway.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/subway-en-find.mp3"
+			},
+			"successPhrase": "You found the subway.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/subway-en-success.mp3"
+			},
+			"fallbackText": "subway",
+			"levels": {
+				"L0": {
+					"text": "subway",
+					"audioText": "subway",
+					"fallbackText": "subway",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The subway rides.",
+					"audioText": "The subway rides.",
+					"fallbackText": "subway",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "silver subway",
+					"audioText": "silver subway",
+					"fallbackText": "subway",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The subway rides on the track.",
+					"audioText": "The subway rides on the track.",
+					"fallbackText": "subway",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What rides on rails? The subway rides.",
+					"audioText": "What rides on rails? The subway rides.",
+					"fallbackText": "subway",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The subway makes a calm ride along the track.",
+					"audioText": "The subway makes a calm ride along the track.",
+					"fallbackText": "That is the subway.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "地铁",
+			"findPrompt": "找一找地铁。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/subway-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到了地铁。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/subway-zh-Hans-success.mp3"
+			},
+			"fallbackText": "地铁",
+			"levels": {
+				"L0": {
+					"text": "地铁",
+					"audioText": "地铁",
+					"fallbackText": "地铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "地铁慢慢开。",
+					"audioText": "地铁慢慢开。",
+					"fallbackText": "地铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "银色地铁",
+					"audioText": "银色地铁",
+					"fallbackText": "地铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "地铁在轨道上慢慢开。",
+					"audioText": "地铁在轨道上慢慢开。",
+					"fallbackText": "地铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁在轨道上开？地铁在轨道上开。",
+					"audioText": "谁在轨道上开？地铁在轨道上开。",
+					"fallbackText": "地铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "地铁沿着轨道，安安静静地开过去。",
+					"audioText": "地铁沿着轨道，安安静静地开过去。",
+					"fallbackText": "这是地铁。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/subway-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "silver subway",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/subway.png",
+				"alt": "silver subway",
+				"generationPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "silver subway"
+				}
+			},
+			"visualPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "vehicle", "rail", "track", "train"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "silver subway bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/subway-bright.png",
+				"alt": "silver subway bright large",
+				"generationPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "silver subway bright large"
+				}
+			},
+			"visualPrompt": "A friendly subway train car for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "vehicle", "rail", "track", "train"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

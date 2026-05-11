@@ -1,5 +1,7 @@
 export type PuzzlePlacement = {
-	objectId: string
+	object: {
+		id: string
+	}
 }
 
 export type PuzzleRound = {
@@ -28,8 +30,8 @@ export function createPuzzleRound(
 ): PuzzleRound {
 	const objectIds: string[] = []
 	for (const placement of placements) {
-		if (!objectIds.includes(placement.objectId)) {
-			objectIds.push(placement.objectId)
+		if (!objectIds.includes(placement.object.id)) {
+			objectIds.push(placement.object.id)
 		}
 	}
 

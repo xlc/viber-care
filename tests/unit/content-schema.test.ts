@@ -1,29 +1,36 @@
+import { readdirSync, readFileSync } from 'node:fs'
+import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import gardenPack from '../../content/packs/garden.json'
 import {
 	ContentValidationError,
-	validateContentPacks,
+	validateContentCatalog,
 } from '../../src/content/validation'
 
+const sourceItems = getSourceItems()
+
 describe('content schema validation', () => {
-	it('accepts a valid content pack', () => {
-		const [validatedPack] = validateContentPacks([gardenPack])
+	it('accepts a valid content catalog slice', () => {
+		const { packs } = validateContentCatalog(sourceItems, [gardenPack])
 
-		expect(validatedPack?.id).toBe('garden')
+		expect(packs[0]?.id).toBe('garden')
+		expect(packs[0]?.objects.length).toBeGreaterThan(0)
 	})
 
-	it('keeps math metadata optional on objects', () => {
-		const packWithoutMath = JSON.parse(JSON.stringify(gardenPack))
-		delete packWithoutMath.objects[0].math
+	it('keeps math metadata optional on items', () => {
+		const items = clone(sourceItems)
+		delete items[0].math
 
-		const [validatedPack] = validateContentPacks([packWithoutMath])
+		const { items: validatedItems } = validateContentCatalog(items, [
+			gardenPack,
+		])
 
-		expect(validatedPack?.objects[0]?.math).toBeUndefined()
+		expect(validatedItems[0]?.math).toBeUndefined()
 	})
 
-	it('accepts valid math metadata on objects', () => {
-		const packWithMath = JSON.parse(JSON.stringify(gardenPack))
-		packWithMath.objects[0].math = {
+	it('accepts valid math metadata on items', () => {
+		const items = clone(sourceItems)
+		items[0].math = {
 			countable: true,
 			quantityRange: {
 				min: 1,
@@ -37,14 +44,16 @@ describe('content schema validation', () => {
 			englishPlural: 'ducks',
 		}
 
-		const [validatedPack] = validateContentPacks([packWithMath])
+		const { items: validatedItems } = validateContentCatalog(items, [
+			gardenPack,
+		])
 
-		expect(validatedPack?.objects[0]?.math?.zhMeasureWord).toBe('只')
+		expect(validatedItems[0]?.math?.zhMeasureWord).toBe('只')
 	})
 
 	it('reports invalid math quantity ranges', () => {
-		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
-		brokenPack.objects[0].math = {
+		const items = clone(sourceItems)
+		items[0].math = {
 			countable: true,
 			quantityRange: {
 				min: 1,
@@ -53,12 +62,14 @@ describe('content schema validation', () => {
 			skills: ['counting'],
 		}
 
-		expect(() => validateContentPacks([brokenPack])).toThrow(/Invalid input/)
+		expect(() => validateContentCatalog(items, [gardenPack])).toThrow(
+			/Invalid input/,
+		)
 	})
 
 	it('reports unsupported math skill names', () => {
-		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
-		brokenPack.objects[0].math = {
+		const items = clone(sourceItems)
+		items[0].math = {
 			countable: true,
 			quantityRange: {
 				min: 1,
@@ -67,12 +78,14 @@ describe('content schema validation', () => {
 			skills: ['addition'],
 		}
 
-		expect(() => validateContentPacks([brokenPack])).toThrow(/Invalid option/)
+		expect(() => validateContentCatalog(items, [gardenPack])).toThrow(
+			/Invalid option/,
+		)
 	})
 
 	it('reports empty math measure words', () => {
-		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
-		brokenPack.objects[0].math = {
+		const items = clone(sourceItems)
+		items[0].math = {
 			countable: true,
 			quantityRange: {
 				min: 1,
@@ -82,72 +95,113 @@ describe('content schema validation', () => {
 			zhMeasureWord: '',
 		}
 
-		expect(() => validateContentPacks([brokenPack])).toThrow(
+		expect(() => validateContentCatalog(items, [gardenPack])).toThrow(
 			/Too small: expected string to have >=1 characters/,
 		)
 	})
 
 	it('reports missing MVP language content', () => {
-		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
-		delete brokenPack.objects[0].content['zh-Hans']
+		const items = clone(sourceItems)
+		delete items[0].content['zh-Hans']
 
-		expect(() => validateContentPacks([brokenPack])).toThrow(
+		expect(() => validateContentCatalog(items, [gardenPack])).toThrow(
 			ContentValidationError,
 		)
-		expect(() => validateContentPacks([brokenPack])).toThrow(
+		expect(() => validateContentCatalog(items, [gardenPack])).toThrow(
 			/missing zh-Hans content/,
 		)
 	})
 
 	it('reports missing required pack languages', () => {
-		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
+		const brokenPack = clone(gardenPack)
 		brokenPack.languages = ['en']
 
-		expect(() => validateContentPacks([brokenPack])).toThrow(
+		expect(() => validateContentCatalog(sourceItems, [brokenPack])).toThrow(
 			/Pack "garden" is missing zh-Hans language/,
 		)
 	})
 
-	it('reports objects without two variants', () => {
-		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
-		brokenPack.objects[0].variants = [brokenPack.objects[0].variants[0]]
+	it('reports items without two variants', () => {
+		const items = clone(sourceItems)
+		items[0].variants = [items[0].variants[0]]
 
-		expect(() => validateContentPacks([brokenPack])).toThrow(/variants/)
+		expect(() => validateContentCatalog(items, [gardenPack])).toThrow(
+			/variants/,
+		)
 	})
 
 	it('reports scene placements with missing region tags', () => {
-		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
+		const brokenPack = clone(gardenPack)
 		brokenPack.scenes[0].objects[0].regionTags = ['not-a-region']
 
-		expect(() => validateContentPacks([brokenPack])).toThrow(
+		expect(() => validateContentCatalog(sourceItems, [brokenPack])).toThrow(
 			/references missing region tags "not-a-region"/,
 		)
 	})
 
 	it('reports scene placement anchors outside matching regions', () => {
-		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
+		const brokenPack = clone(gardenPack)
 		brokenPack.scenes[0].objects[0].y = 90
 
-		expect(() => validateContentPacks([brokenPack])).toThrow(
+		expect(() => validateContentCatalog(sourceItems, [brokenPack])).toThrow(
 			/anchor is outside its region/,
 		)
 	})
 
-	it('reports sub-packs that reference missing scenes', () => {
-		const brokenPack = JSON.parse(JSON.stringify(gardenPack))
-		brokenPack.subPacks = [
+	it('reports sets that reference missing scenes', () => {
+		const brokenPack = clone(gardenPack)
+		brokenPack.sets = [
 			{
 				id: 'missing-scene-set',
 				title: {
 					en: 'Missing scene',
 					'zh-Hans': '缺少场景',
 				},
+				itemIds: ['duck'],
 				sceneIds: ['not-a-scene'],
 			},
 		]
 
-		expect(() => validateContentPacks([brokenPack])).toThrow(
-			/Sub-pack "missing-scene-set" references unknown scene "not-a-scene"/,
+		expect(() => validateContentCatalog(sourceItems, [brokenPack])).toThrow(
+			/Set "missing-scene-set" references unknown scene "not-a-scene"/,
+		)
+	})
+
+	it('reports sets that expose scenes without their items', () => {
+		const brokenPack = clone(gardenPack)
+		const scene = brokenPack.scenes[0]
+		const placement = scene.objects[0]
+		if (!placement) {
+			throw new Error('Test setup failed: scene has no placements')
+		}
+		brokenPack.sets = [
+			{
+				id: 'incomplete-set',
+				title: {
+					en: 'Incomplete set',
+					'zh-Hans': '不完整集合',
+				},
+				itemIds: ['duck'],
+				sceneIds: [scene.id],
+			},
+		]
+
+		expect(() => validateContentCatalog(sourceItems, [brokenPack])).toThrow(
+			`Set "incomplete-set" includes scene "${scene.id}" but is missing item "${placement.itemId}".`,
 		)
 	})
 })
+
+function getSourceItems() {
+	const itemsDir = path.join(process.cwd(), 'content', 'items')
+
+	return readdirSync(itemsDir)
+		.filter((fileName) => fileName.endsWith('.json'))
+		.map((fileName) =>
+			JSON.parse(readFileSync(path.join(itemsDir, fileName), 'utf8')),
+		)
+}
+
+function clone<Value>(value: Value): Value {
+	return JSON.parse(JSON.stringify(value)) as Value
+}

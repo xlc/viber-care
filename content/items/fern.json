@@ -1,0 +1,196 @@
+{
+	"id": "fern",
+	"category": "plant",
+	"tags": ["plant", "green", "leaf"],
+	"visualPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
+	"interaction": {
+		"id": "fern-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the fern.",
+			"successPhrase": "You found the fern.",
+			"fallbackText": "That's the fern.",
+			"levels": {
+				"L0": {
+					"text": "fern",
+					"audioText": "fern",
+					"fallbackText": "fern",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The fern is soft and green.",
+					"audioText": "The fern is soft and green.",
+					"fallbackText": "The fern is soft and green.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "soft green fern",
+					"audioText": "soft green fern",
+					"fallbackText": "That's the fern.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The fern grows by the rocks.",
+					"audioText": "The fern grows by the rocks.",
+					"fallbackText": "That's the fern.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What plant is green? The fern is green.",
+					"audioText": "What plant is green? The fern is green.",
+					"fallbackText": "That's the fern.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The fern sways softly in the dinosaur valley.",
+					"audioText": "The fern sways softly in the dinosaur valley.",
+					"fallbackText": "That's the fern.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/fern-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/fern-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找蕨叶。",
+			"successPhrase": "你找到蕨叶了。",
+			"fallbackText": "这是蕨叶。",
+			"levels": {
+				"L0": {
+					"text": "蕨叶",
+					"audioText": "蕨叶",
+					"fallbackText": "蕨叶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "蕨叶绿绿的。",
+					"audioText": "蕨叶绿绿的。",
+					"fallbackText": "蕨叶绿绿的。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "柔软的绿色蕨类植物",
+					"audioText": "柔软的绿色蕨类植物",
+					"fallbackText": "这是蕨叶。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "蕨类植物长在石头旁。",
+					"audioText": "蕨类植物长在石头旁。",
+					"fallbackText": "这是蕨叶。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么植物是绿色的？蕨类植物是绿色的。",
+					"audioText": "什么植物是绿色的？蕨类植物是绿色的。",
+					"fallbackText": "这是蕨叶。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "蕨类植物在恐龙山谷里轻轻摇。",
+					"audioText": "蕨类植物在恐龙山谷里轻轻摇。",
+					"fallbackText": "这是蕨叶。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/fern-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/fern.webp",
+				"alt": "fern",
+				"generationPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
+				"placeholder": {
+					"label": "fern",
+					"emoji": "🌿"
+				}
+			},
+			"visualPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "plant", "green", "leaf"],
+			"color": "green",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/fern-bright.webp",
+				"alt": "fern bright large",
+				"generationPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "fern",
+					"emoji": "🌿"
+				}
+			},
+			"visualPrompt": "A soft green fern for a toddler dinosaur word-learning game, simple leaflets, rounded tips, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "plant", "green", "leaf"],
+			"color": "green",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

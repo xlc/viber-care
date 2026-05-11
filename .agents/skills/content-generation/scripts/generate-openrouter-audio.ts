@@ -32,10 +32,11 @@ type RunOptions = {
 	refresh: boolean
 }
 
-type PackRecord = {
+type ItemRecord = {
 	fileName: string
 	filePath: string
-	pack: JsonObject
+	item: JsonObject
+	touched: boolean
 }
 
 type AudioEntry = {
@@ -52,7 +53,7 @@ type AudioEntry = {
 
 async function main() {
 	const options = parseOptions(process.argv.slice(2))
-	const { entries, packs } = await loadEntries(options.packIds)
+	const { entries, items } = await loadEntries(options.packIds)
 
 	if (entries.length === 0) {
 		throw new Error('No audio entries matched the requested filters.')
@@ -79,7 +80,7 @@ async function main() {
 	}
 
 	await generateAll(key, entries, options)
-	await writePackFiles(packs)
+	await writeItemFiles(items)
 	await audit(entries)
 }
 
@@ -176,15 +177,30 @@ function parseDotEnv(source: string): Record<string, string> {
 
 async function loadEntries(
 	packIds: Set<string>,
-): Promise<{ entries: AudioEntry[]; packs: PackRecord[] }> {
+): Promise<{ entries: AudioEntry[]; items: ItemRecord[] }> {
 	const packsDir = path.join(repoRoot, 'content', 'packs')
-	const fileNames = (await readdir(packsDir))
+	const itemsDir = path.join(repoRoot, 'content', 'items')
+	const packFileNames = (await readdir(packsDir))
+		.filter((fileName) => fileName.endsWith('.json'))
+		.sort()
+	const itemFileNames = (await readdir(itemsDir))
 		.filter((fileName) => fileName.endsWith('.json'))
 		.sort()
 	const entries: AudioEntry[] = []
-	const packs: PackRecord[] = []
+	const entriesByKey = new Map<string, AudioEntry>()
+	const items: ItemRecord[] = []
+	const itemRecordsById = new Map<string, ItemRecord>()
 
-	for (const fileName of fileNames) {
+	for (const fileName of itemFileNames) {
+		const filePath = path.join(itemsDir, fileName)
+		const item = JSON.parse(await readFile(filePath, 'utf8')) as JsonObject
+		const itemId = readString(item, 'id', fileName)
+		const itemRecord = { fileName, filePath, item, touched: false }
+		items.push(itemRecord)
+		itemRecordsById.set(itemId, itemRecord)
+	}
+
+	for (const fileName of packFileNames) {
 		const filePath = path.join(packsDir, fileName)
 		const pack = JSON.parse(await readFile(filePath, 'utf8')) as JsonObject
 		const packId = readString(pack, 'id', fileName)
@@ -192,13 +208,15 @@ async function loadEntries(
 			continue
 		}
 
-		const packRecord = { fileName, filePath, pack }
-		packs.push(packRecord)
-		const objects = readArray(pack, 'objects', packId)
+		const itemIds = readPackItemIds(pack, packId)
 
-		for (const objectValue of objects) {
-			const object = readObject(objectValue, `${packId} object`)
-			const objectId = readString(object, 'id', packId)
+		for (const objectId of itemIds) {
+			const itemRecord = itemRecordsById.get(objectId)
+			if (!itemRecord) {
+				throw new Error(`${packId} references unknown item ${objectId}.`)
+			}
+			itemRecord.touched = true
+			const object = itemRecord.item
 			const content = readObject(
 				object.content,
 				`${packId}/${objectId}/content`,
@@ -214,11 +232,13 @@ async function loadEntries(
 					'findPrompt',
 					`${packId}/${objectId}/${languageCode}`,
 				)
-				entries.push({
-					absolutePath: path.join(
-						repoRoot,
-						'public',
-						`assets/generated/${packId}/audio/${objectId}-${languageCode}-find.mp3`,
+				addEntry(entries, entriesByKey, {
+					absolutePath: resolveAudioPath(
+						language,
+						'findPromptAudio',
+						objectId,
+						languageCode,
+						'find',
 					),
 					audioProperty: 'findPromptAudio',
 					input: findPrompt,
@@ -226,7 +246,13 @@ async function loadEntries(
 					label: `${packId}/${objectId}/${languageCode}/find`,
 					objectId,
 					packId,
-					publicPath: `/assets/generated/${packId}/audio/${objectId}-${languageCode}-find.mp3`,
+					publicPath: getPublicAudioPath(
+						language,
+						'findPromptAudio',
+						objectId,
+						languageCode,
+						'find',
+					),
 					target: language,
 				})
 
@@ -235,11 +261,13 @@ async function loadEntries(
 					'successPhrase',
 					`${packId}/${objectId}/${languageCode}`,
 				)
-				entries.push({
-					absolutePath: path.join(
-						repoRoot,
-						'public',
-						`assets/generated/${packId}/audio/${objectId}-${languageCode}-success.mp3`,
+				addEntry(entries, entriesByKey, {
+					absolutePath: resolveAudioPath(
+						language,
+						'successPhraseAudio',
+						objectId,
+						languageCode,
+						'success',
 					),
 					audioProperty: 'successPhraseAudio',
 					input: successPhrase,
@@ -247,7 +275,13 @@ async function loadEntries(
 					label: `${packId}/${objectId}/${languageCode}/success`,
 					objectId,
 					packId,
-					publicPath: `/assets/generated/${packId}/audio/${objectId}-${languageCode}-success.mp3`,
+					publicPath: getPublicAudioPath(
+						language,
+						'successPhraseAudio',
+						objectId,
+						languageCode,
+						'success',
+					),
 					target: language,
 				})
 
@@ -266,8 +300,14 @@ async function loadEntries(
 						'audioText',
 						`${packId}/${objectId}/${languageCode}/${levelId}`,
 					)
-					const publicPath = `/assets/generated/${packId}/audio/${objectId}-${languageCode}-${levelId}.mp3`
-					entries.push({
+					const publicPath = getPublicAudioPath(
+						level,
+						'audio',
+						objectId,
+						languageCode,
+						levelId,
+					)
+					addEntry(entries, entriesByKey, {
 						absolutePath: path.join(repoRoot, 'public', publicPath.slice(1)),
 						audioProperty: 'audio',
 						input,
@@ -283,7 +323,75 @@ async function loadEntries(
 		}
 	}
 
-	return { entries, packs }
+	return { entries, items }
+}
+
+function readPackItemIds(pack: JsonObject, packId: string): string[] {
+	const sets = readArray(pack, 'sets', packId)
+	const itemIds = new Set<string>()
+
+	for (const setValue of sets) {
+		const set = readObject(setValue, `${packId} set`)
+		for (const itemId of readArray(set, 'itemIds', `${packId}/${set.id}`)) {
+			if (typeof itemId !== 'string' || itemId.length === 0) {
+				throw new Error(`${packId}/${set.id} has a non-string item id.`)
+			}
+			itemIds.add(itemId)
+		}
+	}
+
+	return [...itemIds]
+}
+
+function addEntry(
+	entries: AudioEntry[],
+	entriesByKey: Map<string, AudioEntry>,
+	entry: AudioEntry,
+): void {
+	const key = [
+		entry.objectId,
+		entry.languageCode,
+		entry.audioProperty,
+		entry.publicPath,
+	].join(':')
+	if (entriesByKey.has(key)) {
+		return
+	}
+	entriesByKey.set(key, entry)
+	entries.push(entry)
+}
+
+function getPublicAudioPath(
+	target: JsonObject,
+	audioProperty: AudioProperty,
+	objectId: string,
+	languageCode: string,
+	suffix: string,
+): string {
+	return (
+		getAudioPath(target, audioProperty) ??
+		`/assets/generated/items/audio/${objectId}-${languageCode}-${suffix}.mp3`
+	)
+}
+
+function resolveAudioPath(
+	target: JsonObject,
+	audioProperty: AudioProperty,
+	objectId: string,
+	languageCode: string,
+	suffix: string,
+): string {
+	return path.join(
+		repoRoot,
+		'public',
+		getPublicAudioPath(
+			target,
+			audioProperty,
+			objectId,
+			languageCode,
+			suffix,
+		).slice(1),
+	)
 }
 
 function getAudioPath(
@@ -482,10 +590,13 @@ function sleep(ms: number): Promise<void> {
 	return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-async function writePackFiles(packs: PackRecord[]): Promise<void> {
-	for (const pack of packs) {
-		await writeFile(pack.filePath, `${JSON.stringify(pack.pack, null, '\t')}\n`)
-		console.log(`wrote content/packs/${pack.fileName}`)
+async function writeItemFiles(items: ItemRecord[]): Promise<void> {
+	for (const item of items) {
+		if (!item.touched) {
+			continue
+		}
+		await writeFile(item.filePath, `${JSON.stringify(item.item, null, '\t')}\n`)
+		console.log(`wrote content/items/${item.fileName}`)
 	}
 }
 

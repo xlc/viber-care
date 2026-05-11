@@ -1,0 +1,194 @@
+{
+	"id": "number-six",
+	"category": "number",
+	"tags": ["number", "counting", "six"],
+	"visualPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "number-six-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find number six.",
+			"successPhrase": "You found number six.",
+			"fallbackText": "six",
+			"levels": {
+				"L0": {
+					"text": "six",
+					"audioText": "six",
+					"fallbackText": "six",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Number six.",
+					"audioText": "Number six.",
+					"fallbackText": "six",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "count to six",
+					"audioText": "count to six",
+					"fallbackText": "six",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Six little dots are here.",
+					"audioText": "Six little dots are here.",
+					"fallbackText": "six",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What number is this? It is six.",
+					"audioText": "What number is this? It is six.",
+					"fallbackText": "six",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The number six card hops softly in the number meadow.",
+					"audioText": "The number six card hops softly in the number meadow.",
+					"fallbackText": "six",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-six-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-six-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找数字六。",
+			"successPhrase": "你找到数字六了。",
+			"fallbackText": "六",
+			"levels": {
+				"L0": {
+					"text": "六",
+					"audioText": "六",
+					"fallbackText": "六",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "数字六。",
+					"audioText": "数字六。",
+					"fallbackText": "六",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "数到六",
+					"audioText": "数到六",
+					"fallbackText": "六",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "这里有六个小点。",
+					"audioText": "这里有六个小点。",
+					"fallbackText": "六",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是几？这是六。",
+					"audioText": "这是几？这是六。",
+					"fallbackText": "六",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "六号卡片在数字草地上轻轻跳。",
+					"audioText": "六号卡片在数字草地上轻轻跳。",
+					"fallbackText": "六",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-six-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-six-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-six-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-six.webp",
+				"alt": "number six",
+				"generationPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "six",
+					"emoji": "6️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["numbers", "number", "counting", "six"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-six-bright.webp",
+				"alt": "number six bright large",
+				"generationPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "six",
+					"emoji": "6️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number six on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["numbers", "number", "counting", "six"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

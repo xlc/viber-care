@@ -1,0 +1,196 @@
+{
+	"id": "t-rex",
+	"category": "dinosaur",
+	"tags": ["dinosaur", "green", "walker"],
+	"visualPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
+	"interaction": {
+		"id": "t-rex-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the T. rex.",
+			"successPhrase": "You found the T. rex.",
+			"fallbackText": "That's the T. rex.",
+			"levels": {
+				"L0": {
+					"text": "T. rex",
+					"audioText": "T. rex",
+					"fallbackText": "T. rex",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The T. rex takes tiny steps.",
+					"audioText": "The T. rex takes tiny steps.",
+					"fallbackText": "The T. rex takes tiny steps.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "friendly green T. rex",
+					"audioText": "friendly green T. rex",
+					"fallbackText": "That's the T. rex.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The T. rex takes tiny steps.",
+					"audioText": "The T. rex takes tiny steps.",
+					"fallbackText": "That's the T. rex.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has tiny arms? The T. rex has tiny arms.",
+					"audioText": "Who has tiny arms? The T. rex has tiny arms.",
+					"fallbackText": "That's the T. rex.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The T. rex walks softly past the fern.",
+					"audioText": "The T. rex walks softly past the fern.",
+					"fallbackText": "That's the T. rex.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/t-rex-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/t-rex-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找霸王龙。",
+			"successPhrase": "你找到霸王龙了。",
+			"fallbackText": "这是霸王龙。",
+			"levels": {
+				"L0": {
+					"text": "霸王龙",
+					"audioText": "霸王龙",
+					"fallbackText": "霸王龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "霸王龙轻轻走。",
+					"audioText": "霸王龙轻轻走。",
+					"fallbackText": "霸王龙轻轻走。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "友好的绿色霸王龙",
+					"audioText": "友好的绿色霸王龙",
+					"fallbackText": "这是霸王龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "霸王龙迈着小小的步子。",
+					"audioText": "霸王龙迈着小小的步子。",
+					"fallbackText": "这是霸王龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有小小的手臂？霸王龙有小小的手臂。",
+					"audioText": "谁有小小的手臂？霸王龙有小小的手臂。",
+					"fallbackText": "这是霸王龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "霸王龙轻轻走过蕨类植物旁边。",
+					"audioText": "霸王龙轻轻走过蕨类植物旁边。",
+					"fallbackText": "这是霸王龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/t-rex-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/t-rex.webp",
+				"alt": "T. rex",
+				"generationPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
+				"placeholder": {
+					"label": "T. rex",
+					"emoji": "🦖"
+				}
+			},
+			"visualPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur", "green", "walker"],
+			"color": "green",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/t-rex-bright.webp",
+				"alt": "T. rex bright large",
+				"generationPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "T. rex",
+					"emoji": "🦖"
+				}
+			},
+			"visualPrompt": "A friendly green T. rex for a toddler dinosaur word-learning game, rounded shapes, tiny arms, soft smile, no scary teeth, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur", "green", "walker"],
+			"color": "green",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

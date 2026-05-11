@@ -1,0 +1,194 @@
+{
+	"id": "beet",
+	"category": "root-vegetables",
+	"tags": ["root-vegetables", "food", "beet"],
+	"visualPrompt": "A friendly beet for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/beet.png",
+				"alt": "beet",
+				"generationPrompt": "A friendly beet for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "beet",
+					"emoji": "🟣"
+				}
+			},
+			"visualPrompt": "A friendly beet for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "beet"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/beet-bright.png",
+				"alt": "beet bright large",
+				"generationPrompt": "A friendly beet for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "beet",
+					"emoji": "🟣"
+				}
+			},
+			"visualPrompt": "A friendly beet for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "beet"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "beet-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the beet.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/beet-en-find.mp3"
+			},
+			"successPhrase": "You found the beet.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/beet-en-success.mp3"
+			},
+			"fallbackText": "That is the beet.",
+			"levels": {
+				"L0": {
+					"text": "beet",
+					"audioText": "beet",
+					"fallbackText": "beet",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The beet is in the garden bed.",
+					"audioText": "The beet is in the garden bed.",
+					"fallbackText": "beet",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "deep red beet",
+					"audioText": "deep red beet",
+					"fallbackText": "beet",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The beet waits in the garden bed.",
+					"audioText": "The beet waits in the garden bed.",
+					"fallbackText": "beet",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the beet.",
+					"audioText": "What do you see? I see the beet.",
+					"fallbackText": "beet",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The beet rests quietly where little hands can find it.",
+					"audioText": "The beet rests quietly where little hands can find it.",
+					"fallbackText": "beet",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找甜菜根。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/beet-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到甜菜根了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/beet-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是甜菜根。",
+			"levels": {
+				"L0": {
+					"text": "甜菜根",
+					"audioText": "甜菜根",
+					"fallbackText": "甜菜根",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "甜菜根在菜地里。",
+					"audioText": "甜菜根在菜地里。",
+					"fallbackText": "甜菜根",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "深红色的甜菜根",
+					"audioText": "深红色的甜菜根",
+					"fallbackText": "甜菜根",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "甜菜根安静地待在菜地里。",
+					"audioText": "甜菜根安静地待在菜地里。",
+					"fallbackText": "甜菜根",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了甜菜根。",
+					"audioText": "你看到了什么？我看到了甜菜根。",
+					"fallbackText": "甜菜根",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "甜菜根轻轻地等着小手来找到它。",
+					"audioText": "甜菜根轻轻地等着小手来找到它。",
+					"fallbackText": "甜菜根",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/beet-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

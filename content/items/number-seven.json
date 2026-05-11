@@ -1,0 +1,194 @@
+{
+	"id": "number-seven",
+	"category": "number",
+	"tags": ["number", "counting", "seven"],
+	"visualPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "number-seven-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find number seven.",
+			"successPhrase": "You found number seven.",
+			"fallbackText": "seven",
+			"levels": {
+				"L0": {
+					"text": "seven",
+					"audioText": "seven",
+					"fallbackText": "seven",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Number seven.",
+					"audioText": "Number seven.",
+					"fallbackText": "seven",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "count to seven",
+					"audioText": "count to seven",
+					"fallbackText": "seven",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Seven little dots are here.",
+					"audioText": "Seven little dots are here.",
+					"fallbackText": "seven",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What number is this? It is seven.",
+					"audioText": "What number is this? It is seven.",
+					"fallbackText": "seven",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The number seven card hops softly in the number meadow.",
+					"audioText": "The number seven card hops softly in the number meadow.",
+					"fallbackText": "seven",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-seven-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-seven-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找数字七。",
+			"successPhrase": "你找到数字七了。",
+			"fallbackText": "七",
+			"levels": {
+				"L0": {
+					"text": "七",
+					"audioText": "七",
+					"fallbackText": "七",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "数字七。",
+					"audioText": "数字七。",
+					"fallbackText": "七",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "数到七",
+					"audioText": "数到七",
+					"fallbackText": "七",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "这里有七个小点。",
+					"audioText": "这里有七个小点。",
+					"fallbackText": "七",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是几？这是七。",
+					"audioText": "这是几？这是七。",
+					"fallbackText": "七",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "七号卡片在数字草地上轻轻跳。",
+					"audioText": "七号卡片在数字草地上轻轻跳。",
+					"fallbackText": "七",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-seven-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-seven.webp",
+				"alt": "number seven",
+				"generationPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "seven",
+					"emoji": "7️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["numbers", "number", "counting", "seven"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-seven-bright.webp",
+				"alt": "number seven bright large",
+				"generationPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "seven",
+					"emoji": "7️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number seven on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["numbers", "number", "counting", "seven"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

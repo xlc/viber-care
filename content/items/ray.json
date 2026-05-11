@@ -1,0 +1,194 @@
+{
+	"id": "ray",
+	"category": "animal",
+	"tags": ["ocean", "water", "animal", "ray"],
+	"visualPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background.",
+	"interaction": {
+		"id": "ray-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the ray.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/ray-en-find.mp3"
+			},
+			"successPhrase": "You found the ray.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/ray-en-success.mp3"
+			},
+			"fallbackText": "ray",
+			"levels": {
+				"L0": {
+					"text": "ray",
+					"audioText": "ray",
+					"fallbackText": "ray",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The ray glides.",
+					"audioText": "The ray glides.",
+					"fallbackText": "ray",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "wide blue ray",
+					"audioText": "wide blue ray",
+					"fallbackText": "ray",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The ray glides through the water.",
+					"audioText": "The ray glides through the water.",
+					"fallbackText": "ray",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has wide fins? The ray has wide fins.",
+					"audioText": "Who has wide fins? The ray has wide fins.",
+					"fallbackText": "ray",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The ray floats calmly in the ocean water.",
+					"audioText": "The ray floats calmly in the ocean water.",
+					"fallbackText": "ray",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找鳐鱼。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到鳐鱼了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-success.mp3"
+			},
+			"fallbackText": "鳐鱼",
+			"levels": {
+				"L0": {
+					"text": "鳐鱼",
+					"audioText": "鳐鱼",
+					"fallbackText": "鳐鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "鳐鱼滑滑地游。",
+					"audioText": "鳐鱼滑滑地游。",
+					"fallbackText": "鳐鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "宽宽的蓝色鳐鱼",
+					"audioText": "宽宽的蓝色鳐鱼",
+					"fallbackText": "鳐鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "鳐鱼在水里滑行。",
+					"audioText": "鳐鱼在水里滑行。",
+					"fallbackText": "鳐鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有宽宽的鳍？鳐鱼有宽宽的鳍。",
+					"audioText": "谁有宽宽的鳍？鳐鱼有宽宽的鳍。",
+					"fallbackText": "鳐鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "鳐鱼在海水里安静地游。",
+					"audioText": "鳐鱼在海水里安静地游。",
+					"fallbackText": "鳐鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/ray-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/ray.webp",
+				"alt": "ray",
+				"generationPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background.",
+				"placeholder": {
+					"label": "ray",
+					"emoji": "🐟"
+				}
+			},
+			"visualPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "animal", "ocean", "water", "ray"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/ray-bright.webp",
+				"alt": "ray bright large",
+				"generationPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "ray",
+					"emoji": "🐟"
+				}
+			},
+			"visualPrompt": "A friendly blue ray for a toddler ocean word-learning game, wide soft fins, happy gentle face, simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "animal", "ocean", "water", "ray"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

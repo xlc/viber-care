@@ -32,7 +32,7 @@ describe('settings persistence', () => {
 			...DEFAULT_SETTINGS,
 			mode: 'cards',
 			selectedPackId: 'english-alphabet',
-			selectedSubPackId: 'alphabet-u-z',
+			selectedSetId: 'alphabet-u-z',
 			languageOrderPreset: 'zh-then-en',
 			activeLevel: 'L3',
 			muted: true,

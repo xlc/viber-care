@@ -1,0 +1,206 @@
+{
+	"id": "clam",
+	"category": "animal",
+	"tags": ["ocean", "seabed", "shell", "shore"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": ["counting", "dot-match", "more-less", "spatial"],
+		"colors": ["purple"],
+		"sceneZones": ["shore", "sand", "seabed"],
+		"zhMeasureWord": "个",
+		"englishPlural": "clams"
+	},
+	"visualPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background.",
+	"interaction": {
+		"id": "clam-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the clam.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/clam-en-find.mp3"
+			},
+			"successPhrase": "You found the clam.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/clam-en-success.mp3"
+			},
+			"fallbackText": "clam",
+			"levels": {
+				"L0": {
+					"text": "clam",
+					"audioText": "clam",
+					"fallbackText": "clam",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The clam opens.",
+					"audioText": "The clam opens.",
+					"fallbackText": "clam",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "pretty shell clam",
+					"audioText": "pretty shell clam",
+					"fallbackText": "clam",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The clam rests on the sand.",
+					"audioText": "The clam rests on the sand.",
+					"fallbackText": "clam",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a shell? The clam has a shell.",
+					"audioText": "What has a shell? The clam has a shell.",
+					"fallbackText": "clam",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The clam sits quietly on the ocean sand.",
+					"audioText": "The clam sits quietly on the ocean sand.",
+					"fallbackText": "clam",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找蛤蜊。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到蛤蜊了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-success.mp3"
+			},
+			"fallbackText": "蛤蜊",
+			"levels": {
+				"L0": {
+					"text": "蛤蜊",
+					"audioText": "蛤蜊",
+					"fallbackText": "蛤蜊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "蛤蜊打开了。",
+					"audioText": "蛤蜊打开了。",
+					"fallbackText": "蛤蜊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "漂亮贝壳蛤蜊",
+					"audioText": "漂亮贝壳蛤蜊",
+					"fallbackText": "蛤蜊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "蛤蜊躺在沙子上。",
+					"audioText": "蛤蜊躺在沙子上。",
+					"fallbackText": "蛤蜊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么有贝壳？蛤蜊有贝壳。",
+					"audioText": "什么有贝壳？蛤蜊有贝壳。",
+					"fallbackText": "蛤蜊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "蛤蜊安静地待在海底沙子上。",
+					"audioText": "蛤蜊安静地待在海底沙子上。",
+					"fallbackText": "蛤蜊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/clam-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/clam.webp",
+				"alt": "clam",
+				"generationPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background.",
+				"placeholder": {
+					"label": "clam",
+					"emoji": "🦪"
+				}
+			},
+			"visualPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "animal", "ocean", "seabed", "shell", "shore"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/clam-bright.webp",
+				"alt": "clam bright large",
+				"generationPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "clam",
+					"emoji": "🦪"
+				}
+			},
+			"visualPrompt": "A friendly clam shell for a toddler ocean word-learning game, soft rounded shell, gentle smiling pearl, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "animal", "ocean", "seabed", "shell", "shore"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

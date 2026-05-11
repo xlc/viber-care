@@ -1,0 +1,194 @@
+{
+	"id": "letter-d",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "d"],
+	"visualPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-d-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter D.",
+			"successPhrase": "You found letter D.",
+			"fallbackText": "D",
+			"levels": {
+				"L0": {
+					"text": "D",
+					"audioText": "D",
+					"fallbackText": "D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "D is for duck.",
+					"audioText": "D is for duck.",
+					"fallbackText": "D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase D",
+					"audioText": "uppercase D",
+					"fallbackText": "D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "D starts the word duck.",
+					"audioText": "D starts the word duck.",
+					"fallbackText": "D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is D.",
+					"audioText": "What letter is this? It is D.",
+					"fallbackText": "D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "D sits on the card and says duck.",
+					"audioText": "D sits on the card and says duck.",
+					"fallbackText": "D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-d-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-d-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 D。",
+			"successPhrase": "你找到字母 D 了。",
+			"fallbackText": "字母 D",
+			"levels": {
+				"L0": {
+					"text": "字母 D",
+					"audioText": "字母 D",
+					"fallbackText": "字母 D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "D 代表鸭子。",
+					"audioText": "D 代表鸭子。",
+					"fallbackText": "字母 D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 D",
+					"audioText": "大写字母 D",
+					"fallbackText": "字母 D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "D 是鸭子的开头。",
+					"audioText": "D 是鸭子的开头。",
+					"fallbackText": "字母 D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 D。",
+					"audioText": "这是什么字母？这是 D。",
+					"fallbackText": "字母 D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "D 在卡片上，轻轻说鸭子。",
+					"audioText": "D 在卡片上，轻轻说鸭子。",
+					"fallbackText": "字母 D",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-d-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-d.webp",
+				"alt": "letter D",
+				"generationPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "D",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "d"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-d-bright.webp",
+				"alt": "letter D bright large",
+				"generationPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "D",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase D letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "d"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

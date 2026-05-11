@@ -1,0 +1,196 @@
+{
+	"id": "sun",
+	"category": "nature",
+	"tags": ["sky", "warm", "yellow"],
+	"visualPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background.",
+	"interaction": {
+		"id": "sun-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the sun.",
+			"successPhrase": "You found the sun.",
+			"fallbackText": "sun",
+			"levels": {
+				"L0": {
+					"text": "sun",
+					"audioText": "sun",
+					"fallbackText": "sun",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The sun is warm.",
+					"audioText": "The sun is warm.",
+					"fallbackText": "sun",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "warm yellow sun",
+					"audioText": "warm yellow sun",
+					"fallbackText": "sun",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The sun shines on the garden.",
+					"audioText": "The sun shines on the garden.",
+					"fallbackText": "sun",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What makes light? The sun makes light.",
+					"audioText": "What makes light? The sun makes light.",
+					"fallbackText": "sun",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The sun warms the flowers, the tree, and the pond.",
+					"audioText": "The sun warms the flowers, the tree, and the pond.",
+					"fallbackText": "sun",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/sun-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/sun-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找太阳。",
+			"successPhrase": "你找到太阳了。",
+			"fallbackText": "太阳",
+			"levels": {
+				"L0": {
+					"text": "太阳",
+					"audioText": "太阳",
+					"fallbackText": "太阳",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "太阳暖暖的。",
+					"audioText": "太阳暖暖的。",
+					"fallbackText": "太阳",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "温暖的黄色太阳",
+					"audioText": "温暖的黄色太阳",
+					"fallbackText": "太阳",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "太阳照着花园。",
+					"audioText": "太阳照着花园。",
+					"fallbackText": "太阳",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么会发光？太阳会发光。",
+					"audioText": "什么会发光？太阳会发光。",
+					"fallbackText": "太阳",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "太阳温暖着花朵、大树和池塘。",
+					"audioText": "太阳温暖着花朵、大树和池塘。",
+					"fallbackText": "太阳",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/sun-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/sun-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/sun-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/sun.webp",
+				"alt": "sun",
+				"generationPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background.",
+				"placeholder": {
+					"label": "sun",
+					"emoji": "☀️"
+				}
+			},
+			"visualPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "nature", "sky", "warm", "yellow"],
+			"color": "yellow",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/sun-bright.webp",
+				"alt": "sun bright large",
+				"generationPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "sun",
+					"emoji": "☀️"
+				}
+			},
+			"visualPrompt": "A warm smiling sun for a toddler word-learning garden game, soft rays, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "nature", "sky", "warm", "yellow"],
+			"color": "yellow",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,194 @@
+{
+	"id": "scooter",
+	"category": "transportation",
+	"tags": ["transportation", "road", "wheels"],
+	"visualPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
+	"interaction": {
+		"id": "scooter-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the scooter.",
+			"successPhrase": "You found the scooter.",
+			"fallbackText": "That's the scooter.",
+			"levels": {
+				"L0": {
+					"text": "scooter",
+					"audioText": "scooter",
+					"fallbackText": "scooter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The scooter glides.",
+					"audioText": "The scooter glides.",
+					"fallbackText": "scooter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "blue scooter",
+					"audioText": "blue scooter",
+					"fallbackText": "scooter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The scooter glides on the path.",
+					"audioText": "The scooter glides on the path.",
+					"fallbackText": "scooter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a tall handle? The scooter has a tall handle.",
+					"audioText": "What has a tall handle? The scooter has a tall handle.",
+					"fallbackText": "scooter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The scooter rests beside the soft road.",
+					"audioText": "The scooter rests beside the soft road.",
+					"fallbackText": "That's the scooter.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/scooter-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/scooter-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找滑板车。",
+			"successPhrase": "你找到滑板车了。",
+			"fallbackText": "这是滑板车。",
+			"levels": {
+				"L0": {
+					"text": "滑板车",
+					"audioText": "滑板车",
+					"fallbackText": "滑板车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "滑板车滑一滑。",
+					"audioText": "滑板车滑一滑。",
+					"fallbackText": "滑板车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "蓝色滑板车",
+					"audioText": "蓝色滑板车",
+					"fallbackText": "滑板车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "滑板车在小路上滑。",
+					"audioText": "滑板车在小路上滑。",
+					"fallbackText": "滑板车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有高高的把手？滑板车有高高的把手。",
+					"audioText": "谁有高高的把手？滑板车有高高的把手。",
+					"fallbackText": "滑板车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "滑板车停在柔软的小路旁。",
+					"audioText": "滑板车停在柔软的小路旁。",
+					"fallbackText": "这是滑板车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/scooter-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/scooter-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/scooter-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/scooter.png",
+				"alt": "blue scooter",
+				"generationPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
+				"placeholder": {
+					"label": "scooter",
+					"emoji": "🛴"
+				}
+			},
+			"visualPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/scooter-bright.png",
+				"alt": "blue scooter bright large",
+				"generationPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "scooter",
+					"emoji": "🛴"
+				}
+			},
+			"visualPrompt": "A friendly blue scooter for a toddler transportation word-learning game, simple standing scooter, rounded wheels, no rider, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

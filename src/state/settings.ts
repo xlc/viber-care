@@ -4,7 +4,7 @@ import {
 	type LearningLevel,
 } from '../content/schema'
 
-export const SETTINGS_STORAGE_KEY = 'word-garden.settings.v1'
+export const SETTINGS_STORAGE_KEY = 'word-garden.settings.v2'
 
 export const LANGUAGE_ORDER_PRESETS = [
 	'en-only',
@@ -30,7 +30,7 @@ export type MathFocus = (typeof MATH_FOCUS_OPTIONS)[number]
 export type WordGardenSettings = {
 	mode: GameMode
 	selectedPackId: string
-	selectedSubPackId: string | null
+	selectedSetId: string | null
 	languageOrderPreset: LanguageOrderPreset
 	activeLevel: LearningLevel
 	mathFocus: MathFocus
@@ -42,7 +42,7 @@ export type StorageLike = Pick<Storage, 'getItem' | 'setItem'>
 export const DEFAULT_SETTINGS: WordGardenSettings = {
 	mode: 'explore',
 	selectedPackId: 'garden',
-	selectedSubPackId: null,
+	selectedSetId: null,
 	languageOrderPreset: 'en-then-zh',
 	activeLevel: 'L0',
 	mathFocus: 'mixed',
@@ -71,10 +71,9 @@ export function sanitizeSettings(input: unknown): WordGardenSettings {
 			value.selectedPackId.length > 0
 				? value.selectedPackId
 				: DEFAULT_SETTINGS.selectedPackId,
-		selectedSubPackId:
-			typeof value.selectedSubPackId === 'string' &&
-			value.selectedSubPackId.length > 0
-				? value.selectedSubPackId
+		selectedSetId:
+			typeof value.selectedSetId === 'string' && value.selectedSetId.length > 0
+				? value.selectedSetId
 				: null,
 		languageOrderPreset:
 			value.languageOrderPreset && presetSet.has(value.languageOrderPreset)

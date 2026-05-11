@@ -1,0 +1,194 @@
+{
+	"id": "car",
+	"category": "transportation",
+	"tags": ["transportation", "road", "wheels"],
+	"visualPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "car-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the car.",
+			"successPhrase": "You found the car.",
+			"fallbackText": "That's the car.",
+			"levels": {
+				"L0": {
+					"text": "car",
+					"audioText": "car",
+					"fallbackText": "car",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The car rolls.",
+					"audioText": "The car rolls.",
+					"fallbackText": "car",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "red car",
+					"audioText": "red car",
+					"fallbackText": "car",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The car rolls on the path.",
+					"audioText": "The car rolls on the path.",
+					"fallbackText": "car",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What rolls on wheels? The car rolls.",
+					"audioText": "What rolls on wheels? The car rolls.",
+					"fallbackText": "car",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The car rolls slowly through the transit park.",
+					"audioText": "The car rolls slowly through the transit park.",
+					"fallbackText": "That's the car.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/car-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/car-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小汽车。",
+			"successPhrase": "你找到小汽车了。",
+			"fallbackText": "这是小汽车。",
+			"levels": {
+				"L0": {
+					"text": "小汽车",
+					"audioText": "小汽车",
+					"fallbackText": "小汽车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小汽车开一开。",
+					"audioText": "小汽车开一开。",
+					"fallbackText": "小汽车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "红色小汽车",
+					"audioText": "红色小汽车",
+					"fallbackText": "小汽车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小汽车在小路上开。",
+					"audioText": "小汽车在小路上开。",
+					"fallbackText": "小汽车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁在轮子上开？小汽车在轮子上开。",
+					"audioText": "谁在轮子上开？小汽车在轮子上开。",
+					"fallbackText": "小汽车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小汽车慢慢开过交通公园。",
+					"audioText": "小汽车慢慢开过交通公园。",
+					"fallbackText": "这是小汽车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/car-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/car-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/car-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/car.png",
+				"alt": "red car",
+				"generationPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "car",
+					"emoji": "🚗"
+				}
+			},
+			"visualPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/car-bright.png",
+				"alt": "red car bright large",
+				"generationPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "car",
+					"emoji": "🚗"
+				}
+			},
+			"visualPrompt": "A friendly red car for a toddler transportation word-learning game, rounded shapes, clear wheels, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

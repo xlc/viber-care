@@ -1,0 +1,194 @@
+{
+	"id": "iguanodon",
+	"category": "dinosaur",
+	"tags": ["dinosaur", "ground", "herbivore", "valley"],
+	"visualPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+	"interaction": {
+		"id": "iguanodon-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the iguanodon.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/iguanodon-en-find.mp3"
+			},
+			"successPhrase": "You found the iguanodon.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/iguanodon-en-success.mp3"
+			},
+			"fallbackText": "iguanodon",
+			"levels": {
+				"L0": {
+					"text": "iguanodon",
+					"audioText": "iguanodon",
+					"fallbackText": "iguanodon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The iguanodon stands tall.",
+					"audioText": "The iguanodon stands tall.",
+					"fallbackText": "iguanodon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "blue iguanodon",
+					"audioText": "blue iguanodon",
+					"fallbackText": "iguanodon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The iguanodon looks across the valley.",
+					"audioText": "The iguanodon looks across the valley.",
+					"fallbackText": "iguanodon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who stands on strong legs? The iguanodon stands tall.",
+					"audioText": "Who stands on strong legs? The iguanodon stands tall.",
+					"fallbackText": "iguanodon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The iguanodon slowly walks through the dinosaur valley.",
+					"audioText": "The iguanodon slowly walks through the dinosaur valley.",
+					"fallbackText": "iguanodon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找禽龙。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到禽龙了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-success.mp3"
+			},
+			"fallbackText": "禽龙",
+			"levels": {
+				"L0": {
+					"text": "禽龙",
+					"audioText": "禽龙",
+					"fallbackText": "禽龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "禽龙站得高高的。",
+					"audioText": "禽龙站得高高的。",
+					"fallbackText": "禽龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "蓝色的禽龙",
+					"audioText": "蓝色的禽龙",
+					"fallbackText": "禽龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "禽龙望着山谷。",
+					"audioText": "禽龙望着山谷。",
+					"fallbackText": "禽龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有有力的腿？禽龙站得高高的。",
+					"audioText": "谁有有力的腿？禽龙站得高高的。",
+					"fallbackText": "禽龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "禽龙在恐龙山谷里慢慢走。",
+					"audioText": "禽龙在恐龙山谷里慢慢走。",
+					"fallbackText": "禽龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/iguanodon-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/iguanodon.webp",
+				"alt": "iguanodon",
+				"generationPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+				"placeholder": {
+					"label": "iguanodon",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur", "ground", "herbivore", "valley"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/iguanodon-bright.webp",
+				"alt": "iguanodon bright large",
+				"generationPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "iguanodon",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A friendly iguanodon for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur", "ground", "herbivore", "valley"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

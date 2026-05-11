@@ -1,0 +1,194 @@
+{
+	"id": "boat",
+	"category": "transportation",
+	"tags": ["transportation", "water", "floating"],
+	"visualPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "boat-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the boat.",
+			"successPhrase": "You found the boat.",
+			"fallbackText": "That's the boat.",
+			"levels": {
+				"L0": {
+					"text": "boat",
+					"audioText": "boat",
+					"fallbackText": "boat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The boat floats.",
+					"audioText": "The boat floats.",
+					"fallbackText": "boat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "blue boat",
+					"audioText": "blue boat",
+					"fallbackText": "boat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The boat floats on the water.",
+					"audioText": "The boat floats on the water.",
+					"fallbackText": "boat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What floats on water? The boat floats on water.",
+					"audioText": "What floats on water? The boat floats on water.",
+					"fallbackText": "boat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The boat bobs gently in the quiet pond.",
+					"audioText": "The boat bobs gently in the quiet pond.",
+					"fallbackText": "That's the boat.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/boat-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/boat-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小船。",
+			"successPhrase": "你找到小船了。",
+			"fallbackText": "这是小船。",
+			"levels": {
+				"L0": {
+					"text": "小船",
+					"audioText": "小船",
+					"fallbackText": "小船",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小船漂一漂。",
+					"audioText": "小船漂一漂。",
+					"fallbackText": "小船",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "蓝色小船",
+					"audioText": "蓝色小船",
+					"fallbackText": "小船",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小船在水面上漂。",
+					"audioText": "小船在水面上漂。",
+					"fallbackText": "小船",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁在水面上漂？小船在水面上漂。",
+					"audioText": "谁在水面上漂？小船在水面上漂。",
+					"fallbackText": "小船",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小船在安静的池塘里轻轻摇。",
+					"audioText": "小船在安静的池塘里轻轻摇。",
+					"fallbackText": "这是小船。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/boat-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/boat-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/boat-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/boat.png",
+				"alt": "blue boat",
+				"generationPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "boat",
+					"emoji": "⛵"
+				}
+			},
+			"visualPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "water", "floating"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/boat-bright.png",
+				"alt": "blue boat bright large",
+				"generationPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "boat",
+					"emoji": "⛵"
+				}
+			},
+			"visualPrompt": "A friendly blue boat for a toddler transportation word-learning game, simple rounded hull, calm water feeling, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "water", "floating"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

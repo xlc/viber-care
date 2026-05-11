@@ -1,0 +1,214 @@
+{
+	"id": "flower",
+	"category": "plant",
+	"tags": ["garden", "pink", "petals"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less"
+		],
+		"colors": ["pink"],
+		"sceneZones": ["garden", "pot"],
+		"zhMeasureWord": "朵",
+		"englishPlural": "flowers"
+	},
+	"visualPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
+	"interaction": {
+		"id": "flower-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the flower.",
+			"successPhrase": "You found the flower.",
+			"fallbackText": "flower",
+			"levels": {
+				"L0": {
+					"text": "flower",
+					"audioText": "flower",
+					"fallbackText": "flower",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The flower sways.",
+					"audioText": "The flower sways.",
+					"fallbackText": "flower",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "pink garden flower",
+					"audioText": "pink garden flower",
+					"fallbackText": "flower",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The flower grows in the grass.",
+					"audioText": "The flower grows in the grass.",
+					"fallbackText": "flower",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What smells sweet? The flower smells sweet.",
+					"audioText": "What smells sweet? The flower smells sweet.",
+					"fallbackText": "flower",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The flower opens slowly in the sunny garden.",
+					"audioText": "The flower opens slowly in the sunny garden.",
+					"fallbackText": "flower",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/flower-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/flower-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找花儿。",
+			"successPhrase": "你找到花儿了。",
+			"fallbackText": "花儿",
+			"levels": {
+				"L0": {
+					"text": "花儿",
+					"audioText": "花儿",
+					"fallbackText": "花儿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "花儿轻轻摇。",
+					"audioText": "花儿轻轻摇。",
+					"fallbackText": "花儿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "粉色的花",
+					"audioText": "粉色的花",
+					"fallbackText": "花儿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "花在草地上长大。",
+					"audioText": "花在草地上长大。",
+					"fallbackText": "花儿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么香香的？花香香的。",
+					"audioText": "什么香香的？花香香的。",
+					"fallbackText": "花儿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "花在阳光花园里慢慢开放。",
+					"audioText": "花在阳光花园里慢慢开放。",
+					"fallbackText": "花儿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/flower-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/flower-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/flower-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/flower.webp",
+				"alt": "flower",
+				"generationPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
+				"placeholder": {
+					"label": "flower",
+					"emoji": "🌸"
+				}
+			},
+			"visualPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "plant", "pink", "petals"],
+			"color": "pink",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/flower-bright.webp",
+				"alt": "flower bright large",
+				"generationPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "flower",
+					"emoji": "🌸"
+				}
+			},
+			"visualPrompt": "A smiling pink flower for a toddler word-learning garden game, rounded petals, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "plant", "pink", "petals"],
+			"color": "pink",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

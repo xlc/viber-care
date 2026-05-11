@@ -1,0 +1,196 @@
+{
+	"id": "orange",
+	"category": "fruits",
+	"tags": ["fruits", "food", "orange"],
+	"visualPrompt": "A friendly orange for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/orange.png",
+				"alt": "orange",
+				"generationPrompt": "A friendly orange for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "orange",
+					"emoji": "🍊"
+				}
+			},
+			"visualPrompt": "A friendly orange for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "orange"],
+			"color": "orange",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/orange-bright.png",
+				"alt": "orange bright large",
+				"generationPrompt": "A friendly orange for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "orange",
+					"emoji": "🍊"
+				}
+			},
+			"visualPrompt": "A friendly orange for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "orange"],
+			"color": "orange",
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "orange-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the orange.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/orange-en-find.mp3"
+			},
+			"successPhrase": "You found the orange.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/orange-en-success.mp3"
+			},
+			"fallbackText": "That is the orange.",
+			"levels": {
+				"L0": {
+					"text": "orange",
+					"audioText": "orange",
+					"fallbackText": "orange",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The orange is in the fruit basket.",
+					"audioText": "The orange is in the fruit basket.",
+					"fallbackText": "orange",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round orange orange",
+					"audioText": "round orange orange",
+					"fallbackText": "orange",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The orange waits in the fruit basket.",
+					"audioText": "The orange waits in the fruit basket.",
+					"fallbackText": "orange",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the orange.",
+					"audioText": "What do you see? I see the orange.",
+					"fallbackText": "orange",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The orange rests quietly where little hands can find it.",
+					"audioText": "The orange rests quietly where little hands can find it.",
+					"fallbackText": "orange",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找橙子。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/orange-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到橙子了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/orange-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是橙子。",
+			"levels": {
+				"L0": {
+					"text": "橙子",
+					"audioText": "橙子",
+					"fallbackText": "橙子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "橙子在水果篮里。",
+					"audioText": "橙子在水果篮里。",
+					"fallbackText": "橙子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "圆圆的橙色橙子",
+					"audioText": "圆圆的橙色橙子",
+					"fallbackText": "橙子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "橙子安静地待在水果篮里。",
+					"audioText": "橙子安静地待在水果篮里。",
+					"fallbackText": "橙子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了橙子。",
+					"audioText": "你看到了什么？我看到了橙子。",
+					"fallbackText": "橙子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "橙子轻轻地等着小手来找到它。",
+					"audioText": "橙子轻轻地等着小手来找到它。",
+					"fallbackText": "橙子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/orange-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

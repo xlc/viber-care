@@ -1,0 +1,194 @@
+{
+	"id": "letter-i",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "i"],
+	"visualPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-i-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter I.",
+			"successPhrase": "You found letter I.",
+			"fallbackText": "I",
+			"levels": {
+				"L0": {
+					"text": "I",
+					"audioText": "I",
+					"fallbackText": "I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "I is for igloo.",
+					"audioText": "I is for igloo.",
+					"fallbackText": "I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase I",
+					"audioText": "uppercase I",
+					"fallbackText": "I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "I starts the word igloo.",
+					"audioText": "I starts the word igloo.",
+					"fallbackText": "I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is I.",
+					"audioText": "What letter is this? It is I.",
+					"fallbackText": "I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "I sits on the card and says igloo.",
+					"audioText": "I sits on the card and says igloo.",
+					"fallbackText": "I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-i-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-i-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 I。",
+			"successPhrase": "你找到字母 I 了。",
+			"fallbackText": "字母 I",
+			"levels": {
+				"L0": {
+					"text": "字母 I",
+					"audioText": "字母 I",
+					"fallbackText": "字母 I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "I 代表冰屋。",
+					"audioText": "I 代表冰屋。",
+					"fallbackText": "字母 I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 I",
+					"audioText": "大写字母 I",
+					"fallbackText": "字母 I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "I 是冰屋的开头。",
+					"audioText": "I 是冰屋的开头。",
+					"fallbackText": "字母 I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 I。",
+					"audioText": "这是什么字母？这是 I。",
+					"fallbackText": "字母 I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "I 在卡片上，轻轻说冰屋。",
+					"audioText": "I 在卡片上，轻轻说冰屋。",
+					"fallbackText": "字母 I",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-i-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-i.webp",
+				"alt": "letter I",
+				"generationPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "I",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "i"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-i-bright.webp",
+				"alt": "letter I bright large",
+				"generationPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "I",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase I letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "i"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

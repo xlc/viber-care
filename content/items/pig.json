@@ -1,0 +1,194 @@
+{
+	"id": "pig",
+	"category": "farm-animal",
+	"tags": ["farm", "animal", "barnyard"],
+	"visualPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "pig-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the pig.",
+			"successPhrase": "You found the pig.",
+			"fallbackText": "That is the pig.",
+			"levels": {
+				"L0": {
+					"text": "pig",
+					"audioText": "pig",
+					"fallbackText": "pig",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The pig gives a soft oink.",
+					"audioText": "The pig gives a soft oink.",
+					"fallbackText": "pig",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round pink pig",
+					"audioText": "round pink pig",
+					"fallbackText": "pig",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The pig stands in the farmyard.",
+					"audioText": "The pig stands in the farmyard.",
+					"fallbackText": "pig",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has a round snout? The pig has a round snout.",
+					"audioText": "Who has a round snout? The pig has a round snout.",
+					"fallbackText": "pig",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The pig wiggles happily by the path.",
+					"audioText": "The pig wiggles happily by the path.",
+					"fallbackText": "pig",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/pig-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/pig-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小猪。",
+			"successPhrase": "你找到小猪了。",
+			"fallbackText": "这是小猪。",
+			"levels": {
+				"L0": {
+					"text": "小猪",
+					"audioText": "小猪",
+					"fallbackText": "小猪",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小猪轻轻哼哼叫。",
+					"audioText": "小猪轻轻哼哼叫。",
+					"fallbackText": "小猪",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "粉色圆圆的小猪",
+					"audioText": "粉色圆圆的小猪",
+					"fallbackText": "小猪",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小猪站在农场院子里。",
+					"audioText": "小猪站在农场院子里。",
+					"fallbackText": "小猪",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有圆圆的鼻子？小猪有圆圆的鼻子。",
+					"audioText": "谁有圆圆的鼻子？小猪有圆圆的鼻子。",
+					"fallbackText": "小猪",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小猪在小路旁开心地动一动。",
+					"audioText": "小猪在小路旁开心地动一动。",
+					"fallbackText": "小猪",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/pig-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/pig.png",
+				"alt": "pig",
+				"generationPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "pig",
+					"emoji": "🐖"
+				}
+			},
+			"visualPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "barnyard"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/pig-bright.png",
+				"alt": "pig bright large",
+				"generationPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "pig bright large",
+					"emoji": "🐖"
+				}
+			},
+			"visualPrompt": "A friendly pig for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "barnyard"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

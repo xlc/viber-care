@@ -1,0 +1,206 @@
+{
+	"id": "ball",
+	"category": "toy",
+	"tags": ["play", "round", "colorful"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "dot-match", "color-sort", "more-less", "spatial"],
+		"colors": ["blue"],
+		"sceneZones": ["grass", "basket"],
+		"zhMeasureWord": "个",
+		"englishPlural": "balls"
+	},
+	"visualPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
+	"interaction": {
+		"id": "ball-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the ball.",
+			"successPhrase": "You found the ball.",
+			"fallbackText": "ball",
+			"levels": {
+				"L0": {
+					"text": "ball",
+					"audioText": "ball",
+					"fallbackText": "ball",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The ball rolls.",
+					"audioText": "The ball rolls.",
+					"fallbackText": "ball",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "colorful round ball",
+					"audioText": "colorful round ball",
+					"fallbackText": "ball",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The ball rolls on the grass.",
+					"audioText": "The ball rolls on the grass.",
+					"fallbackText": "ball",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What can roll? The ball can roll.",
+					"audioText": "What can roll? The ball can roll.",
+					"fallbackText": "ball",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The ball rolls softly and stops by the flower.",
+					"audioText": "The ball rolls softly and stops by the flower.",
+					"fallbackText": "ball",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/ball-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/ball-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小球。",
+			"successPhrase": "你找到小球了。",
+			"fallbackText": "小球",
+			"levels": {
+				"L0": {
+					"text": "小球",
+					"audioText": "小球",
+					"fallbackText": "小球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小球滚一滚。",
+					"audioText": "小球滚一滚。",
+					"fallbackText": "小球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "彩色的圆球",
+					"audioText": "彩色的圆球",
+					"fallbackText": "小球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "球在草地上滚。",
+					"audioText": "球在草地上滚。",
+					"fallbackText": "小球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么会滚？球会滚。",
+					"audioText": "什么会滚？球会滚。",
+					"fallbackText": "小球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "球轻轻滚到花朵旁边停下。",
+					"audioText": "球轻轻滚到花朵旁边停下。",
+					"fallbackText": "小球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/ball-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/ball-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/ball-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/ball.webp",
+				"alt": "ball",
+				"generationPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
+				"placeholder": {
+					"label": "ball",
+					"emoji": "⚽"
+				}
+			},
+			"visualPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "toy", "play", "round", "colorful"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/ball-bright.webp",
+				"alt": "ball bright large",
+				"generationPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "ball",
+					"emoji": "⚽"
+				}
+			},
+			"visualPrompt": "A colorful soft ball for a toddler word-learning garden game, rounded, bright panels, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "toy", "play", "round", "colorful"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

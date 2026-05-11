@@ -1,0 +1,194 @@
+{
+	"id": "fossil",
+	"category": "nature-object",
+	"tags": ["fossil", "rock", "bone"],
+	"visualPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
+	"interaction": {
+		"id": "fossil-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the fossil.",
+			"successPhrase": "You found the fossil.",
+			"fallbackText": "That's the fossil.",
+			"levels": {
+				"L0": {
+					"text": "fossil",
+					"audioText": "fossil",
+					"fallbackText": "fossil",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The fossil rests in the rock.",
+					"audioText": "The fossil rests in the rock.",
+					"fallbackText": "The fossil rests in the rock.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "quiet fossil stone",
+					"audioText": "quiet fossil stone",
+					"fallbackText": "That's the fossil.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The fossil rests in the rock.",
+					"audioText": "The fossil rests in the rock.",
+					"fallbackText": "That's the fossil.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What is inside the rock? A fossil is inside.",
+					"audioText": "What is inside the rock? A fossil is inside.",
+					"fallbackText": "That's the fossil.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The fossil waits quietly beside the path.",
+					"audioText": "The fossil waits quietly beside the path.",
+					"fallbackText": "That's the fossil.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/fossil-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/fossil-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找化石。",
+			"successPhrase": "你找到化石了。",
+			"fallbackText": "这是化石。",
+			"levels": {
+				"L0": {
+					"text": "化石",
+					"audioText": "化石",
+					"fallbackText": "化石",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "化石在石头里。",
+					"audioText": "化石在石头里。",
+					"fallbackText": "化石在石头里。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "安静的化石石头",
+					"audioText": "安静的化石石头",
+					"fallbackText": "这是化石。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "化石在石头里。",
+					"audioText": "化石在石头里。",
+					"fallbackText": "这是化石。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "石头里有什么？石头里有化石。",
+					"audioText": "石头里有什么？石头里有化石。",
+					"fallbackText": "这是化石。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "化石在小路旁安静地等着。",
+					"audioText": "化石在小路旁安静地等着。",
+					"fallbackText": "这是化石。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/fossil-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/fossil.webp",
+				"alt": "fossil",
+				"generationPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
+				"placeholder": {
+					"label": "fossil",
+					"emoji": "🦴"
+				}
+			},
+			"visualPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "nature-object", "fossil", "rock", "bone"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/fossil-bright.webp",
+				"alt": "fossil bright large",
+				"generationPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "fossil",
+					"emoji": "🦴"
+				}
+			},
+			"visualPrompt": "A simple friendly fossil inside a rounded stone for a toddler dinosaur word-learning game, soft beige rock, clear bone shape, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "nature-object", "fossil", "rock", "bone"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

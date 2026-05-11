@@ -1,0 +1,206 @@
+{
+	"id": "strawberry",
+	"category": "fruits",
+	"tags": ["fruits", "food", "strawberry"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": ["counting", "dot-match", "color-sort", "more-less"],
+		"colors": ["red"],
+		"sceneZones": ["basket", "stand"],
+		"zhMeasureWord": "颗",
+		"englishPlural": "strawberries"
+	},
+	"visualPrompt": "A friendly strawberry for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/strawberry.png",
+				"alt": "strawberry",
+				"generationPrompt": "A friendly strawberry for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "strawberry",
+					"emoji": "🍓"
+				}
+			},
+			"visualPrompt": "A friendly strawberry for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "strawberry"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/strawberry-bright.png",
+				"alt": "strawberry bright large",
+				"generationPrompt": "A friendly strawberry for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "strawberry",
+					"emoji": "🍓"
+				}
+			},
+			"visualPrompt": "A friendly strawberry for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "strawberry"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "strawberry-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the strawberry.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-en-find.mp3"
+			},
+			"successPhrase": "You found the strawberry.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-en-success.mp3"
+			},
+			"fallbackText": "That is the strawberry.",
+			"levels": {
+				"L0": {
+					"text": "strawberry",
+					"audioText": "strawberry",
+					"fallbackText": "strawberry",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The strawberry is in the fruit basket.",
+					"audioText": "The strawberry is in the fruit basket.",
+					"fallbackText": "strawberry",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "little red strawberry",
+					"audioText": "little red strawberry",
+					"fallbackText": "strawberry",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The strawberry waits in the fruit basket.",
+					"audioText": "The strawberry waits in the fruit basket.",
+					"fallbackText": "strawberry",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the strawberry.",
+					"audioText": "What do you see? I see the strawberry.",
+					"fallbackText": "strawberry",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The strawberry rests quietly where little hands can find it.",
+					"audioText": "The strawberry rests quietly where little hands can find it.",
+					"fallbackText": "strawberry",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找草莓。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到草莓了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是草莓。",
+			"levels": {
+				"L0": {
+					"text": "草莓",
+					"audioText": "草莓",
+					"fallbackText": "草莓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "草莓在水果篮里。",
+					"audioText": "草莓在水果篮里。",
+					"fallbackText": "草莓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的红草莓",
+					"audioText": "小小的红草莓",
+					"fallbackText": "草莓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "草莓安静地待在水果篮里。",
+					"audioText": "草莓安静地待在水果篮里。",
+					"fallbackText": "草莓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了草莓。",
+					"audioText": "你看到了什么？我看到了草莓。",
+					"fallbackText": "草莓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "草莓轻轻地等着小手来找到它。",
+					"audioText": "草莓轻轻地等着小手来找到它。",
+					"fallbackText": "草莓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/strawberry-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

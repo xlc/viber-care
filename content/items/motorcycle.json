@@ -1,0 +1,194 @@
+{
+	"id": "motorcycle",
+	"category": "vehicle",
+	"tags": ["transportation", "road", "wheels", "motorcycle"],
+	"visualPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background.",
+	"interaction": {
+		"id": "motorcycle-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the motorcycle.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/motorcycle-en-find.mp3"
+			},
+			"successPhrase": "You found the motorcycle.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/motorcycle-en-success.mp3"
+			},
+			"fallbackText": "motorcycle",
+			"levels": {
+				"L0": {
+					"text": "motorcycle",
+					"audioText": "motorcycle",
+					"fallbackText": "motorcycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The motorcycle has two wheels.",
+					"audioText": "The motorcycle has two wheels.",
+					"fallbackText": "motorcycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "red motorcycle",
+					"audioText": "red motorcycle",
+					"fallbackText": "motorcycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The motorcycle rests on the road.",
+					"audioText": "The motorcycle rests on the road.",
+					"fallbackText": "motorcycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has two wheels? The motorcycle has two wheels.",
+					"audioText": "What has two wheels? The motorcycle has two wheels.",
+					"fallbackText": "motorcycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The motorcycle waits quietly on the road.",
+					"audioText": "The motorcycle waits quietly on the road.",
+					"fallbackText": "motorcycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找摩托车。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到摩托车了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-success.mp3"
+			},
+			"fallbackText": "摩托车",
+			"levels": {
+				"L0": {
+					"text": "摩托车",
+					"audioText": "摩托车",
+					"fallbackText": "摩托车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "摩托车有两个轮子。",
+					"audioText": "摩托车有两个轮子。",
+					"fallbackText": "摩托车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "红色的摩托车",
+					"audioText": "红色的摩托车",
+					"fallbackText": "摩托车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "摩托车停在路上。",
+					"audioText": "摩托车停在路上。",
+					"fallbackText": "摩托车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么有两个轮子？摩托车有两个轮子。",
+					"audioText": "什么有两个轮子？摩托车有两个轮子。",
+					"fallbackText": "摩托车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "摩托车安静地停在路上。",
+					"audioText": "摩托车安静地停在路上。",
+					"fallbackText": "摩托车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/motorcycle-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/motorcycle.png",
+				"alt": "motorcycle",
+				"generationPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background.",
+				"placeholder": {
+					"label": "motorcycle",
+					"emoji": "🏍️"
+				}
+			},
+			"visualPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "vehicle", "road", "wheels", "motorcycle"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/motorcycle-bright.png",
+				"alt": "motorcycle bright large",
+				"generationPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "motorcycle",
+					"emoji": "🏍️"
+				}
+			},
+			"visualPrompt": "A friendly red motorcycle for a toddler transportation word-learning game, rounded toy-like shape, two clear wheels, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "vehicle", "road", "wheels", "motorcycle"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

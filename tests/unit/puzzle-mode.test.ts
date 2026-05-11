@@ -7,9 +7,9 @@ import {
 } from '../../src/game/puzzle-mode'
 
 const placements = [
-	{ objectId: 'sun' },
-	{ objectId: 'tree' },
-	{ objectId: 'duck' },
+	{ object: { id: 'sun' } },
+	{ object: { id: 'tree' } },
+	{ object: { id: 'duck' } },
 ]
 
 describe('Puzzle mode behavior', () => {

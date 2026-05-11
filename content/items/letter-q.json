@@ -1,0 +1,194 @@
+{
+	"id": "letter-q",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "q"],
+	"visualPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-q-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter Q.",
+			"successPhrase": "You found letter Q.",
+			"fallbackText": "Q",
+			"levels": {
+				"L0": {
+					"text": "Q",
+					"audioText": "Q",
+					"fallbackText": "Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Q is for quilt.",
+					"audioText": "Q is for quilt.",
+					"fallbackText": "Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase Q",
+					"audioText": "uppercase Q",
+					"fallbackText": "Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Q starts the word quilt.",
+					"audioText": "Q starts the word quilt.",
+					"fallbackText": "Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is Q.",
+					"audioText": "What letter is this? It is Q.",
+					"fallbackText": "Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "Q sits on the card and says quilt.",
+					"audioText": "Q sits on the card and says quilt.",
+					"fallbackText": "Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-q-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-q-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 Q。",
+			"successPhrase": "你找到字母 Q 了。",
+			"fallbackText": "字母 Q",
+			"levels": {
+				"L0": {
+					"text": "字母 Q",
+					"audioText": "字母 Q",
+					"fallbackText": "字母 Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Q 代表被子。",
+					"audioText": "Q 代表被子。",
+					"fallbackText": "字母 Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 Q",
+					"audioText": "大写字母 Q",
+					"fallbackText": "字母 Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Q 是被子的开头。",
+					"audioText": "Q 是被子的开头。",
+					"fallbackText": "字母 Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 Q。",
+					"audioText": "这是什么字母？这是 Q。",
+					"fallbackText": "字母 Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "Q 在卡片上，轻轻说被子。",
+					"audioText": "Q 在卡片上，轻轻说被子。",
+					"fallbackText": "字母 Q",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-q-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-q.webp",
+				"alt": "letter Q",
+				"generationPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "Q",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "q"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-q-bright.webp",
+				"alt": "letter Q bright large",
+				"generationPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "Q",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase Q letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "q"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

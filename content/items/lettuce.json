@@ -1,0 +1,194 @@
+{
+	"id": "lettuce",
+	"category": "leafy-vegetables",
+	"tags": ["leafy-vegetables", "food", "lettuce"],
+	"visualPrompt": "A friendly lettuce for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/lettuce.png",
+				"alt": "lettuce",
+				"generationPrompt": "A friendly lettuce for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "lettuce",
+					"emoji": "🥬"
+				}
+			},
+			"visualPrompt": "A friendly lettuce for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "lettuce"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/lettuce-bright.png",
+				"alt": "lettuce bright large",
+				"generationPrompt": "A friendly lettuce for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "lettuce",
+					"emoji": "🥬"
+				}
+			},
+			"visualPrompt": "A friendly lettuce for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "lettuce"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "lettuce-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the lettuce.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-en-find.mp3"
+			},
+			"successPhrase": "You found the lettuce.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-en-success.mp3"
+			},
+			"fallbackText": "That is the lettuce.",
+			"levels": {
+				"L0": {
+					"text": "lettuce",
+					"audioText": "lettuce",
+					"fallbackText": "lettuce",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The lettuce is in the leafy patch.",
+					"audioText": "The lettuce is in the leafy patch.",
+					"fallbackText": "lettuce",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "leafy green lettuce",
+					"audioText": "leafy green lettuce",
+					"fallbackText": "lettuce",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The lettuce waits in the leafy patch.",
+					"audioText": "The lettuce waits in the leafy patch.",
+					"fallbackText": "lettuce",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the lettuce.",
+					"audioText": "What do you see? I see the lettuce.",
+					"fallbackText": "lettuce",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The lettuce rests quietly where little hands can find it.",
+					"audioText": "The lettuce rests quietly where little hands can find it.",
+					"fallbackText": "lettuce",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找生菜。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到生菜了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是生菜。",
+			"levels": {
+				"L0": {
+					"text": "生菜",
+					"audioText": "生菜",
+					"fallbackText": "生菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "生菜在叶子菜地里。",
+					"audioText": "生菜在叶子菜地里。",
+					"fallbackText": "生菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "绿绿的叶子生菜",
+					"audioText": "绿绿的叶子生菜",
+					"fallbackText": "生菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "生菜安静地待在叶子菜地里。",
+					"audioText": "生菜安静地待在叶子菜地里。",
+					"fallbackText": "生菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了生菜。",
+					"audioText": "你看到了什么？我看到了生菜。",
+					"fallbackText": "生菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "生菜轻轻地等着小手来找到它。",
+					"audioText": "生菜轻轻地等着小手来找到它。",
+					"fallbackText": "生菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/lettuce-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,194 @@
+{
+	"id": "letter-c",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "c"],
+	"visualPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-c-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter C.",
+			"successPhrase": "You found letter C.",
+			"fallbackText": "C",
+			"levels": {
+				"L0": {
+					"text": "C",
+					"audioText": "C",
+					"fallbackText": "C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "C is for cat.",
+					"audioText": "C is for cat.",
+					"fallbackText": "C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase C",
+					"audioText": "uppercase C",
+					"fallbackText": "C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "C starts the word cat.",
+					"audioText": "C starts the word cat.",
+					"fallbackText": "C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is C.",
+					"audioText": "What letter is this? It is C.",
+					"fallbackText": "C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "C sits on the card and says cat.",
+					"audioText": "C sits on the card and says cat.",
+					"fallbackText": "C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-c-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-c-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 C。",
+			"successPhrase": "你找到字母 C 了。",
+			"fallbackText": "字母 C",
+			"levels": {
+				"L0": {
+					"text": "字母 C",
+					"audioText": "字母 C",
+					"fallbackText": "字母 C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "C 代表小猫。",
+					"audioText": "C 代表小猫。",
+					"fallbackText": "字母 C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 C",
+					"audioText": "大写字母 C",
+					"fallbackText": "字母 C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "C 是小猫的开头。",
+					"audioText": "C 是小猫的开头。",
+					"fallbackText": "字母 C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 C。",
+					"audioText": "这是什么字母？这是 C。",
+					"fallbackText": "字母 C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "C 在卡片上，轻轻说小猫。",
+					"audioText": "C 在卡片上，轻轻说小猫。",
+					"fallbackText": "字母 C",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-c-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-c.webp",
+				"alt": "letter C",
+				"generationPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "C",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "c"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-c-bright.webp",
+				"alt": "letter C bright large",
+				"generationPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "C",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase C letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "c"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

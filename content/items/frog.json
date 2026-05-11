@@ -1,0 +1,208 @@
+{
+	"id": "frog",
+	"category": "animal",
+	"tags": ["garden", "pond", "animal", "green"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "spatial"],
+		"colors": ["green"],
+		"sceneZones": ["water", "pond", "grass"],
+		"zhMeasureWord": "只",
+		"englishPlural": "frogs"
+	},
+	"visualPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background.",
+	"interaction": {
+		"id": "frog-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the frog.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/frog-en-find.mp3"
+			},
+			"successPhrase": "You found the frog.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/frog-en-success.mp3"
+			},
+			"fallbackText": "frog",
+			"levels": {
+				"L0": {
+					"text": "frog",
+					"audioText": "frog",
+					"fallbackText": "frog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The frog hops.",
+					"audioText": "The frog hops.",
+					"fallbackText": "frog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "green pond frog",
+					"audioText": "green pond frog",
+					"fallbackText": "frog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The frog sits by the pond.",
+					"audioText": "The frog sits by the pond.",
+					"fallbackText": "frog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who can hop? The frog can hop.",
+					"audioText": "Who can hop? The frog can hop.",
+					"fallbackText": "frog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The frog makes a soft hop near the water.",
+					"audioText": "The frog makes a soft hop near the water.",
+					"fallbackText": "frog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找青蛙。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/frog-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到青蛙了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/frog-zh-Hans-success.mp3"
+			},
+			"fallbackText": "青蛙",
+			"levels": {
+				"L0": {
+					"text": "青蛙",
+					"audioText": "青蛙",
+					"fallbackText": "青蛙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "青蛙跳一跳。",
+					"audioText": "青蛙跳一跳。",
+					"fallbackText": "青蛙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "绿色的池塘青蛙",
+					"audioText": "绿色的池塘青蛙",
+					"fallbackText": "青蛙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "青蛙坐在池塘边。",
+					"audioText": "青蛙坐在池塘边。",
+					"fallbackText": "青蛙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁会跳？青蛙会跳。",
+					"audioText": "谁会跳？青蛙会跳。",
+					"fallbackText": "青蛙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "青蛙在水边轻轻跳一下。",
+					"audioText": "青蛙在水边轻轻跳一下。",
+					"fallbackText": "青蛙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/frog-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/frog.webp",
+				"alt": "frog",
+				"generationPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background.",
+				"placeholder": {
+					"label": "frog",
+					"emoji": "🐸"
+				}
+			},
+			"visualPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "animal", "pond", "green"],
+			"color": "green",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/frog-bright.webp",
+				"alt": "frog bright large",
+				"generationPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "frog",
+					"emoji": "🐸"
+				}
+			},
+			"visualPrompt": "A friendly green frog for a toddler word-learning garden game, soft round body, happy face, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "animal", "pond", "green"],
+			"color": "green",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

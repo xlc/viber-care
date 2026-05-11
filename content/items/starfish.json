@@ -1,0 +1,206 @@
+{
+	"id": "starfish",
+	"category": "ocean-animal",
+	"tags": ["ocean", "animal", "beach"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": ["counting", "dot-match", "color-sort", "more-less", "spatial"],
+		"colors": ["orange"],
+		"sceneZones": ["shore", "sand", "seabed"],
+		"zhMeasureWord": "只",
+		"englishPlural": "starfish"
+	},
+	"visualPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "starfish-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the starfish.",
+			"successPhrase": "You found the starfish.",
+			"fallbackText": "That's the starfish.",
+			"levels": {
+				"L0": {
+					"text": "starfish",
+					"audioText": "starfish",
+					"fallbackText": "starfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The starfish rests.",
+					"audioText": "The starfish rests.",
+					"fallbackText": "starfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "bright starfish",
+					"audioText": "bright starfish",
+					"fallbackText": "starfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The starfish rests on the sand.",
+					"audioText": "The starfish rests on the sand.",
+					"fallbackText": "starfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who rests on sand? The starfish rests on sand.",
+					"audioText": "Who rests on sand? The starfish rests on sand.",
+					"fallbackText": "starfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The starfish rests like a star on the sand.",
+					"audioText": "The starfish rests like a star on the sand.",
+					"fallbackText": "That's the starfish.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/starfish-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/starfish-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找海星。",
+			"successPhrase": "你找到海星了。",
+			"fallbackText": "这是海星。",
+			"levels": {
+				"L0": {
+					"text": "海星",
+					"audioText": "海星",
+					"fallbackText": "海星",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "海星静静躺。",
+					"audioText": "海星静静躺。",
+					"fallbackText": "海星",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "亮亮的海星",
+					"audioText": "亮亮的海星",
+					"fallbackText": "海星",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "海星躺在沙子上。",
+					"audioText": "海星躺在沙子上。",
+					"fallbackText": "海星",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁躺在沙子上？海星躺在沙子上。",
+					"audioText": "谁躺在沙子上？海星躺在沙子上。",
+					"fallbackText": "海星",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "海星像星星一样躺在沙子上。",
+					"audioText": "海星像星星一样躺在沙子上。",
+					"fallbackText": "这是海星。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/starfish-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/starfish.webp",
+				"alt": "starfish",
+				"generationPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "starfish",
+					"emoji": "⭐"
+				}
+			},
+			"visualPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "beach"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/starfish-bright.webp",
+				"alt": "starfish bright large",
+				"generationPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "starfish",
+					"emoji": "⭐"
+				}
+			},
+			"visualPrompt": "A bright friendly starfish for a toddler ocean word-learning game. Consistent flat style, simple rounded star shape, clear silhouette, soft coral color, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "beach"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

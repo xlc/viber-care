@@ -1,0 +1,192 @@
+{
+	"id": "hot-air-balloon",
+	"category": "vehicle",
+	"tags": ["transportation", "sky", "air", "flying"],
+	"visualPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "hot-air-balloon-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "hot-air balloon",
+			"findPrompt": "Find the hot-air balloon.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/hot-air-balloon-en-find.mp3"
+			},
+			"successPhrase": "You found the hot-air balloon.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/hot-air-balloon-en-success.mp3"
+			},
+			"fallbackText": "hot-air balloon",
+			"levels": {
+				"L0": {
+					"text": "hot-air balloon",
+					"audioText": "hot-air balloon",
+					"fallbackText": "balloon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The balloon floats.",
+					"audioText": "The balloon floats.",
+					"fallbackText": "hot-air balloon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "colorful hot-air balloon",
+					"audioText": "colorful hot-air balloon",
+					"fallbackText": "hot-air balloon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The hot-air balloon floats in the sky.",
+					"audioText": "The hot-air balloon floats in the sky.",
+					"fallbackText": "hot-air balloon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What floats high and slow? The hot-air balloon floats.",
+					"audioText": "What floats high and slow? The hot-air balloon floats.",
+					"fallbackText": "hot-air balloon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The hot-air balloon floats gently across the big blue sky.",
+					"audioText": "The hot-air balloon floats gently across the big blue sky.",
+					"fallbackText": "That is the hot-air balloon.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "热气球",
+			"findPrompt": "找一找热气球。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到了热气球。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-success.mp3"
+			},
+			"fallbackText": "热气球",
+			"levels": {
+				"L0": {
+					"text": "热气球",
+					"audioText": "热气球",
+					"fallbackText": "热气球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "热气球飘起来。",
+					"audioText": "热气球飘起来。",
+					"fallbackText": "热气球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "彩色热气球",
+					"audioText": "彩色热气球",
+					"fallbackText": "热气球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "热气球在天空中慢慢飘。",
+					"audioText": "热气球在天空中慢慢飘。",
+					"fallbackText": "热气球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁在高高的天空飘？热气球在飘。",
+					"audioText": "谁在高高的天空飘？热气球在飘。",
+					"fallbackText": "热气球",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "热气球在蓝蓝的天空里，轻轻地飘过去。",
+					"audioText": "热气球在蓝蓝的天空里，轻轻地飘过去。",
+					"fallbackText": "这是热气球。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/hot-air-balloon-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "hot air balloon",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/hot-air-balloon.png",
+				"alt": "hot air balloon",
+				"generationPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "hot air balloon"
+				}
+			},
+			"visualPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "vehicle", "sky", "air", "flying"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "hot air balloon bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/hot-air-balloon-bright.png",
+				"alt": "hot air balloon bright large",
+				"generationPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "hot air balloon bright large"
+				}
+			},
+			"visualPrompt": "A friendly hot-air balloon for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "vehicle", "sky", "air", "flying"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

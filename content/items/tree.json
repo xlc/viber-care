@@ -1,0 +1,196 @@
+{
+	"id": "tree",
+	"category": "plant",
+	"tags": ["garden", "green", "shade"],
+	"visualPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background.",
+	"interaction": {
+		"id": "tree-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the tree.",
+			"successPhrase": "You found the tree.",
+			"fallbackText": "tree",
+			"levels": {
+				"L0": {
+					"text": "tree",
+					"audioText": "tree",
+					"fallbackText": "tree",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The tree is tall.",
+					"audioText": "The tree is tall.",
+					"fallbackText": "tree",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "tall green tree",
+					"audioText": "tall green tree",
+					"fallbackText": "tree",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The tree gives cool shade.",
+					"audioText": "The tree gives cool shade.",
+					"fallbackText": "tree",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has leaves? The tree has leaves.",
+					"audioText": "What has leaves? The tree has leaves.",
+					"fallbackText": "tree",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The tree sways gently while birds rest nearby.",
+					"audioText": "The tree sways gently while birds rest nearby.",
+					"fallbackText": "tree",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/tree-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/tree-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找大树。",
+			"successPhrase": "你找到大树了。",
+			"fallbackText": "大树",
+			"levels": {
+				"L0": {
+					"text": "大树",
+					"audioText": "大树",
+					"fallbackText": "大树",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "大树高高的。",
+					"audioText": "大树高高的。",
+					"fallbackText": "大树",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "高高的绿树",
+					"audioText": "高高的绿树",
+					"fallbackText": "大树",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "大树带来凉凉的树荫。",
+					"audioText": "大树带来凉凉的树荫。",
+					"fallbackText": "大树",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么有叶子？大树有叶子。",
+					"audioText": "什么有叶子？大树有叶子。",
+					"fallbackText": "大树",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "大树轻轻摇，小鸟在旁边休息。",
+					"audioText": "大树轻轻摇，小鸟在旁边休息。",
+					"fallbackText": "大树",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/tree-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/tree-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/tree-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/tree.webp",
+				"alt": "tree",
+				"generationPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background.",
+				"placeholder": {
+					"label": "tree",
+					"emoji": "🌳"
+				}
+			},
+			"visualPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "plant", "green", "shade"],
+			"color": "green",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/tree-bright.webp",
+				"alt": "tree bright large",
+				"generationPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "tree",
+					"emoji": "🌳"
+				}
+			},
+			"visualPrompt": "A friendly green tree for a toddler word-learning garden game, rounded leafy crown, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "plant", "green", "shade"],
+			"color": "green",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

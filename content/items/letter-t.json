@@ -1,0 +1,194 @@
+{
+	"id": "letter-t",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "t"],
+	"visualPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-t-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter T.",
+			"successPhrase": "You found letter T.",
+			"fallbackText": "T",
+			"levels": {
+				"L0": {
+					"text": "T",
+					"audioText": "T",
+					"fallbackText": "T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "T is for tree.",
+					"audioText": "T is for tree.",
+					"fallbackText": "T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase T",
+					"audioText": "uppercase T",
+					"fallbackText": "T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "T starts the word tree.",
+					"audioText": "T starts the word tree.",
+					"fallbackText": "T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is T.",
+					"audioText": "What letter is this? It is T.",
+					"fallbackText": "T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "T sits on the card and says tree.",
+					"audioText": "T sits on the card and says tree.",
+					"fallbackText": "T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-t-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-t-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 T。",
+			"successPhrase": "你找到字母 T 了。",
+			"fallbackText": "字母 T",
+			"levels": {
+				"L0": {
+					"text": "字母 T",
+					"audioText": "字母 T",
+					"fallbackText": "字母 T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "T 代表树。",
+					"audioText": "T 代表树。",
+					"fallbackText": "字母 T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 T",
+					"audioText": "大写字母 T",
+					"fallbackText": "字母 T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "T 是树的开头。",
+					"audioText": "T 是树的开头。",
+					"fallbackText": "字母 T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 T。",
+					"audioText": "这是什么字母？这是 T。",
+					"fallbackText": "字母 T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "T 在卡片上，轻轻说树。",
+					"audioText": "T 在卡片上，轻轻说树。",
+					"fallbackText": "字母 T",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-t-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-t.webp",
+				"alt": "letter T",
+				"generationPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "T",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "t"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-t-bright.webp",
+				"alt": "letter T bright large",
+				"generationPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "T",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase T letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "t"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,6 +1,6 @@
 import {
 	type ContentPack,
-	type ContentSubPack,
+	type ContentSet,
 	type LanguageCode,
 	LEARNING_LEVELS,
 	type LearningLevel,
@@ -28,41 +28,29 @@ export function getPack(catalog: RuntimeCatalog, packId = 'garden') {
 	return catalog.packs.find((pack) => pack.id === packId) ?? catalog.packs[0]
 }
 
-export function getPackSubPacks(pack: ContentPack): ContentSubPack[] {
-	if (pack.subPacks && pack.subPacks.length > 0) {
-		return pack.subPacks
-	}
-
-	return [
-		{
-			id: `${pack.id}-scenes`,
-			title: pack.title,
-			sceneIds: pack.scenes.map((scene) => scene.id),
-		},
-	]
+export function getPackSets(pack: ContentPack): ContentSet[] {
+	return pack.sets
 }
 
-export function getSelectedSubPack(
+export function getSelectedSet(
 	pack: ContentPack,
-	subPackId: string | null | undefined,
-): ContentSubPack {
-	const subPacks = getPackSubPacks(pack)
+	setId: string | null | undefined,
+): ContentSet {
+	const sets = getPackSets(pack)
 	return (
-		subPacks.find((subPack) => subPack.id === subPackId) ??
-		subPacks.find((subPack) =>
-			subPack.sceneIds.includes(pack.defaultSceneId),
-		) ??
-		subPacks[0]
+		sets.find((set) => set.id === setId) ??
+		sets.find((set) => set.sceneIds.includes(pack.defaultSceneId)) ??
+		sets[0]
 	)
 }
 
-export function getSubPackScenes(
+export function getSetScenes(
 	pack: ContentPack,
-	subPackId: string | null | undefined,
+	setId: string | null | undefined,
 ): Scene[] {
-	const subPack = getSelectedSubPack(pack, subPackId)
+	const set = getSelectedSet(pack, setId)
 	const sceneMap = new Map(pack.scenes.map((scene) => [scene.id, scene]))
-	const scenes = subPack.sceneIds
+	const scenes = set.sceneIds
 		.map((sceneId) => sceneMap.get(sceneId))
 		.filter((scene): scene is Scene => Boolean(scene))
 	return scenes.length > 0 ? scenes : pack.scenes
@@ -71,13 +59,13 @@ export function getSubPackScenes(
 export function getDefaultScene(
 	catalog: RuntimeCatalog,
 	packId = 'garden',
-	subPackId?: string | null,
+	setId?: string | null,
 ) {
 	const pack = getPack(catalog, packId)
-	const subPackScenes = getSubPackScenes(pack, subPackId)
+	const setScenes = getSetScenes(pack, setId)
 	return (
-		subPackScenes.find((scene) => scene.id === pack.defaultSceneId) ??
-		subPackScenes[0] ??
+		setScenes.find((scene) => scene.id === pack.defaultSceneId) ??
+		setScenes[0] ??
 		pack.scenes[0]
 	)
 }

@@ -1,0 +1,196 @@
+{
+	"id": "stegosaurus",
+	"category": "dinosaur",
+	"tags": ["dinosaur", "plates", "orange"],
+	"visualPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
+	"interaction": {
+		"id": "stegosaurus-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the stegosaurus.",
+			"successPhrase": "You found the stegosaurus.",
+			"fallbackText": "That's the stegosaurus.",
+			"levels": {
+				"L0": {
+					"text": "stegosaurus",
+					"audioText": "stegosaurus",
+					"fallbackText": "stegosaurus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The stegosaurus has back plates.",
+					"audioText": "The stegosaurus has back plates.",
+					"fallbackText": "The stegosaurus has back plates.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "orange stegosaurus",
+					"audioText": "orange stegosaurus",
+					"fallbackText": "That's the stegosaurus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The stegosaurus has soft back plates.",
+					"audioText": "The stegosaurus has soft back plates.",
+					"fallbackText": "That's the stegosaurus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has plates on its back? The stegosaurus does.",
+					"audioText": "What has plates on its back? The stegosaurus does.",
+					"fallbackText": "That's the stegosaurus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The stegosaurus sways beside the warm rocks.",
+					"audioText": "The stegosaurus sways beside the warm rocks.",
+					"fallbackText": "That's the stegosaurus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/stegosaurus-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找剑龙。",
+			"successPhrase": "你找到剑龙了。",
+			"fallbackText": "这是剑龙。",
+			"levels": {
+				"L0": {
+					"text": "剑龙",
+					"audioText": "剑龙",
+					"fallbackText": "剑龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "剑龙背上有板板。",
+					"audioText": "剑龙背上有板板。",
+					"fallbackText": "剑龙背上有板板。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "橙色剑龙",
+					"audioText": "橙色剑龙",
+					"fallbackText": "这是剑龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "剑龙背上有软软的骨板。",
+					"audioText": "剑龙背上有软软的骨板。",
+					"fallbackText": "这是剑龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁背上有骨板？剑龙背上有骨板。",
+					"audioText": "谁背上有骨板？剑龙背上有骨板。",
+					"fallbackText": "这是剑龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "剑龙在温暖的石头旁轻轻摇摆。",
+					"audioText": "剑龙在温暖的石头旁轻轻摇摆。",
+					"fallbackText": "这是剑龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/stegosaurus-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/stegosaurus.webp",
+				"alt": "stegosaurus",
+				"generationPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
+				"placeholder": {
+					"label": "stegosaurus",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur", "plates", "orange"],
+			"color": "orange",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/stegosaurus-bright.webp",
+				"alt": "stegosaurus bright large",
+				"generationPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "stegosaurus",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A friendly orange stegosaurus for a toddler dinosaur word-learning game, soft back plates, rounded body, no spikes that look sharp, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur", "plates", "orange"],
+			"color": "orange",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

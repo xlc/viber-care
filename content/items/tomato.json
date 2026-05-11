@@ -1,0 +1,206 @@
+{
+	"id": "tomato",
+	"category": "garden-vegetables",
+	"tags": ["garden-vegetables", "food", "tomato"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": ["counting", "dot-match", "color-sort", "more-less"],
+		"colors": ["red"],
+		"sceneZones": ["garden", "stand"],
+		"zhMeasureWord": "个",
+		"englishPlural": "tomatoes"
+	},
+	"visualPrompt": "A friendly tomato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/tomato.png",
+				"alt": "tomato",
+				"generationPrompt": "A friendly tomato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "tomato",
+					"emoji": "🍅"
+				}
+			},
+			"visualPrompt": "A friendly tomato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "garden-vegetables", "food", "tomato"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/tomato-bright.png",
+				"alt": "tomato bright large",
+				"generationPrompt": "A friendly tomato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "tomato",
+					"emoji": "🍅"
+				}
+			},
+			"visualPrompt": "A friendly tomato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "garden-vegetables", "food", "tomato"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "tomato-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the tomato.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/tomato-en-find.mp3"
+			},
+			"successPhrase": "You found the tomato.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/tomato-en-success.mp3"
+			},
+			"fallbackText": "That is the tomato.",
+			"levels": {
+				"L0": {
+					"text": "tomato",
+					"audioText": "tomato",
+					"fallbackText": "tomato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The tomato is in the garden stand.",
+					"audioText": "The tomato is in the garden stand.",
+					"fallbackText": "tomato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round red tomato",
+					"audioText": "round red tomato",
+					"fallbackText": "tomato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The tomato waits in the garden stand.",
+					"audioText": "The tomato waits in the garden stand.",
+					"fallbackText": "tomato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the tomato.",
+					"audioText": "What do you see? I see the tomato.",
+					"fallbackText": "tomato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The tomato rests quietly where little hands can find it.",
+					"audioText": "The tomato rests quietly where little hands can find it.",
+					"fallbackText": "tomato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找西红柿。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/tomato-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到西红柿了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/tomato-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是西红柿。",
+			"levels": {
+				"L0": {
+					"text": "西红柿",
+					"audioText": "西红柿",
+					"fallbackText": "西红柿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "西红柿在菜园小摊里。",
+					"audioText": "西红柿在菜园小摊里。",
+					"fallbackText": "西红柿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "圆圆的红西红柿",
+					"audioText": "圆圆的红西红柿",
+					"fallbackText": "西红柿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "西红柿安静地待在菜园小摊里。",
+					"audioText": "西红柿安静地待在菜园小摊里。",
+					"fallbackText": "西红柿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了西红柿。",
+					"audioText": "你看到了什么？我看到了西红柿。",
+					"fallbackText": "西红柿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "西红柿轻轻地等着小手来找到它。",
+					"audioText": "西红柿轻轻地等着小手来找到它。",
+					"fallbackText": "西红柿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/tomato-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

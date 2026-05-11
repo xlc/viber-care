@@ -1,0 +1,255 @@
+{
+	"id": "fish",
+	"category": "animal",
+	"tags": [
+		"pond",
+		"water",
+		"blue",
+		"ocean",
+		"animal",
+		"swimmer",
+		"ocean-animals",
+		"ocean-animal"
+	],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "dot-match", "more-less", "spatial"],
+		"colors": ["orange"],
+		"sceneZones": ["water", "pond"],
+		"zhMeasureWord": "条",
+		"englishPlural": "fish"
+	},
+	"visualPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
+	"interaction": {
+		"id": "fish-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the fish.",
+			"successPhrase": "You found the fish.",
+			"fallbackText": "fish",
+			"levels": {
+				"L0": {
+					"text": "fish",
+					"audioText": "fish",
+					"fallbackText": "fish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The fish swims.",
+					"audioText": "The fish swims.",
+					"fallbackText": "fish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "bright blue fish",
+					"audioText": "bright blue fish",
+					"fallbackText": "fish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The fish swims in the pond.",
+					"audioText": "The fish swims in the pond.",
+					"fallbackText": "fish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who swims in water? The fish swims in water.",
+					"audioText": "Who swims in water? The fish swims in water.",
+					"fallbackText": "fish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The fish makes tiny bubbles in the quiet pond.",
+					"audioText": "The fish makes tiny bubbles in the quiet pond.",
+					"fallbackText": "fish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/fish-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/fish-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小鱼。",
+			"successPhrase": "你找到小鱼了。",
+			"fallbackText": "小鱼",
+			"levels": {
+				"L0": {
+					"text": "小鱼",
+					"audioText": "小鱼",
+					"fallbackText": "小鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小鱼游一游。",
+					"audioText": "小鱼游一游。",
+					"fallbackText": "小鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "亮蓝色的小鱼",
+					"audioText": "亮蓝色的小鱼",
+					"fallbackText": "小鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小鱼在池塘里游。",
+					"audioText": "小鱼在池塘里游。",
+					"fallbackText": "小鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁在水里游？小鱼在水里游。",
+					"audioText": "谁在水里游？小鱼在水里游。",
+					"fallbackText": "小鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小鱼在安静的池塘里吹小泡泡。",
+					"audioText": "小鱼在安静的池塘里吹小泡泡。",
+					"fallbackText": "小鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/fish-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/fish-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/fish-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/fish.webp",
+				"alt": "fish",
+				"generationPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
+				"placeholder": {
+					"label": "fish",
+					"emoji": "🐟"
+				}
+			},
+			"visualPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "animal", "pond", "water", "blue"],
+			"color": "blue",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/fish-bright.webp",
+				"alt": "fish bright large",
+				"generationPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "fish",
+					"emoji": "🐟"
+				}
+			},
+			"visualPrompt": "A bright blue fish for a toddler word-learning garden game, soft rounded fins, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "animal", "pond", "water", "blue"],
+			"color": "blue",
+			"size": "large",
+			"style": "bright-large"
+		},
+		{
+			"id": "ocean-animals-classic",
+			"label": "fish Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/fish.webp",
+				"alt": "fish",
+				"generationPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "fish",
+					"emoji": "🐟"
+				}
+			},
+			"visualPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "swimmer"],
+			"size": "medium",
+			"style": "ocean-animals"
+		},
+		{
+			"id": "ocean-animals-bright-large",
+			"label": "fish Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/fish-bright.webp",
+				"alt": "fish bright large",
+				"generationPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "fish",
+					"emoji": "🐟"
+				}
+			},
+			"visualPrompt": "A friendly small fish for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, bright but soft blue and yellow colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "swimmer"],
+			"size": "large",
+			"style": "ocean-animals"
+		}
+	]
+}

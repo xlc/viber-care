@@ -1,0 +1,194 @@
+{
+	"id": "sea-turtle",
+	"category": "ocean-animal",
+	"tags": ["ocean", "animal", "shell"],
+	"visualPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "sea-turtle-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the sea turtle.",
+			"successPhrase": "You found the sea turtle.",
+			"fallbackText": "That's the sea turtle.",
+			"levels": {
+				"L0": {
+					"text": "sea turtle",
+					"audioText": "sea turtle",
+					"fallbackText": "sea turtle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The sea turtle glides.",
+					"audioText": "The sea turtle glides.",
+					"fallbackText": "sea turtle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "gentle sea turtle",
+					"audioText": "gentle sea turtle",
+					"fallbackText": "sea turtle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The sea turtle moves slowly.",
+					"audioText": "The sea turtle moves slowly.",
+					"fallbackText": "sea turtle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has a shell? The sea turtle has a shell.",
+					"audioText": "Who has a shell? The sea turtle has a shell.",
+					"fallbackText": "sea turtle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The sea turtle glides slowly through the cove.",
+					"audioText": "The sea turtle glides slowly through the cove.",
+					"fallbackText": "That's the sea turtle.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/sea-turtle-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找海龟。",
+			"successPhrase": "你找到海龟了。",
+			"fallbackText": "这是海龟。",
+			"levels": {
+				"L0": {
+					"text": "海龟",
+					"audioText": "海龟",
+					"fallbackText": "海龟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "海龟慢慢游。",
+					"audioText": "海龟慢慢游。",
+					"fallbackText": "海龟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "温柔的海龟",
+					"audioText": "温柔的海龟",
+					"fallbackText": "海龟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "海龟慢慢向前游。",
+					"audioText": "海龟慢慢向前游。",
+					"fallbackText": "海龟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有壳？海龟有壳。",
+					"audioText": "谁有壳？海龟有壳。",
+					"fallbackText": "海龟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "海龟慢慢滑过海湾。",
+					"audioText": "海龟慢慢滑过海湾。",
+					"fallbackText": "这是海龟。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/sea-turtle-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/sea-turtle.webp",
+				"alt": "sea turtle",
+				"generationPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "sea turtle",
+					"emoji": "🐢"
+				}
+			},
+			"visualPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "shell"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/sea-turtle-bright.webp",
+				"alt": "sea turtle bright large",
+				"generationPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "sea turtle",
+					"emoji": "🐢"
+				}
+			},
+			"visualPrompt": "A gentle sea turtle for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft green shell, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "shell"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

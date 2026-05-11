@@ -96,17 +96,24 @@ function getPackObjectIds(packId: string) {
 		`${packId}.json`,
 	)
 	const pack = JSON.parse(readFileSync(packPath, 'utf8')) as {
-		objects?: Array<{ id?: unknown }>
+		sets?: Array<{ itemIds?: unknown }>
 	}
-	if (!pack.objects) {
-		throw new Error(`Pack ${packId} has no objects`)
+	if (!pack.sets) {
+		throw new Error(`Pack ${packId} has no sets`)
 	}
-	return pack.objects.map((object) => {
-		if (typeof object.id !== 'string') {
-			throw new Error(`Pack ${packId} has an object without an id`)
+	const itemIds = new Set<string>()
+	for (const set of pack.sets) {
+		if (!Array.isArray(set.itemIds)) {
+			throw new Error(`Pack ${packId} has a set without item ids`)
 		}
-		return object.id
-	})
+		for (const itemId of set.itemIds) {
+			if (typeof itemId !== 'string') {
+				throw new Error(`Pack ${packId} has a non-string item id`)
+			}
+			itemIds.add(itemId)
+		}
+	}
+	return [...itemIds]
 }
 
 async function getPuzzlePieceIds(page: Page) {
@@ -673,7 +680,11 @@ test('runtime makes no calls to AI endpoints', async ({ page }) => {
 			forbiddenRequests.push(url)
 		}
 		const path = new URL(url).pathname
-		if (path.endsWith('.json') && !path.startsWith('/content/packs/')) {
+		if (
+			path.endsWith('.json') &&
+			!path.startsWith('/content/items/') &&
+			!path.startsWith('/content/packs/')
+		) {
 			publicJsonRequests.push(url)
 		}
 		await route.continue()

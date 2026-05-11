@@ -1,0 +1,194 @@
+{
+	"id": "letter-s",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "s"],
+	"visualPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-s-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter S.",
+			"successPhrase": "You found letter S.",
+			"fallbackText": "S",
+			"levels": {
+				"L0": {
+					"text": "S",
+					"audioText": "S",
+					"fallbackText": "S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "S is for sun.",
+					"audioText": "S is for sun.",
+					"fallbackText": "S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase S",
+					"audioText": "uppercase S",
+					"fallbackText": "S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "S starts the word sun.",
+					"audioText": "S starts the word sun.",
+					"fallbackText": "S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is S.",
+					"audioText": "What letter is this? It is S.",
+					"fallbackText": "S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "S sits on the card and says sun.",
+					"audioText": "S sits on the card and says sun.",
+					"fallbackText": "S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-s-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-s-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 S。",
+			"successPhrase": "你找到字母 S 了。",
+			"fallbackText": "字母 S",
+			"levels": {
+				"L0": {
+					"text": "字母 S",
+					"audioText": "字母 S",
+					"fallbackText": "字母 S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "S 代表太阳。",
+					"audioText": "S 代表太阳。",
+					"fallbackText": "字母 S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 S",
+					"audioText": "大写字母 S",
+					"fallbackText": "字母 S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "S 是太阳的开头。",
+					"audioText": "S 是太阳的开头。",
+					"fallbackText": "字母 S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 S。",
+					"audioText": "这是什么字母？这是 S。",
+					"fallbackText": "字母 S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "S 在卡片上，轻轻说太阳。",
+					"audioText": "S 在卡片上，轻轻说太阳。",
+					"fallbackText": "字母 S",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-s-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-s.webp",
+				"alt": "letter S",
+				"generationPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "S",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "s"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-s-bright.webp",
+				"alt": "letter S bright large",
+				"generationPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "S",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase S letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "s"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

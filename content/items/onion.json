@@ -1,0 +1,194 @@
+{
+	"id": "onion",
+	"category": "root-vegetables",
+	"tags": ["root-vegetables", "food", "onion"],
+	"visualPrompt": "A friendly onion for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/onion.png",
+				"alt": "onion",
+				"generationPrompt": "A friendly onion for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "onion",
+					"emoji": "🧅"
+				}
+			},
+			"visualPrompt": "A friendly onion for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "onion"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/onion-bright.png",
+				"alt": "onion bright large",
+				"generationPrompt": "A friendly onion for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "onion",
+					"emoji": "🧅"
+				}
+			},
+			"visualPrompt": "A friendly onion for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "onion"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "onion-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the onion.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/onion-en-find.mp3"
+			},
+			"successPhrase": "You found the onion.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/onion-en-success.mp3"
+			},
+			"fallbackText": "That is the onion.",
+			"levels": {
+				"L0": {
+					"text": "onion",
+					"audioText": "onion",
+					"fallbackText": "onion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The onion is in the garden bed.",
+					"audioText": "The onion is in the garden bed.",
+					"fallbackText": "onion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round golden onion",
+					"audioText": "round golden onion",
+					"fallbackText": "onion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The onion waits in the garden bed.",
+					"audioText": "The onion waits in the garden bed.",
+					"fallbackText": "onion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the onion.",
+					"audioText": "What do you see? I see the onion.",
+					"fallbackText": "onion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The onion rests quietly where little hands can find it.",
+					"audioText": "The onion rests quietly where little hands can find it.",
+					"fallbackText": "onion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找洋葱。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/onion-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到洋葱了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/onion-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是洋葱。",
+			"levels": {
+				"L0": {
+					"text": "洋葱",
+					"audioText": "洋葱",
+					"fallbackText": "洋葱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "洋葱在菜地里。",
+					"audioText": "洋葱在菜地里。",
+					"fallbackText": "洋葱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "圆圆的金色洋葱",
+					"audioText": "圆圆的金色洋葱",
+					"fallbackText": "洋葱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "洋葱安静地待在菜地里。",
+					"audioText": "洋葱安静地待在菜地里。",
+					"fallbackText": "洋葱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了洋葱。",
+					"audioText": "你看到了什么？我看到了洋葱。",
+					"fallbackText": "洋葱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "洋葱轻轻地等着小手来找到它。",
+					"audioText": "洋葱轻轻地等着小手来找到它。",
+					"fallbackText": "洋葱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/onion-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,258 @@
+{
+	"id": "carrot",
+	"category": "farm-food",
+	"tags": [
+		"farm",
+		"vegetable",
+		"garden-bed",
+		"root-vegetables",
+		"food",
+		"carrot",
+		"fruits-and-vegetables"
+	],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less"
+		],
+		"colors": ["orange"],
+		"sceneZones": ["garden", "basket"],
+		"zhMeasureWord": "根",
+		"englishPlural": "carrots"
+	},
+	"visualPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "carrot-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the carrot.",
+			"successPhrase": "You found the carrot.",
+			"fallbackText": "That is the carrot.",
+			"levels": {
+				"L0": {
+					"text": "carrot",
+					"audioText": "carrot",
+					"fallbackText": "carrot",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The carrot grows in the garden.",
+					"audioText": "The carrot grows in the garden.",
+					"fallbackText": "carrot",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "orange carrot",
+					"audioText": "orange carrot",
+					"fallbackText": "carrot",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The carrot sits in the vegetable patch.",
+					"audioText": "The carrot sits in the vegetable patch.",
+					"fallbackText": "carrot",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What is orange? The carrot is orange.",
+					"audioText": "What is orange? The carrot is orange.",
+					"fallbackText": "carrot",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The carrot peeks out of the soft garden bed.",
+					"audioText": "The carrot peeks out of the soft garden bed.",
+					"fallbackText": "carrot",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/carrot-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/carrot-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找胡萝卜。",
+			"successPhrase": "你找到胡萝卜了。",
+			"fallbackText": "这是胡萝卜。",
+			"levels": {
+				"L0": {
+					"text": "胡萝卜",
+					"audioText": "胡萝卜",
+					"fallbackText": "胡萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "胡萝卜长在菜园里。",
+					"audioText": "胡萝卜长在菜园里。",
+					"fallbackText": "胡萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "橙色的胡萝卜",
+					"audioText": "橙色的胡萝卜",
+					"fallbackText": "胡萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "胡萝卜在菜地里。",
+					"audioText": "胡萝卜在菜地里。",
+					"fallbackText": "胡萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么是橙色的？胡萝卜是橙色的。",
+					"audioText": "什么是橙色的？胡萝卜是橙色的。",
+					"fallbackText": "胡萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "胡萝卜从软软的菜地里露出来。",
+					"audioText": "胡萝卜从软软的菜地里露出来。",
+					"fallbackText": "胡萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/carrot-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/carrot.png",
+				"alt": "carrot",
+				"generationPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "carrot",
+					"emoji": "🥕"
+				}
+			},
+			"visualPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-food", "farm", "vegetable", "garden-bed"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/carrot-bright.png",
+				"alt": "carrot bright large",
+				"generationPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "carrot bright large",
+					"emoji": "🥕"
+				}
+			},
+			"visualPrompt": "A friendly carrot for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, orange root and leafy green top, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-food", "farm", "vegetable", "garden-bed"],
+			"size": "large",
+			"style": "bright-large"
+		},
+		{
+			"id": "fruits-and-vegetables-classic",
+			"label": "carrot Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/carrot.png",
+				"alt": "carrot",
+				"generationPrompt": "A friendly carrot for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "carrot",
+					"emoji": "🥕"
+				}
+			},
+			"visualPrompt": "A friendly carrot for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "carrot"],
+			"size": "medium",
+			"style": "fruits-and-vegetables"
+		},
+		{
+			"id": "fruits-and-vegetables-bright-large",
+			"label": "carrot Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/carrot-bright.png",
+				"alt": "carrot bright large",
+				"generationPrompt": "A friendly carrot for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "carrot",
+					"emoji": "🥕"
+				}
+			},
+			"visualPrompt": "A friendly carrot for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "carrot"],
+			"size": "large",
+			"style": "fruits-and-vegetables"
+		}
+	]
+}

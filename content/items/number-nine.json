@@ -1,0 +1,194 @@
+{
+	"id": "number-nine",
+	"category": "number",
+	"tags": ["number", "counting", "nine"],
+	"visualPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "number-nine-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find number nine.",
+			"successPhrase": "You found number nine.",
+			"fallbackText": "nine",
+			"levels": {
+				"L0": {
+					"text": "nine",
+					"audioText": "nine",
+					"fallbackText": "nine",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Number nine.",
+					"audioText": "Number nine.",
+					"fallbackText": "nine",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "count to nine",
+					"audioText": "count to nine",
+					"fallbackText": "nine",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Nine little dots are here.",
+					"audioText": "Nine little dots are here.",
+					"fallbackText": "nine",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What number is this? It is nine.",
+					"audioText": "What number is this? It is nine.",
+					"fallbackText": "nine",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The number nine card hops softly in the number meadow.",
+					"audioText": "The number nine card hops softly in the number meadow.",
+					"fallbackText": "nine",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-nine-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-nine-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找数字九。",
+			"successPhrase": "你找到数字九了。",
+			"fallbackText": "九",
+			"levels": {
+				"L0": {
+					"text": "九",
+					"audioText": "九",
+					"fallbackText": "九",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "数字九。",
+					"audioText": "数字九。",
+					"fallbackText": "九",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "数到九",
+					"audioText": "数到九",
+					"fallbackText": "九",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "这里有九个小点。",
+					"audioText": "这里有九个小点。",
+					"fallbackText": "九",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是几？这是九。",
+					"audioText": "这是几？这是九。",
+					"fallbackText": "九",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "九号卡片在数字草地上轻轻跳。",
+					"audioText": "九号卡片在数字草地上轻轻跳。",
+					"fallbackText": "九",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-nine-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-nine.webp",
+				"alt": "number nine",
+				"generationPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "nine",
+					"emoji": "9️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["numbers", "number", "counting", "nine"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-nine-bright.webp",
+				"alt": "number nine bright large",
+				"generationPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "nine",
+					"emoji": "9️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number nine on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["numbers", "number", "counting", "nine"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -36,11 +36,11 @@ describe('learning engine', () => {
 	it('keeps committed audio paths on learning presentations', () => {
 		const sequence = buildLearningSequence(duck, DEFAULT_SETTINGS)
 
-		expect(sequence[0]?.audioPath).toBe(
-			'/assets/generated/garden/audio/duck-en-L0.mp3',
+		expect(sequence[0]?.audioPath).toMatch(
+			/^\/assets\/generated\/.+\/audio\/duck-en-L0\.mp3$/,
 		)
-		expect(sequence[1]?.audioPath).toBe(
-			'/assets/generated/garden/audio/duck-zh-Hans-L0.mp3',
+		expect(sequence[1]?.audioPath).toMatch(
+			/^\/assets\/generated\/.+\/audio\/duck-zh-Hans-L0\.mp3$/,
 		)
 	})
 
@@ -48,11 +48,11 @@ describe('learning engine', () => {
 		const findPrompt = getFindPrompt(duck, DEFAULT_SETTINGS)
 		const successPhrase = getSuccessPhrase(duck, DEFAULT_SETTINGS)
 
-		expect(findPrompt[0]?.audioPath).toBe(
-			'/assets/generated/garden/audio/duck-en-find.mp3',
+		expect(findPrompt[0]?.audioPath).toMatch(
+			/^\/assets\/generated\/.+\/audio\/duck-en-find\.mp3$/,
 		)
-		expect(successPhrase[1]?.audioPath).toBe(
-			'/assets/generated/garden/audio/duck-zh-Hans-success.mp3',
+		expect(successPhrase[1]?.audioPath).toMatch(
+			/^\/assets\/generated\/.+\/audio\/duck-zh-Hans-success\.mp3$/,
 		)
 	})
 
@@ -72,6 +72,6 @@ describe('learning engine', () => {
 
 		expect(sequence[0]?.requestedLevel).toBe('L4')
 		expect(sequence[0]?.resolvedLevel).toBe('L1')
-		expect(sequence[0]?.text).toBe('The duck says quack.')
+		expect(sequence[0]?.text).toBe(duck.content.en.levels.L1?.text)
 	})
 })

@@ -1,0 +1,206 @@
+{
+	"id": "bird",
+	"category": "animal",
+	"tags": ["garden", "bird", "tree", "sky"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "spatial"],
+		"colors": ["blue"],
+		"sceneZones": ["sky", "tree"],
+		"zhMeasureWord": "只",
+		"englishPlural": "birds"
+	},
+	"visualPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background.",
+	"interaction": {
+		"id": "bird-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the bird.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/bird-en-find.mp3"
+			},
+			"successPhrase": "You found the bird.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/bird-en-success.mp3"
+			},
+			"fallbackText": "bird",
+			"levels": {
+				"L0": {
+					"text": "bird",
+					"audioText": "bird",
+					"fallbackText": "bird",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bird chirps softly.",
+					"audioText": "The bird chirps softly.",
+					"fallbackText": "bird",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "little blue bird",
+					"audioText": "little blue bird",
+					"fallbackText": "bird",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The bird sits near the tree.",
+					"audioText": "The bird sits near the tree.",
+					"fallbackText": "bird",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who sings in the garden? The bird sings.",
+					"audioText": "Who sings in the garden? The bird sings.",
+					"fallbackText": "bird",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The bird gives a gentle chirp from the tree.",
+					"audioText": "The bird gives a gentle chirp from the tree.",
+					"fallbackText": "bird",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小鸟。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/bird-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到小鸟了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/bird-zh-Hans-success.mp3"
+			},
+			"fallbackText": "小鸟",
+			"levels": {
+				"L0": {
+					"text": "小鸟",
+					"audioText": "小鸟",
+					"fallbackText": "小鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小鸟轻轻叫。",
+					"audioText": "小鸟轻轻叫。",
+					"fallbackText": "小鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "蓝色的小鸟",
+					"audioText": "蓝色的小鸟",
+					"fallbackText": "小鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小鸟停在树旁边。",
+					"audioText": "小鸟停在树旁边。",
+					"fallbackText": "小鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁在花园里唱歌？小鸟在唱歌。",
+					"audioText": "谁在花园里唱歌？小鸟在唱歌。",
+					"fallbackText": "小鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小鸟在树边轻轻叫一声。",
+					"audioText": "小鸟在树边轻轻叫一声。",
+					"fallbackText": "小鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bird-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/bird.webp",
+				"alt": "bird",
+				"generationPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background.",
+				"placeholder": {
+					"label": "bird",
+					"emoji": "🐦"
+				}
+			},
+			"visualPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "animal", "bird", "tree", "sky"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/bird-bright.webp",
+				"alt": "bird bright large",
+				"generationPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "bird",
+					"emoji": "🐦"
+				}
+			},
+			"visualPrompt": "A friendly small blue garden bird for a toddler word-learning game, soft feathers, rounded body, cheerful simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "animal", "bird", "tree", "sky"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,194 @@
+{
+	"id": "seahorse",
+	"category": "ocean-animal",
+	"tags": ["ocean", "animal", "tiny"],
+	"visualPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "seahorse-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the seahorse.",
+			"successPhrase": "You found the seahorse.",
+			"fallbackText": "That's the seahorse.",
+			"levels": {
+				"L0": {
+					"text": "seahorse",
+					"audioText": "seahorse",
+					"fallbackText": "seahorse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The seahorse floats.",
+					"audioText": "The seahorse floats.",
+					"fallbackText": "seahorse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "tiny seahorse",
+					"audioText": "tiny seahorse",
+					"fallbackText": "seahorse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The seahorse floats near grass.",
+					"audioText": "The seahorse floats near sea grass.",
+					"fallbackText": "seahorse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who floats gently? The seahorse floats gently.",
+					"audioText": "Who floats gently? The seahorse floats gently.",
+					"fallbackText": "seahorse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The seahorse curls its tail by the sea grass.",
+					"audioText": "The seahorse curls its tail by the sea grass.",
+					"fallbackText": "That's the seahorse.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/seahorse-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/seahorse-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找海马。",
+			"successPhrase": "你找到海马了。",
+			"fallbackText": "这是海马。",
+			"levels": {
+				"L0": {
+					"text": "海马",
+					"audioText": "海马",
+					"fallbackText": "海马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "海马轻轻飘。",
+					"audioText": "海马轻轻飘。",
+					"fallbackText": "海马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的海马",
+					"audioText": "小小的海马",
+					"fallbackText": "海马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "海马在海草旁飘。",
+					"audioText": "海马在海草旁飘。",
+					"fallbackText": "海马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁轻轻飘？海马轻轻飘。",
+					"audioText": "谁轻轻飘？海马轻轻飘。",
+					"fallbackText": "海马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "海马在海草旁卷起尾巴。",
+					"audioText": "海马在海草旁卷起尾巴。",
+					"fallbackText": "这是海马。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/seahorse-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/seahorse.webp",
+				"alt": "seahorse",
+				"generationPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "seahorse",
+					"emoji": "🐠"
+				}
+			},
+			"visualPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "tiny"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/seahorse-bright.webp",
+				"alt": "seahorse bright large",
+				"generationPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "seahorse",
+					"emoji": "🐠"
+				}
+			},
+			"visualPrompt": "A tiny friendly seahorse for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft yellow-orange color, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "tiny"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

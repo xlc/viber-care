@@ -1,0 +1,194 @@
+{
+	"id": "number-three",
+	"category": "number",
+	"tags": ["number", "counting", "three"],
+	"visualPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "number-three-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find number three.",
+			"successPhrase": "You found number three.",
+			"fallbackText": "three",
+			"levels": {
+				"L0": {
+					"text": "three",
+					"audioText": "three",
+					"fallbackText": "three",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Number three.",
+					"audioText": "Number three.",
+					"fallbackText": "three",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "count to three",
+					"audioText": "count to three",
+					"fallbackText": "three",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Three little dots are here.",
+					"audioText": "Three little dots are here.",
+					"fallbackText": "three",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What number is this? It is three.",
+					"audioText": "What number is this? It is three.",
+					"fallbackText": "three",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The number three card hops softly in the number meadow.",
+					"audioText": "The number three card hops softly in the number meadow.",
+					"fallbackText": "three",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-three-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-three-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找数字三。",
+			"successPhrase": "你找到数字三了。",
+			"fallbackText": "三",
+			"levels": {
+				"L0": {
+					"text": "三",
+					"audioText": "三",
+					"fallbackText": "三",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "数字三。",
+					"audioText": "数字三。",
+					"fallbackText": "三",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "数到三",
+					"audioText": "数到三",
+					"fallbackText": "三",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "这里有三个小点。",
+					"audioText": "这里有三个小点。",
+					"fallbackText": "三",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是几？这是三。",
+					"audioText": "这是几？这是三。",
+					"fallbackText": "三",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "三号卡片在数字草地上轻轻跳。",
+					"audioText": "三号卡片在数字草地上轻轻跳。",
+					"fallbackText": "三",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-three-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-three-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-three-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-three.webp",
+				"alt": "number three",
+				"generationPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "three",
+					"emoji": "3️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["numbers", "number", "counting", "three"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-three-bright.webp",
+				"alt": "number three bright large",
+				"generationPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "three",
+					"emoji": "3️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number three on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["numbers", "number", "counting", "three"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

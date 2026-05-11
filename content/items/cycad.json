@@ -1,0 +1,194 @@
+{
+	"id": "cycad",
+	"category": "plant",
+	"tags": ["dinosaur", "plant", "fern", "foliage"],
+	"visualPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background.",
+	"interaction": {
+		"id": "cycad-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the cycad.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/cycad-en-find.mp3"
+			},
+			"successPhrase": "You found the cycad.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/cycad-en-success.mp3"
+			},
+			"fallbackText": "cycad",
+			"levels": {
+				"L0": {
+					"text": "cycad",
+					"audioText": "cycad",
+					"fallbackText": "cycad",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The cycad has green leaves.",
+					"audioText": "The cycad has green leaves.",
+					"fallbackText": "cycad",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "green cycad plant",
+					"audioText": "green cycad plant",
+					"fallbackText": "cycad",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The cycad grows by the ferns.",
+					"audioText": "The cycad grows by the ferns.",
+					"fallbackText": "cycad",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What plant has wide leaves? The cycad has wide leaves.",
+					"audioText": "What plant has wide leaves? The cycad has wide leaves.",
+					"fallbackText": "cycad",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The cycad gently sways in the dinosaur valley.",
+					"audioText": "The cycad gently sways in the dinosaur valley.",
+					"fallbackText": "cycad",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找苏铁。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到苏铁了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-success.mp3"
+			},
+			"fallbackText": "苏铁",
+			"levels": {
+				"L0": {
+					"text": "苏铁",
+					"audioText": "苏铁",
+					"fallbackText": "苏铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "苏铁有绿色叶子。",
+					"audioText": "苏铁有绿色叶子。",
+					"fallbackText": "苏铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "绿色的苏铁",
+					"audioText": "绿色的苏铁",
+					"fallbackText": "苏铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "苏铁长在蕨草旁边。",
+					"audioText": "苏铁长在蕨草旁边。",
+					"fallbackText": "苏铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么植物有宽叶子？苏铁有宽叶子。",
+					"audioText": "什么植物有宽叶子？苏铁有宽叶子。",
+					"fallbackText": "苏铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "苏铁在恐龙山谷里轻轻摇。",
+					"audioText": "苏铁在恐龙山谷里轻轻摇。",
+					"fallbackText": "苏铁",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/cycad-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/cycad.webp",
+				"alt": "cycad",
+				"generationPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background.",
+				"placeholder": {
+					"label": "cycad",
+					"emoji": "🌿"
+				}
+			},
+			"visualPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "plant", "dinosaur", "fern", "foliage"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/cycad-bright.webp",
+				"alt": "cycad bright large",
+				"generationPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "cycad",
+					"emoji": "🌿"
+				}
+			},
+			"visualPrompt": "A friendly green cycad plant for a toddler dinosaur word-learning game, broad soft leaves, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "plant", "dinosaur", "fern", "foliage"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

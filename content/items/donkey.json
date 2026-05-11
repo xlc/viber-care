@@ -1,0 +1,194 @@
+{
+	"id": "donkey",
+	"category": "animal",
+	"tags": ["farm", "animal", "pasture", "donkey"],
+	"visualPrompt": "A friendly gray donkey for a toddler farm word-learning game, long soft ears, happy gentle face, rounded body, transparent background.",
+	"interaction": {
+		"id": "donkey-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the donkey.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/donkey-en-find.mp3"
+			},
+			"successPhrase": "You found the donkey.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/donkey-en-success.mp3"
+			},
+			"fallbackText": "donkey",
+			"levels": {
+				"L0": {
+					"text": "donkey",
+					"audioText": "donkey",
+					"fallbackText": "donkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The donkey smiles.",
+					"audioText": "The donkey smiles.",
+					"fallbackText": "donkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "gentle gray donkey",
+					"audioText": "gentle gray donkey",
+					"fallbackText": "donkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The donkey stands in the pasture.",
+					"audioText": "The donkey stands in the pasture.",
+					"fallbackText": "donkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has long ears? The donkey has long ears.",
+					"audioText": "Who has long ears? The donkey has long ears.",
+					"fallbackText": "donkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The donkey stands calmly in the sunny pasture.",
+					"audioText": "The donkey stands calmly in the sunny pasture.",
+					"fallbackText": "donkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小驴。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/donkey-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到小驴了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/donkey-zh-Hans-success.mp3"
+			},
+			"fallbackText": "驴",
+			"levels": {
+				"L0": {
+					"text": "驴",
+					"audioText": "驴",
+					"fallbackText": "驴",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小驴笑一笑。",
+					"audioText": "小驴笑一笑。",
+					"fallbackText": "驴",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "温和的灰色小驴",
+					"audioText": "温和的灰色小驴",
+					"fallbackText": "驴",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小驴站在牧场里。",
+					"audioText": "小驴站在牧场里。",
+					"fallbackText": "驴",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有长耳朵？小驴有长耳朵。",
+					"audioText": "谁有长耳朵？小驴有长耳朵。",
+					"fallbackText": "驴",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小驴安静地站在阳光牧场里。",
+					"audioText": "小驴安静地站在阳光牧场里。",
+					"fallbackText": "驴",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/donkey-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/donkey.png",
+				"alt": "donkey",
+				"generationPrompt": "A friendly gray donkey for a toddler farm word-learning game, long soft ears, happy gentle face, rounded body, transparent background.",
+				"placeholder": {
+					"label": "donkey",
+					"emoji": "🐴"
+				}
+			},
+			"visualPrompt": "A friendly gray donkey for a toddler farm word-learning game, long soft ears, happy gentle face, rounded body, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "animal", "farm", "pasture", "donkey"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/donkey-bright.png",
+				"alt": "donkey bright large",
+				"generationPrompt": "A friendly gray donkey for a toddler farm word-learning game, long soft ears, happy gentle face, rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "donkey",
+					"emoji": "🐴"
+				}
+			},
+			"visualPrompt": "A friendly gray donkey for a toddler farm word-learning game, long soft ears, happy gentle face, rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "animal", "farm", "pasture", "donkey"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

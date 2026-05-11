@@ -1,0 +1,194 @@
+{
+	"id": "horse",
+	"category": "farm-animal",
+	"tags": ["farm", "animal", "pasture"],
+	"visualPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "horse-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the horse.",
+			"successPhrase": "You found the horse.",
+			"fallbackText": "That is the horse.",
+			"levels": {
+				"L0": {
+					"text": "horse",
+					"audioText": "horse",
+					"fallbackText": "horse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The horse walks softly.",
+					"audioText": "The horse walks softly.",
+					"fallbackText": "horse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "brown little horse",
+					"audioText": "brown little horse",
+					"fallbackText": "horse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The horse walks across the meadow.",
+					"audioText": "The horse walks across the meadow.",
+					"fallbackText": "horse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has a swishy tail? The horse has a swishy tail.",
+					"audioText": "Who has a swishy tail? The horse has a swishy tail.",
+					"fallbackText": "horse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The horse looks at the sunny farm.",
+					"audioText": "The horse looks at the sunny farm.",
+					"fallbackText": "horse",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/horse-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/horse-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小马。",
+			"successPhrase": "你找到小马了。",
+			"fallbackText": "这是小马。",
+			"levels": {
+				"L0": {
+					"text": "小马",
+					"audioText": "小马",
+					"fallbackText": "小马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小马轻轻走。",
+					"audioText": "小马轻轻走。",
+					"fallbackText": "小马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "棕色的小马",
+					"audioText": "棕色的小马",
+					"fallbackText": "小马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小马走过草地。",
+					"audioText": "小马走过草地。",
+					"fallbackText": "小马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有摇摇的尾巴？小马有摇摇的尾巴。",
+					"audioText": "谁有摇摇的尾巴？小马有摇摇的尾巴。",
+					"fallbackText": "小马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小马看着阳光下的农场。",
+					"audioText": "小马看着阳光下的农场。",
+					"fallbackText": "小马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/horse-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/horse.png",
+				"alt": "horse",
+				"generationPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "horse",
+					"emoji": "🐴"
+				}
+			},
+			"visualPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "pasture"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/horse-bright.png",
+				"alt": "horse bright large",
+				"generationPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "horse bright large",
+					"emoji": "🐴"
+				}
+			},
+			"visualPrompt": "A friendly small horse for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "pasture"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

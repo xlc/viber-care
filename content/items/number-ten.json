@@ -1,0 +1,194 @@
+{
+	"id": "number-ten",
+	"category": "number",
+	"tags": ["number", "counting", "ten"],
+	"visualPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "number-ten-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find number ten.",
+			"successPhrase": "You found number ten.",
+			"fallbackText": "ten",
+			"levels": {
+				"L0": {
+					"text": "ten",
+					"audioText": "ten",
+					"fallbackText": "ten",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Number ten.",
+					"audioText": "Number ten.",
+					"fallbackText": "ten",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "count to ten",
+					"audioText": "count to ten",
+					"fallbackText": "ten",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Ten little dots are here.",
+					"audioText": "Ten little dots are here.",
+					"fallbackText": "ten",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What number is this? It is ten.",
+					"audioText": "What number is this? It is ten.",
+					"fallbackText": "ten",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The number ten card hops softly in the number meadow.",
+					"audioText": "The number ten card hops softly in the number meadow.",
+					"fallbackText": "ten",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-ten-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-ten-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找数字十。",
+			"successPhrase": "你找到数字十了。",
+			"fallbackText": "十",
+			"levels": {
+				"L0": {
+					"text": "十",
+					"audioText": "十",
+					"fallbackText": "十",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "数字十。",
+					"audioText": "数字十。",
+					"fallbackText": "十",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "数到十",
+					"audioText": "数到十",
+					"fallbackText": "十",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "这里有十个小点。",
+					"audioText": "这里有十个小点。",
+					"fallbackText": "十",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是几？这是十。",
+					"audioText": "这是几？这是十。",
+					"fallbackText": "十",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "十号卡片在数字草地上轻轻跳。",
+					"audioText": "十号卡片在数字草地上轻轻跳。",
+					"fallbackText": "十",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-ten-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-ten.webp",
+				"alt": "number ten",
+				"generationPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "ten",
+					"emoji": "🔟"
+				}
+			},
+			"visualPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["numbers", "number", "counting", "ten"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-ten-bright.webp",
+				"alt": "number ten bright large",
+				"generationPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "ten",
+					"emoji": "🔟"
+				}
+			},
+			"visualPrompt": "A large friendly number ten on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["numbers", "number", "counting", "ten"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

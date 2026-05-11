@@ -1,0 +1,194 @@
+{
+	"id": "potato",
+	"category": "root-vegetables",
+	"tags": ["root-vegetables", "food", "potato"],
+	"visualPrompt": "A friendly potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/potato.png",
+				"alt": "potato",
+				"generationPrompt": "A friendly potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "potato",
+					"emoji": "🥔"
+				}
+			},
+			"visualPrompt": "A friendly potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "potato"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/potato-bright.png",
+				"alt": "potato bright large",
+				"generationPrompt": "A friendly potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "potato",
+					"emoji": "🥔"
+				}
+			},
+			"visualPrompt": "A friendly potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "potato"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "potato-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the potato.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/potato-en-find.mp3"
+			},
+			"successPhrase": "You found the potato.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/potato-en-success.mp3"
+			},
+			"fallbackText": "That is the potato.",
+			"levels": {
+				"L0": {
+					"text": "potato",
+					"audioText": "potato",
+					"fallbackText": "potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The potato is in the garden bed.",
+					"audioText": "The potato is in the garden bed.",
+					"fallbackText": "potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round brown potato",
+					"audioText": "round brown potato",
+					"fallbackText": "potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The potato waits in the garden bed.",
+					"audioText": "The potato waits in the garden bed.",
+					"fallbackText": "potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the potato.",
+					"audioText": "What do you see? I see the potato.",
+					"fallbackText": "potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The potato rests quietly where little hands can find it.",
+					"audioText": "The potato rests quietly where little hands can find it.",
+					"fallbackText": "potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找土豆。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/potato-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到土豆了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/potato-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是土豆。",
+			"levels": {
+				"L0": {
+					"text": "土豆",
+					"audioText": "土豆",
+					"fallbackText": "土豆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "土豆在菜地里。",
+					"audioText": "土豆在菜地里。",
+					"fallbackText": "土豆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "圆圆的棕色土豆",
+					"audioText": "圆圆的棕色土豆",
+					"fallbackText": "土豆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "土豆安静地待在菜地里。",
+					"audioText": "土豆安静地待在菜地里。",
+					"fallbackText": "土豆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了土豆。",
+					"audioText": "你看到了什么？我看到了土豆。",
+					"fallbackText": "土豆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "土豆轻轻地等着小手来找到它。",
+					"audioText": "土豆轻轻地等着小手来找到它。",
+					"fallbackText": "土豆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/potato-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

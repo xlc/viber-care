@@ -1,0 +1,194 @@
+{
+	"id": "octopus",
+	"category": "ocean-animal",
+	"tags": ["ocean", "animal", "arms"],
+	"visualPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "octopus-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the octopus.",
+			"successPhrase": "You found the octopus.",
+			"fallbackText": "That's the octopus.",
+			"levels": {
+				"L0": {
+					"text": "octopus",
+					"audioText": "octopus",
+					"fallbackText": "octopus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The octopus waves.",
+					"audioText": "The octopus waves.",
+					"fallbackText": "octopus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "soft octopus",
+					"audioText": "soft octopus",
+					"fallbackText": "octopus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The octopus waves its arms.",
+					"audioText": "The octopus waves its arms.",
+					"fallbackText": "octopus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has many arms? The octopus has many arms.",
+					"audioText": "Who has many arms? The octopus has many arms.",
+					"fallbackText": "octopus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The octopus waves eight gentle arms.",
+					"audioText": "The octopus waves eight gentle arms.",
+					"fallbackText": "That's the octopus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/octopus-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/octopus-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找章鱼。",
+			"successPhrase": "你找到章鱼了。",
+			"fallbackText": "这是章鱼。",
+			"levels": {
+				"L0": {
+					"text": "章鱼",
+					"audioText": "章鱼",
+					"fallbackText": "章鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "章鱼挥挥手。",
+					"audioText": "章鱼挥挥手。",
+					"fallbackText": "章鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "软软的章鱼",
+					"audioText": "软软的章鱼",
+					"fallbackText": "章鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "章鱼挥动小手。",
+					"audioText": "章鱼挥动小手。",
+					"fallbackText": "章鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有很多手？章鱼有很多手。",
+					"audioText": "谁有很多手？章鱼有很多手。",
+					"fallbackText": "章鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "章鱼挥挥八只柔软的手臂。",
+					"audioText": "章鱼挥挥八只柔软的手臂。",
+					"fallbackText": "这是章鱼。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/octopus-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/octopus.webp",
+				"alt": "octopus",
+				"generationPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "octopus",
+					"emoji": "🐙"
+				}
+			},
+			"visualPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "arms"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/octopus-bright.webp",
+				"alt": "octopus bright large",
+				"generationPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "octopus",
+					"emoji": "🐙"
+				}
+			},
+			"visualPrompt": "A friendly octopus for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft purple color, happy calm expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "arms"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

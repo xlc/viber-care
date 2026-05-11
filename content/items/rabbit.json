@@ -1,0 +1,206 @@
+{
+	"id": "rabbit",
+	"category": "animal",
+	"tags": ["farm", "animal", "pasture", "rabbit"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "spatial"],
+		"colors": ["white"],
+		"sceneZones": ["yard", "garden"],
+		"zhMeasureWord": "只",
+		"englishPlural": "rabbits"
+	},
+	"visualPrompt": "A friendly rabbit for a toddler farm word-learning game, soft ears, round body, happy gentle face, transparent background.",
+	"interaction": {
+		"id": "rabbit-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the rabbit.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/rabbit-en-find.mp3"
+			},
+			"successPhrase": "You found the rabbit.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/rabbit-en-success.mp3"
+			},
+			"fallbackText": "rabbit",
+			"levels": {
+				"L0": {
+					"text": "rabbit",
+					"audioText": "rabbit",
+					"fallbackText": "rabbit",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The rabbit hops.",
+					"audioText": "The rabbit hops.",
+					"fallbackText": "rabbit",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "little farm rabbit",
+					"audioText": "little farm rabbit",
+					"fallbackText": "rabbit",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The rabbit sits near the garden bed.",
+					"audioText": "The rabbit sits near the garden bed.",
+					"fallbackText": "rabbit",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has soft ears? The rabbit has soft ears.",
+					"audioText": "Who has soft ears? The rabbit has soft ears.",
+					"fallbackText": "rabbit",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The rabbit gives a gentle hop by the vegetables.",
+					"audioText": "The rabbit gives a gentle hop by the vegetables.",
+					"fallbackText": "rabbit",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找兔子。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/rabbit-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到兔子了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/rabbit-zh-Hans-success.mp3"
+			},
+			"fallbackText": "兔子",
+			"levels": {
+				"L0": {
+					"text": "兔子",
+					"audioText": "兔子",
+					"fallbackText": "兔子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "兔子跳一跳。",
+					"audioText": "兔子跳一跳。",
+					"fallbackText": "兔子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "农场小兔子",
+					"audioText": "农场小兔子",
+					"fallbackText": "兔子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "兔子坐在菜地旁边。",
+					"audioText": "兔子坐在菜地旁边。",
+					"fallbackText": "兔子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有软软的耳朵？兔子有软软的耳朵。",
+					"audioText": "谁有软软的耳朵？兔子有软软的耳朵。",
+					"fallbackText": "兔子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "兔子在蔬菜旁边轻轻跳一下。",
+					"audioText": "兔子在蔬菜旁边轻轻跳一下。",
+					"fallbackText": "兔子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/rabbit-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/rabbit.png",
+				"alt": "rabbit",
+				"generationPrompt": "A friendly rabbit for a toddler farm word-learning game, soft ears, round body, happy gentle face, transparent background.",
+				"placeholder": {
+					"label": "rabbit",
+					"emoji": "🐰"
+				}
+			},
+			"visualPrompt": "A friendly rabbit for a toddler farm word-learning game, soft ears, round body, happy gentle face, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "animal", "farm", "pasture", "rabbit"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/rabbit-bright.png",
+				"alt": "rabbit bright large",
+				"generationPrompt": "A friendly rabbit for a toddler farm word-learning game, soft ears, round body, happy gentle face, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "rabbit",
+					"emoji": "🐰"
+				}
+			},
+			"visualPrompt": "A friendly rabbit for a toddler farm word-learning game, soft ears, round body, happy gentle face, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "animal", "farm", "pasture", "rabbit"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

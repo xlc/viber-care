@@ -1,0 +1,252 @@
+{
+	"id": "banana",
+	"category": "fruits",
+	"tags": ["fruits", "food", "banana", "fruit", "yellow", "snack", "garden"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less"
+		],
+		"colors": ["yellow"],
+		"sceneZones": ["basket", "stand"],
+		"zhMeasureWord": "根",
+		"englishPlural": "bananas"
+	},
+	"visualPrompt": "A friendly banana for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/banana.webp",
+				"alt": "banana",
+				"generationPrompt": "A friendly banana for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "banana",
+					"emoji": "🍌"
+				}
+			},
+			"visualPrompt": "A friendly banana for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "banana"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/banana-bright.webp",
+				"alt": "banana bright large",
+				"generationPrompt": "A friendly banana for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "banana",
+					"emoji": "🍌"
+				}
+			},
+			"visualPrompt": "A friendly banana for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "banana"],
+			"size": "large",
+			"style": "bright-large"
+		},
+		{
+			"id": "garden-classic",
+			"label": "banana Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/banana.webp",
+				"alt": "banana",
+				"generationPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background.",
+				"placeholder": {
+					"label": "banana",
+					"emoji": "🍌"
+				}
+			},
+			"visualPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "food", "fruit", "yellow", "snack"],
+			"color": "yellow",
+			"size": "medium",
+			"style": "garden"
+		},
+		{
+			"id": "garden-bright-large",
+			"label": "banana Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/banana-bright.webp",
+				"alt": "banana bright large",
+				"generationPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "banana",
+					"emoji": "🍌"
+				}
+			},
+			"visualPrompt": "A sunny yellow banana for a toddler word-learning garden game, soft rounded shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "food", "fruit", "yellow", "snack"],
+			"color": "yellow",
+			"size": "large",
+			"style": "garden"
+		}
+	],
+	"interaction": {
+		"id": "banana-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the banana.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/banana-en-find.mp3"
+			},
+			"successPhrase": "You found the banana.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/banana-en-success.mp3"
+			},
+			"fallbackText": "That is the banana.",
+			"levels": {
+				"L0": {
+					"text": "banana",
+					"audioText": "banana",
+					"fallbackText": "banana",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The banana is in the fruit basket.",
+					"audioText": "The banana is in the fruit basket.",
+					"fallbackText": "banana",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "curvy yellow banana",
+					"audioText": "curvy yellow banana",
+					"fallbackText": "banana",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The banana waits in the fruit basket.",
+					"audioText": "The banana waits in the fruit basket.",
+					"fallbackText": "banana",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the banana.",
+					"audioText": "What do you see? I see the banana.",
+					"fallbackText": "banana",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The banana rests quietly where little hands can find it.",
+					"audioText": "The banana rests quietly where little hands can find it.",
+					"fallbackText": "banana",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找香蕉。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/banana-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到香蕉了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/banana-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是香蕉。",
+			"levels": {
+				"L0": {
+					"text": "香蕉",
+					"audioText": "香蕉",
+					"fallbackText": "香蕉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "香蕉在水果篮里。",
+					"audioText": "香蕉在水果篮里。",
+					"fallbackText": "香蕉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "弯弯的黄香蕉",
+					"audioText": "弯弯的黄香蕉",
+					"fallbackText": "香蕉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "香蕉安静地待在水果篮里。",
+					"audioText": "香蕉安静地待在水果篮里。",
+					"fallbackText": "香蕉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了香蕉。",
+					"audioText": "你看到了什么？我看到了香蕉。",
+					"fallbackText": "香蕉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "香蕉轻轻地等着小手来找到它。",
+					"audioText": "香蕉轻轻地等着小手来找到它。",
+					"fallbackText": "香蕉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/banana-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

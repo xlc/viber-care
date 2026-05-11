@@ -27,7 +27,9 @@ bun run dev
 
 The app imports committed source content through `src/content/catalog.ts`. There
 is no generated runtime JSON catalog and no content generation package script.
-Raw content stays in committed `content/packs/*.json` files.
+Reusable item content stays in committed `content/items/*.json` files. Pack,
+set, scene, and placement content stays in committed `content/packs/*.json`
+files.
 
 ## Content Packs
 
@@ -37,16 +39,16 @@ To add a content pack:
 2. Follow the Zod schemas in `src/content/schema.ts`.
 3. Include at least two scenes per pack, each with a calm background asset.
 4. Define scene `regions` as percentage rectangles tied to the background image, such as `sky`, `water`, `grass`, `road`, or `card-field`.
-5. Add scene spawn candidates with `regionTags`, anchor positions, jitter, scale ranges, and per-scene visible object limits.
-6. Include at least two static visual variants for every object. Existing object art can be the `classic` variant; add a second real static variant for size, color, or style variety.
-7. Add optional `subPacks` when a pack should expose smaller sets, with each set referencing one or more scene ids.
+5. Add scene spawn candidates with `itemId`, `regionTags`, anchor positions, jitter, scale ranges, and per-scene visible object limits.
+6. Add or reuse global item files under `content/items/`. Each item should include bilingual learning content, interaction metadata, and at least two static visual variants with color, size, style, or tag metadata when applicable.
+7. Add `sets` when a pack should expose smaller groups, with each set referencing item ids and one or more scene ids.
 8. Include English and Simplified Chinese L0-L5 content for production-quality packs.
 9. Run `bun run validate:content`.
 10. Run `bun run test`.
 11. Run `bun run test:e2e`.
 12. Run `bun run check:secrets` and `bun run build`.
 
-The engine does not need code changes for new objects, variants, scenes, packs, content sets, learning levels, generated image paths, or generated audio target paths.
+The engine does not need code changes for new items, variants, scenes, packs, content sets, learning levels, generated image paths, or generated audio target paths.
 
 ## Assets
 
@@ -128,8 +130,6 @@ bun run deploy:pages
 - Question maps to L4.
 - Little scene maps to L5.
 
-Every committed content pack includes English and Simplified Chinese L0-L5 text
-for each object. The parent UI uses word-detail names instead of raw level codes.
-L0-L1 keep bundled audio targets where production audio exists; higher levels
-use the runtime's soft speech synthesis until matching static audio clips are
-added.
+Every committed item includes English and Simplified Chinese L0-L5 text and
+static audio references. The parent UI uses word-detail names instead of raw
+level codes.

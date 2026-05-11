@@ -1,0 +1,194 @@
+{
+	"id": "letter-b",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "b"],
+	"visualPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-b-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter B.",
+			"successPhrase": "You found letter B.",
+			"fallbackText": "B",
+			"levels": {
+				"L0": {
+					"text": "B",
+					"audioText": "B",
+					"fallbackText": "B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "B is for ball.",
+					"audioText": "B is for ball.",
+					"fallbackText": "B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase B",
+					"audioText": "uppercase B",
+					"fallbackText": "B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "B starts the word ball.",
+					"audioText": "B starts the word ball.",
+					"fallbackText": "B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is B.",
+					"audioText": "What letter is this? It is B.",
+					"fallbackText": "B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "B sits on the card and says ball.",
+					"audioText": "B sits on the card and says ball.",
+					"fallbackText": "B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-b-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-b-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 B。",
+			"successPhrase": "你找到字母 B 了。",
+			"fallbackText": "字母 B",
+			"levels": {
+				"L0": {
+					"text": "字母 B",
+					"audioText": "字母 B",
+					"fallbackText": "字母 B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "B 代表球。",
+					"audioText": "B 代表球。",
+					"fallbackText": "字母 B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 B",
+					"audioText": "大写字母 B",
+					"fallbackText": "字母 B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "B 是球的开头。",
+					"audioText": "B 是球的开头。",
+					"fallbackText": "字母 B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 B。",
+					"audioText": "这是什么字母？这是 B。",
+					"fallbackText": "字母 B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "B 在卡片上，轻轻说球。",
+					"audioText": "B 在卡片上，轻轻说球。",
+					"fallbackText": "字母 B",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-b-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-b.webp",
+				"alt": "letter B",
+				"generationPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "B",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "b"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-b-bright.webp",
+				"alt": "letter B bright large",
+				"generationPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "B",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase B letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "b"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

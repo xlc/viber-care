@@ -49,6 +49,11 @@ export const ObjectVariantSchema = z.object({
 	image: AssetReferenceSchema,
 	visualPrompt: z.string().min(1),
 	scaleMultiplier: z.number().min(0.6).max(1.6).default(1),
+	color: z.string().min(1).optional(),
+	colors: z.array(z.string().min(1)).min(1).optional(),
+	size: z.enum(['small', 'medium', 'large']).optional(),
+	style: z.string().min(1).optional(),
+	tags: z.array(z.string().min(1)).min(1).optional(),
 })
 
 export const MathSkillSchema = z.enum([
@@ -131,7 +136,7 @@ export const SceneRegionSchema = z.object({
 })
 
 export const SceneObjectPlacementSchema = z.object({
-	objectId: z.string().min(1),
+	itemId: z.string().min(1),
 	x: z.number().min(0).max(100),
 	y: z.number().min(0).max(100),
 	scale: z.number().min(0.4).max(2),
@@ -173,28 +178,33 @@ export const SceneSchema = z.object({
 		.optional(),
 })
 
-export const ContentSubPackSchema = z.object({
+export const ContentSetSchema = z.object({
 	id: z.string().min(1),
 	title: languageMapSchema(z.string().min(1)),
+	itemIds: z.array(z.string().min(1)).min(1),
 	sceneIds: z.array(z.string().min(1)).min(1),
 })
 
-export const ContentPackSchema = z.object({
+export const SourceContentPackSchema = z.object({
 	id: z.string().min(1),
 	version: z.string().min(1),
 	title: languageMapSchema(z.string().min(1)),
 	languages: z.array(LanguageCodeSchema).min(1),
 	defaultSceneId: z.string().min(1),
-	subPacks: z.array(ContentSubPackSchema).optional(),
+	sets: z.array(ContentSetSchema).min(1),
 	scenes: z.array(SceneSchema).min(1),
+})
+
+export const ContentPackSchema = SourceContentPackSchema.extend({
 	objects: z.array(ObjectConceptSchema).min(1),
 })
 
 export const RuntimeCatalogSchema = z.object({
-	schemaVersion: z.literal('1'),
+	schemaVersion: z.literal('2'),
 	supportedLanguages: z.array(LanguageCodeSchema).min(1),
 	learningLevels: z.array(LearningLevelSchema).length(6),
 	defaultLanguageOrder: z.array(LanguageCodeSchema).min(1),
+	items: z.array(ObjectConceptSchema).min(1),
 	packs: z.array(ContentPackSchema).min(1),
 })
 
@@ -209,6 +219,7 @@ export type ObjectConcept = z.infer<typeof ObjectConceptSchema>
 export type SceneRegion = z.infer<typeof SceneRegionSchema>
 export type SceneRegionRect = z.infer<typeof SceneRegionRectSchema>
 export type Scene = z.infer<typeof SceneSchema>
-export type ContentSubPack = z.infer<typeof ContentSubPackSchema>
+export type ContentSet = z.infer<typeof ContentSetSchema>
+export type SourceContentPack = z.infer<typeof SourceContentPackSchema>
 export type ContentPack = z.infer<typeof ContentPackSchema>
 export type RuntimeCatalog = z.infer<typeof RuntimeCatalogSchema>

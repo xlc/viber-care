@@ -1,0 +1,194 @@
+{
+	"id": "number-eight",
+	"category": "number",
+	"tags": ["number", "counting", "eight"],
+	"visualPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "number-eight-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find number eight.",
+			"successPhrase": "You found number eight.",
+			"fallbackText": "eight",
+			"levels": {
+				"L0": {
+					"text": "eight",
+					"audioText": "eight",
+					"fallbackText": "eight",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Number eight.",
+					"audioText": "Number eight.",
+					"fallbackText": "eight",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "count to eight",
+					"audioText": "count to eight",
+					"fallbackText": "eight",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Eight little dots are here.",
+					"audioText": "Eight little dots are here.",
+					"fallbackText": "eight",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What number is this? It is eight.",
+					"audioText": "What number is this? It is eight.",
+					"fallbackText": "eight",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The number eight card hops softly in the number meadow.",
+					"audioText": "The number eight card hops softly in the number meadow.",
+					"fallbackText": "eight",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-eight-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-eight-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找数字八。",
+			"successPhrase": "你找到数字八了。",
+			"fallbackText": "八",
+			"levels": {
+				"L0": {
+					"text": "八",
+					"audioText": "八",
+					"fallbackText": "八",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "数字八。",
+					"audioText": "数字八。",
+					"fallbackText": "八",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "数到八",
+					"audioText": "数到八",
+					"fallbackText": "八",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "这里有八个小点。",
+					"audioText": "这里有八个小点。",
+					"fallbackText": "八",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是几？这是八。",
+					"audioText": "这是几？这是八。",
+					"fallbackText": "八",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "八号卡片在数字草地上轻轻跳。",
+					"audioText": "八号卡片在数字草地上轻轻跳。",
+					"fallbackText": "八",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-eight-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-eight.webp",
+				"alt": "number eight",
+				"generationPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "eight",
+					"emoji": "8️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["numbers", "number", "counting", "eight"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-eight-bright.webp",
+				"alt": "number eight bright large",
+				"generationPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "eight",
+					"emoji": "8️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number eight on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["numbers", "number", "counting", "eight"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

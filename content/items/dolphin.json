@@ -1,0 +1,194 @@
+{
+	"id": "dolphin",
+	"category": "ocean-animal",
+	"tags": ["ocean", "animal", "jumper"],
+	"visualPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "dolphin-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the dolphin.",
+			"successPhrase": "You found the dolphin.",
+			"fallbackText": "That's the dolphin.",
+			"levels": {
+				"L0": {
+					"text": "dolphin",
+					"audioText": "dolphin",
+					"fallbackText": "dolphin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The dolphin jumps.",
+					"audioText": "The dolphin jumps.",
+					"fallbackText": "dolphin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "happy dolphin",
+					"audioText": "happy dolphin",
+					"fallbackText": "dolphin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The dolphin jumps over a wave.",
+					"audioText": "The dolphin jumps over a wave.",
+					"fallbackText": "dolphin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who jumps high? The dolphin jumps high.",
+					"audioText": "Who jumps high? The dolphin jumps high.",
+					"fallbackText": "dolphin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The dolphin jumps up and splashes softly.",
+					"audioText": "The dolphin jumps up and splashes softly.",
+					"fallbackText": "That's the dolphin.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/dolphin-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/dolphin-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找海豚。",
+			"successPhrase": "你找到海豚了。",
+			"fallbackText": "这是海豚。",
+			"levels": {
+				"L0": {
+					"text": "海豚",
+					"audioText": "海豚",
+					"fallbackText": "海豚",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "海豚跳一跳。",
+					"audioText": "海豚跳一跳。",
+					"fallbackText": "海豚",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "快乐的海豚",
+					"audioText": "快乐的海豚",
+					"fallbackText": "海豚",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "海豚跳过小浪花。",
+					"audioText": "海豚跳过小浪花。",
+					"fallbackText": "海豚",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁跳得高？海豚跳得高。",
+					"audioText": "谁跳得高？海豚跳得高。",
+					"fallbackText": "海豚",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "海豚跳起来，轻轻溅起水花。",
+					"audioText": "海豚跳起来，轻轻溅起水花。",
+					"fallbackText": "这是海豚。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/dolphin-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/dolphin.webp",
+				"alt": "dolphin",
+				"generationPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "dolphin",
+					"emoji": "🐬"
+				}
+			},
+			"visualPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "jumper"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/dolphin-bright.webp",
+				"alt": "dolphin bright large",
+				"generationPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "dolphin",
+					"emoji": "🐬"
+				}
+			},
+			"visualPrompt": "A happy dolphin for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue-gray color, friendly expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "jumper"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,194 @@
+{
+	"id": "chicken",
+	"category": "farm-animal",
+	"tags": ["farm", "animal", "coop"],
+	"visualPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "chicken-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the chicken.",
+			"successPhrase": "You found the chicken.",
+			"fallbackText": "That is the chicken.",
+			"levels": {
+				"L0": {
+					"text": "chicken",
+					"audioText": "chicken",
+					"fallbackText": "chicken",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The chicken says cluck.",
+					"audioText": "The chicken says cluck.",
+					"fallbackText": "chicken",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "small yellow chicken",
+					"audioText": "small yellow chicken",
+					"fallbackText": "chicken",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The chicken pecks by the coop.",
+					"audioText": "The chicken pecks by the coop.",
+					"fallbackText": "chicken",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who says cluck? The chicken says cluck.",
+					"audioText": "Who says cluck? The chicken says cluck.",
+					"fallbackText": "chicken",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The chicken hops near the sunny coop.",
+					"audioText": "The chicken hops near the sunny coop.",
+					"fallbackText": "chicken",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/chicken-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/chicken-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小鸡。",
+			"successPhrase": "你找到小鸡了。",
+			"fallbackText": "这是小鸡。",
+			"levels": {
+				"L0": {
+					"text": "小鸡",
+					"audioText": "小鸡",
+					"fallbackText": "小鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小鸡咯咯叫。",
+					"audioText": "小鸡咯咯叫。",
+					"fallbackText": "小鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "黄色的小鸡",
+					"audioText": "黄色的小鸡",
+					"fallbackText": "小鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小鸡在鸡舍旁啄一啄。",
+					"audioText": "小鸡在鸡舍旁啄一啄。",
+					"fallbackText": "小鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁咯咯叫？小鸡咯咯叫。",
+					"audioText": "谁咯咯叫？小鸡咯咯叫。",
+					"fallbackText": "小鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小鸡在阳光下的鸡舍旁跳一跳。",
+					"audioText": "小鸡在阳光下的鸡舍旁跳一跳。",
+					"fallbackText": "小鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/chicken-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/chicken.png",
+				"alt": "chicken",
+				"generationPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "chicken",
+					"emoji": "🐔"
+				}
+			},
+			"visualPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "coop"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/chicken-bright.png",
+				"alt": "chicken bright large",
+				"generationPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "chicken bright large",
+					"emoji": "🐔"
+				}
+			},
+			"visualPrompt": "A friendly chicken for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "coop"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

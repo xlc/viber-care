@@ -1,0 +1,194 @@
+{
+	"id": "letter-j",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "j"],
+	"visualPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-j-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter J.",
+			"successPhrase": "You found letter J.",
+			"fallbackText": "J",
+			"levels": {
+				"L0": {
+					"text": "J",
+					"audioText": "J",
+					"fallbackText": "J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "J is for jam.",
+					"audioText": "J is for jam.",
+					"fallbackText": "J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase J",
+					"audioText": "uppercase J",
+					"fallbackText": "J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "J starts the word jam.",
+					"audioText": "J starts the word jam.",
+					"fallbackText": "J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is J.",
+					"audioText": "What letter is this? It is J.",
+					"fallbackText": "J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "J sits on the card and says jam.",
+					"audioText": "J sits on the card and says jam.",
+					"fallbackText": "J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-j-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-j-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 J。",
+			"successPhrase": "你找到字母 J 了。",
+			"fallbackText": "字母 J",
+			"levels": {
+				"L0": {
+					"text": "字母 J",
+					"audioText": "字母 J",
+					"fallbackText": "字母 J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "J 代表果酱。",
+					"audioText": "J 代表果酱。",
+					"fallbackText": "字母 J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 J",
+					"audioText": "大写字母 J",
+					"fallbackText": "字母 J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "J 是果酱的开头。",
+					"audioText": "J 是果酱的开头。",
+					"fallbackText": "字母 J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 J。",
+					"audioText": "这是什么字母？这是 J。",
+					"fallbackText": "字母 J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "J 在卡片上，轻轻说果酱。",
+					"audioText": "J 在卡片上，轻轻说果酱。",
+					"fallbackText": "字母 J",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-j-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-j.webp",
+				"alt": "letter J",
+				"generationPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "J",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "j"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-j-bright.webp",
+				"alt": "letter J bright large",
+				"generationPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "J",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase J letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "j"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

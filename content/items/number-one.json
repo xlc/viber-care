@@ -1,0 +1,194 @@
+{
+	"id": "number-one",
+	"category": "number",
+	"tags": ["number", "counting", "one"],
+	"visualPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "number-one-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find number one.",
+			"successPhrase": "You found number one.",
+			"fallbackText": "one",
+			"levels": {
+				"L0": {
+					"text": "one",
+					"audioText": "one",
+					"fallbackText": "one",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Number one.",
+					"audioText": "Number one.",
+					"fallbackText": "one",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "count to one",
+					"audioText": "count to one",
+					"fallbackText": "one",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "One little dot is here.",
+					"audioText": "One little dot is here.",
+					"fallbackText": "one",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What number is this? It is one.",
+					"audioText": "What number is this? It is one.",
+					"fallbackText": "one",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The number one card hops softly in the number meadow.",
+					"audioText": "The number one card hops softly in the number meadow.",
+					"fallbackText": "one",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-one-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-one-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找数字一。",
+			"successPhrase": "你找到数字一了。",
+			"fallbackText": "一",
+			"levels": {
+				"L0": {
+					"text": "一",
+					"audioText": "一",
+					"fallbackText": "一",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "数字一。",
+					"audioText": "数字一。",
+					"fallbackText": "一",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "数到一",
+					"audioText": "数到一",
+					"fallbackText": "一",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "这里有一个小点。",
+					"audioText": "这里有一个小点。",
+					"fallbackText": "一",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是几？这是一。",
+					"audioText": "这是几？这是一。",
+					"fallbackText": "一",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "一号卡片在数字草地上轻轻跳。",
+					"audioText": "一号卡片在数字草地上轻轻跳。",
+					"fallbackText": "一",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-one-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-one-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-one-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-one.webp",
+				"alt": "number one",
+				"generationPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "one",
+					"emoji": "1️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["numbers", "number", "counting", "one"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-one-bright.webp",
+				"alt": "number one bright large",
+				"generationPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "one",
+					"emoji": "1️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number one on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["numbers", "number", "counting", "one"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

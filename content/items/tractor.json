@@ -1,0 +1,194 @@
+{
+	"id": "tractor",
+	"category": "farm-vehicle",
+	"tags": ["farm", "vehicle", "path"],
+	"visualPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "tractor-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the tractor.",
+			"successPhrase": "You found the tractor.",
+			"fallbackText": "That is the tractor.",
+			"levels": {
+				"L0": {
+					"text": "tractor",
+					"audioText": "tractor",
+					"fallbackText": "tractor",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The tractor rolls slowly.",
+					"audioText": "The tractor rolls slowly.",
+					"fallbackText": "tractor",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "small farm tractor",
+					"audioText": "small farm tractor",
+					"fallbackText": "tractor",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The tractor waits on the path.",
+					"audioText": "The tractor waits on the path.",
+					"fallbackText": "tractor",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has big wheels? The tractor has big wheels.",
+					"audioText": "Who has big wheels? The tractor has big wheels.",
+					"fallbackText": "tractor",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The tractor rolls by the vegetable patch.",
+					"audioText": "The tractor rolls by the vegetable patch.",
+					"fallbackText": "tractor",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/tractor-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/tractor-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找拖拉机。",
+			"successPhrase": "你找到拖拉机了。",
+			"fallbackText": "这是拖拉机。",
+			"levels": {
+				"L0": {
+					"text": "拖拉机",
+					"audioText": "拖拉机",
+					"fallbackText": "拖拉机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "拖拉机慢慢开。",
+					"audioText": "拖拉机慢慢开。",
+					"fallbackText": "拖拉机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的拖拉机",
+					"audioText": "小小的拖拉机",
+					"fallbackText": "拖拉机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "拖拉机停在小路上。",
+					"audioText": "拖拉机停在小路上。",
+					"fallbackText": "拖拉机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有大轮子？拖拉机有大轮子。",
+					"audioText": "谁有大轮子？拖拉机有大轮子。",
+					"fallbackText": "拖拉机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "拖拉机开过菜地旁。",
+					"audioText": "拖拉机开过菜地旁。",
+					"fallbackText": "拖拉机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/tractor-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/tractor.png",
+				"alt": "tractor",
+				"generationPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "tractor",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-vehicle", "farm", "vehicle", "path"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/tractor-bright.png",
+				"alt": "tractor bright large",
+				"generationPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "tractor bright large",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly small tractor for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no driver, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-vehicle", "farm", "vehicle", "path"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

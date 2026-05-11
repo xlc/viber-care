@@ -1,0 +1,194 @@
+{
+	"id": "bee",
+	"category": "animal",
+	"tags": ["garden", "insect", "wings", "flower"],
+	"visualPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background.",
+	"interaction": {
+		"id": "bee-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the bee.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/bee-en-find.mp3"
+			},
+			"successPhrase": "You found the bee.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/bee-en-success.mp3"
+			},
+			"fallbackText": "bee",
+			"levels": {
+				"L0": {
+					"text": "bee",
+					"audioText": "bee",
+					"fallbackText": "bee",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bee buzzes softly.",
+					"audioText": "The bee buzzes softly.",
+					"fallbackText": "bee",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "little garden bee",
+					"audioText": "little garden bee",
+					"fallbackText": "bee",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The bee visits a flower.",
+					"audioText": "The bee visits a flower.",
+					"fallbackText": "bee",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who buzzes by the flower? The bee buzzes by.",
+					"audioText": "Who buzzes by the flower? The bee buzzes by.",
+					"fallbackText": "bee",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The bee gently buzzes through the garden.",
+					"audioText": "The bee gently buzzes through the garden.",
+					"fallbackText": "bee",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找蜜蜂。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/bee-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到蜜蜂了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/bee-zh-Hans-success.mp3"
+			},
+			"fallbackText": "蜜蜂",
+			"levels": {
+				"L0": {
+					"text": "蜜蜂",
+					"audioText": "蜜蜂",
+					"fallbackText": "蜜蜂",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "蜜蜂轻轻嗡嗡叫。",
+					"audioText": "蜜蜂轻轻嗡嗡叫。",
+					"fallbackText": "蜜蜂",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "花园小蜜蜂",
+					"audioText": "花园小蜜蜂",
+					"fallbackText": "蜜蜂",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "蜜蜂来到花旁边。",
+					"audioText": "蜜蜂来到花旁边。",
+					"fallbackText": "蜜蜂",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁在花旁嗡嗡叫？蜜蜂飞过来了。",
+					"audioText": "谁在花旁嗡嗡叫？蜜蜂飞过来了。",
+					"fallbackText": "蜜蜂",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "蜜蜂在花园里轻轻飞。",
+					"audioText": "蜜蜂在花园里轻轻飞。",
+					"fallbackText": "蜜蜂",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/bee-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/bee.webp",
+				"alt": "bee",
+				"generationPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background.",
+				"placeholder": {
+					"label": "bee",
+					"emoji": "🐝"
+				}
+			},
+			"visualPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "animal", "insect", "wings", "flower"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/bee-bright.webp",
+				"alt": "bee bright large",
+				"generationPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "bee",
+					"emoji": "🐝"
+				}
+			},
+			"visualPrompt": "A friendly round bee for a toddler word-learning garden game, soft wings, happy face, gentle yellow and black stripes, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "animal", "insect", "wings", "flower"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

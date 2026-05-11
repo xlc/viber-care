@@ -1,0 +1,194 @@
+{
+	"id": "goat",
+	"category": "farm-animal",
+	"tags": ["farm", "animal", "pasture"],
+	"visualPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "goat-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the goat.",
+			"successPhrase": "You found the goat.",
+			"fallbackText": "That is the goat.",
+			"levels": {
+				"L0": {
+					"text": "goat",
+					"audioText": "goat",
+					"fallbackText": "goat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The goat gives a little bleat.",
+					"audioText": "The goat gives a little bleat.",
+					"fallbackText": "goat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "little farm goat",
+					"audioText": "little farm goat",
+					"fallbackText": "goat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The goat stands near the hill.",
+					"audioText": "The goat stands near the hill.",
+					"fallbackText": "goat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has tiny horns? The goat has tiny horns.",
+					"audioText": "Who has tiny horns? The goat has tiny horns.",
+					"fallbackText": "goat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The goat looks around the green pasture.",
+					"audioText": "The goat looks around the green pasture.",
+					"fallbackText": "goat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/goat-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/goat-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找山羊。",
+			"successPhrase": "你找到山羊了。",
+			"fallbackText": "这是山羊。",
+			"levels": {
+				"L0": {
+					"text": "山羊",
+					"audioText": "山羊",
+					"fallbackText": "山羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "山羊轻轻咩咩叫。",
+					"audioText": "山羊轻轻咩咩叫。",
+					"fallbackText": "山羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "农场里的小山羊",
+					"audioText": "农场里的小山羊",
+					"fallbackText": "山羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "山羊站在小山坡旁。",
+					"audioText": "山羊站在小山坡旁。",
+					"fallbackText": "山羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有小小的角？山羊有小小的角。",
+					"audioText": "谁有小小的角？山羊有小小的角。",
+					"fallbackText": "山羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "山羊看看绿色的牧场。",
+					"audioText": "山羊看看绿色的牧场。",
+					"fallbackText": "山羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/goat-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/goat.png",
+				"alt": "goat",
+				"generationPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "goat",
+					"emoji": "🐐"
+				}
+			},
+			"visualPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "pasture"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/goat-bright.png",
+				"alt": "goat bright large",
+				"generationPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "goat bright large",
+					"emoji": "🐐"
+				}
+			},
+			"visualPrompt": "A friendly goat for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "pasture"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,194 @@
+{
+	"id": "letter-u",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "u"],
+	"visualPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-u-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter U.",
+			"successPhrase": "You found letter U.",
+			"fallbackText": "U",
+			"levels": {
+				"L0": {
+					"text": "U",
+					"audioText": "U",
+					"fallbackText": "U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "U is for umbrella.",
+					"audioText": "U is for umbrella.",
+					"fallbackText": "U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase U",
+					"audioText": "uppercase U",
+					"fallbackText": "U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "U starts the word umbrella.",
+					"audioText": "U starts the word umbrella.",
+					"fallbackText": "U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is U.",
+					"audioText": "What letter is this? It is U.",
+					"fallbackText": "U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "U sits on the card and says umbrella.",
+					"audioText": "U sits on the card and says umbrella.",
+					"fallbackText": "U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-u-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-u-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 U。",
+			"successPhrase": "你找到字母 U 了。",
+			"fallbackText": "字母 U",
+			"levels": {
+				"L0": {
+					"text": "字母 U",
+					"audioText": "字母 U",
+					"fallbackText": "字母 U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "U 代表雨伞。",
+					"audioText": "U 代表雨伞。",
+					"fallbackText": "字母 U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 U",
+					"audioText": "大写字母 U",
+					"fallbackText": "字母 U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "U 是雨伞的开头。",
+					"audioText": "U 是雨伞的开头。",
+					"fallbackText": "字母 U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 U。",
+					"audioText": "这是什么字母？这是 U。",
+					"fallbackText": "字母 U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "U 在卡片上，轻轻说雨伞。",
+					"audioText": "U 在卡片上，轻轻说雨伞。",
+					"fallbackText": "字母 U",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-u-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-u.webp",
+				"alt": "letter U",
+				"generationPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "U",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "u"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-u-bright.webp",
+				"alt": "letter U bright large",
+				"generationPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "U",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase U letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "u"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

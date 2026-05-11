@@ -1,0 +1,206 @@
+{
+	"id": "shrimp",
+	"category": "animal",
+	"tags": ["ocean", "water", "animal", "shrimp"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": ["counting", "dot-match", "more-less", "spatial"],
+		"colors": ["pink"],
+		"sceneZones": ["water", "seabed"],
+		"zhMeasureWord": "只",
+		"englishPlural": "shrimp"
+	},
+	"visualPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background.",
+	"interaction": {
+		"id": "shrimp-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the shrimp.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/shrimp-en-find.mp3"
+			},
+			"successPhrase": "You found the shrimp.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/shrimp-en-success.mp3"
+			},
+			"fallbackText": "shrimp",
+			"levels": {
+				"L0": {
+					"text": "shrimp",
+					"audioText": "shrimp",
+					"fallbackText": "shrimp",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The shrimp curls.",
+					"audioText": "The shrimp curls.",
+					"fallbackText": "shrimp",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "little orange shrimp",
+					"audioText": "little orange shrimp",
+					"fallbackText": "shrimp",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The shrimp swims near the sand.",
+					"audioText": "The shrimp swims near the sand.",
+					"fallbackText": "shrimp",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who is small and curly? The shrimp is small and curly.",
+					"audioText": "Who is small and curly? The shrimp is small and curly.",
+					"fallbackText": "shrimp",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The shrimp wiggles softly through the water.",
+					"audioText": "The shrimp wiggles softly through the water.",
+					"fallbackText": "shrimp",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找虾。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到虾了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-success.mp3"
+			},
+			"fallbackText": "虾",
+			"levels": {
+				"L0": {
+					"text": "虾",
+					"audioText": "虾",
+					"fallbackText": "虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "虾弯弯的。",
+					"audioText": "虾弯弯的。",
+					"fallbackText": "虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的橙色虾",
+					"audioText": "小小的橙色虾",
+					"fallbackText": "虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "虾在沙子旁边游。",
+					"audioText": "虾在沙子旁边游。",
+					"fallbackText": "虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁小小弯弯的？虾小小弯弯的。",
+					"audioText": "谁小小弯弯的？虾小小弯弯的。",
+					"fallbackText": "虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "虾在水里轻轻摆一摆。",
+					"audioText": "虾在水里轻轻摆一摆。",
+					"fallbackText": "虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/shrimp-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/shrimp.webp",
+				"alt": "shrimp",
+				"generationPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background.",
+				"placeholder": {
+					"label": "shrimp",
+					"emoji": "🦐"
+				}
+			},
+			"visualPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "animal", "ocean", "water", "shrimp"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/shrimp-bright.webp",
+				"alt": "shrimp bright large",
+				"generationPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "shrimp",
+					"emoji": "🦐"
+				}
+			},
+			"visualPrompt": "A friendly orange shrimp for a toddler ocean word-learning game, rounded body, cheerful face, simple clear silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "animal", "ocean", "water", "shrimp"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

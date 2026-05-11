@@ -1,0 +1,194 @@
+{
+	"id": "butterfly",
+	"category": "animal",
+	"tags": ["garden", "insect", "wings", "sky"],
+	"visualPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background.",
+	"interaction": {
+		"id": "butterfly-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the butterfly.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/butterfly-en-find.mp3"
+			},
+			"successPhrase": "You found the butterfly.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/butterfly-en-success.mp3"
+			},
+			"fallbackText": "butterfly",
+			"levels": {
+				"L0": {
+					"text": "butterfly",
+					"audioText": "butterfly",
+					"fallbackText": "butterfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The butterfly flutters.",
+					"audioText": "The butterfly flutters.",
+					"fallbackText": "butterfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "colorful butterfly",
+					"audioText": "colorful butterfly",
+					"fallbackText": "butterfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The butterfly floats above the flowers.",
+					"audioText": "The butterfly floats above the flowers.",
+					"fallbackText": "butterfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has soft wings? The butterfly has soft wings.",
+					"audioText": "Who has soft wings? The butterfly has soft wings.",
+					"fallbackText": "butterfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The butterfly gently flutters in the sunny garden.",
+					"audioText": "The butterfly gently flutters in the sunny garden.",
+					"fallbackText": "butterfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找蝴蝶。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/butterfly-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到蝴蝶了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/butterfly-zh-Hans-success.mp3"
+			},
+			"fallbackText": "蝴蝶",
+			"levels": {
+				"L0": {
+					"text": "蝴蝶",
+					"audioText": "蝴蝶",
+					"fallbackText": "蝴蝶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "蝴蝶轻轻飞。",
+					"audioText": "蝴蝶轻轻飞。",
+					"fallbackText": "蝴蝶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "彩色的蝴蝶",
+					"audioText": "彩色的蝴蝶",
+					"fallbackText": "蝴蝶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "蝴蝶在花上方飞。",
+					"audioText": "蝴蝶在花上方飞。",
+					"fallbackText": "蝴蝶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有柔软的翅膀？蝴蝶有柔软的翅膀。",
+					"audioText": "谁有柔软的翅膀？蝴蝶有柔软的翅膀。",
+					"fallbackText": "蝴蝶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "蝴蝶在阳光花园里轻轻飞。",
+					"audioText": "蝴蝶在阳光花园里轻轻飞。",
+					"fallbackText": "蝴蝶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/butterfly-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/butterfly.webp",
+				"alt": "butterfly",
+				"generationPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background.",
+				"placeholder": {
+					"label": "butterfly",
+					"emoji": "🦋"
+				}
+			},
+			"visualPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "animal", "insect", "wings", "sky"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/butterfly-bright.webp",
+				"alt": "butterfly bright large",
+				"generationPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "butterfly",
+					"emoji": "🦋"
+				}
+			},
+			"visualPrompt": "A friendly colorful butterfly for a toddler word-learning garden game, soft rounded wings, cheerful simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "animal", "insect", "wings", "sky"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

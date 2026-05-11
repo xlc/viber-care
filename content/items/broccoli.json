@@ -1,0 +1,194 @@
+{
+	"id": "broccoli",
+	"category": "leafy-vegetables",
+	"tags": ["leafy-vegetables", "food", "broccoli"],
+	"visualPrompt": "A friendly broccoli for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/broccoli.png",
+				"alt": "broccoli",
+				"generationPrompt": "A friendly broccoli for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "broccoli",
+					"emoji": "🥦"
+				}
+			},
+			"visualPrompt": "A friendly broccoli for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "broccoli"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/broccoli-bright.png",
+				"alt": "broccoli bright large",
+				"generationPrompt": "A friendly broccoli for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "broccoli",
+					"emoji": "🥦"
+				}
+			},
+			"visualPrompt": "A friendly broccoli for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "broccoli"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "broccoli-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the broccoli.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-en-find.mp3"
+			},
+			"successPhrase": "You found the broccoli.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-en-success.mp3"
+			},
+			"fallbackText": "That is the broccoli.",
+			"levels": {
+				"L0": {
+					"text": "broccoli",
+					"audioText": "broccoli",
+					"fallbackText": "broccoli",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The broccoli is in the leafy patch.",
+					"audioText": "The broccoli is in the leafy patch.",
+					"fallbackText": "broccoli",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "bumpy green broccoli",
+					"audioText": "bumpy green broccoli",
+					"fallbackText": "broccoli",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The broccoli waits in the leafy patch.",
+					"audioText": "The broccoli waits in the leafy patch.",
+					"fallbackText": "broccoli",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the broccoli.",
+					"audioText": "What do you see? I see the broccoli.",
+					"fallbackText": "broccoli",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The broccoli rests quietly where little hands can find it.",
+					"audioText": "The broccoli rests quietly where little hands can find it.",
+					"fallbackText": "broccoli",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找西兰花。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到西兰花了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是西兰花。",
+			"levels": {
+				"L0": {
+					"text": "西兰花",
+					"audioText": "西兰花",
+					"fallbackText": "西兰花",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "西兰花在叶子菜地里。",
+					"audioText": "西兰花在叶子菜地里。",
+					"fallbackText": "西兰花",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "一朵朵绿色西兰花",
+					"audioText": "一朵朵绿色西兰花",
+					"fallbackText": "西兰花",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "西兰花安静地待在叶子菜地里。",
+					"audioText": "西兰花安静地待在叶子菜地里。",
+					"fallbackText": "西兰花",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了西兰花。",
+					"audioText": "你看到了什么？我看到了西兰花。",
+					"fallbackText": "西兰花",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "西兰花轻轻地等着小手来找到它。",
+					"audioText": "西兰花轻轻地等着小手来找到它。",
+					"fallbackText": "西兰花",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/broccoli-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

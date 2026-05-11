@@ -1,0 +1,194 @@
+{
+	"id": "rocket",
+	"category": "vehicle",
+	"tags": ["transportation", "sky", "air", "rocket"],
+	"visualPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background.",
+	"interaction": {
+		"id": "rocket-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the rocket.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/rocket-en-find.mp3"
+			},
+			"successPhrase": "You found the rocket.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/rocket-en-success.mp3"
+			},
+			"fallbackText": "rocket",
+			"levels": {
+				"L0": {
+					"text": "rocket",
+					"audioText": "rocket",
+					"fallbackText": "rocket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The rocket goes up.",
+					"audioText": "The rocket goes up.",
+					"fallbackText": "rocket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "bright toy rocket",
+					"audioText": "bright toy rocket",
+					"fallbackText": "rocket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The rocket points to the sky.",
+					"audioText": "The rocket points to the sky.",
+					"fallbackText": "rocket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What goes up to the sky? The rocket goes up.",
+					"audioText": "What goes up to the sky? The rocket goes up.",
+					"fallbackText": "rocket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The rocket gently lifts toward the blue sky.",
+					"audioText": "The rocket gently lifts toward the blue sky.",
+					"fallbackText": "rocket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找火箭。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/rocket-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到火箭了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/rocket-zh-Hans-success.mp3"
+			},
+			"fallbackText": "火箭",
+			"levels": {
+				"L0": {
+					"text": "火箭",
+					"audioText": "火箭",
+					"fallbackText": "火箭",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "火箭向上飞。",
+					"audioText": "火箭向上飞。",
+					"fallbackText": "火箭",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "明亮的玩具火箭",
+					"audioText": "明亮的玩具火箭",
+					"fallbackText": "火箭",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "火箭指向天空。",
+					"audioText": "火箭指向天空。",
+					"fallbackText": "火箭",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么飞向天空？火箭飞向天空。",
+					"audioText": "什么飞向天空？火箭飞向天空。",
+					"fallbackText": "火箭",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "火箭轻轻飞向蓝蓝的天空。",
+					"audioText": "火箭轻轻飞向蓝蓝的天空。",
+					"fallbackText": "火箭",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/rocket-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/rocket.png",
+				"alt": "rocket",
+				"generationPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background.",
+				"placeholder": {
+					"label": "rocket",
+					"emoji": "🚀"
+				}
+			},
+			"visualPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "vehicle", "sky", "air", "rocket"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/rocket-bright.png",
+				"alt": "rocket bright large",
+				"generationPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "rocket",
+					"emoji": "🚀"
+				}
+			},
+			"visualPrompt": "A friendly toy rocket for a toddler transportation word-learning game, rounded bright shape, calm flame shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "vehicle", "sky", "air", "rocket"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

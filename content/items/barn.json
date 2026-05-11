@@ -1,0 +1,194 @@
+{
+	"id": "barn",
+	"category": "farm-place",
+	"tags": ["farm", "building", "barn"],
+	"visualPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "barn-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the barn.",
+			"successPhrase": "You found the barn.",
+			"fallbackText": "That is the barn.",
+			"levels": {
+				"L0": {
+					"text": "barn",
+					"audioText": "barn",
+					"fallbackText": "barn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The barn is red.",
+					"audioText": "The barn is red.",
+					"fallbackText": "barn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "bright red barn",
+					"audioText": "bright red barn",
+					"fallbackText": "barn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The barn stands by the farmyard.",
+					"audioText": "The barn stands by the farmyard.",
+					"fallbackText": "barn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What is red? The barn is red.",
+					"audioText": "What is red? The barn is red.",
+					"fallbackText": "barn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The barn keeps the farm feeling cozy.",
+					"audioText": "The barn keeps the farm feeling cozy.",
+					"fallbackText": "barn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/barn-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/barn-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找谷仓。",
+			"successPhrase": "你找到谷仓了。",
+			"fallbackText": "这是谷仓。",
+			"levels": {
+				"L0": {
+					"text": "谷仓",
+					"audioText": "谷仓",
+					"fallbackText": "谷仓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "谷仓是红色的。",
+					"audioText": "谷仓是红色的。",
+					"fallbackText": "谷仓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "亮亮的红谷仓",
+					"audioText": "亮亮的红谷仓",
+					"fallbackText": "谷仓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "谷仓站在农场院子旁。",
+					"audioText": "谷仓站在农场院子旁。",
+					"fallbackText": "谷仓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么是红色的？谷仓是红色的。",
+					"audioText": "什么是红色的？谷仓是红色的。",
+					"fallbackText": "谷仓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "谷仓让农场感觉暖暖的。",
+					"audioText": "谷仓让农场感觉暖暖的。",
+					"fallbackText": "谷仓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/barn-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/barn.png",
+				"alt": "barn",
+				"generationPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "barn",
+					"emoji": "🏠"
+				}
+			},
+			"visualPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-place", "farm", "building", "barn"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/barn-bright.png",
+				"alt": "barn bright large",
+				"generationPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "barn bright large",
+					"emoji": "🏠"
+				}
+			},
+			"visualPrompt": "A friendly red barn for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-place", "farm", "building", "barn"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

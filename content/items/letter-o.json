@@ -1,0 +1,194 @@
+{
+	"id": "letter-o",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "o"],
+	"visualPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-o-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter O.",
+			"successPhrase": "You found letter O.",
+			"fallbackText": "O",
+			"levels": {
+				"L0": {
+					"text": "O",
+					"audioText": "O",
+					"fallbackText": "O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "O is for orange.",
+					"audioText": "O is for orange.",
+					"fallbackText": "O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase O",
+					"audioText": "uppercase O",
+					"fallbackText": "O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "O starts the word orange.",
+					"audioText": "O starts the word orange.",
+					"fallbackText": "O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is O.",
+					"audioText": "What letter is this? It is O.",
+					"fallbackText": "O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "O sits on the card and says orange.",
+					"audioText": "O sits on the card and says orange.",
+					"fallbackText": "O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-o-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-o-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 O。",
+			"successPhrase": "你找到字母 O 了。",
+			"fallbackText": "字母 O",
+			"levels": {
+				"L0": {
+					"text": "字母 O",
+					"audioText": "字母 O",
+					"fallbackText": "字母 O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "O 代表橙子。",
+					"audioText": "O 代表橙子。",
+					"fallbackText": "字母 O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 O",
+					"audioText": "大写字母 O",
+					"fallbackText": "字母 O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "O 是橙子的开头。",
+					"audioText": "O 是橙子的开头。",
+					"fallbackText": "字母 O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 O。",
+					"audioText": "这是什么字母？这是 O。",
+					"fallbackText": "字母 O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "O 在卡片上，轻轻说橙子。",
+					"audioText": "O 在卡片上，轻轻说橙子。",
+					"fallbackText": "字母 O",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-o-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-o.webp",
+				"alt": "letter O",
+				"generationPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "O",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "o"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-o-bright.webp",
+				"alt": "letter O bright large",
+				"generationPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "O",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase O letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "o"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

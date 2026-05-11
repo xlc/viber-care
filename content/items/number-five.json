@@ -1,0 +1,194 @@
+{
+	"id": "number-five",
+	"category": "number",
+	"tags": ["number", "counting", "five"],
+	"visualPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "number-five-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find number five.",
+			"successPhrase": "You found number five.",
+			"fallbackText": "five",
+			"levels": {
+				"L0": {
+					"text": "five",
+					"audioText": "five",
+					"fallbackText": "five",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Number five.",
+					"audioText": "Number five.",
+					"fallbackText": "five",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "count to five",
+					"audioText": "count to five",
+					"fallbackText": "five",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Five little dots are here.",
+					"audioText": "Five little dots are here.",
+					"fallbackText": "five",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What number is this? It is five.",
+					"audioText": "What number is this? It is five.",
+					"fallbackText": "five",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The number five card hops softly in the number meadow.",
+					"audioText": "The number five card hops softly in the number meadow.",
+					"fallbackText": "five",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-five-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-five-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找数字五。",
+			"successPhrase": "你找到数字五了。",
+			"fallbackText": "五",
+			"levels": {
+				"L0": {
+					"text": "五",
+					"audioText": "五",
+					"fallbackText": "五",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "数字五。",
+					"audioText": "数字五。",
+					"fallbackText": "五",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "数到五",
+					"audioText": "数到五",
+					"fallbackText": "五",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "这里有五个小点。",
+					"audioText": "这里有五个小点。",
+					"fallbackText": "五",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是几？这是五。",
+					"audioText": "这是几？这是五。",
+					"fallbackText": "五",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "五号卡片在数字草地上轻轻跳。",
+					"audioText": "五号卡片在数字草地上轻轻跳。",
+					"fallbackText": "五",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/numbers/audio/number-five-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-five-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/numbers/audio/number-five-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-five.webp",
+				"alt": "number five",
+				"generationPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "five",
+					"emoji": "5️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["numbers", "number", "counting", "five"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/numbers/number-five-bright.webp",
+				"alt": "number five bright large",
+				"generationPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "five",
+					"emoji": "5️⃣"
+				}
+			},
+			"visualPrompt": "A large friendly number five on a rounded toy card for a toddler number-learning game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["numbers", "number", "counting", "five"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

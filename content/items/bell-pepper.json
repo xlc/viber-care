@@ -1,0 +1,204 @@
+{
+	"id": "bell-pepper",
+	"category": "garden-vegetables",
+	"tags": ["garden-vegetables", "food", "bell-pepper"],
+	"visualPrompt": "A friendly bell pepper for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/bell-pepper.png",
+				"alt": "bell pepper",
+				"generationPrompt": "A friendly bell pepper for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "bell pepper",
+					"emoji": "🫑"
+				}
+			},
+			"visualPrompt": "A friendly bell pepper for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": [
+				"fruits-and-vegetables",
+				"garden-vegetables",
+				"food",
+				"bell-pepper"
+			],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/bell-pepper-bright.png",
+				"alt": "bell pepper bright large",
+				"generationPrompt": "A friendly bell pepper for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "bell pepper",
+					"emoji": "🫑"
+				}
+			},
+			"visualPrompt": "A friendly bell pepper for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": [
+				"fruits-and-vegetables",
+				"garden-vegetables",
+				"food",
+				"bell-pepper"
+			],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "bell-pepper-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the bell pepper.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-en-find.mp3"
+			},
+			"successPhrase": "You found the bell pepper.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-en-success.mp3"
+			},
+			"fallbackText": "That is the bell pepper.",
+			"levels": {
+				"L0": {
+					"text": "bell pepper",
+					"audioText": "bell pepper",
+					"fallbackText": "bell pepper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bell pepper is in the garden stand.",
+					"audioText": "The bell pepper is in the garden stand.",
+					"fallbackText": "bell pepper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "bright bell pepper",
+					"audioText": "bright bell pepper",
+					"fallbackText": "bell pepper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The bell pepper waits in the garden stand.",
+					"audioText": "The bell pepper waits in the garden stand.",
+					"fallbackText": "bell pepper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the bell pepper.",
+					"audioText": "What do you see? I see the bell pepper.",
+					"fallbackText": "bell pepper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The bell pepper rests quietly where little hands can find it.",
+					"audioText": "The bell pepper rests quietly where little hands can find it.",
+					"fallbackText": "bell pepper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找彩椒。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到彩椒了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是彩椒。",
+			"levels": {
+				"L0": {
+					"text": "彩椒",
+					"audioText": "彩椒",
+					"fallbackText": "彩椒",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "彩椒在菜园小摊里。",
+					"audioText": "彩椒在菜园小摊里。",
+					"fallbackText": "彩椒",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "亮亮的彩椒",
+					"audioText": "亮亮的彩椒",
+					"fallbackText": "彩椒",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "彩椒安静地待在菜园小摊里。",
+					"audioText": "彩椒安静地待在菜园小摊里。",
+					"fallbackText": "彩椒",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了彩椒。",
+					"audioText": "你看到了什么？我看到了彩椒。",
+					"fallbackText": "彩椒",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "彩椒轻轻地等着小手来找到它。",
+					"audioText": "彩椒轻轻地等着小手来找到它。",
+					"fallbackText": "彩椒",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bell-pepper-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

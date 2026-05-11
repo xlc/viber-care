@@ -1,0 +1,204 @@
+{
+	"id": "cucumber",
+	"category": "garden-vegetables",
+	"tags": ["garden-vegetables", "food", "cucumber"],
+	"visualPrompt": "A friendly cucumber for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/cucumber.png",
+				"alt": "cucumber",
+				"generationPrompt": "A friendly cucumber for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "cucumber",
+					"emoji": "🥒"
+				}
+			},
+			"visualPrompt": "A friendly cucumber for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": [
+				"fruits-and-vegetables",
+				"garden-vegetables",
+				"food",
+				"cucumber"
+			],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/cucumber-bright.png",
+				"alt": "cucumber bright large",
+				"generationPrompt": "A friendly cucumber for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "cucumber",
+					"emoji": "🥒"
+				}
+			},
+			"visualPrompt": "A friendly cucumber for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": [
+				"fruits-and-vegetables",
+				"garden-vegetables",
+				"food",
+				"cucumber"
+			],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "cucumber-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the cucumber.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-en-find.mp3"
+			},
+			"successPhrase": "You found the cucumber.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-en-success.mp3"
+			},
+			"fallbackText": "That is the cucumber.",
+			"levels": {
+				"L0": {
+					"text": "cucumber",
+					"audioText": "cucumber",
+					"fallbackText": "cucumber",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The cucumber is in the garden stand.",
+					"audioText": "The cucumber is in the garden stand.",
+					"fallbackText": "cucumber",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "long green cucumber",
+					"audioText": "long green cucumber",
+					"fallbackText": "cucumber",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The cucumber waits in the garden stand.",
+					"audioText": "The cucumber waits in the garden stand.",
+					"fallbackText": "cucumber",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the cucumber.",
+					"audioText": "What do you see? I see the cucumber.",
+					"fallbackText": "cucumber",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The cucumber rests quietly where little hands can find it.",
+					"audioText": "The cucumber rests quietly where little hands can find it.",
+					"fallbackText": "cucumber",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找黄瓜。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到黄瓜了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是黄瓜。",
+			"levels": {
+				"L0": {
+					"text": "黄瓜",
+					"audioText": "黄瓜",
+					"fallbackText": "黄瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "黄瓜在菜园小摊里。",
+					"audioText": "黄瓜在菜园小摊里。",
+					"fallbackText": "黄瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "长长的绿黄瓜",
+					"audioText": "长长的绿黄瓜",
+					"fallbackText": "黄瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "黄瓜安静地待在菜园小摊里。",
+					"audioText": "黄瓜安静地待在菜园小摊里。",
+					"fallbackText": "黄瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了黄瓜。",
+					"audioText": "你看到了什么？我看到了黄瓜。",
+					"fallbackText": "黄瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "黄瓜轻轻地等着小手来找到它。",
+					"audioText": "黄瓜轻轻地等着小手来找到它。",
+					"fallbackText": "黄瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/cucumber-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

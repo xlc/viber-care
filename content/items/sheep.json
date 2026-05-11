@@ -1,0 +1,194 @@
+{
+	"id": "sheep",
+	"category": "farm-animal",
+	"tags": ["farm", "animal", "pasture"],
+	"visualPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "sheep-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the sheep.",
+			"successPhrase": "You found the sheep.",
+			"fallbackText": "That is the sheep.",
+			"levels": {
+				"L0": {
+					"text": "sheep",
+					"audioText": "sheep",
+					"fallbackText": "sheep",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The sheep says baa.",
+					"audioText": "The sheep says baa.",
+					"fallbackText": "sheep",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "fluffy sheep",
+					"audioText": "fluffy sheep",
+					"fallbackText": "sheep",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The sheep rests in the pasture.",
+					"audioText": "The sheep rests in the pasture.",
+					"fallbackText": "sheep",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has soft wool? The sheep has soft wool.",
+					"audioText": "Who has soft wool? The sheep has soft wool.",
+					"fallbackText": "sheep",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The sheep stands near the quiet fence.",
+					"audioText": "The sheep stands near the quiet fence.",
+					"fallbackText": "sheep",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/sheep-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/sheep-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找绵羊。",
+			"successPhrase": "你找到绵羊了。",
+			"fallbackText": "这是绵羊。",
+			"levels": {
+				"L0": {
+					"text": "绵羊",
+					"audioText": "绵羊",
+					"fallbackText": "绵羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "绵羊咩咩叫。",
+					"audioText": "绵羊咩咩叫。",
+					"fallbackText": "绵羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "毛茸茸的绵羊",
+					"audioText": "毛茸茸的绵羊",
+					"fallbackText": "绵羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "绵羊在牧场里休息。",
+					"audioText": "绵羊在牧场里休息。",
+					"fallbackText": "绵羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有软软的羊毛？绵羊有软软的羊毛。",
+					"audioText": "谁有软软的羊毛？绵羊有软软的羊毛。",
+					"fallbackText": "绵羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "绵羊站在安静的栅栏旁。",
+					"audioText": "绵羊站在安静的栅栏旁。",
+					"fallbackText": "绵羊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/sheep-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/sheep.png",
+				"alt": "sheep",
+				"generationPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "sheep",
+					"emoji": "🐑"
+				}
+			},
+			"visualPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "pasture"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/sheep-bright.png",
+				"alt": "sheep bright large",
+				"generationPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "sheep bright large",
+					"emoji": "🐑"
+				}
+			},
+			"visualPrompt": "A friendly fluffy sheep for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "pasture"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

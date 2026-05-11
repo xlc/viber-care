@@ -1,0 +1,206 @@
+{
+	"id": "cow",
+	"category": "farm-animal",
+	"tags": ["farm", "animal", "meadow"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "more-less", "spatial"],
+		"colors": ["black", "white"],
+		"sceneZones": ["pasture", "yard"],
+		"zhMeasureWord": "头",
+		"englishPlural": "cows"
+	},
+	"visualPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "cow-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the cow.",
+			"successPhrase": "You found the cow.",
+			"fallbackText": "That is the cow.",
+			"levels": {
+				"L0": {
+					"text": "cow",
+					"audioText": "cow",
+					"fallbackText": "cow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The cow says moo.",
+					"audioText": "The cow says moo.",
+					"fallbackText": "cow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "gentle cow",
+					"audioText": "gentle cow",
+					"fallbackText": "cow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The cow stands in the meadow.",
+					"audioText": "The cow stands in the meadow.",
+					"fallbackText": "cow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who says moo? The cow says moo.",
+					"audioText": "Who says moo? The cow says moo.",
+					"fallbackText": "cow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The cow walks slowly by the barn.",
+					"audioText": "The cow walks slowly by the barn.",
+					"fallbackText": "cow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/cow-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/cow-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找奶牛。",
+			"successPhrase": "你找到奶牛了。",
+			"fallbackText": "这是奶牛。",
+			"levels": {
+				"L0": {
+					"text": "奶牛",
+					"audioText": "奶牛",
+					"fallbackText": "奶牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "奶牛哞哞叫。",
+					"audioText": "奶牛哞哞叫。",
+					"fallbackText": "奶牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "温柔的奶牛",
+					"audioText": "温柔的奶牛",
+					"fallbackText": "奶牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "奶牛站在草地上。",
+					"audioText": "奶牛站在草地上。",
+					"fallbackText": "奶牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁哞哞叫？奶牛哞哞叫。",
+					"audioText": "谁哞哞叫？奶牛哞哞叫。",
+					"fallbackText": "奶牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "奶牛慢慢走过谷仓旁。",
+					"audioText": "奶牛慢慢走过谷仓旁。",
+					"fallbackText": "奶牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/cow-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/cow.png",
+				"alt": "cow",
+				"generationPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "cow",
+					"emoji": "🐄"
+				}
+			},
+			"visualPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "meadow"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/cow-bright.png",
+				"alt": "cow bright large",
+				"generationPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "cow bright large",
+					"emoji": "🐄"
+				}
+			},
+			"visualPrompt": "A friendly cow for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-animal", "farm", "animal", "meadow"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

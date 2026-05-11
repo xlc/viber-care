@@ -1,0 +1,194 @@
+{
+	"id": "squid",
+	"category": "animal",
+	"tags": ["ocean", "water", "animal", "tentacles"],
+	"visualPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background.",
+	"interaction": {
+		"id": "squid-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the squid.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/squid-en-find.mp3"
+			},
+			"successPhrase": "You found the squid.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/squid-en-success.mp3"
+			},
+			"fallbackText": "squid",
+			"levels": {
+				"L0": {
+					"text": "squid",
+					"audioText": "squid",
+					"fallbackText": "squid",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The squid floats.",
+					"audioText": "The squid floats.",
+					"fallbackText": "squid",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "soft ocean squid",
+					"audioText": "soft ocean squid",
+					"fallbackText": "squid",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The squid floats in blue water.",
+					"audioText": "The squid floats in blue water.",
+					"fallbackText": "squid",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has gentle arms? The squid has gentle arms.",
+					"audioText": "Who has gentle arms? The squid has gentle arms.",
+					"fallbackText": "squid",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The squid drifts calmly through the ocean.",
+					"audioText": "The squid drifts calmly through the ocean.",
+					"fallbackText": "squid",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找鱿鱼。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到鱿鱼了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-success.mp3"
+			},
+			"fallbackText": "鱿鱼",
+			"levels": {
+				"L0": {
+					"text": "鱿鱼",
+					"audioText": "鱿鱼",
+					"fallbackText": "鱿鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "鱿鱼漂一漂。",
+					"audioText": "鱿鱼漂一漂。",
+					"fallbackText": "鱿鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "软软的海洋鱿鱼",
+					"audioText": "软软的海洋鱿鱼",
+					"fallbackText": "鱿鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "鱿鱼在蓝色水里漂。",
+					"audioText": "鱿鱼在蓝色水里漂。",
+					"fallbackText": "鱿鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有柔软的小手？鱿鱼有柔软的小手。",
+					"audioText": "谁有柔软的小手？鱿鱼有柔软的小手。",
+					"fallbackText": "鱿鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "鱿鱼在海里安静地漂。",
+					"audioText": "鱿鱼在海里安静地漂。",
+					"fallbackText": "鱿鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/squid-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/squid.webp",
+				"alt": "squid",
+				"generationPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background.",
+				"placeholder": {
+					"label": "squid",
+					"emoji": "🦑"
+				}
+			},
+			"visualPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "animal", "ocean", "water", "tentacles"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/squid-bright.webp",
+				"alt": "squid bright large",
+				"generationPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "squid",
+					"emoji": "🦑"
+				}
+			},
+			"visualPrompt": "A friendly squid for a toddler ocean word-learning game, rounded head, soft tentacles, happy face, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "animal", "ocean", "water", "tentacles"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

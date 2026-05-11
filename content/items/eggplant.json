@@ -1,0 +1,204 @@
+{
+	"id": "eggplant",
+	"category": "garden-vegetables",
+	"tags": ["garden-vegetables", "food", "eggplant"],
+	"visualPrompt": "A friendly eggplant for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/eggplant.png",
+				"alt": "eggplant",
+				"generationPrompt": "A friendly eggplant for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "eggplant",
+					"emoji": "🍆"
+				}
+			},
+			"visualPrompt": "A friendly eggplant for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": [
+				"fruits-and-vegetables",
+				"garden-vegetables",
+				"food",
+				"eggplant"
+			],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/eggplant-bright.png",
+				"alt": "eggplant bright large",
+				"generationPrompt": "A friendly eggplant for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "eggplant",
+					"emoji": "🍆"
+				}
+			},
+			"visualPrompt": "A friendly eggplant for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": [
+				"fruits-and-vegetables",
+				"garden-vegetables",
+				"food",
+				"eggplant"
+			],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "eggplant-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the eggplant.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-en-find.mp3"
+			},
+			"successPhrase": "You found the eggplant.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-en-success.mp3"
+			},
+			"fallbackText": "That is the eggplant.",
+			"levels": {
+				"L0": {
+					"text": "eggplant",
+					"audioText": "eggplant",
+					"fallbackText": "eggplant",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The eggplant is in the garden stand.",
+					"audioText": "The eggplant is in the garden stand.",
+					"fallbackText": "eggplant",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "purple eggplant",
+					"audioText": "purple eggplant",
+					"fallbackText": "eggplant",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The eggplant waits in the garden stand.",
+					"audioText": "The eggplant waits in the garden stand.",
+					"fallbackText": "eggplant",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the eggplant.",
+					"audioText": "What do you see? I see the eggplant.",
+					"fallbackText": "eggplant",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The eggplant rests quietly where little hands can find it.",
+					"audioText": "The eggplant rests quietly where little hands can find it.",
+					"fallbackText": "eggplant",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找茄子。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到茄子了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是茄子。",
+			"levels": {
+				"L0": {
+					"text": "茄子",
+					"audioText": "茄子",
+					"fallbackText": "茄子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "茄子在菜园小摊里。",
+					"audioText": "茄子在菜园小摊里。",
+					"fallbackText": "茄子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "紫色的茄子",
+					"audioText": "紫色的茄子",
+					"fallbackText": "茄子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "茄子安静地待在菜园小摊里。",
+					"audioText": "茄子安静地待在菜园小摊里。",
+					"fallbackText": "茄子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了茄子。",
+					"audioText": "你看到了什么？我看到了茄子。",
+					"fallbackText": "茄子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "茄子轻轻地等着小手来找到它。",
+					"audioText": "茄子轻轻地等着小手来找到它。",
+					"fallbackText": "茄子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/eggplant-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

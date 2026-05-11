@@ -1,36 +1,38 @@
-import dinosaursPack from '../../content/packs/dinosaurs.json'
-import englishAlphabetPack from '../../content/packs/english-alphabet.json'
-import farmFriendsPack from '../../content/packs/farm-friends.json'
-import fruitsAndVegetablesPack from '../../content/packs/fruits-and-vegetables.json'
-import gardenPack from '../../content/packs/garden.json'
-import numbersPack from '../../content/packs/numbers.json'
-import oceanAnimalsPack from '../../content/packs/ocean-animals.json'
-import transportationPack from '../../content/packs/transportation.json'
 import {
 	LEARNING_LEVELS,
 	type RuntimeCatalog,
 	RuntimeCatalogSchema,
 	SUPPORTED_LANGUAGE_CODES,
 } from './schema'
-import { validateContentPacks } from './validation'
+import { validateContentCatalog } from './validation'
 
-export function createRuntimeCatalog(packs: unknown[]): RuntimeCatalog {
+const itemModules = import.meta.glob('../../content/items/*.json', {
+	eager: true,
+	import: 'default',
+})
+
+const packModules = import.meta.glob('../../content/packs/*.json', {
+	eager: true,
+	import: 'default',
+})
+
+export function createRuntimeCatalog(
+	items: unknown[],
+	packs: unknown[],
+): RuntimeCatalog {
+	const validated = validateContentCatalog(items, packs)
+
 	return RuntimeCatalogSchema.parse({
-		schemaVersion: '1',
+		schemaVersion: '2',
 		supportedLanguages: [...SUPPORTED_LANGUAGE_CODES],
 		learningLevels: [...LEARNING_LEVELS],
 		defaultLanguageOrder: ['en', 'zh-Hans'],
-		packs: validateContentPacks(packs),
+		items: validated.items,
+		packs: validated.packs,
 	})
 }
 
-export const catalog = createRuntimeCatalog([
-	gardenPack,
-	fruitsAndVegetablesPack,
-	oceanAnimalsPack,
-	dinosaursPack,
-	farmFriendsPack,
-	numbersPack,
-	englishAlphabetPack,
-	transportationPack,
-])
+export const catalog = createRuntimeCatalog(
+	Object.values(itemModules),
+	Object.values(packModules),
+)

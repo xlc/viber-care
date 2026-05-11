@@ -1,0 +1,194 @@
+{
+	"id": "letter-w",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "w"],
+	"visualPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-w-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter W.",
+			"successPhrase": "You found letter W.",
+			"fallbackText": "W",
+			"levels": {
+				"L0": {
+					"text": "W",
+					"audioText": "W",
+					"fallbackText": "W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "W is for whale.",
+					"audioText": "W is for whale.",
+					"fallbackText": "W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase W",
+					"audioText": "uppercase W",
+					"fallbackText": "W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "W starts the word whale.",
+					"audioText": "W starts the word whale.",
+					"fallbackText": "W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is W.",
+					"audioText": "What letter is this? It is W.",
+					"fallbackText": "W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "W sits on the card and says whale.",
+					"audioText": "W sits on the card and says whale.",
+					"fallbackText": "W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-w-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-w-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 W。",
+			"successPhrase": "你找到字母 W 了。",
+			"fallbackText": "字母 W",
+			"levels": {
+				"L0": {
+					"text": "字母 W",
+					"audioText": "字母 W",
+					"fallbackText": "字母 W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "W 代表鲸鱼。",
+					"audioText": "W 代表鲸鱼。",
+					"fallbackText": "字母 W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 W",
+					"audioText": "大写字母 W",
+					"fallbackText": "字母 W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "W 是鲸鱼的开头。",
+					"audioText": "W 是鲸鱼的开头。",
+					"fallbackText": "字母 W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 W。",
+					"audioText": "这是什么字母？这是 W。",
+					"fallbackText": "字母 W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "W 在卡片上，轻轻说鲸鱼。",
+					"audioText": "W 在卡片上，轻轻说鲸鱼。",
+					"fallbackText": "字母 W",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-w-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-w.webp",
+				"alt": "letter W",
+				"generationPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "W",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "w"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-w-bright.webp",
+				"alt": "letter W bright large",
+				"generationPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "W",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase W letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "w"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

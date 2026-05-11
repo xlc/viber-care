@@ -1,0 +1,194 @@
+{
+	"id": "helicopter",
+	"category": "transportation",
+	"tags": ["transportation", "sky", "flying"],
+	"visualPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
+	"interaction": {
+		"id": "helicopter-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the helicopter.",
+			"successPhrase": "You found the helicopter.",
+			"fallbackText": "That's the helicopter.",
+			"levels": {
+				"L0": {
+					"text": "helicopter",
+					"audioText": "helicopter",
+					"fallbackText": "helicopter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The helicopter hovers.",
+					"audioText": "The helicopter hovers.",
+					"fallbackText": "helicopter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "green helicopter",
+					"audioText": "green helicopter",
+					"fallbackText": "helicopter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The helicopter hovers in the sky.",
+					"audioText": "The helicopter hovers in the sky.",
+					"fallbackText": "helicopter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a spinning rotor? The helicopter has a rotor.",
+					"audioText": "What has a spinning rotor? The helicopter has a rotor.",
+					"fallbackText": "helicopter",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The helicopter hums softly above the trees.",
+					"audioText": "The helicopter hums softly above the trees.",
+					"fallbackText": "That's the helicopter.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/helicopter-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/helicopter-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找直升机。",
+			"successPhrase": "你找到直升机了。",
+			"fallbackText": "这是直升机。",
+			"levels": {
+				"L0": {
+					"text": "直升机",
+					"audioText": "直升机",
+					"fallbackText": "直升机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "直升机停在空中。",
+					"audioText": "直升机停在空中。",
+					"fallbackText": "直升机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "绿色直升机",
+					"audioText": "绿色直升机",
+					"fallbackText": "直升机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "直升机在天空中停一停。",
+					"audioText": "直升机在天空中停一停。",
+					"fallbackText": "直升机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有旋转的桨叶？直升机有桨叶。",
+					"audioText": "谁有旋转的桨叶？直升机有桨叶。",
+					"fallbackText": "直升机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "直升机在树上方轻轻嗡嗡响。",
+					"audioText": "直升机在树上方轻轻嗡嗡响。",
+					"fallbackText": "这是直升机。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/helicopter-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/helicopter.png",
+				"alt": "green helicopter",
+				"generationPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
+				"placeholder": {
+					"label": "helicopter",
+					"emoji": "🚁"
+				}
+			},
+			"visualPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "sky", "flying"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/helicopter-bright.png",
+				"alt": "green helicopter bright large",
+				"generationPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "helicopter",
+					"emoji": "🚁"
+				}
+			},
+			"visualPrompt": "A friendly green helicopter for a toddler transportation word-learning game, soft rounded body, gentle rotor, no rescue markings, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "sky", "flying"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

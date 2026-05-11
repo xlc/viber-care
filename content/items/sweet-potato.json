@@ -1,0 +1,204 @@
+{
+	"id": "sweet-potato",
+	"category": "root-vegetables",
+	"tags": ["root-vegetables", "food", "sweet-potato"],
+	"visualPrompt": "A friendly sweet potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/sweet-potato.png",
+				"alt": "sweet potato",
+				"generationPrompt": "A friendly sweet potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "sweet potato",
+					"emoji": "🍠"
+				}
+			},
+			"visualPrompt": "A friendly sweet potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": [
+				"fruits-and-vegetables",
+				"root-vegetables",
+				"food",
+				"sweet-potato"
+			],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/sweet-potato-bright.png",
+				"alt": "sweet potato bright large",
+				"generationPrompt": "A friendly sweet potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "sweet potato",
+					"emoji": "🍠"
+				}
+			},
+			"visualPrompt": "A friendly sweet potato for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": [
+				"fruits-and-vegetables",
+				"root-vegetables",
+				"food",
+				"sweet-potato"
+			],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "sweet-potato-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the sweet potato.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-en-find.mp3"
+			},
+			"successPhrase": "You found the sweet potato.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-en-success.mp3"
+			},
+			"fallbackText": "That is the sweet potato.",
+			"levels": {
+				"L0": {
+					"text": "sweet potato",
+					"audioText": "sweet potato",
+					"fallbackText": "sweet potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The sweet potato is in the garden bed.",
+					"audioText": "The sweet potato is in the garden bed.",
+					"fallbackText": "sweet potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "sweet orange sweet potato",
+					"audioText": "sweet orange sweet potato",
+					"fallbackText": "sweet potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The sweet potato waits in the garden bed.",
+					"audioText": "The sweet potato waits in the garden bed.",
+					"fallbackText": "sweet potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the sweet potato.",
+					"audioText": "What do you see? I see the sweet potato.",
+					"fallbackText": "sweet potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The sweet potato rests quietly where little hands can find it.",
+					"audioText": "The sweet potato rests quietly where little hands can find it.",
+					"fallbackText": "sweet potato",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找红薯。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到红薯了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是红薯。",
+			"levels": {
+				"L0": {
+					"text": "红薯",
+					"audioText": "红薯",
+					"fallbackText": "红薯",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "红薯在菜地里。",
+					"audioText": "红薯在菜地里。",
+					"fallbackText": "红薯",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "甜甜的橙色红薯",
+					"audioText": "甜甜的橙色红薯",
+					"fallbackText": "红薯",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "红薯安静地待在菜地里。",
+					"audioText": "红薯安静地待在菜地里。",
+					"fallbackText": "红薯",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了红薯。",
+					"audioText": "你看到了什么？我看到了红薯。",
+					"fallbackText": "红薯",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "红薯轻轻地等着小手来找到它。",
+					"audioText": "红薯轻轻地等着小手来找到它。",
+					"fallbackText": "红薯",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/sweet-potato-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

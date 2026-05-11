@@ -1,0 +1,267 @@
+{
+	"id": "pumpkin",
+	"category": "food",
+	"tags": [
+		"farm",
+		"vegetable",
+		"garden-bed",
+		"pumpkin",
+		"garden-vegetables",
+		"food",
+		"fruits-and-vegetables"
+	],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "dot-match", "color-sort", "more-less", "size"],
+		"colors": ["orange"],
+		"sizes": ["big", "small"],
+		"sceneZones": ["garden", "yard"],
+		"zhMeasureWord": "个",
+		"englishPlural": "pumpkins"
+	},
+	"visualPrompt": "A friendly orange pumpkin for a toddler farm word-learning game, rounded soft shape, green stem, simple clear silhouette, transparent background.",
+	"interaction": {
+		"id": "pumpkin-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the pumpkin.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/pumpkin-en-find.mp3"
+			},
+			"successPhrase": "You found the pumpkin.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/pumpkin-en-success.mp3"
+			},
+			"fallbackText": "pumpkin",
+			"levels": {
+				"L0": {
+					"text": "pumpkin",
+					"audioText": "pumpkin",
+					"fallbackText": "pumpkin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The pumpkin is round.",
+					"audioText": "The pumpkin is round.",
+					"fallbackText": "pumpkin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round orange pumpkin",
+					"audioText": "round orange pumpkin",
+					"fallbackText": "pumpkin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The pumpkin sits in the garden bed.",
+					"audioText": "The pumpkin sits in the garden bed.",
+					"fallbackText": "pumpkin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What is orange and round? The pumpkin is orange and round.",
+					"audioText": "What is orange and round? The pumpkin is orange and round.",
+					"fallbackText": "pumpkin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The pumpkin rests softly in the vegetable patch.",
+					"audioText": "The pumpkin rests softly in the vegetable patch.",
+					"fallbackText": "pumpkin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找南瓜。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/pumpkin-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到南瓜了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/pumpkin-zh-Hans-success.mp3"
+			},
+			"fallbackText": "南瓜",
+			"levels": {
+				"L0": {
+					"text": "南瓜",
+					"audioText": "南瓜",
+					"fallbackText": "南瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "南瓜圆圆的。",
+					"audioText": "南瓜圆圆的。",
+					"fallbackText": "南瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "圆圆的橙色南瓜",
+					"audioText": "圆圆的橙色南瓜",
+					"fallbackText": "南瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "南瓜在菜地里。",
+					"audioText": "南瓜在菜地里。",
+					"fallbackText": "南瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么又橙又圆？南瓜又橙又圆。",
+					"audioText": "什么又橙又圆？南瓜又橙又圆。",
+					"fallbackText": "南瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "南瓜轻轻地待在蔬菜地里。",
+					"audioText": "南瓜轻轻地待在蔬菜地里。",
+					"fallbackText": "南瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/pumpkin-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/pumpkin.png",
+				"alt": "pumpkin",
+				"generationPrompt": "A friendly orange pumpkin for a toddler farm word-learning game, rounded soft shape, green stem, simple clear silhouette, transparent background.",
+				"placeholder": {
+					"label": "pumpkin",
+					"emoji": "🎃"
+				}
+			},
+			"visualPrompt": "A friendly orange pumpkin for a toddler farm word-learning game, rounded soft shape, green stem, simple clear silhouette, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": [
+				"farm-friends",
+				"food",
+				"farm",
+				"vegetable",
+				"garden-bed",
+				"pumpkin"
+			],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/pumpkin-bright.png",
+				"alt": "pumpkin bright large",
+				"generationPrompt": "A friendly orange pumpkin for a toddler farm word-learning game, rounded soft shape, green stem, simple clear silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "pumpkin",
+					"emoji": "🎃"
+				}
+			},
+			"visualPrompt": "A friendly orange pumpkin for a toddler farm word-learning game, rounded soft shape, green stem, simple clear silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": [
+				"farm-friends",
+				"food",
+				"farm",
+				"vegetable",
+				"garden-bed",
+				"pumpkin"
+			],
+			"size": "large",
+			"style": "bright-large"
+		},
+		{
+			"id": "fruits-and-vegetables-classic",
+			"label": "pumpkin Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/pumpkin.png",
+				"alt": "pumpkin",
+				"generationPrompt": "A friendly pumpkin for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "pumpkin",
+					"emoji": "🎃"
+				}
+			},
+			"visualPrompt": "A friendly pumpkin for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "garden-vegetables", "food", "pumpkin"],
+			"size": "medium",
+			"style": "fruits-and-vegetables"
+		},
+		{
+			"id": "fruits-and-vegetables-bright-large",
+			"label": "pumpkin Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/pumpkin-bright.png",
+				"alt": "pumpkin bright large",
+				"generationPrompt": "A friendly pumpkin for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "pumpkin",
+					"emoji": "🎃"
+				}
+			},
+			"visualPrompt": "A friendly pumpkin for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "garden-vegetables", "food", "pumpkin"],
+			"size": "large",
+			"style": "fruits-and-vegetables"
+		}
+	]
+}

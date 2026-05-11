@@ -1,0 +1,196 @@
+{
+	"id": "triceratops",
+	"category": "dinosaur",
+	"tags": ["dinosaur", "horns", "blue"],
+	"visualPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
+	"interaction": {
+		"id": "triceratops-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the triceratops.",
+			"successPhrase": "You found the triceratops.",
+			"fallbackText": "That's the triceratops.",
+			"levels": {
+				"L0": {
+					"text": "triceratops",
+					"audioText": "triceratops",
+					"fallbackText": "triceratops",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The triceratops has three horns.",
+					"audioText": "The triceratops has three horns.",
+					"fallbackText": "The triceratops has three horns.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "gentle blue triceratops",
+					"audioText": "gentle blue triceratops",
+					"fallbackText": "That's the triceratops.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The triceratops has three soft horns.",
+					"audioText": "The triceratops has three soft horns.",
+					"fallbackText": "That's the triceratops.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has a big frill? The triceratops has a big frill.",
+					"audioText": "Who has a big frill? The triceratops has a big frill.",
+					"fallbackText": "That's the triceratops.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The triceratops nods hello in the valley.",
+					"audioText": "The triceratops nods hello in the valley.",
+					"fallbackText": "That's the triceratops.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/triceratops-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/triceratops-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找三角龙。",
+			"successPhrase": "你找到三角龙了。",
+			"fallbackText": "这是三角龙。",
+			"levels": {
+				"L0": {
+					"text": "三角龙",
+					"audioText": "三角龙",
+					"fallbackText": "三角龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "三角龙有三个角。",
+					"audioText": "三角龙有三个角。",
+					"fallbackText": "三角龙有三个角。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "温柔的蓝色三角龙",
+					"audioText": "温柔的蓝色三角龙",
+					"fallbackText": "这是三角龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "三角龙有三只软软的角。",
+					"audioText": "三角龙有三只软软的角。",
+					"fallbackText": "这是三角龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有大头盾？三角龙有大头盾。",
+					"audioText": "谁有大头盾？三角龙有大头盾。",
+					"fallbackText": "这是三角龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "三角龙在山谷里点头问好。",
+					"audioText": "三角龙在山谷里点头问好。",
+					"fallbackText": "这是三角龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/triceratops-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/triceratops.webp",
+				"alt": "triceratops",
+				"generationPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
+				"placeholder": {
+					"label": "triceratops",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur", "horns", "blue"],
+			"color": "blue",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/triceratops-bright.webp",
+				"alt": "triceratops bright large",
+				"generationPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "triceratops",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A gentle blue triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur", "horns", "blue"],
+			"color": "blue",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,194 @@
+{
+	"id": "bok-choy",
+	"category": "leafy-vegetables",
+	"tags": ["leafy-vegetables", "food", "bok-choy"],
+	"visualPrompt": "A friendly bok choy for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/bok-choy.png",
+				"alt": "bok choy",
+				"generationPrompt": "A friendly bok choy for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "bok choy",
+					"emoji": "🥬"
+				}
+			},
+			"visualPrompt": "A friendly bok choy for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "bok-choy"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/bok-choy-bright.png",
+				"alt": "bok choy bright large",
+				"generationPrompt": "A friendly bok choy for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "bok choy",
+					"emoji": "🥬"
+				}
+			},
+			"visualPrompt": "A friendly bok choy for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "bok-choy"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "bok-choy-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the bok choy.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-en-find.mp3"
+			},
+			"successPhrase": "You found the bok choy.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-en-success.mp3"
+			},
+			"fallbackText": "That is the bok choy.",
+			"levels": {
+				"L0": {
+					"text": "bok choy",
+					"audioText": "bok choy",
+					"fallbackText": "bok choy",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bok choy is in the leafy patch.",
+					"audioText": "The bok choy is in the leafy patch.",
+					"fallbackText": "bok choy",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "tender green bok choy",
+					"audioText": "tender green bok choy",
+					"fallbackText": "bok choy",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The bok choy waits in the leafy patch.",
+					"audioText": "The bok choy waits in the leafy patch.",
+					"fallbackText": "bok choy",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the bok choy.",
+					"audioText": "What do you see? I see the bok choy.",
+					"fallbackText": "bok choy",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The bok choy rests quietly where little hands can find it.",
+					"audioText": "The bok choy rests quietly where little hands can find it.",
+					"fallbackText": "bok choy",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小白菜。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到小白菜了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是小白菜。",
+			"levels": {
+				"L0": {
+					"text": "小白菜",
+					"audioText": "小白菜",
+					"fallbackText": "小白菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小白菜在叶子菜地里。",
+					"audioText": "小白菜在叶子菜地里。",
+					"fallbackText": "小白菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "嫩嫩的绿色小白菜",
+					"audioText": "嫩嫩的绿色小白菜",
+					"fallbackText": "小白菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小白菜安静地待在叶子菜地里。",
+					"audioText": "小白菜安静地待在叶子菜地里。",
+					"fallbackText": "小白菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了小白菜。",
+					"audioText": "你看到了什么？我看到了小白菜。",
+					"fallbackText": "小白菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小白菜轻轻地等着小手来找到它。",
+					"audioText": "小白菜轻轻地等着小手来找到它。",
+					"fallbackText": "小白菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/bok-choy-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

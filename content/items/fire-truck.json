@@ -1,0 +1,194 @@
+{
+	"id": "fire-truck",
+	"category": "vehicle",
+	"tags": ["transportation", "road", "truck", "wheels"],
+	"visualPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background.",
+	"interaction": {
+		"id": "fire-truck-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the fire truck.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/fire-truck-en-find.mp3"
+			},
+			"successPhrase": "You found the fire truck.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/fire-truck-en-success.mp3"
+			},
+			"fallbackText": "fire truck",
+			"levels": {
+				"L0": {
+					"text": "fire truck",
+					"audioText": "fire truck",
+					"fallbackText": "fire truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The fire truck rolls.",
+					"audioText": "The fire truck rolls.",
+					"fallbackText": "fire truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "red fire truck",
+					"audioText": "red fire truck",
+					"fallbackText": "fire truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The fire truck drives on the road.",
+					"audioText": "The fire truck drives on the road.",
+					"fallbackText": "fire truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What truck is red? The fire truck is red.",
+					"audioText": "What truck is red? The fire truck is red.",
+					"fallbackText": "fire truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The fire truck rolls slowly through the transit park.",
+					"audioText": "The fire truck rolls slowly through the transit park.",
+					"fallbackText": "fire truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找消防车。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到消防车了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-success.mp3"
+			},
+			"fallbackText": "消防车",
+			"levels": {
+				"L0": {
+					"text": "消防车",
+					"audioText": "消防车",
+					"fallbackText": "消防车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "消防车开来了。",
+					"audioText": "消防车开来了。",
+					"fallbackText": "消防车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "红色的消防车",
+					"audioText": "红色的消防车",
+					"fallbackText": "消防车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "消防车在路上开。",
+					"audioText": "消防车在路上开。",
+					"fallbackText": "消防车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么车是红色的？消防车是红色的。",
+					"audioText": "什么车是红色的？消防车是红色的。",
+					"fallbackText": "消防车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "消防车在交通公园里慢慢开。",
+					"audioText": "消防车在交通公园里慢慢开。",
+					"fallbackText": "消防车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/fire-truck-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/fire-truck.png",
+				"alt": "fire truck",
+				"generationPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background.",
+				"placeholder": {
+					"label": "fire truck",
+					"emoji": "🚒"
+				}
+			},
+			"visualPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "vehicle", "road", "truck", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/fire-truck-bright.png",
+				"alt": "fire truck bright large",
+				"generationPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "fire truck",
+					"emoji": "🚒"
+				}
+			},
+			"visualPrompt": "A friendly red fire truck for a toddler transportation word-learning game, rounded toy-like shape, calm and safe, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "vehicle", "road", "truck", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

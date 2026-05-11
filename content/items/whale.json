@@ -1,0 +1,194 @@
+{
+	"id": "whale",
+	"category": "ocean-animal",
+	"tags": ["ocean", "animal", "big"],
+	"visualPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "whale-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the whale.",
+			"successPhrase": "You found the whale.",
+			"fallbackText": "That's the whale.",
+			"levels": {
+				"L0": {
+					"text": "whale",
+					"audioText": "whale",
+					"fallbackText": "whale",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The whale sings.",
+					"audioText": "The whale sings.",
+					"fallbackText": "whale",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "big whale",
+					"audioText": "big whale",
+					"fallbackText": "whale",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The whale swims slowly.",
+					"audioText": "The whale swims slowly.",
+					"fallbackText": "whale",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who is very big? The whale is very big.",
+					"audioText": "Who is very big? The whale is very big.",
+					"fallbackText": "whale",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The whale sings a low song in the blue water.",
+					"audioText": "The whale sings a low song in the blue water.",
+					"fallbackText": "That's the whale.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/whale-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/whale-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找鲸鱼。",
+			"successPhrase": "你找到鲸鱼了。",
+			"fallbackText": "这是鲸鱼。",
+			"levels": {
+				"L0": {
+					"text": "鲸鱼",
+					"audioText": "鲸鱼",
+					"fallbackText": "鲸鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "鲸鱼轻轻唱。",
+					"audioText": "鲸鱼轻轻唱。",
+					"fallbackText": "鲸鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大大的鲸鱼",
+					"audioText": "大大的鲸鱼",
+					"fallbackText": "鲸鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "鲸鱼慢慢地游。",
+					"audioText": "鲸鱼慢慢地游。",
+					"fallbackText": "鲸鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁很大？鲸鱼很大。",
+					"audioText": "谁很大？鲸鱼很大。",
+					"fallbackText": "鲸鱼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "鲸鱼在蓝蓝的水里轻声唱歌。",
+					"audioText": "鲸鱼在蓝蓝的水里轻声唱歌。",
+					"fallbackText": "这是鲸鱼。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/whale-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/whale.webp",
+				"alt": "whale",
+				"generationPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "whale",
+					"emoji": "🐋"
+				}
+			},
+			"visualPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "big"],
+			"size": "large",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/whale-bright.webp",
+				"alt": "whale bright large",
+				"generationPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "whale",
+					"emoji": "🐋"
+				}
+			},
+			"visualPrompt": "A gentle whale for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft blue color, friendly calm expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "big"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

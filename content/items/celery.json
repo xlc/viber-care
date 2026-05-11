@@ -1,0 +1,194 @@
+{
+	"id": "celery",
+	"category": "leafy-vegetables",
+	"tags": ["leafy-vegetables", "food", "celery"],
+	"visualPrompt": "A friendly celery for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/celery.png",
+				"alt": "celery",
+				"generationPrompt": "A friendly celery for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "celery",
+					"emoji": "🌱"
+				}
+			},
+			"visualPrompt": "A friendly celery for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "celery"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/celery-bright.png",
+				"alt": "celery bright large",
+				"generationPrompt": "A friendly celery for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "celery",
+					"emoji": "🌱"
+				}
+			},
+			"visualPrompt": "A friendly celery for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "celery"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "celery-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the celery.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/celery-en-find.mp3"
+			},
+			"successPhrase": "You found the celery.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/celery-en-success.mp3"
+			},
+			"fallbackText": "That is the celery.",
+			"levels": {
+				"L0": {
+					"text": "celery",
+					"audioText": "celery",
+					"fallbackText": "celery",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The celery is in the leafy patch.",
+					"audioText": "The celery is in the leafy patch.",
+					"fallbackText": "celery",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "tall green celery",
+					"audioText": "tall green celery",
+					"fallbackText": "celery",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The celery waits in the leafy patch.",
+					"audioText": "The celery waits in the leafy patch.",
+					"fallbackText": "celery",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the celery.",
+					"audioText": "What do you see? I see the celery.",
+					"fallbackText": "celery",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The celery rests quietly where little hands can find it.",
+					"audioText": "The celery rests quietly where little hands can find it.",
+					"fallbackText": "celery",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找芹菜。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/celery-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到芹菜了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/celery-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是芹菜。",
+			"levels": {
+				"L0": {
+					"text": "芹菜",
+					"audioText": "芹菜",
+					"fallbackText": "芹菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "芹菜在叶子菜地里。",
+					"audioText": "芹菜在叶子菜地里。",
+					"fallbackText": "芹菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "长长的绿色芹菜",
+					"audioText": "长长的绿色芹菜",
+					"fallbackText": "芹菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "芹菜安静地待在叶子菜地里。",
+					"audioText": "芹菜安静地待在叶子菜地里。",
+					"fallbackText": "芹菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了芹菜。",
+					"audioText": "你看到了什么？我看到了芹菜。",
+					"fallbackText": "芹菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "芹菜轻轻地等着小手来找到它。",
+					"audioText": "芹菜轻轻地等着小手来找到它。",
+					"fallbackText": "芹菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/celery-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

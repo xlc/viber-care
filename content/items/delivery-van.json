@@ -1,0 +1,194 @@
+{
+	"id": "delivery-van",
+	"category": "vehicle",
+	"tags": ["transportation", "road", "van", "wheels"],
+	"visualPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "delivery-van-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "delivery van",
+			"findPrompt": "Find the delivery van.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/delivery-van-en-find.mp3"
+			},
+			"successPhrase": "You found the delivery van.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/delivery-van-en-success.mp3"
+			},
+			"fallbackText": "delivery van",
+			"levels": {
+				"L0": {
+					"text": "delivery van",
+					"audioText": "delivery van",
+					"fallbackText": "van",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The delivery van rolls.",
+					"audioText": "The delivery van rolls.",
+					"fallbackText": "delivery van",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "blue delivery van",
+					"audioText": "blue delivery van",
+					"fallbackText": "delivery van",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The delivery van rolls along the road.",
+					"audioText": "The delivery van rolls along the road.",
+					"fallbackText": "delivery van",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What brings a package? The delivery van brings it.",
+					"audioText": "What brings a package? The delivery van brings it.",
+					"fallbackText": "delivery van",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The delivery van rolls slowly with a small package.",
+					"audioText": "The delivery van rolls slowly with a small package.",
+					"fallbackText": "That is the delivery van.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "送货车",
+			"findPrompt": "找一找送货车。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到了送货车。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-success.mp3"
+			},
+			"fallbackText": "送货车",
+			"levels": {
+				"L0": {
+					"text": "送货车",
+					"audioText": "送货车",
+					"fallbackText": "送货车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "送货车慢慢开。",
+					"audioText": "送货车慢慢开。",
+					"fallbackText": "送货车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "蓝色送货车",
+					"audioText": "蓝色送货车",
+					"fallbackText": "送货车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "送货车在路上慢慢开。",
+					"audioText": "送货车在路上慢慢开。",
+					"fallbackText": "送货车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁带来小包裹？送货车带来。",
+					"audioText": "谁带来小包裹？送货车带来。",
+					"fallbackText": "送货车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "送货车带着小包裹，轻轻开过来。",
+					"audioText": "送货车带着小包裹，轻轻开过来。",
+					"fallbackText": "这是送货车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/delivery-van-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "blue delivery van",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/delivery-van.png",
+				"alt": "blue delivery van",
+				"generationPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "blue delivery van"
+				}
+			},
+			"visualPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "vehicle", "road", "van", "wheels"],
+			"color": "blue",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "blue delivery van bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/delivery-van-bright.png",
+				"alt": "blue delivery van bright large",
+				"generationPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "blue delivery van bright large"
+				}
+			},
+			"visualPrompt": "A friendly blue delivery van for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "vehicle", "road", "van", "wheels"],
+			"color": "blue",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

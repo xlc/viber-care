@@ -1,0 +1,194 @@
+{
+	"id": "seal",
+	"category": "ocean-animal",
+	"tags": ["ocean", "animal", "playful"],
+	"visualPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "seal-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the seal.",
+			"successPhrase": "You found the seal.",
+			"fallbackText": "That's the seal.",
+			"levels": {
+				"L0": {
+					"text": "seal",
+					"audioText": "seal",
+					"fallbackText": "seal",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The seal claps.",
+					"audioText": "The seal claps.",
+					"fallbackText": "seal",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "playful seal",
+					"audioText": "playful seal",
+					"fallbackText": "seal",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The seal claps by the water.",
+					"audioText": "The seal claps by the water.",
+					"fallbackText": "seal",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who claps softly? The seal claps softly.",
+					"audioText": "Who claps softly? The seal claps softly.",
+					"fallbackText": "seal",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The seal claps softly beside the water.",
+					"audioText": "The seal claps softly beside the water.",
+					"fallbackText": "That's the seal.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/seal-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/seal-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找海豹。",
+			"successPhrase": "你找到海豹了。",
+			"fallbackText": "这是海豹。",
+			"levels": {
+				"L0": {
+					"text": "海豹",
+					"audioText": "海豹",
+					"fallbackText": "海豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "海豹拍拍手。",
+					"audioText": "海豹拍拍手。",
+					"fallbackText": "海豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "爱玩的海豹",
+					"audioText": "爱玩的海豹",
+					"fallbackText": "海豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "海豹在水边拍手。",
+					"audioText": "海豹在水边拍手。",
+					"fallbackText": "海豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁轻轻拍手？海豹轻轻拍手。",
+					"audioText": "谁轻轻拍手？海豹轻轻拍手。",
+					"fallbackText": "海豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "海豹在水边轻轻拍手。",
+					"audioText": "海豹在水边轻轻拍手。",
+					"fallbackText": "这是海豹。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/seal-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/seal.webp",
+				"alt": "seal",
+				"generationPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "seal",
+					"emoji": "🦭"
+				}
+			},
+			"visualPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "playful"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/seal-bright.webp",
+				"alt": "seal bright large",
+				"generationPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "seal",
+					"emoji": "🦭"
+				}
+			},
+			"visualPrompt": "A playful gentle seal for a toddler ocean word-learning game. Consistent flat style, simple rounded shapes, clear silhouette, soft gray color, friendly expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "playful"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

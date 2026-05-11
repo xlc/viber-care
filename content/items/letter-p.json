@@ -1,0 +1,194 @@
+{
+	"id": "letter-p",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "p"],
+	"visualPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-p-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter P.",
+			"successPhrase": "You found letter P.",
+			"fallbackText": "P",
+			"levels": {
+				"L0": {
+					"text": "P",
+					"audioText": "P",
+					"fallbackText": "P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "P is for puppy.",
+					"audioText": "P is for puppy.",
+					"fallbackText": "P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase P",
+					"audioText": "uppercase P",
+					"fallbackText": "P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "P starts the word puppy.",
+					"audioText": "P starts the word puppy.",
+					"fallbackText": "P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is P.",
+					"audioText": "What letter is this? It is P.",
+					"fallbackText": "P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "P sits on the card and says puppy.",
+					"audioText": "P sits on the card and says puppy.",
+					"fallbackText": "P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-p-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-p-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 P。",
+			"successPhrase": "你找到字母 P 了。",
+			"fallbackText": "字母 P",
+			"levels": {
+				"L0": {
+					"text": "字母 P",
+					"audioText": "字母 P",
+					"fallbackText": "字母 P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "P 代表小狗。",
+					"audioText": "P 代表小狗。",
+					"fallbackText": "字母 P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 P",
+					"audioText": "大写字母 P",
+					"fallbackText": "字母 P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "P 是小狗的开头。",
+					"audioText": "P 是小狗的开头。",
+					"fallbackText": "字母 P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 P。",
+					"audioText": "这是什么字母？这是 P。",
+					"fallbackText": "字母 P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "P 在卡片上，轻轻说小狗。",
+					"audioText": "P 在卡片上，轻轻说小狗。",
+					"fallbackText": "字母 P",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-p-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-p.webp",
+				"alt": "letter P",
+				"generationPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "P",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "p"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-p-bright.webp",
+				"alt": "letter P bright large",
+				"generationPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "P",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase P letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "p"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

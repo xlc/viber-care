@@ -1,0 +1,194 @@
+{
+	"id": "long-neck",
+	"category": "dinosaur",
+	"tags": ["dinosaur", "long neck", "leaf"],
+	"visualPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
+	"interaction": {
+		"id": "long-neck-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the long-neck dinosaur.",
+			"successPhrase": "You found the long-neck dinosaur.",
+			"fallbackText": "That's the long-neck dinosaur.",
+			"levels": {
+				"L0": {
+					"text": "long-neck dinosaur",
+					"audioText": "long-neck dinosaur",
+					"fallbackText": "long-neck dinosaur",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The long-neck reaches a leaf.",
+					"audioText": "The long-neck reaches a leaf.",
+					"fallbackText": "The long-neck reaches a leaf.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "tall long-neck dinosaur",
+					"audioText": "tall long-neck dinosaur",
+					"fallbackText": "That's the long-neck dinosaur.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The long-neck reaches for a leaf.",
+					"audioText": "The long-neck reaches for a leaf.",
+					"fallbackText": "That's the long-neck dinosaur.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has a long neck? The long-neck dinosaur does.",
+					"audioText": "Who has a long neck? The long-neck dinosaur does.",
+					"fallbackText": "That's the long-neck dinosaur.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The long-neck gently nibbles a high leaf.",
+					"audioText": "The long-neck gently nibbles a high leaf.",
+					"fallbackText": "That's the long-neck dinosaur.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/long-neck-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/long-neck-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找长颈龙。",
+			"successPhrase": "你找到长颈龙了。",
+			"fallbackText": "这是长颈龙。",
+			"levels": {
+				"L0": {
+					"text": "长颈龙",
+					"audioText": "长颈龙",
+					"fallbackText": "长颈龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "长颈龙够到叶子。",
+					"audioText": "长颈龙够到叶子。",
+					"fallbackText": "长颈龙够到叶子。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "高高的长颈龙",
+					"audioText": "高高的长颈龙",
+					"fallbackText": "这是长颈龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "长颈龙伸向叶子。",
+					"audioText": "长颈龙伸向叶子。",
+					"fallbackText": "这是长颈龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有长长的脖子？长颈龙有长长的脖子。",
+					"audioText": "谁有长长的脖子？长颈龙有长长的脖子。",
+					"fallbackText": "这是长颈龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "长颈龙轻轻吃到高高的叶子。",
+					"audioText": "长颈龙轻轻吃到高高的叶子。",
+					"fallbackText": "这是长颈龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/long-neck-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/long-neck.webp",
+				"alt": "long-neck dinosaur",
+				"generationPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
+				"placeholder": {
+					"label": "long-neck dinosaur",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur", "long neck", "leaf"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/long-neck-bright.webp",
+				"alt": "long-neck dinosaur bright large",
+				"generationPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "long-neck dinosaur",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A calm long-neck dinosaur for a toddler dinosaur word-learning game, soft blue-green body, reaching gently toward a leaf, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur", "long neck", "leaf"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

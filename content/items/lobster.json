@@ -1,0 +1,194 @@
+{
+	"id": "lobster",
+	"category": "animal",
+	"tags": ["ocean", "seabed", "animal", "claws"],
+	"visualPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background.",
+	"interaction": {
+		"id": "lobster-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the lobster.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/lobster-en-find.mp3"
+			},
+			"successPhrase": "You found the lobster.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/lobster-en-success.mp3"
+			},
+			"fallbackText": "lobster",
+			"levels": {
+				"L0": {
+					"text": "lobster",
+					"audioText": "lobster",
+					"fallbackText": "lobster",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The lobster waves.",
+					"audioText": "The lobster waves.",
+					"fallbackText": "lobster",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "red ocean lobster",
+					"audioText": "red ocean lobster",
+					"fallbackText": "lobster",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The lobster walks on the seabed.",
+					"audioText": "The lobster walks on the seabed.",
+					"fallbackText": "lobster",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has little claws? The lobster has claws.",
+					"audioText": "Who has little claws? The lobster has claws.",
+					"fallbackText": "lobster",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The lobster gently waves on the sandy seabed.",
+					"audioText": "The lobster gently waves on the sandy seabed.",
+					"fallbackText": "lobster",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找龙虾。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到龙虾了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-success.mp3"
+			},
+			"fallbackText": "龙虾",
+			"levels": {
+				"L0": {
+					"text": "龙虾",
+					"audioText": "龙虾",
+					"fallbackText": "龙虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "龙虾挥一挥。",
+					"audioText": "龙虾挥一挥。",
+					"fallbackText": "龙虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "红色的海洋龙虾",
+					"audioText": "红色的海洋龙虾",
+					"fallbackText": "龙虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "龙虾在海底走。",
+					"audioText": "龙虾在海底走。",
+					"fallbackText": "龙虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有小钳子？龙虾有小钳子。",
+					"audioText": "谁有小钳子？龙虾有小钳子。",
+					"fallbackText": "龙虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "龙虾在沙沙的海底轻轻挥一挥。",
+					"audioText": "龙虾在沙沙的海底轻轻挥一挥。",
+					"fallbackText": "龙虾",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/lobster-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/lobster.webp",
+				"alt": "lobster",
+				"generationPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background.",
+				"placeholder": {
+					"label": "lobster",
+					"emoji": "🦞"
+				}
+			},
+			"visualPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "animal", "ocean", "seabed", "claws"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/lobster-bright.webp",
+				"alt": "lobster bright large",
+				"generationPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "lobster",
+					"emoji": "🦞"
+				}
+			},
+			"visualPrompt": "A friendly red lobster for a toddler ocean word-learning game, rounded claws, happy face, soft simple shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "animal", "ocean", "seabed", "claws"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

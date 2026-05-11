@@ -1,0 +1,194 @@
+{
+	"id": "mushroom",
+	"category": "plant",
+	"tags": ["garden", "plant", "ground", "mushroom"],
+	"visualPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background.",
+	"interaction": {
+		"id": "mushroom-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the mushroom.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/mushroom-en-find.mp3"
+			},
+			"successPhrase": "You found the mushroom.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/mushroom-en-success.mp3"
+			},
+			"fallbackText": "mushroom",
+			"levels": {
+				"L0": {
+					"text": "mushroom",
+					"audioText": "mushroom",
+					"fallbackText": "mushroom",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The mushroom is round.",
+					"audioText": "The mushroom is round.",
+					"fallbackText": "mushroom",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "red garden mushroom",
+					"audioText": "red garden mushroom",
+					"fallbackText": "mushroom",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The mushroom grows in the grass.",
+					"audioText": "The mushroom grows in the grass.",
+					"fallbackText": "mushroom",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a little cap? The mushroom has a cap.",
+					"audioText": "What has a little cap? The mushroom has a cap.",
+					"fallbackText": "mushroom",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The mushroom rests quietly in the soft grass.",
+					"audioText": "The mushroom rests quietly in the soft grass.",
+					"fallbackText": "mushroom",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找蘑菇。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/mushroom-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到蘑菇了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/mushroom-zh-Hans-success.mp3"
+			},
+			"fallbackText": "蘑菇",
+			"levels": {
+				"L0": {
+					"text": "蘑菇",
+					"audioText": "蘑菇",
+					"fallbackText": "蘑菇",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "蘑菇圆圆的。",
+					"audioText": "蘑菇圆圆的。",
+					"fallbackText": "蘑菇",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "红色的花园蘑菇",
+					"audioText": "红色的花园蘑菇",
+					"fallbackText": "蘑菇",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "蘑菇长在草地上。",
+					"audioText": "蘑菇长在草地上。",
+					"fallbackText": "蘑菇",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么有小伞盖？蘑菇有小伞盖。",
+					"audioText": "什么有小伞盖？蘑菇有小伞盖。",
+					"fallbackText": "蘑菇",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "蘑菇安静地待在软软的草地上。",
+					"audioText": "蘑菇安静地待在软软的草地上。",
+					"fallbackText": "蘑菇",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/mushroom-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/mushroom.webp",
+				"alt": "mushroom",
+				"generationPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background.",
+				"placeholder": {
+					"label": "mushroom",
+					"emoji": "🍄"
+				}
+			},
+			"visualPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "plant", "ground", "mushroom"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/mushroom-bright.webp",
+				"alt": "mushroom bright large",
+				"generationPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "mushroom",
+					"emoji": "🍄"
+				}
+			},
+			"visualPrompt": "A friendly red mushroom for a toddler word-learning garden game, rounded cap, soft cream stem, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "plant", "ground", "mushroom"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

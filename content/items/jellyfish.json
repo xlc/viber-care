@@ -1,0 +1,194 @@
+{
+	"id": "jellyfish",
+	"category": "ocean-animal",
+	"tags": ["ocean", "animal", "floater"],
+	"visualPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "jellyfish-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the jellyfish.",
+			"successPhrase": "You found the jellyfish.",
+			"fallbackText": "That's the jellyfish.",
+			"levels": {
+				"L0": {
+					"text": "jellyfish",
+					"audioText": "jellyfish",
+					"fallbackText": "jellyfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The jellyfish floats.",
+					"audioText": "The jellyfish floats.",
+					"fallbackText": "jellyfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "soft jellyfish",
+					"audioText": "soft jellyfish",
+					"fallbackText": "jellyfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The jellyfish floats gently.",
+					"audioText": "The jellyfish floats gently.",
+					"fallbackText": "jellyfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who floats softly? The jellyfish floats softly.",
+					"audioText": "Who floats softly? The jellyfish floats softly.",
+					"fallbackText": "jellyfish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The jellyfish floats gently under the bubbles.",
+					"audioText": "The jellyfish floats gently under the bubbles.",
+					"fallbackText": "That's the jellyfish.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/jellyfish-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/jellyfish-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找水母。",
+			"successPhrase": "你找到水母了。",
+			"fallbackText": "这是水母。",
+			"levels": {
+				"L0": {
+					"text": "水母",
+					"audioText": "水母",
+					"fallbackText": "水母",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "水母轻轻飘。",
+					"audioText": "水母轻轻飘。",
+					"fallbackText": "水母",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "软软的水母",
+					"audioText": "软软的水母",
+					"fallbackText": "水母",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "水母轻轻地飘。",
+					"audioText": "水母轻轻地飘。",
+					"fallbackText": "水母",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁软软地飘？水母软软地飘。",
+					"audioText": "谁软软地飘？水母软软地飘。",
+					"fallbackText": "水母",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "水母在泡泡下面轻轻漂。",
+					"audioText": "水母在泡泡下面轻轻漂。",
+					"fallbackText": "这是水母。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/ocean-animals/audio/jellyfish-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/jellyfish.webp",
+				"alt": "jellyfish",
+				"generationPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "jellyfish",
+					"emoji": "🪼"
+				}
+			},
+			"visualPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "floater"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/ocean-animals/jellyfish-bright.webp",
+				"alt": "jellyfish bright large",
+				"generationPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "jellyfish",
+					"emoji": "🪼"
+				}
+			},
+			"visualPrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game. Consistent flat style, simple rounded bell shape, clear silhouette, soft pink color, no scary expression, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["ocean-animals", "ocean-animal", "ocean", "animal", "floater"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

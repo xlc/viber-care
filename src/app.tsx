@@ -8,8 +8,6 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { speakSequence, stopSpeech } from './audio/speech'
 import { catalog } from './content/catalog'
 import type {
-	ContentPack,
-	ContentSubPack,
 	LearningLevel,
 	ObjectConcept,
 	RuntimeCatalog,
@@ -45,9 +43,9 @@ import {
 	getDefaultScene,
 	getFindPrompt,
 	getPack,
-	getPackSubPacks,
-	getSelectedSubPack,
-	getSubPackScenes,
+	getPackSets,
+	getSelectedSet,
+	getSetScenes,
 	getSuccessPhrase,
 	type LearningPresentation,
 } from './learning/engine'
@@ -140,23 +138,6 @@ function preloadSceneAssets(scene: Scene, placements: VisibleScenePlacement[]) {
 		image.decoding = 'async'
 		image.src = path
 	}
-}
-
-function getSubPackObjectCount(
-	pack: ContentPack,
-	subPack: ContentSubPack,
-): number {
-	const sceneIds = new Set(subPack.sceneIds)
-	const objectIds = new Set<string>()
-	for (const scene of pack.scenes) {
-		if (!sceneIds.has(scene.id)) {
-			continue
-		}
-		for (const placement of scene.objects) {
-			objectIds.add(placement.objectId)
-		}
-	}
-	return objectIds.size
 }
 
 function Icon({
@@ -932,11 +913,8 @@ function ParentSettings({
 	const contentChangeMode = settings.mode === 'cards' ? 'cards' : 'explore'
 
 	const selectedPack = getPack(catalog, settings.selectedPackId)
-	const selectedPackSubPacks = getPackSubPacks(selectedPack)
-	const selectedSubPack = getSelectedSubPack(
-		selectedPack,
-		settings.selectedSubPackId,
-	)
+	const selectedPackSets = getPackSets(selectedPack)
+	const selectedSet = getSelectedSet(selectedPack, settings.selectedSetId)
 
 	return (
 		<div className="settings-backdrop" role="presentation">
@@ -962,14 +940,14 @@ function ParentSettings({
 					<h3>Pack</h3>
 					<div className="pack-list" role="group" aria-label="Content pack">
 						{catalog.packs.map((pack) => {
-							const subPacks = getPackSubPacks(pack)
-							const defaultSubPack = getSelectedSubPack(pack, null)
+							const sets = getPackSets(pack)
+							const defaultSet = getSelectedSet(pack, null)
 							const objectLabel =
 								pack.objects.length === 1
 									? '1 word'
 									: `${pack.objects.length} words`
 							const setLabel =
-								subPacks.length === 1 ? '1 set' : `${subPacks.length} sets`
+								sets.length === 1 ? '1 set' : `${sets.length} sets`
 
 							return (
 								<button
@@ -985,7 +963,7 @@ function ParentSettings({
 									onClick={() =>
 										update({
 											selectedPackId: pack.id,
-											selectedSubPackId: defaultSubPack.id,
+											selectedSetId: defaultSet.id,
 											mode: contentChangeMode,
 										})
 									}
@@ -1005,38 +983,38 @@ function ParentSettings({
 					</div>
 				</div>
 
-				{selectedPackSubPacks.length > 1 ? (
+				{selectedPackSets.length > 1 ? (
 					<div className="settings-section">
 						<h3>Set</h3>
 						<div className="set-grid" role="group" aria-label="Content set">
-							{selectedPackSubPacks.map((subPack) => {
-								const objectCount = getSubPackObjectCount(selectedPack, subPack)
+							{selectedPackSets.map((set) => {
+								const objectCount = set.itemIds.length
 								const objectLabel =
 									objectCount === 1 ? '1 word' : `${objectCount} words`
 
 								return (
 									<button
-										key={subPack.id}
+										key={set.id}
 										type="button"
 										className={
-											selectedSubPack.id === subPack.id
+											selectedSet.id === set.id
 												? 'set-card is-selected'
 												: 'set-card'
 										}
-										aria-pressed={selectedSubPack.id === subPack.id}
-										data-testid={`set-${subPack.id}`}
+										aria-pressed={selectedSet.id === set.id}
+										data-testid={`set-${set.id}`}
 										onClick={() =>
 											update({
-												selectedSubPackId: subPack.id,
+												selectedSetId: set.id,
 												mode: contentChangeMode,
 											})
 										}
 									>
 										<span className="set-card-title">
-											{subPack.title.en ?? subPack.id}
+											{set.title.en ?? set.id}
 										</span>
 										<span className="set-card-subtitle">
-											{subPack.title['zh-Hans'] ?? ''}
+											{set.title['zh-Hans'] ?? ''}
 										</span>
 										<span className="set-card-meta">{objectLabel}</span>
 									</button>
@@ -1169,17 +1147,17 @@ export function App() {
 	const normalizedCardIndex =
 		cardObjects.length > 0 ? Math.min(cardIndex, cardObjects.length - 1) : 0
 	const activeCardObject = cardObjects[normalizedCardIndex] ?? null
-	const activeSubPackId = pack
-		? getSelectedSubPack(pack, settings.selectedSubPackId).id
+	const activeSetId = pack
+		? getSelectedSet(pack, settings.selectedSetId).id
 		: null
-	const activeScenes = pack ? getSubPackScenes(pack, activeSubPackId) : []
+	const activeScenes = pack ? getSetScenes(pack, activeSetId) : []
 	const normalizedSceneIndex =
 		activeScenes.length > 0
 			? Math.min(sceneIndex, Math.max(activeScenes.length - 1, 0))
 			: 0
 	const scene =
 		activeScenes[normalizedSceneIndex] ??
-		(catalog ? getDefaultScene(catalog, selectedPackId, activeSubPackId) : null)
+		(catalog ? getDefaultScene(catalog, selectedPackId, activeSetId) : null)
 	const placements = useMemo(
 		() =>
 			scene && pack ? buildSceneLayout(scene, pack.objects, layoutSeed) : [],
@@ -1294,7 +1272,7 @@ export function App() {
 		setDraggedPuzzleObjectId(null)
 		setHoveredPuzzleTargetId(null)
 		setToast({ kind: 'hello', sequence: [] })
-	}, [selectedPackId, activeSubPackId])
+	}, [selectedPackId, activeSetId])
 
 	useEffect(() => {
 		clearPuzzleResetTimeout()

@@ -1,0 +1,194 @@
+{
+	"id": "grapes",
+	"category": "fruits",
+	"tags": ["fruits", "food", "grapes"],
+	"visualPrompt": "A friendly grapes for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/grapes.png",
+				"alt": "grapes",
+				"generationPrompt": "A friendly grapes for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "grapes",
+					"emoji": "🍇"
+				}
+			},
+			"visualPrompt": "A friendly grapes for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "grapes"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/grapes-bright.png",
+				"alt": "grapes bright large",
+				"generationPrompt": "A friendly grapes for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "grapes",
+					"emoji": "🍇"
+				}
+			},
+			"visualPrompt": "A friendly grapes for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "grapes"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "grapes-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the grapes.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/grapes-en-find.mp3"
+			},
+			"successPhrase": "You found the grapes.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/grapes-en-success.mp3"
+			},
+			"fallbackText": "That is the grapes.",
+			"levels": {
+				"L0": {
+					"text": "grapes",
+					"audioText": "grapes",
+					"fallbackText": "grapes",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The grapes is in the fruit basket.",
+					"audioText": "The grapes is in the fruit basket.",
+					"fallbackText": "grapes",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "purple grapes",
+					"audioText": "purple grapes",
+					"fallbackText": "grapes",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The grapes waits in the fruit basket.",
+					"audioText": "The grapes waits in the fruit basket.",
+					"fallbackText": "grapes",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the grapes.",
+					"audioText": "What do you see? I see the grapes.",
+					"fallbackText": "grapes",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The grapes rests quietly where little hands can find it.",
+					"audioText": "The grapes rests quietly where little hands can find it.",
+					"fallbackText": "grapes",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找葡萄。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/grapes-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到葡萄了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/grapes-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是葡萄。",
+			"levels": {
+				"L0": {
+					"text": "葡萄",
+					"audioText": "葡萄",
+					"fallbackText": "葡萄",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "葡萄在水果篮里。",
+					"audioText": "葡萄在水果篮里。",
+					"fallbackText": "葡萄",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "紫色的葡萄",
+					"audioText": "紫色的葡萄",
+					"fallbackText": "葡萄",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "葡萄安静地待在水果篮里。",
+					"audioText": "葡萄安静地待在水果篮里。",
+					"fallbackText": "葡萄",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了葡萄。",
+					"audioText": "你看到了什么？我看到了葡萄。",
+					"fallbackText": "葡萄",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "葡萄轻轻地等着小手来找到它。",
+					"audioText": "葡萄轻轻地等着小手来找到它。",
+					"fallbackText": "葡萄",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/grapes-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

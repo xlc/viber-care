@@ -1,0 +1,194 @@
+{
+	"id": "taxi",
+	"category": "transportation",
+	"tags": ["transportation", "road", "wheels"],
+	"visualPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
+	"interaction": {
+		"id": "taxi-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the taxi.",
+			"successPhrase": "You found the taxi.",
+			"fallbackText": "That's the taxi.",
+			"levels": {
+				"L0": {
+					"text": "taxi",
+					"audioText": "taxi",
+					"fallbackText": "taxi",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The taxi rolls by.",
+					"audioText": "The taxi rolls by.",
+					"fallbackText": "taxi",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "yellow taxi",
+					"audioText": "yellow taxi",
+					"fallbackText": "taxi",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The taxi rolls along the road.",
+					"audioText": "The taxi rolls along the road.",
+					"fallbackText": "taxi",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a small roof light? The taxi has a roof light.",
+					"audioText": "What has a small roof light? The taxi has a roof light.",
+					"fallbackText": "taxi",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The taxi waits kindly near the station.",
+					"audioText": "The taxi waits kindly near the station.",
+					"fallbackText": "That's the taxi.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/taxi-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/taxi-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找出租车。",
+			"successPhrase": "你找到出租车了。",
+			"fallbackText": "这是出租车。",
+			"levels": {
+				"L0": {
+					"text": "出租车",
+					"audioText": "出租车",
+					"fallbackText": "出租车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "出租车开过来。",
+					"audioText": "出租车开过来。",
+					"fallbackText": "出租车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "黄色出租车",
+					"audioText": "黄色出租车",
+					"fallbackText": "出租车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "出租车沿着小路开。",
+					"audioText": "出租车沿着小路开。",
+					"fallbackText": "出租车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有小小的车顶灯？出租车有车顶灯。",
+					"audioText": "谁有小小的车顶灯？出租车有车顶灯。",
+					"fallbackText": "出租车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "出租车温柔地等在车站旁。",
+					"audioText": "出租车温柔地等在车站旁。",
+					"fallbackText": "这是出租车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/taxi-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/taxi-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/taxi-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/taxi.png",
+				"alt": "yellow taxi",
+				"generationPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
+				"placeholder": {
+					"label": "taxi",
+					"emoji": "🚕"
+				}
+			},
+			"visualPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/taxi-bright.png",
+				"alt": "yellow taxi bright large",
+				"generationPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "taxi",
+					"emoji": "🚕"
+				}
+			},
+			"visualPrompt": "A friendly yellow taxi for a toddler transportation word-learning game, roof light but no lettering, no checker text, rounded shapes, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

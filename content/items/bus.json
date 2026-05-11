@@ -1,0 +1,194 @@
+{
+	"id": "bus",
+	"category": "transportation",
+	"tags": ["transportation", "road", "public transit"],
+	"visualPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
+	"interaction": {
+		"id": "bus-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the bus.",
+			"successPhrase": "You found the bus.",
+			"fallbackText": "That's the bus.",
+			"levels": {
+				"L0": {
+					"text": "bus",
+					"audioText": "bus",
+					"fallbackText": "bus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bus goes by.",
+					"audioText": "The bus goes by.",
+					"fallbackText": "bus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "yellow bus",
+					"audioText": "yellow bus",
+					"fallbackText": "bus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The bus carries friends on the road.",
+					"audioText": "The bus carries friends on the road.",
+					"fallbackText": "bus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has big windows? The bus has big windows.",
+					"audioText": "What has big windows? The bus has big windows.",
+					"fallbackText": "bus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The bus stops softly beside the path.",
+					"audioText": "The bus stops softly beside the path.",
+					"fallbackText": "That's the bus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/bus-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/bus-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找公交车。",
+			"successPhrase": "你找到公交车了。",
+			"fallbackText": "这是公交车。",
+			"levels": {
+				"L0": {
+					"text": "公交车",
+					"audioText": "公交车",
+					"fallbackText": "公交车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "公交车开过来。",
+					"audioText": "公交车开过来。",
+					"fallbackText": "公交车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "黄色公交车",
+					"audioText": "黄色公交车",
+					"fallbackText": "公交车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "公交车载着朋友在路上走。",
+					"audioText": "公交车载着朋友在路上走。",
+					"fallbackText": "公交车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有大大的窗户？公交车有大大的窗户。",
+					"audioText": "谁有大大的窗户？公交车有大大的窗户。",
+					"fallbackText": "公交车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "公交车轻轻停在小路旁。",
+					"audioText": "公交车轻轻停在小路旁。",
+					"fallbackText": "这是公交车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bus-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/bus-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/bus-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/bus.png",
+				"alt": "yellow bus",
+				"generationPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
+				"placeholder": {
+					"label": "bus",
+					"emoji": "🚌"
+				}
+			},
+			"visualPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "road", "public transit"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/bus-bright.png",
+				"alt": "yellow bus bright large",
+				"generationPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "bus",
+					"emoji": "🚌"
+				}
+			},
+			"visualPrompt": "A friendly yellow bus for a toddler transportation word-learning game, rounded rectangle body, big soft windows, no text, no route numbers, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "road", "public transit"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

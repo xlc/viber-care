@@ -1,0 +1,206 @@
+{
+	"id": "garbage-truck",
+	"category": "vehicle",
+	"tags": ["transportation", "road", "truck", "wheels", "helper"],
+	"visualPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "garbage-truck-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "garbage truck",
+			"findPrompt": "Find the garbage truck.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/garbage-truck-en-find.mp3"
+			},
+			"successPhrase": "You found the garbage truck.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/garbage-truck-en-success.mp3"
+			},
+			"fallbackText": "garbage truck",
+			"levels": {
+				"L0": {
+					"text": "garbage truck",
+					"audioText": "garbage truck",
+					"fallbackText": "truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The garbage truck rolls.",
+					"audioText": "The garbage truck rolls.",
+					"fallbackText": "garbage truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "helpful garbage truck",
+					"audioText": "helpful garbage truck",
+					"fallbackText": "garbage truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The garbage truck keeps the road tidy.",
+					"audioText": "The garbage truck keeps the road tidy.",
+					"fallbackText": "garbage truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What helps clean up? The garbage truck helps.",
+					"audioText": "What helps clean up? The garbage truck helps.",
+					"fallbackText": "garbage truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The garbage truck rolls by and helps keep the street clean.",
+					"audioText": "The garbage truck rolls by and helps keep the street clean.",
+					"fallbackText": "That is the garbage truck.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "垃圾车",
+			"findPrompt": "找一找垃圾车。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到了垃圾车。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-success.mp3"
+			},
+			"fallbackText": "垃圾车",
+			"levels": {
+				"L0": {
+					"text": "垃圾车",
+					"audioText": "垃圾车",
+					"fallbackText": "垃圾车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "垃圾车慢慢开。",
+					"audioText": "垃圾车慢慢开。",
+					"fallbackText": "垃圾车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "帮忙的垃圾车",
+					"audioText": "帮忙的垃圾车",
+					"fallbackText": "垃圾车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "垃圾车让道路更干净。",
+					"audioText": "垃圾车让道路更干净。",
+					"fallbackText": "垃圾车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁帮忙清理？垃圾车帮忙。",
+					"audioText": "谁帮忙清理？垃圾车帮忙。",
+					"fallbackText": "垃圾车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "垃圾车慢慢开过，帮忙让街道干干净净。",
+					"audioText": "垃圾车慢慢开过，帮忙让街道干干净净。",
+					"fallbackText": "这是垃圾车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/garbage-truck-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "soft garbage truck",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/garbage-truck.png",
+				"alt": "soft garbage truck",
+				"generationPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "soft garbage truck"
+				}
+			},
+			"visualPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": [
+				"transportation",
+				"vehicle",
+				"road",
+				"truck",
+				"wheels",
+				"helper"
+			],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "soft garbage truck bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/garbage-truck-bright.png",
+				"alt": "soft garbage truck bright large",
+				"generationPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "soft garbage truck bright large"
+				}
+			},
+			"visualPrompt": "A friendly garbage truck for a toddler transportation word-learning game, rounded toy-like shape, soft colors, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": [
+				"transportation",
+				"vehicle",
+				"road",
+				"truck",
+				"wheels",
+				"helper"
+			],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

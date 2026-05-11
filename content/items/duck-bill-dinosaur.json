@@ -1,0 +1,194 @@
+{
+	"id": "duck-bill-dinosaur",
+	"category": "dinosaur",
+	"tags": ["dinosaur", "ground", "herbivore", "duck-bill"],
+	"visualPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+	"interaction": {
+		"id": "duck-bill-dinosaur-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the duck-bill dinosaur.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-find.mp3"
+			},
+			"successPhrase": "You found the duck-bill dinosaur.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-success.mp3"
+			},
+			"fallbackText": "duck-bill dinosaur",
+			"levels": {
+				"L0": {
+					"text": "duck-bill dinosaur",
+					"audioText": "duck-bill dinosaur",
+					"fallbackText": "duck-bill dinosaur",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The duck-bill dinosaur smiles.",
+					"audioText": "The duck-bill dinosaur smiles.",
+					"fallbackText": "duck-bill dinosaur",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "gentle duck-bill dinosaur",
+					"audioText": "gentle duck-bill dinosaur",
+					"fallbackText": "duck-bill dinosaur",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The duck-bill dinosaur walks in the valley.",
+					"audioText": "The duck-bill dinosaur walks in the valley.",
+					"fallbackText": "duck-bill dinosaur",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has a wide bill? The duck-bill dinosaur has a wide bill.",
+					"audioText": "Who has a wide bill? The duck-bill dinosaur has a wide bill.",
+					"fallbackText": "duck-bill dinosaur",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The duck-bill dinosaur takes slow steps by the ferns.",
+					"audioText": "The duck-bill dinosaur takes slow steps by the ferns.",
+					"fallbackText": "duck-bill dinosaur",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找鸭嘴龙。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到鸭嘴龙了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-success.mp3"
+			},
+			"fallbackText": "鸭嘴龙",
+			"levels": {
+				"L0": {
+					"text": "鸭嘴龙",
+					"audioText": "鸭嘴龙",
+					"fallbackText": "鸭嘴龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "鸭嘴龙笑一笑。",
+					"audioText": "鸭嘴龙笑一笑。",
+					"fallbackText": "鸭嘴龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "温和的鸭嘴龙",
+					"audioText": "温和的鸭嘴龙",
+					"fallbackText": "鸭嘴龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "鸭嘴龙在山谷里走。",
+					"audioText": "鸭嘴龙在山谷里走。",
+					"fallbackText": "鸭嘴龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有宽宽的嘴？鸭嘴龙有宽宽的嘴。",
+					"audioText": "谁有宽宽的嘴？鸭嘴龙有宽宽的嘴。",
+					"fallbackText": "鸭嘴龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "鸭嘴龙在蕨草旁边慢慢走。",
+					"audioText": "鸭嘴龙在蕨草旁边慢慢走。",
+					"fallbackText": "鸭嘴龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/duck-bill-dinosaur-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/duck-bill-dinosaur.webp",
+				"alt": "duck-bill dinosaur",
+				"generationPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+				"placeholder": {
+					"label": "duck-bill dinosaur",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur", "ground", "herbivore", "duck-bill"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/duck-bill-dinosaur-bright.webp",
+				"alt": "duck-bill dinosaur bright large",
+				"generationPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "duck-bill dinosaur",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A friendly duck-bill dinosaur for a toddler dinosaur word-learning game, cute non-scary face, soft rounded body, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur", "ground", "herbivore", "duck-bill"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,194 @@
+{
+	"id": "airplane",
+	"category": "transportation",
+	"tags": ["transportation", "sky", "flying"],
+	"visualPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
+	"interaction": {
+		"id": "airplane-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the airplane.",
+			"successPhrase": "You found the airplane.",
+			"fallbackText": "That's the airplane.",
+			"levels": {
+				"L0": {
+					"text": "airplane",
+					"audioText": "airplane",
+					"fallbackText": "airplane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The airplane flies.",
+					"audioText": "The airplane flies.",
+					"fallbackText": "airplane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "white airplane",
+					"audioText": "white airplane",
+					"fallbackText": "airplane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The airplane flies in the blue sky.",
+					"audioText": "The airplane flies in the blue sky.",
+					"fallbackText": "airplane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What flies high? The airplane flies high.",
+					"audioText": "What flies high? The airplane flies high.",
+					"fallbackText": "airplane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The airplane glides softly over the transit park.",
+					"audioText": "The airplane glides softly over the transit park.",
+					"fallbackText": "That's the airplane.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/airplane-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/airplane-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找飞机。",
+			"successPhrase": "你找到飞机了。",
+			"fallbackText": "这是飞机。",
+			"levels": {
+				"L0": {
+					"text": "飞机",
+					"audioText": "飞机",
+					"fallbackText": "飞机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "飞机飞一飞。",
+					"audioText": "飞机飞一飞。",
+					"fallbackText": "飞机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "白色飞机",
+					"audioText": "白色飞机",
+					"fallbackText": "飞机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "飞机在蓝天里飞。",
+					"audioText": "飞机在蓝天里飞。",
+					"fallbackText": "飞机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁飞得高？飞机飞得高。",
+					"audioText": "谁飞得高？飞机飞得高。",
+					"fallbackText": "飞机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "飞机轻轻飞过交通公园上空。",
+					"audioText": "飞机轻轻飞过交通公园上空。",
+					"fallbackText": "这是飞机。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/airplane-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/airplane-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/airplane-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/airplane.png",
+				"alt": "white airplane",
+				"generationPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
+				"placeholder": {
+					"label": "airplane",
+					"emoji": "✈️"
+				}
+			},
+			"visualPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "sky", "flying"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/airplane-bright.png",
+				"alt": "white airplane bright large",
+				"generationPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "airplane",
+					"emoji": "✈️"
+				}
+			},
+			"visualPrompt": "A friendly white airplane for a toddler transportation word-learning game, rounded wings, soft colors, no airline logo, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "sky", "flying"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

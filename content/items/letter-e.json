@@ -1,0 +1,194 @@
+{
+	"id": "letter-e",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "e"],
+	"visualPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-e-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter E.",
+			"successPhrase": "You found letter E.",
+			"fallbackText": "E",
+			"levels": {
+				"L0": {
+					"text": "E",
+					"audioText": "E",
+					"fallbackText": "E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "E is for egg.",
+					"audioText": "E is for egg.",
+					"fallbackText": "E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase E",
+					"audioText": "uppercase E",
+					"fallbackText": "E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "E starts the word egg.",
+					"audioText": "E starts the word egg.",
+					"fallbackText": "E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is E.",
+					"audioText": "What letter is this? It is E.",
+					"fallbackText": "E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "E sits on the card and says egg.",
+					"audioText": "E sits on the card and says egg.",
+					"fallbackText": "E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-e-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-e-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 E。",
+			"successPhrase": "你找到字母 E 了。",
+			"fallbackText": "字母 E",
+			"levels": {
+				"L0": {
+					"text": "字母 E",
+					"audioText": "字母 E",
+					"fallbackText": "字母 E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "E 代表鸡蛋。",
+					"audioText": "E 代表鸡蛋。",
+					"fallbackText": "字母 E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 E",
+					"audioText": "大写字母 E",
+					"fallbackText": "字母 E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "E 是鸡蛋的开头。",
+					"audioText": "E 是鸡蛋的开头。",
+					"fallbackText": "字母 E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 E。",
+					"audioText": "这是什么字母？这是 E。",
+					"fallbackText": "字母 E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "E 在卡片上，轻轻说鸡蛋。",
+					"audioText": "E 在卡片上，轻轻说鸡蛋。",
+					"fallbackText": "字母 E",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-e-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-e.webp",
+				"alt": "letter E",
+				"generationPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "E",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "e"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-e-bright.webp",
+				"alt": "letter E bright large",
+				"generationPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "E",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase E letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "e"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

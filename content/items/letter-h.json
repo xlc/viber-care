@@ -1,0 +1,194 @@
+{
+	"id": "letter-h",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "h"],
+	"visualPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-h-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter H.",
+			"successPhrase": "You found letter H.",
+			"fallbackText": "H",
+			"levels": {
+				"L0": {
+					"text": "H",
+					"audioText": "H",
+					"fallbackText": "H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "H is for hat.",
+					"audioText": "H is for hat.",
+					"fallbackText": "H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase H",
+					"audioText": "uppercase H",
+					"fallbackText": "H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "H starts the word hat.",
+					"audioText": "H starts the word hat.",
+					"fallbackText": "H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is H.",
+					"audioText": "What letter is this? It is H.",
+					"fallbackText": "H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "H sits on the card and says hat.",
+					"audioText": "H sits on the card and says hat.",
+					"fallbackText": "H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-h-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-h-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 H。",
+			"successPhrase": "你找到字母 H 了。",
+			"fallbackText": "字母 H",
+			"levels": {
+				"L0": {
+					"text": "字母 H",
+					"audioText": "字母 H",
+					"fallbackText": "字母 H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "H 代表帽子。",
+					"audioText": "H 代表帽子。",
+					"fallbackText": "字母 H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 H",
+					"audioText": "大写字母 H",
+					"fallbackText": "字母 H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "H 是帽子的开头。",
+					"audioText": "H 是帽子的开头。",
+					"fallbackText": "字母 H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 H。",
+					"audioText": "这是什么字母？这是 H。",
+					"fallbackText": "字母 H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "H 在卡片上，轻轻说帽子。",
+					"audioText": "H 在卡片上，轻轻说帽子。",
+					"fallbackText": "字母 H",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-h-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-h.webp",
+				"alt": "letter H",
+				"generationPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "H",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "h"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-h-bright.webp",
+				"alt": "letter H bright large",
+				"generationPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "H",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase H letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "h"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

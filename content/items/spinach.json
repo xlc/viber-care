@@ -1,0 +1,194 @@
+{
+	"id": "spinach",
+	"category": "leafy-vegetables",
+	"tags": ["leafy-vegetables", "food", "spinach"],
+	"visualPrompt": "A friendly spinach for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/spinach.png",
+				"alt": "spinach",
+				"generationPrompt": "A friendly spinach for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "spinach",
+					"emoji": "🌿"
+				}
+			},
+			"visualPrompt": "A friendly spinach for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "spinach"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/spinach-bright.png",
+				"alt": "spinach bright large",
+				"generationPrompt": "A friendly spinach for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "spinach",
+					"emoji": "🌿"
+				}
+			},
+			"visualPrompt": "A friendly spinach for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "leafy-vegetables", "food", "spinach"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "spinach-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the spinach.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/spinach-en-find.mp3"
+			},
+			"successPhrase": "You found the spinach.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/spinach-en-success.mp3"
+			},
+			"fallbackText": "That is the spinach.",
+			"levels": {
+				"L0": {
+					"text": "spinach",
+					"audioText": "spinach",
+					"fallbackText": "spinach",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The spinach is in the leafy patch.",
+					"audioText": "The spinach is in the leafy patch.",
+					"fallbackText": "spinach",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "soft green spinach",
+					"audioText": "soft green spinach",
+					"fallbackText": "spinach",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The spinach waits in the leafy patch.",
+					"audioText": "The spinach waits in the leafy patch.",
+					"fallbackText": "spinach",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the spinach.",
+					"audioText": "What do you see? I see the spinach.",
+					"fallbackText": "spinach",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The spinach rests quietly where little hands can find it.",
+					"audioText": "The spinach rests quietly where little hands can find it.",
+					"fallbackText": "spinach",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找菠菜。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/spinach-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到菠菜了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/spinach-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是菠菜。",
+			"levels": {
+				"L0": {
+					"text": "菠菜",
+					"audioText": "菠菜",
+					"fallbackText": "菠菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "菠菜在叶子菜地里。",
+					"audioText": "菠菜在叶子菜地里。",
+					"fallbackText": "菠菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "软软的绿色菠菜",
+					"audioText": "软软的绿色菠菜",
+					"fallbackText": "菠菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "菠菜安静地待在叶子菜地里。",
+					"audioText": "菠菜安静地待在叶子菜地里。",
+					"fallbackText": "菠菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了菠菜。",
+					"audioText": "你看到了什么？我看到了菠菜。",
+					"fallbackText": "菠菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "菠菜轻轻地等着小手来找到它。",
+					"audioText": "菠菜轻轻地等着小手来找到它。",
+					"fallbackText": "菠菜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/spinach-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

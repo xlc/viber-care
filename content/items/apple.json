@@ -1,0 +1,252 @@
+{
+	"id": "apple",
+	"category": "fruits",
+	"tags": ["fruits", "food", "apple", "fruit", "red", "tree", "garden"],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less"
+		],
+		"colors": ["red"],
+		"sceneZones": ["basket", "stand"],
+		"zhMeasureWord": "个",
+		"englishPlural": "apples"
+	},
+	"visualPrompt": "A friendly apple for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/apple.webp",
+				"alt": "apple",
+				"generationPrompt": "A friendly apple for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "apple",
+					"emoji": "🍎"
+				}
+			},
+			"visualPrompt": "A friendly apple for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "apple"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/apple-bright.webp",
+				"alt": "apple bright large",
+				"generationPrompt": "A friendly apple for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "apple",
+					"emoji": "🍎"
+				}
+			},
+			"visualPrompt": "A friendly apple for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "apple"],
+			"size": "large",
+			"style": "bright-large"
+		},
+		{
+			"id": "garden-classic",
+			"label": "apple Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/apple.webp",
+				"alt": "apple",
+				"generationPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background.",
+				"placeholder": {
+					"label": "apple",
+					"emoji": "🍎"
+				}
+			},
+			"visualPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "food", "fruit", "red", "tree"],
+			"color": "red",
+			"size": "medium",
+			"style": "garden"
+		},
+		{
+			"id": "garden-bright-large",
+			"label": "apple Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/apple-bright.webp",
+				"alt": "apple bright large",
+				"generationPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "apple",
+					"emoji": "🍎"
+				}
+			},
+			"visualPrompt": "A shiny red apple for a toddler word-learning garden game, rounded and simple, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "food", "fruit", "red", "tree"],
+			"color": "red",
+			"size": "large",
+			"style": "garden"
+		}
+	],
+	"interaction": {
+		"id": "apple-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the apple.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/apple-en-find.mp3"
+			},
+			"successPhrase": "You found the apple.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/apple-en-success.mp3"
+			},
+			"fallbackText": "That is the apple.",
+			"levels": {
+				"L0": {
+					"text": "apple",
+					"audioText": "apple",
+					"fallbackText": "apple",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The apple is in the fruit basket.",
+					"audioText": "The apple is in the fruit basket.",
+					"fallbackText": "apple",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round red apple",
+					"audioText": "round red apple",
+					"fallbackText": "apple",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The apple waits in the fruit basket.",
+					"audioText": "The apple waits in the fruit basket.",
+					"fallbackText": "apple",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the apple.",
+					"audioText": "What do you see? I see the apple.",
+					"fallbackText": "apple",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The apple rests quietly where little hands can find it.",
+					"audioText": "The apple rests quietly where little hands can find it.",
+					"fallbackText": "apple",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找苹果。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/apple-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到苹果了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/apple-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是苹果。",
+			"levels": {
+				"L0": {
+					"text": "苹果",
+					"audioText": "苹果",
+					"fallbackText": "苹果",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "苹果在水果篮里。",
+					"audioText": "苹果在水果篮里。",
+					"fallbackText": "苹果",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "圆圆的红苹果",
+					"audioText": "圆圆的红苹果",
+					"fallbackText": "苹果",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "苹果安静地待在水果篮里。",
+					"audioText": "苹果安静地待在水果篮里。",
+					"fallbackText": "苹果",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了苹果。",
+					"audioText": "你看到了什么？我看到了苹果。",
+					"fallbackText": "苹果",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "苹果轻轻地等着小手来找到它。",
+					"audioText": "苹果轻轻地等着小手来找到它。",
+					"fallbackText": "苹果",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/apple-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

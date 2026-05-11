@@ -1,0 +1,194 @@
+{
+	"id": "baby-dinosaur",
+	"category": "dinosaur",
+	"tags": ["baby", "dinosaur", "smile"],
+	"visualPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
+	"interaction": {
+		"id": "baby-dinosaur-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the baby dinosaur.",
+			"successPhrase": "You found the baby dinosaur.",
+			"fallbackText": "That's the baby dinosaur.",
+			"levels": {
+				"L0": {
+					"text": "baby dinosaur",
+					"audioText": "baby dinosaur",
+					"fallbackText": "baby dinosaur",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The baby dinosaur smiles.",
+					"audioText": "The baby dinosaur smiles.",
+					"fallbackText": "The baby dinosaur smiles.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "tiny baby dinosaur",
+					"audioText": "tiny baby dinosaur",
+					"fallbackText": "That's the baby dinosaur.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The baby dinosaur peeks out.",
+					"audioText": "The baby dinosaur peeks out.",
+					"fallbackText": "That's the baby dinosaur.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who is tiny? The baby dinosaur is tiny.",
+					"audioText": "Who is tiny? The baby dinosaur is tiny.",
+					"fallbackText": "That's the baby dinosaur.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The baby dinosaur smiles at the gentle valley.",
+					"audioText": "The baby dinosaur smiles at the gentle valley.",
+					"fallbackText": "That's the baby dinosaur.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小恐龙。",
+			"successPhrase": "你找到小恐龙了。",
+			"fallbackText": "这是小恐龙。",
+			"levels": {
+				"L0": {
+					"text": "小恐龙",
+					"audioText": "小恐龙",
+					"fallbackText": "小恐龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小恐龙笑一笑。",
+					"audioText": "小恐龙笑一笑。",
+					"fallbackText": "小恐龙笑一笑。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的恐龙宝宝",
+					"audioText": "小小的恐龙宝宝",
+					"fallbackText": "这是小恐龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "恐龙宝宝探出头。",
+					"audioText": "恐龙宝宝探出头。",
+					"fallbackText": "这是小恐龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁小小的？恐龙宝宝小小的。",
+					"audioText": "谁小小的？恐龙宝宝小小的。",
+					"fallbackText": "这是小恐龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "恐龙宝宝对温柔的山谷微笑。",
+					"audioText": "恐龙宝宝对温柔的山谷微笑。",
+					"fallbackText": "这是小恐龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/baby-dinosaur-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/baby-dinosaur.webp",
+				"alt": "baby dinosaur",
+				"generationPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
+				"placeholder": {
+					"label": "baby dinosaur",
+					"emoji": "🦖"
+				}
+			},
+			"visualPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur", "baby", "smile"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/baby-dinosaur-bright.webp",
+				"alt": "baby dinosaur bright large",
+				"generationPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "baby dinosaur",
+					"emoji": "🦖"
+				}
+			},
+			"visualPrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur", "baby", "smile"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

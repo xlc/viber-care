@@ -1,0 +1,255 @@
+{
+	"id": "duck",
+	"category": "animal",
+	"tags": [
+		"farm",
+		"bird",
+		"duck",
+		"coop",
+		"pond",
+		"yellow",
+		"garden",
+		"animal"
+	],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "spatial"],
+		"colors": ["yellow"],
+		"sceneZones": ["yard", "water"],
+		"zhMeasureWord": "只",
+		"englishPlural": "ducks"
+	},
+	"visualPrompt": "A friendly farm duck for a toddler farm word-learning game, soft yellow feathers, happy face, clear simple silhouette, transparent background.",
+	"interaction": {
+		"id": "duck-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the duck.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/duck-en-find.mp3"
+			},
+			"successPhrase": "You found the duck.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/duck-en-success.mp3"
+			},
+			"fallbackText": "duck",
+			"levels": {
+				"L0": {
+					"text": "duck",
+					"audioText": "duck",
+					"fallbackText": "duck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The duck waddles.",
+					"audioText": "The duck waddles.",
+					"fallbackText": "duck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "farmyard duck",
+					"audioText": "farmyard duck",
+					"fallbackText": "duck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The duck walks across the yard.",
+					"audioText": "The duck walks across the yard.",
+					"fallbackText": "duck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who says quack? The duck says quack.",
+					"audioText": "Who says quack? The duck says quack.",
+					"fallbackText": "duck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The duck waddles gently through the farmyard.",
+					"audioText": "The duck waddles gently through the farmyard.",
+					"fallbackText": "duck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找鸭子。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/duck-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到鸭子了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/duck-zh-Hans-success.mp3"
+			},
+			"fallbackText": "鸭子",
+			"levels": {
+				"L0": {
+					"text": "鸭子",
+					"audioText": "鸭子",
+					"fallbackText": "鸭子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "鸭子摇摇走。",
+					"audioText": "鸭子摇摇走。",
+					"fallbackText": "鸭子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "农场鸭子",
+					"audioText": "农场鸭子",
+					"fallbackText": "鸭子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "鸭子走过院子。",
+					"audioText": "鸭子走过院子。",
+					"fallbackText": "鸭子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁嘎嘎叫？鸭子嘎嘎叫。",
+					"audioText": "谁嘎嘎叫？鸭子嘎嘎叫。",
+					"fallbackText": "鸭子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "鸭子在农场院子里轻轻摇摇走。",
+					"audioText": "鸭子在农场院子里轻轻摇摇走。",
+					"fallbackText": "鸭子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/duck-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/duck.png",
+				"alt": "duck",
+				"generationPrompt": "A friendly farm duck for a toddler farm word-learning game, soft yellow feathers, happy face, clear simple silhouette, transparent background.",
+				"placeholder": {
+					"label": "duck",
+					"emoji": "🦆"
+				}
+			},
+			"visualPrompt": "A friendly farm duck for a toddler farm word-learning game, soft yellow feathers, happy face, clear simple silhouette, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "animal", "farm", "bird", "duck", "coop"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/duck-bright.png",
+				"alt": "duck bright large",
+				"generationPrompt": "A friendly farm duck for a toddler farm word-learning game, soft yellow feathers, happy face, clear simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "duck",
+					"emoji": "🦆"
+				}
+			},
+			"visualPrompt": "A friendly farm duck for a toddler farm word-learning game, soft yellow feathers, happy face, clear simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "animal", "farm", "bird", "duck", "coop"],
+			"size": "large",
+			"style": "bright-large"
+		},
+		{
+			"id": "garden-classic",
+			"label": "duck Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/duck.webp",
+				"alt": "duck",
+				"generationPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
+				"placeholder": {
+					"label": "duck",
+					"emoji": "🦆"
+				}
+			},
+			"visualPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "animal", "pond", "bird", "yellow"],
+			"color": "yellow",
+			"size": "medium",
+			"style": "garden"
+		},
+		{
+			"id": "garden-bright-large",
+			"label": "duck Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/duck-bright.webp",
+				"alt": "duck bright large",
+				"generationPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "duck",
+					"emoji": "🦆"
+				}
+			},
+			"visualPrompt": "A friendly yellow duck for a toddler word-learning garden game, soft edges, cheerful, simple silhouette, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "animal", "pond", "bird", "yellow"],
+			"color": "yellow",
+			"size": "large",
+			"style": "garden"
+		}
+	]
+}

@@ -1,0 +1,194 @@
+{
+	"id": "letter-g",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "g"],
+	"visualPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-g-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter G.",
+			"successPhrase": "You found letter G.",
+			"fallbackText": "G",
+			"levels": {
+				"L0": {
+					"text": "G",
+					"audioText": "G",
+					"fallbackText": "G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "G is for garden.",
+					"audioText": "G is for garden.",
+					"fallbackText": "G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase G",
+					"audioText": "uppercase G",
+					"fallbackText": "G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "G starts the word garden.",
+					"audioText": "G starts the word garden.",
+					"fallbackText": "G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is G.",
+					"audioText": "What letter is this? It is G.",
+					"fallbackText": "G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "G sits on the card and says garden.",
+					"audioText": "G sits on the card and says garden.",
+					"fallbackText": "G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-g-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-g-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 G。",
+			"successPhrase": "你找到字母 G 了。",
+			"fallbackText": "字母 G",
+			"levels": {
+				"L0": {
+					"text": "字母 G",
+					"audioText": "字母 G",
+					"fallbackText": "字母 G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "G 代表花园。",
+					"audioText": "G 代表花园。",
+					"fallbackText": "字母 G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 G",
+					"audioText": "大写字母 G",
+					"fallbackText": "字母 G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "G 是花园的开头。",
+					"audioText": "G 是花园的开头。",
+					"fallbackText": "字母 G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 G。",
+					"audioText": "这是什么字母？这是 G。",
+					"fallbackText": "字母 G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "G 在卡片上，轻轻说花园。",
+					"audioText": "G 在卡片上，轻轻说花园。",
+					"fallbackText": "字母 G",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-g-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-g.webp",
+				"alt": "letter G",
+				"generationPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "G",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "g"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-g-bright.webp",
+				"alt": "letter G bright large",
+				"generationPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "G",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase G letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "g"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

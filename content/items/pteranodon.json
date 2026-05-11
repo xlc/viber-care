@@ -1,0 +1,196 @@
+{
+	"id": "pteranodon",
+	"category": "dinosaur",
+	"tags": ["pterosaur", "wings", "purple"],
+	"visualPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
+	"interaction": {
+		"id": "pteranodon-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the pteranodon.",
+			"successPhrase": "You found the pteranodon.",
+			"fallbackText": "That's the pteranodon.",
+			"levels": {
+				"L0": {
+					"text": "pteranodon",
+					"audioText": "pteranodon",
+					"fallbackText": "pteranodon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The pteranodon glides softly.",
+					"audioText": "The pteranodon glides softly.",
+					"fallbackText": "The pteranodon glides softly.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "soft flying pteranodon",
+					"audioText": "soft flying pteranodon",
+					"fallbackText": "That's the pteranodon.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The pteranodon glides in the sky.",
+					"audioText": "The pteranodon glides in the sky.",
+					"fallbackText": "That's the pteranodon.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who can glide? The pteranodon can glide.",
+					"audioText": "Who can glide? The pteranodon can glide.",
+					"fallbackText": "That's the pteranodon.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The pteranodon floats above the quiet valley.",
+					"audioText": "The pteranodon floats above the quiet valley.",
+					"fallbackText": "That's the pteranodon.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/pteranodon-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/pteranodon-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找翼龙。",
+			"successPhrase": "你找到翼龙了。",
+			"fallbackText": "这是翼龙。",
+			"levels": {
+				"L0": {
+					"text": "翼龙",
+					"audioText": "翼龙",
+					"fallbackText": "翼龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "翼龙轻轻飞。",
+					"audioText": "翼龙轻轻飞。",
+					"fallbackText": "翼龙轻轻飞。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "柔软的翼龙",
+					"audioText": "柔软的翼龙",
+					"fallbackText": "这是翼龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "翼龙在天空滑翔。",
+					"audioText": "翼龙在天空滑翔。",
+					"fallbackText": "这是翼龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁会滑翔？翼龙会滑翔。",
+					"audioText": "谁会滑翔？翼龙会滑翔。",
+					"fallbackText": "这是翼龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "翼龙在安静的山谷上方飞过。",
+					"audioText": "翼龙在安静的山谷上方飞过。",
+					"fallbackText": "这是翼龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/pteranodon-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/pteranodon.webp",
+				"alt": "pteranodon",
+				"generationPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
+				"placeholder": {
+					"label": "pteranodon",
+					"emoji": "🪽"
+				}
+			},
+			"visualPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur", "pterosaur", "wings", "purple"],
+			"color": "purple",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/pteranodon-bright.webp",
+				"alt": "pteranodon bright large",
+				"generationPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "pteranodon",
+					"emoji": "🪽"
+				}
+			},
+			"visualPrompt": "A soft purple pteranodon gliding for a toddler dinosaur word-learning game, rounded wings, friendly face, no sharp scary details, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur", "pterosaur", "wings", "purple"],
+			"color": "purple",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

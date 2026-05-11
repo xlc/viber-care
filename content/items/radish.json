@@ -1,0 +1,194 @@
+{
+	"id": "radish",
+	"category": "root-vegetables",
+	"tags": ["root-vegetables", "food", "radish"],
+	"visualPrompt": "A friendly radish for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/radish.png",
+				"alt": "radish",
+				"generationPrompt": "A friendly radish for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "radish",
+					"emoji": "🔴"
+				}
+			},
+			"visualPrompt": "A friendly radish for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "radish"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/radish-bright.png",
+				"alt": "radish bright large",
+				"generationPrompt": "A friendly radish for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "radish",
+					"emoji": "🔴"
+				}
+			},
+			"visualPrompt": "A friendly radish for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "root-vegetables", "food", "radish"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "radish-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the radish.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/radish-en-find.mp3"
+			},
+			"successPhrase": "You found the radish.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/radish-en-success.mp3"
+			},
+			"fallbackText": "That is the radish.",
+			"levels": {
+				"L0": {
+					"text": "radish",
+					"audioText": "radish",
+					"fallbackText": "radish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The radish is in the garden bed.",
+					"audioText": "The radish is in the garden bed.",
+					"fallbackText": "radish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "small red radish",
+					"audioText": "small red radish",
+					"fallbackText": "radish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The radish waits in the garden bed.",
+					"audioText": "The radish waits in the garden bed.",
+					"fallbackText": "radish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the radish.",
+					"audioText": "What do you see? I see the radish.",
+					"fallbackText": "radish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The radish rests quietly where little hands can find it.",
+					"audioText": "The radish rests quietly where little hands can find it.",
+					"fallbackText": "radish",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找萝卜。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/radish-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到萝卜了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/radish-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是萝卜。",
+			"levels": {
+				"L0": {
+					"text": "萝卜",
+					"audioText": "萝卜",
+					"fallbackText": "萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "萝卜在菜地里。",
+					"audioText": "萝卜在菜地里。",
+					"fallbackText": "萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的红萝卜",
+					"audioText": "小小的红萝卜",
+					"fallbackText": "萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "萝卜安静地待在菜地里。",
+					"audioText": "萝卜安静地待在菜地里。",
+					"fallbackText": "萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了萝卜。",
+					"audioText": "你看到了什么？我看到了萝卜。",
+					"fallbackText": "萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "萝卜轻轻地等着小手来找到它。",
+					"audioText": "萝卜轻轻地等着小手来找到它。",
+					"fallbackText": "萝卜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/radish-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

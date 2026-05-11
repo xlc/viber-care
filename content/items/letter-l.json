@@ -1,0 +1,194 @@
+{
+	"id": "letter-l",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "l"],
+	"visualPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-l-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter L.",
+			"successPhrase": "You found letter L.",
+			"fallbackText": "L",
+			"levels": {
+				"L0": {
+					"text": "L",
+					"audioText": "L",
+					"fallbackText": "L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "L is for leaf.",
+					"audioText": "L is for leaf.",
+					"fallbackText": "L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase L",
+					"audioText": "uppercase L",
+					"fallbackText": "L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "L starts the word leaf.",
+					"audioText": "L starts the word leaf.",
+					"fallbackText": "L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is L.",
+					"audioText": "What letter is this? It is L.",
+					"fallbackText": "L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "L sits on the card and says leaf.",
+					"audioText": "L sits on the card and says leaf.",
+					"fallbackText": "L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-l-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-l-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 L。",
+			"successPhrase": "你找到字母 L 了。",
+			"fallbackText": "字母 L",
+			"levels": {
+				"L0": {
+					"text": "字母 L",
+					"audioText": "字母 L",
+					"fallbackText": "字母 L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "L 代表叶子。",
+					"audioText": "L 代表叶子。",
+					"fallbackText": "字母 L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 L",
+					"audioText": "大写字母 L",
+					"fallbackText": "字母 L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "L 是叶子的开头。",
+					"audioText": "L 是叶子的开头。",
+					"fallbackText": "字母 L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 L。",
+					"audioText": "这是什么字母？这是 L。",
+					"fallbackText": "字母 L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "L 在卡片上，轻轻说叶子。",
+					"audioText": "L 在卡片上，轻轻说叶子。",
+					"fallbackText": "字母 L",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-l-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-l.webp",
+				"alt": "letter L",
+				"generationPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "L",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "l"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-l-bright.webp",
+				"alt": "letter L bright large",
+				"generationPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "L",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase L letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "l"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

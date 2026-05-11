@@ -37,7 +37,8 @@ API keys may only be used in secure asset generation workflows outside the clien
 
 ## Content-Driven Architecture
 
-Raw content lives in committed `content/packs/*.json` files.
+Reusable item content lives in committed `content/items/*.json` files. Pack and
+set layout lives in committed `content/packs/*.json` files.
 
 The app runtime imports committed source content through `src/content/catalog.ts`.
 Do not add a generated runtime JSON catalog, catalog generation script, or content
@@ -46,7 +47,7 @@ generation package script.
 Core schemas live in `src/content/schema.ts`. Content validation logic lives in
 `src/content/validation.ts`.
 
-Do not hard-code object language content or placement rules in the engine.
+Do not hard-code item language content or placement rules in the engine.
 Object labels, prompts, success phrases, fallback text, audio text, visual
 prompts, asset paths, variants, scene regions, region tags, and spawn constraints
 belong in content files.
@@ -69,12 +70,12 @@ belong in content files.
 ## Adding a Content Pack
 
 1. Create `content/packs/<pack-id>.json`.
-2. Add pack metadata, languages, at least two scenes, and objects.
+2. Add pack metadata, languages, sets, and at least two scenes.
 3. Add scene background assets and `regions` as percentage rectangles tied to the background image.
-4. Add scene spawn candidates with percentage anchors, `regionTags`, jitter, scale ranges, and visible object limits.
-5. Add at least two static variants for every object. Existing object art can be the `classic` variant; add another real static variant for size, color, or style variety.
-6. Add interaction animation metadata.
-7. Add per-language content and per-level content.
+4. Add scene spawn candidates with `itemId`, percentage anchors, `regionTags`, jitter, scale ranges, and visible object limits.
+5. Add or reuse global item files under `content/items/`. Each item needs at least two static variants with metadata such as color, size, style, or tags when applicable.
+6. Add interaction animation metadata to item files.
+7. Add per-language content and per-level content to item files.
 8. For production-quality bilingual packs, include English and Simplified Chinese L0-L5 text, audio text, find prompt, success phrase, and fallback text.
 9. Run `bun run validate:content`.
 10. Run `bun run test`.
@@ -96,10 +97,11 @@ Generate or edit content and static assets directly, place static files in
 content/assets. Do not create generated JSON catalogs or generated content
 manifests.
 
-Future content generation must preserve the richer pack shape: multiple scenes
-per pack, two or more variants per item, region-tagged spawn candidates, and
-randomized visible object counts so a scene can contain more candidates than it
-shows at once.
+Future content generation must preserve the richer source shape: reusable
+global items, pack sets that reference item ids, multiple scenes per pack, two
+or more variants per item, region-tagged spawn candidates, and randomized
+visible object counts so a scene can contain more candidates than it shows at
+once.
 
 ## Reviewing Assets
 

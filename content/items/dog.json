@@ -1,0 +1,196 @@
+{
+	"id": "dog",
+	"category": "animal",
+	"tags": ["pet", "friendly", "brown"],
+	"visualPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
+	"interaction": {
+		"id": "dog-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the dog.",
+			"successPhrase": "You found the dog.",
+			"fallbackText": "dog",
+			"levels": {
+				"L0": {
+					"text": "dog",
+					"audioText": "dog",
+					"fallbackText": "dog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The dog goes woof.",
+					"audioText": "The dog goes woof.",
+					"fallbackText": "dog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "friendly brown dog",
+					"audioText": "friendly brown dog",
+					"fallbackText": "dog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The dog wags its tail.",
+					"audioText": "The dog wags its tail.",
+					"fallbackText": "dog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who goes woof? The dog goes woof.",
+					"audioText": "Who goes woof? The dog goes woof.",
+					"fallbackText": "dog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The dog sits in the grass and gives a happy woof.",
+					"audioText": "The dog sits in the grass and gives a happy woof.",
+					"fallbackText": "dog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/dog-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/dog-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小狗。",
+			"successPhrase": "你找到小狗了。",
+			"fallbackText": "小狗",
+			"levels": {
+				"L0": {
+					"text": "小狗",
+					"audioText": "小狗",
+					"fallbackText": "小狗",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小狗汪汪叫。",
+					"audioText": "小狗汪汪叫。",
+					"fallbackText": "小狗",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "友好的棕色小狗",
+					"audioText": "友好的棕色小狗",
+					"fallbackText": "小狗",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小狗摇摇尾巴。",
+					"audioText": "小狗摇摇尾巴。",
+					"fallbackText": "小狗",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁汪汪叫？小狗汪汪叫。",
+					"audioText": "谁汪汪叫？小狗汪汪叫。",
+					"fallbackText": "小狗",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小狗坐在草地上，开心地汪汪叫。",
+					"audioText": "小狗坐在草地上，开心地汪汪叫。",
+					"fallbackText": "小狗",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/dog-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/dog-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/dog-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/dog.webp",
+				"alt": "dog",
+				"generationPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
+				"placeholder": {
+					"label": "dog",
+					"emoji": "🐶"
+				}
+			},
+			"visualPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "animal", "pet", "friendly", "brown"],
+			"color": "brown",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/dog-bright.webp",
+				"alt": "dog bright large",
+				"generationPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "dog",
+					"emoji": "🐶"
+				}
+			},
+			"visualPrompt": "A friendly puppy for a toddler word-learning garden game, soft edges, warm expression, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "animal", "pet", "friendly", "brown"],
+			"color": "brown",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

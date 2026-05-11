@@ -63,7 +63,7 @@ describe('scene layout', () => {
 	it('avoids selecting visibly crowded placements when possible', () => {
 		const object = gardenPack.objects[0]
 		const placement = gardenScene.objects.find(
-			(candidate) => candidate.objectId === object?.id,
+			(candidate) => candidate.itemId === object?.id,
 		)
 		if (!object || !placement) {
 			throw new Error('Test setup failed: object placement not found')
@@ -75,7 +75,7 @@ describe('scene layout', () => {
 				placement,
 				{
 					...placement,
-					objectId: object.id,
+					itemId: object.id,
 					x: placement.x + 1,
 					y: placement.y + 1,
 				},

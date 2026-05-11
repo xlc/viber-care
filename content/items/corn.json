@@ -1,0 +1,272 @@
+{
+	"id": "corn",
+	"category": "food",
+	"tags": [
+		"farm",
+		"vegetable",
+		"garden-bed",
+		"corn",
+		"garden-vegetables",
+		"food",
+		"fruits-and-vegetables"
+	],
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less"
+		],
+		"colors": ["yellow"],
+		"sceneZones": ["garden", "basket"],
+		"zhMeasureWord": "根",
+		"englishPlural": "corn cobs"
+	},
+	"visualPrompt": "A friendly ear of corn for a toddler farm word-learning game, bright yellow kernels, soft green leaves, simple clear shape, transparent background.",
+	"interaction": {
+		"id": "corn-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the corn.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/corn-en-find.mp3"
+			},
+			"successPhrase": "You found the corn.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/corn-en-success.mp3"
+			},
+			"fallbackText": "corn",
+			"levels": {
+				"L0": {
+					"text": "corn",
+					"audioText": "corn",
+					"fallbackText": "corn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The corn is yellow.",
+					"audioText": "The corn is yellow.",
+					"fallbackText": "corn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "yellow ear of corn",
+					"audioText": "yellow ear of corn",
+					"fallbackText": "corn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The corn grows in the garden bed.",
+					"audioText": "The corn grows in the garden bed.",
+					"fallbackText": "corn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What is yellow and tall? The corn is yellow and tall.",
+					"audioText": "What is yellow and tall? The corn is yellow and tall.",
+					"fallbackText": "corn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The corn rests in the farm vegetable patch.",
+					"audioText": "The corn rests in the farm vegetable patch.",
+					"fallbackText": "corn",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找玉米。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/corn-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到玉米了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/corn-zh-Hans-success.mp3"
+			},
+			"fallbackText": "玉米",
+			"levels": {
+				"L0": {
+					"text": "玉米",
+					"audioText": "玉米",
+					"fallbackText": "玉米",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "玉米黄黄的。",
+					"audioText": "玉米黄黄的。",
+					"fallbackText": "玉米",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "黄色的玉米",
+					"audioText": "黄色的玉米",
+					"fallbackText": "玉米",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "玉米长在菜地里。",
+					"audioText": "玉米长在菜地里。",
+					"fallbackText": "玉米",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么又黄又高？玉米又黄又高。",
+					"audioText": "什么又黄又高？玉米又黄又高。",
+					"fallbackText": "玉米",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "玉米在农场菜地里安静地待着。",
+					"audioText": "玉米在农场菜地里安静地待着。",
+					"fallbackText": "玉米",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/corn-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/corn.png",
+				"alt": "corn",
+				"generationPrompt": "A friendly ear of corn for a toddler farm word-learning game, bright yellow kernels, soft green leaves, simple clear shape, transparent background.",
+				"placeholder": {
+					"label": "corn",
+					"emoji": "🌽"
+				}
+			},
+			"visualPrompt": "A friendly ear of corn for a toddler farm word-learning game, bright yellow kernels, soft green leaves, simple clear shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": [
+				"farm-friends",
+				"food",
+				"farm",
+				"vegetable",
+				"garden-bed",
+				"corn"
+			],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/corn-bright.png",
+				"alt": "corn bright large",
+				"generationPrompt": "A friendly ear of corn for a toddler farm word-learning game, bright yellow kernels, soft green leaves, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "corn",
+					"emoji": "🌽"
+				}
+			},
+			"visualPrompt": "A friendly ear of corn for a toddler farm word-learning game, bright yellow kernels, soft green leaves, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": [
+				"farm-friends",
+				"food",
+				"farm",
+				"vegetable",
+				"garden-bed",
+				"corn"
+			],
+			"size": "large",
+			"style": "bright-large"
+		},
+		{
+			"id": "fruits-and-vegetables-classic",
+			"label": "corn Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/corn.png",
+				"alt": "corn",
+				"generationPrompt": "A friendly corn for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "corn",
+					"emoji": "🌽"
+				}
+			},
+			"visualPrompt": "A friendly corn for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "garden-vegetables", "food", "corn"],
+			"size": "medium",
+			"style": "fruits-and-vegetables"
+		},
+		{
+			"id": "fruits-and-vegetables-bright-large",
+			"label": "corn Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/corn-bright.png",
+				"alt": "corn bright large",
+				"generationPrompt": "A friendly corn for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "corn",
+					"emoji": "🌽"
+				}
+			},
+			"visualPrompt": "A friendly corn for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "garden-vegetables", "food", "corn"],
+			"size": "large",
+			"style": "fruits-and-vegetables"
+		}
+	]
+}

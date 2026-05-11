@@ -1,0 +1,194 @@
+{
+	"id": "dinosaur-egg",
+	"category": "dinosaur-object",
+	"tags": ["egg", "nest", "dinosaur"],
+	"visualPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
+	"interaction": {
+		"id": "dinosaur-egg-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the dinosaur egg.",
+			"successPhrase": "You found the dinosaur egg.",
+			"fallbackText": "That's the dinosaur egg.",
+			"levels": {
+				"L0": {
+					"text": "dinosaur egg",
+					"audioText": "dinosaur egg",
+					"fallbackText": "dinosaur egg",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The dinosaur egg rests in the nest.",
+					"audioText": "The dinosaur egg rests in the nest.",
+					"fallbackText": "The dinosaur egg rests in the nest.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "speckled dinosaur egg",
+					"audioText": "speckled dinosaur egg",
+					"fallbackText": "That's the dinosaur egg.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The dinosaur egg sits in a nest.",
+					"audioText": "The dinosaur egg sits in a nest.",
+					"fallbackText": "That's the dinosaur egg.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What is in the nest? A dinosaur egg is in the nest.",
+					"audioText": "What is in the nest? A dinosaur egg is in the nest.",
+					"fallbackText": "That's the dinosaur egg.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The dinosaur egg rests quietly in the warm nest.",
+					"audioText": "The dinosaur egg rests quietly in the warm nest.",
+					"fallbackText": "That's the dinosaur egg.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找恐龙蛋。",
+			"successPhrase": "你找到恐龙蛋了。",
+			"fallbackText": "这是恐龙蛋。",
+			"levels": {
+				"L0": {
+					"text": "恐龙蛋",
+					"audioText": "恐龙蛋",
+					"fallbackText": "恐龙蛋",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "恐龙蛋在窝里。",
+					"audioText": "恐龙蛋在窝里。",
+					"fallbackText": "恐龙蛋在窝里。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "有斑点的恐龙蛋",
+					"audioText": "有斑点的恐龙蛋",
+					"fallbackText": "这是恐龙蛋。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "恐龙蛋在窝里。",
+					"audioText": "恐龙蛋在窝里。",
+					"fallbackText": "这是恐龙蛋。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "窝里有什么？窝里有恐龙蛋。",
+					"audioText": "窝里有什么？窝里有恐龙蛋。",
+					"fallbackText": "这是恐龙蛋。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "恐龙蛋安静地躺在温暖的窝里。",
+					"audioText": "恐龙蛋安静地躺在温暖的窝里。",
+					"fallbackText": "这是恐龙蛋。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dinosaur-egg-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/dinosaur-egg.webp",
+				"alt": "dinosaur egg",
+				"generationPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
+				"placeholder": {
+					"label": "dinosaur egg",
+					"emoji": "🥚"
+				}
+			},
+			"visualPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur-object", "egg", "nest", "dinosaur"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/dinosaur-egg-bright.webp",
+				"alt": "dinosaur egg bright large",
+				"generationPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "dinosaur egg",
+					"emoji": "🥚"
+				}
+			},
+			"visualPrompt": "A speckled dinosaur egg resting in a soft nest for a toddler dinosaur word-learning game, rounded calm shapes, no cracks, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur-object", "egg", "nest", "dinosaur"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

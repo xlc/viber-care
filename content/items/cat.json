@@ -1,0 +1,196 @@
+{
+	"id": "cat",
+	"category": "animal",
+	"tags": ["pet", "soft", "orange"],
+	"visualPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background.",
+	"interaction": {
+		"id": "cat-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the cat.",
+			"successPhrase": "You found the cat.",
+			"fallbackText": "cat",
+			"levels": {
+				"L0": {
+					"text": "cat",
+					"audioText": "cat",
+					"fallbackText": "cat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The cat says meow.",
+					"audioText": "The cat says meow.",
+					"fallbackText": "cat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "soft orange cat",
+					"audioText": "soft orange cat",
+					"fallbackText": "cat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The cat sits in the sun.",
+					"audioText": "The cat sits in the sun.",
+					"fallbackText": "cat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who says meow? The cat says meow.",
+					"audioText": "Who says meow? The cat says meow.",
+					"fallbackText": "cat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The cat stretches in the warm sun and says meow.",
+					"audioText": "The cat stretches in the warm sun and says meow.",
+					"fallbackText": "cat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/cat-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/cat-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小猫。",
+			"successPhrase": "你找到小猫了。",
+			"fallbackText": "小猫",
+			"levels": {
+				"L0": {
+					"text": "小猫",
+					"audioText": "小猫",
+					"fallbackText": "小猫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小猫喵喵叫。",
+					"audioText": "小猫喵喵叫。",
+					"fallbackText": "小猫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "柔软的橙色小猫",
+					"audioText": "柔软的橙色小猫",
+					"fallbackText": "小猫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小猫坐在阳光里。",
+					"audioText": "小猫坐在阳光里。",
+					"fallbackText": "小猫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁喵喵叫？小猫喵喵叫。",
+					"audioText": "谁喵喵叫？小猫喵喵叫。",
+					"fallbackText": "小猫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小猫在暖暖的阳光里伸伸懒腰。",
+					"audioText": "小猫在暖暖的阳光里伸伸懒腰。",
+					"fallbackText": "小猫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/garden/audio/cat-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/cat-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/garden/audio/cat-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/cat.webp",
+				"alt": "cat",
+				"generationPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background.",
+				"placeholder": {
+					"label": "cat",
+					"emoji": "🐱"
+				}
+			},
+			"visualPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["garden", "animal", "pet", "soft", "orange"],
+			"color": "orange",
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/garden/cat-bright.webp",
+				"alt": "cat bright large",
+				"generationPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "cat",
+					"emoji": "🐱"
+				}
+			},
+			"visualPrompt": "A gentle orange cat for a toddler word-learning garden game, rounded shapes, soft smile, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["garden", "animal", "pet", "soft", "orange"],
+			"color": "orange",
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

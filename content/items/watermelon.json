@@ -1,0 +1,194 @@
+{
+	"id": "watermelon",
+	"category": "fruits",
+	"tags": ["fruits", "food", "watermelon"],
+	"visualPrompt": "A friendly watermelon for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/watermelon.png",
+				"alt": "watermelon",
+				"generationPrompt": "A friendly watermelon for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "watermelon",
+					"emoji": "🍉"
+				}
+			},
+			"visualPrompt": "A friendly watermelon for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "watermelon"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/fruits-and-vegetables/watermelon-bright.png",
+				"alt": "watermelon bright large",
+				"generationPrompt": "A friendly watermelon for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+				"placeholder": {
+					"label": "watermelon",
+					"emoji": "🍉"
+				}
+			},
+			"visualPrompt": "A friendly watermelon for a toddler fruits and vegetables word-learning game. Clear silhouette, soft rounded shapes, no text, no logos, transparent background. Alternate brighter larger variant, still the same object.",
+			"scaleMultiplier": 1.12,
+			"tags": ["fruits-and-vegetables", "fruits", "food", "watermelon"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "watermelon-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the watermelon.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-en-find.mp3"
+			},
+			"successPhrase": "You found the watermelon.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-en-success.mp3"
+			},
+			"fallbackText": "That is the watermelon.",
+			"levels": {
+				"L0": {
+					"text": "watermelon",
+					"audioText": "watermelon",
+					"fallbackText": "watermelon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The watermelon is in the fruit basket.",
+					"audioText": "The watermelon is in the fruit basket.",
+					"fallbackText": "watermelon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "big green watermelon",
+					"audioText": "big green watermelon",
+					"fallbackText": "watermelon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The watermelon waits in the fruit basket.",
+					"audioText": "The watermelon waits in the fruit basket.",
+					"fallbackText": "watermelon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What do you see? I see the watermelon.",
+					"audioText": "What do you see? I see the watermelon.",
+					"fallbackText": "watermelon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The watermelon rests quietly where little hands can find it.",
+					"audioText": "The watermelon rests quietly where little hands can find it.",
+					"fallbackText": "watermelon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找西瓜。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到西瓜了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-zh-Hans-success.mp3"
+			},
+			"fallbackText": "这是西瓜。",
+			"levels": {
+				"L0": {
+					"text": "西瓜",
+					"audioText": "西瓜",
+					"fallbackText": "西瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "西瓜在水果篮里。",
+					"audioText": "西瓜在水果篮里。",
+					"fallbackText": "西瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大大的绿西瓜",
+					"audioText": "大大的绿西瓜",
+					"fallbackText": "西瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "西瓜安静地待在水果篮里。",
+					"audioText": "西瓜安静地待在水果篮里。",
+					"fallbackText": "西瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "你看到了什么？我看到了西瓜。",
+					"audioText": "你看到了什么？我看到了西瓜。",
+					"fallbackText": "西瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "西瓜轻轻地等着小手来找到它。",
+					"audioText": "西瓜轻轻地等着小手来找到它。",
+					"fallbackText": "西瓜",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/fruits-and-vegetables/audio/watermelon-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

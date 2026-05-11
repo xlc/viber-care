@@ -1,0 +1,208 @@
+{
+	"id": "dino-footprint",
+	"category": "trace",
+	"tags": ["dinosaur", "ground", "footprint", "fossil"],
+	"visualPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background.",
+	"interaction": {
+		"id": "dino-footprint-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the dinosaur footprint.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-find.mp3"
+			},
+			"successPhrase": "You found the dinosaur footprint.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-success.mp3"
+			},
+			"fallbackText": "dinosaur footprint",
+			"levels": {
+				"L0": {
+					"text": "dinosaur footprint",
+					"audioText": "dinosaur footprint",
+					"fallbackText": "dinosaur footprint",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The footprint is big.",
+					"audioText": "The footprint is big.",
+					"fallbackText": "dinosaur footprint",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "big dinosaur footprint",
+					"audioText": "big dinosaur footprint",
+					"fallbackText": "dinosaur footprint",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The footprint sits on the ground.",
+					"audioText": "The footprint sits on the ground.",
+					"fallbackText": "dinosaur footprint",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What did the dinosaur leave? A footprint.",
+					"audioText": "What did the dinosaur leave? A footprint.",
+					"fallbackText": "dinosaur footprint",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The big footprint rests quietly in the valley.",
+					"audioText": "The big footprint rests quietly in the valley.",
+					"fallbackText": "dinosaur footprint",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找恐龙脚印。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到恐龙脚印了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-success.mp3"
+			},
+			"fallbackText": "恐龙脚印",
+			"levels": {
+				"L0": {
+					"text": "恐龙脚印",
+					"audioText": "恐龙脚印",
+					"fallbackText": "恐龙脚印",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "脚印大大的。",
+					"audioText": "脚印大大的。",
+					"fallbackText": "恐龙脚印",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大大的恐龙脚印",
+					"audioText": "大大的恐龙脚印",
+					"fallbackText": "恐龙脚印",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "脚印在地上。",
+					"audioText": "脚印在地上。",
+					"fallbackText": "恐龙脚印",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "恐龙留下了什么？一个脚印。",
+					"audioText": "恐龙留下了什么？一个脚印。",
+					"fallbackText": "恐龙脚印",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "大脚印安静地留在山谷地上。",
+					"audioText": "大脚印安静地留在山谷地上。",
+					"fallbackText": "恐龙脚印",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-footprint-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/dino-footprint.webp",
+				"alt": "dinosaur footprint",
+				"generationPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background.",
+				"placeholder": {
+					"label": "dinosaur footprint",
+					"emoji": "🐾"
+				}
+			},
+			"visualPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": [
+				"dinosaurs",
+				"trace",
+				"dinosaur",
+				"ground",
+				"footprint",
+				"fossil"
+			],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/dino-footprint-bright.webp",
+				"alt": "dinosaur footprint bright large",
+				"generationPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "dinosaur footprint",
+					"emoji": "🐾"
+				}
+			},
+			"visualPrompt": "A friendly dinosaur footprint for a toddler dinosaur word-learning game, warm sandy color, rounded edges, simple clear shape, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": [
+				"dinosaurs",
+				"trace",
+				"dinosaur",
+				"ground",
+				"footprint",
+				"fossil"
+			],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

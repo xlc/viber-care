@@ -31,7 +31,7 @@ export function buildSceneLayout(
 	const candidates = shuffle(
 		scene.objects
 			.map((placement) => {
-				const object = objectMap.get(placement.objectId)
+				const object = objectMap.get(placement.itemId)
 				return object ? { placement, object } : null
 			})
 			.filter((item): item is NonNullable<typeof item> => Boolean(item)),

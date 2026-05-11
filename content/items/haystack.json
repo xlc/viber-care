@@ -1,0 +1,194 @@
+{
+	"id": "haystack",
+	"category": "farm-object",
+	"tags": ["farm", "hay", "straw"],
+	"visualPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "haystack-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the haystack.",
+			"successPhrase": "You found the haystack.",
+			"fallbackText": "That is the haystack.",
+			"levels": {
+				"L0": {
+					"text": "haystack",
+					"audioText": "haystack",
+					"fallbackText": "haystack",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The haystack is soft and golden.",
+					"audioText": "The haystack is soft and golden.",
+					"fallbackText": "haystack",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "golden haystack",
+					"audioText": "golden haystack",
+					"fallbackText": "haystack",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The haystack sits near the barn.",
+					"audioText": "The haystack sits near the barn.",
+					"fallbackText": "haystack",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What is golden? The haystack is golden.",
+					"audioText": "What is golden? The haystack is golden.",
+					"fallbackText": "haystack",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The haystack rests quietly in the sun.",
+					"audioText": "The haystack rests quietly in the sun.",
+					"fallbackText": "haystack",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/haystack-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/haystack-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找干草堆。",
+			"successPhrase": "你找到干草堆了。",
+			"fallbackText": "这是干草堆。",
+			"levels": {
+				"L0": {
+					"text": "干草堆",
+					"audioText": "干草堆",
+					"fallbackText": "干草堆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "干草堆金黄金黄的。",
+					"audioText": "干草堆金黄金黄的。",
+					"fallbackText": "干草堆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "金色的干草堆",
+					"audioText": "金色的干草堆",
+					"fallbackText": "干草堆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "干草堆在谷仓旁。",
+					"audioText": "干草堆在谷仓旁。",
+					"fallbackText": "干草堆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么是金色的？干草堆是金色的。",
+					"audioText": "什么是金色的？干草堆是金色的。",
+					"fallbackText": "干草堆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "干草堆安静地晒着太阳。",
+					"audioText": "干草堆安静地晒着太阳。",
+					"fallbackText": "干草堆",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/farm-friends/audio/haystack-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/haystack.png",
+				"alt": "haystack",
+				"generationPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "haystack",
+					"emoji": "🌾"
+				}
+			},
+			"visualPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["farm-friends", "farm-object", "farm", "hay", "straw"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/farm-friends/haystack-bright.png",
+				"alt": "haystack bright large",
+				"generationPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "haystack bright large",
+					"emoji": "🌾"
+				}
+			},
+			"visualPrompt": "A friendly haystack for a toddler farm word-learning game. Consistent soft rounded style, clear silhouette, warm golden straw, no text, no logos, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["farm-friends", "farm-object", "farm", "hay", "straw"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

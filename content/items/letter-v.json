@@ -1,0 +1,194 @@
+{
+	"id": "letter-v",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "v"],
+	"visualPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-v-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter V.",
+			"successPhrase": "You found letter V.",
+			"fallbackText": "V",
+			"levels": {
+				"L0": {
+					"text": "V",
+					"audioText": "V",
+					"fallbackText": "V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "V is for violin.",
+					"audioText": "V is for violin.",
+					"fallbackText": "V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase V",
+					"audioText": "uppercase V",
+					"fallbackText": "V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "V starts the word violin.",
+					"audioText": "V starts the word violin.",
+					"fallbackText": "V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is V.",
+					"audioText": "What letter is this? It is V.",
+					"fallbackText": "V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "V sits on the card and says violin.",
+					"audioText": "V sits on the card and says violin.",
+					"fallbackText": "V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-v-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-v-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 V。",
+			"successPhrase": "你找到字母 V 了。",
+			"fallbackText": "字母 V",
+			"levels": {
+				"L0": {
+					"text": "字母 V",
+					"audioText": "字母 V",
+					"fallbackText": "字母 V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "V 代表小提琴。",
+					"audioText": "V 代表小提琴。",
+					"fallbackText": "字母 V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 V",
+					"audioText": "大写字母 V",
+					"fallbackText": "字母 V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "V 是小提琴的开头。",
+					"audioText": "V 是小提琴的开头。",
+					"fallbackText": "字母 V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 V。",
+					"audioText": "这是什么字母？这是 V。",
+					"fallbackText": "字母 V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "V 在卡片上，轻轻说小提琴。",
+					"audioText": "V 在卡片上，轻轻说小提琴。",
+					"fallbackText": "字母 V",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-v-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-v.webp",
+				"alt": "letter V",
+				"generationPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "V",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "v"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-v-bright.webp",
+				"alt": "letter V bright large",
+				"generationPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "V",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase V letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "v"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

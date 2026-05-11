@@ -1,0 +1,194 @@
+{
+	"id": "ambulance",
+	"category": "vehicle",
+	"tags": ["transportation", "road", "van", "wheels"],
+	"visualPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background.",
+	"interaction": {
+		"id": "ambulance-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the ambulance.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/ambulance-en-find.mp3"
+			},
+			"successPhrase": "You found the ambulance.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/ambulance-en-success.mp3"
+			},
+			"fallbackText": "ambulance",
+			"levels": {
+				"L0": {
+					"text": "ambulance",
+					"audioText": "ambulance",
+					"fallbackText": "ambulance",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The ambulance drives gently.",
+					"audioText": "The ambulance drives gently.",
+					"fallbackText": "ambulance",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "white ambulance",
+					"audioText": "white ambulance",
+					"fallbackText": "ambulance",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The ambulance drives on the road.",
+					"audioText": "The ambulance drives on the road.",
+					"fallbackText": "ambulance",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What vehicle has a red cross? The ambulance has a red cross.",
+					"audioText": "What vehicle has a red cross? The ambulance has a red cross.",
+					"fallbackText": "ambulance",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The ambulance moves calmly along the soft road.",
+					"audioText": "The ambulance moves calmly along the soft road.",
+					"fallbackText": "ambulance",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找救护车。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到救护车了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-success.mp3"
+			},
+			"fallbackText": "救护车",
+			"levels": {
+				"L0": {
+					"text": "救护车",
+					"audioText": "救护车",
+					"fallbackText": "救护车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "救护车轻轻开。",
+					"audioText": "救护车轻轻开。",
+					"fallbackText": "救护车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "白色的救护车",
+					"audioText": "白色的救护车",
+					"fallbackText": "救护车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "救护车在路上开。",
+					"audioText": "救护车在路上开。",
+					"fallbackText": "救护车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么车有红十字？救护车有红十字。",
+					"audioText": "什么车有红十字？救护车有红十字。",
+					"fallbackText": "救护车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "救护车沿着柔软的路慢慢开。",
+					"audioText": "救护车沿着柔软的路慢慢开。",
+					"fallbackText": "救护车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/ambulance-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/ambulance.png",
+				"alt": "ambulance",
+				"generationPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background.",
+				"placeholder": {
+					"label": "ambulance",
+					"emoji": "🚑"
+				}
+			},
+			"visualPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "vehicle", "road", "van", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/ambulance-bright.png",
+				"alt": "ambulance bright large",
+				"generationPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "ambulance",
+					"emoji": "🚑"
+				}
+			},
+			"visualPrompt": "A friendly white ambulance for a toddler transportation word-learning game, rounded toy-like van with a simple red cross symbol, calm and safe, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "vehicle", "road", "van", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

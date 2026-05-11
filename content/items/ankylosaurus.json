@@ -1,0 +1,194 @@
+{
+	"id": "ankylosaurus",
+	"category": "dinosaur",
+	"tags": ["dinosaur", "armor", "tail"],
+	"visualPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
+	"interaction": {
+		"id": "ankylosaurus-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the ankylosaurus.",
+			"successPhrase": "You found the ankylosaurus.",
+			"fallbackText": "That's the ankylosaurus.",
+			"levels": {
+				"L0": {
+					"text": "ankylosaurus",
+					"audioText": "ankylosaurus",
+					"fallbackText": "ankylosaurus",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The ankylosaurus has a bumpy back.",
+					"audioText": "The ankylosaurus has a bumpy back.",
+					"fallbackText": "The ankylosaurus has a bumpy back.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round ankylosaurus",
+					"audioText": "round ankylosaurus",
+					"fallbackText": "That's the ankylosaurus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The ankylosaurus has a bumpy back.",
+					"audioText": "The ankylosaurus has a bumpy back.",
+					"fallbackText": "That's the ankylosaurus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Who has a strong tail? The ankylosaurus has a strong tail.",
+					"audioText": "Who has a strong tail? The ankylosaurus has a strong tail.",
+					"fallbackText": "That's the ankylosaurus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The ankylosaurus rests near the fern.",
+					"audioText": "The ankylosaurus rests near the fern.",
+					"fallbackText": "That's the ankylosaurus.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/ankylosaurus-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找甲龙。",
+			"successPhrase": "你找到甲龙了。",
+			"fallbackText": "这是甲龙。",
+			"levels": {
+				"L0": {
+					"text": "甲龙",
+					"audioText": "甲龙",
+					"fallbackText": "甲龙",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "甲龙背上有小包。",
+					"audioText": "甲龙背上有小包。",
+					"fallbackText": "甲龙背上有小包。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "圆圆的甲龙",
+					"audioText": "圆圆的甲龙",
+					"fallbackText": "这是甲龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "甲龙背上有小鼓包。",
+					"audioText": "甲龙背上有小鼓包。",
+					"fallbackText": "这是甲龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有有力的尾巴？甲龙有有力的尾巴。",
+					"audioText": "谁有有力的尾巴？甲龙有有力的尾巴。",
+					"fallbackText": "这是甲龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "甲龙在蕨类植物旁边休息。",
+					"audioText": "甲龙在蕨类植物旁边休息。",
+					"fallbackText": "这是甲龙。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/ankylosaurus-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/ankylosaurus.webp",
+				"alt": "ankylosaurus",
+				"generationPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
+				"placeholder": {
+					"label": "ankylosaurus",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "dinosaur", "armor", "tail"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/ankylosaurus-bright.webp",
+				"alt": "ankylosaurus bright large",
+				"generationPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "ankylosaurus",
+					"emoji": "🦕"
+				}
+			},
+			"visualPrompt": "A friendly teal ankylosaurus for a toddler dinosaur word-learning game, rounded bumpy back, soft tail club, no scary spikes, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "dinosaur", "armor", "tail"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

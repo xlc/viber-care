@@ -1,0 +1,194 @@
+{
+	"id": "dino-nest",
+	"category": "nature",
+	"tags": ["dinosaur", "ground", "nest", "egg"],
+	"visualPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background.",
+	"interaction": {
+		"id": "dino-nest-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the dinosaur nest.",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dino-nest-en-find.mp3"
+			},
+			"successPhrase": "You found the dinosaur nest.",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dino-nest-en-success.mp3"
+			},
+			"fallbackText": "dinosaur nest",
+			"levels": {
+				"L0": {
+					"text": "dinosaur nest",
+					"audioText": "dinosaur nest",
+					"fallbackText": "dinosaur nest",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The nest holds eggs.",
+					"audioText": "The nest holds eggs.",
+					"fallbackText": "dinosaur nest",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "cozy dinosaur nest",
+					"audioText": "cozy dinosaur nest",
+					"fallbackText": "dinosaur nest",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The nest sits near the ferns.",
+					"audioText": "The nest sits near the ferns.",
+					"fallbackText": "dinosaur nest",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What holds the eggs? The dinosaur nest holds the eggs.",
+					"audioText": "What holds the eggs? The dinosaur nest holds the eggs.",
+					"fallbackText": "dinosaur nest",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The dinosaur nest rests softly on the valley ground.",
+					"audioText": "The dinosaur nest rests softly on the valley ground.",
+					"fallbackText": "dinosaur nest",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-en-L5.mp3"
+					}
+				}
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找恐龙窝。",
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-find.mp3"
+			},
+			"successPhrase": "你找到恐龙窝了。",
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-success.mp3"
+			},
+			"fallbackText": "恐龙窝",
+			"levels": {
+				"L0": {
+					"text": "恐龙窝",
+					"audioText": "恐龙窝",
+					"fallbackText": "恐龙窝",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "窝里有蛋。",
+					"audioText": "窝里有蛋。",
+					"fallbackText": "恐龙窝",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "暖暖的恐龙窝",
+					"audioText": "暖暖的恐龙窝",
+					"fallbackText": "恐龙窝",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "恐龙窝在蕨草旁边。",
+					"audioText": "恐龙窝在蕨草旁边。",
+					"fallbackText": "恐龙窝",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么放着蛋？恐龙窝放着蛋。",
+					"audioText": "什么放着蛋？恐龙窝放着蛋。",
+					"fallbackText": "恐龙窝",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "恐龙窝轻轻地待在山谷地上。",
+					"audioText": "恐龙窝轻轻地待在山谷地上。",
+					"fallbackText": "恐龙窝",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/dinosaurs/audio/dino-nest-zh-Hans-L5.mp3"
+					}
+				}
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/dino-nest.webp",
+				"alt": "dinosaur nest",
+				"generationPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background.",
+				"placeholder": {
+					"label": "dinosaur nest",
+					"emoji": "🥚"
+				}
+			},
+			"visualPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["dinosaurs", "nature", "dinosaur", "ground", "nest", "egg"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/dinosaurs/dino-nest-bright.webp",
+				"alt": "dinosaur nest bright large",
+				"generationPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "dinosaur nest",
+					"emoji": "🥚"
+				}
+			},
+			"visualPrompt": "A cozy dinosaur nest with eggs for a toddler dinosaur word-learning game, soft rounded twigs, gentle colors, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["dinosaurs", "nature", "dinosaur", "ground", "nest", "egg"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

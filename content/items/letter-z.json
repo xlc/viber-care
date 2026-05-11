@@ -1,0 +1,194 @@
+{
+	"id": "letter-z",
+	"category": "letter",
+	"tags": ["letter", "alphabet", "uppercase", "z"],
+	"visualPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+	"interaction": {
+		"id": "letter-z-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find letter Z.",
+			"successPhrase": "You found letter Z.",
+			"fallbackText": "Z",
+			"levels": {
+				"L0": {
+					"text": "Z",
+					"audioText": "Z",
+					"fallbackText": "Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Z is for zebra.",
+					"audioText": "Z is for zebra.",
+					"fallbackText": "Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "uppercase Z",
+					"audioText": "uppercase Z",
+					"fallbackText": "Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Z starts the word zebra.",
+					"audioText": "Z starts the word zebra.",
+					"fallbackText": "Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What letter is this? It is Z.",
+					"audioText": "What letter is this? It is Z.",
+					"fallbackText": "Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "Z sits on the card and says zebra.",
+					"audioText": "Z sits on the card and says zebra.",
+					"fallbackText": "Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-z-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-z-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找字母 Z。",
+			"successPhrase": "你找到字母 Z 了。",
+			"fallbackText": "字母 Z",
+			"levels": {
+				"L0": {
+					"text": "字母 Z",
+					"audioText": "字母 Z",
+					"fallbackText": "字母 Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "Z 代表斑马。",
+					"audioText": "Z 代表斑马。",
+					"fallbackText": "字母 Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大写字母 Z",
+					"audioText": "大写字母 Z",
+					"fallbackText": "字母 Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "Z 是斑马的开头。",
+					"audioText": "Z 是斑马的开头。",
+					"fallbackText": "字母 Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "这是什么字母？这是 Z。",
+					"audioText": "这是什么字母？这是 Z。",
+					"fallbackText": "字母 Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "Z 在卡片上，轻轻说斑马。",
+					"audioText": "Z 在卡片上，轻轻说斑马。",
+					"fallbackText": "字母 Z",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/english-alphabet/audio/letter-z-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-z.webp",
+				"alt": "letter Z",
+				"generationPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+				"placeholder": {
+					"label": "Z",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text.",
+			"scaleMultiplier": 1,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "z"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/english-alphabet/letter-z-bright.webp",
+				"alt": "letter Z bright large",
+				"generationPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "Z",
+					"emoji": "🔤"
+				}
+			},
+			"visualPrompt": "A large friendly uppercase Z letter on a rounded toy card for a toddler English alphabet game, soft colors, clear glyph, transparent background, no extra text. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["english-alphabet", "letter", "alphabet", "uppercase", "z"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

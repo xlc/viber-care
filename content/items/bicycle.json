@@ -1,0 +1,194 @@
+{
+	"id": "bicycle",
+	"category": "transportation",
+	"tags": ["transportation", "road", "wheels"],
+	"visualPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
+	"interaction": {
+		"id": "bicycle-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the bicycle.",
+			"successPhrase": "You found the bicycle.",
+			"fallbackText": "That's the bicycle.",
+			"levels": {
+				"L0": {
+					"text": "bicycle",
+					"audioText": "bicycle",
+					"fallbackText": "bicycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bicycle rolls.",
+					"audioText": "The bicycle rolls.",
+					"fallbackText": "bicycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "little bicycle",
+					"audioText": "little bicycle",
+					"fallbackText": "bicycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The bicycle rolls on two wheels.",
+					"audioText": "The bicycle rolls on two wheels.",
+					"fallbackText": "bicycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has two wheels? The bicycle has two wheels.",
+					"audioText": "What has two wheels? The bicycle has two wheels.",
+					"fallbackText": "bicycle",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The bicycle waits beside the sunny path.",
+					"audioText": "The bicycle waits beside the sunny path.",
+					"fallbackText": "That's the bicycle.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/bicycle-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/bicycle-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找自行车。",
+			"successPhrase": "你找到自行车了。",
+			"fallbackText": "这是自行车。",
+			"levels": {
+				"L0": {
+					"text": "自行车",
+					"audioText": "自行车",
+					"fallbackText": "自行车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "自行车转一转。",
+					"audioText": "自行车转一转。",
+					"fallbackText": "自行车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小自行车",
+					"audioText": "小小自行车",
+					"fallbackText": "自行车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "自行车用两个轮子前进。",
+					"audioText": "自行车用两个轮子前进。",
+					"fallbackText": "自行车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有两个轮子？自行车有两个轮子。",
+					"audioText": "谁有两个轮子？自行车有两个轮子。",
+					"fallbackText": "自行车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "自行车在阳光小路旁等一等。",
+					"audioText": "自行车在阳光小路旁等一等。",
+					"fallbackText": "这是自行车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/bicycle-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/bicycle.png",
+				"alt": "little bicycle",
+				"generationPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
+				"placeholder": {
+					"label": "bicycle",
+					"emoji": "🚲"
+				}
+			},
+			"visualPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/bicycle-bright.png",
+				"alt": "little bicycle bright large",
+				"generationPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "bicycle",
+					"emoji": "🚲"
+				}
+			},
+			"visualPrompt": "A friendly little bicycle for a toddler transportation word-learning game, clear two-wheel silhouette, rounded frame, no rider, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "road", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,194 @@
+{
+	"id": "train",
+	"category": "transportation",
+	"tags": ["transportation", "rail", "wheels"],
+	"visualPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
+	"interaction": {
+		"id": "train-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the train.",
+			"successPhrase": "You found the train.",
+			"fallbackText": "That's the train.",
+			"levels": {
+				"L0": {
+					"text": "train",
+					"audioText": "train",
+					"fallbackText": "train",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The train rolls along.",
+					"audioText": "The train rolls along.",
+					"fallbackText": "train",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "green train",
+					"audioText": "green train",
+					"fallbackText": "train",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The train rolls on the track.",
+					"audioText": "The train rolls on the track.",
+					"fallbackText": "train",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What rides on tracks? The train rides on tracks.",
+					"audioText": "What rides on tracks? The train rides on tracks.",
+					"fallbackText": "train",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The train makes a gentle trip past the grass.",
+					"audioText": "The train makes a gentle trip past the grass.",
+					"fallbackText": "That's the train.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/train-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/train-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找火车。",
+			"successPhrase": "你找到火车了。",
+			"fallbackText": "这是火车。",
+			"levels": {
+				"L0": {
+					"text": "火车",
+					"audioText": "火车",
+					"fallbackText": "火车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "火车向前开。",
+					"audioText": "火车向前开。",
+					"fallbackText": "火车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "绿色火车",
+					"audioText": "绿色火车",
+					"fallbackText": "火车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "火车在轨道上开。",
+					"audioText": "火车在轨道上开。",
+					"fallbackText": "火车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁在轨道上走？火车在轨道上走。",
+					"audioText": "谁在轨道上走？火车在轨道上走。",
+					"fallbackText": "火车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "火车轻轻开过草地旁边。",
+					"audioText": "火车轻轻开过草地旁边。",
+					"fallbackText": "这是火车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/transportation/audio/train-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/train-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/transportation/audio/train-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/train.png",
+				"alt": "green train",
+				"generationPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
+				"placeholder": {
+					"label": "train",
+					"emoji": "🚆"
+				}
+			},
+			"visualPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["transportation", "rail", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/transportation/train-bright.png",
+				"alt": "green train bright large",
+				"generationPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "train",
+					"emoji": "🚆"
+				}
+			},
+			"visualPrompt": "A friendly green train for a toddler transportation word-learning game, simple engine and carriage, rounded shapes, no smoke danger, no text, transparent background. Alternate larger bright variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["transportation", "rail", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}
