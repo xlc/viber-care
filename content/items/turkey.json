@@ -1,0 +1,213 @@
+{
+	"id": "turkey",
+	"category": "farm-animal",
+	"tags": ["animal", "farm", "coop", "bird"],
+	"visualPrompt": "A friendly turkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the turkey.",
+			"successPhrase": "You found the turkey.",
+			"fallbackText": "That is the turkey.",
+			"levels": {
+				"L0": {
+					"text": "turkey",
+					"audioText": "turkey",
+					"fallbackText": "turkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The turkey is here.",
+					"audioText": "The turkey is here.",
+					"fallbackText": "turkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "curious turkey",
+					"audioText": "curious turkey",
+					"fallbackText": "turkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The turkey moves gently.",
+					"audioText": "The turkey moves gently.",
+					"fallbackText": "turkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the turkey? Here is the turkey.",
+					"audioText": "Where is the turkey? Here is the turkey.",
+					"fallbackText": "turkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The turkey is ready to play.",
+					"audioText": "The turkey is ready to play.",
+					"fallbackText": "turkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/turkey-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/turkey-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找火鸡。",
+			"successPhrase": "你找到火鸡了。",
+			"fallbackText": "这是火鸡。",
+			"levels": {
+				"L0": {
+					"text": "火鸡",
+					"audioText": "火鸡",
+					"fallbackText": "火鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "火鸡在这里。",
+					"audioText": "火鸡在这里。",
+					"fallbackText": "火鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "好奇的火鸡",
+					"audioText": "好奇的火鸡",
+					"fallbackText": "火鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "火鸡轻轻地动。",
+					"audioText": "火鸡轻轻地动。",
+					"fallbackText": "火鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "火鸡在哪里？火鸡在这里。",
+					"audioText": "火鸡在哪里？火鸡在这里。",
+					"fallbackText": "火鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "火鸡准备玩了。",
+					"audioText": "火鸡准备玩了。",
+					"fallbackText": "火鸡",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/turkey-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/turkey-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/turkey-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/turkey.png",
+				"alt": "turkey",
+				"generationPrompt": "A friendly turkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "turkey"
+				}
+			},
+			"visualPrompt": "A friendly turkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "farm", "coop", "bird"],
+			"size": "medium",
+			"color": "brown",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/turkey-bright.png",
+				"alt": "turkey bright large",
+				"generationPrompt": "A friendly turkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "turkey bright large"
+				}
+			},
+			"visualPrompt": "A friendly turkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "farm", "coop", "bird"],
+			"size": "large",
+			"color": "brown",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "turkey-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["brown"],
+		"sceneZones": ["farm", "coop", "bird"],
+		"zhMeasureWord": "只",
+		"englishPlural": "turkeys"
+	}
+}

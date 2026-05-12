@@ -1,0 +1,213 @@
+{
+	"id": "ladybug",
+	"category": "tiny-animal",
+	"tags": ["animal", "garden", "tiny", "flower"],
+	"visualPrompt": "A friendly ladybug for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the ladybug.",
+			"successPhrase": "You found the ladybug.",
+			"fallbackText": "That is the ladybug.",
+			"levels": {
+				"L0": {
+					"text": "ladybug",
+					"audioText": "ladybug",
+					"fallbackText": "ladybug",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The ladybug is here.",
+					"audioText": "The ladybug is here.",
+					"fallbackText": "ladybug",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "red ladybug",
+					"audioText": "red ladybug",
+					"fallbackText": "ladybug",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The ladybug moves gently.",
+					"audioText": "The ladybug moves gently.",
+					"fallbackText": "ladybug",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the ladybug? Here is the ladybug.",
+					"audioText": "Where is the ladybug? Here is the ladybug.",
+					"fallbackText": "ladybug",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The ladybug is ready to play.",
+					"audioText": "The ladybug is ready to play.",
+					"fallbackText": "ladybug",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/ladybug-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/ladybug-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找瓢虫。",
+			"successPhrase": "你找到瓢虫了。",
+			"fallbackText": "这是瓢虫。",
+			"levels": {
+				"L0": {
+					"text": "瓢虫",
+					"audioText": "瓢虫",
+					"fallbackText": "瓢虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "瓢虫在这里。",
+					"audioText": "瓢虫在这里。",
+					"fallbackText": "瓢虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "红红的瓢虫",
+					"audioText": "红红的瓢虫",
+					"fallbackText": "瓢虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "瓢虫轻轻地动。",
+					"audioText": "瓢虫轻轻地动。",
+					"fallbackText": "瓢虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "瓢虫在哪里？瓢虫在这里。",
+					"audioText": "瓢虫在哪里？瓢虫在这里。",
+					"fallbackText": "瓢虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "瓢虫准备玩了。",
+					"audioText": "瓢虫准备玩了。",
+					"fallbackText": "瓢虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/ladybug-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/ladybug-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/ladybug-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/ladybug.png",
+				"alt": "ladybug",
+				"generationPrompt": "A friendly ladybug for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "ladybug"
+				}
+			},
+			"visualPrompt": "A friendly ladybug for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "garden", "tiny", "flower"],
+			"size": "medium",
+			"color": "red",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/ladybug-bright.png",
+				"alt": "ladybug bright large",
+				"generationPrompt": "A friendly ladybug for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "ladybug bright large"
+				}
+			},
+			"visualPrompt": "A friendly ladybug for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "garden", "tiny", "flower"],
+			"size": "large",
+			"color": "red",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "ladybug-wiggle",
+		"animation": "wiggle"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["red"],
+		"sceneZones": ["garden", "flower"],
+		"zhMeasureWord": "只",
+		"englishPlural": "ladybugs"
+	}
+}

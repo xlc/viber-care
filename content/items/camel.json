@@ -1,0 +1,213 @@
+{
+	"id": "camel",
+	"category": "safari-animal",
+	"tags": ["animal", "safari", "grassland"],
+	"visualPrompt": "A friendly camel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the camel.",
+			"successPhrase": "You found the camel.",
+			"fallbackText": "That is the camel.",
+			"levels": {
+				"L0": {
+					"text": "camel",
+					"audioText": "camel",
+					"fallbackText": "camel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The camel is here.",
+					"audioText": "The camel is here.",
+					"fallbackText": "camel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "gentle camel",
+					"audioText": "gentle camel",
+					"fallbackText": "camel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The camel moves gently.",
+					"audioText": "The camel moves gently.",
+					"fallbackText": "camel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the camel? Here is the camel.",
+					"audioText": "Where is the camel? Here is the camel.",
+					"fallbackText": "camel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The camel is ready to play.",
+					"audioText": "The camel is ready to play.",
+					"fallbackText": "camel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/camel-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/camel-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找骆驼。",
+			"successPhrase": "你找到骆驼了。",
+			"fallbackText": "这是骆驼。",
+			"levels": {
+				"L0": {
+					"text": "骆驼",
+					"audioText": "骆驼",
+					"fallbackText": "骆驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "骆驼在这里。",
+					"audioText": "骆驼在这里。",
+					"fallbackText": "骆驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "温柔的骆驼",
+					"audioText": "温柔的骆驼",
+					"fallbackText": "骆驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "骆驼轻轻地动。",
+					"audioText": "骆驼轻轻地动。",
+					"fallbackText": "骆驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "骆驼在哪里？骆驼在这里。",
+					"audioText": "骆驼在哪里？骆驼在这里。",
+					"fallbackText": "骆驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "骆驼准备玩了。",
+					"audioText": "骆驼准备玩了。",
+					"fallbackText": "骆驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/camel-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/camel-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/camel-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/camel.png",
+				"alt": "camel",
+				"generationPrompt": "A friendly camel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "camel"
+				}
+			},
+			"visualPrompt": "A friendly camel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "medium",
+			"color": "tan",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/camel-bright.png",
+				"alt": "camel bright large",
+				"generationPrompt": "A friendly camel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "camel bright large"
+				}
+			},
+			"visualPrompt": "A friendly camel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "large",
+			"color": "tan",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "camel-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["tan"],
+		"sceneZones": ["safari", "grassland"],
+		"zhMeasureWord": "只",
+		"englishPlural": "camels"
+	}
+}

@@ -1,0 +1,213 @@
+{
+	"id": "lion",
+	"category": "safari-animal",
+	"tags": ["animal", "safari", "grassland"],
+	"visualPrompt": "A friendly lion for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the lion.",
+			"successPhrase": "You found the lion.",
+			"fallbackText": "That is the lion.",
+			"levels": {
+				"L0": {
+					"text": "lion",
+					"audioText": "lion",
+					"fallbackText": "lion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The lion is here.",
+					"audioText": "The lion is here.",
+					"fallbackText": "lion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "soft-maned lion",
+					"audioText": "soft-maned lion",
+					"fallbackText": "lion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The lion moves gently.",
+					"audioText": "The lion moves gently.",
+					"fallbackText": "lion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the lion? Here is the lion.",
+					"audioText": "Where is the lion? Here is the lion.",
+					"fallbackText": "lion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The lion is ready to play.",
+					"audioText": "The lion is ready to play.",
+					"fallbackText": "lion",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/lion-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/lion-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找狮子。",
+			"successPhrase": "你找到狮子了。",
+			"fallbackText": "这是狮子。",
+			"levels": {
+				"L0": {
+					"text": "狮子",
+					"audioText": "狮子",
+					"fallbackText": "狮子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "狮子在这里。",
+					"audioText": "狮子在这里。",
+					"fallbackText": "狮子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "鬃毛软软的狮子",
+					"audioText": "鬃毛软软的狮子",
+					"fallbackText": "狮子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "狮子轻轻地动。",
+					"audioText": "狮子轻轻地动。",
+					"fallbackText": "狮子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "狮子在哪里？狮子在这里。",
+					"audioText": "狮子在哪里？狮子在这里。",
+					"fallbackText": "狮子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "狮子准备玩了。",
+					"audioText": "狮子准备玩了。",
+					"fallbackText": "狮子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/lion-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/lion-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/lion-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/lion.png",
+				"alt": "lion",
+				"generationPrompt": "A friendly lion for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "lion"
+				}
+			},
+			"visualPrompt": "A friendly lion for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "medium",
+			"color": "gold",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/lion-bright.png",
+				"alt": "lion bright large",
+				"generationPrompt": "A friendly lion for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "lion bright large"
+				}
+			},
+			"visualPrompt": "A friendly lion for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "large",
+			"color": "gold",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "lion-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["gold"],
+		"sceneZones": ["safari", "grassland"],
+		"zhMeasureWord": "只",
+		"englishPlural": "lions"
+	}
+}

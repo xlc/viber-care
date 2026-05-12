@@ -1,0 +1,213 @@
+{
+	"id": "snail",
+	"category": "tiny-animal",
+	"tags": ["animal", "garden", "tiny", "ground"],
+	"visualPrompt": "A friendly snail for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the snail.",
+			"successPhrase": "You found the snail.",
+			"fallbackText": "That is the snail.",
+			"levels": {
+				"L0": {
+					"text": "snail",
+					"audioText": "snail",
+					"fallbackText": "snail",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The snail is here.",
+					"audioText": "The snail is here.",
+					"fallbackText": "snail",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "slow snail",
+					"audioText": "slow snail",
+					"fallbackText": "snail",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The snail moves gently.",
+					"audioText": "The snail moves gently.",
+					"fallbackText": "snail",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the snail? Here is the snail.",
+					"audioText": "Where is the snail? Here is the snail.",
+					"fallbackText": "snail",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The snail is ready to play.",
+					"audioText": "The snail is ready to play.",
+					"fallbackText": "snail",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/snail-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/snail-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找蜗牛。",
+			"successPhrase": "你找到蜗牛了。",
+			"fallbackText": "这是蜗牛。",
+			"levels": {
+				"L0": {
+					"text": "蜗牛",
+					"audioText": "蜗牛",
+					"fallbackText": "蜗牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "蜗牛在这里。",
+					"audioText": "蜗牛在这里。",
+					"fallbackText": "蜗牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "慢慢的蜗牛",
+					"audioText": "慢慢的蜗牛",
+					"fallbackText": "蜗牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "蜗牛轻轻地动。",
+					"audioText": "蜗牛轻轻地动。",
+					"fallbackText": "蜗牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "蜗牛在哪里？蜗牛在这里。",
+					"audioText": "蜗牛在哪里？蜗牛在这里。",
+					"fallbackText": "蜗牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "蜗牛准备玩了。",
+					"audioText": "蜗牛准备玩了。",
+					"fallbackText": "蜗牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/snail-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/snail-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/snail-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/snail.png",
+				"alt": "snail",
+				"generationPrompt": "A friendly snail for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "snail"
+				}
+			},
+			"visualPrompt": "A friendly snail for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "garden", "tiny", "ground"],
+			"size": "medium",
+			"color": "brown",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/snail-bright.png",
+				"alt": "snail bright large",
+				"generationPrompt": "A friendly snail for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "snail bright large"
+				}
+			},
+			"visualPrompt": "A friendly snail for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "garden", "tiny", "ground"],
+			"size": "large",
+			"color": "brown",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "snail-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["brown"],
+		"sceneZones": ["garden", "ground"],
+		"zhMeasureWord": "只",
+		"englishPlural": "snails"
+	}
+}

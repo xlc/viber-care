@@ -1,0 +1,213 @@
+{
+	"id": "woodpecker",
+	"category": "forest-animal",
+	"tags": ["animal", "forest", "bird", "tree"],
+	"visualPrompt": "A friendly woodpecker for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the woodpecker.",
+			"successPhrase": "You found the woodpecker.",
+			"fallbackText": "That is the woodpecker.",
+			"levels": {
+				"L0": {
+					"text": "woodpecker",
+					"audioText": "woodpecker",
+					"fallbackText": "woodpecker",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The woodpecker is here.",
+					"audioText": "The woodpecker is here.",
+					"fallbackText": "woodpecker",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "tapping woodpecker",
+					"audioText": "tapping woodpecker",
+					"fallbackText": "woodpecker",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The woodpecker moves gently.",
+					"audioText": "The woodpecker moves gently.",
+					"fallbackText": "woodpecker",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the woodpecker? Here is the woodpecker.",
+					"audioText": "Where is the woodpecker? Here is the woodpecker.",
+					"fallbackText": "woodpecker",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The woodpecker is ready to play.",
+					"audioText": "The woodpecker is ready to play.",
+					"fallbackText": "woodpecker",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/woodpecker-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/woodpecker-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找啄木鸟。",
+			"successPhrase": "你找到啄木鸟了。",
+			"fallbackText": "这是啄木鸟。",
+			"levels": {
+				"L0": {
+					"text": "啄木鸟",
+					"audioText": "啄木鸟",
+					"fallbackText": "啄木鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "啄木鸟在这里。",
+					"audioText": "啄木鸟在这里。",
+					"fallbackText": "啄木鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "会敲树的啄木鸟",
+					"audioText": "会敲树的啄木鸟",
+					"fallbackText": "啄木鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "啄木鸟轻轻地动。",
+					"audioText": "啄木鸟轻轻地动。",
+					"fallbackText": "啄木鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "啄木鸟在哪里？啄木鸟在这里。",
+					"audioText": "啄木鸟在哪里？啄木鸟在这里。",
+					"fallbackText": "啄木鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "啄木鸟准备玩了。",
+					"audioText": "啄木鸟准备玩了。",
+					"fallbackText": "啄木鸟",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/woodpecker-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/woodpecker-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/woodpecker-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/woodpecker.png",
+				"alt": "woodpecker",
+				"generationPrompt": "A friendly woodpecker for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "woodpecker"
+				}
+			},
+			"visualPrompt": "A friendly woodpecker for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "forest", "bird", "tree"],
+			"size": "medium",
+			"color": "red",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/woodpecker-bright.png",
+				"alt": "woodpecker bright large",
+				"generationPrompt": "A friendly woodpecker for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "woodpecker bright large"
+				}
+			},
+			"visualPrompt": "A friendly woodpecker for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "forest", "bird", "tree"],
+			"size": "large",
+			"color": "red",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "woodpecker-bounce",
+		"animation": "bounce"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["red"],
+		"sceneZones": ["forest", "bird", "tree"],
+		"zhMeasureWord": "只",
+		"englishPlural": "woodpeckers"
+	}
+}

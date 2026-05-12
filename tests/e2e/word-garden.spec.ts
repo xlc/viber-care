@@ -634,7 +634,7 @@ test('settings panel only offers playable Math Play learning focuses', async ({
 	await expect(page.getByTestId('math-focus-counting-1-3')).toBeVisible()
 	await expect(page.getByTestId('math-focus-colors')).toBeVisible()
 
-	await page.getByTestId('pack-ocean-animals').click()
+	await page.getByTestId('pack-animals').click()
 	await expect(page.getByTestId('math-focus-mixed')).toBeVisible()
 	await expect(page.getByTestId('math-focus-counting-1-3')).toBeVisible()
 	await expect(page.getByTestId('math-focus-colors')).toHaveCount(0)
@@ -652,7 +652,7 @@ test('unavailable learning focus falls back to playful Math Play', async ({
 	await page.getByTestId('settings-button').click()
 	await page.getByTestId('pack-fruits-and-vegetables').click()
 	await page.getByTestId('math-focus-colors').click()
-	await page.getByTestId('pack-ocean-animals').click()
+	await page.getByTestId('pack-animals').click()
 	await expect(page.getByTestId('math-focus-colors')).toHaveCount(0)
 	await page.getByLabel('Close settings').click()
 
@@ -719,12 +719,22 @@ test('puzzle mode fills scene gaps by dragging pieces', async ({ page }) => {
 	await expect(page.getByTestId('prompt')).not.toHaveClass(/is-puzzle/)
 })
 
-test('settings panel can switch to the ocean animals pack', async ({
+test('settings panel can switch to the animals pack and sets', async ({
 	page,
 }) => {
 	await page.goto('/')
 	await page.getByTestId('settings-button').click()
-	await page.getByTestId('pack-ocean-animals').click()
+
+	const animalsObjectIds = getPackObjectIds('animals')
+	const animalsPack = page.getByTestId('pack-animals')
+	expect(animalsObjectIds).toHaveLength(55)
+	await expect(animalsPack).toContainText('Animals')
+	await expect(animalsPack).toContainText('55 words / 5 sets')
+	await animalsPack.click()
+	await expect(page.getByTestId('set-ocean-animals')).toHaveAttribute(
+		'aria-pressed',
+		'true',
+	)
 	await page.getByLabel('Close settings').click()
 
 	await expect(page.getByTestId('scene-title')).toContainText('Ocean Cove')
@@ -733,6 +743,13 @@ test('settings panel can switch to the ocean animals pack', async ({
 	await expect(page.getByTestId('word-tray').locator('.word-line')).toHaveCount(
 		2,
 	)
+
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('set-forest-animals').click()
+	await page.getByLabel('Close settings').click()
+
+	await expect(page.getByTestId('scene-title')).toContainText('Forest Clearing')
+	await expectObjectCountBetween(page, 8, 10)
 })
 
 test('settings panel can switch to numbers and English alphabet packs', async ({

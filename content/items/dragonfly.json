@@ -1,0 +1,213 @@
+{
+	"id": "dragonfly",
+	"category": "tiny-animal",
+	"tags": ["animal", "garden", "tiny", "air", "pond"],
+	"visualPrompt": "A friendly dragonfly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the dragonfly.",
+			"successPhrase": "You found the dragonfly.",
+			"fallbackText": "That is the dragonfly.",
+			"levels": {
+				"L0": {
+					"text": "dragonfly",
+					"audioText": "dragonfly",
+					"fallbackText": "dragonfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The dragonfly is here.",
+					"audioText": "The dragonfly is here.",
+					"fallbackText": "dragonfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "shiny dragonfly",
+					"audioText": "shiny dragonfly",
+					"fallbackText": "dragonfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The dragonfly moves gently.",
+					"audioText": "The dragonfly moves gently.",
+					"fallbackText": "dragonfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the dragonfly? Here is the dragonfly.",
+					"audioText": "Where is the dragonfly? Here is the dragonfly.",
+					"fallbackText": "dragonfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The dragonfly is ready to play.",
+					"audioText": "The dragonfly is ready to play.",
+					"fallbackText": "dragonfly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/dragonfly-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/dragonfly-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找蜻蜓。",
+			"successPhrase": "你找到蜻蜓了。",
+			"fallbackText": "这是蜻蜓。",
+			"levels": {
+				"L0": {
+					"text": "蜻蜓",
+					"audioText": "蜻蜓",
+					"fallbackText": "蜻蜓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "蜻蜓在这里。",
+					"audioText": "蜻蜓在这里。",
+					"fallbackText": "蜻蜓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "亮亮的蜻蜓",
+					"audioText": "亮亮的蜻蜓",
+					"fallbackText": "蜻蜓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "蜻蜓轻轻地动。",
+					"audioText": "蜻蜓轻轻地动。",
+					"fallbackText": "蜻蜓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "蜻蜓在哪里？蜻蜓在这里。",
+					"audioText": "蜻蜓在哪里？蜻蜓在这里。",
+					"fallbackText": "蜻蜓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "蜻蜓准备玩了。",
+					"audioText": "蜻蜓准备玩了。",
+					"fallbackText": "蜻蜓",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/dragonfly-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/dragonfly-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/dragonfly-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/dragonfly.png",
+				"alt": "dragonfly",
+				"generationPrompt": "A friendly dragonfly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "dragonfly"
+				}
+			},
+			"visualPrompt": "A friendly dragonfly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "garden", "tiny", "air", "pond"],
+			"size": "medium",
+			"color": "green",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/dragonfly-bright.png",
+				"alt": "dragonfly bright large",
+				"generationPrompt": "A friendly dragonfly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "dragonfly bright large"
+				}
+			},
+			"visualPrompt": "A friendly dragonfly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "garden", "tiny", "air", "pond"],
+			"size": "large",
+			"color": "green",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "dragonfly-sway",
+		"animation": "sway"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["green"],
+		"sceneZones": ["garden", "air", "pond"],
+		"zhMeasureWord": "只",
+		"englishPlural": "dragonflies"
+	}
+}

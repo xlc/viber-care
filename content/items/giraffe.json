@@ -1,0 +1,213 @@
+{
+	"id": "giraffe",
+	"category": "safari-animal",
+	"tags": ["animal", "safari", "grassland", "tree"],
+	"visualPrompt": "A friendly giraffe for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the giraffe.",
+			"successPhrase": "You found the giraffe.",
+			"fallbackText": "That is the giraffe.",
+			"levels": {
+				"L0": {
+					"text": "giraffe",
+					"audioText": "giraffe",
+					"fallbackText": "giraffe",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The giraffe is here.",
+					"audioText": "The giraffe is here.",
+					"fallbackText": "giraffe",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "tall giraffe",
+					"audioText": "tall giraffe",
+					"fallbackText": "giraffe",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The giraffe moves gently.",
+					"audioText": "The giraffe moves gently.",
+					"fallbackText": "giraffe",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the giraffe? Here is the giraffe.",
+					"audioText": "Where is the giraffe? Here is the giraffe.",
+					"fallbackText": "giraffe",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The giraffe is ready to play.",
+					"audioText": "The giraffe is ready to play.",
+					"fallbackText": "giraffe",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/giraffe-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/giraffe-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找长颈鹿。",
+			"successPhrase": "你找到长颈鹿了。",
+			"fallbackText": "这是长颈鹿。",
+			"levels": {
+				"L0": {
+					"text": "长颈鹿",
+					"audioText": "长颈鹿",
+					"fallbackText": "长颈鹿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "长颈鹿在这里。",
+					"audioText": "长颈鹿在这里。",
+					"fallbackText": "长颈鹿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "高高的长颈鹿",
+					"audioText": "高高的长颈鹿",
+					"fallbackText": "长颈鹿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "长颈鹿轻轻地动。",
+					"audioText": "长颈鹿轻轻地动。",
+					"fallbackText": "长颈鹿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "长颈鹿在哪里？长颈鹿在这里。",
+					"audioText": "长颈鹿在哪里？长颈鹿在这里。",
+					"fallbackText": "长颈鹿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "长颈鹿准备玩了。",
+					"audioText": "长颈鹿准备玩了。",
+					"fallbackText": "长颈鹿",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/giraffe-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/giraffe-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/giraffe-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/giraffe.png",
+				"alt": "giraffe",
+				"generationPrompt": "A friendly giraffe for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "giraffe"
+				}
+			},
+			"visualPrompt": "A friendly giraffe for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "safari", "grassland", "tree"],
+			"size": "medium",
+			"color": "yellow",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/giraffe-bright.png",
+				"alt": "giraffe bright large",
+				"generationPrompt": "A friendly giraffe for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "giraffe bright large"
+				}
+			},
+			"visualPrompt": "A friendly giraffe for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "safari", "grassland", "tree"],
+			"size": "large",
+			"color": "yellow",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "giraffe-sway",
+		"animation": "sway"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["yellow"],
+		"sceneZones": ["safari", "grassland", "tree"],
+		"zhMeasureWord": "只",
+		"englishPlural": "giraffes"
+	}
+}

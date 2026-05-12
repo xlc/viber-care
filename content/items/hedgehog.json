@@ -1,0 +1,213 @@
+{
+	"id": "hedgehog",
+	"category": "forest-animal",
+	"tags": ["animal", "forest", "ground"],
+	"visualPrompt": "A friendly hedgehog for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the hedgehog.",
+			"successPhrase": "You found the hedgehog.",
+			"fallbackText": "That is the hedgehog.",
+			"levels": {
+				"L0": {
+					"text": "hedgehog",
+					"audioText": "hedgehog",
+					"fallbackText": "hedgehog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The hedgehog is here.",
+					"audioText": "The hedgehog is here.",
+					"fallbackText": "hedgehog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "tiny hedgehog",
+					"audioText": "tiny hedgehog",
+					"fallbackText": "hedgehog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The hedgehog moves gently.",
+					"audioText": "The hedgehog moves gently.",
+					"fallbackText": "hedgehog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the hedgehog? Here is the hedgehog.",
+					"audioText": "Where is the hedgehog? Here is the hedgehog.",
+					"fallbackText": "hedgehog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The hedgehog is ready to play.",
+					"audioText": "The hedgehog is ready to play.",
+					"fallbackText": "hedgehog",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/hedgehog-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/hedgehog-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找刺猬。",
+			"successPhrase": "你找到刺猬了。",
+			"fallbackText": "这是刺猬。",
+			"levels": {
+				"L0": {
+					"text": "刺猬",
+					"audioText": "刺猬",
+					"fallbackText": "刺猬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "刺猬在这里。",
+					"audioText": "刺猬在这里。",
+					"fallbackText": "刺猬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的刺猬",
+					"audioText": "小小的刺猬",
+					"fallbackText": "刺猬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "刺猬轻轻地动。",
+					"audioText": "刺猬轻轻地动。",
+					"fallbackText": "刺猬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "刺猬在哪里？刺猬在这里。",
+					"audioText": "刺猬在哪里？刺猬在这里。",
+					"fallbackText": "刺猬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "刺猬准备玩了。",
+					"audioText": "刺猬准备玩了。",
+					"fallbackText": "刺猬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hedgehog-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/hedgehog-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/hedgehog-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/hedgehog.png",
+				"alt": "hedgehog",
+				"generationPrompt": "A friendly hedgehog for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "hedgehog"
+				}
+			},
+			"visualPrompt": "A friendly hedgehog for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "forest", "ground"],
+			"size": "medium",
+			"color": "brown",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/hedgehog-bright.png",
+				"alt": "hedgehog bright large",
+				"generationPrompt": "A friendly hedgehog for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "hedgehog bright large"
+				}
+			},
+			"visualPrompt": "A friendly hedgehog for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "forest", "ground"],
+			"size": "large",
+			"color": "brown",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "hedgehog-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["brown"],
+		"sceneZones": ["forest", "ground"],
+		"zhMeasureWord": "只",
+		"englishPlural": "hedgehogs"
+	}
+}

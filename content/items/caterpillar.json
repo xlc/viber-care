@@ -1,0 +1,213 @@
+{
+	"id": "caterpillar",
+	"category": "tiny-animal",
+	"tags": ["animal", "garden", "tiny", "leaf"],
+	"visualPrompt": "A friendly caterpillar for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the caterpillar.",
+			"successPhrase": "You found the caterpillar.",
+			"fallbackText": "That is the caterpillar.",
+			"levels": {
+				"L0": {
+					"text": "caterpillar",
+					"audioText": "caterpillar",
+					"fallbackText": "caterpillar",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The caterpillar is here.",
+					"audioText": "The caterpillar is here.",
+					"fallbackText": "caterpillar",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "wiggly caterpillar",
+					"audioText": "wiggly caterpillar",
+					"fallbackText": "caterpillar",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The caterpillar moves gently.",
+					"audioText": "The caterpillar moves gently.",
+					"fallbackText": "caterpillar",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the caterpillar? Here is the caterpillar.",
+					"audioText": "Where is the caterpillar? Here is the caterpillar.",
+					"fallbackText": "caterpillar",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The caterpillar is ready to play.",
+					"audioText": "The caterpillar is ready to play.",
+					"fallbackText": "caterpillar",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/caterpillar-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/caterpillar-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找毛毛虫。",
+			"successPhrase": "你找到毛毛虫了。",
+			"fallbackText": "这是毛毛虫。",
+			"levels": {
+				"L0": {
+					"text": "毛毛虫",
+					"audioText": "毛毛虫",
+					"fallbackText": "毛毛虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "毛毛虫在这里。",
+					"audioText": "毛毛虫在这里。",
+					"fallbackText": "毛毛虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "会扭动的毛毛虫",
+					"audioText": "会扭动的毛毛虫",
+					"fallbackText": "毛毛虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "毛毛虫轻轻地动。",
+					"audioText": "毛毛虫轻轻地动。",
+					"fallbackText": "毛毛虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "毛毛虫在哪里？毛毛虫在这里。",
+					"audioText": "毛毛虫在哪里？毛毛虫在这里。",
+					"fallbackText": "毛毛虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "毛毛虫准备玩了。",
+					"audioText": "毛毛虫准备玩了。",
+					"fallbackText": "毛毛虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/caterpillar-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/caterpillar-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/caterpillar-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/caterpillar.png",
+				"alt": "caterpillar",
+				"generationPrompt": "A friendly caterpillar for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "caterpillar"
+				}
+			},
+			"visualPrompt": "A friendly caterpillar for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "garden", "tiny", "leaf"],
+			"size": "medium",
+			"color": "green",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/caterpillar-bright.png",
+				"alt": "caterpillar bright large",
+				"generationPrompt": "A friendly caterpillar for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "caterpillar bright large"
+				}
+			},
+			"visualPrompt": "A friendly caterpillar for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "garden", "tiny", "leaf"],
+			"size": "large",
+			"color": "green",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "caterpillar-wiggle",
+		"animation": "wiggle"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 5
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["green"],
+		"sceneZones": ["garden", "leaf"],
+		"zhMeasureWord": "只",
+		"englishPlural": "caterpillars"
+	}
+}

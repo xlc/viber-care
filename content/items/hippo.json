@@ -1,0 +1,213 @@
+{
+	"id": "hippo",
+	"category": "safari-animal",
+	"tags": ["animal", "safari", "water"],
+	"visualPrompt": "A friendly hippo for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the hippo.",
+			"successPhrase": "You found the hippo.",
+			"fallbackText": "That is the hippo.",
+			"levels": {
+				"L0": {
+					"text": "hippo",
+					"audioText": "hippo",
+					"fallbackText": "hippo",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The hippo is here.",
+					"audioText": "The hippo is here.",
+					"fallbackText": "hippo",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round hippo",
+					"audioText": "round hippo",
+					"fallbackText": "hippo",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The hippo moves gently.",
+					"audioText": "The hippo moves gently.",
+					"fallbackText": "hippo",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the hippo? Here is the hippo.",
+					"audioText": "Where is the hippo? Here is the hippo.",
+					"fallbackText": "hippo",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The hippo is ready to play.",
+					"audioText": "The hippo is ready to play.",
+					"fallbackText": "hippo",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/hippo-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/hippo-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找河马。",
+			"successPhrase": "你找到河马了。",
+			"fallbackText": "这是河马。",
+			"levels": {
+				"L0": {
+					"text": "河马",
+					"audioText": "河马",
+					"fallbackText": "河马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "河马在这里。",
+					"audioText": "河马在这里。",
+					"fallbackText": "河马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "圆圆的河马",
+					"audioText": "圆圆的河马",
+					"fallbackText": "河马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "河马轻轻地动。",
+					"audioText": "河马轻轻地动。",
+					"fallbackText": "河马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "河马在哪里？河马在这里。",
+					"audioText": "河马在哪里？河马在这里。",
+					"fallbackText": "河马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "河马准备玩了。",
+					"audioText": "河马准备玩了。",
+					"fallbackText": "河马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/hippo-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/hippo-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/hippo-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/hippo.png",
+				"alt": "hippo",
+				"generationPrompt": "A friendly hippo for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "hippo"
+				}
+			},
+			"visualPrompt": "A friendly hippo for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "safari", "water"],
+			"size": "medium",
+			"color": "gray",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/hippo-bright.png",
+				"alt": "hippo bright large",
+				"generationPrompt": "A friendly hippo for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "hippo bright large"
+				}
+			},
+			"visualPrompt": "A friendly hippo for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "safari", "water"],
+			"size": "large",
+			"color": "gray",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "hippo-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["gray"],
+		"sceneZones": ["safari", "water"],
+		"zhMeasureWord": "头",
+		"englishPlural": "hippos"
+	}
+}

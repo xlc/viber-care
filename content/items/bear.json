@@ -1,0 +1,213 @@
+{
+	"id": "bear",
+	"category": "forest-animal",
+	"tags": ["animal", "forest", "ground"],
+	"visualPrompt": "A friendly bear for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the bear.",
+			"successPhrase": "You found the bear.",
+			"fallbackText": "That is the bear.",
+			"levels": {
+				"L0": {
+					"text": "bear",
+					"audioText": "bear",
+					"fallbackText": "bear",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bear is here.",
+					"audioText": "The bear is here.",
+					"fallbackText": "bear",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "big bear",
+					"audioText": "big bear",
+					"fallbackText": "bear",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The bear moves gently.",
+					"audioText": "The bear moves gently.",
+					"fallbackText": "bear",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the bear? Here is the bear.",
+					"audioText": "Where is the bear? Here is the bear.",
+					"fallbackText": "bear",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The bear is ready to play.",
+					"audioText": "The bear is ready to play.",
+					"fallbackText": "bear",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/bear-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/bear-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找熊。",
+			"successPhrase": "你找到熊了。",
+			"fallbackText": "这是熊。",
+			"levels": {
+				"L0": {
+					"text": "熊",
+					"audioText": "熊",
+					"fallbackText": "熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "熊在这里。",
+					"audioText": "熊在这里。",
+					"fallbackText": "熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大大的熊",
+					"audioText": "大大的熊",
+					"fallbackText": "熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "熊轻轻地动。",
+					"audioText": "熊轻轻地动。",
+					"fallbackText": "熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "熊在哪里？熊在这里。",
+					"audioText": "熊在哪里？熊在这里。",
+					"fallbackText": "熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "熊准备玩了。",
+					"audioText": "熊准备玩了。",
+					"fallbackText": "熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/bear-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/bear-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/bear-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/bear.png",
+				"alt": "bear",
+				"generationPrompt": "A friendly bear for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "bear"
+				}
+			},
+			"visualPrompt": "A friendly bear for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "forest", "ground"],
+			"size": "medium",
+			"color": "brown",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/bear-bright.png",
+				"alt": "bear bright large",
+				"generationPrompt": "A friendly bear for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "bear bright large"
+				}
+			},
+			"visualPrompt": "A friendly bear for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "forest", "ground"],
+			"size": "large",
+			"color": "brown",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "bear-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["brown"],
+		"sceneZones": ["forest", "ground"],
+		"zhMeasureWord": "只",
+		"englishPlural": "bears"
+	}
+}

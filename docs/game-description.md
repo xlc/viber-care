@@ -2,7 +2,7 @@
 
 Word Garden is a gentle bilingual word-learning game for toddlers. It is built around looking, listening, tapping, dragging, and naming familiar objects in calm illustrated scenes. The game should feel like a soft digital toy: there are no scores, timers, punishments, ads, purchases, or harsh failure states.
 
-The current game includes 8 content packs, 135 learning items, 21 scenes, and 9 smaller selectable sets. Every learning item supports English and Simplified Chinese.
+The current game includes 8 content packs, 159 learning items, 31 scenes, and 22 smaller selectable sets. Every learning item supports English and Simplified Chinese.
 
 The next major product direction is Math Play: a fifth mode that teaches early quantity, matching, sorting, comparison, and spatial language through action. Math Play should reuse the same static packs and gentle scene style, but it should stop treating numbers as only friendly number-card objects. A toddler should be able to put two apples in a basket, give each duck one seed, match three dots to three fish, choose the plate with more bananas, sort red fruit into a red basket, and hear natural English and Simplified Chinese counting phrases.
 
@@ -23,7 +23,7 @@ Explore is open-ended free play. The child taps any visible object and the game 
 Explore is designed for curiosity rather than instruction. A child can tap a duck, dog, sun, train, number, letter, or dinosaur in any order and hear the word or phrase without being corrected or redirected.
 
 ### Find
-w
+
 Find gives the child a gentle listening task, such as "Find the duck" or "Find number one." The prompt can be shown and spoken in English, Simplified Chinese, or both.
 
 When the child taps the requested object, the game celebrates with a soft success phrase and then moves to the next target. When the child taps a different object, the game names that object first and then repeats the original prompt. It never says the child is wrong.
@@ -136,29 +136,19 @@ Sets and learning items:
 
 The scenes are Fruit Basket, Root Garden, Leafy Garden, and Garden Stand. This pack is built for category learning: fruit, roots, leaves, and garden vegetables stay visually grouped in places that make sense.
 
-### Ocean Animals
+### Animals
 
-Ocean Animals uses two water-themed scenes: Ocean Cove and Tide Pool. Each scene shows 8 to 10 animals from a larger group of 15.
+Animals contains 55 animal words across 5 focused sets. Each set has two calm scenes and shows 8 to 10 animals at a time.
 
-Learning items:
+Sets and learning items:
 
-- fish / 小鱼
-- sea turtle / 海龟
-- dolphin / 海豚
-- whale / 鲸鱼
-- crab / 螃蟹
-- octopus / 章鱼
-- seahorse / 海马
-- starfish / 海星
-- jellyfish / 水母
-- seal / 海豹
-- ray / 鳐鱼
-- lobster / 龙虾
-- clam / 蛤蜊
-- shrimp / 虾
-- squid / 鱿鱼
+- Ocean Animals: fish, sea turtle, dolphin, whale, crab, octopus, seahorse, starfish, jellyfish, seal, ray, lobster, clam, shrimp, squid.
+- Farm Animals: cow, pig, sheep, horse, chicken, goat, duck, rabbit, donkey, turkey.
+- Forest Animals: deer, fox, bear, squirrel, owl, hedgehog, badger, beaver, mouse, woodpecker.
+- Safari Animals: elephant, giraffe, lion, zebra, hippo, rhino, monkey, meerkat, antelope, camel.
+- Garden Tiny Animals: dog, cat, frog, bird, bee, butterfly, ladybug, dragonfly, snail, caterpillar.
 
-The content emphasizes soft ocean movement and gentle animal names. Animals appear around water, shore, sand, or seabed areas instead of random positions.
+The pack starts with Ocean Animals in Ocean Cove and Tide Pool, so children who know the earlier ocean group still land in a familiar place. The other sets move gently into pasture, forest, grassland, and garden scenes. Animals stay in places that make sense: sea animals in water or on the shore, farm animals in pasture or near the pond, forest animals on the ground or in trees, safari animals on grassland or by the waterhole, and tiny garden animals near flowers, grass, air, or pond areas.
 
 ### Dinosaurs
 
@@ -578,7 +568,7 @@ These settings should guide round selection only. They should not create pressur
 
 ## Math Play MVP
 
-The recommended first release is "Counting Garden." It should use the existing Word Garden, Farm Friends, Fruits and Vegetables, and Ocean Animals packs where possible.
+The recommended first release is "Counting Garden." It should use the existing Word Garden, Farm Friends, Fruits and Vegetables, and Animals packs where possible.
 
 Initial round examples:
 

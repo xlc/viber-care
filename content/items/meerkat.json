@@ -1,0 +1,213 @@
+{
+	"id": "meerkat",
+	"category": "safari-animal",
+	"tags": ["animal", "safari", "grassland"],
+	"visualPrompt": "A friendly meerkat for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the meerkat.",
+			"successPhrase": "You found the meerkat.",
+			"fallbackText": "That is the meerkat.",
+			"levels": {
+				"L0": {
+					"text": "meerkat",
+					"audioText": "meerkat",
+					"fallbackText": "meerkat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The meerkat is here.",
+					"audioText": "The meerkat is here.",
+					"fallbackText": "meerkat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "watchful meerkat",
+					"audioText": "watchful meerkat",
+					"fallbackText": "meerkat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The meerkat moves gently.",
+					"audioText": "The meerkat moves gently.",
+					"fallbackText": "meerkat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the meerkat? Here is the meerkat.",
+					"audioText": "Where is the meerkat? Here is the meerkat.",
+					"fallbackText": "meerkat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The meerkat is ready to play.",
+					"audioText": "The meerkat is ready to play.",
+					"fallbackText": "meerkat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/meerkat-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/meerkat-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找猫鼬。",
+			"successPhrase": "你找到猫鼬了。",
+			"fallbackText": "这是猫鼬。",
+			"levels": {
+				"L0": {
+					"text": "猫鼬",
+					"audioText": "猫鼬",
+					"fallbackText": "猫鼬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "猫鼬在这里。",
+					"audioText": "猫鼬在这里。",
+					"fallbackText": "猫鼬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "会观察的猫鼬",
+					"audioText": "会观察的猫鼬",
+					"fallbackText": "猫鼬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "猫鼬轻轻地动。",
+					"audioText": "猫鼬轻轻地动。",
+					"fallbackText": "猫鼬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "猫鼬在哪里？猫鼬在这里。",
+					"audioText": "猫鼬在哪里？猫鼬在这里。",
+					"fallbackText": "猫鼬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "猫鼬准备玩了。",
+					"audioText": "猫鼬准备玩了。",
+					"fallbackText": "猫鼬",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/meerkat-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/meerkat-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/meerkat-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/meerkat.png",
+				"alt": "meerkat",
+				"generationPrompt": "A friendly meerkat for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "meerkat"
+				}
+			},
+			"visualPrompt": "A friendly meerkat for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "medium",
+			"color": "tan",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/meerkat-bright.png",
+				"alt": "meerkat bright large",
+				"generationPrompt": "A friendly meerkat for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "meerkat bright large"
+				}
+			},
+			"visualPrompt": "A friendly meerkat for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "large",
+			"color": "tan",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "meerkat-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["tan"],
+		"sceneZones": ["safari", "grassland"],
+		"zhMeasureWord": "只",
+		"englishPlural": "meerkats"
+	}
+}

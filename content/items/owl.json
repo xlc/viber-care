@@ -1,0 +1,213 @@
+{
+	"id": "owl",
+	"category": "forest-animal",
+	"tags": ["animal", "forest", "bird", "tree"],
+	"visualPrompt": "A friendly owl for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the owl.",
+			"successPhrase": "You found the owl.",
+			"fallbackText": "That is the owl.",
+			"levels": {
+				"L0": {
+					"text": "owl",
+					"audioText": "owl",
+					"fallbackText": "owl",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The owl is here.",
+					"audioText": "The owl is here.",
+					"fallbackText": "owl",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "round owl",
+					"audioText": "round owl",
+					"fallbackText": "owl",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The owl moves gently.",
+					"audioText": "The owl moves gently.",
+					"fallbackText": "owl",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the owl? Here is the owl.",
+					"audioText": "Where is the owl? Here is the owl.",
+					"fallbackText": "owl",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The owl is ready to play.",
+					"audioText": "The owl is ready to play.",
+					"fallbackText": "owl",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/owl-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/owl-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找猫头鹰。",
+			"successPhrase": "你找到猫头鹰了。",
+			"fallbackText": "这是猫头鹰。",
+			"levels": {
+				"L0": {
+					"text": "猫头鹰",
+					"audioText": "猫头鹰",
+					"fallbackText": "猫头鹰",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "猫头鹰在这里。",
+					"audioText": "猫头鹰在这里。",
+					"fallbackText": "猫头鹰",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "圆圆的猫头鹰",
+					"audioText": "圆圆的猫头鹰",
+					"fallbackText": "猫头鹰",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "猫头鹰轻轻地动。",
+					"audioText": "猫头鹰轻轻地动。",
+					"fallbackText": "猫头鹰",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "猫头鹰在哪里？猫头鹰在这里。",
+					"audioText": "猫头鹰在哪里？猫头鹰在这里。",
+					"fallbackText": "猫头鹰",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "猫头鹰准备玩了。",
+					"audioText": "猫头鹰准备玩了。",
+					"fallbackText": "猫头鹰",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/owl-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/owl-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/owl-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/owl.png",
+				"alt": "owl",
+				"generationPrompt": "A friendly owl for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "owl"
+				}
+			},
+			"visualPrompt": "A friendly owl for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "forest", "bird", "tree"],
+			"size": "medium",
+			"color": "brown",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/owl-bright.png",
+				"alt": "owl bright large",
+				"generationPrompt": "A friendly owl for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "owl bright large"
+				}
+			},
+			"visualPrompt": "A friendly owl for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "forest", "bird", "tree"],
+			"size": "large",
+			"color": "brown",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "owl-sway",
+		"animation": "sway"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["brown"],
+		"sceneZones": ["forest", "bird", "tree"],
+		"zhMeasureWord": "只",
+		"englishPlural": "owls"
+	}
+}

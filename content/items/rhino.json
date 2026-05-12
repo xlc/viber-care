@@ -1,0 +1,213 @@
+{
+	"id": "rhino",
+	"category": "safari-animal",
+	"tags": ["animal", "safari", "grassland"],
+	"visualPrompt": "A friendly rhino for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the rhino.",
+			"successPhrase": "You found the rhino.",
+			"fallbackText": "That is the rhino.",
+			"levels": {
+				"L0": {
+					"text": "rhino",
+					"audioText": "rhino",
+					"fallbackText": "rhino",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The rhino is here.",
+					"audioText": "The rhino is here.",
+					"fallbackText": "rhino",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "sturdy rhino",
+					"audioText": "sturdy rhino",
+					"fallbackText": "rhino",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The rhino moves gently.",
+					"audioText": "The rhino moves gently.",
+					"fallbackText": "rhino",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the rhino? Here is the rhino.",
+					"audioText": "Where is the rhino? Here is the rhino.",
+					"fallbackText": "rhino",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The rhino is ready to play.",
+					"audioText": "The rhino is ready to play.",
+					"fallbackText": "rhino",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/rhino-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/rhino-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找犀牛。",
+			"successPhrase": "你找到犀牛了。",
+			"fallbackText": "这是犀牛。",
+			"levels": {
+				"L0": {
+					"text": "犀牛",
+					"audioText": "犀牛",
+					"fallbackText": "犀牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "犀牛在这里。",
+					"audioText": "犀牛在这里。",
+					"fallbackText": "犀牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "结实的犀牛",
+					"audioText": "结实的犀牛",
+					"fallbackText": "犀牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "犀牛轻轻地动。",
+					"audioText": "犀牛轻轻地动。",
+					"fallbackText": "犀牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "犀牛在哪里？犀牛在这里。",
+					"audioText": "犀牛在哪里？犀牛在这里。",
+					"fallbackText": "犀牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "犀牛准备玩了。",
+					"audioText": "犀牛准备玩了。",
+					"fallbackText": "犀牛",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/rhino-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/rhino-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/rhino-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/rhino.png",
+				"alt": "rhino",
+				"generationPrompt": "A friendly rhino for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "rhino"
+				}
+			},
+			"visualPrompt": "A friendly rhino for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "medium",
+			"color": "gray",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/rhino-bright.png",
+				"alt": "rhino bright large",
+				"generationPrompt": "A friendly rhino for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "rhino bright large"
+				}
+			},
+			"visualPrompt": "A friendly rhino for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "large",
+			"color": "gray",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "rhino-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["gray"],
+		"sceneZones": ["safari", "grassland"],
+		"zhMeasureWord": "头",
+		"englishPlural": "rhinos"
+	}
+}

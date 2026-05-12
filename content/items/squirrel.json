@@ -1,0 +1,213 @@
+{
+	"id": "squirrel",
+	"category": "forest-animal",
+	"tags": ["animal", "forest", "tree"],
+	"visualPrompt": "A friendly squirrel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the squirrel.",
+			"successPhrase": "You found the squirrel.",
+			"fallbackText": "That is the squirrel.",
+			"levels": {
+				"L0": {
+					"text": "squirrel",
+					"audioText": "squirrel",
+					"fallbackText": "squirrel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The squirrel is here.",
+					"audioText": "The squirrel is here.",
+					"fallbackText": "squirrel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "small squirrel",
+					"audioText": "small squirrel",
+					"fallbackText": "squirrel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The squirrel moves gently.",
+					"audioText": "The squirrel moves gently.",
+					"fallbackText": "squirrel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the squirrel? Here is the squirrel.",
+					"audioText": "Where is the squirrel? Here is the squirrel.",
+					"fallbackText": "squirrel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The squirrel is ready to play.",
+					"audioText": "The squirrel is ready to play.",
+					"fallbackText": "squirrel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/squirrel-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/squirrel-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找松鼠。",
+			"successPhrase": "你找到松鼠了。",
+			"fallbackText": "这是松鼠。",
+			"levels": {
+				"L0": {
+					"text": "松鼠",
+					"audioText": "松鼠",
+					"fallbackText": "松鼠",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "松鼠在这里。",
+					"audioText": "松鼠在这里。",
+					"fallbackText": "松鼠",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的松鼠",
+					"audioText": "小小的松鼠",
+					"fallbackText": "松鼠",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "松鼠轻轻地动。",
+					"audioText": "松鼠轻轻地动。",
+					"fallbackText": "松鼠",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "松鼠在哪里？松鼠在这里。",
+					"audioText": "松鼠在哪里？松鼠在这里。",
+					"fallbackText": "松鼠",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "松鼠准备玩了。",
+					"audioText": "松鼠准备玩了。",
+					"fallbackText": "松鼠",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/squirrel-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/squirrel-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/squirrel-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/squirrel.png",
+				"alt": "squirrel",
+				"generationPrompt": "A friendly squirrel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "squirrel"
+				}
+			},
+			"visualPrompt": "A friendly squirrel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "forest", "tree"],
+			"size": "medium",
+			"color": "orange",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/squirrel-bright.png",
+				"alt": "squirrel bright large",
+				"generationPrompt": "A friendly squirrel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "squirrel bright large"
+				}
+			},
+			"visualPrompt": "A friendly squirrel for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "forest", "tree"],
+			"size": "large",
+			"color": "orange",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "squirrel-wiggle",
+		"animation": "wiggle"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["orange"],
+		"sceneZones": ["forest", "tree"],
+		"zhMeasureWord": "只",
+		"englishPlural": "squirrels"
+	}
+}

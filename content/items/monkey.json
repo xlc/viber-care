@@ -1,0 +1,213 @@
+{
+	"id": "monkey",
+	"category": "safari-animal",
+	"tags": ["animal", "safari", "tree"],
+	"visualPrompt": "A friendly monkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the monkey.",
+			"successPhrase": "You found the monkey.",
+			"fallbackText": "That is the monkey.",
+			"levels": {
+				"L0": {
+					"text": "monkey",
+					"audioText": "monkey",
+					"fallbackText": "monkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The monkey is here.",
+					"audioText": "The monkey is here.",
+					"fallbackText": "monkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "playful monkey",
+					"audioText": "playful monkey",
+					"fallbackText": "monkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The monkey moves gently.",
+					"audioText": "The monkey moves gently.",
+					"fallbackText": "monkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the monkey? Here is the monkey.",
+					"audioText": "Where is the monkey? Here is the monkey.",
+					"fallbackText": "monkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The monkey is ready to play.",
+					"audioText": "The monkey is ready to play.",
+					"fallbackText": "monkey",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/monkey-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/monkey-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找猴子。",
+			"successPhrase": "你找到猴子了。",
+			"fallbackText": "这是猴子。",
+			"levels": {
+				"L0": {
+					"text": "猴子",
+					"audioText": "猴子",
+					"fallbackText": "猴子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "猴子在这里。",
+					"audioText": "猴子在这里。",
+					"fallbackText": "猴子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "爱玩的猴子",
+					"audioText": "爱玩的猴子",
+					"fallbackText": "猴子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "猴子轻轻地动。",
+					"audioText": "猴子轻轻地动。",
+					"fallbackText": "猴子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "猴子在哪里？猴子在这里。",
+					"audioText": "猴子在哪里？猴子在这里。",
+					"fallbackText": "猴子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "猴子准备玩了。",
+					"audioText": "猴子准备玩了。",
+					"fallbackText": "猴子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/monkey-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/monkey-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/monkey-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/monkey.png",
+				"alt": "monkey",
+				"generationPrompt": "A friendly monkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "monkey"
+				}
+			},
+			"visualPrompt": "A friendly monkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "safari", "tree"],
+			"size": "medium",
+			"color": "brown",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/monkey-bright.png",
+				"alt": "monkey bright large",
+				"generationPrompt": "A friendly monkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "monkey bright large"
+				}
+			},
+			"visualPrompt": "A friendly monkey for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "safari", "tree"],
+			"size": "large",
+			"color": "brown",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "monkey-wiggle",
+		"animation": "wiggle"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["brown"],
+		"sceneZones": ["safari", "tree"],
+		"zhMeasureWord": "只",
+		"englishPlural": "monkeys"
+	}
+}

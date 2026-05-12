@@ -1,0 +1,213 @@
+{
+	"id": "zebra",
+	"category": "safari-animal",
+	"tags": ["animal", "safari", "grassland"],
+	"visualPrompt": "A friendly zebra for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the zebra.",
+			"successPhrase": "You found the zebra.",
+			"fallbackText": "That is the zebra.",
+			"levels": {
+				"L0": {
+					"text": "zebra",
+					"audioText": "zebra",
+					"fallbackText": "zebra",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The zebra is here.",
+					"audioText": "The zebra is here.",
+					"fallbackText": "zebra",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "striped zebra",
+					"audioText": "striped zebra",
+					"fallbackText": "zebra",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The zebra moves gently.",
+					"audioText": "The zebra moves gently.",
+					"fallbackText": "zebra",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the zebra? Here is the zebra.",
+					"audioText": "Where is the zebra? Here is the zebra.",
+					"fallbackText": "zebra",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The zebra is ready to play.",
+					"audioText": "The zebra is ready to play.",
+					"fallbackText": "zebra",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/zebra-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/zebra-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找斑马。",
+			"successPhrase": "你找到斑马了。",
+			"fallbackText": "这是斑马。",
+			"levels": {
+				"L0": {
+					"text": "斑马",
+					"audioText": "斑马",
+					"fallbackText": "斑马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "斑马在这里。",
+					"audioText": "斑马在这里。",
+					"fallbackText": "斑马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "有条纹的斑马",
+					"audioText": "有条纹的斑马",
+					"fallbackText": "斑马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "斑马轻轻地动。",
+					"audioText": "斑马轻轻地动。",
+					"fallbackText": "斑马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "斑马在哪里？斑马在这里。",
+					"audioText": "斑马在哪里？斑马在这里。",
+					"fallbackText": "斑马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "斑马准备玩了。",
+					"audioText": "斑马准备玩了。",
+					"fallbackText": "斑马",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/zebra-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/zebra-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/zebra-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/zebra.png",
+				"alt": "zebra",
+				"generationPrompt": "A friendly zebra for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "zebra"
+				}
+			},
+			"visualPrompt": "A friendly zebra for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "medium",
+			"color": "black",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/zebra-bright.png",
+				"alt": "zebra bright large",
+				"generationPrompt": "A friendly zebra for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "zebra bright large"
+				}
+			},
+			"visualPrompt": "A friendly zebra for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "large",
+			"color": "black",
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "zebra-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": [
+			"counting",
+			"one-to-one",
+			"dot-match",
+			"color-sort",
+			"more-less",
+			"spatial"
+		],
+		"colors": ["black"],
+		"sceneZones": ["safari", "grassland"],
+		"zhMeasureWord": "只",
+		"englishPlural": "zebras"
+	}
+}
