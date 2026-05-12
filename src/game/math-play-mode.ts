@@ -91,8 +91,8 @@ export type CreateMathRoundOptions = {
 const mixedRoundOrder: MathRoundType[] = [
 	'count-and-collect',
 	'feed-the-friend',
-	'dot-match',
 	'color-sort',
+	'dot-match',
 ]
 
 const focusRoundOrder: Record<MathPlayFocus, MathRoundType[]> = {
@@ -123,26 +123,26 @@ export function createMathPlayRound(
 	placements: readonly MathPlayPlacement[],
 	options: CreateMathRoundOptions = {},
 ): MathPlayRound | null {
-	const roundTypes = getOrderedRoundTypes(
+	const rounds = getPlayableRounds(
+		placements,
 		options.focus ?? 'mixed',
-		options.roundIndex,
+		options,
 	)
-	for (const roundType of roundTypes) {
-		const round = createRoundByType(placements, roundType, options)
-		if (round) {
-			return round
-		}
+	if (rounds.length === 0) {
+		return null
 	}
-	return null
+
+	const roundIndex = options.roundIndex ?? 0
+	const normalizedIndex =
+		((roundIndex % rounds.length) + rounds.length) % rounds.length
+	return rounds[normalizedIndex] ?? null
 }
 
 export function getAvailableMathFocuses(
 	placements: readonly MathPlayPlacement[],
 ): MathPlayFocus[] {
-	return MATH_FOCUS_OPTIONS.filter((focus) =>
-		getOrderedRoundTypes(focus).some((roundType) =>
-			Boolean(createRoundByType(placements, roundType, {})),
-		),
+	return MATH_FOCUS_OPTIONS.filter(
+		(focus) => getPlayableRounds(placements, focus, { focus }).length > 0,
 	)
 }
 
@@ -230,11 +230,11 @@ function createRoundByType(
 ): MathPlayRound | null {
 	switch (roundType) {
 		case 'count-and-collect':
-			return createCountAndCollectRound(placements, options.previousTargetId)
+			return createCountAndCollectRound(placements, options)
 		case 'feed-the-friend':
-			return createFeedTheFriendRound(placements)
+			return createFeedTheFriendRound(placements, options)
 		case 'dot-match':
-			return createDotMatchRound(placements, options.previousTargetId)
+			return createDotMatchRound(placements, options)
 		case 'color-sort':
 			return createColorSortRound(placements)
 	}
@@ -242,24 +242,28 @@ function createRoundByType(
 
 function createCountAndCollectRound(
 	placements: readonly MathPlayPlacement[],
-	previousTargetId?: string,
+	options: CreateMathRoundOptions,
 ): CountAndCollectRound | null {
 	const countableObjects = getMathCountableObjects(placements)
 	if (countableObjects.length === 0) {
 		return null
 	}
 
-	const targetObject = getNextTargetObject(countableObjects, previousTargetId)
+	const targetObject = getNextTargetObject(
+		countableObjects,
+		options.previousTargetId,
+	)
 	return {
 		type: 'count-and-collect',
 		targetObjectId: targetObject.id,
-		targetQuantity: getStarterQuantity(targetObject),
+		targetQuantity: getStarterQuantity(targetObject, options),
 		collectedCount: 0,
 	}
 }
 
 function createFeedTheFriendRound(
 	placements: readonly MathPlayPlacement[],
+	options: CreateMathRoundOptions,
 ): FeedTheFriendRound | null {
 	const objects = uniqueObjects(placements)
 	const preferredPair = preferredFeedPairs
@@ -279,14 +283,14 @@ function createFeedTheFriendRound(
 		type: 'feed-the-friend',
 		friendObjectId: preferredPair.friend.id,
 		itemObjectId: preferredPair.item.id,
-		targetQuantity: getStarterQuantity(preferredPair.item),
+		targetQuantity: getStarterQuantity(preferredPair.item, options),
 		collectedCount: 0,
 	}
 }
 
 function createDotMatchRound(
 	placements: readonly MathPlayPlacement[],
-	previousTargetId?: string,
+	options: CreateMathRoundOptions,
 ): DotMatchRound | null {
 	const objects = uniqueObjects(placements).filter(
 		(object) =>
@@ -296,9 +300,9 @@ function createDotMatchRound(
 		return null
 	}
 
-	const targetObject = getNextTargetObject(objects, previousTargetId)
-	const targetQuantity = getStarterQuantity(targetObject)
-	const distractorQuantity = targetQuantity === 1 ? 2 : 1
+	const targetObject = getNextTargetObject(objects, options.previousTargetId)
+	const targetQuantity = getStarterQuantity(targetObject, options)
+	const distractorQuantity = targetQuantity === 1 ? 2 : targetQuantity - 1
 	const choices: DotMatchChoice[] = [
 		{
 			id: `${targetObject.id}-${targetQuantity}`,
@@ -330,11 +334,14 @@ function createColorSortRound(
 		if (!object.math?.skills.includes('color-sort')) {
 			continue
 		}
-		for (const color of object.math.colors ?? []) {
-			const objects = objectsByColor.get(color) ?? []
-			objects.push(object)
-			objectsByColor.set(color, objects)
+		const color =
+			object.math.colors?.length === 1 ? object.math.colors[0] : null
+		if (!color) {
+			continue
 		}
+		const objects = objectsByColor.get(color) ?? []
+		objects.push(object)
+		objectsByColor.set(color, objects)
 	}
 
 	const colors = [...objectsByColor.keys()].slice(0, 2)
@@ -343,8 +350,8 @@ function createColorSortRound(
 	}
 
 	const items: ColorSortItem[] = colors.flatMap((color) =>
-		(objectsByColor.get(color) ?? []).slice(0, 2).map((object, index) => ({
-			id: `${color}-${object.id}-${index}`,
+		(objectsByColor.get(color) ?? []).slice(0, 1).map((object) => ({
+			id: `${color}-${object.id}`,
 			objectId: object.id,
 			color,
 			placed: false,
@@ -358,26 +365,45 @@ function createColorSortRound(
 	return {
 		type: 'color-sort',
 		basketColors: colors,
-		items: items.slice(0, 4),
+		items,
 	}
 }
 
-function getOrderedRoundTypes(
+function getPlayableRounds(
+	placements: readonly MathPlayPlacement[],
 	focus: MathPlayFocus,
-	roundIndex = 0,
-): MathRoundType[] {
-	const roundTypes = focusRoundOrder[focus]
-	const offset =
-		roundTypes.length > 0
-			? ((roundIndex % roundTypes.length) + roundTypes.length) %
-				roundTypes.length
-			: 0
-	return [...roundTypes.slice(offset), ...roundTypes.slice(0, offset)]
+	options: CreateMathRoundOptions,
+): MathPlayRound[] {
+	return focusRoundOrder[focus]
+		.map((roundType) =>
+			createRoundByType(placements, roundType, { ...options, focus }),
+		)
+		.filter((round): round is MathPlayRound => Boolean(round))
 }
 
-function getStarterQuantity(object: ObjectConcept): number {
-	const maxQuantity = Math.min(object.math?.quantityRange.max ?? 1, 3)
-	return Math.min(maxQuantity, maxQuantity >= 2 ? 2 : 1)
+function getStarterQuantity(
+	object: ObjectConcept,
+	options: CreateMathRoundOptions,
+): number {
+	const focus = options.focus ?? 'mixed'
+	const quantitySequence = focus === 'counting-1-3' ? [1, 2, 3] : [1, 2]
+	const maxQuantity = Math.min(
+		object.math?.quantityRange.max ?? 1,
+		Math.max(...quantitySequence),
+	)
+	const minQuantity = object.math?.quantityRange.min ?? 1
+	const startIndex = options.roundIndex ?? 0
+
+	for (let offset = 0; offset < quantitySequence.length; offset += 1) {
+		const quantity =
+			quantitySequence[(startIndex + offset) % quantitySequence.length] ??
+			minQuantity
+		if (quantity >= minQuantity && quantity <= maxQuantity) {
+			return quantity
+		}
+	}
+
+	return minQuantity
 }
 
 function getNextTargetObject(

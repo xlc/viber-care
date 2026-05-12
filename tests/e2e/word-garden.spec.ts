@@ -553,7 +553,7 @@ test('math play count and collect advances a short round', async ({ page }) => {
 	await expect(page.getByTestId('mode-math')).toBeVisible()
 	await page.getByTestId('mode-math').click()
 
-	await expect(page.getByTestId('prompt')).toContainText(/Put \d/)
+	await expect(page.getByTestId('prompt')).toContainText(/Put (one|two|three)/i)
 	await expect(page.getByTestId('math-stage')).toBeVisible()
 	await expect(page.getByTestId('math-stage')).toHaveAttribute(
 		'data-round-type',
@@ -572,7 +572,9 @@ test('math play count and collect advances a short round', async ({ page }) => {
 	}
 
 	await expect(page.locator('.math-basket-items img')).toHaveCount(initialCount)
-	await expect(page.getByTestId('prompt')).toContainText(/\d|两/)
+	await expect(page.getByTestId('prompt')).toContainText(
+		/one|two|three|一|两|三/i,
+	)
 	await expect.poll(() => getAudioPlayCount(page)).toBe(0)
 })
 
@@ -661,7 +663,7 @@ test('unavailable learning focus falls back to playful Math Play', async ({
 		'data-round-type',
 		'count-and-collect',
 	)
-	await expect(page.getByTestId('prompt')).toContainText(/Put \d/)
+	await expect(page.getByTestId('prompt')).toContainText(/Put (one|two|three)/i)
 	await expect(page.getByTestId('prompt')).not.toContainText(
 		/Try another set|wrong|try again/i,
 	)

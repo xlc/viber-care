@@ -94,9 +94,9 @@ const wordDetailOptions: ReadonlyArray<{
 ]
 
 const mathFocusLabels: Record<MathFocus, string> = {
-	mixed: 'Mixed Gentle Play',
+	mixed: 'First Math Mix',
 	'counting-1-3': 'Counting 1-3',
-	colors: 'Colors',
+	colors: 'Color Sort',
 }
 
 type ToastKind = 'hello' | 'word' | 'find' | 'success' | 'puzzle' | 'math'
@@ -292,6 +292,30 @@ function getEnglishQuantityName(object: ObjectConcept, quantity: number) {
 		: (object.math?.englishPlural ?? `${getObjectName(object, 'en')}s`)
 }
 
+function getEnglishCountWord(quantity: number, sentenceStart = false) {
+	const word = englishCountWords[quantity] ?? `${quantity}`
+	return sentenceStart || /^\d/.test(word) ? word : word.toLowerCase()
+}
+
+function getEnglishQuantityText(
+	object: ObjectConcept,
+	quantity: number,
+	sentenceStart = false,
+) {
+	return `${getEnglishCountWord(quantity, sentenceStart)} ${getEnglishQuantityName(
+		object,
+		quantity,
+	)}`
+}
+
+function getEnglishDotText(quantity: number) {
+	return `${getEnglishCountWord(quantity)} ${quantity === 1 ? 'dot' : 'dots'}`
+}
+
+function capitalizeEnglish(text: string) {
+	return text.length > 0 ? `${text[0]?.toUpperCase()}${text.slice(1)}` : text
+}
+
 function getChineseQuantityText(object: ObjectConcept, quantity: number) {
 	const numberText =
 		quantity === 2 ? '两' : (chineseCountWords[quantity] ?? `${quantity}`)
@@ -323,7 +347,7 @@ function getMathPrompt(
 		const item = objects.get(round.itemObjectId)
 		if (friend && item) {
 			return createMathPresentation(settings, {
-				en: `Give the ${getObjectName(friend, 'en')} ${round.targetQuantity} ${getEnglishQuantityName(
+				en: `Give the ${getObjectName(friend, 'en')} ${getEnglishQuantityText(
 					item,
 					round.targetQuantity,
 				)}.`,
@@ -339,7 +363,7 @@ function getMathPrompt(
 				? '两'
 				: (chineseCountWords[round.targetQuantity] ?? `${round.targetQuantity}`)
 		return createMathPresentation(settings, {
-			en: `Match ${round.targetQuantity} dots.`,
+			en: `Match ${getEnglishDotText(round.targetQuantity)}.`,
 			'zh-Hans': `找${numberText}个点。`,
 		})
 	}
@@ -359,10 +383,7 @@ function getMathPrompt(
 		})
 	}
 	return createMathPresentation(settings, {
-		en: `Put ${round.targetQuantity} ${getEnglishQuantityName(
-			object,
-			round.targetQuantity,
-		)} in.`,
+		en: `Put ${getEnglishQuantityText(object, round.targetQuantity)} in.`,
 		'zh-Hans': `放进${getChineseQuantityText(object, round.targetQuantity)}。`,
 	})
 }
@@ -408,7 +429,7 @@ function getMathTotalPresentation(
 	settings: WordGardenSettings,
 ): LearningPresentation[] {
 	return createMathPresentation(settings, {
-		en: `${quantity} ${getEnglishQuantityName(object, quantity)}.`,
+		en: `${getEnglishQuantityText(object, quantity, true)}.`,
 		'zh-Hans': `${getChineseQuantityText(object, quantity)}。`,
 	})
 }
@@ -733,7 +754,10 @@ function MathPlayStage({
 							type="button"
 							className="math-choice"
 							data-testid={`dot-choice-${choice.id}`}
-							aria-label={`${choice.quantity} ${choice.objectId}`}
+							aria-label={getEnglishQuantityText(
+								targetVisual.object,
+								choice.quantity,
+							)}
 							onClick={() => onDotChoice(choice)}
 						>
 							{Array.from({ length: choice.quantity }, (_, index) => (
@@ -781,7 +805,10 @@ function MathPlayStage({
 										selectedSortItemId === item.id ? 'is-selected' : ''
 									}`}
 									data-testid={`sort-item-${item.id}`}
-									aria-label={`Sort ${item.color} ${item.objectId}`}
+									aria-label={`Sort ${item.color} ${getObjectName(
+										visual.object,
+										'en',
+									)}`}
 									aria-pressed={selectedSortItemId === item.id}
 									onClick={() => onSelectSortItem(item.id)}
 								>
@@ -796,6 +823,7 @@ function MathPlayStage({
 							key={color}
 							type="button"
 							className="sort-basket"
+							aria-label={`${color} basket`}
 							data-testid={`sort-basket-${color}`}
 							style={{ '--basket-color': color } as JSX.CSSProperties}
 							onClick={() => {
@@ -804,8 +832,7 @@ function MathPlayStage({
 								}
 							}}
 						>
-							<span className="color-swatch" />
-							<span>{color}</span>
+							<span className="color-swatch" aria-hidden="true" />
 							<div className="sort-basket-items">
 								{round.items
 									.filter((item) => item.placed && item.color === color)
@@ -869,7 +896,7 @@ function MathPlayStage({
 						type="button"
 						className="math-object"
 						data-testid={`math-object-${visual.object.id}`}
-						aria-label={`Collect ${visual.object.id}`}
+						aria-label={`Collect ${getObjectName(visual.object, 'en')}`}
 						onClick={() => onCollect(visual.object)}
 					>
 						<img src={visual.image.path} alt="" draggable={false} />
@@ -1708,10 +1735,7 @@ export function App() {
 		if (!result.isTarget) {
 			const sequence = object
 				? createMathPresentation(settings, {
-						en: `${choice.quantity} ${getEnglishQuantityName(
-							object,
-							choice.quantity,
-						)}.`,
+						en: `${getEnglishQuantityText(object, choice.quantity, true)}.`,
 						'zh-Hans': `${getChineseQuantityText(object, choice.quantity)}。`,
 					})
 				: getMathPrompt(mathRound, mathObjectById, settings)
@@ -1754,9 +1778,14 @@ export function App() {
 		const nextRound = { ...mathRound, items: result.items }
 		setMathRound(nextRound)
 		setSelectedSortItemId(null)
+		const object = mathObjectById.get(item.objectId)
 		const placedSequence = createMathPresentation(settings, {
-			en: `${item.color} ${mathObjectById.get(item.objectId)?.math?.englishPlural ?? 'thing'}.`,
-			'zh-Hans': `${getChineseColorName(item.color)}。`,
+			en: object
+				? `${capitalizeEnglish(item.color)} ${getObjectName(object, 'en')}.`
+				: `${capitalizeEnglish(item.color)}.`,
+			'zh-Hans': object
+				? `${getChineseColorName(item.color)}${getObjectName(object, 'zh-Hans')}。`
+				: `${getChineseColorName(item.color)}。`,
 		})
 		setToast({ kind: 'math', sequence: placedSequence })
 		speakSequence(placedSequence, settings.muted)

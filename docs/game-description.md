@@ -4,7 +4,7 @@ Word Garden is a gentle bilingual word-learning game for toddlers. It is built a
 
 The current game includes 8 content packs, 159 learning items, 31 scenes, and 22 smaller selectable sets. Every learning item supports English and Simplified Chinese.
 
-The next major product direction is Math Play: a fifth mode that teaches early quantity, matching, sorting, comparison, and spatial language through action. Math Play should reuse the same static packs and gentle scene style, but it should stop treating numbers as only friendly number-card objects. A toddler should be able to put two apples in a basket, give each duck one seed, match three dots to three fish, choose the plate with more bananas, sort red fruit into a red basket, and hear natural English and Simplified Chinese counting phrases.
+Math Play is now the fifth mode. It teaches early quantity, matching, and sorting through action with the same static packs and gentle scene style. A toddler can put one apple in a basket, give a bunny two carrots, match dots to object groups, sort objects by color, and hear natural English and Simplified Chinese counting phrases.
 
 ## Core Play
 
@@ -42,25 +42,26 @@ Cards are useful for slower naming practice, parent-guided repetition, and revie
 
 ### Math Play
 
-Math Play is the planned fifth mode. It should be built as part of Word Garden, not as a separate app. It should rotate tiny early-math mini-games that use the same content packs, object art, scene regions, static audio, and bilingual language model as the rest of the game.
+Math Play is built into Word Garden as a regular mode, not as a separate app. It rotates tiny early-math mini-games that use the same content packs, object art, scene backgrounds, static audio rules, and bilingual language model as the rest of the game.
 
 Math Play is not a drill mode. It should feel like feeding, collecting, matching, sorting, and pretend play. There should be no score, timer, lives, badges, streaks, or visible achievement pressure. Every round should be short, calm, and forgiving. If the child taps or drops something unexpected, the game should name what happened and gently continue: "That is one apple. We need one more." It should never say "wrong."
 
 Math Play should reduce visual load compared with Explore:
 
-- First rounds should usually use 1 to 3 target objects.
-- Normal toddler rounds should use 1 to 5 target objects.
+- First rounds usually use 1 or 2 target objects.
+- The parent counting focus can introduce 3 when the child is ready.
+- Normal toddler rounds should stay visually small and concrete.
 - Quantities 6 to 10 should be treated as optional stretch practice behind parent settings.
-- Choices should start at 2 options and only grow to 3 or 4 when the child is comfortable.
+- Choices should start at 2 options and only grow when the child is comfortable.
 - Objects should be larger and more evenly spaced than vocabulary objects in a busy scene.
 - Counting rounds should avoid clutter because the child needs to visually track one-to-one actions.
 
-The first Math Play release focuses on four mini-games:
+The current Math Play release focuses on four mini-games:
 
-- Count and Collect: implemented first; put a requested quantity of objects into a container.
-- Feed the Friend: MVP follow-up; give a friend a requested quantity of food or objects.
-- Dot Match: MVP follow-up; match a dot card to the object group with the same quantity.
-- Color Sort: MVP follow-up; place objects into matching color baskets.
+- Count and Collect: put a requested quantity of objects into a container.
+- Feed the Friend: give a friend a requested quantity of food or objects.
+- Color Sort: place objects into matching color baskets.
+- Dot Match: match a dot card to the object group with the same quantity.
 - Shape Sort: metadata-ready, but pending committed shape-capable content.
 
 Later Math Play rounds can add More/Less/Same, Number Path Hop, Pattern Train, Big/Small, Where Is It, and Count the Sounds.
@@ -83,15 +84,15 @@ The parent can also choose the language order:
 - English then Simplified Chinese.
 - Simplified Chinese then English.
 
-Math Play should add a separate learning-focus progression that is independent from vocabulary word detail. A child can use single-word vocabulary while still practicing counting 1 to 3, or use richer object language while staying in easy math rounds.
+Math Play has a separate learning-focus setting that is independent from vocabulary word detail. A child can use single-word vocabulary while practicing early counting, or use richer object language while staying in easy math rounds.
 
-The planned Math Play progression bands are:
+The Math Play progression bands are:
 
 - First Math: quantities 1 to 2, no numerals required, objects and dots first, two choices maximum, count aloud during actions.
 - Growing Math: quantities 1 to 5, dots plus objects, simple more/less/same, color sorting, and shape sorting.
 - Big Kid Stretch: quantities 1 to 10, numerals plus dots plus objects, number path order, one more/one less, and simple AB patterns.
 
-The parent should be able to lock Math Play to First Math or Growing Math so younger children are not pushed into stretch content.
+The parent can keep Math Play focused on first counting or color sorting so younger children are not pushed into stretch content.
 
 Math Play should adapt quietly behind the scenes. It should track comfort level, not achievement. If the child completes several 1-to-3 rounds smoothly, the mode can introduce 4 or 5. If the child taps randomly or repeatedly avoids a task, it should reduce choices and return to 1 or 2. If a child struggles with numerals, it should keep using dots and object groups first. Any adaptation should stay invisible to the child.
 
@@ -215,18 +216,17 @@ Learning items:
 - nine / 九
 - ten / 十
 
-The current pack treats numbers as friendly objects. The language starts with number names and grows into tiny counting lines, such as dots, meadow cards, and gentle number movement.
+The current pack treats numbers as friendly card objects for naming and recognition. Math Play does not rely on this pack for first math, because a 2.5-year-old benefits more from touching and moving concrete objects than from recognizing numerals alone.
 
-The Math Play update should make the Numbers experience concrete. Number cards can stay, but they should be paired with repeated object groups and action-based counting:
+Math Play uses object packs such as Word Garden, Farm Friends, Fruits and Vegetables, and Animals for action-based counting:
 
-- 1 apple, 2 apples, 3 apples, 4 apples, 5 apples.
-- 1 duck, 2 ducks, 3 ducks.
-- 1 big truck, 2 small cars.
-- 3 fish in a pond.
-- 4 flowers in a pot.
-- 1 seed for each duck.
+- one apple, two apples, three apples.
+- one duck, two ducks, three ducks.
+- one carrot for the bunny.
+- two fish in a basket.
+- red flower into the red basket.
 
-This change is important because a 2.5-year-old benefits more from touching and moving counted objects than from recognizing numerals alone. Math Play should teach one-to-one correspondence, cardinality, matching, comparison, and sorting before expecting numeral fluency.
+This keeps early math concrete. Number cards can still support naming and later numeral familiarity, but Math Play should teach one-to-one correspondence, cardinality, matching, comparison, and sorting before expecting numeral fluency.
 
 ### English Alphabet
 
@@ -553,33 +553,26 @@ Example co-play prompts:
 - "Find something big and something small in the room."
 - "Make a red, blue, red, blue pattern with toys."
 
-The parent page can add a "Learning Focus" setting with choices:
+The parent settings include a "Learning Focus" control when the selected pack can support Math Play. Current choices are:
 
-- Vocabulary.
+- First Math Mix.
 - Counting 1-3.
-- Counting 1-5.
-- Colors.
-- More/Less.
-- Spatial Words.
-- Patterns.
-- Mixed Gentle Play.
+- Color Sort.
 
 These settings should guide round selection only. They should not create pressure or visible goals for the child.
 
-## Math Play MVP
+## Math Play Current Release
 
-The recommended first release is "Counting Garden." It should use the existing Word Garden, Farm Friends, Fruits and Vegetables, and Animals packs where possible.
+The current release uses existing object packs where they have concrete math metadata: Word Garden, Farm Friends, Fruits and Vegetables, and Animals.
 
-Initial round examples:
+Current round examples:
 
-- Put 2 apples in the basket.
-- Give the bunny 1 carrot.
-- Put 3 fish in the pond.
-- Match 2 dots to 2 ducks.
-- Put red flowers in the red pot.
-- Put circles in the round basket.
+- Put one apple in the basket.
+- Give the bunny two carrots.
+- Match two dots to two ducks.
+- Put the red apple in the red basket.
 
-Optional follow-up rounds after the MVP:
+Optional future rounds:
 
 - Find the plate with more bananas.
 - Put the bird on the tree.
@@ -587,12 +580,12 @@ Optional follow-up rounds after the MVP:
 - What comes next: cow, sheep, cow, sheep?
 - Find the small fish.
 
-The MVP should prioritize 1 to 3. It can include 4 and 5 only after the core interaction feels calm and readable.
+Math Play should prioritize 1 and 2 for default play. The Counting 1-3 focus can introduce 3. Quantities 4 and 5 belong behind a later parent-controlled stretch only after the core interaction feels calm and readable.
 
 Implementation expectations:
 
-- Add Math Play as a first-class mode alongside Explore, Find, Puzzle, and Cards.
-- Add a separate round engine for math templates instead of mixing math-specific branching into Find or Puzzle.
+- Keep Math Play as a first-class mode alongside Explore, Find, Puzzle, and Cards.
+- Keep a separate round engine for math templates instead of mixing math-specific branching into Find or Puzzle.
 - Reuse the existing drag-and-drop library for drag rounds.
 - Keep tap support for Math Play where it improves toddler accessibility, even though Puzzle itself remains drag-only.
 - Use static content metadata and committed assets only.
@@ -601,11 +594,12 @@ Implementation expectations:
 - Do not add generated runtime catalogs or content generation package scripts.
 - Keep validation generic and schema-focused.
 
-Acceptance criteria for the first Math Play release:
+Acceptance criteria for the current Math Play release:
 
 - A child can enter Math Play from the mode selector.
-- The first rounds use quantities 1 to 3.
-- Count and Collect, Feed the Friend, Dot Match, and Color Sort are playable.
+- The first rounds use quantities 1 and 2 by default.
+- The Counting 1-3 focus can introduce 3.
+- Count and Collect, Feed the Friend, Color Sort, and Dot Match are playable.
 - Shape Sort is not required until committed shape-capable content exists.
 - A successful counting action speaks each count and then the total.
 - Simplified Chinese totals use natural measure-word phrases.

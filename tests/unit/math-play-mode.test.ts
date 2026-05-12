@@ -85,14 +85,24 @@ describe('Math Play round behavior', () => {
 		}
 	})
 
-	it('keeps starter quantities within 1-3 for now', () => {
+	it('starts with one and keeps the counting focus within 1-3', () => {
 		const round = createMathPlayRound(placements, { roundIndex: 0 })
 
 		expect(round?.type).toBe('count-and-collect')
 		if (round?.type !== 'count-and-collect') {
 			throw new Error('Expected Count and Collect round')
 		}
-		expect(round.targetQuantity).toBeLessThanOrEqual(3)
+		expect(round.targetQuantity).toBe(1)
+
+		const stretchRound = createMathPlayRound(placements, {
+			roundIndex: 2,
+			focus: 'counting-1-3',
+		})
+		expect(stretchRound?.type).toBe('dot-match')
+		if (stretchRound?.type !== 'dot-match') {
+			throw new Error('Expected Dot Match round')
+		}
+		expect(stretchRound.targetQuantity).toBe(3)
 	})
 
 	it('increments collected count and completes target collection rounds', () => {
@@ -149,8 +159,19 @@ describe('Math Play round behavior', () => {
 		expect(round?.type).not.toBe('feed-the-friend')
 	})
 
+	it('rotates across playable rounds when a preferred round is unavailable', () => {
+		const rounds = [0, 1, 2].map(
+			(roundIndex) =>
+				createMathPlayRound([{ object: apple }, { object: banana }], {
+					roundIndex,
+				})?.type,
+		)
+
+		expect(rounds).toEqual(['count-and-collect', 'color-sort', 'dot-match'])
+	})
+
 	it('builds Dot Match with one correct and one distractor quantity', () => {
-		const round = createMathPlayRound(placements, { roundIndex: 2 })
+		const round = createMathPlayRound(placements, { roundIndex: 3 })
 
 		expect(round?.type).toBe('dot-match')
 		if (round?.type !== 'dot-match') {
@@ -175,12 +196,14 @@ describe('Math Play round behavior', () => {
 	})
 
 	it('builds Color Sort and places objects into matching baskets', () => {
-		const round = createMathPlayRound(placements, { roundIndex: 3 })
+		const round = createMathPlayRound(placements, { roundIndex: 2 })
 
 		expect(round?.type).toBe('color-sort')
 		if (round?.type !== 'color-sort') {
 			throw new Error('Expected color sort round')
 		}
+		expect(round.items).toHaveLength(2)
+		expect(new Set(round.items.map((item) => item.color)).size).toBe(2)
 
 		const firstItem = round.items[0]
 		if (!firstItem) {
