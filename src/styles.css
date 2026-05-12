@@ -339,7 +339,9 @@ input:focus-visible {
 .puzzle-tray,
 .puzzle-tray *,
 .math-stage,
-.math-stage * {
+.math-stage *,
+.cards-stage,
+.cards-stage * {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -348,7 +350,8 @@ input:focus-visible {
 
 .garden-stage img,
 .puzzle-tray img,
-.math-stage img {
+.math-stage img,
+.cards-stage img {
 	-webkit-user-drag: none;
 }
 
