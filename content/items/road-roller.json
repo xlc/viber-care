@@ -1,0 +1,196 @@
+{
+	"id": "road-roller",
+	"category": "construction-machine",
+	"tags": ["construction", "machine", "road", "wheels", "roller"],
+	"visualPrompt": "A friendly toy road roller for a toddler construction word-learning game, rounded yellow cab, big smooth gray front roller, small back wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "road-roller-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the road roller.",
+			"successPhrase": "You found the road roller.",
+			"fallbackText": "That's the road roller.",
+			"levels": {
+				"L0": {
+					"text": "road roller",
+					"audioText": "road roller",
+					"fallbackText": "road roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The road roller rolls.",
+					"audioText": "The road roller rolls.",
+					"fallbackText": "road roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "big smooth roller",
+					"audioText": "big smooth roller",
+					"fallbackText": "road roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The road roller rolls on the path.",
+					"audioText": "The road roller rolls on the path.",
+					"fallbackText": "road roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a big roller? The road roller has a big roller.",
+					"audioText": "What has a big roller? The road roller has a big roller.",
+					"fallbackText": "road roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The road roller rolls slowly on the soft road.",
+					"audioText": "The road roller rolls slowly on the soft road.",
+					"fallbackText": "That's the road roller.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/road-roller-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/road-roller-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找压路机。",
+			"successPhrase": "你找到压路机了。",
+			"fallbackText": "这是压路机。",
+			"levels": {
+				"L0": {
+					"text": "压路机",
+					"audioText": "压路机",
+					"fallbackText": "压路机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "压路机滚一滚。",
+					"audioText": "压路机滚一滚。",
+					"fallbackText": "压路机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "大大的滚筒",
+					"audioText": "大大的滚筒",
+					"fallbackText": "压路机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "压路机在小路上滚。",
+					"audioText": "压路机在小路上滚。",
+					"fallbackText": "压路机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有大滚筒？压路机有大滚筒。",
+					"audioText": "谁有大滚筒？压路机有大滚筒。",
+					"fallbackText": "压路机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "压路机在柔软小路上慢慢滚。",
+					"audioText": "压路机在柔软小路上慢慢滚。",
+					"fallbackText": "这是压路机。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/road-roller-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/road-roller-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/road-roller-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/road-roller.png",
+				"alt": "road roller",
+				"generationPrompt": "A friendly toy road roller for a toddler construction word-learning game, rounded yellow cab, big smooth gray front roller, small back wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "road roller",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy road roller for a toddler construction word-learning game, rounded yellow cab, big smooth gray front roller, small back wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "yellow",
+			"tags": ["construction", "machine", "road", "wheels", "roller"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/road-roller-bright.png",
+				"alt": "road roller bright large",
+				"generationPrompt": "A friendly toy road roller variant for a toddler construction word-learning game, rounded orange-yellow cab, big smooth gray front roller, small back wheels, slightly larger chunky proportions, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "road roller bright large",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy road roller variant for a toddler construction word-learning game, rounded orange-yellow cab, big smooth gray front roller, small back wheels, slightly larger chunky proportions, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "yellow",
+			"tags": ["construction", "machine", "road", "wheels", "roller"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,196 @@
+{
+	"id": "excavator",
+	"category": "construction-machine",
+	"tags": ["construction", "machine", "digging", "sand", "tracks"],
+	"visualPrompt": "A friendly toy excavator for a toddler construction word-learning game, rounded yellow body, soft gray tracks, simple bucket arm, clear silhouette, no driver, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "excavator-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the excavator.",
+			"successPhrase": "You found the excavator.",
+			"fallbackText": "That's the excavator.",
+			"levels": {
+				"L0": {
+					"text": "excavator",
+					"audioText": "excavator",
+					"fallbackText": "excavator",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The excavator scoops.",
+					"audioText": "The excavator scoops.",
+					"fallbackText": "excavator",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "yellow excavator",
+					"audioText": "yellow excavator",
+					"fallbackText": "excavator",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The excavator scoops soft sand.",
+					"audioText": "The excavator scoops soft sand.",
+					"fallbackText": "excavator",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What scoops sand? The excavator scoops sand.",
+					"audioText": "What scoops sand? The excavator scoops sand.",
+					"fallbackText": "excavator",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The excavator scoops gently in the builder yard.",
+					"audioText": "The excavator scoops gently in the builder yard.",
+					"fallbackText": "That's the excavator.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/excavator-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/excavator-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找挖掘机。",
+			"successPhrase": "你找到挖掘机了。",
+			"fallbackText": "这是挖掘机。",
+			"levels": {
+				"L0": {
+					"text": "挖掘机",
+					"audioText": "挖掘机",
+					"fallbackText": "挖掘机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "挖掘机挖一挖。",
+					"audioText": "挖掘机挖一挖。",
+					"fallbackText": "挖掘机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "黄色挖掘机",
+					"audioText": "黄色挖掘机",
+					"fallbackText": "挖掘机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "挖掘机轻轻挖沙子。",
+					"audioText": "挖掘机轻轻挖沙子。",
+					"fallbackText": "挖掘机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁会挖沙子？挖掘机会挖沙子。",
+					"audioText": "谁会挖沙子？挖掘机会挖沙子。",
+					"fallbackText": "挖掘机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "挖掘机在工程小院里轻轻工作。",
+					"audioText": "挖掘机在工程小院里轻轻工作。",
+					"fallbackText": "这是挖掘机。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/excavator-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/excavator-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/excavator-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/excavator.png",
+				"alt": "excavator",
+				"generationPrompt": "A friendly toy excavator for a toddler construction word-learning game, rounded yellow body, soft gray tracks, simple bucket arm, clear silhouette, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "excavator",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy excavator for a toddler construction word-learning game, rounded yellow body, soft gray tracks, simple bucket arm, clear silhouette, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "yellow",
+			"tags": ["construction", "machine", "digging", "sand", "tracks"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/excavator-bright.png",
+				"alt": "excavator bright large",
+				"generationPrompt": "A friendly toy excavator variant for a toddler construction word-learning game, rounded bright yellow body with soft blue accent, gray tracks, simple bucket arm, slightly larger chunky toy proportions, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "excavator bright large",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy excavator variant for a toddler construction word-learning game, rounded bright yellow body with soft blue accent, gray tracks, simple bucket arm, slightly larger chunky toy proportions, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "yellow",
+			"tags": ["construction", "machine", "digging", "sand", "tracks"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

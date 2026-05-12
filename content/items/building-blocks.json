@@ -1,0 +1,196 @@
+{
+	"id": "building-blocks",
+	"category": "construction-play",
+	"tags": ["construction", "blocks", "toy", "stacking", "colors"],
+	"visualPrompt": "A small friendly stack of toy building blocks for a toddler construction word-learning game, rounded red yellow and blue blocks, simple cube shapes, clear silhouette, no text, no letters, no logos, transparent background.",
+	"interaction": {
+		"id": "building-blocks-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the building blocks.",
+			"successPhrase": "You found the building blocks.",
+			"fallbackText": "Those are the building blocks.",
+			"levels": {
+				"L0": {
+					"text": "building blocks",
+					"audioText": "building blocks",
+					"fallbackText": "building blocks",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The blocks stack.",
+					"audioText": "The blocks stack.",
+					"fallbackText": "building blocks",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "colorful blocks",
+					"audioText": "colorful blocks",
+					"fallbackText": "building blocks",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The building blocks stack up.",
+					"audioText": "The building blocks stack up.",
+					"fallbackText": "building blocks",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What can stack? The blocks can stack.",
+					"audioText": "What can stack? The blocks can stack.",
+					"fallbackText": "building blocks",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The building blocks make a tiny tower.",
+					"audioText": "The building blocks make a tiny tower.",
+					"fallbackText": "Those are the building blocks.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/building-blocks-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/building-blocks-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找积木。",
+			"successPhrase": "你找到积木了。",
+			"fallbackText": "这是积木。",
+			"levels": {
+				"L0": {
+					"text": "积木",
+					"audioText": "积木",
+					"fallbackText": "积木",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "积木叠一叠。",
+					"audioText": "积木叠一叠。",
+					"fallbackText": "积木",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "彩色积木",
+					"audioText": "彩色积木",
+					"fallbackText": "积木",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "积木叠高高。",
+					"audioText": "积木叠高高。",
+					"fallbackText": "积木",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么能叠起来？积木能叠起来。",
+					"audioText": "什么能叠起来？积木能叠起来。",
+					"fallbackText": "积木",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "积木搭成一座小小塔。",
+					"audioText": "积木搭成一座小小塔。",
+					"fallbackText": "这是积木。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/building-blocks-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/building-blocks-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/building-blocks-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/building-blocks.png",
+				"alt": "building blocks",
+				"generationPrompt": "A small friendly stack of toy building blocks for a toddler construction word-learning game, rounded red yellow and blue blocks, simple cube shapes, clear silhouette, no text, no letters, no logos, transparent background.",
+				"placeholder": {
+					"label": "building blocks",
+					"emoji": "🧱"
+				}
+			},
+			"visualPrompt": "A small friendly stack of toy building blocks for a toddler construction word-learning game, rounded red yellow and blue blocks, simple cube shapes, clear silhouette, no text, no letters, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"colors": ["red", "yellow", "blue", "green"],
+			"tags": ["construction", "blocks", "toy", "stacking", "colors"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/building-blocks-bright.png",
+				"alt": "building blocks bright large",
+				"generationPrompt": "A friendly toy building blocks variant for a toddler construction word-learning game, rounded green yellow blue and red blocks in a small stack, chunkier and slightly larger, clear silhouette, no text, no letters, no logos, transparent background.",
+				"placeholder": {
+					"label": "building blocks bright large",
+					"emoji": "🧱"
+				}
+			},
+			"visualPrompt": "A friendly toy building blocks variant for a toddler construction word-learning game, rounded green yellow blue and red blocks in a small stack, chunkier and slightly larger, clear silhouette, no text, no letters, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"colors": ["red", "yellow", "blue", "green"],
+			"tags": ["construction", "blocks", "toy", "stacking", "colors"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,196 @@
+{
+	"id": "hard-hat",
+	"category": "construction-tool",
+	"tags": ["construction", "hat", "tool", "yellow", "mat"],
+	"visualPrompt": "A friendly toy-like yellow construction hard hat for a toddler word-learning game, rounded simple helmet shape, smooth bright surface, clear silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "hard-hat-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the hard hat.",
+			"successPhrase": "You found the hard hat.",
+			"fallbackText": "That's the hard hat.",
+			"levels": {
+				"L0": {
+					"text": "hard hat",
+					"audioText": "hard hat",
+					"fallbackText": "hard hat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The hard hat sits.",
+					"audioText": "The hard hat sits.",
+					"fallbackText": "hard hat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "yellow hard hat",
+					"audioText": "yellow hard hat",
+					"fallbackText": "hard hat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The hard hat sits on the mat.",
+					"audioText": "The hard hat sits on the mat.",
+					"fallbackText": "hard hat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What is bright yellow? The hard hat is bright yellow.",
+					"audioText": "What is bright yellow? The hard hat is bright yellow.",
+					"fallbackText": "hard hat",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The hard hat waits gently on the soft mat.",
+					"audioText": "The hard hat waits gently on the soft mat.",
+					"fallbackText": "That's the hard hat.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/hard-hat-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/hard-hat-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找安全帽。",
+			"successPhrase": "你找到安全帽了。",
+			"fallbackText": "这是安全帽。",
+			"levels": {
+				"L0": {
+					"text": "安全帽",
+					"audioText": "安全帽",
+					"fallbackText": "安全帽",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "安全帽放一放。",
+					"audioText": "安全帽放一放。",
+					"fallbackText": "安全帽",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "黄色安全帽",
+					"audioText": "黄色安全帽",
+					"fallbackText": "安全帽",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "安全帽放在垫子上。",
+					"audioText": "安全帽放在垫子上。",
+					"fallbackText": "安全帽",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么是亮黄色？安全帽是亮黄色。",
+					"audioText": "什么是亮黄色？安全帽是亮黄色。",
+					"fallbackText": "安全帽",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "安全帽安静地放在软垫上。",
+					"audioText": "安全帽安静地放在软垫上。",
+					"fallbackText": "这是安全帽。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/hard-hat-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/hard-hat-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/hard-hat-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/hard-hat.png",
+				"alt": "hard hat",
+				"generationPrompt": "A friendly toy-like yellow construction hard hat for a toddler word-learning game, rounded simple helmet shape, smooth bright surface, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "hard hat",
+					"emoji": "🪖"
+				}
+			},
+			"visualPrompt": "A friendly toy-like yellow construction hard hat for a toddler word-learning game, rounded simple helmet shape, smooth bright surface, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "yellow",
+			"tags": ["construction", "hat", "tool", "yellow", "mat"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/hard-hat-bright.png",
+				"alt": "hard hat bright large",
+				"generationPrompt": "A friendly toy-like construction hard hat variant for a toddler word-learning game, rounded bright orange-yellow helmet, simple smooth ridges, slightly larger chunky toy proportions, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "hard hat bright large",
+					"emoji": "🪖"
+				}
+			},
+			"visualPrompt": "A friendly toy-like construction hard hat variant for a toddler word-learning game, rounded bright orange-yellow helmet, simple smooth ridges, slightly larger chunky toy proportions, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "yellow",
+			"tags": ["construction", "hat", "tool", "yellow", "mat"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

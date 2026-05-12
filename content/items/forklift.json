@@ -1,0 +1,196 @@
+{
+	"id": "forklift",
+	"category": "construction-machine",
+	"tags": ["construction", "machine", "lifting", "blocks", "wheels"],
+	"visualPrompt": "A friendly toy forklift for a toddler construction word-learning game, rounded yellow body, soft wheels, simple short lifting forks, clear silhouette, no driver, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "forklift-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the forklift.",
+			"successPhrase": "You found the forklift.",
+			"fallbackText": "That's the forklift.",
+			"levels": {
+				"L0": {
+					"text": "forklift",
+					"audioText": "forklift",
+					"fallbackText": "forklift",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The forklift lifts.",
+					"audioText": "The forklift lifts.",
+					"fallbackText": "forklift",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "small forklift",
+					"audioText": "small forklift",
+					"fallbackText": "forklift",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The forklift lifts a block.",
+					"audioText": "The forklift lifts a block.",
+					"fallbackText": "forklift",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What lifts the block? The forklift lifts the block.",
+					"audioText": "What lifts the block? The forklift lifts the block.",
+					"fallbackText": "forklift",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The forklift lifts blocks gently near the mat.",
+					"audioText": "The forklift lifts blocks gently near the mat.",
+					"fallbackText": "That's the forklift.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/forklift-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/forklift-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找叉车。",
+			"successPhrase": "你找到叉车了。",
+			"fallbackText": "这是叉车。",
+			"levels": {
+				"L0": {
+					"text": "叉车",
+					"audioText": "叉车",
+					"fallbackText": "叉车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "叉车举一举。",
+					"audioText": "叉车举一举。",
+					"fallbackText": "叉车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小叉车",
+					"audioText": "小小叉车",
+					"fallbackText": "叉车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "叉车举起积木。",
+					"audioText": "叉车举起积木。",
+					"fallbackText": "叉车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁举起积木？叉车举起积木。",
+					"audioText": "谁举起积木？叉车举起积木。",
+					"fallbackText": "叉车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "叉车在垫子旁轻轻举积木。",
+					"audioText": "叉车在垫子旁轻轻举积木。",
+					"fallbackText": "这是叉车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/forklift-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/forklift-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/forklift-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/forklift.png",
+				"alt": "forklift",
+				"generationPrompt": "A friendly toy forklift for a toddler construction word-learning game, rounded yellow body, soft wheels, simple short lifting forks, clear silhouette, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "forklift",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy forklift for a toddler construction word-learning game, rounded yellow body, soft wheels, simple short lifting forks, clear silhouette, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "yellow",
+			"tags": ["construction", "machine", "lifting", "blocks", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/forklift-bright.png",
+				"alt": "forklift bright large",
+				"generationPrompt": "A friendly toy forklift variant for a toddler construction word-learning game, rounded bright yellow-orange body, soft wheels, simple short lifting forks, slightly larger chunky toy proportions, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "forklift bright large",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy forklift variant for a toddler construction word-learning game, rounded bright yellow-orange body, soft wheels, simple short lifting forks, slightly larger chunky toy proportions, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "yellow",
+			"tags": ["construction", "machine", "lifting", "blocks", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

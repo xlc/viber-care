@@ -1,0 +1,196 @@
+{
+	"id": "crane",
+	"category": "construction-machine",
+	"tags": ["construction", "machine", "lifting", "road", "wheels"],
+	"visualPrompt": "A friendly toy construction crane for a toddler word-learning game, rounded yellow base, soft wheels, simple tall arm with small hook, clear silhouette, no driver, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "crane-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the crane.",
+			"successPhrase": "You found the crane.",
+			"fallbackText": "That's the crane.",
+			"levels": {
+				"L0": {
+					"text": "crane",
+					"audioText": "crane",
+					"fallbackText": "crane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The crane lifts.",
+					"audioText": "The crane lifts.",
+					"fallbackText": "crane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "yellow crane",
+					"audioText": "yellow crane",
+					"fallbackText": "crane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The crane lifts a block.",
+					"audioText": "The crane lifts a block.",
+					"fallbackText": "crane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What lifts up high? The crane lifts up high.",
+					"audioText": "What lifts up high? The crane lifts up high.",
+					"fallbackText": "crane",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The crane lifts slowly in the little machine park.",
+					"audioText": "The crane lifts slowly in the little machine park.",
+					"fallbackText": "That's the crane.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/crane-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/crane-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找起重机。",
+			"successPhrase": "你找到起重机了。",
+			"fallbackText": "这是起重机。",
+			"levels": {
+				"L0": {
+					"text": "起重机",
+					"audioText": "起重机",
+					"fallbackText": "起重机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "起重机吊一吊。",
+					"audioText": "起重机吊一吊。",
+					"fallbackText": "起重机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "黄色起重机",
+					"audioText": "黄色起重机",
+					"fallbackText": "起重机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "起重机吊起积木。",
+					"audioText": "起重机吊起积木。",
+					"fallbackText": "起重机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁会吊高高？起重机会吊高高。",
+					"audioText": "谁会吊高高？起重机会吊高高。",
+					"fallbackText": "起重机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "起重机在小机器公园里慢慢吊起来。",
+					"audioText": "起重机在小机器公园里慢慢吊起来。",
+					"fallbackText": "这是起重机。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/crane-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/crane-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/crane-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/crane.png",
+				"alt": "crane",
+				"generationPrompt": "A friendly toy construction crane for a toddler word-learning game, rounded yellow base, soft wheels, simple tall arm with small hook, clear silhouette, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "crane",
+					"emoji": "🏗️"
+				}
+			},
+			"visualPrompt": "A friendly toy construction crane for a toddler word-learning game, rounded yellow base, soft wheels, simple tall arm with small hook, clear silhouette, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "yellow",
+			"tags": ["construction", "machine", "lifting", "road", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/crane-bright.png",
+				"alt": "crane bright large",
+				"generationPrompt": "A friendly toy construction crane variant for a toddler word-learning game, rounded bright yellow and orange base, soft wheels, simple tall arm with small rounded hook, slightly larger chunky proportions, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "crane bright large",
+					"emoji": "🏗️"
+				}
+			},
+			"visualPrompt": "A friendly toy construction crane variant for a toddler word-learning game, rounded bright yellow and orange base, soft wheels, simple tall arm with small rounded hook, slightly larger chunky proportions, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "yellow",
+			"tags": ["construction", "machine", "lifting", "road", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

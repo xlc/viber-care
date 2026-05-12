@@ -1,0 +1,196 @@
+{
+	"id": "front-loader",
+	"category": "construction-machine",
+	"tags": ["construction", "machine", "scoop", "sand", "wheels"],
+	"visualPrompt": "A friendly toy front loader for a toddler construction word-learning game, rounded yellow vehicle with big front scoop, soft wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "front-loader-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the front loader.",
+			"successPhrase": "You found the front loader.",
+			"fallbackText": "That's the front loader.",
+			"levels": {
+				"L0": {
+					"text": "front loader",
+					"audioText": "front loader",
+					"fallbackText": "front loader",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The loader scoops.",
+					"audioText": "The loader scoops.",
+					"fallbackText": "front loader",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "front loader",
+					"audioText": "front loader",
+					"fallbackText": "front loader",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The front loader scoops sand.",
+					"audioText": "The front loader scoops sand.",
+					"fallbackText": "front loader",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a big scoop? The front loader has a big scoop.",
+					"audioText": "What has a big scoop? The front loader has a big scoop.",
+					"fallbackText": "front loader",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The front loader carries soft sand in its scoop.",
+					"audioText": "The front loader carries soft sand in its scoop.",
+					"fallbackText": "That's the front loader.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/front-loader-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/front-loader-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找装载机。",
+			"successPhrase": "你找到装载机了。",
+			"fallbackText": "这是装载机。",
+			"levels": {
+				"L0": {
+					"text": "装载机",
+					"audioText": "装载机",
+					"fallbackText": "装载机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "装载机铲一铲。",
+					"audioText": "装载机铲一铲。",
+					"fallbackText": "装载机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "前面的铲斗",
+					"audioText": "前面的铲斗",
+					"fallbackText": "装载机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "装载机铲沙子。",
+					"audioText": "装载机铲沙子。",
+					"fallbackText": "装载机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有大铲斗？装载机有大铲斗。",
+					"audioText": "谁有大铲斗？装载机有大铲斗。",
+					"fallbackText": "装载机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "装载机用铲斗轻轻装沙子。",
+					"audioText": "装载机用铲斗轻轻装沙子。",
+					"fallbackText": "这是装载机。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/front-loader-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/front-loader-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/front-loader-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/front-loader.png",
+				"alt": "front loader",
+				"generationPrompt": "A friendly toy front loader for a toddler construction word-learning game, rounded yellow vehicle with big front scoop, soft wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "front loader",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy front loader for a toddler construction word-learning game, rounded yellow vehicle with big front scoop, soft wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "yellow",
+			"tags": ["construction", "machine", "scoop", "sand", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/front-loader-bright.png",
+				"alt": "front loader bright large",
+				"generationPrompt": "A friendly toy front loader variant for a toddler construction word-learning game, rounded orange-yellow vehicle with big front scoop, blue windows, chunky soft wheels, slightly larger proportions, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "front loader bright large",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy front loader variant for a toddler construction word-learning game, rounded orange-yellow vehicle with big front scoop, blue windows, chunky soft wheels, slightly larger proportions, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "yellow",
+			"tags": ["construction", "machine", "scoop", "sand", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

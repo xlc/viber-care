@@ -1,0 +1,196 @@
+{
+	"id": "shovel",
+	"category": "construction-tool",
+	"tags": ["construction", "tool", "sand", "digging"],
+	"visualPrompt": "A friendly toy shovel for a toddler construction word-learning game, rounded blue scoop, short yellow handle, soft safe edges, clear silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "shovel-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the shovel.",
+			"successPhrase": "You found the shovel.",
+			"fallbackText": "That's the shovel.",
+			"levels": {
+				"L0": {
+					"text": "shovel",
+					"audioText": "shovel",
+					"fallbackText": "shovel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The shovel digs.",
+					"audioText": "The shovel digs.",
+					"fallbackText": "shovel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "blue shovel",
+					"audioText": "blue shovel",
+					"fallbackText": "shovel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The shovel digs in sand.",
+					"audioText": "The shovel digs in sand.",
+					"fallbackText": "shovel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What digs in sand? The shovel digs in sand.",
+					"audioText": "What digs in sand? The shovel digs in sand.",
+					"fallbackText": "shovel",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The shovel rests gently beside the sand bucket.",
+					"audioText": "The shovel rests gently beside the sand bucket.",
+					"fallbackText": "That's the shovel.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/shovel-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/shovel-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找铲子。",
+			"successPhrase": "你找到铲子了。",
+			"fallbackText": "这是铲子。",
+			"levels": {
+				"L0": {
+					"text": "铲子",
+					"audioText": "铲子",
+					"fallbackText": "铲子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "铲子挖一挖。",
+					"audioText": "铲子挖一挖。",
+					"fallbackText": "铲子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "蓝色铲子",
+					"audioText": "蓝色铲子",
+					"fallbackText": "铲子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "铲子在沙子里挖。",
+					"audioText": "铲子在沙子里挖。",
+					"fallbackText": "铲子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么会挖沙子？铲子会挖沙子。",
+					"audioText": "什么会挖沙子？铲子会挖沙子。",
+					"fallbackText": "铲子",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "铲子轻轻放在沙桶旁边。",
+					"audioText": "铲子轻轻放在沙桶旁边。",
+					"fallbackText": "这是铲子。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/shovel-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/shovel-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/shovel-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/shovel.png",
+				"alt": "shovel",
+				"generationPrompt": "A friendly toy shovel for a toddler construction word-learning game, rounded blue scoop, short yellow handle, soft safe edges, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "shovel",
+					"emoji": "🥄"
+				}
+			},
+			"visualPrompt": "A friendly toy shovel for a toddler construction word-learning game, rounded blue scoop, short yellow handle, soft safe edges, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "blue",
+			"tags": ["construction", "tool", "sand", "digging"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/shovel-bright.png",
+				"alt": "shovel bright large",
+				"generationPrompt": "A friendly toy shovel variant for a toddler construction word-learning game, rounded teal scoop, short orange handle, soft safe edges, slightly larger chunky proportions, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "shovel bright large",
+					"emoji": "🥄"
+				}
+			},
+			"visualPrompt": "A friendly toy shovel variant for a toddler construction word-learning game, rounded teal scoop, short orange handle, soft safe edges, slightly larger chunky proportions, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "blue",
+			"tags": ["construction", "tool", "sand", "digging"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

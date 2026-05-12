@@ -1,0 +1,196 @@
+{
+	"id": "wheelbarrow",
+	"category": "construction-tool",
+	"tags": ["construction", "tool", "sand", "wheels", "garden"],
+	"visualPrompt": "A friendly toy wheelbarrow for a toddler construction word-learning game, rounded teal tray, soft gray handles, one simple wheel, clear silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "wheelbarrow-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the wheelbarrow.",
+			"successPhrase": "You found the wheelbarrow.",
+			"fallbackText": "That's the wheelbarrow.",
+			"levels": {
+				"L0": {
+					"text": "wheelbarrow",
+					"audioText": "wheelbarrow",
+					"fallbackText": "wheelbarrow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The wheelbarrow rolls.",
+					"audioText": "The wheelbarrow rolls.",
+					"fallbackText": "wheelbarrow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "blue wheelbarrow",
+					"audioText": "blue wheelbarrow",
+					"fallbackText": "wheelbarrow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The wheelbarrow carries sand.",
+					"audioText": "The wheelbarrow carries sand.",
+					"fallbackText": "wheelbarrow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has one wheel? The wheelbarrow has one wheel.",
+					"audioText": "What has one wheel? The wheelbarrow has one wheel.",
+					"fallbackText": "wheelbarrow",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The wheelbarrow rolls gently by the sand.",
+					"audioText": "The wheelbarrow rolls gently by the sand.",
+					"fallbackText": "That's the wheelbarrow.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/wheelbarrow-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/wheelbarrow-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找手推车。",
+			"successPhrase": "你找到手推车了。",
+			"fallbackText": "这是手推车。",
+			"levels": {
+				"L0": {
+					"text": "手推车",
+					"audioText": "手推车",
+					"fallbackText": "手推车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "手推车推一推。",
+					"audioText": "手推车推一推。",
+					"fallbackText": "手推车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "蓝色手推车",
+					"audioText": "蓝色手推车",
+					"fallbackText": "手推车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "手推车运沙子。",
+					"audioText": "手推车运沙子。",
+					"fallbackText": "手推车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有一个轮子？手推车有一个轮子。",
+					"audioText": "谁有一个轮子？手推车有一个轮子。",
+					"fallbackText": "手推车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "手推车在沙坑旁轻轻推。",
+					"audioText": "手推车在沙坑旁轻轻推。",
+					"fallbackText": "这是手推车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/wheelbarrow-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/wheelbarrow-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/wheelbarrow-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/wheelbarrow.png",
+				"alt": "wheelbarrow",
+				"generationPrompt": "A friendly toy wheelbarrow for a toddler construction word-learning game, rounded teal tray, soft gray handles, one simple wheel, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "wheelbarrow",
+					"emoji": "🛞"
+				}
+			},
+			"visualPrompt": "A friendly toy wheelbarrow for a toddler construction word-learning game, rounded teal tray, soft gray handles, one simple wheel, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "blue",
+			"tags": ["construction", "tool", "sand", "wheels", "garden"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/wheelbarrow-bright.png",
+				"alt": "wheelbarrow bright large",
+				"generationPrompt": "A friendly toy wheelbarrow variant for a toddler construction word-learning game, rounded bright blue tray, soft gray handles, one simple wheel, slightly larger chunky proportions, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "wheelbarrow bright large",
+					"emoji": "🛞"
+				}
+			},
+			"visualPrompt": "A friendly toy wheelbarrow variant for a toddler construction word-learning game, rounded bright blue tray, soft gray handles, one simple wheel, slightly larger chunky proportions, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "blue",
+			"tags": ["construction", "tool", "sand", "wheels", "garden"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

@@ -1,0 +1,582 @@
+{
+	"id": "construction-builders",
+	"version": "1.0.0",
+	"title": {
+		"en": "Construction Builders",
+		"zh-Hans": "工程小帮手"
+	},
+	"languages": ["en", "zh-Hans"],
+	"defaultSceneId": "soft-builder-yard",
+	"scenes": [
+		{
+			"id": "soft-builder-yard",
+			"packId": "construction-builders",
+			"title": {
+				"en": "Soft Builder Yard",
+				"zh-Hans": "温柔工程小院"
+			},
+			"background": {
+				"prompt": "Calm toddler-friendly construction builders play yard, soft outdoor scene, open areas for object sprites, no people, no text, no logos, no warning signs, no hazard symbols, gentle digital toy illustration.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/construction-builders/soft-builder-yard.png",
+					"alt": "Soft builder yard",
+					"generationPrompt": "Calm toddler-friendly construction builders play yard, soft outdoor scene, open areas for object sprites, no people, no text, no logos, no warning signs, no hazard symbols, gentle digital toy illustration.",
+					"placeholder": {
+						"label": "Builder Yard",
+						"emoji": "🚜"
+					}
+				}
+			},
+			"objects": [
+				{
+					"itemId": "excavator",
+					"x": 36,
+					"y": 63,
+					"scale": 0.82,
+					"regionTags": ["road", "ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					},
+					"zIndex": 5
+				},
+				{
+					"itemId": "bulldozer",
+					"x": 51,
+					"y": 67,
+					"scale": 0.82,
+					"regionTags": ["road", "ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					},
+					"zIndex": 6
+				},
+				{
+					"itemId": "dump-truck",
+					"x": 64,
+					"y": 60,
+					"scale": 0.78,
+					"regionTags": ["road", "ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					},
+					"zIndex": 7
+				},
+				{
+					"itemId": "crane",
+					"x": 43,
+					"y": 48,
+					"scale": 0.76,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					},
+					"zIndex": 6
+				},
+				{
+					"itemId": "hard-hat",
+					"x": 78,
+					"y": 80,
+					"scale": 0.68,
+					"regionTags": ["tool-mat"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					},
+					"zIndex": 9
+				},
+				{
+					"itemId": "shovel",
+					"x": 9,
+					"y": 62,
+					"scale": 0.62,
+					"regionTags": ["sand"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					},
+					"zIndex": 8
+				},
+				{
+					"itemId": "toolbox",
+					"x": 91,
+					"y": 78,
+					"scale": 0.68,
+					"regionTags": ["tool-mat"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					},
+					"zIndex": 9
+				},
+				{
+					"itemId": "building-blocks",
+					"x": 75,
+					"y": 44,
+					"scale": 0.66,
+					"regionTags": ["block-area"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					},
+					"zIndex": 8
+				},
+				{
+					"itemId": "brick",
+					"x": 88,
+					"y": 53,
+					"scale": 0.58,
+					"regionTags": ["block-area"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					},
+					"zIndex": 8
+				},
+				{
+					"itemId": "sand-bucket",
+					"x": 15,
+					"y": 58,
+					"scale": 0.64,
+					"regionTags": ["sand"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.59,
+						"max": 0.7
+					},
+					"zIndex": 9
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky", "air"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 30
+						}
+					]
+				},
+				{
+					"id": "ground",
+					"tags": ["ground", "grass"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 30,
+							"width": 100,
+							"height": 70
+						}
+					]
+				},
+				{
+					"id": "road",
+					"tags": ["road", "path"],
+					"rects": [
+						{
+							"x": 5,
+							"y": 50,
+							"width": 76,
+							"height": 46
+						}
+					]
+				},
+				{
+					"id": "sand",
+					"tags": ["sand"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 46,
+							"width": 28,
+							"height": 30
+						}
+					]
+				},
+				{
+					"id": "block-area",
+					"tags": ["block-area", "blocks"],
+					"rects": [
+						{
+							"x": 60,
+							"y": 34,
+							"width": 39,
+							"height": 32
+						}
+					]
+				},
+				{
+					"id": "tool-mat",
+					"tags": ["tool-mat", "mat"],
+					"rects": [
+						{
+							"x": 62,
+							"y": 69,
+							"width": 36,
+							"height": 28
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 8,
+				"max": 10
+			}
+		},
+		{
+			"id": "little-machine-park",
+			"packId": "construction-builders",
+			"title": {
+				"en": "Little Machine Park",
+				"zh-Hans": "小机器公园"
+			},
+			"background": {
+				"prompt": "Calm toddler-friendly construction builders play yard, soft outdoor scene, open areas for object sprites, no people, no text, no logos, no warning signs, no hazard symbols, gentle digital toy illustration.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/construction-builders/little-machine-park.png",
+					"alt": "Little machine park",
+					"generationPrompt": "Calm toddler-friendly construction builders play yard, soft outdoor scene, open areas for object sprites, no people, no text, no logos, no warning signs, no hazard symbols, gentle digital toy illustration.",
+					"placeholder": {
+						"label": "Machine Park",
+						"emoji": "🚧"
+					}
+				}
+			},
+			"objects": [
+				{
+					"itemId": "cement-mixer",
+					"x": 56,
+					"y": 50,
+					"scale": 0.8,
+					"regionTags": ["road"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.74,
+						"max": 0.88
+					},
+					"zIndex": 6
+				},
+				{
+					"itemId": "road-roller",
+					"x": 42,
+					"y": 56,
+					"scale": 0.78,
+					"regionTags": ["road", "ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					},
+					"zIndex": 6
+				},
+				{
+					"itemId": "front-loader",
+					"x": 86,
+					"y": 55,
+					"scale": 0.78,
+					"regionTags": ["sand"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					},
+					"zIndex": 8
+				},
+				{
+					"itemId": "forklift",
+					"x": 69,
+					"y": 58,
+					"scale": 0.72,
+					"regionTags": ["road", "ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					},
+					"zIndex": 7
+				},
+				{
+					"itemId": "wheelbarrow",
+					"x": 22,
+					"y": 75,
+					"scale": 0.66,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					},
+					"zIndex": 9
+				},
+				{
+					"itemId": "safety-cone",
+					"x": 31,
+					"y": 43,
+					"scale": 0.58,
+					"regionTags": ["road", "ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					},
+					"zIndex": 8
+				},
+				{
+					"itemId": "paint-roller",
+					"x": 67,
+					"y": 80,
+					"scale": 0.62,
+					"regionTags": ["tool-mat"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					},
+					"zIndex": 9
+				},
+				{
+					"itemId": "bridge",
+					"x": 15,
+					"y": 41,
+					"scale": 0.62,
+					"regionTags": ["block-area", "ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					},
+					"zIndex": 8
+				},
+				{
+					"itemId": "building-blocks",
+					"x": 82,
+					"y": 35,
+					"scale": 0.66,
+					"regionTags": ["block-area"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					},
+					"zIndex": 7
+				},
+				{
+					"itemId": "sand-bucket",
+					"x": 88,
+					"y": 50,
+					"scale": 0.62,
+					"regionTags": ["sand"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					},
+					"zIndex": 9
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			},
+			"regions": [
+				{
+					"id": "sky",
+					"tags": ["sky", "air"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 30
+						}
+					]
+				},
+				{
+					"id": "ground",
+					"tags": ["ground", "grass"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 30,
+							"width": 100,
+							"height": 70
+						}
+					]
+				},
+				{
+					"id": "road",
+					"tags": ["road", "path"],
+					"rects": [
+						{
+							"x": 20,
+							"y": 35,
+							"width": 66,
+							"height": 31
+						}
+					]
+				},
+				{
+					"id": "sand",
+					"tags": ["sand"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 43,
+							"width": 29,
+							"height": 32
+						},
+						{
+							"x": 75,
+							"y": 40,
+							"width": 25,
+							"height": 25
+						}
+					]
+				},
+				{
+					"id": "block-area",
+					"tags": ["block-area", "blocks"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 34,
+							"width": 22,
+							"height": 18
+						},
+						{
+							"x": 70,
+							"y": 28,
+							"width": 27,
+							"height": 27
+						}
+					]
+				},
+				{
+					"id": "tool-mat",
+					"tags": ["tool-mat", "mat"],
+					"rects": [
+						{
+							"x": 61,
+							"y": 70,
+							"width": 39,
+							"height": 30
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 8,
+				"max": 10
+			}
+		}
+	],
+	"sets": [
+		{
+			"id": "construction-builders-set",
+			"title": {
+				"en": "Construction Builders",
+				"zh-Hans": "工程小帮手"
+			},
+			"itemIds": [
+				"excavator",
+				"bulldozer",
+				"dump-truck",
+				"crane",
+				"cement-mixer",
+				"road-roller",
+				"front-loader",
+				"forklift",
+				"wheelbarrow",
+				"hard-hat",
+				"safety-cone",
+				"shovel",
+				"toolbox",
+				"building-blocks",
+				"brick",
+				"sand-bucket",
+				"paint-roller",
+				"bridge"
+			],
+			"sceneIds": ["soft-builder-yard", "little-machine-park"]
+		}
+	]
+}

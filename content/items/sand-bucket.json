@@ -1,0 +1,196 @@
+{
+	"id": "sand-bucket",
+	"category": "construction-play",
+	"tags": ["construction", "sand", "bucket", "toy"],
+	"visualPrompt": "A friendly toy sand bucket for a toddler construction word-learning game, rounded yellow bucket with blue handle, simple small mound of sand visible, clear silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "sand-bucket-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the sand bucket.",
+			"successPhrase": "You found the sand bucket.",
+			"fallbackText": "That's the sand bucket.",
+			"levels": {
+				"L0": {
+					"text": "sand bucket",
+					"audioText": "sand bucket",
+					"fallbackText": "sand bucket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bucket holds sand.",
+					"audioText": "The bucket holds sand.",
+					"fallbackText": "sand bucket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "yellow sand bucket",
+					"audioText": "yellow sand bucket",
+					"fallbackText": "sand bucket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The sand bucket sits in the sand.",
+					"audioText": "The sand bucket sits in the sand.",
+					"fallbackText": "sand bucket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What holds soft sand? The bucket holds soft sand.",
+					"audioText": "What holds soft sand? The bucket holds soft sand.",
+					"fallbackText": "sand bucket",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The sand bucket sits beside the gentle sand pit.",
+					"audioText": "The sand bucket sits beside the gentle sand pit.",
+					"fallbackText": "That's the sand bucket.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/sand-bucket-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/sand-bucket-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找沙桶。",
+			"successPhrase": "你找到沙桶了。",
+			"fallbackText": "这是沙桶。",
+			"levels": {
+				"L0": {
+					"text": "沙桶",
+					"audioText": "沙桶",
+					"fallbackText": "沙桶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "沙桶装沙子。",
+					"audioText": "沙桶装沙子。",
+					"fallbackText": "沙桶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "黄色沙桶",
+					"audioText": "黄色沙桶",
+					"fallbackText": "沙桶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "沙桶放在沙子里。",
+					"audioText": "沙桶放在沙子里。",
+					"fallbackText": "沙桶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么装软软的沙子？沙桶装软软的沙子。",
+					"audioText": "什么装软软的沙子？沙桶装软软的沙子。",
+					"fallbackText": "沙桶",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "沙桶放在温柔的沙坑旁。",
+					"audioText": "沙桶放在温柔的沙坑旁。",
+					"fallbackText": "这是沙桶。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/sand-bucket-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/sand-bucket-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/sand-bucket-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/sand-bucket.png",
+				"alt": "sand bucket",
+				"generationPrompt": "A friendly toy sand bucket for a toddler construction word-learning game, rounded yellow bucket with blue handle, simple small mound of sand visible, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "sand bucket",
+					"emoji": "🪣"
+				}
+			},
+			"visualPrompt": "A friendly toy sand bucket for a toddler construction word-learning game, rounded yellow bucket with blue handle, simple small mound of sand visible, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "yellow",
+			"tags": ["construction", "sand", "bucket", "toy"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/sand-bucket-bright.png",
+				"alt": "sand bucket bright large",
+				"generationPrompt": "A friendly toy sand bucket variant for a toddler construction word-learning game, rounded orange bucket with teal handle, simple small mound of sand visible, slightly larger chunky proportions, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "sand bucket bright large",
+					"emoji": "🪣"
+				}
+			},
+			"visualPrompt": "A friendly toy sand bucket variant for a toddler construction word-learning game, rounded orange bucket with teal handle, simple small mound of sand visible, slightly larger chunky proportions, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "yellow",
+			"tags": ["construction", "sand", "bucket", "toy"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

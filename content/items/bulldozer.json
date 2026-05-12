@@ -1,0 +1,196 @@
+{
+	"id": "bulldozer",
+	"category": "construction-machine",
+	"tags": ["construction", "machine", "pushing", "sand", "tracks"],
+	"visualPrompt": "A friendly toy bulldozer for a toddler construction word-learning game, rounded yellow body, wide soft front blade, simple gray tracks, clear silhouette, no driver, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "bulldozer-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the bulldozer.",
+			"successPhrase": "You found the bulldozer.",
+			"fallbackText": "That's the bulldozer.",
+			"levels": {
+				"L0": {
+					"text": "bulldozer",
+					"audioText": "bulldozer",
+					"fallbackText": "bulldozer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bulldozer pushes.",
+					"audioText": "The bulldozer pushes.",
+					"fallbackText": "bulldozer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "yellow bulldozer",
+					"audioText": "yellow bulldozer",
+					"fallbackText": "bulldozer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The bulldozer pushes soft sand.",
+					"audioText": "The bulldozer pushes soft sand.",
+					"fallbackText": "bulldozer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a wide blade? The bulldozer has a wide blade.",
+					"audioText": "What has a wide blade? The bulldozer has a wide blade.",
+					"fallbackText": "bulldozer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The bulldozer pushes sand slowly across the yard.",
+					"audioText": "The bulldozer pushes sand slowly across the yard.",
+					"fallbackText": "That's the bulldozer.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/bulldozer-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/bulldozer-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找推土机。",
+			"successPhrase": "你找到推土机了。",
+			"fallbackText": "这是推土机。",
+			"levels": {
+				"L0": {
+					"text": "推土机",
+					"audioText": "推土机",
+					"fallbackText": "推土机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "推土机推一推。",
+					"audioText": "推土机推一推。",
+					"fallbackText": "推土机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "黄色推土机",
+					"audioText": "黄色推土机",
+					"fallbackText": "推土机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "推土机轻轻推沙子。",
+					"audioText": "推土机轻轻推沙子。",
+					"fallbackText": "推土机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有宽宽的铲板？推土机有宽宽的铲板。",
+					"audioText": "谁有宽宽的铲板？推土机有宽宽的铲板。",
+					"fallbackText": "推土机",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "推土机慢慢把沙子推过去。",
+					"audioText": "推土机慢慢把沙子推过去。",
+					"fallbackText": "这是推土机。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bulldozer-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/bulldozer-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/bulldozer-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/bulldozer.png",
+				"alt": "bulldozer",
+				"generationPrompt": "A friendly toy bulldozer for a toddler construction word-learning game, rounded yellow body, wide soft front blade, simple gray tracks, clear silhouette, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "bulldozer",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy bulldozer for a toddler construction word-learning game, rounded yellow body, wide soft front blade, simple gray tracks, clear silhouette, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "yellow",
+			"tags": ["construction", "machine", "pushing", "sand", "tracks"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/bulldozer-bright.png",
+				"alt": "bulldozer bright large",
+				"generationPrompt": "A friendly toy bulldozer variant for a toddler construction word-learning game, rounded bright yellow body with soft orange accents, wide chunky front blade, simple gray tracks, slightly larger proportions, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "bulldozer bright large",
+					"emoji": "🚜"
+				}
+			},
+			"visualPrompt": "A friendly toy bulldozer variant for a toddler construction word-learning game, rounded bright yellow body with soft orange accents, wide chunky front blade, simple gray tracks, slightly larger proportions, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "yellow",
+			"tags": ["construction", "machine", "pushing", "sand", "tracks"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

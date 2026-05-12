@@ -1,0 +1,196 @@
+{
+	"id": "brick",
+	"category": "construction-play",
+	"tags": ["construction", "brick", "block", "stacking"],
+	"visualPrompt": "A friendly toy brick for a toddler construction word-learning game, single rounded red-orange brick with soft corners and simple holes, clear silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "brick-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the brick.",
+			"successPhrase": "You found the brick.",
+			"fallbackText": "That's the brick.",
+			"levels": {
+				"L0": {
+					"text": "brick",
+					"audioText": "brick",
+					"fallbackText": "brick",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The brick stacks.",
+					"audioText": "The brick stacks.",
+					"fallbackText": "brick",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "orange brick",
+					"audioText": "orange brick",
+					"fallbackText": "brick",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The brick sits with the blocks.",
+					"audioText": "The brick sits with the blocks.",
+					"fallbackText": "brick",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What is a small block? The brick is a small block.",
+					"audioText": "What is a small block? The brick is a small block.",
+					"fallbackText": "brick",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The brick waits beside the building blocks.",
+					"audioText": "The brick waits beside the building blocks.",
+					"fallbackText": "That's the brick.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/brick-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/brick-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找砖块。",
+			"successPhrase": "你找到砖块了。",
+			"fallbackText": "这是砖块。",
+			"levels": {
+				"L0": {
+					"text": "砖块",
+					"audioText": "砖块",
+					"fallbackText": "砖块",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "砖块叠一叠。",
+					"audioText": "砖块叠一叠。",
+					"fallbackText": "砖块",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "橙色砖块",
+					"audioText": "橙色砖块",
+					"fallbackText": "砖块",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "砖块和积木在一起。",
+					"audioText": "砖块和积木在一起。",
+					"fallbackText": "砖块",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么是小方块？砖块是小方块。",
+					"audioText": "什么是小方块？砖块是小方块。",
+					"fallbackText": "砖块",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "砖块放在积木旁边。",
+					"audioText": "砖块放在积木旁边。",
+					"fallbackText": "这是砖块。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/brick-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/brick-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/brick-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/brick.png",
+				"alt": "brick",
+				"generationPrompt": "A friendly toy brick for a toddler construction word-learning game, single rounded red-orange brick with soft corners and simple holes, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "brick",
+					"emoji": "🧱"
+				}
+			},
+			"visualPrompt": "A friendly toy brick for a toddler construction word-learning game, single rounded red-orange brick with soft corners and simple holes, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "orange",
+			"tags": ["construction", "brick", "block", "stacking"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/brick-bright.png",
+				"alt": "brick bright large",
+				"generationPrompt": "A friendly toy brick variant for a toddler construction word-learning game, rounded warm yellow-orange brick with soft corners and simple holes, slightly larger chunky proportions, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "brick bright large",
+					"emoji": "🧱"
+				}
+			},
+			"visualPrompt": "A friendly toy brick variant for a toddler construction word-learning game, rounded warm yellow-orange brick with soft corners and simple holes, slightly larger chunky proportions, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "orange",
+			"tags": ["construction", "brick", "block", "stacking"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

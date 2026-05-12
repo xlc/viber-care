@@ -1,0 +1,196 @@
+{
+	"id": "paint-roller",
+	"category": "construction-tool",
+	"tags": ["construction", "tool", "paint", "mat"],
+	"visualPrompt": "A friendly toy paint roller for a toddler construction word-learning game, rounded blue roller head, short yellow handle, soft safe shape, clear silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "paint-roller-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the paint roller.",
+			"successPhrase": "You found the paint roller.",
+			"fallbackText": "That's the paint roller.",
+			"levels": {
+				"L0": {
+					"text": "paint roller",
+					"audioText": "paint roller",
+					"fallbackText": "paint roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The paint roller rolls.",
+					"audioText": "The paint roller rolls.",
+					"fallbackText": "paint roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "blue paint roller",
+					"audioText": "blue paint roller",
+					"fallbackText": "paint roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The paint roller rolls softly.",
+					"audioText": "The paint roller rolls softly.",
+					"fallbackText": "paint roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What rolls paint? The paint roller rolls paint.",
+					"audioText": "What rolls paint? The paint roller rolls paint.",
+					"fallbackText": "paint roller",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The paint roller rests on the soft tool mat.",
+					"audioText": "The paint roller rests on the soft tool mat.",
+					"fallbackText": "That's the paint roller.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/paint-roller-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/paint-roller-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找滚筒刷。",
+			"successPhrase": "你找到滚筒刷了。",
+			"fallbackText": "这是滚筒刷。",
+			"levels": {
+				"L0": {
+					"text": "滚筒刷",
+					"audioText": "滚筒刷",
+					"fallbackText": "滚筒刷",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "滚筒刷滚一滚。",
+					"audioText": "滚筒刷滚一滚。",
+					"fallbackText": "滚筒刷",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "蓝色滚筒刷",
+					"audioText": "蓝色滚筒刷",
+					"fallbackText": "滚筒刷",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "滚筒刷轻轻滚。",
+					"audioText": "滚筒刷轻轻滚。",
+					"fallbackText": "滚筒刷",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么会刷一刷？滚筒刷会刷一刷。",
+					"audioText": "什么会刷一刷？滚筒刷会刷一刷。",
+					"fallbackText": "滚筒刷",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "滚筒刷放在软软的工具垫上。",
+					"audioText": "滚筒刷放在软软的工具垫上。",
+					"fallbackText": "这是滚筒刷。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/paint-roller-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/paint-roller-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/paint-roller-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/paint-roller.png",
+				"alt": "paint roller",
+				"generationPrompt": "A friendly toy paint roller for a toddler construction word-learning game, rounded blue roller head, short yellow handle, soft safe shape, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "paint roller",
+					"emoji": "🖌️"
+				}
+			},
+			"visualPrompt": "A friendly toy paint roller for a toddler construction word-learning game, rounded blue roller head, short yellow handle, soft safe shape, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "blue",
+			"tags": ["construction", "tool", "paint", "mat"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/paint-roller-bright.png",
+				"alt": "paint roller bright large",
+				"generationPrompt": "A friendly toy paint roller variant for a toddler construction word-learning game, rounded teal roller head, short orange handle, slightly larger chunky proportions, soft safe shape, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "paint roller bright large",
+					"emoji": "🖌️"
+				}
+			},
+			"visualPrompt": "A friendly toy paint roller variant for a toddler construction word-learning game, rounded teal roller head, short orange handle, slightly larger chunky proportions, soft safe shape, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "blue",
+			"tags": ["construction", "tool", "paint", "mat"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

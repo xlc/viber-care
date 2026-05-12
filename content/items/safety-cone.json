@@ -1,0 +1,196 @@
+{
+	"id": "safety-cone",
+	"category": "construction-tool",
+	"tags": ["construction", "cone", "road", "orange", "tool"],
+	"visualPrompt": "A friendly toy safety cone for a toddler construction word-learning game, rounded orange cone with soft white bands, squat chunky shape, clear silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "safety-cone-glow",
+		"animation": "glow"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the safety cone.",
+			"successPhrase": "You found the safety cone.",
+			"fallbackText": "That's the safety cone.",
+			"levels": {
+				"L0": {
+					"text": "safety cone",
+					"audioText": "safety cone",
+					"fallbackText": "safety cone",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The cone stands.",
+					"audioText": "The cone stands.",
+					"fallbackText": "safety cone",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "orange safety cone",
+					"audioText": "orange safety cone",
+					"fallbackText": "safety cone",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The safety cone stands by the road.",
+					"audioText": "The safety cone stands by the road.",
+					"fallbackText": "safety cone",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What stands by the road? The cone stands by the road.",
+					"audioText": "What stands by the road? The cone stands by the road.",
+					"fallbackText": "safety cone",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The safety cone stands quietly near the little road.",
+					"audioText": "The safety cone stands quietly near the little road.",
+					"fallbackText": "That's the safety cone.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/safety-cone-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/safety-cone-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找安全锥。",
+			"successPhrase": "你找到安全锥了。",
+			"fallbackText": "这是安全锥。",
+			"levels": {
+				"L0": {
+					"text": "安全锥",
+					"audioText": "安全锥",
+					"fallbackText": "安全锥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "安全锥站一站。",
+					"audioText": "安全锥站一站。",
+					"fallbackText": "安全锥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "橙色安全锥",
+					"audioText": "橙色安全锥",
+					"fallbackText": "安全锥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "安全锥站在小路旁。",
+					"audioText": "安全锥站在小路旁。",
+					"fallbackText": "安全锥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁站在小路旁？安全锥站在小路旁。",
+					"audioText": "谁站在小路旁？安全锥站在小路旁。",
+					"fallbackText": "安全锥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "安全锥安静地站在小路旁。",
+					"audioText": "安全锥安静地站在小路旁。",
+					"fallbackText": "这是安全锥。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/safety-cone-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/safety-cone-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/safety-cone-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/safety-cone.png",
+				"alt": "safety cone",
+				"generationPrompt": "A friendly toy safety cone for a toddler construction word-learning game, rounded orange cone with soft white bands, squat chunky shape, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "safety cone",
+					"emoji": "🔶"
+				}
+			},
+			"visualPrompt": "A friendly toy safety cone for a toddler construction word-learning game, rounded orange cone with soft white bands, squat chunky shape, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "orange",
+			"tags": ["construction", "cone", "road", "orange", "tool"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/safety-cone-bright.png",
+				"alt": "safety cone bright large",
+				"generationPrompt": "A friendly toy safety cone variant for a toddler construction word-learning game, rounded bright orange cone with soft cream bands, wider chunky base, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "safety cone bright large",
+					"emoji": "🔶"
+				}
+			},
+			"visualPrompt": "A friendly toy safety cone variant for a toddler construction word-learning game, rounded bright orange cone with soft cream bands, wider chunky base, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "orange",
+			"tags": ["construction", "cone", "road", "orange", "tool"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

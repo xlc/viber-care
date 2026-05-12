@@ -2,7 +2,7 @@
 
 Word Garden is a gentle bilingual word-learning game for toddlers. It is built around looking, listening, tapping, dragging, and naming familiar objects in calm illustrated scenes. The game should feel like a soft digital toy: there are no scores, timers, punishments, ads, purchases, or harsh failure states.
 
-The current game includes 8 content packs, 159 learning items, 31 scenes, and 22 smaller selectable sets. Every learning item supports English and Simplified Chinese.
+The current game includes 9 content packs, 177 learning items, 33 scenes, and 23 smaller selectable sets. Every learning item supports English and Simplified Chinese.
 
 Math Play is now the fifth mode. It teaches early quantity, matching, and sorting through action with the same static packs and gentle scene style. A toddler can put one apple in a basket, give a bunny two carrots, match dots to object groups, sort objects by color, and hear natural English and Simplified Chinese counting phrases.
 
@@ -252,7 +252,7 @@ The pack is focused on recognition, letter naming, and gentle repetition rather 
 
 ### Transportation
 
-Transportation uses Gentle Transit Park and Soft Road scenes. Each scene shows 8 to 10 vehicles from a group of 15.
+Transportation contains 21 vehicle words across 4 focused sets. The denser road scenes show 8 to 10 vehicles at a time, while the smaller rail, water, and sky scenes stay calmer with fewer visible objects.
 
 Learning items:
 
@@ -271,8 +271,41 @@ Learning items:
 - motorcycle / 摩托车
 - tram / 有轨电车
 - rocket / 火箭
+- delivery van / 送货车
+- garbage truck / 垃圾车
+- ferry / 渡轮
+- hot air balloon / 热气球
+- subway / 地铁
+- wagon / 小推车
 
-Vehicles are placed by type: cars and buses on roads, trains and trams near tracks, boats near water, and flying vehicles in the sky.
+Vehicles are placed by type: cars and buses on roads, trains and trams near tracks, boats and ferries near water, and flying vehicles in the sky.
+
+### Construction Builders
+
+Construction Builders introduces 18 gentle building-yard words in two calm scenes: Soft Builder Yard and Little Machine Park. Each scene shows 8 to 10 objects from a larger group so the play space feels full but not crowded.
+
+Learning items:
+
+- excavator / 挖掘机
+- bulldozer / 推土机
+- dump truck / 翻斗车
+- crane / 起重机
+- cement mixer / 搅拌车
+- road roller / 压路机
+- front loader / 装载机
+- forklift / 叉车
+- wheelbarrow / 手推车
+- hard hat / 安全帽
+- safety cone / 安全锥
+- shovel / 铲子
+- toolbox / 工具箱
+- building blocks / 积木
+- brick / 砖块
+- sand bucket / 沙桶
+- paint roller / 滚筒刷
+- bridge / 小桥
+
+The pack is framed as pretend construction play for toddlers. Machines scoop, roll, lift, push, and carry slowly; tools sit on soft mats or in the sand; blocks and bridges stay in building areas. It avoids danger language and keeps the visuals toy-like, friendly, and calm.
 
 ## Math Play Content Model
 

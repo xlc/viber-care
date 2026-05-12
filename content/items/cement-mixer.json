@@ -1,0 +1,196 @@
+{
+	"id": "cement-mixer",
+	"category": "construction-machine",
+	"tags": ["construction", "machine", "truck", "road", "wheels"],
+	"visualPrompt": "A friendly toy cement mixer truck for a toddler construction word-learning game, rounded yellow cab, soft blue mixing drum, simple wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "cement-mixer-wiggle",
+		"animation": "wiggle"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the cement mixer.",
+			"successPhrase": "You found the cement mixer.",
+			"fallbackText": "That's the cement mixer.",
+			"levels": {
+				"L0": {
+					"text": "cement mixer",
+					"audioText": "cement mixer",
+					"fallbackText": "cement mixer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The mixer turns.",
+					"audioText": "The mixer turns.",
+					"fallbackText": "cement mixer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "blue mixer drum",
+					"audioText": "blue mixer drum",
+					"fallbackText": "cement mixer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The cement mixer turns slowly.",
+					"audioText": "The cement mixer turns slowly.",
+					"fallbackText": "cement mixer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What has a round drum? The cement mixer has a round drum.",
+					"audioText": "What has a round drum? The cement mixer has a round drum.",
+					"fallbackText": "cement mixer",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The cement mixer rolls gently around the road.",
+					"audioText": "The cement mixer rolls gently around the road.",
+					"fallbackText": "That's the cement mixer.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/cement-mixer-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/cement-mixer-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找搅拌车。",
+			"successPhrase": "你找到搅拌车了。",
+			"fallbackText": "这是搅拌车。",
+			"levels": {
+				"L0": {
+					"text": "搅拌车",
+					"audioText": "搅拌车",
+					"fallbackText": "搅拌车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "搅拌车转一转。",
+					"audioText": "搅拌车转一转。",
+					"fallbackText": "搅拌车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "蓝色搅拌桶",
+					"audioText": "蓝色搅拌桶",
+					"fallbackText": "搅拌车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "搅拌车慢慢转。",
+					"audioText": "搅拌车慢慢转。",
+					"fallbackText": "搅拌车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁有圆圆的桶？搅拌车有圆圆的桶。",
+					"audioText": "谁有圆圆的桶？搅拌车有圆圆的桶。",
+					"fallbackText": "搅拌车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "搅拌车沿着小路轻轻开。",
+					"audioText": "搅拌车沿着小路轻轻开。",
+					"fallbackText": "这是搅拌车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/cement-mixer-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/cement-mixer-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/cement-mixer-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/cement-mixer.png",
+				"alt": "cement mixer",
+				"generationPrompt": "A friendly toy cement mixer truck for a toddler construction word-learning game, rounded yellow cab, soft blue mixing drum, simple wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "cement mixer",
+					"emoji": "🚚"
+				}
+			},
+			"visualPrompt": "A friendly toy cement mixer truck for a toddler construction word-learning game, rounded yellow cab, soft blue mixing drum, simple wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "blue",
+			"tags": ["construction", "machine", "truck", "road", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/cement-mixer-bright.png",
+				"alt": "cement mixer bright large",
+				"generationPrompt": "A friendly toy cement mixer truck variant for a toddler construction word-learning game, rounded bright orange cab, cheerful blue mixing drum, chunky wheels, slightly larger proportions, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "cement mixer bright large",
+					"emoji": "🚚"
+				}
+			},
+			"visualPrompt": "A friendly toy cement mixer truck variant for a toddler construction word-learning game, rounded bright orange cab, cheerful blue mixing drum, chunky wheels, slightly larger proportions, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "blue",
+			"tags": ["construction", "machine", "truck", "road", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

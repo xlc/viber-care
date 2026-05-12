@@ -1,0 +1,196 @@
+{
+	"id": "toolbox",
+	"category": "construction-tool",
+	"tags": ["construction", "tool", "box", "mat"],
+	"visualPrompt": "A friendly toy toolbox for a toddler construction word-learning game, rounded red box, chunky handle, simple latch shapes, clear silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "toolbox-bob",
+		"animation": "bob"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the toolbox.",
+			"successPhrase": "You found the toolbox.",
+			"fallbackText": "That's the toolbox.",
+			"levels": {
+				"L0": {
+					"text": "toolbox",
+					"audioText": "toolbox",
+					"fallbackText": "toolbox",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The toolbox opens.",
+					"audioText": "The toolbox opens.",
+					"fallbackText": "toolbox",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "red toolbox",
+					"audioText": "red toolbox",
+					"fallbackText": "toolbox",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The toolbox sits on the mat.",
+					"audioText": "The toolbox sits on the mat.",
+					"fallbackText": "toolbox",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What holds little tools? The toolbox holds little tools.",
+					"audioText": "What holds little tools? The toolbox holds little tools.",
+					"fallbackText": "toolbox",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The toolbox waits on the soft blue mat.",
+					"audioText": "The toolbox waits on the soft blue mat.",
+					"fallbackText": "That's the toolbox.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/toolbox-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/toolbox-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找工具箱。",
+			"successPhrase": "你找到工具箱了。",
+			"fallbackText": "这是工具箱。",
+			"levels": {
+				"L0": {
+					"text": "工具箱",
+					"audioText": "工具箱",
+					"fallbackText": "工具箱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "工具箱放一放。",
+					"audioText": "工具箱放一放。",
+					"fallbackText": "工具箱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "红色工具箱",
+					"audioText": "红色工具箱",
+					"fallbackText": "工具箱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "工具箱放在垫子上。",
+					"audioText": "工具箱放在垫子上。",
+					"fallbackText": "工具箱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么装小工具？工具箱装小工具。",
+					"audioText": "什么装小工具？工具箱装小工具。",
+					"fallbackText": "工具箱",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "工具箱安静地放在蓝色软垫上。",
+					"audioText": "工具箱安静地放在蓝色软垫上。",
+					"fallbackText": "这是工具箱。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/toolbox-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/toolbox-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/toolbox-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/toolbox.png",
+				"alt": "toolbox",
+				"generationPrompt": "A friendly toy toolbox for a toddler construction word-learning game, rounded red box, chunky handle, simple latch shapes, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "toolbox",
+					"emoji": "🧰"
+				}
+			},
+			"visualPrompt": "A friendly toy toolbox for a toddler construction word-learning game, rounded red box, chunky handle, simple latch shapes, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "red",
+			"tags": ["construction", "tool", "box", "mat"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/toolbox-bright.png",
+				"alt": "toolbox bright large",
+				"generationPrompt": "A friendly toy toolbox variant for a toddler construction word-learning game, rounded blue box, chunky yellow handle, simple latch shapes, slightly larger proportions, clear silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "toolbox bright large",
+					"emoji": "🧰"
+				}
+			},
+			"visualPrompt": "A friendly toy toolbox variant for a toddler construction word-learning game, rounded blue box, chunky yellow handle, simple latch shapes, slightly larger proportions, clear silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "red",
+			"tags": ["construction", "tool", "box", "mat"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

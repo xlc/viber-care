@@ -1,0 +1,196 @@
+{
+	"id": "dump-truck",
+	"category": "construction-machine",
+	"tags": ["construction", "machine", "truck", "road", "wheels"],
+	"visualPrompt": "A friendly toy dump truck for a toddler construction word-learning game, rounded yellow cab and orange dump bed, soft black wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "dump-truck-bounce",
+		"animation": "bounce"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the dump truck.",
+			"successPhrase": "You found the dump truck.",
+			"fallbackText": "That's the dump truck.",
+			"levels": {
+				"L0": {
+					"text": "dump truck",
+					"audioText": "dump truck",
+					"fallbackText": "dump truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The dump truck carries.",
+					"audioText": "The dump truck carries.",
+					"fallbackText": "dump truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "orange dump truck",
+					"audioText": "orange dump truck",
+					"fallbackText": "dump truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The dump truck carries blocks.",
+					"audioText": "The dump truck carries blocks.",
+					"fallbackText": "dump truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What carries blocks? The dump truck carries blocks.",
+					"audioText": "What carries blocks? The dump truck carries blocks.",
+					"fallbackText": "dump truck",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The dump truck rolls slowly through the builder yard.",
+					"audioText": "The dump truck rolls slowly through the builder yard.",
+					"fallbackText": "That's the dump truck.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/dump-truck-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/dump-truck-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找翻斗车。",
+			"successPhrase": "你找到翻斗车了。",
+			"fallbackText": "这是翻斗车。",
+			"levels": {
+				"L0": {
+					"text": "翻斗车",
+					"audioText": "翻斗车",
+					"fallbackText": "翻斗车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "翻斗车运一运。",
+					"audioText": "翻斗车运一运。",
+					"fallbackText": "翻斗车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "橙色翻斗车",
+					"audioText": "橙色翻斗车",
+					"fallbackText": "翻斗车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "翻斗车运积木。",
+					"audioText": "翻斗车运积木。",
+					"fallbackText": "翻斗车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "谁会运积木？翻斗车会运积木。",
+					"audioText": "谁会运积木？翻斗车会运积木。",
+					"fallbackText": "翻斗车",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "翻斗车慢慢开过工程小院。",
+					"audioText": "翻斗车慢慢开过工程小院。",
+					"fallbackText": "这是翻斗车。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/dump-truck-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/dump-truck-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/dump-truck-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/dump-truck.png",
+				"alt": "dump truck",
+				"generationPrompt": "A friendly toy dump truck for a toddler construction word-learning game, rounded yellow cab and orange dump bed, soft black wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "dump truck",
+					"emoji": "🚚"
+				}
+			},
+			"visualPrompt": "A friendly toy dump truck for a toddler construction word-learning game, rounded yellow cab and orange dump bed, soft black wheels, clear silhouette, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "orange",
+			"tags": ["construction", "machine", "truck", "road", "wheels"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/dump-truck-bright.png",
+				"alt": "dump truck bright large",
+				"generationPrompt": "A friendly toy dump truck variant for a toddler construction word-learning game, rounded bright orange bed with yellow cab, soft black wheels, slightly larger chunky proportions, no driver, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "dump truck bright large",
+					"emoji": "🚚"
+				}
+			},
+			"visualPrompt": "A friendly toy dump truck variant for a toddler construction word-learning game, rounded bright orange bed with yellow cab, soft black wheels, slightly larger chunky proportions, no driver, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "orange",
+			"tags": ["construction", "machine", "truck", "road", "wheels"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}

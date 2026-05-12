@@ -1,0 +1,196 @@
+{
+	"id": "bridge",
+	"category": "construction-play",
+	"tags": ["construction", "bridge", "blocks", "road"],
+	"visualPrompt": "A friendly small toy bridge for a toddler construction word-learning game, rounded tan arch bridge with soft rail shape, simple sturdy silhouette, no text, no logos, transparent background.",
+	"interaction": {
+		"id": "bridge-sway",
+		"animation": "sway"
+	},
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the bridge.",
+			"successPhrase": "You found the bridge.",
+			"fallbackText": "That's the bridge.",
+			"levels": {
+				"L0": {
+					"text": "bridge",
+					"audioText": "bridge",
+					"fallbackText": "bridge",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The bridge goes over.",
+					"audioText": "The bridge goes over.",
+					"fallbackText": "bridge",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "little bridge",
+					"audioText": "little bridge",
+					"fallbackText": "bridge",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The little bridge arches over the path.",
+					"audioText": "The little bridge arches over the path.",
+					"fallbackText": "bridge",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "What goes over the path? The bridge goes over the path.",
+					"audioText": "What goes over the path? The bridge goes over the path.",
+					"fallbackText": "bridge",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The little bridge sits near the building blocks.",
+					"audioText": "The little bridge sits near the building blocks.",
+					"fallbackText": "That's the bridge.",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/bridge-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/bridge-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找小桥。",
+			"successPhrase": "你找到小桥了。",
+			"fallbackText": "这是小桥。",
+			"levels": {
+				"L0": {
+					"text": "小桥",
+					"audioText": "小桥",
+					"fallbackText": "小桥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "小桥跨过去。",
+					"audioText": "小桥跨过去。",
+					"fallbackText": "小桥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "小小的桥",
+					"audioText": "小小的桥",
+					"fallbackText": "小桥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "小桥跨过小路。",
+					"audioText": "小桥跨过小路。",
+					"fallbackText": "小桥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "什么跨过小路？小桥跨过小路。",
+					"audioText": "什么跨过小路？小桥跨过小路。",
+					"fallbackText": "小桥",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "小桥放在积木旁边。",
+					"audioText": "小桥放在积木旁边。",
+					"fallbackText": "这是小桥。",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/construction-builders/audio/bridge-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/bridge-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/construction-builders/audio/bridge-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/bridge.png",
+				"alt": "bridge",
+				"generationPrompt": "A friendly small toy bridge for a toddler construction word-learning game, rounded tan arch bridge with soft rail shape, simple sturdy silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "bridge",
+					"emoji": "🌉"
+				}
+			},
+			"visualPrompt": "A friendly small toy bridge for a toddler construction word-learning game, rounded tan arch bridge with soft rail shape, simple sturdy silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"color": "tan",
+			"tags": ["construction", "bridge", "blocks", "road"],
+			"size": "medium",
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/construction-builders/bridge-bright.png",
+				"alt": "bridge bright large",
+				"generationPrompt": "A friendly small toy bridge variant for a toddler construction word-learning game, rounded soft blue and tan arch bridge with simple rail shape, slightly larger chunky proportions, sturdy silhouette, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "bridge bright large",
+					"emoji": "🌉"
+				}
+			},
+			"visualPrompt": "A friendly small toy bridge variant for a toddler construction word-learning game, rounded soft blue and tan arch bridge with simple rail shape, slightly larger chunky proportions, sturdy silhouette, no text, no logos, transparent background.",
+			"scaleMultiplier": 1.12,
+			"color": "tan",
+			"tags": ["construction", "bridge", "blocks", "road"],
+			"size": "large",
+			"style": "bright-large"
+		}
+	]
+}
