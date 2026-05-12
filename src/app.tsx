@@ -1519,18 +1519,17 @@ export function App() {
 			return
 		}
 
-		const boundedIndex = Math.max(
-			0,
-			Math.min(nextSceneIndex, activeScenes.length - 1),
-		)
-		if (boundedIndex === normalizedSceneIndex) {
+		const wrappedIndex =
+			((nextSceneIndex % activeScenes.length) + activeScenes.length) %
+			activeScenes.length
+		if (wrappedIndex === normalizedSceneIndex) {
 			return
 		}
 
 		clearPuzzleResetTimeout()
 		shouldSpeakPromptRef.current = settings.mode === 'find'
 		setLayoutSeed(createSceneLayoutSeed())
-		setSceneIndex(boundedIndex)
+		setSceneIndex(wrappedIndex)
 	}
 
 	function handleObjectTap(object: ObjectConcept) {
@@ -1880,7 +1879,6 @@ export function App() {
 								className="icon-button"
 								aria-label="Previous scene"
 								data-testid="scene-previous"
-								disabled={normalizedSceneIndex === 0}
 								onClick={() => selectScene(normalizedSceneIndex - 1)}
 							>
 								<Icon name="previous" />
@@ -1893,7 +1891,6 @@ export function App() {
 								className="icon-button"
 								aria-label="Next scene"
 								data-testid="scene-next"
-								disabled={normalizedSceneIndex === activeScenes.length - 1}
 								onClick={() => selectScene(normalizedSceneIndex + 1)}
 							>
 								<Icon name="next" />

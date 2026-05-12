@@ -786,15 +786,34 @@ test('settings panel can switch to numbers and English alphabet packs', async ({
 	)
 })
 
-test('scene navigation shows another randomized scene', async ({ page }) => {
+test('scene navigation cycles through available scenes', async ({ page }) => {
 	await page.goto('/')
 
+	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
 	await expectObjectCountBetween(page, 8, 10)
+	await expect(page.getByTestId('scene-previous')).toBeEnabled()
+	await expect(page.getByTestId('scene-next')).toBeEnabled()
+
+	await page.getByTestId('scene-previous').click()
+
+	await expect(page.getByTestId('scene-title')).toContainText('Pond Garden')
+	await expectObjectCountBetween(page, 8, 10)
+
+	await page.getByTestId('scene-next').click()
+
+	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
+	await expectObjectCountBetween(page, 8, 10)
+
 	await page.getByTestId('scene-next').click()
 
 	await expect(page.getByTestId('scene-title')).toContainText('Pond Garden')
 	await expectObjectCountBetween(page, 8, 10)
-	await expect(page.getByTestId('scene-previous')).toBeEnabled()
+	await expect(page.getByTestId('scene-next')).toBeEnabled()
+
+	await page.getByTestId('scene-next').click()
+
+	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
+	await expectObjectCountBetween(page, 8, 10)
 })
 
 test('runtime makes no calls to AI endpoints', async ({ page }) => {
