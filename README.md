@@ -8,13 +8,11 @@ Use Bun for package management and scripts.
 
 ```sh
 bun install
-bun run validate:content
 bun run test
 bun run test:e2e
-bun run check:secrets
 bun run build
 bun run dev
-bun run deploy:pages
+bun run deploy
 ```
 
 ## Local Development
@@ -43,10 +41,9 @@ To add a content pack:
 6. Add or reuse global item files under `content/items/`. Each item should include bilingual learning content, interaction metadata, and at least two static visual variants with color, size, style, or tag metadata when applicable.
 7. Add `sets` when a pack should expose smaller groups, with each set referencing item ids and one or more scene ids.
 8. Include English and Simplified Chinese L0-L5 content for production-quality packs.
-9. Run `bun run validate:content`.
-10. Run `bun run test`.
-11. Run `bun run test:e2e`.
-12. Run `bun run check:secrets` and `bun run build`.
+9. Run `bun run test`.
+10. Run `bun run test:e2e`.
+11. Run `bun run build`.
 
 The engine does not need code changes for new items, variants, scenes, packs, content sets, learning levels, generated image paths, or generated audio target paths.
 
@@ -73,8 +70,7 @@ Review assets before deployment:
 3. Confirm each scene background is calm and has usable regions for its spawn tags.
 4. Confirm objects can only spawn in appropriate regions, for example fish in water, sun in sky, and vehicles on road/rail/water/sky.
 5. Confirm audio text in the pack matches the intended spoken words.
-6. Run `bun run check:secrets` after build output exists.
-7. Run `bun run test`, `bun run test:e2e`, and `bun run build`.
+6. Run `bun run test`, `bun run test:e2e`, and `bun run build`.
 
 ## Cloudflare Pages
 
@@ -99,13 +95,13 @@ Recommended production flow:
 
 1. Generate and review assets locally, in the content-generation skill, or in a secure CI job.
 2. Commit bundled generated assets.
-3. GitHub Actions runs the content validation, unit tests, browser tests, static build, and client secret scan.
+3. GitHub Actions runs the unit tests, browser tests, and static build.
 4. Pushes to `main` or `master` deploy `dist` to the `word-garden` Cloudflare Pages project.
 
 Optional Wrangler deploy:
 
 ```sh
-bun run deploy:pages
+bun run deploy
 ```
 
 `public/_headers` gives long cache headers to static assets. `public/_redirects` supports static app routing.

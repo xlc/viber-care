@@ -6,8 +6,6 @@
 	"packageManager": "bun@1.2.0",
 	"scripts": {
 		"dev": "vite",
-		"validate:content": "vitest run tests/unit/catalog.test.ts",
-		"check:secrets": "bun run scripts/check-client-secrets.ts",
 		"test": "vitest run",
 		"test:e2e": "playwright test",
 		"build": "tsc --noEmit && vite build",

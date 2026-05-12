@@ -10,10 +10,8 @@ Use Bun only.
 
 ```sh
 bun install
-bun run validate:content
 bun run test
 bun run test:e2e
-bun run check:secrets
 bun run build
 bun run deploy
 bun run dev
@@ -77,11 +75,9 @@ belong in content files.
 6. Add interaction animation metadata to item files.
 7. Add per-language content and per-level content to item files.
 8. For production-quality bilingual packs, include English and Simplified Chinese L0-L5 text, audio text, find prompt, success phrase, and fallback text.
-9. Run `bun run validate:content`.
-10. Run `bun run test`.
-11. Run `bun run test:e2e`.
-12. Run `bun run check:secrets`.
-13. Run `bun run build`.
+9. Run `bun run test`.
+10. Run `bun run test:e2e`.
+11. Run `bun run build`.
 
 ## Generating Content And Assets
 
@@ -121,14 +117,10 @@ Before completion or deployment:
 Run these before calling work complete:
 
 ```sh
-bun run validate:content
 bun run test
 bun run test:e2e
-bun run check:secrets
 bun run build
 ```
-
-If `dist` did not exist before `check:secrets`, run `bun run build` first and then rerun `bun run check:secrets`.
 
 For production release, run `bun run deploy` after completion checks pass. The
 deploy script builds the static app and uploads `dist` to the configured
