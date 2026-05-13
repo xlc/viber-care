@@ -37,8 +37,19 @@ committed source content directly.
 - Use the `imagegen` skill for image generation. Do not substitute hand-coded
   SVGs, script-only placeholders, or deterministic drawing code when the task
   calls for generated image assets.
+- When generating more than one item/object image, generate art in batches:
+  place multiple objects or variants in one imagegen output sheet, then split
+  that sheet into individual committed assets. Do not request one image per
+  item unless the task only needs one item or the batch sheet failed quality
+  review.
+- Commit only final split and optimized item/background assets. Keep source
+  sheets in a temporary workspace or delete them after extraction unless the
+  user explicitly asks to keep source sheets.
+- Validate generated image dimensions, byte size, missing references, and
+  unreferenced files with
+  `bun .agents/skills/content-generation/scripts/validate-image-assets.ts`.
 - Keep item content bilingual for production-quality packs: English and
-  Simplified Chinese L0/L1 text, audio text, find prompt, success phrase, and
+  Simplified Chinese L0-L5 text, audio text, find prompt, success phrase, and
   fallback text.
 
 ## Content Pack Checklist
@@ -50,23 +61,25 @@ committed source content directly.
 4. Add spawn candidates with `regionTags`, anchor positions, jitter, scale
    ranges, and `visibleObjectCount`.
 5. Add or edit global item files under `content/items/` with two or more
-   variants and static image assets. Keep variant image paths under
-   `public/assets/`.
+   variants and static image assets. Generate item variants in batch sheets,
+   split them into individual files, optimize the split files, and keep variant
+   image paths under `public/assets/`.
 6. Make every scene spawn candidate reference an item included by at least one
    set in the pack.
 7. Keep item language content in item files and placement rules in pack scenes,
    not in runtime engine code.
-8. Generate or refresh static level and prompt audio:
+8. Validate generated image dimensions and byte sizes:
+   `bun .agents/skills/content-generation/scripts/validate-image-assets.ts --pack <pack-id>`.
+9. Generate or refresh static level and prompt audio:
    `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts --generate --pack <pack-id>`.
-9. Format content JSON after generation:
+10. Format content JSON after generation:
    `bunx biome format --write content/items content/packs/<pack-id>.json`.
-10. Audit static level and prompt audio:
+11. Audit static level and prompt audio:
    `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts --audit --pack <pack-id>`.
-11. New committed item and pack JSON files are imported by `src/content/catalog.ts`.
-12. Run `bun run validate:content`.
-13. Run `bun run test`.
-14. Run `bun run test:e2e`.
-15. Run `bun run check:secrets`.
+12. New committed item and pack JSON files are imported by `src/content/catalog.ts`.
+13. Run `bun run check`.
+14. Run `bun run test`.
+15. Run `bun run test:e2e`.
 16. Run `bun run build`.
 
 ## Static Asset Guidance
@@ -79,6 +92,20 @@ committed source content directly.
 - Region maps must match the actual background. Do not place fish outside water,
   sun outside sky, vehicles outside their travel area, or cards outside the
   intended card field.
+- For item/object art, prefer batch imagegen sheets with 4-12 cells per sheet.
+  Each cell should contain one object or one variant, centered, separated by
+  clear gutters, with no text, no labels, no overlapping objects, and enough
+  padding to crop safely.
+- After splitting a sheet, trim excess transparent/flat padding only enough to
+  keep a comfortable hit area, resize item assets to at most 800px on the
+  longest side, and optimize them. If the item is intended as a transparent
+  cutout, keep alpha and run the validator with `--require-item-alpha`.
+- Scene backgrounds may be generated one at a time when each scene needs a
+  distinct composition and region map. Resize backgrounds to at most 1440px on
+  the longest side and optimize them before committing.
+- Image size targets are intentionally strict: item images should stay at or
+  below 256 KiB, backgrounds at or below 768 KiB, and no image should exceed
+  1 MiB. Run the image validator before treating the asset pass as complete.
 - Audio should match the content pack text for the target language and level.
 - Audio file names should use the canonical shapes
   `/assets/generated/<pack-id>/audio/<object-id>-<language>-<level>.mp3`,
