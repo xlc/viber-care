@@ -1,0 +1,208 @@
+{
+	"id": "koala",
+	"category": "forest-animal",
+	"tags": ["animal", "forest", "tree", "canopy"],
+	"visualPrompt": "A friendly koala for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the koala.",
+			"successPhrase": "You found the koala.",
+			"fallbackText": "That is the koala.",
+			"levels": {
+				"L0": {
+					"text": "koala",
+					"audioText": "koala",
+					"fallbackText": "koala",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The koala is here.",
+					"audioText": "The koala is here.",
+					"fallbackText": "koala",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "sleepy koala",
+					"audioText": "sleepy koala",
+					"fallbackText": "koala",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The koala holds the tree gently.",
+					"audioText": "The koala holds the tree gently.",
+					"fallbackText": "koala",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the koala? Here is the koala.",
+					"audioText": "Where is the koala? Here is the koala.",
+					"fallbackText": "koala",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The koala is ready to play.",
+					"audioText": "The koala is ready to play.",
+					"fallbackText": "koala",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/koala-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/koala-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找考拉。",
+			"successPhrase": "你找到考拉了。",
+			"fallbackText": "这是考拉。",
+			"levels": {
+				"L0": {
+					"text": "考拉",
+					"audioText": "考拉",
+					"fallbackText": "考拉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "考拉在这里。",
+					"audioText": "考拉在这里。",
+					"fallbackText": "考拉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "困困的考拉",
+					"audioText": "困困的考拉",
+					"fallbackText": "考拉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "考拉轻轻地抱着树。",
+					"audioText": "考拉轻轻地抱着树。",
+					"fallbackText": "考拉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "考拉在哪里？考拉在这里。",
+					"audioText": "考拉在哪里？考拉在这里。",
+					"fallbackText": "考拉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "考拉准备玩了。",
+					"audioText": "考拉准备玩了。",
+					"fallbackText": "考拉",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/koala-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/koala-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/koala-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/koala.png",
+				"alt": "koala",
+				"generationPrompt": "A friendly koala for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "koala"
+				}
+			},
+			"visualPrompt": "A friendly koala for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "forest", "tree", "canopy"],
+			"size": "medium",
+			"color": "gray",
+			"colors": ["gray", "cream"],
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/koala-bright.png",
+				"alt": "koala bright large",
+				"generationPrompt": "A friendly koala for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "koala bright large"
+				}
+			},
+			"visualPrompt": "A friendly koala for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "forest", "tree", "canopy"],
+			"size": "large",
+			"color": "gray",
+			"colors": ["gray", "cream"],
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "koala-sway",
+		"animation": "sway"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "more-less", "spatial"],
+		"colors": ["gray", "cream"],
+		"sceneZones": ["forest", "tree", "canopy"],
+		"zhMeasureWord": "只",
+		"englishPlural": "koalas"
+	}
+}

@@ -1,0 +1,208 @@
+{
+	"id": "llama",
+	"category": "farm-animal",
+	"tags": ["animal", "farm", "grassland", "pasture"],
+	"visualPrompt": "A friendly llama for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the llama.",
+			"successPhrase": "You found the llama.",
+			"fallbackText": "That is the llama.",
+			"levels": {
+				"L0": {
+					"text": "llama",
+					"audioText": "llama",
+					"fallbackText": "llama",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The llama is here.",
+					"audioText": "The llama is here.",
+					"fallbackText": "llama",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "fluffy llama",
+					"audioText": "fluffy llama",
+					"fallbackText": "llama",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The llama stands gently.",
+					"audioText": "The llama stands gently.",
+					"fallbackText": "llama",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the llama? Here is the llama.",
+					"audioText": "Where is the llama? Here is the llama.",
+					"fallbackText": "llama",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The llama is ready to play.",
+					"audioText": "The llama is ready to play.",
+					"fallbackText": "llama",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/llama-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/llama-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找羊驼。",
+			"successPhrase": "你找到羊驼了。",
+			"fallbackText": "这是羊驼。",
+			"levels": {
+				"L0": {
+					"text": "羊驼",
+					"audioText": "羊驼",
+					"fallbackText": "羊驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "羊驼在这里。",
+					"audioText": "羊驼在这里。",
+					"fallbackText": "羊驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "毛茸茸的羊驼",
+					"audioText": "毛茸茸的羊驼",
+					"fallbackText": "羊驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "羊驼轻轻地站着。",
+					"audioText": "羊驼轻轻地站着。",
+					"fallbackText": "羊驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "羊驼在哪里？羊驼在这里。",
+					"audioText": "羊驼在哪里？羊驼在这里。",
+					"fallbackText": "羊驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "羊驼准备玩了。",
+					"audioText": "羊驼准备玩了。",
+					"fallbackText": "羊驼",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/llama-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/llama-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/llama-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/llama.png",
+				"alt": "llama",
+				"generationPrompt": "A friendly llama for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "llama"
+				}
+			},
+			"visualPrompt": "A friendly llama for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "farm", "grassland", "pasture"],
+			"size": "medium",
+			"color": "cream",
+			"colors": ["cream", "tan"],
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/llama-bright.png",
+				"alt": "llama bright large",
+				"generationPrompt": "A friendly llama for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "llama bright large"
+				}
+			},
+			"visualPrompt": "A friendly llama for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "farm", "grassland", "pasture"],
+			"size": "large",
+			"color": "cream",
+			"colors": ["cream", "tan"],
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "llama-sway",
+		"animation": "sway"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "more-less", "spatial"],
+		"colors": ["cream", "tan"],
+		"sceneZones": ["farm", "pasture", "grassland"],
+		"zhMeasureWord": "只",
+		"englishPlural": "llamas"
+	}
+}

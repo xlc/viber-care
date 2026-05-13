@@ -2,7 +2,7 @@
 
 Word Garden is a gentle bilingual word-learning game for toddlers. It is built around looking, listening, tapping, dragging, and naming familiar objects in calm illustrated scenes. The game should feel like a soft digital toy: there are no scores, timers, punishments, ads, purchases, or harsh failure states.
 
-The current game includes 9 content packs, 177 learning items, 33 scenes, and 23 smaller selectable sets. Every learning item supports English and Simplified Chinese.
+The current game includes 10 content packs, 183 learning items, 37 scenes, and 27 smaller selectable sets. Every learning item supports English and Simplified Chinese.
 
 Math Play is now the fifth mode. It teaches early quantity, matching, and sorting through action with the same static packs and gentle scene style. A toddler can put one apple in a basket, give a bunny two carrots, match dots to object groups, sort objects by color, and hear natural English and Simplified Chinese counting phrases.
 
@@ -139,17 +139,30 @@ The scenes are Fruit Basket, Root Garden, Leafy Garden, and Garden Stand. This p
 
 ### Animals
 
-Animals contains 55 animal words across 5 focused sets. Each set has two calm scenes and shows 8 to 10 animals at a time.
+Animals contains 61 animal words across 5 focused sets. Each set has two calm scenes and shows 8 to 10 animals at a time.
 
 Sets and learning items:
 
-- Ocean Animals: fish, sea turtle, dolphin, whale, crab, octopus, seahorse, starfish, jellyfish, seal, ray, lobster, clam, shrimp, squid.
-- Farm Animals: cow, pig, sheep, horse, chicken, goat, duck, rabbit, donkey, turkey.
-- Forest Animals: deer, fox, bear, squirrel, owl, hedgehog, badger, beaver, mouse, woodpecker.
-- Safari Animals: elephant, giraffe, lion, zebra, hippo, rhino, monkey, meerkat, antelope, camel.
+- Ocean Animals: fish, sea turtle, dolphin, whale, crab, octopus, seahorse, starfish, jellyfish, seal, ray, lobster, clam, shrimp, squid, penguin, otter.
+- Farm Animals: cow, pig, sheep, horse, chicken, goat, duck, rabbit, donkey, turkey, llama.
+- Forest Animals: deer, fox, bear, squirrel, owl, hedgehog, badger, beaver, mouse, woodpecker, panda, koala.
+- Safari Animals: elephant, giraffe, lion, zebra, hippo, rhino, monkey, meerkat, antelope, camel, kangaroo.
 - Garden Tiny Animals: dog, cat, frog, bird, bee, butterfly, ladybug, dragonfly, snail, caterpillar.
 
 The pack starts with Ocean Animals in Ocean Cove and Tide Pool, so children who know the earlier ocean group still land in a familiar place. The other sets move gently into pasture, forest, grassland, and garden scenes. Animals stay in places that make sense: sea animals in water or on the shore, farm animals in pasture or near the pond, forest animals on the ground or in trees, safari animals on grassland or by the waterhole, and tiny garden animals near flowers, grass, air, or pond areas.
+
+### Animal Habitats
+
+Animal Habitats gives familiar animals another way to be explored. Instead of grouping animals only by type, it groups 43 familiar animal words by where they might live, rest, fly, swim, or wander. It has 4 focused sets, each with one calm habitat scene that shows 8 to 10 animals at a time.
+
+Sets and learning items:
+
+- Water Animal Homes: whale, dolphin, sea turtle, fish, octopus, seahorse, crab, starfish, seal, ray, duck, frog.
+- Tree Animal Homes: bird, owl, woodpecker, squirrel, monkey, bee, butterfly, dragonfly, ladybug, caterpillar, snail, cat.
+- Grassland Animal Homes: elephant, giraffe, lion, zebra, hippo, rhino, antelope, camel, deer, horse, rabbit, dog.
+- Barnyard Animal Homes: cow, pig, sheep, goat, horse, chicken, duck, rabbit, donkey, turkey, dog, cat.
+
+This pack is designed for gentle comparison. A child can notice that some animals swim, some perch in trees, some stand on wide grass, and some stay close to a farmyard. The same animal may appear in more than one kind of home when that is toddler-friendly and familiar, such as ducks near water and in a barnyard.
 
 ### Dinosaurs
 

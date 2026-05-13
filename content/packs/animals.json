@@ -268,6 +268,38 @@
 						"min": 0.72,
 						"max": 0.86
 					}
+				},
+				{
+					"itemId": "penguin",
+					"x": 88,
+					"y": 82,
+					"scale": 0.8,
+					"zIndex": 9,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.74,
+						"max": 0.88
+					}
+				},
+				{
+					"itemId": "otter",
+					"x": 36,
+					"y": 74,
+					"scale": 0.72,
+					"zIndex": 8,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
 				}
 			],
 			"music": {
@@ -564,6 +596,38 @@
 						"min": 0.72,
 						"max": 0.86
 					}
+				},
+				{
+					"itemId": "penguin",
+					"x": 34,
+					"y": 82,
+					"scale": 0.8,
+					"zIndex": 9,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.74,
+						"max": 0.88
+					}
+				},
+				{
+					"itemId": "otter",
+					"x": 62,
+					"y": 74,
+					"scale": 0.72,
+					"zIndex": 8,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
 				}
 			],
 			"music": {
@@ -821,6 +885,22 @@
 						"min": 0.75,
 						"max": 0.9
 					}
+				},
+				{
+					"itemId": "llama",
+					"x": 58,
+					"y": 50,
+					"scale": 0.88,
+					"zIndex": 6,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.81,
+						"max": 0.97
+					}
 				}
 			],
 			"music": {
@@ -1048,6 +1128,22 @@
 						"min": 0.75,
 						"max": 0.9
 					}
+				},
+				{
+					"itemId": "llama",
+					"x": 50,
+					"y": 58,
+					"scale": 0.86,
+					"zIndex": 6,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
 				}
 			],
 			"music": {
@@ -1251,6 +1347,38 @@
 				{
 					"itemId": "woodpecker",
 					"x": 88,
+					"y": 34,
+					"scale": 0.58,
+					"zIndex": 8,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"itemId": "panda",
+					"x": 58,
+					"y": 82,
+					"scale": 0.82,
+					"zIndex": 8,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"itemId": "koala",
+					"x": 56,
 					"y": 34,
 					"scale": 0.58,
 					"zIndex": 8,
@@ -1490,6 +1618,38 @@
 						"min": 0.53,
 						"max": 0.64
 					}
+				},
+				{
+					"itemId": "panda",
+					"x": 62,
+					"y": 82,
+					"scale": 0.82,
+					"zIndex": 8,
+					"regionTags": ["bank"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"itemId": "koala",
+					"x": 48,
+					"y": 30,
+					"scale": 0.58,
+					"zIndex": 8,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
 				}
 			],
 			"music": {
@@ -1704,6 +1864,22 @@
 					"scaleRange": {
 						"min": 0.88,
 						"max": 1.06
+					}
+				},
+				{
+					"itemId": "kangaroo",
+					"x": 74,
+					"y": 82,
+					"scale": 0.74,
+					"zIndex": 8,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
 					}
 				}
 			],
@@ -1931,6 +2107,22 @@
 					"scaleRange": {
 						"min": 0.86,
 						"max": 1.03
+					}
+				},
+				{
+					"itemId": "kangaroo",
+					"x": 72,
+					"y": 82,
+					"scale": 0.74,
+					"zIndex": 8,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
 					}
 				}
 			],
@@ -2427,7 +2619,9 @@
 				"lobster",
 				"clam",
 				"shrimp",
-				"squid"
+				"squid",
+				"penguin",
+				"otter"
 			],
 			"sceneIds": ["ocean-cove", "tide-pool"]
 		},
@@ -2447,7 +2641,8 @@
 				"duck",
 				"rabbit",
 				"donkey",
-				"turkey"
+				"turkey",
+				"llama"
 			],
 			"sceneIds": ["farm-pasture", "barn-pond"]
 		},
@@ -2467,7 +2662,9 @@
 				"badger",
 				"beaver",
 				"mouse",
-				"woodpecker"
+				"woodpecker",
+				"panda",
+				"koala"
 			],
 			"sceneIds": ["forest-clearing", "woodland-stream"]
 		},
@@ -2487,7 +2684,8 @@
 				"monkey",
 				"meerkat",
 				"antelope",
-				"camel"
+				"camel",
+				"kangaroo"
 			],
 			"sceneIds": ["safari-grassland", "savanna-waterhole"]
 		},

@@ -1,0 +1,208 @@
+{
+	"id": "penguin",
+	"category": "ocean-animal",
+	"tags": ["animal", "ocean", "water", "shore", "cold"],
+	"visualPrompt": "A friendly penguin for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the penguin.",
+			"successPhrase": "You found the penguin.",
+			"fallbackText": "That is the penguin.",
+			"levels": {
+				"L0": {
+					"text": "penguin",
+					"audioText": "penguin",
+					"fallbackText": "penguin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The penguin is here.",
+					"audioText": "The penguin is here.",
+					"fallbackText": "penguin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "waddling penguin",
+					"audioText": "waddling penguin",
+					"fallbackText": "penguin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The penguin waddles gently.",
+					"audioText": "The penguin waddles gently.",
+					"fallbackText": "penguin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the penguin? Here is the penguin.",
+					"audioText": "Where is the penguin? Here is the penguin.",
+					"fallbackText": "penguin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The penguin is ready to play.",
+					"audioText": "The penguin is ready to play.",
+					"fallbackText": "penguin",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/penguin-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/penguin-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找企鹅。",
+			"successPhrase": "你找到企鹅了。",
+			"fallbackText": "这是企鹅。",
+			"levels": {
+				"L0": {
+					"text": "企鹅",
+					"audioText": "企鹅",
+					"fallbackText": "企鹅",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "企鹅在这里。",
+					"audioText": "企鹅在这里。",
+					"fallbackText": "企鹅",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "摇摇摆摆的企鹅",
+					"audioText": "摇摇摆摆的企鹅",
+					"fallbackText": "企鹅",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "企鹅轻轻地走。",
+					"audioText": "企鹅轻轻地走。",
+					"fallbackText": "企鹅",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "企鹅在哪里？企鹅在这里。",
+					"audioText": "企鹅在哪里？企鹅在这里。",
+					"fallbackText": "企鹅",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "企鹅准备玩了。",
+					"audioText": "企鹅准备玩了。",
+					"fallbackText": "企鹅",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/penguin-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/penguin-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/penguin-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/penguin.png",
+				"alt": "penguin",
+				"generationPrompt": "A friendly penguin for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "penguin"
+				}
+			},
+			"visualPrompt": "A friendly penguin for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "ocean", "water", "shore", "cold"],
+			"size": "medium",
+			"color": "black and white",
+			"colors": ["black", "white", "orange"],
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/penguin-bright.png",
+				"alt": "penguin bright large",
+				"generationPrompt": "A friendly penguin for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "penguin bright large"
+				}
+			},
+			"visualPrompt": "A friendly penguin for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "ocean", "water", "shore", "cold"],
+			"size": "large",
+			"color": "black and white",
+			"colors": ["black", "white", "orange"],
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "penguin-bob",
+		"animation": "bob"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "more-less", "spatial"],
+		"colors": ["black", "white", "orange"],
+		"sceneZones": ["ocean", "water", "shore"],
+		"zhMeasureWord": "只",
+		"englishPlural": "penguins"
+	}
+}

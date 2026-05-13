@@ -1,0 +1,1126 @@
+{
+	"id": "animal-habitats",
+	"version": "1.0.0",
+	"title": {
+		"en": "Animal Habitats",
+		"zh-Hans": "动物的家"
+	},
+	"languages": ["en", "zh-Hans"],
+	"defaultSceneId": "water-animal-home",
+	"scenes": [
+		{
+			"id": "water-animal-home",
+			"packId": "animal-habitats",
+			"title": {
+				"en": "Water Animal Home",
+				"zh-Hans": "水边的家"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly ocean cove with soft blue water, sandy seabed, gentle sea plants, and open space for water animals. No text, no clutter.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/ocean-animals/ocean-cove.webp",
+					"alt": "Calm ocean cove",
+					"generationPrompt": "A calm toddler-friendly ocean cove with soft blue water, sandy seabed, gentle sea plants, and open space for water animals. No text, no clutter.",
+					"placeholder": {
+						"label": "Calm ocean cove"
+					}
+				}
+			},
+			"regions": [
+				{
+					"id": "water",
+					"tags": ["water", "ocean"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 38,
+							"width": 100,
+							"height": 58
+						}
+					]
+				},
+				{
+					"id": "seabed",
+					"tags": ["seabed", "sand", "shore"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 60,
+							"width": 100,
+							"height": 36
+						}
+					]
+				},
+				{
+					"id": "shore",
+					"tags": ["shore", "ground"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 76,
+							"width": 100,
+							"height": 20
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 8,
+				"max": 10
+			},
+			"objects": [
+				{
+					"itemId": "whale",
+					"x": 15,
+					"y": 62,
+					"scale": 1.02,
+					"zIndex": 5,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.94,
+						"max": 1.12
+					}
+				},
+				{
+					"itemId": "dolphin",
+					"x": 35,
+					"y": 55,
+					"scale": 0.86,
+					"zIndex": 6,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
+				},
+				{
+					"itemId": "sea-turtle",
+					"x": 52,
+					"y": 70,
+					"scale": 0.72,
+					"zIndex": 7,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"itemId": "fish",
+					"x": 68,
+					"y": 52,
+					"scale": 0.62,
+					"zIndex": 7,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					}
+				},
+				{
+					"itemId": "octopus",
+					"x": 84,
+					"y": 75,
+					"scale": 0.68,
+					"zIndex": 8,
+					"regionTags": ["seabed"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				},
+				{
+					"itemId": "seahorse",
+					"x": 24,
+					"y": 78,
+					"scale": 0.56,
+					"zIndex": 8,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.52,
+						"max": 0.62
+					}
+				},
+				{
+					"itemId": "crab",
+					"x": 74,
+					"y": 84,
+					"scale": 0.58,
+					"zIndex": 9,
+					"regionTags": ["shore"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"itemId": "starfish",
+					"x": 45,
+					"y": 84,
+					"scale": 0.5,
+					"zIndex": 9,
+					"regionTags": ["shore"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.46,
+						"max": 0.55
+					}
+				},
+				{
+					"itemId": "seal",
+					"x": 58,
+					"y": 82,
+					"scale": 0.74,
+					"zIndex": 8,
+					"regionTags": ["shore"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.68,
+						"max": 0.81
+					}
+				},
+				{
+					"itemId": "ray",
+					"x": 88,
+					"y": 60,
+					"scale": 0.76,
+					"zIndex": 7,
+					"regionTags": ["water"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
+				},
+				{
+					"itemId": "duck",
+					"x": 18,
+					"y": 82,
+					"scale": 0.64,
+					"zIndex": 9,
+					"regionTags": ["shore"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.59,
+						"max": 0.7
+					}
+				},
+				{
+					"itemId": "frog",
+					"x": 34,
+					"y": 84,
+					"scale": 0.54,
+					"zIndex": 9,
+					"regionTags": ["shore"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.5,
+						"max": 0.59
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		},
+		{
+			"id": "tree-animal-home",
+			"packId": "animal-habitats",
+			"title": {
+				"en": "Tree Animal Home",
+				"zh-Hans": "树上的家"
+			},
+			"background": {
+				"prompt": "A gentle forest clearing with open grass, leafy canopy, tree trunks, stones, and shrubs. No text.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/animals/forest-clearing.png",
+					"alt": "Gentle forest clearing",
+					"generationPrompt": "A gentle forest clearing with open grass, leafy canopy, tree trunks, stones, and shrubs. No text.",
+					"placeholder": {
+						"label": "Gentle forest clearing"
+					}
+				}
+			},
+			"regions": [
+				{
+					"id": "canopy",
+					"tags": ["canopy", "tree", "air"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 0,
+							"width": 100,
+							"height": 48
+						}
+					]
+				},
+				{
+					"id": "ground",
+					"tags": ["ground", "grass", "forest"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 42,
+							"width": 100,
+							"height": 54
+						}
+					]
+				},
+				{
+					"id": "flowers",
+					"tags": ["flower", "flowers", "garden"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 58,
+							"width": 100,
+							"height": 36
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 8,
+				"max": 10
+			},
+			"objects": [
+				{
+					"itemId": "bird",
+					"x": 24,
+					"y": 24,
+					"scale": 0.58,
+					"zIndex": 8,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"itemId": "owl",
+					"x": 70,
+					"y": 26,
+					"scale": 0.62,
+					"zIndex": 8,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					}
+				},
+				{
+					"itemId": "woodpecker",
+					"x": 88,
+					"y": 34,
+					"scale": 0.58,
+					"zIndex": 8,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"itemId": "squirrel",
+					"x": 18,
+					"y": 38,
+					"scale": 0.58,
+					"zIndex": 8,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"itemId": "monkey",
+					"x": 52,
+					"y": 34,
+					"scale": 0.62,
+					"zIndex": 8,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					}
+				},
+				{
+					"itemId": "bee",
+					"x": 34,
+					"y": 62,
+					"scale": 0.46,
+					"zIndex": 9,
+					"regionTags": ["flowers"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.42,
+						"max": 0.51
+					}
+				},
+				{
+					"itemId": "butterfly",
+					"x": 44,
+					"y": 32,
+					"scale": 0.52,
+					"zIndex": 9,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.48,
+						"max": 0.57
+					}
+				},
+				{
+					"itemId": "dragonfly",
+					"x": 61,
+					"y": 35,
+					"scale": 0.5,
+					"zIndex": 9,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.46,
+						"max": 0.55
+					}
+				},
+				{
+					"itemId": "ladybug",
+					"x": 76,
+					"y": 72,
+					"scale": 0.44,
+					"zIndex": 9,
+					"regionTags": ["flowers"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.4,
+						"max": 0.48
+					}
+				},
+				{
+					"itemId": "caterpillar",
+					"x": 26,
+					"y": 82,
+					"scale": 0.46,
+					"zIndex": 9,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.42,
+						"max": 0.51
+					}
+				},
+				{
+					"itemId": "snail",
+					"x": 62,
+					"y": 84,
+					"scale": 0.46,
+					"zIndex": 9,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.42,
+						"max": 0.51
+					}
+				},
+				{
+					"itemId": "cat",
+					"x": 86,
+					"y": 78,
+					"scale": 0.68,
+					"zIndex": 8,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		},
+		{
+			"id": "grassland-animal-home",
+			"packId": "animal-habitats",
+			"title": {
+				"en": "Grassland Animal Home",
+				"zh-Hans": "草地上的家"
+			},
+			"background": {
+				"prompt": "A peaceful savanna waterhole with shallow blue water, golden grass, reeds, stones, and acacia trees. No text.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/animals/savanna-waterhole.png",
+					"alt": "Peaceful savanna waterhole",
+					"generationPrompt": "A peaceful savanna waterhole with shallow blue water, golden grass, reeds, stones, and acacia trees. No text.",
+					"placeholder": {
+						"label": "Peaceful savanna waterhole"
+					}
+				}
+			},
+			"regions": [
+				{
+					"id": "grassland",
+					"tags": ["grassland", "grass", "ground"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 38,
+							"width": 100,
+							"height": 58
+						}
+					]
+				},
+				{
+					"id": "waterhole",
+					"tags": ["water", "waterhole"],
+					"rects": [
+						{
+							"x": 18,
+							"y": 55,
+							"width": 62,
+							"height": 30
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 8,
+				"max": 10
+			},
+			"objects": [
+				{
+					"itemId": "elephant",
+					"x": 14,
+					"y": 60,
+					"scale": 1.06,
+					"zIndex": 5,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.98,
+						"max": 1.17
+					}
+				},
+				{
+					"itemId": "giraffe",
+					"x": 32,
+					"y": 50,
+					"scale": 1.06,
+					"zIndex": 5,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.98,
+						"max": 1.17
+					}
+				},
+				{
+					"itemId": "lion",
+					"x": 52,
+					"y": 73,
+					"scale": 0.84,
+					"zIndex": 7,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.77,
+						"max": 0.92
+					}
+				},
+				{
+					"itemId": "zebra",
+					"x": 75,
+					"y": 62,
+					"scale": 0.86,
+					"zIndex": 6,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
+				},
+				{
+					"itemId": "hippo",
+					"x": 48,
+					"y": 70,
+					"scale": 0.94,
+					"zIndex": 8,
+					"regionTags": ["waterhole"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
+				},
+				{
+					"itemId": "rhino",
+					"x": 88,
+					"y": 74,
+					"scale": 0.96,
+					"zIndex": 7,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.88,
+						"max": 1.06
+					}
+				},
+				{
+					"itemId": "antelope",
+					"x": 64,
+					"y": 52,
+					"scale": 0.82,
+					"zIndex": 6,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"itemId": "camel",
+					"x": 90,
+					"y": 56,
+					"scale": 0.94,
+					"zIndex": 6,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.86,
+						"max": 1.03
+					}
+				},
+				{
+					"itemId": "deer",
+					"x": 22,
+					"y": 78,
+					"scale": 0.8,
+					"zIndex": 7,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.74,
+						"max": 0.88
+					}
+				},
+				{
+					"itemId": "horse",
+					"x": 38,
+					"y": 80,
+					"scale": 0.82,
+					"zIndex": 7,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"itemId": "rabbit",
+					"x": 60,
+					"y": 84,
+					"scale": 0.54,
+					"zIndex": 9,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.5,
+						"max": 0.59
+					}
+				},
+				{
+					"itemId": "dog",
+					"x": 72,
+					"y": 82,
+					"scale": 0.66,
+					"zIndex": 8,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		},
+		{
+			"id": "barnyard-animal-home",
+			"packId": "animal-habitats",
+			"title": {
+				"en": "Barnyard Animal Home",
+				"zh-Hans": "农场的家"
+			},
+			"background": {
+				"prompt": "A calm toddler-friendly sunny farmyard with open meadow, soft barnyard ground, a small chicken coop area, hay area, and a simple barn area. No text, no logos.",
+				"asset": {
+					"type": "background",
+					"path": "/assets/generated/imagegen/farm-friends/sunny-farmyard.png",
+					"alt": "Sunny farmyard",
+					"generationPrompt": "A calm toddler-friendly sunny farmyard with open meadow, soft barnyard ground, a small chicken coop area, hay area, and a simple barn area. No text, no logos.",
+					"placeholder": {
+						"label": "Sunny farmyard"
+					}
+				}
+			},
+			"regions": [
+				{
+					"id": "pasture",
+					"tags": ["grass", "pasture", "ground"],
+					"rects": [
+						{
+							"x": 0,
+							"y": 34,
+							"width": 72,
+							"height": 52
+						}
+					]
+				},
+				{
+					"id": "barnyard",
+					"tags": ["barnyard", "ground"],
+					"rects": [
+						{
+							"x": 45,
+							"y": 45,
+							"width": 55,
+							"height": 48
+						}
+					]
+				},
+				{
+					"id": "coop",
+					"tags": ["coop", "barnyard"],
+					"rects": [
+						{
+							"x": 70,
+							"y": 42,
+							"width": 30,
+							"height": 48
+						}
+					]
+				}
+			],
+			"visibleObjectCount": {
+				"min": 8,
+				"max": 10
+			},
+			"objects": [
+				{
+					"itemId": "cow",
+					"x": 18,
+					"y": 62,
+					"scale": 0.96,
+					"zIndex": 5,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.88,
+						"max": 1.06
+					}
+				},
+				{
+					"itemId": "pig",
+					"x": 54,
+					"y": 76,
+					"scale": 0.76,
+					"zIndex": 7,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
+				},
+				{
+					"itemId": "sheep",
+					"x": 34,
+					"y": 68,
+					"scale": 0.76,
+					"zIndex": 6,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
+				},
+				{
+					"itemId": "goat",
+					"x": 44,
+					"y": 82,
+					"scale": 0.7,
+					"zIndex": 8,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.64,
+						"max": 0.77
+					}
+				},
+				{
+					"itemId": "horse",
+					"x": 68,
+					"y": 62,
+					"scale": 0.88,
+					"zIndex": 6,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.81,
+						"max": 0.97
+					}
+				},
+				{
+					"itemId": "chicken",
+					"x": 82,
+					"y": 72,
+					"scale": 0.54,
+					"zIndex": 9,
+					"regionTags": ["coop"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.5,
+						"max": 0.59
+					}
+				},
+				{
+					"itemId": "duck",
+					"x": 38,
+					"y": 74,
+					"scale": 0.58,
+					"zIndex": 8,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"itemId": "rabbit",
+					"x": 20,
+					"y": 82,
+					"scale": 0.54,
+					"zIndex": 8,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.5,
+						"max": 0.59
+					}
+				},
+				{
+					"itemId": "donkey",
+					"x": 88,
+					"y": 58,
+					"scale": 0.82,
+					"zIndex": 7,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.75,
+						"max": 0.9
+					}
+				},
+				{
+					"itemId": "turkey",
+					"x": 74,
+					"y": 82,
+					"scale": 0.58,
+					"zIndex": 9,
+					"regionTags": ["coop"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"itemId": "dog",
+					"x": 60,
+					"y": 84,
+					"scale": 0.66,
+					"zIndex": 8,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"itemId": "cat",
+					"x": 92,
+					"y": 78,
+					"scale": 0.62,
+					"zIndex": 9,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					}
+				}
+			],
+			"music": {
+				"enabledByDefault": false
+			}
+		}
+	],
+	"sets": [
+		{
+			"id": "water-animal-homes",
+			"title": {
+				"en": "Water Animal Homes",
+				"zh-Hans": "水边动物的家"
+			},
+			"itemIds": [
+				"whale",
+				"dolphin",
+				"sea-turtle",
+				"fish",
+				"octopus",
+				"seahorse",
+				"crab",
+				"starfish",
+				"seal",
+				"ray",
+				"duck",
+				"frog"
+			],
+			"sceneIds": ["water-animal-home"]
+		},
+		{
+			"id": "tree-animal-homes",
+			"title": {
+				"en": "Tree Animal Homes",
+				"zh-Hans": "树上动物的家"
+			},
+			"itemIds": [
+				"bird",
+				"owl",
+				"woodpecker",
+				"squirrel",
+				"monkey",
+				"bee",
+				"butterfly",
+				"dragonfly",
+				"ladybug",
+				"caterpillar",
+				"snail",
+				"cat"
+			],
+			"sceneIds": ["tree-animal-home"]
+		},
+		{
+			"id": "grassland-animal-homes",
+			"title": {
+				"en": "Grassland Animal Homes",
+				"zh-Hans": "草地动物的家"
+			},
+			"itemIds": [
+				"elephant",
+				"giraffe",
+				"lion",
+				"zebra",
+				"hippo",
+				"rhino",
+				"antelope",
+				"camel",
+				"deer",
+				"horse",
+				"rabbit",
+				"dog"
+			],
+			"sceneIds": ["grassland-animal-home"]
+		},
+		{
+			"id": "barnyard-animal-homes",
+			"title": {
+				"en": "Barnyard Animal Homes",
+				"zh-Hans": "农场动物的家"
+			},
+			"itemIds": [
+				"cow",
+				"pig",
+				"sheep",
+				"goat",
+				"horse",
+				"chicken",
+				"duck",
+				"rabbit",
+				"donkey",
+				"turkey",
+				"dog",
+				"cat"
+			],
+			"sceneIds": ["barnyard-animal-home"]
+		}
+	]
+}
