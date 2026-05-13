@@ -8,6 +8,7 @@ import {
 
 type AudioCaptureWindow = Window & {
 	__audioPlayCount?: { count: number }
+	__audioPlaySources?: string[]
 }
 
 test.beforeEach(async ({ page }) => {
@@ -26,9 +27,19 @@ test.beforeEach(async ({ page }) => {
 				configurable: true,
 				value: audioPlayCount,
 			})
+			Object.defineProperty(window, '__audioPlaySources', {
+				configurable: true,
+				value: [],
+			})
 
-			HTMLMediaElement.prototype.play = () => {
+			HTMLMediaElement.prototype.play = function () {
 				audioPlayCount.count += 1
+				;(window as AudioCaptureWindow).__audioPlaySources?.push(
+					this.currentSrc || this.getAttribute('src') || '',
+				)
+				window.setTimeout(() => {
+					this.dispatchEvent(new Event('ended'))
+				}, 0)
 				return Promise.resolve()
 			}
 		},
@@ -76,6 +87,16 @@ async function resetAudioPlayCount(page: Page) {
 		if (captureWindow.__audioPlayCount) {
 			captureWindow.__audioPlayCount.count = 0
 		}
+		if (captureWindow.__audioPlaySources) {
+			captureWindow.__audioPlaySources.length = 0
+		}
+	})
+}
+
+async function getAudioPlaySources(page: Page) {
+	return page.evaluate(() => {
+		const captureWindow = window as AudioCaptureWindow
+		return captureWindow.__audioPlaySources ?? []
 	})
 }
 
@@ -116,15 +137,6 @@ function getPackObjectIds(packId: string) {
 	return [...itemIds]
 }
 
-async function getPuzzlePieceIds(page: Page) {
-	return page.locator('.puzzle-piece').evaluateAll((elements) =>
-		elements
-			.map((element) => element.getAttribute('data-testid') ?? '')
-			.filter((testId) => testId.startsWith('puzzle-piece-'))
-			.map((testId) => testId.replace('puzzle-piece-', '')),
-	)
-}
-
 async function getLanguageCardSize(page: Page) {
 	const box = await page.getByTestId('language-card').boundingBox()
 	if (!box) {
@@ -137,17 +149,14 @@ async function getLanguageCardSize(page: Page) {
 	}
 }
 
-async function dragPuzzlePieceToGap(
-	page: Page,
-	objectId: string,
-	targetObjectId = objectId,
-) {
-	const piece = page.getByTestId(`puzzle-piece-${objectId}`)
-	const gap = page.getByTestId(`puzzle-gap-${targetObjectId}`)
-	await expect(piece).toBeVisible()
-	await expect(piece).toHaveAttribute('draggable', 'true')
-	await expect(gap).toBeVisible()
-	await piece.dragTo(gap)
+async function expectTapTargetAtLeast(locator: Locator, minSize: number) {
+	const box = await locator.boundingBox()
+	if (!box) {
+		throw new Error('Expected tap target to have a layout box')
+	}
+
+	expect(box.width).toBeGreaterThanOrEqual(minSize)
+	expect(box.height).toBeGreaterThanOrEqual(minSize)
 }
 
 async function expectObjectCountBetween(
@@ -231,6 +240,12 @@ test('app loads', async ({ page }) => {
 
 	await expect(page).toHaveTitle('Word Garden')
 	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
+	expect(await page.locator('.mode-segment button').allTextContents()).toEqual([
+		'Explore',
+		'Find',
+		'Cards',
+		'Math Play',
+	])
 	await expectObjectCountBetween(page, 8, 10)
 	await expect(page.locator('.garden-object').first()).toHaveAttribute(
 		'data-variant-id',
@@ -255,20 +270,23 @@ test('viewport locks iOS pinch zoom', async ({ page }) => {
 	])
 })
 
-test('scene and item surfaces cannot be browser-highlighted', async ({
-	page,
-}) => {
+test('app surfaces cannot be browser-highlighted', async ({ page }) => {
 	await page.goto('/')
+
+	await expectUnhighlightable(page.locator('.app-shell'))
+	await expectUnhighlightable(page.locator('.topbar'))
+	await expectUnhighlightable(page.getByTestId('mode-explore'))
+	await expectUnhighlightable(page.getByTestId('scene-title'))
 
 	await expectObjectCountBetween(page, 8, 10)
 	await expectUnhighlightable(page.locator('.garden-stage'))
 	await expectUnhighlightable(page.locator('.garden-object').first())
 	await expectUnhighlightable(page.locator('.garden-object img').first())
 
-	await page.getByTestId('mode-puzzle').click()
-	await expectUnhighlightable(page.locator('.puzzle-gap').first())
-	await expectUnhighlightable(page.locator('.puzzle-piece').first())
-	await expectUnhighlightable(page.locator('.puzzle-piece img').first())
+	await page.getByTestId('settings-button').click()
+	await expectUnhighlightable(page.locator('.settings-panel'))
+	await expectUnhighlightable(page.locator('.settings-panel input').first())
+	await page.getByLabel('Close settings').click()
 
 	await page.getByTestId('mode-math').click()
 	await expectUnhighlightable(page.getByTestId('math-stage'))
@@ -401,7 +419,6 @@ test('settings panel does not expose mode controls', async ({ page }) => {
 	await expect(dialog.getByText('Mode', { exact: true })).toHaveCount(0)
 	await expect(dialog.getByTestId('mode-explore')).toHaveCount(0)
 	await expect(dialog.getByTestId('mode-find')).toHaveCount(0)
-	await expect(dialog.getByTestId('mode-puzzle')).toHaveCount(0)
 	await expect(dialog.getByTestId('mode-cards')).toHaveCount(0)
 	await expect(dialog.getByTestId('mode-math')).toHaveCount(0)
 })
@@ -432,6 +449,9 @@ test('cards mode shows pack-wide language cards', async ({ page }) => {
 	await page.getByTestId('mode-cards').click()
 	await expect(page.getByTestId('deck-title')).toContainText('Garden')
 	await expect(page.getByTestId('language-card')).toBeVisible()
+	await expectTapTargetAtLeast(page.getByTestId('card-previous'), 60)
+	await expectTapTargetAtLeast(page.getByTestId('card-next'), 60)
+	await expect(page.locator('.card-controls button')).toHaveCount(2)
 	await expect(
 		page.getByTestId('card-words').locator('.word-line'),
 	).toHaveCount(2)
@@ -534,8 +554,26 @@ test('cards audio is user initiated and respects mute', async ({ page }) => {
 	await expect(page.getByTestId('language-card')).toBeVisible()
 	await expect.poll(() => getAudioPlayCount(page)).toBe(0)
 
-	await page.getByTestId('card-speak').click()
-	await expect.poll(() => getAudioPlayCount(page)).toBeGreaterThan(0)
+	await page.getByTestId('card-main').click()
+	await expect.poll(() => getAudioPlayCount(page)).toBe(2)
+	let audioSources = await getAudioPlaySources(page)
+	expect(audioSources).toHaveLength(2)
+	expect(audioSources[0]).toContain('-en-L0.mp3')
+	expect(audioSources[1]).toContain('zh-Hans-L0.mp3')
+
+	await resetAudioPlayCount(page)
+	await page.getByTestId('card-word-0').click()
+	await expect.poll(() => getAudioPlayCount(page)).toBe(1)
+	audioSources = await getAudioPlaySources(page)
+	expect(audioSources).toHaveLength(1)
+	expect(audioSources[0]).toContain('-en-L0.mp3')
+
+	await resetAudioPlayCount(page)
+	await page.getByTestId('card-word-1').click()
+	await expect.poll(() => getAudioPlayCount(page)).toBe(1)
+	audioSources = await getAudioPlaySources(page)
+	expect(audioSources).toHaveLength(1)
+	expect(audioSources[0]).toContain('zh-Hans-L0.mp3')
 
 	await page.getByTestId('mute-button').click()
 	await expect(page.getByTestId('mute-button')).toHaveAttribute(
@@ -669,58 +707,6 @@ test('unavailable learning focus falls back to playful Math Play', async ({
 	)
 })
 
-test('puzzle mode fills scene gaps by dragging pieces', async ({ page }) => {
-	await page.goto('/')
-
-	await expect(page.getByTestId('mode-puzzle')).toBeVisible()
-	await page.getByTestId('mode-puzzle').click()
-	await expect(page.getByTestId('prompt')).toContainText('Puzzle garden.')
-	const initialCount = await expectObjectCountBetween(
-		page,
-		8,
-		10,
-		'.puzzle-piece',
-	)
-	await expect(page.locator('.puzzle-gap')).toHaveCount(initialCount)
-
-	const [firstPieceId] = await getPuzzlePieceIds(page)
-	if (!firstPieceId) {
-		throw new Error('Expected at least one puzzle piece')
-	}
-	await page.getByTestId(`puzzle-piece-${firstPieceId}`).click()
-	await page.getByTestId(`puzzle-gap-${firstPieceId}`).click()
-	await expect(page.getByTestId(`object-${firstPieceId}`)).toHaveCount(0)
-	await expect(page.getByTestId(`puzzle-piece-${firstPieceId}`)).toBeVisible()
-
-	await dragPuzzlePieceToGap(page, firstPieceId)
-	await expect(page.getByTestId(`object-${firstPieceId}`)).toBeVisible()
-	await expect(page.getByTestId(`puzzle-piece-${firstPieceId}`)).toHaveCount(0)
-
-	const mismatchIds = await getPuzzlePieceIds(page)
-	if (mismatchIds.length >= 2) {
-		await dragPuzzlePieceToGap(page, mismatchIds[0], mismatchIds[1])
-		await expect(
-			page.getByTestId(`puzzle-piece-${mismatchIds[0]}`),
-		).toBeVisible()
-	}
-	await expect(page.getByTestId('prompt')).not.toContainText(/wrong|try again/i)
-
-	for (const objectId of await getPuzzlePieceIds(page)) {
-		await dragPuzzlePieceToGap(page, objectId)
-		await expect(page.getByTestId(`puzzle-piece-${objectId}`)).toHaveCount(0)
-	}
-
-	await expect(page.getByTestId('prompt')).toContainText('Puzzle garden.', {
-		timeout: 3_000,
-	})
-	await expect(page.locator('.puzzle-gap')).toHaveCount(initialCount)
-	await expect(page.locator('.puzzle-piece')).toHaveCount(initialCount)
-
-	await page.getByTestId('mode-explore').click()
-	await expect(page.getByTestId('prompt')).toContainText('Hello, garden.')
-	await expect(page.getByTestId('prompt')).not.toHaveClass(/is-puzzle/)
-})
-
 test('settings panel can switch to the animals pack and sets', async ({
 	page,
 }) => {
@@ -788,33 +774,40 @@ test('settings panel can switch to numbers and English alphabet packs', async ({
 	)
 })
 
-test('scene navigation cycles through available scenes', async ({ page }) => {
+test('scene navigation cycles through every set in the content pack', async ({
+	page,
+}) => {
 	await page.goto('/')
+	await page.getByTestId('settings-button').click()
+	await page.getByTestId('pack-animals').click()
+	await page.getByLabel('Close settings').click()
 
-	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
+	await expect(page.getByTestId('scene-title')).toContainText('Ocean Cove')
 	await expectObjectCountBetween(page, 8, 10)
 	await expect(page.getByTestId('scene-previous')).toBeEnabled()
 	await expect(page.getByTestId('scene-next')).toBeEnabled()
 
 	await page.getByTestId('scene-previous').click()
 
-	await expect(page.getByTestId('scene-title')).toContainText('Pond Garden')
+	await expect(page.getByTestId('scene-title')).toContainText(
+		'Pond Flower Garden',
+	)
 	await expectObjectCountBetween(page, 8, 10)
 
 	await page.getByTestId('scene-next').click()
 
-	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
+	await expect(page.getByTestId('scene-title')).toContainText('Ocean Cove')
 	await expectObjectCountBetween(page, 8, 10)
 
 	await page.getByTestId('scene-next').click()
 
-	await expect(page.getByTestId('scene-title')).toContainText('Pond Garden')
+	await expect(page.getByTestId('scene-title')).toContainText('Tide Pool')
 	await expectObjectCountBetween(page, 8, 10)
 	await expect(page.getByTestId('scene-next')).toBeEnabled()
 
 	await page.getByTestId('scene-next').click()
 
-	await expect(page.getByTestId('scene-title')).toContainText('Sunny Garden')
+	await expect(page.getByTestId('scene-title')).toContainText('Farm Pasture')
 	await expectObjectCountBetween(page, 8, 10)
 })
 

@@ -1,8 +1,3 @@
-import {
-	draggable,
-	dropTargetForElements,
-	monitorForElements,
-} from '@atlaskit/pragmatic-drag-and-drop/element/adapter'
 import type { JSX } from 'preact'
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { speakSequence, stopSpeech } from './audio/speech'
@@ -30,12 +25,6 @@ import {
 	type MathPlayRound,
 } from './game/math-play-mode'
 import {
-	createPuzzleRound,
-	getPuzzleTrayObjectIds,
-	handlePuzzleDrop,
-	type PuzzleRound,
-} from './game/puzzle-mode'
-import {
 	buildSceneLayout,
 	createSceneLayoutSeed,
 	type VisibleScenePlacement,
@@ -47,7 +36,6 @@ import {
 	getPack,
 	getPackSets,
 	getSelectedSet,
-	getSetScenes,
 	getSuccessPhrase,
 	type LearningPresentation,
 } from './learning/engine'
@@ -75,7 +63,6 @@ const presetLabels: Record<LanguageOrderPreset, string> = {
 const modeLabels: Record<GameMode, string> = {
 	explore: 'Explore',
 	find: 'Find',
-	puzzle: 'Puzzle',
 	cards: 'Cards',
 	math: 'Math Play',
 }
@@ -99,30 +86,11 @@ const mathFocusLabels: Record<MathFocus, string> = {
 	colors: 'Color Sort',
 }
 
-type ToastKind = 'hello' | 'word' | 'find' | 'success' | 'puzzle' | 'math'
+type ToastKind = 'hello' | 'word' | 'find' | 'success' | 'math'
 
 type ToastState = {
 	kind: ToastKind
 	sequence: LearningPresentation[]
-}
-
-const PUZZLE_DRAG_TYPE = 'word-garden-puzzle-piece'
-const PUZZLE_GAP_TYPE = 'word-garden-puzzle-gap'
-
-function getPuzzlePieceObjectId(data: Record<string, unknown>) {
-	if (data.type !== PUZZLE_DRAG_TYPE || typeof data.objectId !== 'string') {
-		return null
-	}
-
-	return data.objectId
-}
-
-function getPuzzleGapObjectId(data: Record<string | symbol, unknown>) {
-	if (data.type !== PUZZLE_GAP_TYPE || typeof data.objectId !== 'string') {
-		return null
-	}
-
-	return data.objectId
 }
 
 function useCatalog(): { catalog: RuntimeCatalog; error: null } {
@@ -232,20 +200,39 @@ function Icon({
 function SequenceText({
 	sequence,
 	testId = 'word-tray',
+	onItemClick,
 }: {
 	sequence: LearningPresentation[]
 	testId?: string
+	onItemClick?: (item: LearningPresentation) => void
 }) {
 	return (
 		<span className="sequence-text" data-testid={testId}>
-			{sequence.map((item) => (
-				<span
-					className="word-line"
-					key={`${item.requestedLanguage}-${item.text}`}
-				>
-					<span lang={item.resolvedLanguage}>{item.text}</span>
-				</span>
-			))}
+			{sequence.map((item, index) => {
+				const key = `${item.requestedLanguage}-${item.text}`
+				const content = <span lang={item.resolvedLanguage}>{item.text}</span>
+
+				if (onItemClick) {
+					return (
+						<button
+							type="button"
+							className="word-line"
+							key={key}
+							data-testid={`card-word-${index}`}
+							aria-label={`Hear ${item.text}`}
+							onClick={() => onItemClick(item)}
+						>
+							{content}
+						</button>
+					)
+				}
+
+				return (
+					<span className="word-line" key={key}>
+						{content}
+					</span>
+				)
+			})}
 		</span>
 	)
 }
@@ -442,6 +429,7 @@ function LanguageCard({
 	onPrevious,
 	onNext,
 	onSpeak,
+	onSpeakItem,
 }: {
 	object: ObjectConcept
 	cardIndex: number
@@ -450,6 +438,7 @@ function LanguageCard({
 	onPrevious: () => void
 	onNext: () => void
 	onSpeak: () => void
+	onSpeakItem: (item: LearningPresentation) => void
 }) {
 	const sequence = buildLearningSequence(object, settings)
 	const variantIndex = cardIndex % object.variants.length
@@ -463,16 +452,22 @@ function LanguageCard({
 				data-testid="language-card"
 				data-object-id={object.id}
 			>
-				<button
-					type="button"
-					className="language-card-main"
-					aria-label={`Hear ${firstPresentation?.text ?? object.id}`}
-					data-testid="card-main"
-					onClick={onSpeak}
-				>
-					<img src={variant.image.path} alt="" draggable={false} />
-					<SequenceText sequence={sequence} testId="card-words" />
-				</button>
+				<div className="language-card-main">
+					<button
+						type="button"
+						className="card-image-button"
+						aria-label={`Hear ${firstPresentation?.text ?? object.id}`}
+						data-testid="card-main"
+						onClick={onSpeak}
+					>
+						<img src={variant.image.path} alt="" draggable={false} />
+					</button>
+					<SequenceText
+						sequence={sequence}
+						testId="card-words"
+						onItemClick={onSpeakItem}
+					/>
+				</div>
 				<div className="card-controls" role="group" aria-label="Card controls">
 					<button
 						type="button"
@@ -490,15 +485,6 @@ function LanguageCard({
 					>
 						{cardIndex + 1} / {totalCards}
 					</span>
-					<button
-						type="button"
-						className="icon-button"
-						aria-label="Hear card"
-						data-testid="card-speak"
-						onClick={onSpeak}
-					>
-						<Icon name="volume" />
-					</button>
 					<button
 						type="button"
 						className="icon-button"
@@ -550,134 +536,6 @@ function GardenObjectButton({
 			data-variant-id={placement.variant.id}
 			aria-label={firstPresentation?.text ?? placement.object.id}
 			onClick={() => onTap(placement.object)}
-		>
-			<img src={placement.variant.image.path} alt="" draggable={false} />
-		</button>
-	)
-}
-
-function PuzzleGapButton({
-	placement,
-	draggedObjectId,
-	hoveredTargetObjectId,
-	onHoverTargetChange,
-}: {
-	placement: VisibleScenePlacement
-	draggedObjectId: string | null
-	hoveredTargetObjectId: string | null
-	onHoverTargetChange: (objectId: string | null) => void
-}) {
-	const style = getPlacementStyle(placement)
-	const elementRef = useRef<HTMLButtonElement | null>(null)
-	const targetObjectId = placement.object.id
-	const active = hoveredTargetObjectId === targetObjectId
-	const valid = active && draggedObjectId === targetObjectId
-
-	useEffect(() => {
-		const element = elementRef.current
-		if (!element) {
-			return
-		}
-
-		return dropTargetForElements({
-			element,
-			getData: () => ({
-				type: PUZZLE_GAP_TYPE,
-				objectId: targetObjectId,
-			}),
-			canDrop: ({ source }) => getPuzzlePieceObjectId(source.data) !== null,
-			getDropEffect: () => 'move',
-			onDragEnter: () => onHoverTargetChange(targetObjectId),
-			onDragLeave: () => onHoverTargetChange(null),
-			onDrop: () => onHoverTargetChange(null),
-		})
-	}, [onHoverTargetChange, targetObjectId])
-
-	return (
-		<button
-			ref={elementRef}
-			className={`puzzle-gap ${active ? 'is-drop-hover' : ''} ${
-				valid ? 'is-valid-drop' : ''
-			}`}
-			style={style}
-			type="button"
-			data-testid={`puzzle-gap-${placement.object.id}`}
-			aria-label={`Puzzle spot for ${
-				placement.variant.image.alt ?? placement.object.id
-			}`}
-		>
-			<img src={placement.variant.image.path} alt="" draggable={false} />
-		</button>
-	)
-}
-
-function PuzzleTray({
-	placements,
-	settings,
-	onDraggingObjectChange,
-}: {
-	placements: VisibleScenePlacement[]
-	settings: WordGardenSettings
-	onDraggingObjectChange: (objectId: string | null) => void
-}) {
-	return (
-		<section className="puzzle-tray" aria-label="Puzzle pieces">
-			{placements.map((placement) => (
-				<PuzzlePieceButton
-					key={placement.object.id}
-					placement={placement}
-					settings={settings}
-					onDraggingObjectChange={onDraggingObjectChange}
-				/>
-			))}
-		</section>
-	)
-}
-
-function PuzzlePieceButton({
-	placement,
-	settings,
-	onDraggingObjectChange,
-}: {
-	placement: VisibleScenePlacement
-	settings: WordGardenSettings
-	onDraggingObjectChange: (objectId: string | null) => void
-}) {
-	const elementRef = useRef<HTMLButtonElement | null>(null)
-	const [isDragging, setIsDragging] = useState(false)
-	const objectId = placement.object.id
-	const firstPresentation = buildLearningSequence(placement.object, settings)[0]
-
-	useEffect(() => {
-		const element = elementRef.current
-		if (!element) {
-			return
-		}
-
-		return draggable({
-			element,
-			getInitialData: () => ({
-				type: PUZZLE_DRAG_TYPE,
-				objectId,
-			}),
-			onDragStart: () => {
-				setIsDragging(true)
-				onDraggingObjectChange(objectId)
-			},
-			onDrop: () => {
-				setIsDragging(false)
-				onDraggingObjectChange(null)
-			},
-		})
-	}, [objectId, onDraggingObjectChange])
-
-	return (
-		<button
-			ref={elementRef}
-			type="button"
-			className={`puzzle-piece ${isDragging ? 'is-dragging' : ''}`}
-			data-testid={`puzzle-piece-${objectId}`}
-			aria-label={firstPresentation?.text ?? objectId}
 		>
 			<img src={placement.variant.image.path} alt="" draggable={false} />
 		</button>
@@ -1189,25 +1047,13 @@ export function App() {
 	const [selectedSortItemId, setSelectedSortItemId] = useState<string | null>(
 		null,
 	)
-	const [puzzleRound, setPuzzleRound] = useState<PuzzleRound | null>(null)
-	const [puzzleRoundIndex, setPuzzleRoundIndex] = useState(0)
 	const [cardIndex, setCardIndex] = useState(0)
-	const [draggedPuzzleObjectId, setDraggedPuzzleObjectId] = useState<
-		string | null
-	>(null)
-	const [hoveredPuzzleTargetId, setHoveredPuzzleTargetId] = useState<
-		string | null
-	>(null)
 	const [toast, setToast] = useState<ToastState>({
 		kind: 'hello',
 		sequence: [],
 	})
 	const shouldSpeakPromptRef = useRef(false)
-	const puzzleResetTimeoutRef = useRef<number | null>(null)
 	const mathResetTimeoutRef = useRef<number | null>(null)
-	const puzzleDropRef = useRef<
-		(objectId: string, targetObjectId: string) => void
-	>(() => {})
 
 	const selectedPackId = catalog?.packs.some(
 		(packOption) => packOption.id === settings.selectedPackId,
@@ -1221,14 +1067,21 @@ export function App() {
 	const activeCardObject = cardObjects[normalizedCardIndex] ?? null
 	const activeSet = pack ? getSelectedSet(pack, settings.selectedSetId) : null
 	const activeSetId = activeSet?.id ?? null
-	const activeScenes = pack ? getSetScenes(pack, activeSetId) : []
+	const navigableScenes = pack?.scenes ?? []
+	const selectedSetDefaultScene =
+		catalog && pack
+			? getDefaultScene(catalog, selectedPackId, activeSetId)
+			: null
+	const selectedSetDefaultSceneIndex = selectedSetDefaultScene
+		? navigableScenes.findIndex(
+				(scene) => scene.id === selectedSetDefaultScene.id,
+			)
+		: -1
 	const normalizedSceneIndex =
-		activeScenes.length > 0
-			? Math.min(sceneIndex, Math.max(activeScenes.length - 1, 0))
+		navigableScenes.length > 0
+			? Math.min(sceneIndex, Math.max(navigableScenes.length - 1, 0))
 			: 0
-	const scene =
-		activeScenes[normalizedSceneIndex] ??
-		(catalog ? getDefaultScene(catalog, selectedPackId, activeSetId) : null)
+	const scene = navigableScenes[normalizedSceneIndex] ?? selectedSetDefaultScene
 	const placements = useMemo(
 		() =>
 			scene && pack ? buildSceneLayout(scene, pack.objects, layoutSeed) : [],
@@ -1253,10 +1106,6 @@ export function App() {
 		() =>
 			new Map(placements.map((placement) => [placement.object.id, placement])),
 		[placements],
-	)
-	const objectById = useMemo(
-		() => new Map(objects.map((object) => [object.id, object])),
-		[objects],
 	)
 	const mathObjectById = useMemo(
 		() => new Map(mathObjects.map((object) => [object.id, object])),
@@ -1286,18 +1135,6 @@ export function App() {
 			null
 		)
 	}, [findRound, objects])
-	const puzzleTrayPlacements = useMemo(() => {
-		if (!puzzleRound) {
-			return []
-		}
-
-		return getPuzzleTrayObjectIds(puzzleRound)
-			.map((objectId) => placementByObjectId.get(objectId))
-			.filter((placement): placement is VisibleScenePlacement =>
-				Boolean(placement),
-			)
-	}, [placementByObjectId, puzzleRound])
-	const placedPuzzleObjectIds = puzzleRound?.placedObjectIds ?? []
 	useEffect(() => {
 		saveSettings(
 			typeof window === 'undefined' ? undefined : window.localStorage,
@@ -1351,27 +1188,8 @@ export function App() {
 
 	useEffect(() => {
 		return () => {
-			clearPuzzleResetTimeout()
 			clearMathResetTimeout()
 		}
-	}, [])
-
-	useEffect(() => {
-		return monitorForElements({
-			canMonitor: ({ source }) => getPuzzlePieceObjectId(source.data) !== null,
-			onDrop: ({ source, location }) => {
-				const objectId = getPuzzlePieceObjectId(source.data)
-				const targetObjectId =
-					location.current.dropTargets
-						.map((target) => getPuzzleGapObjectId(target.data))
-						.find((target): target is string => Boolean(target)) ?? null
-				if (objectId && targetObjectId) {
-					puzzleDropRef.current(objectId, targetObjectId)
-				}
-				setDraggedPuzzleObjectId(null)
-				setHoveredPuzzleTargetId(null)
-			},
-		})
 	}, [])
 
 	useEffect(() => {
@@ -1386,34 +1204,26 @@ export function App() {
 	}, [findRound, objects, settings.mode])
 
 	useEffect(() => {
-		clearPuzzleResetTimeout()
 		clearMathResetTimeout()
-		setSceneIndex(0)
+		setSceneIndex(
+			selectedSetDefaultSceneIndex >= 0 ? selectedSetDefaultSceneIndex : 0,
+		)
 		setLayoutSeed(createSceneLayoutSeed())
 		setActiveObjectId(null)
 		setFindRound(null)
 		setMathRound(null)
 		setMathRoundIndex(0)
 		setSelectedSortItemId(null)
-		setPuzzleRound(null)
-		setPuzzleRoundIndex(0)
-		setDraggedPuzzleObjectId(null)
-		setHoveredPuzzleTargetId(null)
 		setToast({ kind: 'hello', sequence: [] })
-	}, [selectedPackId, activeSetId])
+	}, [selectedPackId, activeSetId, selectedSetDefaultSceneIndex])
 
 	useEffect(() => {
-		clearPuzzleResetTimeout()
 		clearMathResetTimeout()
 		setActiveObjectId(null)
 		setFindRound(null)
 		setMathRound(null)
 		setMathRoundIndex(0)
 		setSelectedSortItemId(null)
-		setPuzzleRound(null)
-		setPuzzleRoundIndex(0)
-		setDraggedPuzzleObjectId(null)
-		setHoveredPuzzleTargetId(null)
 		setToast({ kind: 'hello', sequence: [] })
 	}, [scene?.id])
 
@@ -1426,12 +1236,6 @@ export function App() {
 			setToast({ kind: 'hello', sequence: [] })
 		}
 	}, [settings.mathFocus])
-
-	useEffect(() => {
-		if (settings.mode === 'puzzle' && placements.length > 0 && !puzzleRound) {
-			setPuzzleRound(createPuzzleRound(placements, puzzleRoundIndex))
-		}
-	}, [placements, puzzleRound, puzzleRoundIndex, settings.mode])
 
 	useEffect(() => {
 		if (settings.mode === 'math' && mathPlacements.length > 0 && !mathRound) {
@@ -1457,11 +1261,7 @@ export function App() {
 				kind: 'find',
 				sequence: getFindPrompt(targetObject, settings),
 			}
-		} else if (
-			toast.kind === 'find' ||
-			toast.kind === 'puzzle' ||
-			toast.kind === 'math'
-		) {
+		} else if (toast.kind === 'find' || toast.kind === 'math') {
 			nextToast = { kind: 'hello', sequence: [] }
 		}
 
@@ -1486,21 +1286,13 @@ export function App() {
 			shouldSpeakPromptRef.current = true
 		}
 		if (settings.mode !== nextSettings.mode) {
-			clearPuzzleResetTimeout()
 			clearMathResetTimeout()
 		}
 		setSettings(nextSettings)
 		if (nextSettings.mode === 'find' && objects.length > 0) {
 			setFindRound((round) => round ?? createFindRound(objects))
 		}
-		if (nextSettings.mode === 'puzzle') {
-			setDraggedPuzzleObjectId(null)
-			setHoveredPuzzleTargetId(null)
-			setToast({ kind: 'puzzle', sequence: [] })
-		}
 		if (nextSettings.mode === 'math') {
-			setDraggedPuzzleObjectId(null)
-			setHoveredPuzzleTargetId(null)
 			setMathRound(
 				(round) =>
 					round ??
@@ -1514,8 +1306,6 @@ export function App() {
 			setToast({ kind: 'hello', sequence: [] })
 		}
 		if (nextSettings.mode === 'cards') {
-			setDraggedPuzzleObjectId(null)
-			setHoveredPuzzleTargetId(null)
 			setToast({ kind: 'hello', sequence: [] })
 		}
 	}
@@ -1541,19 +1331,22 @@ export function App() {
 		)
 	}
 
+	function speakCardItem(item: LearningPresentation) {
+		speakSequence([item], settings.muted)
+	}
+
 	function selectScene(nextSceneIndex: number) {
-		if (!pack || activeScenes.length === 0) {
+		if (navigableScenes.length === 0) {
 			return
 		}
 
 		const wrappedIndex =
-			((nextSceneIndex % activeScenes.length) + activeScenes.length) %
-			activeScenes.length
+			((nextSceneIndex % navigableScenes.length) + navigableScenes.length) %
+			navigableScenes.length
 		if (wrappedIndex === normalizedSceneIndex) {
 			return
 		}
 
-		clearPuzzleResetTimeout()
 		shouldSpeakPromptRef.current = settings.mode === 'find'
 		setLayoutSeed(createSceneLayoutSeed())
 		setSceneIndex(wrappedIndex)
@@ -1609,52 +1402,6 @@ export function App() {
 		setToast({ kind: 'word', sequence })
 		speakSequence(sequence, settings.muted)
 	}
-
-	function handlePuzzleAttempt(objectId: string, targetObjectId: string) {
-		if (!puzzleRound) {
-			return
-		}
-
-		const object = objectById.get(objectId)
-		if (!object) {
-			return
-		}
-
-		setActiveObjectId(objectId)
-
-		const result = handlePuzzleDrop(puzzleRound, objectId, targetObjectId)
-		if (!result.isMatch) {
-			const sequence = buildLearningSequence(object, settings)
-			setToast({ kind: 'word', sequence })
-			speakSequence(sequence, settings.muted)
-			return
-		}
-
-		const nextRound = {
-			...puzzleRound,
-			placedObjectIds: result.placedObjectIds,
-		}
-		setPuzzleRound(nextRound)
-
-		const successSequence = getSuccessPhrase(object, settings)
-		setToast({ kind: 'success', sequence: successSequence })
-		speakSequence(successSequence, settings.muted)
-
-		if (result.isComplete) {
-			const nextRoundIndex = puzzleRoundIndex + 1
-			clearPuzzleResetTimeout()
-			puzzleResetTimeoutRef.current = window.setTimeout(() => {
-				puzzleResetTimeoutRef.current = null
-				setPuzzleRoundIndex(nextRoundIndex)
-				setPuzzleRound(createPuzzleRound(placements, nextRoundIndex))
-				setActiveObjectId(null)
-				setDraggedPuzzleObjectId(null)
-				setHoveredPuzzleTargetId(null)
-				setToast({ kind: 'puzzle', sequence: [] })
-			}, 1400)
-		}
-	}
-	puzzleDropRef.current = handlePuzzleAttempt
 
 	function handleMathCollectObject(object: ObjectConcept) {
 		if (
@@ -1814,15 +1561,6 @@ export function App() {
 		}, 1400)
 	}
 
-	function clearPuzzleResetTimeout() {
-		if (puzzleResetTimeoutRef.current === null) {
-			return
-		}
-
-		window.clearTimeout(puzzleResetTimeoutRef.current)
-		puzzleResetTimeoutRef.current = null
-	}
-
 	function clearMathResetTimeout() {
 		if (mathResetTimeoutRef.current === null) {
 			return
@@ -1853,7 +1591,7 @@ export function App() {
 	const deckTitle = pack.title.en ?? pack.id
 	const isCardsMode = settings.mode === 'cards'
 	const isMathMode = settings.mode === 'math'
-	const hasSceneNavigation = activeScenes.length > 1
+	const hasSceneNavigation = navigableScenes.length > 1
 	const promptSequence =
 		toast.sequence.length > 0
 			? toast.sequence
@@ -1865,13 +1603,7 @@ export function App() {
 						? getMathFallbackPrompt(settings)
 						: []
 	const promptKind =
-		promptSequence.length > 0
-			? toast.kind
-			: settings.mode === 'puzzle'
-				? 'puzzle'
-				: isMathMode
-					? 'math'
-					: 'hello'
+		promptSequence.length > 0 ? toast.kind : isMathMode ? 'math' : 'hello'
 	const backgroundStyle = scene.background.asset
 		? ({
 				backgroundImage: `url(${scene.background.asset.path})`,
@@ -1966,6 +1698,7 @@ export function App() {
 						onPrevious={() => selectCard(-1)}
 						onNext={() => selectCard(1)}
 						onSpeak={speakCard}
+						onSpeakItem={speakCardItem}
 					/>
 				) : (
 					<>
@@ -1975,8 +1708,6 @@ export function App() {
 						>
 							{promptSequence.length > 0 ? (
 								<SequenceText sequence={promptSequence} />
-							) : settings.mode === 'puzzle' ? (
-								<strong>Puzzle garden.</strong>
 							) : (
 								<strong>Hello, garden.</strong>
 							)}
@@ -2000,40 +1731,6 @@ export function App() {
 								<div className="math-stage" data-testid="math-stage">
 									<strong>Try another set for Math Play.</strong>
 								</div>
-							</div>
-						) : settings.mode === 'puzzle' ? (
-							<div className="puzzle-layout">
-								<div className="garden-stage is-puzzle" style={backgroundStyle}>
-									{placements.map((placement) =>
-										placedPuzzleObjectIds.includes(
-											placement.object.id,
-										) ? null : (
-											<PuzzleGapButton
-												key={placement.object.id}
-												placement={placement}
-												draggedObjectId={draggedPuzzleObjectId}
-												hoveredTargetObjectId={hoveredPuzzleTargetId}
-												onHoverTargetChange={setHoveredPuzzleTargetId}
-											/>
-										),
-									)}
-									{placements.map((placement) =>
-										placedPuzzleObjectIds.includes(placement.object.id) ? (
-											<GardenObjectButton
-												key={placement.object.id}
-												placement={placement}
-												active={activeObjectId === placement.object.id}
-												onTap={handleObjectTap}
-												settings={settings}
-											/>
-										) : null,
-									)}
-								</div>
-								<PuzzleTray
-									placements={puzzleTrayPlacements}
-									settings={settings}
-									onDraggingObjectChange={setDraggedPuzzleObjectId}
-								/>
 							</div>
 						) : (
 							<div className="garden-stage" style={backgroundStyle}>

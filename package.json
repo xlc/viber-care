@@ -20,7 +20,6 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
-		"@atlaskit/pragmatic-drag-and-drop": "^1.8.1",
 		"preact": "^10.26.9",
 		"zod": "^4.1.12"
 	},

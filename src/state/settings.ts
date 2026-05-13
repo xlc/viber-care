@@ -13,13 +13,7 @@ export const LANGUAGE_ORDER_PRESETS = [
 	'zh-then-en',
 ] as const
 
-export const GAME_MODES = [
-	'explore',
-	'find',
-	'puzzle',
-	'cards',
-	'math',
-] as const
+export const GAME_MODES = ['explore', 'find', 'cards', 'math'] as const
 
 export const MATH_FOCUS_OPTIONS = ['mixed', 'counting-1-3', 'colors'] as const
 

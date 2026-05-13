@@ -1,16 +1,18 @@
 # Word Garden Game Description
 
-Word Garden is a gentle bilingual word-learning game for toddlers. It is built around looking, listening, tapping, dragging, and naming familiar objects in calm illustrated scenes. The game should feel like a soft digital toy: there are no scores, timers, punishments, ads, purchases, or harsh failure states.
+Word Garden is a gentle bilingual word-learning game for toddlers. It is built around looking, listening, tapping, and naming familiar objects in calm illustrated scenes. The game should feel like a soft digital toy: there are no scores, timers, punishments, ads, purchases, or harsh failure states.
 
 The current game includes 10 content packs, 183 learning items, 37 scenes, and 27 smaller selectable sets. Every learning item supports English and Simplified Chinese.
 
-Math Play is now the fifth mode. It teaches early quantity, matching, and sorting through action with the same static packs and gentle scene style. A toddler can put one apple in a basket, give a bunny two carrots, match dots to object groups, sort objects by color, and hear natural English and Simplified Chinese counting phrases.
+Math Play teaches early quantity, matching, and sorting through action with the same static packs and gentle scene style. A toddler can put one apple in a basket, give a bunny two carrots, match dots to object groups, sort objects by color, and hear natural English and Simplified Chinese counting phrases.
 
 ## Core Play
 
 The child plays inside a calm scene filled with friendly objects. A prompt ribbon at the top of the play area shows the current word, prompt, or response. When sound is enabled, the game speaks the same learning phrase aloud.
 
 Each scene contains more possible objects than it shows at once. A round displays a smaller group of objects so the same scene can feel slightly different across play sessions. Objects appear in appropriate parts of the scene: fish in water, birds in sky or trees, vegetables in garden beds, letters on cards, and vehicles on road, rail, water, or sky areas.
+
+Scene arrows cycle through every scene in the current content pack, including scenes that belong to other sets in that pack. Choosing a set in parent settings still starts play on that set's first scene.
 
 Every object has at least two friendly visual versions, so a child may see a classic version in one round and a brighter or larger version in another. Objects also have soft animation personalities such as bobbing, bouncing, swaying, glowing, or wiggling.
 
@@ -28,15 +30,9 @@ Find gives the child a gentle listening task, such as "Find the duck" or "Find n
 
 When the child taps the requested object, the game celebrates with a soft success phrase and then moves to the next target. When the child taps a different object, the game names that object first and then repeats the original prompt. It never says the child is wrong.
 
-### Puzzle
-
-Puzzle is a drag-only matching mode. The scene shows empty object spots, and the tray shows movable object pieces. The child drags each piece from the tray to the matching spot in the scene.
-
-When a piece matches its spot, it settles into the scene and the game speaks a success phrase. If a piece is dropped somewhere else, the piece simply returns and the game names it. After all pieces are placed, the puzzle refreshes gently with the same scene and a new tray order.
-
 ### Cards
 
-Cards turns the selected pack into a simple object deck. Each card shows one large object image and its current word or phrase. The child or parent can move forward and backward through the deck and replay the spoken phrase.
+Cards turns the selected pack into a simple object deck. Each card shows one large object image and its current word or phrase. The child or parent can move forward and backward through the deck. Tapping the object image speaks the full bilingual card, while tapping one visible word or phrase speaks only that line.
 
 Cards are useful for slower naming practice, parent-guided repetition, and reviewing a whole pack without searching inside a scene.
 
@@ -44,7 +40,7 @@ Cards are useful for slower naming practice, parent-guided repetition, and revie
 
 Math Play is built into Word Garden as a regular mode, not as a separate app. It rotates tiny early-math mini-games that use the same content packs, object art, scene backgrounds, static audio rules, and bilingual language model as the rest of the game.
 
-Math Play is not a drill mode. It should feel like feeding, collecting, matching, sorting, and pretend play. There should be no score, timer, lives, badges, streaks, or visible achievement pressure. Every round should be short, calm, and forgiving. If the child taps or drops something unexpected, the game should name what happened and gently continue: "That is one apple. We need one more." It should never say "wrong."
+Math Play is not a drill mode. It should feel like feeding, collecting, matching, sorting, and pretend play. There should be no score, timer, lives, badges, streaks, or visible achievement pressure. Every round should be short, calm, and forgiving. If the child taps something unexpected, the game should name what happened and gently continue: "That is one apple. We need one more." It should never say "wrong."
 
 Math Play should reduce visual load compared with Explore:
 
@@ -338,7 +334,7 @@ Each object can opt into math use with optional fields that describe how it can 
 - English singular and plural forms when the default word cannot be pluralized mechanically.
 - Natural bilingual prompt and success templates when an object needs special wording.
 
-The engine should use these optional fields to build rounds, but absence of math metadata should not break normal Explore, Find, Puzzle, or Cards play. Objects without math metadata can remain vocabulary-only.
+The engine should use these optional fields to build rounds, but absence of math metadata should not break normal Explore, Find, or Cards play. Objects without math metadata can remain vocabulary-only.
 
 Math Play needs reusable quantity groups. The implementation should not require a separate hand-drawn image for every quantity. It can reuse the same static object variant multiple times with gentle layout differences:
 
@@ -368,7 +364,7 @@ Prompt examples:
 - "Find 2 ducks."
 - "Put 3 fish in the pond."
 
-The child taps or drags objects one at a time into a target area. Each successful placement is counted aloud. After the final item, the game says the total.
+The child taps objects one at a time into a target area. Each successful placement is counted aloud. After the final item, the game says the total.
 
 English example:
 
@@ -630,10 +626,9 @@ Math Play should prioritize 1 and 2 for default play. The Counting 1-3 focus can
 
 Implementation expectations:
 
-- Keep Math Play as a first-class mode alongside Explore, Find, Puzzle, and Cards.
-- Keep a separate round engine for math templates instead of mixing math-specific branching into Find or Puzzle.
-- Reuse the existing drag-and-drop library for drag rounds.
-- Keep tap support for Math Play where it improves toddler accessibility, even though Puzzle itself remains drag-only.
+- Keep Math Play as a first-class mode alongside Explore, Find, and Cards.
+- Keep a separate round engine for math templates instead of mixing math-specific branching into the other modes.
+- Keep tap support for Math Play where it improves toddler accessibility.
 - Use static content metadata and committed assets only.
 - Keep all child-facing wording bilingual through content or shared language templates.
 - Do not add runtime AI, backend calls, remote content, analytics, or client secrets.
@@ -649,11 +644,11 @@ Acceptance criteria for the current Math Play release:
 - Shape Sort is not required until committed shape-capable content exists.
 - A successful counting action speaks each count and then the total.
 - Simplified Chinese totals use natural measure-word phrases.
-- Unexpected taps or drops produce gentle continuation, not failure language.
+- Unexpected taps produce gentle continuation, not failure language.
 - The visual scene is less cluttered than Explore.
 - Mute still applies to all spoken math prompts.
 - Parent settings can choose or limit the learning focus.
-- Existing Explore, Find, Puzzle, and Cards behavior remains intact.
+- Existing Explore, Find, and Cards behavior remains intact.
 
 ## Toddler-Safe Interaction Rules
 
@@ -661,11 +656,10 @@ Word Garden keeps the mood soft and forgiving.
 
 - Every object interaction gives useful feedback.
 - A missed Find tap names the tapped object instead of saying "wrong."
-- Puzzle mismatches return gently and still reinforce the object name.
 - There are no countdowns, scores, lives, penalties, ads, or purchase prompts.
 - Sound can be muted at any time.
 - Parent settings stay behind the gear button.
-- Tap and drag targets are large and simple.
+- Tap targets are large and simple.
 - Motion is slow, playful, and low-pressure.
 - Math Play should track comfort internally, not show scores or achievement pressure.
 - Math Play should reduce difficulty when a child seems overwhelmed.
@@ -673,6 +667,6 @@ Word Garden keeps the mood soft and forgiving.
 
 ## Expected Play Session
 
-A typical session starts in Explore mode with the default Word Garden pack. A toddler taps a few objects, hears names in English and Simplified Chinese, and watches the objects move gently. A parent may switch to Find mode for guided listening, Puzzle mode for drag-and-match practice, Cards mode for calmer review, or Math Play for short action-based counting and sorting rounds.
+A typical session starts in Explore mode with the default Word Garden pack. A toddler taps a few objects, hears names in English and Simplified Chinese, and watches the objects move gently. A parent may switch to Find mode for guided listening, Cards mode for calmer review, or Math Play for short action-based counting and sorting rounds.
 
-The same content can support different moods: free discovery, prompted recognition, hand-eye matching, quiet vocabulary review, and early math play. The goal is not to test the child, but to surround them with repeated, friendly word-object, quantity, shape, color, and spatial connections.
+The same content can support different moods: free discovery, prompted recognition, quiet vocabulary review, and early math play. The goal is not to test the child, but to surround them with repeated, friendly word-object, quantity, shape, color, and spatial connections.
