@@ -901,6 +901,38 @@
 						"min": 0.81,
 						"max": 0.97
 					}
+				},
+				{
+					"itemId": "alpaca",
+					"x": 18,
+					"y": 62,
+					"scale": 0.86,
+					"zIndex": 8,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.79,
+						"max": 0.95
+					}
+				},
+				{
+					"itemId": "goose",
+					"x": 65,
+					"y": 72,
+					"scale": 0.62,
+					"zIndex": 9,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
+					}
 				}
 			],
 			"music": {
@@ -1143,6 +1175,38 @@
 					"scaleRange": {
 						"min": 0.79,
 						"max": 0.95
+					}
+				},
+				{
+					"itemId": "alpaca",
+					"x": 80,
+					"y": 62,
+					"scale": 0.78,
+					"zIndex": 8,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				},
+				{
+					"itemId": "goose",
+					"x": 42,
+					"y": 68,
+					"scale": 0.6,
+					"zIndex": 9,
+					"regionTags": ["pond"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.55,
+						"max": 0.66
 					}
 				}
 			],
@@ -1390,6 +1454,38 @@
 					"scaleRange": {
 						"min": 0.53,
 						"max": 0.64
+					}
+				},
+				{
+					"itemId": "raccoon",
+					"x": 18,
+					"y": 72,
+					"scale": 0.72,
+					"zIndex": 8,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.66,
+						"max": 0.79
+					}
+				},
+				{
+					"itemId": "skunk",
+					"x": 76,
+					"y": 74,
+					"scale": 0.7,
+					"zIndex": 8,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.64,
+						"max": 0.77
 					}
 				}
 			],
@@ -1650,6 +1746,38 @@
 						"min": 0.53,
 						"max": 0.64
 					}
+				},
+				{
+					"itemId": "raccoon",
+					"x": 28,
+					"y": 78,
+					"scale": 0.66,
+					"zIndex": 8,
+					"regionTags": ["bank"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"itemId": "skunk",
+					"x": 72,
+					"y": 76,
+					"scale": 0.68,
+					"zIndex": 8,
+					"regionTags": ["bank"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.63,
+						"max": 0.75
+					}
 				}
 			],
 			"music": {
@@ -1880,6 +2008,38 @@
 					"scaleRange": {
 						"min": 0.68,
 						"max": 0.81
+					}
+				},
+				{
+					"itemId": "cheetah",
+					"x": 30,
+					"y": 74,
+					"scale": 0.78,
+					"zIndex": 8,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.72,
+						"max": 0.86
+					}
+				},
+				{
+					"itemId": "ostrich",
+					"x": 78,
+					"y": 66,
+					"scale": 0.76,
+					"zIndex": 8,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
 					}
 				}
 			],
@@ -2124,6 +2284,38 @@
 						"min": 0.68,
 						"max": 0.81
 					}
+				},
+				{
+					"itemId": "cheetah",
+					"x": 24,
+					"y": 76,
+					"scale": 0.76,
+					"zIndex": 8,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
+				},
+				{
+					"itemId": "ostrich",
+					"x": 82,
+					"y": 68,
+					"scale": 0.76,
+					"zIndex": 8,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.7,
+						"max": 0.84
+					}
 				}
 			],
 			"music": {
@@ -2350,6 +2542,38 @@
 					"scaleRange": {
 						"min": 0.48,
 						"max": 0.57
+					}
+				},
+				{
+					"itemId": "grasshopper",
+					"x": 26,
+					"y": 78,
+					"scale": 0.5,
+					"zIndex": 9,
+					"regionTags": ["grass"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.46,
+						"max": 0.55
+					}
+				},
+				{
+					"itemId": "firefly",
+					"x": 74,
+					"y": 34,
+					"scale": 0.46,
+					"zIndex": 8,
+					"regionTags": ["air"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.42,
+						"max": 0.51
 					}
 				}
 			],
@@ -2590,6 +2814,38 @@
 						"min": 0.48,
 						"max": 0.57
 					}
+				},
+				{
+					"itemId": "grasshopper",
+					"x": 72,
+					"y": 78,
+					"scale": 0.5,
+					"zIndex": 9,
+					"regionTags": ["flowers"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.46,
+						"max": 0.55
+					}
+				},
+				{
+					"itemId": "firefly",
+					"x": 72,
+					"y": 32,
+					"scale": 0.46,
+					"zIndex": 8,
+					"regionTags": ["air"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.42,
+						"max": 0.51
+					}
 				}
 			],
 			"music": {
@@ -2642,7 +2898,9 @@
 				"rabbit",
 				"donkey",
 				"turkey",
-				"llama"
+				"llama",
+				"goose",
+				"alpaca"
 			],
 			"sceneIds": ["farm-pasture", "barn-pond"]
 		},
@@ -2664,7 +2922,9 @@
 				"mouse",
 				"woodpecker",
 				"panda",
-				"koala"
+				"koala",
+				"raccoon",
+				"skunk"
 			],
 			"sceneIds": ["forest-clearing", "woodland-stream"]
 		},
@@ -2685,7 +2945,9 @@
 				"meerkat",
 				"antelope",
 				"camel",
-				"kangaroo"
+				"kangaroo",
+				"cheetah",
+				"ostrich"
 			],
 			"sceneIds": ["safari-grassland", "savanna-waterhole"]
 		},
@@ -2705,7 +2967,9 @@
 				"ladybug",
 				"dragonfly",
 				"snail",
-				"caterpillar"
+				"caterpillar",
+				"grasshopper",
+				"firefly"
 			],
 			"sceneIds": ["tiny-meadow", "pond-flower-garden"]
 		}

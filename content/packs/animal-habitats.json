@@ -261,6 +261,22 @@
 						"min": 0.5,
 						"max": 0.59
 					}
+				},
+				{
+					"itemId": "goose",
+					"x": 40,
+					"y": 84,
+					"scale": 0.52,
+					"zIndex": 9,
+					"regionTags": ["shore"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.48,
+						"max": 0.57
+					}
 				}
 			],
 			"music": {
@@ -520,6 +536,70 @@
 						"min": 0.63,
 						"max": 0.75
 					}
+				},
+				{
+					"itemId": "raccoon",
+					"x": 24,
+					"y": 78,
+					"scale": 0.58,
+					"zIndex": 9,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"itemId": "skunk",
+					"x": 78,
+					"y": 78,
+					"scale": 0.58,
+					"zIndex": 9,
+					"regionTags": ["ground"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.53,
+						"max": 0.64
+					}
+				},
+				{
+					"itemId": "grasshopper",
+					"x": 48,
+					"y": 84,
+					"scale": 0.42,
+					"zIndex": 10,
+					"regionTags": ["flowers"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.4,
+						"max": 0.46
+					}
+				},
+				{
+					"itemId": "firefly",
+					"x": 72,
+					"y": 30,
+					"scale": 0.42,
+					"zIndex": 8,
+					"regionTags": ["canopy"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.4,
+						"max": 0.46
+					}
 				}
 			],
 			"music": {
@@ -766,6 +846,38 @@
 					"scaleRange": {
 						"min": 0.61,
 						"max": 0.73
+					}
+				},
+				{
+					"itemId": "cheetah",
+					"x": 28,
+					"y": 78,
+					"scale": 0.64,
+					"zIndex": 9,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.59,
+						"max": 0.7
+					}
+				},
+				{
+					"itemId": "ostrich",
+					"x": 74,
+					"y": 70,
+					"scale": 0.62,
+					"zIndex": 9,
+					"regionTags": ["grassland"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.57,
+						"max": 0.68
 					}
 				}
 			],
@@ -1026,6 +1138,38 @@
 						"min": 0.57,
 						"max": 0.68
 					}
+				},
+				{
+					"itemId": "alpaca",
+					"x": 22,
+					"y": 66,
+					"scale": 0.66,
+					"zIndex": 8,
+					"regionTags": ["pasture"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.61,
+						"max": 0.73
+					}
+				},
+				{
+					"itemId": "goose",
+					"x": 76,
+					"y": 72,
+					"scale": 0.5,
+					"zIndex": 9,
+					"regionTags": ["barnyard"],
+					"jitter": {
+						"x": 4,
+						"y": 4
+					},
+					"scaleRange": {
+						"min": 0.46,
+						"max": 0.55
+					}
 				}
 			],
 			"music": {
@@ -1052,7 +1196,8 @@
 				"seal",
 				"ray",
 				"duck",
-				"frog"
+				"frog",
+				"goose"
 			],
 			"sceneIds": ["water-animal-home"]
 		},
@@ -1074,7 +1219,11 @@
 				"ladybug",
 				"caterpillar",
 				"snail",
-				"cat"
+				"cat",
+				"raccoon",
+				"skunk",
+				"grasshopper",
+				"firefly"
 			],
 			"sceneIds": ["tree-animal-home"]
 		},
@@ -1096,7 +1245,9 @@
 				"deer",
 				"horse",
 				"rabbit",
-				"dog"
+				"dog",
+				"cheetah",
+				"ostrich"
 			],
 			"sceneIds": ["grassland-animal-home"]
 		},
@@ -1118,7 +1269,9 @@
 				"donkey",
 				"turkey",
 				"dog",
-				"cat"
+				"cat",
+				"goose",
+				"alpaca"
 			],
 			"sceneIds": ["barnyard-animal-home"]
 		}

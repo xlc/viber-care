@@ -1,0 +1,208 @@
+{
+	"id": "raccoon",
+	"category": "forest-animal",
+	"tags": ["animal", "forest", "ground"],
+	"visualPrompt": "A friendly raccoon for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the raccoon.",
+			"successPhrase": "You found the raccoon.",
+			"fallbackText": "That is the raccoon.",
+			"levels": {
+				"L0": {
+					"text": "raccoon",
+					"audioText": "raccoon",
+					"fallbackText": "raccoon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The raccoon is here.",
+					"audioText": "The raccoon is here.",
+					"fallbackText": "raccoon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "curious raccoon",
+					"audioText": "curious raccoon",
+					"fallbackText": "raccoon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The raccoon sits gently.",
+					"audioText": "The raccoon sits gently.",
+					"fallbackText": "raccoon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the raccoon? Here is the raccoon.",
+					"audioText": "Where is the raccoon? Here is the raccoon.",
+					"fallbackText": "raccoon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The raccoon is ready to play.",
+					"audioText": "The raccoon is ready to play.",
+					"fallbackText": "raccoon",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/raccoon-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/raccoon-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找浣熊。",
+			"successPhrase": "你找到浣熊了。",
+			"fallbackText": "这是浣熊。",
+			"levels": {
+				"L0": {
+					"text": "浣熊",
+					"audioText": "浣熊",
+					"fallbackText": "浣熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "浣熊在这里。",
+					"audioText": "浣熊在这里。",
+					"fallbackText": "浣熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "好奇的浣熊",
+					"audioText": "好奇的浣熊",
+					"fallbackText": "浣熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "浣熊轻轻坐着。",
+					"audioText": "浣熊轻轻坐着。",
+					"fallbackText": "浣熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "浣熊在哪里？浣熊在这里。",
+					"audioText": "浣熊在哪里？浣熊在这里。",
+					"fallbackText": "浣熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "浣熊准备玩了。",
+					"audioText": "浣熊准备玩了。",
+					"fallbackText": "浣熊",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/raccoon-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/raccoon-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/raccoon-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/raccoon.png",
+				"alt": "raccoon",
+				"generationPrompt": "A friendly raccoon for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "raccoon"
+				}
+			},
+			"visualPrompt": "A friendly raccoon for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "forest", "ground"],
+			"size": "medium",
+			"color": "gray",
+			"colors": ["gray", "black"],
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/raccoon-bright.png",
+				"alt": "raccoon bright large",
+				"generationPrompt": "A friendly raccoon for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "raccoon bright large"
+				}
+			},
+			"visualPrompt": "A friendly raccoon for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "forest", "ground"],
+			"size": "large",
+			"color": "gray",
+			"colors": ["gray", "black"],
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "raccoon-wiggle",
+		"animation": "wiggle"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "more-less", "spatial"],
+		"colors": ["gray", "black"],
+		"sceneZones": ["forest", "ground"],
+		"zhMeasureWord": "只",
+		"englishPlural": "raccoons"
+	}
+}

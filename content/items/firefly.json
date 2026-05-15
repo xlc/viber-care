@@ -1,0 +1,208 @@
+{
+	"id": "firefly",
+	"category": "garden-animal",
+	"tags": ["animal", "garden", "insect", "air", "glow"],
+	"visualPrompt": "A friendly firefly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the firefly.",
+			"successPhrase": "You found the firefly.",
+			"fallbackText": "That is the firefly.",
+			"levels": {
+				"L0": {
+					"text": "firefly",
+					"audioText": "firefly",
+					"fallbackText": "firefly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The firefly is here.",
+					"audioText": "The firefly is here.",
+					"fallbackText": "firefly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "glowing firefly",
+					"audioText": "glowing firefly",
+					"fallbackText": "firefly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The firefly glows softly.",
+					"audioText": "The firefly glows softly.",
+					"fallbackText": "firefly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the firefly? Here is the firefly.",
+					"audioText": "Where is the firefly? Here is the firefly.",
+					"fallbackText": "firefly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The firefly is ready to play.",
+					"audioText": "The firefly is ready to play.",
+					"fallbackText": "firefly",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/firefly-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/firefly-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找萤火虫。",
+			"successPhrase": "你找到萤火虫了。",
+			"fallbackText": "这是萤火虫。",
+			"levels": {
+				"L0": {
+					"text": "萤火虫",
+					"audioText": "萤火虫",
+					"fallbackText": "萤火虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "萤火虫在这里。",
+					"audioText": "萤火虫在这里。",
+					"fallbackText": "萤火虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "发光的萤火虫",
+					"audioText": "发光的萤火虫",
+					"fallbackText": "萤火虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "萤火虫轻轻发光。",
+					"audioText": "萤火虫轻轻发光。",
+					"fallbackText": "萤火虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "萤火虫在哪里？萤火虫在这里。",
+					"audioText": "萤火虫在哪里？萤火虫在这里。",
+					"fallbackText": "萤火虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "萤火虫准备玩了。",
+					"audioText": "萤火虫准备玩了。",
+					"fallbackText": "萤火虫",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/firefly-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/firefly-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/firefly-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/firefly.png",
+				"alt": "firefly",
+				"generationPrompt": "A friendly firefly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "firefly"
+				}
+			},
+			"visualPrompt": "A friendly firefly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "garden", "insect", "air", "glow"],
+			"size": "medium",
+			"color": "green and yellow",
+			"colors": ["green", "yellow"],
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/firefly-bright.png",
+				"alt": "firefly bright large",
+				"generationPrompt": "A friendly firefly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "firefly bright large"
+				}
+			},
+			"visualPrompt": "A friendly firefly for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "garden", "insect", "air", "glow"],
+			"size": "large",
+			"color": "green and yellow",
+			"colors": ["green", "yellow"],
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "firefly-glow",
+		"animation": "glow"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "more-less", "spatial"],
+		"colors": ["green", "yellow"],
+		"sceneZones": ["garden", "air", "sky", "flowers"],
+		"zhMeasureWord": "只",
+		"englishPlural": "fireflies"
+	}
+}

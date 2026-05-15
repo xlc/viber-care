@@ -1,0 +1,208 @@
+{
+	"id": "cheetah",
+	"category": "safari-animal",
+	"tags": ["animal", "safari", "grassland"],
+	"visualPrompt": "A friendly cheetah for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the cheetah.",
+			"successPhrase": "You found the cheetah.",
+			"fallbackText": "That is the cheetah.",
+			"levels": {
+				"L0": {
+					"text": "cheetah",
+					"audioText": "cheetah",
+					"fallbackText": "cheetah",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The cheetah is here.",
+					"audioText": "The cheetah is here.",
+					"fallbackText": "cheetah",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "spotted cheetah",
+					"audioText": "spotted cheetah",
+					"fallbackText": "cheetah",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The cheetah moves gently.",
+					"audioText": "The cheetah moves gently.",
+					"fallbackText": "cheetah",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the cheetah? Here is the cheetah.",
+					"audioText": "Where is the cheetah? Here is the cheetah.",
+					"fallbackText": "cheetah",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The cheetah is ready to play.",
+					"audioText": "The cheetah is ready to play.",
+					"fallbackText": "cheetah",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/cheetah-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/cheetah-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找猎豹。",
+			"successPhrase": "你找到猎豹了。",
+			"fallbackText": "这是猎豹。",
+			"levels": {
+				"L0": {
+					"text": "猎豹",
+					"audioText": "猎豹",
+					"fallbackText": "猎豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "猎豹在这里。",
+					"audioText": "猎豹在这里。",
+					"fallbackText": "猎豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "有斑点的猎豹",
+					"audioText": "有斑点的猎豹",
+					"fallbackText": "猎豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "猎豹轻轻地动。",
+					"audioText": "猎豹轻轻地动。",
+					"fallbackText": "猎豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "猎豹在哪里？猎豹在这里。",
+					"audioText": "猎豹在哪里？猎豹在这里。",
+					"fallbackText": "猎豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "猎豹准备玩了。",
+					"audioText": "猎豹准备玩了。",
+					"fallbackText": "猎豹",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/cheetah-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/cheetah-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/cheetah-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/cheetah.png",
+				"alt": "cheetah",
+				"generationPrompt": "A friendly cheetah for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "cheetah"
+				}
+			},
+			"visualPrompt": "A friendly cheetah for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "medium",
+			"color": "golden",
+			"colors": ["yellow", "brown"],
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/cheetah-bright.png",
+				"alt": "cheetah bright large",
+				"generationPrompt": "A friendly cheetah for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "cheetah bright large"
+				}
+			},
+			"visualPrompt": "A friendly cheetah for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "safari", "grassland"],
+			"size": "large",
+			"color": "golden",
+			"colors": ["yellow", "brown"],
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "cheetah-sway",
+		"animation": "sway"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "more-less", "spatial"],
+		"colors": ["yellow", "brown"],
+		"sceneZones": ["safari", "grassland", "ground"],
+		"zhMeasureWord": "只",
+		"englishPlural": "cheetahs"
+	}
+}

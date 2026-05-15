@@ -715,9 +715,9 @@ test('settings panel can switch to the animals pack and sets', async ({
 
 	const animalsObjectIds = getPackObjectIds('animals')
 	const animalsPack = page.getByTestId('pack-animals')
-	expect(animalsObjectIds).toHaveLength(61)
+	expect(animalsObjectIds).toHaveLength(69)
 	await expect(animalsPack).toContainText('Animals')
-	await expect(animalsPack).toContainText('61 words / 5 sets')
+	await expect(animalsPack).toContainText('69 words / 5 sets')
 	await animalsPack.click()
 	await expect(page.getByTestId('set-ocean-animals')).toHaveAttribute(
 		'aria-pressed',

@@ -1,0 +1,208 @@
+{
+	"id": "grasshopper",
+	"category": "garden-animal",
+	"tags": ["animal", "garden", "insect", "grass"],
+	"visualPrompt": "A friendly grasshopper for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+	"content": {
+		"en": {
+			"language": "en",
+			"displayName": "English",
+			"findPrompt": "Find the grasshopper.",
+			"successPhrase": "You found the grasshopper.",
+			"fallbackText": "That is the grasshopper.",
+			"levels": {
+				"L0": {
+					"text": "grasshopper",
+					"audioText": "grasshopper",
+					"fallbackText": "grasshopper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-en-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "The grasshopper is here.",
+					"audioText": "The grasshopper is here.",
+					"fallbackText": "grasshopper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-en-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "green grasshopper",
+					"audioText": "green grasshopper",
+					"fallbackText": "grasshopper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-en-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "The grasshopper rests in the grass.",
+					"audioText": "The grasshopper rests in the grass.",
+					"fallbackText": "grasshopper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-en-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "Where is the grasshopper? Here is the grasshopper.",
+					"audioText": "Where is the grasshopper? Here is the grasshopper.",
+					"fallbackText": "grasshopper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-en-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "The grasshopper is ready to play.",
+					"audioText": "The grasshopper is ready to play.",
+					"fallbackText": "grasshopper",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-en-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/grasshopper-en-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/grasshopper-en-success.mp3"
+			}
+		},
+		"zh-Hans": {
+			"language": "zh-Hans",
+			"displayName": "Simplified Chinese",
+			"findPrompt": "找一找蚱蜢。",
+			"successPhrase": "你找到蚱蜢了。",
+			"fallbackText": "这是蚱蜢。",
+			"levels": {
+				"L0": {
+					"text": "蚱蜢",
+					"audioText": "蚱蜢",
+					"fallbackText": "蚱蜢",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-zh-Hans-L0.mp3"
+					}
+				},
+				"L1": {
+					"text": "蚱蜢在这里。",
+					"audioText": "蚱蜢在这里。",
+					"fallbackText": "蚱蜢",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-zh-Hans-L1.mp3"
+					}
+				},
+				"L2": {
+					"text": "绿色的蚱蜢",
+					"audioText": "绿色的蚱蜢",
+					"fallbackText": "蚱蜢",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-zh-Hans-L2.mp3"
+					}
+				},
+				"L3": {
+					"text": "蚱蜢在草里休息。",
+					"audioText": "蚱蜢在草里休息。",
+					"fallbackText": "蚱蜢",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-zh-Hans-L3.mp3"
+					}
+				},
+				"L4": {
+					"text": "蚱蜢在哪里？蚱蜢在这里。",
+					"audioText": "蚱蜢在哪里？蚱蜢在这里。",
+					"fallbackText": "蚱蜢",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-zh-Hans-L4.mp3"
+					}
+				},
+				"L5": {
+					"text": "蚱蜢准备玩了。",
+					"audioText": "蚱蜢准备玩了。",
+					"fallbackText": "蚱蜢",
+					"audio": {
+						"type": "audio",
+						"path": "/assets/generated/animals/audio/grasshopper-zh-Hans-L5.mp3"
+					}
+				}
+			},
+			"findPromptAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/grasshopper-zh-Hans-find.mp3"
+			},
+			"successPhraseAudio": {
+				"type": "audio",
+				"path": "/assets/generated/animals/audio/grasshopper-zh-Hans-success.mp3"
+			}
+		}
+	},
+	"variants": [
+		{
+			"id": "classic",
+			"label": "Classic",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/grasshopper.png",
+				"alt": "grasshopper",
+				"generationPrompt": "A friendly grasshopper for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+				"placeholder": {
+					"label": "grasshopper"
+				}
+			},
+			"visualPrompt": "A friendly grasshopper for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background.",
+			"scaleMultiplier": 1,
+			"tags": ["animal", "garden", "insect", "grass"],
+			"size": "medium",
+			"color": "green",
+			"colors": ["green"],
+			"style": "classic"
+		},
+		{
+			"id": "bright-large",
+			"label": "Bright large",
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/imagegen/animals/grasshopper-bright.png",
+				"alt": "grasshopper bright large",
+				"generationPrompt": "A friendly grasshopper for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+				"placeholder": {
+					"label": "grasshopper bright large"
+				}
+			},
+			"visualPrompt": "A friendly grasshopper for a toddler animal word-learning game. Consistent soft rounded style, clear silhouette, gentle face, no text, no logos, transparent background. Alternate brighter larger variant, same toddler-safe style, transparent background.",
+			"scaleMultiplier": 1.12,
+			"tags": ["animal", "garden", "insect", "grass"],
+			"size": "large",
+			"color": "green",
+			"colors": ["green"],
+			"style": "bright-large"
+		}
+	],
+	"interaction": {
+		"id": "grasshopper-bounce",
+		"animation": "bounce"
+	},
+	"math": {
+		"countable": true,
+		"quantityRange": {
+			"min": 1,
+			"max": 3
+		},
+		"skills": ["counting", "one-to-one", "dot-match", "more-less", "spatial"],
+		"colors": ["green"],
+		"sceneZones": ["garden", "grass", "ground", "flowers"],
+		"zhMeasureWord": "只",
+		"englishPlural": "grasshoppers"
+	}
+}
