@@ -16,6 +16,10 @@ Active implementation plans for the Word Garden toddler story and card refactor.
 5. [Milestone 4: Story Pack Authoring Workflow](./milestone-04-story-pack-authoring-workflow.md)
 6. [Milestone 6: Polish, QA, and Release](./milestone-06-polish-qa-release.md)
 
+## Implementation Notes
+
+- [Mimi Rides the Bus Authoring Notes](./mimi-rides-the-bus-authoring-notes.md)
+
 ## Planning Rules
 
 - Treat the refactor as intentionally breaking.

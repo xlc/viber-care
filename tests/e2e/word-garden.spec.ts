@@ -95,9 +95,9 @@ test('app opens on the story-pack home screen', async ({ page }) => {
 	await page.goto('/')
 
 	await expect(page.getByTestId('home-screen')).toBeVisible()
-	await expect(page.getByTestId('pack-card-story-seed')).toBeVisible()
-	await expect(page.getByTestId('start-story-story-seed')).toBeVisible()
-	await expect(page.getByTestId('start-cards-story-seed')).toBeVisible()
+	await expect(page.getByTestId('pack-card-mimi-rides-the-bus')).toBeVisible()
+	await expect(page.getByTestId('start-story-mimi-rides-the-bus')).toBeVisible()
+	await expect(page.getByTestId('start-cards-mimi-rides-the-bus')).toBeVisible()
 	await expect(page.getByTestId('mode-explore')).toHaveCount(0)
 	await expect(page.getByTestId('mode-find')).toHaveCount(0)
 	await expect(page.getByTestId('mode-math')).toHaveCount(0)
@@ -108,7 +108,7 @@ test('language and pack settings persist from the home screen', async ({
 }) => {
 	await page.goto('/')
 	await page.getByTestId('language-zh-Hans').click()
-	await page.getByTestId('pack-card-story-seed').click()
+	await page.getByTestId('pack-card-mimi-rides-the-bus').click()
 
 	const stored = await page.evaluate((settingsKey) => {
 		return JSON.parse(window.localStorage.getItem(settingsKey) ?? '{}') as {
@@ -118,7 +118,7 @@ test('language and pack settings persist from the home screen', async ({
 	}, SETTINGS_STORAGE_KEY)
 
 	expect(stored.language).toBe('zh-Hans')
-	expect(stored.selectedPackId).toBe('story-seed')
+	expect(stored.selectedPackId).toBe('mimi-rides-the-bus')
 })
 
 test('story mode shell renders through its dedicated screen', async ({
@@ -126,22 +126,33 @@ test('story mode shell renders through its dedicated screen', async ({
 }) => {
 	await page.goto('/')
 	await page.getByTestId('language-zh-Hans').click()
-	await page.getByTestId('start-story-story-seed').click()
+	await page.getByTestId('start-story-mimi-rides-the-bus').click()
 
 	await expect(page.getByTestId('story-screen')).toBeVisible()
-	await expect(page.getByTestId('scene-progress')).toContainText('1 / 2')
+	await expect(page.getByTestId('scene-progress')).toContainText('1 / 6')
 	await expect(page.getByTestId('scene-text')).toContainText(
-		'米米看见公共汽车。',
+		'米米看见公共汽车站。',
+	)
+	await expect(page.getByTestId('scene-item-bus-stop')).toBeVisible()
+	await page.getByRole('button', { name: 'Next scene' }).click()
+	await expect(page.getByTestId('scene-progress')).toContainText('2 / 6')
+	await expect(page.getByTestId('scene-text')).toContainText(
+		'黄色公共汽车来了。',
 	)
 	await expect(page.getByTestId('scene-item-bus')).toBeVisible()
-	await page.getByRole('button', { name: 'Next scene' }).click()
-	await expect(page.getByTestId('scene-progress')).toContainText('2 / 2')
-	await expect(page.getByTestId('scene-text')).toContainText('米米找到一朵花。')
-	await expect(page.getByTestId('scene-item-flower')).toBeVisible()
-	await page.getByRole('button', { name: 'Previous scene' }).click()
+	for (let scene = 3; scene <= 6; scene += 1) {
+		await page.getByRole('button', { name: 'Next scene' }).click()
+		await expect(page.getByTestId('scene-progress')).toContainText(
+			`${scene} / 6`,
+		)
+	}
 	await expect(page.getByTestId('scene-text')).toContainText(
-		'米米看见公共汽车。',
+		'米米玩球，挥手说再见。',
 	)
+	await expect(page.getByTestId('scene-item-ball')).toBeVisible()
+	await expect(page.getByTestId('scene-item-bird')).toBeVisible()
+	await page.getByRole('button', { name: 'Previous scene' }).click()
+	await expect(page.getByTestId('scene-progress')).toContainText('5 / 6')
 	await expect(page.getByTestId('home-screen')).toHaveCount(0)
 	await page.getByRole('button', { name: 'Back' }).click()
 	await expect(page.getByTestId('home-screen')).toBeVisible()
@@ -151,14 +162,16 @@ test('card mode shell uses one-card paging and bilingual labels', async ({
 	page,
 }) => {
 	await page.goto('/')
-	await page.getByTestId('start-cards-story-seed').click()
+	await page.getByTestId('start-cards-mimi-rides-the-bus').click()
 
 	await expect(page.getByTestId('card-screen')).toBeVisible()
+	await expect(page.getByTestId('card-count')).toContainText('1 / 10')
 	await expect(page.getByTestId('vocabulary-card')).toContainText('bus')
 	await expect(page.getByTestId('vocabulary-card')).toContainText('公共汽车')
 	await page.getByRole('button', { name: 'Next card' }).click()
-	await expect(page.getByTestId('vocabulary-card')).toContainText('flower')
-	await expect(page.getByTestId('vocabulary-card')).toContainText('花')
+	await expect(page.getByTestId('card-count')).toContainText('2 / 10')
+	await expect(page.getByTestId('vocabulary-card')).toContainText('bus stop')
+	await expect(page.getByTestId('vocabulary-card')).toContainText('公共汽车站')
 })
 
 test('audio is user initiated and respects mute', async ({ page }) => {
@@ -166,13 +179,15 @@ test('audio is user initiated and respects mute', async ({ page }) => {
 	await page.getByTestId('mute-button').click()
 	await resetAudio(page)
 
-	await page.getByTestId('start-story-story-seed').click()
+	await page.getByTestId('start-story-mimi-rides-the-bus').click()
 	await page.getByTestId('replay-scene').click()
 	let audioSources = await getAudioSources(page)
 	expect(audioSources).toHaveLength(1)
-	expect(audioSources[0]).toContain('/assets/generated/story-seed/audio/')
+	expect(audioSources[0]).toContain(
+		'/assets/generated/mimi-rides-the-bus/audio/',
+	)
 
-	await page.getByTestId('scene-item-bus').click()
+	await page.getByTestId('scene-item-bus-stop').click()
 	await expect.poll(async () => (await getAudioSources(page)).length).toBe(2)
 
 	await page.getByTestId('mute-button').click()
@@ -189,15 +204,19 @@ test('card audio plays English then Chinese static assets', async ({
 	await page.getByTestId('mute-button').click()
 	await resetAudio(page)
 
-	await page.getByTestId('start-cards-story-seed').click()
+	await page.getByTestId('start-cards-mimi-rides-the-bus').click()
 	await page.getByTestId('vocabulary-card').click()
 
 	await expect.poll(async () => (await getAudioSources(page)).length).toBe(2)
 
 	const audioSources = await getAudioSources(page)
 	expect(audioSources).toHaveLength(2)
-	expect(audioSources[0]).toContain('/assets/generated/story-seed/audio/')
-	expect(audioSources[1]).toContain('/assets/generated/story-seed/audio/')
+	expect(audioSources[0]).toContain(
+		'/assets/generated/mimi-rides-the-bus/audio/bus-en.mp3',
+	)
+	expect(audioSources[1]).toContain(
+		'/assets/generated/mimi-rides-the-bus/audio/bus-zh-Hans.mp3',
+	)
 
 	await page.getByTestId('mute-button').click()
 	await expect
@@ -230,9 +249,9 @@ test('runtime makes no calls to AI endpoints', async ({ page }) => {
 	})
 
 	await page.goto('/')
-	await page.getByTestId('start-story-story-seed').click()
+	await page.getByTestId('start-story-mimi-rides-the-bus').click()
 	await page.getByTestId('home-button').click()
-	await page.getByTestId('start-cards-story-seed').click()
+	await page.getByTestId('start-cards-mimi-rides-the-bus').click()
 
 	expect(
 		requests.filter((url) =>

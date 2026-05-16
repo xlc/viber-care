@@ -1,0 +1,643 @@
+{
+	"id": "mimi-rides-the-bus",
+	"version": "1.0.0",
+	"metadata": {
+		"title": {
+			"en": "Mimi Rides the Bus",
+			"zh-Hans": "米米坐公共汽车"
+		},
+		"description": {
+			"en": "Mimi takes a calm bus ride to the park and learns friendly transport and park words.",
+			"zh-Hans": "米米安静地坐公共汽车去公园，认识交通和公园里的常见词。"
+		},
+		"ageRange": "2-4",
+		"theme": "Taking the bus to the park",
+		"sceneCount": 6
+	},
+	"plotPlan": {
+		"mainCharacter": "Mimi, a curious toddler with short dark hair and a yellow shirt.",
+		"setting": "A quiet neighborhood bus stop, a friendly yellow bus, and a small sunny park.",
+		"goal": "Mimi rides the bus to the park while hearing simple transport and park words.",
+		"beginning": "Mimi waits safely with an adult and notices the bus stop.",
+		"middle": "The bus arrives, Mimi taps her card, sits down, and watches trees and houses through the window.",
+		"ending": "Mimi gets off at the park, plays gently, and waves goodbye to the bus.",
+		"emotionalTone": "Calm, warm, safe, and repeatable.",
+		"learningGoals": [
+			"Recognize common bus-ride words.",
+			"Recognize simple park words.",
+			"Hear each important word in English and Simplified Chinese.",
+			"Practice tapping visible story items to repeat audio."
+		],
+		"vocabulary": [
+			"bus",
+			"bus stop",
+			"card",
+			"seat",
+			"window",
+			"tree",
+			"house",
+			"park",
+			"ball",
+			"bird"
+		],
+		"interactionIdeas": [
+			"Tap the bus to make it move gently.",
+			"Tap the card to hear a soft beep.",
+			"Tap the ball to make it bounce.",
+			"Tap the bird to make it move gently."
+		]
+	},
+	"languages": ["en", "zh-Hans"],
+	"coverImage": {
+		"type": "image",
+		"path": "/assets/generated/mimi-rides-the-bus/cover.jpg",
+		"alt": "Mimi and an adult wait safely as a friendly yellow bus arrives near a park"
+	},
+	"scenes": [
+		{
+			"id": "01-bus-stop",
+			"order": 1,
+			"purpose": "Introduce Mimi and the bus stop.",
+			"text": {
+				"en": "Mimi sees the bus stop.",
+				"zh-Hans": "米米看见公共汽车站。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/01-bus-stop-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/01-bus-stop-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/scenes/01-bus-stop.jpg",
+				"alt": "Mimi and an adult stand safely beside a quiet bus stop near a park"
+			},
+			"imagePrompt": "Mimi sees a quiet neighborhood bus stop near a small park, no bus yet, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "bus-stop",
+					"x": 56,
+					"y": 45,
+					"scale": 1.25,
+					"interactionId": "bus-stop-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "bus-stop-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "02-bus-arrives",
+			"order": 2,
+			"purpose": "Show the bus arriving.",
+			"text": {
+				"en": "The yellow bus is here.",
+				"zh-Hans": "黄色公共汽车来了。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/02-bus-arrives-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/02-bus-arrives-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/scenes/02-bus-arrives.jpg",
+				"alt": "A friendly yellow bus arrives while Mimi waits safely with an adult"
+			},
+			"imagePrompt": "A friendly yellow city bus arrives slowly at a quiet bus stop while Mimi holds an adult's hand, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "bus-stop",
+					"x": 20,
+					"y": 46,
+					"scale": 0.9
+				},
+				{
+					"itemId": "bus",
+					"x": 67,
+					"y": 54,
+					"scale": 1.4,
+					"interactionId": "bus-rolls-in"
+				}
+			],
+			"interactions": [
+				{
+					"id": "bus-rolls-in",
+					"type": "move"
+				}
+			]
+		},
+		{
+			"id": "03-card-and-seat",
+			"order": 3,
+			"purpose": "Show Mimi tapping a card and sitting down.",
+			"text": {
+				"en": "Mimi taps her card and sits down.",
+				"zh-Hans": "米米刷卡，然后坐下。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/03-card-and-seat-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/03-card-and-seat-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/scenes/03-card-and-seat.jpg",
+				"alt": "Inside the bus, Mimi taps a card and sits safely on a blue seat"
+			},
+			"imagePrompt": "Inside a clean friendly bus, Mimi taps a simple card and sits safely beside an adult on a blue seat, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "card",
+					"x": 26,
+					"y": 56,
+					"scale": 0.8,
+					"interactionId": "card-beep"
+				},
+				{
+					"itemId": "seat",
+					"x": 73,
+					"y": 62,
+					"scale": 1.1
+				}
+			],
+			"interactions": [
+				{
+					"id": "card-beep",
+					"type": "sound"
+				}
+			]
+		},
+		{
+			"id": "04-trees-and-houses",
+			"order": 4,
+			"purpose": "Show the ride through the neighborhood.",
+			"text": {
+				"en": "The bus goes past trees and houses.",
+				"zh-Hans": "公共汽车经过树和房子。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/04-trees-and-houses-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/04-trees-and-houses-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/scenes/04-trees-and-houses.jpg",
+				"alt": "The yellow bus drives past green trees and small houses while Mimi looks out the window"
+			},
+			"imagePrompt": "A friendly yellow bus moves slowly past trees and small houses, Mimi visible through a large window, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "bus",
+					"x": 51,
+					"y": 59,
+					"scale": 1.3,
+					"interactionId": "bus-rolls-by"
+				},
+				{
+					"itemId": "window",
+					"x": 43,
+					"y": 45,
+					"scale": 0.85
+				},
+				{
+					"itemId": "tree",
+					"x": 14,
+					"y": 31,
+					"scale": 0.9
+				},
+				{
+					"itemId": "house",
+					"x": 13,
+					"y": 55,
+					"scale": 0.8
+				}
+			],
+			"interactions": [
+				{
+					"id": "bus-rolls-by",
+					"type": "move"
+				}
+			]
+		},
+		{
+			"id": "05-park-arrival",
+			"order": 5,
+			"purpose": "Arrive at the park.",
+			"text": {
+				"en": "Mimi gets off at the park.",
+				"zh-Hans": "米米在公园下车。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/05-park-arrival-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/05-park-arrival-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/scenes/05-park-arrival.jpg",
+				"alt": "Mimi gets off the yellow bus safely at a small sunny park"
+			},
+			"imagePrompt": "Mimi safely steps from a yellow bus while holding an adult's hand at a small sunny park entrance, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "bus",
+					"x": 19,
+					"y": 49,
+					"scale": 1.05
+				},
+				{
+					"itemId": "park",
+					"x": 72,
+					"y": 50,
+					"scale": 1.2,
+					"interactionId": "park-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "park-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "06-park-goodbye",
+			"order": 6,
+			"purpose": "End with gentle play and goodbye.",
+			"text": {
+				"en": "Mimi plays with a ball and waves goodbye.",
+				"zh-Hans": "米米玩球，挥手说再见。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/06-park-goodbye-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/06-park-goodbye-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/scenes/06-park-goodbye.jpg",
+				"alt": "Mimi plays with a colorful ball near a small bird and waves goodbye to the bus"
+			},
+			"imagePrompt": "Mimi gently plays with a colorful ball in a sunny park while a small blue and yellow bird sits nearby and the yellow bus leaves in the background, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "ball",
+					"x": 42,
+					"y": 72,
+					"scale": 0.9,
+					"interactionId": "ball-bounce"
+				},
+				{
+					"itemId": "bird",
+					"x": 66,
+					"y": 75,
+					"scale": 0.75
+				},
+				{
+					"itemId": "bus",
+					"x": 73,
+					"y": 32,
+					"scale": 0.85
+				}
+			],
+			"interactions": [
+				{
+					"id": "ball-bounce",
+					"type": "bounce"
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"id": "bus",
+			"name": {
+				"en": "bus",
+				"zh-Hans": "公共汽车"
+			},
+			"phrase": {
+				"en": "The bus is here.",
+				"zh-Hans": "公共汽车来了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/bus.jpg",
+				"alt": "A friendly yellow bus"
+			},
+			"imagePrompt": "Standalone friendly yellow bus, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/bus-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/bus-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": [
+				"02-bus-arrives",
+				"04-trees-and-houses",
+				"05-park-arrival",
+				"06-park-goodbye"
+			]
+		},
+		{
+			"id": "bus-stop",
+			"name": {
+				"en": "bus stop",
+				"zh-Hans": "公共汽车站"
+			},
+			"phrase": {
+				"en": "Here is the bus stop.",
+				"zh-Hans": "这里是公共汽车站。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/bus-stop.jpg",
+				"alt": "A green bus stop shelter with a bench"
+			},
+			"imagePrompt": "Standalone green bus stop shelter with bench and blank sign, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/bus-stop-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/bus-stop-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-bus-stop", "02-bus-arrives"]
+		},
+		{
+			"id": "card",
+			"name": {
+				"en": "card",
+				"zh-Hans": "卡"
+			},
+			"phrase": {
+				"en": "Mimi taps the card.",
+				"zh-Hans": "米米刷卡。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/card.jpg",
+				"alt": "A simple blue transit card"
+			},
+			"imagePrompt": "Standalone simple blue transit card, no bus or text, warm children's book illustration.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/card-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/card-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-card-and-seat"]
+		},
+		{
+			"id": "seat",
+			"name": {
+				"en": "seat",
+				"zh-Hans": "座位"
+			},
+			"phrase": {
+				"en": "Mimi sits on the seat.",
+				"zh-Hans": "米米坐在座位上。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/seat.jpg",
+				"alt": "A blue bus seat"
+			},
+			"imagePrompt": "Standalone blue bus seat, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/seat-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/seat-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-card-and-seat"]
+		},
+		{
+			"id": "window",
+			"name": {
+				"en": "window",
+				"zh-Hans": "窗户"
+			},
+			"phrase": {
+				"en": "Mimi looks out the window.",
+				"zh-Hans": "米米看着窗户外面。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/window.jpg",
+				"alt": "A rounded bus window with blue sky"
+			},
+			"imagePrompt": "Standalone rounded bus window with sky reflection, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/window-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/window-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-trees-and-houses"]
+		},
+		{
+			"id": "tree",
+			"name": {
+				"en": "tree",
+				"zh-Hans": "树"
+			},
+			"phrase": {
+				"en": "A green tree goes by.",
+				"zh-Hans": "绿色的树过去了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/tree.jpg",
+				"alt": "A round green tree"
+			},
+			"imagePrompt": "Standalone rounded green tree, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/tree-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/tree-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-trees-and-houses"]
+		},
+		{
+			"id": "house",
+			"name": {
+				"en": "house",
+				"zh-Hans": "房子"
+			},
+			"phrase": {
+				"en": "A small house goes by.",
+				"zh-Hans": "小房子过去了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/house.jpg",
+				"alt": "A small house with a red roof"
+			},
+			"imagePrompt": "Standalone small house with red roof, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/house-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/house-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-trees-and-houses"]
+		},
+		{
+			"id": "park",
+			"name": {
+				"en": "park",
+				"zh-Hans": "公园"
+			},
+			"phrase": {
+				"en": "Mimi is at the park.",
+				"zh-Hans": "米米到了公园。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/park.jpg",
+				"alt": "A calm green park with a path and bench"
+			},
+			"imagePrompt": "Standalone calm park with grass, tree, path, bench, and slide, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/park-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/park-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-park-arrival"]
+		},
+		{
+			"id": "ball",
+			"name": {
+				"en": "ball",
+				"zh-Hans": "球"
+			},
+			"phrase": {
+				"en": "The ball bounces.",
+				"zh-Hans": "球弹一弹。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/ball.jpg",
+				"alt": "A colorful playground ball"
+			},
+			"imagePrompt": "Standalone colorful playground ball, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/ball-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/ball-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-park-goodbye"]
+		},
+		{
+			"id": "bird",
+			"name": {
+				"en": "bird",
+				"zh-Hans": "鸟"
+			},
+			"phrase": {
+				"en": "A little bird sings.",
+				"zh-Hans": "小鸟唱歌。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-rides-the-bus/items/bird.jpg",
+				"alt": "A small blue and yellow bird"
+			},
+			"imagePrompt": "Standalone small friendly blue and yellow bird, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/bird-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-rides-the-bus/audio/bird-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-park-goodbye"]
+		}
+	]
+}

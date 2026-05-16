@@ -12,7 +12,7 @@ export type StoryAppSettings = {
 export type StorageLike = Pick<Storage, 'getItem' | 'setItem'>
 
 export const DEFAULT_SETTINGS: StoryAppSettings = {
-	selectedPackId: 'story-seed',
+	selectedPackId: 'mimi-rides-the-bus',
 	language: 'en',
 	muted: false,
 	lastSceneId: null,

@@ -53,6 +53,12 @@ export function App() {
 	}, [settings])
 
 	useEffect(() => {
+		if (activePack.id !== settings.selectedPackId) {
+			updateSettings({ selectedPackId: activePack.id, lastSceneId: null })
+		}
+	}, [activePack.id, settings.selectedPackId])
+
+	useEffect(() => {
 		if (settings.muted) {
 			stopSpeech()
 		}

@@ -50,8 +50,32 @@ describe('story runtime catalog', () => {
 		}
 	})
 
+	it('ships the complete Mimi pack without placeholder audio', () => {
+		const [pack] = catalog.packs
+
+		expect(pack?.id).toBe('mimi-rides-the-bus')
+		expect(pack?.metadata.sceneCount).toBe(6)
+		expect(pack?.scenes).toHaveLength(6)
+		expect(pack?.items.map((item) => item.id)).toEqual([
+			'bus',
+			'bus-stop',
+			'card',
+			'seat',
+			'window',
+			'tree',
+			'house',
+			'park',
+			'ball',
+			'bird',
+		])
+
+		const serialized = JSON.stringify(pack)
+		expect(serialized).not.toContain('silence.wav')
+		expect(serialized).not.toContain('/assets/generated/story-seed/')
+	})
+
 	it('does not import legacy content as active story packs', () => {
-		expect(catalog.packs.map((pack) => pack.id)).toEqual(['story-seed'])
+		expect(catalog.packs.map((pack) => pack.id)).toEqual(['mimi-rides-the-bus'])
 		expect(existsSync(path.join(process.cwd(), 'content', 'items'))).toBe(false)
 		expect(existsSync(path.join(process.cwd(), 'content', 'packs'))).toBe(false)
 	})
@@ -62,14 +86,49 @@ function expectStaticAsset(asset: AssetReference | undefined, label: string) {
 		throw new Error(`${label} is missing a static asset`)
 	}
 
+	const assetPath = getPublicAssetPath(asset)
 	expect(
 		asset.path.startsWith('/assets/'),
 		`${label} must use a public /assets/ path`,
 	).toBe(true)
 	expect(
-		existsSync(path.join(process.cwd(), 'public', asset.path.slice(1))),
+		existsSync(assetPath),
 		`${label} points to missing asset ${asset.path}`,
 	).toBe(true)
+	if (asset.type === 'audio' || asset.type === 'sound') {
+		expectUsableAudioAsset(assetPath, label, asset.path)
+	}
+}
+
+function expectUsableAudioAsset(
+	assetPath: string,
+	label: string,
+	publicPath: string,
+) {
+	const bytes = readFileSync(assetPath)
+	const hasId3Tag = bytes.subarray(0, 3).toString('ascii') === 'ID3'
+
+	expect(
+		bytes.length,
+		`${label} points to a tiny audio asset ${publicPath}`,
+	).toBeGreaterThan(4 * 1024)
+	expect(
+		hasId3Tag || hasMpegFrameSync(bytes),
+		`${label} does not look like an MP3 asset ${publicPath}`,
+	).toBe(true)
+}
+
+function hasMpegFrameSync(bytes: Buffer): boolean {
+	for (let index = 0; index < bytes.length - 1; index += 1) {
+		if (bytes[index] === 0xff && (bytes[index + 1] & 0xe0) === 0xe0) {
+			return true
+		}
+	}
+	return false
+}
+
+function getPublicAssetPath(asset: AssetReference): string {
+	return path.join(process.cwd(), 'public', asset.path.slice(1))
 }
 
 function getSourceStoryPackIds() {

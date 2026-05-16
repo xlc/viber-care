@@ -4,6 +4,13 @@
 
 Create the first complete polished story pack: "Mimi Rides the Bus" / "米米坐公共汽车".
 
+## Status
+
+Implemented as the active story pack. The temporary `story-seed` pack was
+removed from active content, generated images/audio live under
+`public/assets/generated/mimi-rides-the-bus/`, and follow-up authoring workflow
+gaps were captured in `plans/mimi-rides-the-bus-authoring-notes.md`.
+
 ## Scope
 
 - Produce one coherent bilingual story pack.

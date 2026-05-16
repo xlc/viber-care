@@ -28,10 +28,10 @@ describe('story settings persistence', () => {
 	it('persists valid story settings', () => {
 		const storage = new MemoryStorage()
 		const settings: StoryAppSettings = {
-			selectedPackId: 'story-seed',
+			selectedPackId: 'mimi-rides-the-bus',
 			language: 'zh-Hans',
 			muted: true,
-			lastSceneId: 'garden-hello',
+			lastSceneId: '03-card-and-seat',
 		}
 
 		saveSettings(storage, settings)
@@ -48,13 +48,13 @@ describe('story settings persistence', () => {
 				activeLevel: 'L5',
 				languageOrderPreset: 'zh-then-en',
 				selectedSetId: 'old-set',
-				selectedPackId: 'story-seed',
+				selectedPackId: 'mimi-rides-the-bus',
 			}),
 		)
 
 		expect(loadSettings(storage)).toEqual({
 			...DEFAULT_SETTINGS,
-			selectedPackId: 'story-seed',
+			selectedPackId: 'mimi-rides-the-bus',
 		})
 	})
 
