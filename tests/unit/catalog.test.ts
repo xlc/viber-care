@@ -4,89 +4,56 @@ import { describe, expect, it } from 'vitest'
 import { catalog } from '../../src/content/catalog'
 import {
 	type AssetReference,
-	LEARNING_LEVELS,
-	REQUIRED_MVP_LANGUAGES,
-	RuntimeCatalogSchema,
+	REQUIRED_STORY_LANGUAGES,
+	StoryCatalogSchema,
 } from '../../src/content/schema'
 
-describe('runtime catalog', () => {
-	it('validates committed static content', () => {
-		const parsed = RuntimeCatalogSchema.parse(catalog)
+describe('story runtime catalog', () => {
+	it('imports only committed story packs and static assets', () => {
+		const parsed = StoryCatalogSchema.parse(catalog)
 
-		expect(parsed.schemaVersion).toBe('2')
-		expect(parsed.defaultLanguageOrder).toEqual([...REQUIRED_MVP_LANGUAGES])
-		expect(parsed.supportedLanguages).toEqual([...REQUIRED_MVP_LANGUAGES])
-		expect(parsed.learningLevels).toEqual([...LEARNING_LEVELS])
-		expect(parsed.items.map((item) => item.id).sort()).toEqual(
-			getSourceItemIds(),
-		)
+		expect(parsed.schemaVersion).toBe('story-pack-v1')
+		expect(parsed.supportedLanguages).toEqual([...REQUIRED_STORY_LANGUAGES])
 		expect(parsed.packs.map((pack) => pack.id).sort()).toEqual(
-			getSourcePackIds(),
+			getSourceStoryPackIds(),
 		)
-
-		for (const item of parsed.items) {
-			expect(
-				item.variants.length,
-				`${item.id} variants`,
-			).toBeGreaterThanOrEqual(2)
-			for (const variant of item.variants) {
-				expectStaticAsset(variant.image, `${item.id}/${variant.id}`)
-			}
-			for (const language of REQUIRED_MVP_LANGUAGES) {
-				const languageContent = item.content[language]
-				expectStaticAsset(
-					languageContent?.findPromptAudio,
-					`${item.id}/${language}/findPrompt`,
-				)
-				expectStaticAsset(
-					languageContent?.successPhraseAudio,
-					`${item.id}/${language}/successPhrase`,
-				)
-				const levels = languageContent?.levels
-
-				for (const level of LEARNING_LEVELS) {
-					const content = levels?.[level]
-					expect(content?.text).toBeTruthy()
-					expect(content?.audioText).toBeTruthy()
-					expectStaticAsset(content?.audio, `${item.id}/${language}/${level}`)
-				}
-			}
-		}
 
 		for (const pack of parsed.packs) {
-			expect(
-				pack.scenes.length,
-				`${pack.id} should have multiple scenes`,
-			).toBeGreaterThanOrEqual(2)
-			const objectIds = new Set(pack.objects.map((object) => object.id))
-			const setItemIds = new Set(pack.sets.flatMap((set) => set.itemIds))
-			expect([...objectIds].sort()).toEqual([...setItemIds].sort())
+			expectStaticAsset(pack.coverImage, `${pack.id}/cover`)
+			expect(pack.scenes.length).toBeGreaterThanOrEqual(2)
 
-			for (const set of pack.sets) {
-				expect(set.itemIds.length).toBeGreaterThan(0)
-				expect(set.sceneIds.length).toBeGreaterThan(0)
-				for (const itemId of set.itemIds) {
-					expect(objectIds.has(itemId)).toBe(true)
+			const itemIds = new Set(pack.items.map((item) => item.id))
+			for (const scene of pack.scenes) {
+				expectStaticAsset(scene.image, `${pack.id}/${scene.id}`)
+				for (const language of REQUIRED_STORY_LANGUAGES) {
+					expect(scene.text[language]).toBeTruthy()
+					expectStaticAsset(
+						scene.narration[language],
+						`${pack.id}/${scene.id}/${language}`,
+					)
+				}
+				for (const sceneItem of scene.items) {
+					expect(itemIds.has(sceneItem.itemId)).toBe(true)
 				}
 			}
 
-			for (const scene of pack.scenes) {
-				expectStaticAsset(scene.background.asset, `${pack.id}/${scene.id}`)
-				expect(
-					scene.regions.length,
-					`${pack.id}/${scene.id} regions`,
-				).toBeGreaterThan(0)
-				expect(scene.visibleObjectCount.min).toBeGreaterThan(0)
-				expect(scene.visibleObjectCount.max).toBeLessThanOrEqual(
-					scene.objects.length,
-				)
-				for (const placement of scene.objects) {
-					expect(objectIds.has(placement.itemId)).toBe(true)
-					expect(setItemIds.has(placement.itemId)).toBe(true)
-					expect(placement.regionTags.length).toBeGreaterThan(0)
+			for (const item of pack.items) {
+				expectStaticAsset(item.image, `${pack.id}/${item.id}`)
+				for (const language of REQUIRED_STORY_LANGUAGES) {
+					expect(item.name[language]).toBeTruthy()
+					expectStaticAsset(
+						item.wordAudio[language],
+						`${pack.id}/${item.id}/${language}`,
+					)
 				}
 			}
 		}
+	})
+
+	it('does not import legacy content as active story packs', () => {
+		expect(catalog.packs.map((pack) => pack.id)).toEqual(['story-seed'])
+		expect(existsSync(path.join(process.cwd(), 'content', 'items'))).toBe(false)
+		expect(existsSync(path.join(process.cwd(), 'content', 'packs'))).toBe(false)
 	})
 })
 
@@ -105,8 +72,8 @@ function expectStaticAsset(asset: AssetReference | undefined, label: string) {
 	).toBe(true)
 }
 
-function getSourcePackIds() {
-	const packsDir = path.join(process.cwd(), 'content', 'packs')
+function getSourceStoryPackIds() {
+	const packsDir = path.join(process.cwd(), 'content', 'story-packs')
 
 	return readdirSync(packsDir)
 		.filter((fileName) => fileName.endsWith('.json'))
@@ -116,27 +83,9 @@ function getSourcePackIds() {
 				id?: unknown
 			}
 			if (typeof pack.id !== 'string' || pack.id.length === 0) {
-				throw new Error(`${fileName} is missing a content pack id`)
+				throw new Error(`${fileName} is missing a story pack id`)
 			}
 			return pack.id
-		})
-		.sort()
-}
-
-function getSourceItemIds() {
-	const itemsDir = path.join(process.cwd(), 'content', 'items')
-
-	return readdirSync(itemsDir)
-		.filter((fileName) => fileName.endsWith('.json'))
-		.map((fileName) => {
-			const filePath = path.join(itemsDir, fileName)
-			const item = JSON.parse(readFileSync(filePath, 'utf8')) as {
-				id?: unknown
-			}
-			if (typeof item.id !== 'string' || item.id.length === 0) {
-				throw new Error(`${fileName} is missing an item id`)
-			}
-			return item.id
 		})
 		.sort()
 }

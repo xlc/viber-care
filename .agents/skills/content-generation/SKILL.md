@@ -1,120 +1,86 @@
 ---
 name: content-generation
-description: Use when adding or refreshing Word Garden content packs, object copy, bilingual learning levels, static images, or audio assets.
+description: Use when adding or refreshing Word Garden story packs, bilingual story text, static images, or static audio assets.
 ---
 
-# Word Garden Content Generation
+# Word Garden Story Pack Generation
 
 This is an authoring workflow only. The app runtime stays static and imports
-committed source content directly.
+committed story packs directly from `content/story-packs/*.json`.
 
 ## Rules
 
 - Do not create runtime catalog JSON files under `public/`.
 - Do not add package scripts for generating content, catalogs, manifests, or
   asset reviews.
-- Do not create generated JSON manifests or review JSON files.
+- Do not create generated JSON manifests or generated review JSON files.
 - Do not add runtime AI calls, remote content loading, backend code, client
   secrets, or client-exposed API keys.
-- Write reusable item source content as committed JSON under
-  `content/items/*.json`.
-- Write pack, set, scene, and placement source content as committed JSON under
-  `content/packs/*.json`.
-- Write static image/audio files under `public/assets/` and reference them from
-  the item or pack content.
-- Every production pack should have at least two scenes. Every object should
-  have at least two static visual variants.
-- Scene backgrounds must define percentage-based `regions`; scene spawn
-  candidates must use `regionTags` so objects only appear in appropriate areas
-  such as sky, water, grass, road, rail, or card fields.
-- Use scene `visibleObjectCount` to show a randomized subset when a scene has
-  more candidates than should be visible at once.
-- Generate level audio and the functional find/success prompt audio with
-  `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts`.
-  It reads `OPENROUTER_API_KEY` from `.env`, writes static MP3 files under
-  `public/assets/`, and updates level and prompt audio path values on the
-  referenced global item files.
-- Use the `imagegen` skill for image generation. Do not substitute hand-coded
-  SVGs, script-only placeholders, or deterministic drawing code when the task
-  calls for generated image assets.
-- When generating more than one item/object image, generate art in batches:
-  place multiple objects or variants in one imagegen output sheet, then split
-  that sheet into individual committed assets. Do not request one image per
-  item unless the task only needs one item or the batch sheet failed quality
-  review.
-- Commit only final split and optimized item/background assets. Keep source
-  sheets in a temporary workspace or delete them after extraction unless the
-  user explicitly asks to keep source sheets.
-- Validate generated image dimensions, byte size, missing references, and
-  unreferenced files with
-  `bun .agents/skills/content-generation/scripts/validate-image-assets.ts`.
-- Keep item content bilingual for production-quality packs: English and
-  Simplified Chinese L0-L5 text, audio text, find prompt, success phrase, and
-  fallback text.
+- Write active story content as committed JSON under
+  `content/story-packs/<pack-id>.json`.
+- Keep legacy object-pack content under `content/legacy-word-garden-v2/` out of
+  active runtime imports.
+- Write static image/audio files under `public/assets/generated/<pack-id>/` and
+  reference those `/assets/...` paths from the story pack.
+- Use the `imagegen` skill for production image assets. Do not substitute
+  hand-coded SVGs or deterministic drawing code when production generated art is
+  requested.
+- Use OpenRouter or other API-backed audio generation only outside the client
+  runtime. Never commit secrets.
+- Keep production story packs bilingual: English and Simplified Chinese story
+  text, item labels, narration audio, and item word audio.
 
-## Content Pack Checklist
+## Story Pack Checklist
 
-1. Add or edit `content/packs/<pack-id>.json`.
-2. Include pack metadata, languages, sets, at least two scenes, and scene
-   placements that reference global `itemId` values.
-3. Define scene `regions` as background-relative percentage rectangles.
-4. Add spawn candidates with `regionTags`, anchor positions, jitter, scale
-   ranges, and `visibleObjectCount`.
-5. Add or edit global item files under `content/items/` with two or more
-   variants and static image assets. Generate item variants in batch sheets,
-   split them into individual files, optimize the split files, and keep variant
-   image paths under `public/assets/`.
-6. Make every scene spawn candidate reference an item included by at least one
-   set in the pack.
-7. Keep item language content in item files and placement rules in pack scenes,
-   not in runtime engine code.
-8. Validate generated image dimensions and byte sizes:
-   `bun .agents/skills/content-generation/scripts/validate-image-assets.ts --pack <pack-id>`.
-9. Generate or refresh static level and prompt audio:
-   `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts --generate --pack <pack-id>`.
-10. Format content JSON after generation:
-   `bunx biome format --write content/items content/packs/<pack-id>.json`.
-11. Audit static level and prompt audio:
-   `bun .agents/skills/content-generation/scripts/generate-openrouter-audio.ts --audit --pack <pack-id>`.
-12. New committed item and pack JSON files are imported by `src/content/catalog.ts`.
-13. Run `bun run check`.
-14. Run `bun run test`.
-15. Run `bun run test:e2e`.
-16. Run `bun run build`.
+1. Choose the learning goal and target age.
+2. Write the plot plan before scenes.
+3. Create `content/story-packs/<pack-id>.json`.
+4. Include metadata, supported languages, cover image, plot plan, scenes, and
+   items.
+5. Include at least two scenes.
+6. Keep each scene to one clear toddler-scale moment.
+7. Give every scene English and Simplified Chinese text.
+8. Give every scene English and Simplified Chinese narration audio paths.
+9. Give every learnable item English and Simplified Chinese labels.
+10. Give every learnable item English and Simplified Chinese word audio paths.
+11. Place each item in the scenes declared by its `sceneIds`.
+12. Put active assets under `public/assets/generated/<pack-id>/`.
+13. Copy reused legacy assets into the active pack asset directory before
+    referencing them.
+14. Run `bun run check`.
+15. Run `bun run test`.
+16. Run `bun run test:e2e`.
+17. Run `bun run build`.
 
 ## Static Asset Guidance
 
-- Item images should be clear at small sizes, friendly, toddler-safe, and free
-  of text, logos, ads, watermarks, scary imagery, and unsafe behavior.
-- Item variants should be visibly distinct through size, color, or gentle
-  style differences while preserving the same object identity.
-- Backgrounds should be calm, uncluttered, and should not hide placed objects.
-- Region maps must match the actual background. Do not place fish outside water,
-  sun outside sky, vehicles outside their travel area, or cards outside the
-  intended card field.
-- For item/object art, prefer batch imagegen sheets with 4-12 cells per sheet.
-  Each cell should contain one object or one variant, centered, separated by
-  clear gutters, with no text, no labels, no overlapping objects, and enough
-  padding to crop safely.
-- After splitting a sheet, trim excess transparent/flat padding only enough to
-  keep a comfortable hit area, resize item assets to at most 800px on the
-  longest side, and optimize them. If the item is intended as a transparent
-  cutout, keep alpha and run the validator with `--require-item-alpha`.
+- Scene images should be calm, uncluttered, friendly, toddler-safe, and free of
+  text, logos, ads, watermarks, scary imagery, and unsafe behavior.
+- Item images should be clear at small sizes and easy to tap.
+- Tappable scene items should be visually distinct from the background.
+- If batching item art with imagegen, use source sheets only as temporary
+  workspace material; commit the final split and optimized assets.
 - Scene backgrounds may be generated one at a time when each scene needs a
-  distinct composition and region map. Resize backgrounds to at most 1440px on
-  the longest side and optimize them before committing.
-- Image size targets are intentionally strict: item images should stay at or
-  below 256 KiB, backgrounds at or below 768 KiB, and no image should exceed
-  1 MiB. Run the image validator before treating the asset pass as complete.
-- Audio should match the content pack text for the target language and level.
-- Audio file names should use the canonical shapes
-  `/assets/generated/<pack-id>/audio/<object-id>-<language>-<level>.mp3`,
-  `/assets/generated/<pack-id>/audio/<object-id>-<language>-find.mp3`, and
-  `/assets/generated/<pack-id>/audio/<object-id>-<language>-success.mp3`.
-- For a full voice refresh, run the audio helper with `--generate --refresh`.
-  Prune old audio only after the content references and `--audit` prove it is
-  unreferenced.
-- For a provider sanity check before bulk generation, run the audio helper with
-  `--sample --pack <pack-id>`; it writes the sample to `/private/tmp/`.
-- If using AI or API keys to create production assets, do that outside the app
-  runtime and never commit secrets.
+  distinct composition.
+- Resize and optimize production assets before committing. Keep backgrounds and
+  item images small enough for a static mobile PWA.
+- Audio should be clear, slow, warm, and matched exactly to the story-pack text.
+- Audio files should use stable names such as:
+  `/assets/generated/<pack-id>/audio/<scene-id>-en.mp3`,
+  `/assets/generated/<pack-id>/audio/<scene-id>-zh-Hans.mp3`,
+  `/assets/generated/<pack-id>/audio/<item-id>-en.mp3`, and
+  `/assets/generated/<pack-id>/audio/<item-id>-zh-Hans.mp3`.
+
+## Review Checklist
+
+- The plot was created before scenes.
+- The story has a clear beginning, middle, and ending.
+- Every scene has English and Simplified Chinese text.
+- Every scene has matching narration audio in both languages.
+- Every tappable item has word audio in both languages.
+- Every Card Mode item has English and Simplified Chinese labels.
+- Every item appears in its declared scenes.
+- Images match the story and are toddler-safe.
+- Interactions are short, gentle, and repeatable.
+- Runtime imports only committed active story packs and static asset paths.
+- Legacy content is not imported by `src/content/catalog.ts`.

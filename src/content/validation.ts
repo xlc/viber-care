@@ -1,12 +1,8 @@
-import { placementMatchesRegion, rectContainsPoint } from './regions'
 import {
-	type ContentPack,
-	LEARNING_LEVELS,
-	type ObjectConcept,
-	ObjectConceptSchema,
-	REQUIRED_MVP_LANGUAGES,
-	type SourceContentPack,
-	SourceContentPackSchema,
+	type AssetReference,
+	REQUIRED_STORY_LANGUAGES,
+	type StoryPack,
+	StoryPackSchema,
 } from './schema'
 
 export class ContentValidationError extends Error {
@@ -16,50 +12,27 @@ export class ContentValidationError extends Error {
 	}
 }
 
-export function validateContentCatalog(
-	itemInput: unknown[],
-	packInput: unknown[],
-): { items: ObjectConcept[]; packs: ContentPack[] } {
+export function validateStoryPacks(input: unknown[]): StoryPack[] {
 	const messages: string[] = []
-	const items = parseItems(itemInput, messages)
-	const packs = parsePacks(packInput, messages)
-	const itemMap = new Map(items.map((item) => [item.id, item]))
+	const packs = parsePacks(input, messages)
 
-	validateItemUniqueness(items, messages)
-	validatePackSources(packs, itemMap, messages)
+	validatePackUniqueness(packs, messages)
+	for (const pack of packs) {
+		validatePack(pack, messages)
+	}
 
 	if (messages.length > 0) {
 		throw new ContentValidationError(messages)
 	}
 
-	return {
-		items,
-		packs: packs.map((pack) => hydratePack(pack, itemMap)),
-	}
+	return packs
 }
 
-function parseItems(input: unknown[], messages: string[]): ObjectConcept[] {
-	const items: ObjectConcept[] = []
-	input.forEach((item, index) => {
-		const result = ObjectConceptSchema.safeParse(item)
-		if (result.success) {
-			items.push(result.data)
-			return
-		}
+function parsePacks(input: unknown[], messages: string[]): StoryPack[] {
+	const packs: StoryPack[] = []
 
-		for (const issue of result.error.issues) {
-			const path =
-				issue.path.length > 0 ? issue.path.join('.') : `item ${index}`
-			messages.push(`${path}: ${issue.message}`)
-		}
-	})
-	return items
-}
-
-function parsePacks(input: unknown[], messages: string[]): SourceContentPack[] {
-	const packs: SourceContentPack[] = []
 	input.forEach((pack, index) => {
-		const result = SourceContentPackSchema.safeParse(pack)
+		const result = StoryPackSchema.safeParse(pack)
 		if (result.success) {
 			packs.push(result.data)
 			return
@@ -67,204 +40,93 @@ function parsePacks(input: unknown[], messages: string[]): SourceContentPack[] {
 
 		for (const issue of result.error.issues) {
 			const path =
-				issue.path.length > 0 ? issue.path.join('.') : `pack ${index}`
+				issue.path.length > 0 ? issue.path.join('.') : `story pack ${index}`
 			messages.push(`${path}: ${issue.message}`)
 		}
 	})
+
 	return packs
 }
 
-function validateItemUniqueness(
-	items: ObjectConcept[],
-	messages: string[],
-): void {
-	const itemIds = new Set<string>()
-	for (const item of items) {
-		if (itemIds.has(item.id)) {
-			messages.push(`Duplicate item id "${item.id}".`)
-		}
-		itemIds.add(item.id)
-
-		const variantIds = new Set<string>()
-		for (const variant of item.variants) {
-			if (variantIds.has(variant.id)) {
-				messages.push(
-					`Item "${item.id}" has duplicate variant id "${variant.id}".`,
-				)
-			}
-			variantIds.add(variant.id)
-		}
-
-		validateItemLanguageContent(item, messages)
-	}
-}
-
-function validateItemLanguageContent(
-	item: ObjectConcept,
-	messages: string[],
-): void {
-	for (const language of REQUIRED_MVP_LANGUAGES) {
-		const languageContent = item.content[language]
-		if (!languageContent) {
-			messages.push(`Item "${item.id}" is missing ${language} content.`)
-			continue
-		}
-		if (!languageContent.findPromptAudio) {
-			messages.push(
-				`Item "${item.id}" is missing ${language} find prompt audio.`,
-			)
-		} else if (languageContent.findPromptAudio.type !== 'audio') {
-			messages.push(
-				`Item "${item.id}" ${language} find prompt audio must be an audio asset.`,
-			)
-		}
-		if (!languageContent.successPhraseAudio) {
-			messages.push(
-				`Item "${item.id}" is missing ${language} success phrase audio.`,
-			)
-		} else if (languageContent.successPhraseAudio.type !== 'audio') {
-			messages.push(
-				`Item "${item.id}" ${language} success phrase audio must be an audio asset.`,
-			)
-		}
-
-		for (const level of LEARNING_LEVELS) {
-			const levelContent = languageContent.levels[level]
-			if (!levelContent) {
-				messages.push(
-					`Item "${item.id}" is missing ${language} ${level} content.`,
-				)
-				continue
-			}
-			if (!levelContent.audio) {
-				messages.push(
-					`Item "${item.id}" is missing ${language} ${level} audio.`,
-				)
-			} else if (levelContent.audio.type !== 'audio') {
-				messages.push(
-					`Item "${item.id}" ${language} ${level} audio must be an audio asset.`,
-				)
-			}
-		}
-	}
-}
-
-function validatePackSources(
-	packs: SourceContentPack[],
-	itemMap: Map<string, ObjectConcept>,
-	messages: string[],
-): void {
+function validatePackUniqueness(packs: StoryPack[], messages: string[]) {
 	const packIds = new Set<string>()
-
 	for (const pack of packs) {
 		if (packIds.has(pack.id)) {
-			messages.push(`Duplicate content pack id "${pack.id}".`)
+			messages.push(`Duplicate story pack id "${pack.id}".`)
 		}
 		packIds.add(pack.id)
-
-		for (const language of REQUIRED_MVP_LANGUAGES) {
-			if (!pack.languages.includes(language)) {
-				messages.push(`Pack "${pack.id}" is missing ${language} language.`)
-			}
-		}
-
-		const sceneIds = validateScenes(pack, itemMap, messages)
-		validateSets(pack, sceneIds, itemMap, messages)
-
-		if (!sceneIds.has(pack.defaultSceneId)) {
-			messages.push(
-				`Pack "${pack.id}" default scene "${pack.defaultSceneId}" does not exist.`,
-			)
-		}
 	}
 }
 
-function validateScenes(
-	pack: SourceContentPack,
-	itemMap: Map<string, ObjectConcept>,
-	messages: string[],
-): Set<string> {
-	const sceneIds = new Set<string>()
-	if (pack.scenes.length < 2) {
-		messages.push(`Pack "${pack.id}" must include at least two scenes.`)
+function validatePack(pack: StoryPack, messages: string[]) {
+	if (pack.metadata.sceneCount !== pack.scenes.length) {
+		messages.push(
+			`Pack "${pack.id}" metadata scene count does not match its scenes.`,
+		)
 	}
 
-	for (const scene of pack.scenes) {
-		if (scene.packId !== pack.id) {
-			messages.push(
-				`Scene "${scene.id}" belongs to "${scene.packId}", not pack "${pack.id}".`,
-			)
+	for (const language of REQUIRED_STORY_LANGUAGES) {
+		if (!pack.languages.includes(language)) {
+			messages.push(`Pack "${pack.id}" is missing ${language} language.`)
 		}
+	}
+
+	validateImageAsset(pack.coverImage, `${pack.id}/cover`, messages)
+	validateRequiredLanguages(pack.metadata.title, `${pack.id}/title`, messages)
+	validateRequiredLanguages(
+		pack.metadata.description,
+		`${pack.id}/description`,
+		messages,
+	)
+
+	const sceneIds = validateScenes(pack, messages)
+	validateItems(pack, sceneIds, messages)
+}
+
+function validateScenes(pack: StoryPack, messages: string[]): Set<string> {
+	const sceneIds = new Set<string>()
+	const sceneOrders = new Set<number>()
+	const itemIds = new Set(pack.items.map((item) => item.id))
+
+	for (const scene of pack.scenes) {
 		if (sceneIds.has(scene.id)) {
 			messages.push(`Pack "${pack.id}" has duplicate scene id "${scene.id}".`)
 		}
 		sceneIds.add(scene.id)
 
-		if (scene.visibleObjectCount.min > scene.visibleObjectCount.max) {
+		if (sceneOrders.has(scene.order)) {
 			messages.push(
-				`Scene "${scene.id}" has visible object min greater than max.`,
+				`Pack "${pack.id}" has duplicate scene order "${scene.order}".`,
 			)
 		}
-		if (scene.visibleObjectCount.max > scene.objects.length) {
-			messages.push(
-				`Scene "${scene.id}" visible object max exceeds spawn candidate count.`,
-			)
-		}
+		sceneOrders.add(scene.order)
 
-		const regionIds = new Set<string>()
-		for (const region of scene.regions) {
-			if (regionIds.has(region.id)) {
+		validateRequiredLanguages(scene.text, `${scene.id}/text`, messages)
+		validateRequiredAudio(scene.narration, `${scene.id}/narration`, messages)
+		validateImageAsset(scene.image, `${scene.id}/image`, messages)
+
+		const interactionIds = new Set<string>()
+		for (const interaction of scene.interactions) {
+			if (interactionIds.has(interaction.id)) {
 				messages.push(
-					`Scene "${scene.id}" has duplicate region id "${region.id}".`,
+					`Scene "${scene.id}" has duplicate interaction id "${interaction.id}".`,
 				)
 			}
-			regionIds.add(region.id)
-
-			for (const rect of region.rects) {
-				if (rect.x + rect.width > 100 || rect.y + rect.height > 100) {
-					messages.push(
-						`Scene "${scene.id}" region "${region.id}" extends outside the background.`,
-					)
-				}
-			}
+			interactionIds.add(interaction.id)
 		}
 
-		for (const placement of scene.objects) {
-			if (!itemMap.has(placement.itemId)) {
+		for (const sceneItem of scene.items) {
+			if (!itemIds.has(sceneItem.itemId)) {
 				messages.push(
-					`Scene "${scene.id}" references unknown item "${placement.itemId}".`,
+					`Scene "${scene.id}" references unknown item "${sceneItem.itemId}".`,
 				)
-				continue
 			}
-
 			if (
-				placement.scaleRange &&
-				placement.scaleRange.min > placement.scaleRange.max
+				sceneItem.interactionId &&
+				!interactionIds.has(sceneItem.interactionId)
 			) {
 				messages.push(
-					`Scene "${scene.id}" placement "${placement.itemId}" has scale range min greater than max.`,
-				)
-			}
-
-			const matchingRegions = scene.regions.filter((region) =>
-				placementMatchesRegion(region, placement),
-			)
-			if (matchingRegions.length === 0) {
-				messages.push(
-					`Scene "${scene.id}" placement "${placement.itemId}" references missing region tags "${placement.regionTags.join(', ')}".`,
-				)
-				continue
-			}
-
-			if (
-				!matchingRegions.some((region) =>
-					region.rects.some((rect) =>
-						rectContainsPoint(rect, placement.x, placement.y),
-					),
-				)
-			) {
-				messages.push(
-					`Scene "${scene.id}" placement "${placement.itemId}" anchor is outside its region.`,
+					`Scene "${scene.id}" item "${sceneItem.itemId}" references unknown interaction "${sceneItem.interactionId}".`,
 				)
 			}
 		}
@@ -273,71 +135,120 @@ function validateScenes(
 	return sceneIds
 }
 
-function validateSets(
-	pack: SourceContentPack,
+function validateItems(
+	pack: StoryPack,
 	sceneIds: Set<string>,
-	itemMap: Map<string, ObjectConcept>,
 	messages: string[],
-): void {
-	const setIds = new Set<string>()
-	const packSetItemIds = new Set<string>()
-	const sceneMap = new Map(pack.scenes.map((scene) => [scene.id, scene]))
+) {
+	const itemIds = new Set<string>()
+	const placedSceneIdsByItem = getPlacedSceneIdsByItem(pack)
 
-	for (const set of pack.sets) {
-		if (setIds.has(set.id)) {
-			messages.push(`Pack "${pack.id}" has duplicate set id "${set.id}".`)
+	for (const item of pack.items) {
+		if (itemIds.has(item.id)) {
+			messages.push(`Pack "${pack.id}" has duplicate item id "${item.id}".`)
 		}
-		setIds.add(set.id)
+		itemIds.add(item.id)
 
-		const setItemIds = new Set(set.itemIds)
-		for (const itemId of set.itemIds) {
-			if (!itemMap.has(itemId)) {
-				messages.push(`Set "${set.id}" references unknown item "${itemId}".`)
-			}
-			packSetItemIds.add(itemId)
+		validateRequiredLanguages(item.name, `${item.id}/name`, messages)
+		if (item.phrase) {
+			validateRequiredLanguages(item.phrase, `${item.id}/phrase`, messages)
+		}
+		validateRequiredAudio(item.wordAudio, `${item.id}/wordAudio`, messages)
+		validateImageAsset(item.image, `${item.id}/image`, messages)
+
+		const placedSceneIds =
+			placedSceneIdsByItem.get(item.id) ?? new Set<string>()
+		if (placedSceneIds.size === 0) {
+			messages.push(`Item "${item.id}" must appear in a scene.`)
 		}
 
-		for (const sceneId of set.sceneIds) {
+		for (const sceneId of item.sceneIds) {
 			if (!sceneIds.has(sceneId)) {
-				messages.push(`Set "${set.id}" references unknown scene "${sceneId}".`)
+				messages.push(
+					`Item "${item.id}" references unknown scene "${sceneId}".`,
+				)
 				continue
 			}
-			const scene = sceneMap.get(sceneId)
-			if (!scene) {
-				continue
-			}
-			for (const placement of scene.objects) {
-				if (!setItemIds.has(placement.itemId)) {
-					messages.push(
-						`Set "${set.id}" includes scene "${scene.id}" but is missing item "${placement.itemId}".`,
-					)
-				}
+
+			if (!placedSceneIds.has(sceneId)) {
+				messages.push(
+					`Item "${item.id}" declares scene "${sceneId}" but is not placed there.`,
+				)
 			}
 		}
-	}
 
-	for (const scene of pack.scenes) {
-		for (const placement of scene.objects) {
-			if (!packSetItemIds.has(placement.itemId)) {
+		for (const sceneId of placedSceneIds) {
+			if (!item.sceneIds.includes(sceneId)) {
 				messages.push(
-					`Scene "${scene.id}" references item "${placement.itemId}" that is not included in any set for pack "${pack.id}".`,
+					`Item "${item.id}" is placed in scene "${sceneId}" but does not declare it.`,
 				)
 			}
 		}
 	}
 }
 
-function hydratePack(
-	pack: SourceContentPack,
-	itemMap: Map<string, ObjectConcept>,
-): ContentPack {
-	const itemIds = new Set(pack.sets.flatMap((set) => set.itemIds))
-	const objects = [...itemIds]
-		.map((itemId) => itemMap.get(itemId))
-		.filter((item): item is ObjectConcept => Boolean(item))
+function getPlacedSceneIdsByItem(pack: StoryPack): Map<string, Set<string>> {
+	const placedSceneIdsByItem = new Map<string, Set<string>>()
 
-	return {
-		...pack,
-		objects,
+	for (const scene of pack.scenes) {
+		for (const sceneItem of scene.items) {
+			const sceneIds =
+				placedSceneIdsByItem.get(sceneItem.itemId) ?? new Set<string>()
+			sceneIds.add(scene.id)
+			placedSceneIdsByItem.set(sceneItem.itemId, sceneIds)
+		}
+	}
+
+	return placedSceneIdsByItem
+}
+
+function validateRequiredLanguages(
+	value: Record<string, unknown>,
+	label: string,
+	messages: string[],
+) {
+	for (const language of REQUIRED_STORY_LANGUAGES) {
+		if (!value[language]) {
+			messages.push(`${label} is missing ${language}.`)
+		}
+	}
+}
+
+function validateRequiredAudio(
+	value: Record<string, AssetReference | undefined>,
+	label: string,
+	messages: string[],
+) {
+	for (const language of REQUIRED_STORY_LANGUAGES) {
+		const asset = value[language]
+		if (!asset) {
+			messages.push(`${label} is missing ${language} audio.`)
+			continue
+		}
+		if (asset.type !== 'audio' && asset.type !== 'sound') {
+			messages.push(`${label} ${language} must be an audio asset.`)
+		}
+		validatePublicAsset(asset, `${label}/${language}`, messages)
+	}
+}
+
+function validateImageAsset(
+	asset: AssetReference,
+	label: string,
+	messages: string[],
+) {
+	if (asset.type !== 'image') {
+		messages.push(`${label} must be an image asset.`)
+	}
+	validatePublicAsset(asset, label, messages)
+}
+
+function validatePublicAsset(
+	asset: AssetReference,
+	label: string,
+	messages: string[],
+) {
+	if (!asset.path.startsWith('/assets/')) {
+		messages.push(`${label} must use a public /assets/ path.`)
 	}
 }

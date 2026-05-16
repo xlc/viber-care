@@ -2,11 +2,10 @@ import { describe, expect, it } from 'vitest'
 import {
 	DEFAULT_SETTINGS,
 	loadSettings,
-	resolveLanguageOrder,
 	SETTINGS_STORAGE_KEY,
 	type StorageLike,
+	type StoryAppSettings,
 	saveSettings,
-	type WordGardenSettings,
 } from '../../src/state/settings'
 
 class MemoryStorage implements StorageLike {
@@ -21,61 +20,56 @@ class MemoryStorage implements StorageLike {
 	}
 }
 
-describe('settings persistence', () => {
+describe('story settings persistence', () => {
 	it('loads defaults when storage is empty', () => {
 		expect(loadSettings(new MemoryStorage())).toEqual(DEFAULT_SETTINGS)
 	})
 
-	it('persists valid settings and resolves language order', () => {
+	it('persists valid story settings', () => {
 		const storage = new MemoryStorage()
-		const settings: WordGardenSettings = {
-			...DEFAULT_SETTINGS,
-			mode: 'cards',
-			selectedPackId: 'english-alphabet',
-			selectedSetId: 'alphabet-u-z',
-			languageOrderPreset: 'zh-then-en',
-			activeLevel: 'L3',
+		const settings: StoryAppSettings = {
+			selectedPackId: 'story-seed',
+			language: 'zh-Hans',
 			muted: true,
+			lastSceneId: 'garden-hello',
 		}
 
 		saveSettings(storage, settings)
-		const loaded = loadSettings(storage)
 
-		expect(loaded).toEqual(settings)
-		expect(resolveLanguageOrder(loaded)).toEqual(['zh-Hans', 'en'])
+		expect(loadSettings(storage)).toEqual(settings)
 	})
 
-	it('accepts math as a valid stored mode', () => {
+	it('falls back from legacy mode and language-order settings', () => {
 		const storage = new MemoryStorage()
-		const settings: WordGardenSettings = {
+		storage.setItem(
+			SETTINGS_STORAGE_KEY,
+			JSON.stringify({
+				mode: 'math',
+				activeLevel: 'L5',
+				languageOrderPreset: 'zh-then-en',
+				selectedSetId: 'old-set',
+				selectedPackId: 'story-seed',
+			}),
+		)
+
+		expect(loadSettings(storage)).toEqual({
 			...DEFAULT_SETTINGS,
-			mode: 'math',
-			mathFocus: 'colors',
-		}
-
-		saveSettings(storage, settings)
-
-		expect(loadSettings(storage).mode).toBe('math')
-		expect(loadSettings(storage).mathFocus).toBe('colors')
+			selectedPackId: 'story-seed',
+		})
 	})
 
-	it('falls back from invalid stored modes', () => {
+	it('falls back from unsupported story settings', () => {
 		const storage = new MemoryStorage()
 		storage.setItem(
 			SETTINGS_STORAGE_KEY,
-			JSON.stringify({ ...DEFAULT_SETTINGS, mode: 'story' }),
+			JSON.stringify({
+				selectedPackId: '',
+				language: 'fr',
+				muted: 'no',
+				lastSceneId: '',
+			}),
 		)
 
-		expect(loadSettings(storage).mode).toBe(DEFAULT_SETTINGS.mode)
-	})
-
-	it('falls back from invalid stored math focus', () => {
-		const storage = new MemoryStorage()
-		storage.setItem(
-			SETTINGS_STORAGE_KEY,
-			JSON.stringify({ ...DEFAULT_SETTINGS, mathFocus: 'badges' }),
-		)
-
-		expect(loadSettings(storage).mathFocus).toBe(DEFAULT_SETTINGS.mathFocus)
+		expect(loadSettings(storage)).toEqual(DEFAULT_SETTINGS)
 	})
 })

@@ -1,12 +1,11 @@
-import type { LearningPresentation } from '../learning/engine'
+export type AudioCue = {
+	audioPath?: string
+}
 
 let activeAudio: HTMLAudioElement | null = null
 let playbackRun = 0
 
-export function speakSequence(
-	sequence: LearningPresentation[],
-	muted: boolean,
-): void {
+export function speakSequence(sequence: AudioCue[], muted: boolean): void {
 	if (muted || typeof window === 'undefined') {
 		return
 	}
@@ -28,7 +27,7 @@ function stopCurrentSpeech(): void {
 }
 
 async function playSequence(
-	sequence: LearningPresentation[],
+	sequence: AudioCue[],
 	runId: number,
 ): Promise<void> {
 	for (const item of sequence) {
@@ -40,7 +39,7 @@ async function playSequence(
 	}
 }
 
-async function playStaticAudio(item: LearningPresentation): Promise<void> {
+async function playStaticAudio(item: AudioCue): Promise<void> {
 	if (!item.audioPath || typeof Audio === 'undefined') {
 		return
 	}

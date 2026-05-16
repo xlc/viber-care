@@ -2,7 +2,7 @@
 
 ## Project Goal
 
-Word Garden is a complete static PWA game for toddlers to learn words and objects. It should feel like a gentle digital toy, not a quiz. The product is bilingual with English and Simplified Chinese only, while the content architecture remains ready for more levels, scenes, packs, image assets, and audio clips.
+Word Garden is a complete static PWA for toddlers to explore simple bilingual stories through touch, sound, and pictures. It should feel like a calm interactive picture book, not a quiz. The product is bilingual with English and Simplified Chinese only, while the content architecture remains ready for more story packs, scenes, image assets, and audio clips.
 
 ## Commands
 
@@ -35,8 +35,9 @@ API keys may only be used in secure asset generation workflows outside the clien
 
 ## Content-Driven Architecture
 
-Reusable item content lives in committed `content/items/*.json` files. Pack and
-set layout lives in committed `content/packs/*.json` files.
+Active story packs live in committed `content/story-packs/*.json` files.
+Legacy object-pack content and reusable old assets live under
+`content/legacy-word-garden-v2/` and must not be imported by runtime code.
 
 The app runtime imports committed source content through `src/content/catalog.ts`.
 Do not add a generated runtime JSON catalog, catalog generation script, or content
@@ -45,10 +46,10 @@ generation package script.
 Core schemas live in `src/content/schema.ts`. Content validation logic lives in
 `src/content/validation.ts`.
 
-Do not hard-code item language content or placement rules in the engine.
-Object labels, prompts, success phrases, fallback text, audio text, visual
-prompts, asset paths, variants, scene regions, region tags, and spawn constraints
-belong in content files.
+Do not hard-code story text, item labels, audio text, asset paths, scene order,
+or interaction definitions in the engine. Story titles, descriptions, plot
+plans, scene text, item names, audio references, image references, and simple
+interaction definitions belong in story pack files.
 
 ## Toddler Design Safety Rules
 
@@ -65,19 +66,18 @@ belong in content files.
 - Keep the mute button visible and keyboard-accessible.
 - Keep parent settings behind the gear button.
 
-## Adding a Content Pack
+## Adding a Story Pack
 
-1. Create `content/packs/<pack-id>.json`.
-2. Add pack metadata, languages, sets, and at least two scenes.
-3. Add scene background assets and `regions` as percentage rectangles tied to the background image.
-4. Add scene spawn candidates with `itemId`, percentage anchors, `regionTags`, jitter, scale ranges, and visible object limits.
-5. Add or reuse global item files under `content/items/`. Each item needs at least two static variants with metadata such as color, size, style, or tags when applicable.
-6. Add interaction animation metadata to item files.
-7. Add per-language content and per-level content to item files.
-8. For production-quality bilingual packs, include English and Simplified Chinese L0-L5 text, audio text, find prompt, success phrase, and fallback text.
-9. Run `bun run test`.
-10. Run `bun run test:e2e`.
-11. Run `bun run build`.
+1. Create `content/story-packs/<pack-id>.json`.
+2. Add pack metadata, supported languages, cover image, plot plan, scenes, and items.
+3. Include at least two scenes.
+4. Give every scene English and Simplified Chinese text and narration audio.
+5. Give every learnable item English and Simplified Chinese labels and word audio.
+6. Reference only committed static assets under `public/assets/`.
+7. Reuse legacy assets only after review, and copy selected assets into the active story pack asset directory.
+8. Run `bun run test`.
+9. Run `bun run test:e2e`.
+10. Run `bun run build`.
 
 ## Generating Content And Assets
 
@@ -93,23 +93,22 @@ Generate or edit content and static assets directly, place static files in
 content/assets. Do not create generated JSON catalogs or generated content
 manifests.
 
-Future content generation must preserve the richer source shape: reusable
-global items, pack sets that reference item ids, multiple scenes per pack, two
-or more variants per item, region-tagged spawn candidates, and randomized
-visible object counts so a scene can contain more candidates than it shows at
-once.
+The content-generation skill may lag the runtime during the story-card refactor.
+When it does, follow the active story-pack schema and record concrete workflow
+gaps for the later skill update. Generation must remain an authoring workflow
+outside the client runtime.
 
 ## Reviewing Assets
 
 Before completion or deployment:
 
-1. Confirm every object is friendly, clear, and toddler-safe.
-2. Confirm every object variant is visibly distinct enough to justify the variant.
-3. Confirm each scene is calm, uncluttered, and has regions that match the background image.
-4. Confirm each object can only spawn in appropriate regions, for example fish in water, sun in sky, and vehicles on road/rail/water/sky.
-5. Confirm no asset contains ads, purchases, scary imagery, unsafe behavior, or unwanted text.
-6. Confirm audio text matches the target content.
-7. Confirm the runtime imports only committed static content and static paths.
+1. Confirm every story image and item image is friendly, clear, and toddler-safe.
+2. Confirm each scene is calm and uncluttered.
+3. Confirm tappable or card items are visually clear.
+4. Confirm no asset contains ads, purchases, scary imagery, unsafe behavior, logos, watermarks, or unwanted text.
+5. Confirm audio text matches the target content.
+6. Confirm the runtime imports only committed active story content and static paths.
+7. Confirm legacy content is not imported into the active catalog.
 8. Run the completion checks before production release.
 
 ## Completion Checks

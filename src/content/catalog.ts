@@ -1,38 +1,25 @@
 import {
-	LEARNING_LEVELS,
-	type RuntimeCatalog,
-	RuntimeCatalogSchema,
+	type StoryCatalog,
+	StoryCatalogSchema,
 	SUPPORTED_LANGUAGE_CODES,
 } from './schema'
-import { validateContentCatalog } from './validation'
+import { validateStoryPacks } from './validation'
 
-const itemModules = import.meta.glob('../../content/items/*.json', {
+const packModules = import.meta.glob('../../content/story-packs/*.json', {
 	eager: true,
 	import: 'default',
 })
 
-const packModules = import.meta.glob('../../content/packs/*.json', {
-	eager: true,
-	import: 'default',
-})
+function createStoryCatalog(packs: unknown[]): StoryCatalog {
+	const validatedPacks = validateStoryPacks(packs).sort((a, b) =>
+		a.id.localeCompare(b.id),
+	)
 
-export function createRuntimeCatalog(
-	items: unknown[],
-	packs: unknown[],
-): RuntimeCatalog {
-	const validated = validateContentCatalog(items, packs)
-
-	return RuntimeCatalogSchema.parse({
-		schemaVersion: '2',
+	return StoryCatalogSchema.parse({
+		schemaVersion: 'story-pack-v1',
 		supportedLanguages: [...SUPPORTED_LANGUAGE_CODES],
-		learningLevels: [...LEARNING_LEVELS],
-		defaultLanguageOrder: ['en', 'zh-Hans'],
-		items: validated.items,
-		packs: validated.packs,
+		packs: validatedPacks,
 	})
 }
 
-export const catalog = createRuntimeCatalog(
-	Object.values(itemModules),
-	Object.values(packModules),
-)
+export const catalog = createStoryCatalog(Object.values(packModules))

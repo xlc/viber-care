@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="A calm garden path with a small yellow bus and flowers">
+  <rect width="1200" height="800" fill="#d8f4ff"/>
+  <rect y="480" width="1200" height="320" fill="#b8e6b2"/>
+  <path d="M0 650 C240 560 430 570 610 660 C760 735 950 735 1200 620 L1200 800 L0 800 Z" fill="#f8e7b0"/>
+  <circle cx="980" cy="130" r="70" fill="#ffd36b"/>
+  <rect x="420" y="360" width="360" height="150" rx="42" fill="#f5c84c"/>
+  <rect x="470" y="390" width="80" height="58" rx="12" fill="#eaf8ff"/>
+  <rect x="575" y="390" width="80" height="58" rx="12" fill="#eaf8ff"/>
+  <rect x="680" y="390" width="60" height="110" rx="16" fill="#eaf8ff"/>
+  <circle cx="500" cy="520" r="36" fill="#4c5c68"/>
+  <circle cx="700" cy="520" r="36" fill="#4c5c68"/>
+  <circle cx="250" cy="560" r="28" fill="#ff8fa3"/>
+  <circle cx="300" cy="530" r="24" fill="#fbc4ab"/>
+  <circle cx="340" cy="570" r="26" fill="#bdb2ff"/>
+  <rect x="291" y="570" width="18" height="75" rx="9" fill="#5ba86b"/>
+  <rect x="244" y="585" width="18" height="70" rx="9" fill="#5ba86b"/>
+  <rect x="334" y="590" width="18" height="70" rx="9" fill="#5ba86b"/>
+</svg>

@@ -1,0 +1,176 @@
+{
+	"id": "story-seed",
+	"version": "1.0.0",
+	"metadata": {
+		"title": {
+			"en": "Garden Bus",
+			"zh-Hans": "花园公共汽车"
+		},
+		"description": {
+			"en": "A tiny calm story shell for the new Story and Card modes.",
+			"zh-Hans": "一个安静的小故事，用来启动新的故事和卡片模式。"
+		},
+		"ageRange": "2-4",
+		"theme": "Gentle story shell",
+		"sceneCount": 2
+	},
+	"plotPlan": {
+		"mainCharacter": "Mimi",
+		"setting": "A quiet garden path",
+		"goal": "See a bus and a flower in a calm story shell.",
+		"beginning": "Mimi sees the bus.",
+		"middle": "Mimi walks near the flower.",
+		"ending": "Mimi waves to the garden.",
+		"emotionalTone": "Calm and warm",
+		"learningGoals": ["Listen to a short story", "Tap a simple card"],
+		"vocabulary": ["bus", "flower"],
+		"interactionIdeas": [
+			"Tap the bus to make it roll gently.",
+			"Tap the flower to make it glow softly."
+		]
+	},
+	"languages": ["en", "zh-Hans"],
+	"coverImage": {
+		"type": "image",
+		"path": "/assets/generated/story-seed/cover.svg",
+		"alt": "A calm garden path with a small yellow bus and flowers"
+	},
+	"scenes": [
+		{
+			"id": "bus-arrives",
+			"order": 1,
+			"purpose": "Introduce the bus.",
+			"text": {
+				"en": "Mimi sees the bus.",
+				"zh-Hans": "米米看见公共汽车。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/story-seed/audio/silence.wav"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/story-seed/audio/silence.wav"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/story-seed/scene-bus.svg",
+				"alt": "A yellow bus on a gentle road"
+			},
+			"items": [
+				{
+					"itemId": "bus",
+					"x": 50,
+					"y": 55,
+					"scale": 1,
+					"interactionId": "bus-roll"
+				}
+			],
+			"interactions": [
+				{
+					"id": "bus-roll",
+					"type": "move"
+				}
+			]
+		},
+		{
+			"id": "garden-hello",
+			"order": 2,
+			"purpose": "Introduce the flower.",
+			"text": {
+				"en": "Mimi finds a flower.",
+				"zh-Hans": "米米找到一朵花。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/story-seed/audio/silence.wav"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/story-seed/audio/silence.wav"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/story-seed/scene-garden.svg",
+				"alt": "A quiet garden with flowers and a yellow bus nearby"
+			},
+			"items": [
+				{
+					"itemId": "flower",
+					"x": 28,
+					"y": 65,
+					"scale": 1,
+					"interactionId": "flower-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "flower-glow",
+					"type": "glow"
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"id": "bus",
+			"name": {
+				"en": "bus",
+				"zh-Hans": "公共汽车"
+			},
+			"phrase": {
+				"en": "The bus is here.",
+				"zh-Hans": "公共汽车来了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/story-seed/item-bus.svg",
+				"alt": "A friendly yellow bus"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/story-seed/audio/silence.wav"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/story-seed/audio/silence.wav"
+				}
+			},
+			"card": true,
+			"sceneIds": ["bus-arrives"]
+		},
+		{
+			"id": "flower",
+			"name": {
+				"en": "flower",
+				"zh-Hans": "花"
+			},
+			"phrase": {
+				"en": "A flower is blooming.",
+				"zh-Hans": "一朵花开了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/story-seed/item-flower.svg",
+				"alt": "A soft pink flower"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/story-seed/audio/silence.wav"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/story-seed/audio/silence.wav"
+				}
+			},
+			"card": true,
+			"sceneIds": ["garden-hello"]
+		}
+	]
+}

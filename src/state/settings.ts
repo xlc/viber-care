@@ -1,94 +1,54 @@
-import {
-	type LanguageCode,
-	LEARNING_LEVELS,
-	type LearningLevel,
-} from '../content/schema'
+import { type LanguageCode, SUPPORTED_LANGUAGE_CODES } from '../content/schema'
 
-export const SETTINGS_STORAGE_KEY = 'word-garden.settings.v2'
+export const SETTINGS_STORAGE_KEY = 'word-garden.story-settings.v1'
 
-export const LANGUAGE_ORDER_PRESETS = [
-	'en-only',
-	'zh-only',
-	'en-then-zh',
-	'zh-then-en',
-] as const
-
-export const GAME_MODES = ['explore', 'find', 'cards', 'math'] as const
-
-export const MATH_FOCUS_OPTIONS = ['mixed', 'counting-1-3', 'colors'] as const
-
-export type LanguageOrderPreset = (typeof LANGUAGE_ORDER_PRESETS)[number]
-export type GameMode = (typeof GAME_MODES)[number]
-export type MathFocus = (typeof MATH_FOCUS_OPTIONS)[number]
-
-export type WordGardenSettings = {
-	mode: GameMode
+export type StoryAppSettings = {
 	selectedPackId: string
-	selectedSetId: string | null
-	languageOrderPreset: LanguageOrderPreset
-	activeLevel: LearningLevel
-	mathFocus: MathFocus
+	language: LanguageCode
 	muted: boolean
+	lastSceneId: string | null
 }
 
 export type StorageLike = Pick<Storage, 'getItem' | 'setItem'>
 
-export const DEFAULT_SETTINGS: WordGardenSettings = {
-	mode: 'explore',
-	selectedPackId: 'garden',
-	selectedSetId: null,
-	languageOrderPreset: 'en-then-zh',
-	activeLevel: 'L0',
-	mathFocus: 'mixed',
+export const DEFAULT_SETTINGS: StoryAppSettings = {
+	selectedPackId: 'story-seed',
+	language: 'en',
 	muted: false,
+	lastSceneId: null,
 }
 
-const levelSet = new Set<string>(LEARNING_LEVELS)
-const modeSet = new Set<string>(GAME_MODES)
-const mathFocusSet = new Set<string>(MATH_FOCUS_OPTIONS)
-const presetSet = new Set<string>(LANGUAGE_ORDER_PRESETS)
+const languageSet = new Set<string>(SUPPORTED_LANGUAGE_CODES)
 
-export function sanitizeSettings(input: unknown): WordGardenSettings {
+function sanitizeSettings(input: unknown): StoryAppSettings {
 	if (!input || typeof input !== 'object') {
 		return DEFAULT_SETTINGS
 	}
 
-	const value = input as Partial<WordGardenSettings>
+	const value = input as Partial<StoryAppSettings>
 
 	return {
-		mode:
-			value.mode && modeSet.has(value.mode)
-				? value.mode
-				: DEFAULT_SETTINGS.mode,
 		selectedPackId:
 			typeof value.selectedPackId === 'string' &&
 			value.selectedPackId.length > 0
 				? value.selectedPackId
 				: DEFAULT_SETTINGS.selectedPackId,
-		selectedSetId:
-			typeof value.selectedSetId === 'string' && value.selectedSetId.length > 0
-				? value.selectedSetId
-				: null,
-		languageOrderPreset:
-			value.languageOrderPreset && presetSet.has(value.languageOrderPreset)
-				? value.languageOrderPreset
-				: DEFAULT_SETTINGS.languageOrderPreset,
-		activeLevel:
-			value.activeLevel && levelSet.has(value.activeLevel)
-				? value.activeLevel
-				: DEFAULT_SETTINGS.activeLevel,
-		mathFocus:
-			value.mathFocus && mathFocusSet.has(value.mathFocus)
-				? value.mathFocus
-				: DEFAULT_SETTINGS.mathFocus,
+		language:
+			value.language && languageSet.has(value.language)
+				? value.language
+				: DEFAULT_SETTINGS.language,
 		muted:
 			typeof value.muted === 'boolean' ? value.muted : DEFAULT_SETTINGS.muted,
+		lastSceneId:
+			typeof value.lastSceneId === 'string' && value.lastSceneId.length > 0
+				? value.lastSceneId
+				: null,
 	}
 }
 
 export function loadSettings(
 	storage: StorageLike | undefined,
-): WordGardenSettings {
+): StoryAppSettings {
 	if (!storage) {
 		return DEFAULT_SETTINGS
 	}
@@ -107,28 +67,14 @@ export function loadSettings(
 
 export function saveSettings(
 	storage: StorageLike | undefined,
-	settings: WordGardenSettings,
+	settings: StoryAppSettings,
 ): void {
 	if (!storage) {
 		return
 	}
+
 	storage.setItem(
 		SETTINGS_STORAGE_KEY,
 		JSON.stringify(sanitizeSettings(settings)),
 	)
-}
-
-export function resolveLanguageOrder(
-	settings: WordGardenSettings,
-): LanguageCode[] {
-	switch (settings.languageOrderPreset) {
-		case 'en-only':
-			return ['en']
-		case 'zh-only':
-			return ['zh-Hans']
-		case 'zh-then-en':
-			return ['zh-Hans', 'en']
-		default:
-			return ['en', 'zh-Hans']
-	}
 }
