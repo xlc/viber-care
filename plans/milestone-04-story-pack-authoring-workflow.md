@@ -4,6 +4,14 @@
 
 Update the repo-local content-generation workflow after the first complete story pack exposes the real authoring needs. The final workflow should create future story packs in the required order: goal, plot plan, scenes, items, bilingual text, image prompts, images, audio script, audio, assembly, review.
 
+## Implementation Update
+
+The first Milestone 4 slice is audit-first. The Mimi pack exposed concrete
+validation gaps around missing files, placeholder paths, invalid MP3 output, and
+manual prompt/review notes. Add the authoring templates and local asset audit
+now. Defer an OpenRouter generation helper until repeated manual audio
+generation becomes the bottleneck.
+
 ## Scope
 
 - Rewrite `.agents/skills/content-generation/SKILL.md` around story packs.
@@ -11,7 +19,7 @@ Update the repo-local content-generation workflow after the first complete story
 - Keep content generation as an authoring workflow only.
 - Keep generated images and audio committed as static assets.
 - Define checklist outputs for each authoring step.
-- Add a story-pack OpenRouter audio helper for narration and item audio if manual asset generation becomes too slow.
+- Defer a story-pack OpenRouter generation helper until manual asset generation becomes too slow.
 - Update or add helper scripts only if they validate or generate committed assets directly.
 
 ## Out Of Scope
@@ -62,7 +70,7 @@ Each role should state inputs, outputs, and review checks.
 
 This rewrite should be grounded in the first Mimi pack's actual source files, asset review notes, audio script, and assembly pain points.
 
-### 2. Add Audio Helper
+### 2. Add Asset And Audio Audit Helper
 
 Removed object-pack helper assumptions:
 
@@ -72,14 +80,22 @@ Removed object-pack helper assumptions:
 - Generates find/success prompt audio.
 - Writes audio paths back to global item files.
 
-New helper behavior, if added:
+New audit helper behavior:
 
 - Reads active story packs only.
+- Reuses the active story-pack schema validation.
+- Audits every story-pack asset reference for file existence.
+- Rejects placeholder silence, removed story-seed paths, legacy archive paths,
+  tiny audio, and invalid MP3 signatures.
+- Reports unused files under each active pack asset directory.
+- Stays manually invokable with Bun and is not added as a package script.
+
+Future generation helper behavior, if added later:
+
 - Generates scene narration audio.
 - Generates item word audio.
 - Generates optional item phrase or interaction audio.
 - Writes audio paths back to story-pack JSON.
-- Audits every story-pack audio reference for file existence.
 
 ### 3. Adapt Image Validation
 
@@ -141,8 +157,7 @@ Use these defaults for future story-pack audio generation unless audio review sh
 ## Test Plan
 
 - Unit-test schema validation around required audio/image paths.
-- Run audio helper audit mode against the first story pack after Milestone 5.
-- Run image asset validation against the first story pack after Milestone 5.
+- Run the story asset audit helper against the first story pack after Milestone 5.
 - Run `bun run test`, `bun run test:e2e`, and `bun run build` before accepting content.
 
 ## Acceptance Criteria
@@ -153,6 +168,6 @@ Use these defaults for future story-pack audio generation unless audio review sh
 - The workflow preserves the static runtime boundary.
 - The workflow requires asset review for toddler safety and bilingual completeness.
 - The workflow references the new story-pack schema, not the removed L0-L5 object model.
-- The audio helper can generate and audit scene narration and item-word audio for story packs.
+- The audit helper verifies scene narration and item-word audio references for story packs.
 - `AGENTS.md` and the content-generation skill no longer disagree about active content shape.
 - `bun run test` and `bun run build` pass after any schema/helper changes.
