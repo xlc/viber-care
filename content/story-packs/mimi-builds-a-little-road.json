@@ -1,0 +1,594 @@
+{
+	"id": "mimi-builds-a-little-road",
+	"version": "1.0.0",
+	"metadata": {
+		"title": {
+			"en": "Mimi Builds a Little Road",
+			"zh-Hans": "米米搭一条小路"
+		},
+		"description": {
+			"en": "Mimi visits a calm builder yard and watches friendly machines move sand, blocks, and tools.",
+			"zh-Hans": "米米来到安静的工程小院，看友好的小机器搬沙子、积木和工具。"
+		},
+		"ageRange": "2-4",
+		"theme": "Gentle construction machines and tools",
+		"sceneCount": 6
+	},
+	"plotPlan": {
+		"mainCharacter": "Mimi, a curious toddler visiting a quiet pretend builder yard.",
+		"setting": "A soft outdoor play yard with a little road, sand area, block corner, and builder mat.",
+		"goal": "Mimi notices friendly construction machines and safe tools while hearing simple bilingual words.",
+		"beginning": "Mimi starts near the soft sand and sees the excavator and bulldozer working slowly.",
+		"middle": "Mimi follows the little road past a dump truck, crane, front loader, road roller, and cement mixer.",
+		"ending": "Mimi finishes at the builder mat and road cone, with every object resting calmly.",
+		"emotionalTone": "Calm, bright, helpful, slow, and pretend-play focused.",
+		"learningGoals": [
+			"Recognize common construction machine and tool words.",
+			"Hear each important word in English and Simplified Chinese.",
+			"Practice tapping visible items to repeat gentle audio.",
+			"Explore a pretend builder yard without timers, scores, or failure states."
+		],
+		"vocabulary": [
+			"excavator",
+			"bulldozer",
+			"dump truck",
+			"crane",
+			"front loader",
+			"road roller",
+			"cement mixer",
+			"hard hat",
+			"safety cone",
+			"toolbox"
+		],
+		"interactionIdeas": [
+			"Tap a machine to make it move softly.",
+			"Tap the cement mixer for a slow float.",
+			"Tap tools and cones for a quiet glow.",
+			"Replay each short line at the child's pace."
+		]
+	},
+	"languages": ["en", "zh-Hans"],
+	"coverImage": {
+		"type": "image",
+		"path": "/assets/generated/mimi-builds-a-little-road/scenes/soft-builder-yard.png",
+		"alt": "A calm toddler-friendly builder yard with sand, blocks, and tools"
+	},
+	"scenes": [
+		{
+			"id": "01-soft-sand",
+			"order": 1,
+			"purpose": "Begin with friendly machines in the soft sand area.",
+			"text": {
+				"en": "The excavator scoops soft sand.",
+				"zh-Hans": "挖掘机轻轻挖沙子。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/excavator-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/excavator-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/scenes/soft-builder-yard.png",
+				"alt": "A calm builder yard with space for an excavator and bulldozer"
+			},
+			"imagePrompt": "Calm toddler-friendly construction builders play yard, soft outdoor scene, open areas for object sprites, no people, no text, no logos, no warning signs, no hazard symbols, gentle digital toy illustration.",
+			"items": [
+				{
+					"itemId": "excavator",
+					"x": 35,
+					"y": 64,
+					"scale": 0.74,
+					"interactionId": "excavator-move"
+				},
+				{
+					"itemId": "bulldozer",
+					"x": 55,
+					"y": 67,
+					"scale": 0.72,
+					"interactionId": "bulldozer-move"
+				}
+			],
+			"interactions": [
+				{
+					"id": "excavator-move",
+					"type": "move"
+				},
+				{
+					"id": "bulldozer-move",
+					"type": "move"
+				}
+			]
+		},
+		{
+			"id": "02-block-truck",
+			"order": 2,
+			"purpose": "Move to block play with a dump truck and crane.",
+			"text": {
+				"en": "The dump truck carries blocks.",
+				"zh-Hans": "翻斗车运积木。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/dump-truck-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/dump-truck-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/scenes/little-machine-park.png",
+				"alt": "A little machine park with blocks and a quiet road"
+			},
+			"imagePrompt": "Calm toddler-friendly little machine park with a round road, block play areas, sand, and open space for construction sprites. No people, no text, no logos, gentle digital toy illustration.",
+			"items": [
+				{
+					"itemId": "dump-truck",
+					"x": 62,
+					"y": 63,
+					"scale": 0.7,
+					"interactionId": "dump-truck-move"
+				},
+				{
+					"itemId": "crane",
+					"x": 42,
+					"y": 54,
+					"scale": 0.72,
+					"interactionId": "crane-float"
+				}
+			],
+			"interactions": [
+				{
+					"id": "dump-truck-move",
+					"type": "move"
+				},
+				{
+					"id": "crane-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "03-smooth-road",
+			"order": 3,
+			"purpose": "Notice machines that move sand and smooth the path.",
+			"text": {
+				"en": "The front loader scoops sand.",
+				"zh-Hans": "装载机铲沙子。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/front-loader-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/front-loader-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/scenes/little-machine-park.png",
+				"alt": "A little road with room for a front loader and road roller"
+			},
+			"imagePrompt": "Calm toddler-friendly little machine park with a round road, block play areas, sand, and open space for construction sprites. No people, no text, no logos, gentle digital toy illustration.",
+			"items": [
+				{
+					"itemId": "front-loader",
+					"x": 37,
+					"y": 65,
+					"scale": 0.72,
+					"interactionId": "front-loader-move"
+				},
+				{
+					"itemId": "road-roller",
+					"x": 61,
+					"y": 67,
+					"scale": 0.75,
+					"interactionId": "road-roller-move"
+				}
+			],
+			"interactions": [
+				{
+					"id": "front-loader-move",
+					"type": "move"
+				},
+				{
+					"id": "road-roller-move",
+					"type": "move"
+				}
+			]
+		},
+		{
+			"id": "04-slow-mixer",
+			"order": 4,
+			"purpose": "Pause with one slow turning machine.",
+			"text": {
+				"en": "The cement mixer turns slowly.",
+				"zh-Hans": "搅拌车慢慢转。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/cement-mixer-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/cement-mixer-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/scenes/soft-builder-yard.png",
+				"alt": "A calm builder yard with a cement mixer"
+			},
+			"imagePrompt": "Calm toddler-friendly construction builders play yard, soft outdoor scene, open areas for object sprites, no people, no text, no logos, no warning signs, no hazard symbols, gentle digital toy illustration.",
+			"items": [
+				{
+					"itemId": "cement-mixer",
+					"x": 50,
+					"y": 64,
+					"scale": 0.76,
+					"interactionId": "cement-mixer-float"
+				}
+			],
+			"interactions": [
+				{
+					"id": "cement-mixer-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "05-builder-mat",
+			"order": 5,
+			"purpose": "Look at safe pretend-play tools resting on the mat.",
+			"text": {
+				"en": "The hard hat sits on the mat.",
+				"zh-Hans": "安全帽放在垫子上。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/hard-hat-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/hard-hat-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/scenes/soft-builder-yard.png",
+				"alt": "A calm builder mat with a hard hat and toolbox"
+			},
+			"imagePrompt": "Calm toddler-friendly construction builders play yard, soft outdoor scene, open areas for object sprites, no people, no text, no logos, no warning signs, no hazard symbols, gentle digital toy illustration.",
+			"items": [
+				{
+					"itemId": "hard-hat",
+					"x": 78,
+					"y": 79,
+					"scale": 0.62,
+					"interactionId": "hard-hat-glow"
+				},
+				{
+					"itemId": "toolbox",
+					"x": 91,
+					"y": 78,
+					"scale": 0.64,
+					"interactionId": "toolbox-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "hard-hat-glow",
+					"type": "glow"
+				},
+				{
+					"id": "toolbox-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "06-road-cone",
+			"order": 6,
+			"purpose": "End with the little road marked calmly.",
+			"text": {
+				"en": "The safety cone stands by the road.",
+				"zh-Hans": "安全锥站在小路旁。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/safety-cone-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/safety-cone-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/scenes/little-machine-park.png",
+				"alt": "A little machine park road with a safety cone"
+			},
+			"imagePrompt": "Calm toddler-friendly little machine park with a round road, block play areas, sand, and open space for construction sprites. No people, no text, no logos, gentle digital toy illustration.",
+			"items": [
+				{
+					"itemId": "safety-cone",
+					"x": 32,
+					"y": 49,
+					"scale": 0.58,
+					"interactionId": "safety-cone-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "safety-cone-glow",
+					"type": "glow"
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"id": "excavator",
+			"name": {
+				"en": "excavator",
+				"zh-Hans": "挖掘机"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/excavator.png",
+				"alt": "excavator"
+			},
+			"imagePrompt": "A friendly yellow excavator for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/excavator-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/excavator-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-soft-sand"]
+		},
+		{
+			"id": "bulldozer",
+			"name": {
+				"en": "bulldozer",
+				"zh-Hans": "推土机"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/bulldozer.png",
+				"alt": "bulldozer"
+			},
+			"imagePrompt": "A friendly yellow bulldozer for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/bulldozer-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/bulldozer-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-soft-sand"]
+		},
+		{
+			"id": "dump-truck",
+			"name": {
+				"en": "dump truck",
+				"zh-Hans": "翻斗车"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/dump-truck.png",
+				"alt": "dump truck"
+			},
+			"imagePrompt": "A friendly yellow dump truck for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/dump-truck-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/dump-truck-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-block-truck"]
+		},
+		{
+			"id": "crane",
+			"name": {
+				"en": "crane",
+				"zh-Hans": "起重机"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/crane.png",
+				"alt": "crane"
+			},
+			"imagePrompt": "A friendly yellow crane for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/crane-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/crane-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-block-truck"]
+		},
+		{
+			"id": "front-loader",
+			"name": {
+				"en": "front loader",
+				"zh-Hans": "装载机"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/front-loader.png",
+				"alt": "front loader"
+			},
+			"imagePrompt": "A friendly yellow front loader for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/front-loader-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/front-loader-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-smooth-road"]
+		},
+		{
+			"id": "road-roller",
+			"name": {
+				"en": "road roller",
+				"zh-Hans": "压路机"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/road-roller.png",
+				"alt": "road roller"
+			},
+			"imagePrompt": "A friendly yellow road roller for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/road-roller-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/road-roller-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-smooth-road"]
+		},
+		{
+			"id": "cement-mixer",
+			"name": {
+				"en": "cement mixer",
+				"zh-Hans": "搅拌车"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/cement-mixer.png",
+				"alt": "cement mixer"
+			},
+			"imagePrompt": "A friendly yellow cement mixer for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/cement-mixer-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/cement-mixer-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-slow-mixer"]
+		},
+		{
+			"id": "hard-hat",
+			"name": {
+				"en": "hard hat",
+				"zh-Hans": "安全帽"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/hard-hat.png",
+				"alt": "hard hat"
+			},
+			"imagePrompt": "A friendly yellow hard hat for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/hard-hat-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/hard-hat-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-builder-mat"]
+		},
+		{
+			"id": "safety-cone",
+			"name": {
+				"en": "safety cone",
+				"zh-Hans": "安全锥"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/safety-cone.png",
+				"alt": "safety cone"
+			},
+			"imagePrompt": "A friendly orange safety cone for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/safety-cone-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/safety-cone-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-road-cone"]
+		},
+		{
+			"id": "toolbox",
+			"name": {
+				"en": "toolbox",
+				"zh-Hans": "工具箱"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-builds-a-little-road/items/toolbox.png",
+				"alt": "toolbox"
+			},
+			"imagePrompt": "A friendly red toolbox for a toddler construction word-learning game, clear silhouette, rounded toy-like shape, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/toolbox-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-builds-a-little-road/audio/toolbox-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-builder-mat"]
+		}
+	]
+}
