@@ -1,32 +1,39 @@
 # Plans
 
-Active implementation plans for the Word Garden toddler story and card refactor.
+Status: revalidated on 2026-05-17. No active implementation tasks remain in
+`plans/`.
 
-## Active Plan
+## Completed And Removed
 
-- [Toddler Story and Card Refactor](./toddler-story-card-refactor.md)
-- [Plan Validation](./story-card-refactor-validation.md)
+The toddler story/card refactor plan, milestone plans, validation report, and
+Mimi authoring notes were completed against the current implementation and
+removed from active planning.
 
-## Milestones
+## Revalidation
 
-1. [Milestone 1: Static Story App Shell](./milestone-01-static-story-app-shell.md)
-2. [Milestone 2: Story Mode Foundation](./milestone-02-story-mode-foundation.md)
-3. [Milestone 3: Card Mode Foundation](./milestone-03-card-mode-foundation.md)
-4. [Milestone 5: Mimi Rides the Bus Pack](./milestone-05-mimi-rides-the-bus-pack.md)
-5. [Milestone 4: Story Pack Authoring Workflow](./milestone-04-story-pack-authoring-workflow.md)
-6. [Milestone 6: Polish, QA, and Release](./milestone-06-polish-qa-release.md)
+- Active story content imports committed `content/story-packs/*.json` through
+  `src/content/catalog.ts`.
+- Legacy object-pack content remains archived under
+  `content/legacy-word-garden-v2/` and is not imported by the runtime catalog.
+- The app runtime uses separate Home, Story Mode, Card Mode, and Parent
+  Settings components.
+- `mimi-rides-the-bus` is the active story pack with six scenes, ten learnable
+  items, committed images, and committed MP3 audio.
+- The repo-local content-generation skill now documents story-pack authoring
+  and includes the story asset audit helper.
+- Release layout E2E coverage checks iPhone and iPad portrait and landscape
+  viewports.
 
-## Implementation Notes
+## Latest Checks
 
-- [Mimi Rides the Bus Authoring Notes](./mimi-rides-the-bus-authoring-notes.md)
+- `bun .agents/skills/content-generation/scripts/validate-story-assets.ts`:
+  passed for 1 pack and 49 referenced assets.
+- `bun run test`: passed, 17 tests.
+- `bun run test:e2e`: passed, 24 tests.
+- `bun run build`: passed.
 
-## Planning Rules
+## Remaining Tasks
 
-- Treat the refactor as intentionally breaking.
-- Keep the runtime static-only.
-- Keep English and Simplified Chinese as the only supported product languages.
-- Keep generated content and assets committed under `content/` and `public/assets/`.
-- Do not preserve Explore, Find, Puzzle, Math Play, or L0-L5 learning-level behavior unless a milestone explicitly reintroduces it.
-- Move existing vocabulary pack JSON out of the active catalog and reuse prior content/assets manually when they fit the new story pack.
-- Move non-reused legacy generated assets out of `public/` so they are not shipped in the static build.
-- Support both portrait and landscape layouts for iPad and iPhone.
+No active implementation tasks remain. Production deploy was not run during this
+planning cleanup; run `bun run deploy` only when a production release is
+requested.
