@@ -1,0 +1,619 @@
+{
+	"id": "mimi-visits-the-farm",
+	"version": "1.0.0",
+	"metadata": {
+		"title": {
+			"en": "Mimi Visits the Farm",
+			"zh-Hans": "米米参观农场"
+		},
+		"description": {
+			"en": "Mimi explores a calm farm morning with friendly animals, a tractor, and garden vegetables.",
+			"zh-Hans": "米米在安静的农场早晨，认识友好的动物、拖拉机和菜地里的蔬菜。"
+		},
+		"ageRange": "2-4",
+		"theme": "A calm farm visit",
+		"sceneCount": 6
+	},
+	"plotPlan": {
+		"mainCharacter": "Mimi, a curious toddler visiting a quiet farm with a grown-up.",
+		"setting": "A sunny farmyard, a red barn, a soft path, a small coop, and a vegetable patch.",
+		"goal": "Mimi notices gentle farm animals and garden objects while hearing simple bilingual farm words.",
+		"beginning": "Mimi arrives at the farmyard and sees the barn and hay.",
+		"middle": "Mimi looks at the cow, sheep, chicken, duck, and tractor one at a time.",
+		"ending": "Mimi finishes by the vegetable patch with carrot, corn, and pumpkin.",
+		"emotionalTone": "Warm, quiet, safe, and unhurried.",
+		"learningGoals": [
+			"Recognize common farm animals and farm objects.",
+			"Recognize simple vegetable words.",
+			"Hear each important word in English and Simplified Chinese.",
+			"Practice tapping visible story items to repeat audio."
+		],
+		"vocabulary": [
+			"barn",
+			"haystack",
+			"cow",
+			"sheep",
+			"chicken",
+			"duck",
+			"tractor",
+			"carrot",
+			"corn",
+			"pumpkin"
+		],
+		"interactionIdeas": [
+			"Tap the barn or haystack for a soft glow.",
+			"Tap animals for a gentle bounce.",
+			"Tap the tractor for a slow move.",
+			"Tap vegetables to hear the word again."
+		]
+	},
+	"languages": ["en", "zh-Hans"],
+	"coverImage": {
+		"type": "image",
+		"path": "/assets/generated/mimi-visits-the-farm/scenes/sunny-farmyard.png",
+		"alt": "A sunny farmyard with a red barn, hay, fence, coop, and open path"
+	},
+	"scenes": [
+		{
+			"id": "01-barn-and-hay",
+			"order": 1,
+			"purpose": "Introduce the quiet farmyard.",
+			"text": {
+				"en": "The barn stands by the farmyard.",
+				"zh-Hans": "谷仓站在农场院子旁。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/barn-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/barn-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/scenes/sunny-farmyard.png",
+				"alt": "A quiet sunny farmyard with a red barn and haystack"
+			},
+			"imagePrompt": "A calm toddler-friendly sunny farmyard with open meadow, soft barnyard ground, a winding walking path, a hay area, and a simple barn area. No text, no logos.",
+			"items": [
+				{
+					"itemId": "barn",
+					"x": 84,
+					"y": 42,
+					"scale": 1.25,
+					"interactionId": "barn-glow"
+				},
+				{
+					"itemId": "haystack",
+					"x": 70,
+					"y": 45,
+					"scale": 0.9,
+					"interactionId": "haystack-glow"
+				},
+				{
+					"itemId": "tractor",
+					"x": 47,
+					"y": 72,
+					"scale": 0.95,
+					"interactionId": "tractor-move"
+				}
+			],
+			"interactions": [
+				{
+					"id": "barn-glow",
+					"type": "glow"
+				},
+				{
+					"id": "haystack-glow",
+					"type": "glow"
+				},
+				{
+					"id": "tractor-move",
+					"type": "move"
+				}
+			]
+		},
+		{
+			"id": "02-cow-by-barn",
+			"order": 2,
+			"purpose": "Meet the cow near the barn.",
+			"text": {
+				"en": "The cow walks slowly by the barn.",
+				"zh-Hans": "奶牛慢慢走过谷仓旁。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/cow-en-L5.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/cow-zh-Hans-L5.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/scenes/sunny-farmyard.png",
+				"alt": "The sunny farmyard with a cow near the red barn"
+			},
+			"imagePrompt": "The same calm sunny farmyard, with a friendly cow near the barn area. No text, no logos.",
+			"items": [
+				{
+					"itemId": "cow",
+					"x": 34,
+					"y": 58,
+					"scale": 1.35,
+					"interactionId": "cow-bounce"
+				},
+				{
+					"itemId": "barn",
+					"x": 84,
+					"y": 42,
+					"scale": 1.15
+				},
+				{
+					"itemId": "haystack",
+					"x": 70,
+					"y": 46,
+					"scale": 0.85
+				}
+			],
+			"interactions": [
+				{
+					"id": "cow-bounce",
+					"type": "bounce"
+				}
+			]
+		},
+		{
+			"id": "03-sheep-by-fence",
+			"order": 3,
+			"purpose": "Meet the sheep near the quiet fence.",
+			"text": {
+				"en": "The sheep stands near the quiet fence.",
+				"zh-Hans": "绵羊站在安静的栅栏旁。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/sheep-en-L5.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/sheep-zh-Hans-L5.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/scenes/sunny-farmyard.png",
+				"alt": "The sunny farmyard with a sheep standing near a quiet fence"
+			},
+			"imagePrompt": "The same calm sunny farmyard, with a friendly sheep standing near the fence. No text, no logos.",
+			"items": [
+				{
+					"itemId": "sheep",
+					"x": 43,
+					"y": 57,
+					"scale": 1.25,
+					"interactionId": "sheep-bounce"
+				},
+				{
+					"itemId": "haystack",
+					"x": 72,
+					"y": 48,
+					"scale": 0.85
+				}
+			],
+			"interactions": [
+				{
+					"id": "sheep-bounce",
+					"type": "bounce"
+				}
+			]
+		},
+		{
+			"id": "04-chicken-and-duck",
+			"order": 4,
+			"purpose": "Meet small birds in the farmyard.",
+			"text": {
+				"en": "The chicken hops near the sunny coop.",
+				"zh-Hans": "小鸡在阳光下的鸡舍旁跳一跳。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/chicken-en-L5.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/chicken-zh-Hans-L5.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/scenes/sunny-farmyard.png",
+				"alt": "The sunny farmyard with a chicken near the coop and a duck on the path"
+			},
+			"imagePrompt": "The same calm sunny farmyard, with a small chicken near the coop and a duck on the path. No text, no logos.",
+			"items": [
+				{
+					"itemId": "chicken",
+					"x": 80,
+					"y": 66,
+					"scale": 0.85,
+					"interactionId": "chicken-bounce"
+				},
+				{
+					"itemId": "duck",
+					"x": 51,
+					"y": 70,
+					"scale": 0.8,
+					"interactionId": "duck-float"
+				}
+			],
+			"interactions": [
+				{
+					"id": "chicken-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "duck-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "05-tractor-by-garden",
+			"order": 5,
+			"purpose": "Move from the farmyard toward the vegetable patch.",
+			"text": {
+				"en": "The tractor rolls by the vegetable patch.",
+				"zh-Hans": "拖拉机开过菜地旁。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/tractor-en-L5.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/tractor-zh-Hans-L5.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/scenes/vegetable-patch.png",
+				"alt": "A sunny vegetable patch with a quiet farm path and barn nearby"
+			},
+			"imagePrompt": "A calm toddler-friendly vegetable patch beside a farm path, with garden beds and a barn nearby. No text, no logos.",
+			"items": [
+				{
+					"itemId": "tractor",
+					"x": 61,
+					"y": 64,
+					"scale": 1.05,
+					"interactionId": "tractor-roll"
+				},
+				{
+					"itemId": "carrot",
+					"x": 22,
+					"y": 58,
+					"scale": 0.65
+				}
+			],
+			"interactions": [
+				{
+					"id": "tractor-roll",
+					"type": "move"
+				}
+			]
+		},
+		{
+			"id": "06-vegetable-patch",
+			"order": 6,
+			"purpose": "End quietly with vegetables in the garden bed.",
+			"text": {
+				"en": "The carrot sits in the vegetable patch.",
+				"zh-Hans": "胡萝卜在菜地里。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/carrot-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/carrot-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/scenes/vegetable-patch.png",
+				"alt": "A calm vegetable patch with carrot, corn, and pumpkin"
+			},
+			"imagePrompt": "A calm toddler-friendly vegetable patch with clear garden beds. No text, no logos.",
+			"items": [
+				{
+					"itemId": "carrot",
+					"x": 22,
+					"y": 58,
+					"scale": 0.72,
+					"interactionId": "carrot-bounce"
+				},
+				{
+					"itemId": "corn",
+					"x": 36,
+					"y": 50,
+					"scale": 0.7,
+					"interactionId": "corn-glow"
+				},
+				{
+					"itemId": "pumpkin",
+					"x": 48,
+					"y": 73,
+					"scale": 0.8,
+					"interactionId": "pumpkin-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "carrot-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "corn-glow",
+					"type": "glow"
+				},
+				{
+					"id": "pumpkin-glow",
+					"type": "glow"
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"id": "barn",
+			"name": {
+				"en": "barn",
+				"zh-Hans": "谷仓"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/barn-bright.png",
+				"alt": "A friendly red farm barn"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/barn-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/barn-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-barn-and-hay", "02-cow-by-barn"]
+		},
+		{
+			"id": "haystack",
+			"name": {
+				"en": "haystack",
+				"zh-Hans": "干草堆"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/haystack-bright.png",
+				"alt": "A soft yellow haystack"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/haystack-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/haystack-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-barn-and-hay", "02-cow-by-barn", "03-sheep-by-fence"]
+		},
+		{
+			"id": "cow",
+			"name": {
+				"en": "cow",
+				"zh-Hans": "奶牛"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/cow-bright.png",
+				"alt": "A friendly cow with a gentle face"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/cow-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/cow-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-cow-by-barn"]
+		},
+		{
+			"id": "sheep",
+			"name": {
+				"en": "sheep",
+				"zh-Hans": "绵羊"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/sheep-bright.png",
+				"alt": "A fluffy sheep with a gentle face"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/sheep-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/sheep-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-sheep-by-fence"]
+		},
+		{
+			"id": "chicken",
+			"name": {
+				"en": "chicken",
+				"zh-Hans": "小鸡"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/chicken-bright.png",
+				"alt": "A small friendly chicken"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/chicken-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/chicken-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-chicken-and-duck"]
+		},
+		{
+			"id": "duck",
+			"name": {
+				"en": "duck",
+				"zh-Hans": "鸭子"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/duck-bright.png",
+				"alt": "A friendly yellow duck"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/duck-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/duck-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-chicken-and-duck"]
+		},
+		{
+			"id": "tractor",
+			"name": {
+				"en": "tractor",
+				"zh-Hans": "拖拉机"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/tractor-bright.png",
+				"alt": "A small friendly blue tractor"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/tractor-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/tractor-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-barn-and-hay", "05-tractor-by-garden"]
+		},
+		{
+			"id": "carrot",
+			"name": {
+				"en": "carrot",
+				"zh-Hans": "胡萝卜"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/carrot-bright.png",
+				"alt": "A bright orange carrot with green leaves"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/carrot-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/carrot-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-tractor-by-garden", "06-vegetable-patch"]
+		},
+		{
+			"id": "corn",
+			"name": {
+				"en": "corn",
+				"zh-Hans": "玉米"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/corn-bright.png",
+				"alt": "A bright ear of corn with green leaves"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/corn-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/corn-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-vegetable-patch"]
+		},
+		{
+			"id": "pumpkin",
+			"name": {
+				"en": "pumpkin",
+				"zh-Hans": "南瓜"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-farm/items/pumpkin-bright.png",
+				"alt": "A round orange pumpkin"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/pumpkin-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-farm/audio/pumpkin-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-vegetable-patch"]
+		}
+	]
+}
