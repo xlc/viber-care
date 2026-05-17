@@ -1,0 +1,677 @@
+{
+	"id": "mimi-plants-seeds",
+	"version": "1.0.0",
+	"metadata": {
+		"title": {
+			"en": "Mimi Plants Seeds",
+			"zh-Hans": "米米种种子"
+		},
+		"description": {
+			"en": "Mimi plants tiny seeds in a calm garden and learns gentle garden words.",
+			"zh-Hans": "米米在安静的小花园里种下小种子，认识温柔的花园词语。"
+		},
+		"ageRange": "2-4",
+		"theme": "Planting seeds in a calm small garden",
+		"sceneCount": 6
+	},
+	"plotPlan": {
+		"mainCharacter": "Mimi, a curious toddler with short dark hair and a yellow shirt.",
+		"setting": "A quiet small garden with a low table, a flower pot, soft soil, a watering can, warm sun, and a new flower.",
+		"goal": "Mimi plants seeds and watches them grow while hearing simple garden words.",
+		"beginning": "Mimi holds tiny seeds and finds a flower pot.",
+		"middle": "Mimi adds soft soil, gives the seeds a little water, and lets warm sun shine on the pot.",
+		"ending": "A small sprout grows into a new flower, and Mimi smiles gently.",
+		"emotionalTone": "Calm, warm, patient, safe, and repeatable.",
+		"learningGoals": [
+			"Recognize simple garden words.",
+			"Hear each important word in English and Simplified Chinese.",
+			"Connect caring actions with gentle plant growth.",
+			"Practice tapping visible story items to repeat audio."
+		],
+		"vocabulary": [
+			"seed",
+			"pot",
+			"soil",
+			"trowel",
+			"watering can",
+			"water",
+			"sun",
+			"sprout",
+			"leaf",
+			"flower"
+		],
+		"interactionIdeas": [
+			"Tap the seeds to make them glow gently.",
+			"Tap the trowel to move softly.",
+			"Tap the water to float downward.",
+			"Tap the sun to glow warmly.",
+			"Tap the sprout or flower to bounce gently."
+		]
+	},
+	"languages": ["en", "zh-Hans"],
+	"coverImage": {
+		"type": "image",
+		"path": "/assets/generated/mimi-plants-seeds/cover.jpg",
+		"alt": "Mimi smiles beside a flower pot with a tiny sprout in a calm sunny garden"
+	},
+	"scenes": [
+		{
+			"id": "01-seed-time",
+			"order": 1,
+			"purpose": "Introduce Mimi, the seeds, and the pot.",
+			"text": {
+				"en": "Mimi holds tiny seeds.",
+				"zh-Hans": "米米拿着小种子。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/01-seed-time-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/01-seed-time-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/scenes/01-seed-time.jpg",
+				"alt": "Mimi holds tiny seeds beside an empty flower pot on a low garden table"
+			},
+			"imagePrompt": "Mimi, a toddler with short dark hair and a yellow shirt, holds tiny seeds beside an empty flower pot on a low garden table in a calm sunny garden, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "seed",
+					"x": 44,
+					"y": 58,
+					"scale": 0.85,
+					"interactionId": "seed-glow"
+				},
+				{
+					"itemId": "pot",
+					"x": 68,
+					"y": 64,
+					"scale": 1.1
+				}
+			],
+			"interactions": [
+				{
+					"id": "seed-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "02-soft-soil",
+			"order": 2,
+			"purpose": "Show Mimi adding soft soil to the pot.",
+			"text": {
+				"en": "Mimi puts soft soil in the pot.",
+				"zh-Hans": "米米把软软的泥土放进花盆。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/02-soft-soil-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/02-soft-soil-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/scenes/02-soft-soil.jpg",
+				"alt": "Mimi gently puts soft soil into a flower pot with a small trowel nearby"
+			},
+			"imagePrompt": "Mimi gently puts soft brown soil into a flower pot on a low garden table, with a small rounded trowel nearby, calm sunny garden, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "soil",
+					"x": 46,
+					"y": 64,
+					"scale": 1.05,
+					"interactionId": "soil-glow"
+				},
+				{
+					"itemId": "pot",
+					"x": 65,
+					"y": 65,
+					"scale": 1.15
+				},
+				{
+					"itemId": "trowel",
+					"x": 25,
+					"y": 70,
+					"scale": 0.85,
+					"interactionId": "trowel-move"
+				}
+			],
+			"interactions": [
+				{
+					"id": "soil-glow",
+					"type": "glow"
+				},
+				{
+					"id": "trowel-move",
+					"type": "move"
+				}
+			]
+		},
+		{
+			"id": "03-gentle-water",
+			"order": 3,
+			"purpose": "Show Mimi watering the seeds lightly.",
+			"text": {
+				"en": "Mimi gives the seeds a little water.",
+				"zh-Hans": "米米给种子浇一点水。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/03-gentle-water-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/03-gentle-water-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/scenes/03-gentle-water.jpg",
+				"alt": "Mimi pours a little water from a small watering can onto seeds in a flower pot"
+			},
+			"imagePrompt": "Mimi pours a small gentle stream of water from a child-sized watering can onto seeds in a flower pot, calm sunny garden, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "watering-can",
+					"x": 31,
+					"y": 51,
+					"scale": 0.95,
+					"interactionId": "watering-can-move"
+				},
+				{
+					"itemId": "water",
+					"x": 50,
+					"y": 56,
+					"scale": 0.75,
+					"interactionId": "water-float"
+				},
+				{
+					"itemId": "seed",
+					"x": 64,
+					"y": 62,
+					"scale": 0.75
+				}
+			],
+			"interactions": [
+				{
+					"id": "watering-can-move",
+					"type": "move"
+				},
+				{
+					"id": "water-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "04-warm-sun",
+			"order": 4,
+			"purpose": "Show warm sunlight helping the seeds rest.",
+			"text": {
+				"en": "The warm sun shines on the pot.",
+				"zh-Hans": "暖暖的太阳照着花盆。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/04-warm-sun-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/04-warm-sun-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/scenes/04-warm-sun.jpg",
+				"alt": "A warm sun shines gently on a flower pot filled with soft soil"
+			},
+			"imagePrompt": "A warm friendly sun shines gently on a flower pot filled with soft soil in a quiet small garden, Mimi watches calmly nearby, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "sun",
+					"x": 78,
+					"y": 21,
+					"scale": 1.05,
+					"interactionId": "sun-glow"
+				},
+				{
+					"itemId": "pot",
+					"x": 51,
+					"y": 66,
+					"scale": 1.15
+				},
+				{
+					"itemId": "soil",
+					"x": 51,
+					"y": 58,
+					"scale": 0.9
+				}
+			],
+			"interactions": [
+				{
+					"id": "sun-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "05-little-sprout",
+			"order": 5,
+			"purpose": "Show the first sprout and leaf.",
+			"text": {
+				"en": "A little green sprout comes up.",
+				"zh-Hans": "绿色的小芽长出来了。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/05-little-sprout-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/05-little-sprout-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/scenes/05-little-sprout.jpg",
+				"alt": "A little green sprout with one leaf grows from the flower pot while Mimi looks closely"
+			},
+			"imagePrompt": "A little green sprout with one soft leaf grows from a flower pot while Mimi looks closely with a gentle smile, calm sunny garden, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "sprout",
+					"x": 52,
+					"y": 47,
+					"scale": 1.05,
+					"interactionId": "sprout-bounce"
+				},
+				{
+					"itemId": "leaf",
+					"x": 60,
+					"y": 45,
+					"scale": 0.75,
+					"interactionId": "leaf-float"
+				},
+				{
+					"itemId": "pot",
+					"x": 52,
+					"y": 68,
+					"scale": 1.1
+				}
+			],
+			"interactions": [
+				{
+					"id": "sprout-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "leaf-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "06-happy-flower",
+			"order": 6,
+			"purpose": "End with Mimi smiling at the flower.",
+			"text": {
+				"en": "Mimi smiles at the new flower.",
+				"zh-Hans": "米米看着新花笑了。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/06-happy-flower-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/06-happy-flower-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/scenes/06-happy-flower.jpg",
+				"alt": "Mimi smiles at a new flower with green leaves beside a small watering can"
+			},
+			"imagePrompt": "Mimi smiles at a new flower with green leaves growing in a flower pot beside a small watering can, calm sunny garden, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "flower",
+					"x": 55,
+					"y": 44,
+					"scale": 1.15,
+					"interactionId": "flower-bounce"
+				},
+				{
+					"itemId": "leaf",
+					"x": 63,
+					"y": 52,
+					"scale": 0.75
+				},
+				{
+					"itemId": "watering-can",
+					"x": 28,
+					"y": 68,
+					"scale": 0.9
+				}
+			],
+			"interactions": [
+				{
+					"id": "flower-bounce",
+					"type": "bounce"
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"id": "seed",
+			"name": {
+				"en": "seed",
+				"zh-Hans": "种子"
+			},
+			"phrase": {
+				"en": "Tiny seeds are ready.",
+				"zh-Hans": "小种子准备好了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/seed.jpg",
+				"alt": "A few tiny brown seeds"
+			},
+			"imagePrompt": "Standalone few tiny rounded brown seeds, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/seed-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/seed-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-seed-time", "03-gentle-water"]
+		},
+		{
+			"id": "pot",
+			"name": {
+				"en": "pot",
+				"zh-Hans": "花盆"
+			},
+			"phrase": {
+				"en": "The pot holds the soil.",
+				"zh-Hans": "花盆装着泥土。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/pot.jpg",
+				"alt": "A simple terracotta flower pot"
+			},
+			"imagePrompt": "Standalone simple terracotta flower pot, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/pot-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/pot-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": [
+				"01-seed-time",
+				"02-soft-soil",
+				"04-warm-sun",
+				"05-little-sprout"
+			]
+		},
+		{
+			"id": "soil",
+			"name": {
+				"en": "soil",
+				"zh-Hans": "泥土"
+			},
+			"phrase": {
+				"en": "The soil is soft.",
+				"zh-Hans": "泥土软软的。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/soil.jpg",
+				"alt": "A small mound of soft brown soil"
+			},
+			"imagePrompt": "Standalone small rounded mound of soft brown garden soil, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/soil-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/soil-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-soft-soil", "04-warm-sun"]
+		},
+		{
+			"id": "trowel",
+			"name": {
+				"en": "trowel",
+				"zh-Hans": "小铲子"
+			},
+			"phrase": {
+				"en": "Mimi uses a small trowel.",
+				"zh-Hans": "米米用小铲子。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/trowel.jpg",
+				"alt": "A small rounded garden trowel"
+			},
+			"imagePrompt": "Standalone small rounded garden trowel with a soft wooden handle, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/trowel-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/trowel-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-soft-soil"]
+		},
+		{
+			"id": "watering-can",
+			"name": {
+				"en": "watering can",
+				"zh-Hans": "洒水壶"
+			},
+			"phrase": {
+				"en": "The watering can pours gently.",
+				"zh-Hans": "洒水壶轻轻倒水。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/watering-can.jpg",
+				"alt": "A small blue watering can"
+			},
+			"imagePrompt": "Standalone small rounded blue watering can, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/watering-can-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/watering-can-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-gentle-water", "06-happy-flower"]
+		},
+		{
+			"id": "water",
+			"name": {
+				"en": "water",
+				"zh-Hans": "水"
+			},
+			"phrase": {
+				"en": "A little water falls.",
+				"zh-Hans": "一点水落下来。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/water.jpg",
+				"alt": "A few gentle blue water drops"
+			},
+			"imagePrompt": "Standalone few gentle blue water drops, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/water-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/water-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-gentle-water"]
+		},
+		{
+			"id": "sun",
+			"name": {
+				"en": "sun",
+				"zh-Hans": "太阳"
+			},
+			"phrase": {
+				"en": "The sun is warm.",
+				"zh-Hans": "太阳暖暖的。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/sun.jpg",
+				"alt": "A warm yellow sun"
+			},
+			"imagePrompt": "Standalone warm yellow sun with soft rays, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/sun-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/sun-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-warm-sun"]
+		},
+		{
+			"id": "sprout",
+			"name": {
+				"en": "sprout",
+				"zh-Hans": "小芽"
+			},
+			"phrase": {
+				"en": "A little sprout comes up.",
+				"zh-Hans": "小芽长出来了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/sprout.jpg",
+				"alt": "A little green sprout"
+			},
+			"imagePrompt": "Standalone little green sprout with two tiny leaves, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/sprout-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/sprout-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-little-sprout"]
+		},
+		{
+			"id": "leaf",
+			"name": {
+				"en": "leaf",
+				"zh-Hans": "叶子"
+			},
+			"phrase": {
+				"en": "The leaf is green.",
+				"zh-Hans": "叶子是绿色的。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/leaf.jpg",
+				"alt": "A soft green leaf"
+			},
+			"imagePrompt": "Standalone soft green leaf, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/leaf-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/leaf-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-little-sprout", "06-happy-flower"]
+		},
+		{
+			"id": "flower",
+			"name": {
+				"en": "flower",
+				"zh-Hans": "花"
+			},
+			"phrase": {
+				"en": "A new flower blooms.",
+				"zh-Hans": "新花开了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-plants-seeds/items/flower.jpg",
+				"alt": "A friendly pink flower"
+			},
+			"imagePrompt": "Standalone friendly pink flower with green leaves, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/flower-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-plants-seeds/audio/flower-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-happy-flower"]
+		}
+	]
+}
