@@ -1,0 +1,595 @@
+{
+	"id": "mimi-sorts-fruit",
+	"version": "1.0.0",
+	"metadata": {
+		"title": {
+			"en": "Mimi Sorts Fruits and Veggies",
+			"zh-Hans": "米米整理水果和蔬菜"
+		},
+		"description": {
+			"en": "Mimi gently fills a basket and garden boxes with colorful fruits and vegetables.",
+			"zh-Hans": "米米轻轻地把彩色水果和蔬菜放进篮子和菜园小盒子里。"
+		},
+		"ageRange": "2-4",
+		"theme": "Gentle fruit and vegetable sorting",
+		"sceneCount": 6
+	},
+	"plotPlan": {
+		"mainCharacter": "Mimi, a curious toddler helping a grown-up with a quiet fruit and vegetable table.",
+		"setting": "A warm kitchen basket, sunny garden stand, soft soil bed, and leafy patch.",
+		"goal": "Mimi notices familiar fruits and vegetables while hearing simple bilingual food words.",
+		"beginning": "Mimi starts with an empty fruit basket and finds bright fruit.",
+		"middle": "Mimi adds more fruit, then moves to the garden boxes and vegetable patch.",
+		"ending": "Mimi finishes at the leafy patch and looks at one calm green vegetable.",
+		"emotionalTone": "Calm, warm, slow, and helpful.",
+		"learningGoals": [
+			"Recognize common fruit and vegetable words.",
+			"Hear each important word in English and Simplified Chinese.",
+			"Practice tapping visible food cards to repeat audio.",
+			"Explore gentle sorting without timers, scores, or wrong answers."
+		],
+		"vocabulary": [
+			"apple",
+			"banana",
+			"orange",
+			"strawberry",
+			"grapes",
+			"watermelon",
+			"carrot",
+			"pumpkin",
+			"tomato",
+			"broccoli"
+		],
+		"interactionIdeas": [
+			"Tap fruit to make it bounce softly.",
+			"Tap vegetables for a quiet glow.",
+			"Tap the watermelon for a gentle float.",
+			"Replay each short line at the child's pace."
+		]
+	},
+	"languages": ["en", "zh-Hans"],
+	"coverImage": {
+		"type": "image",
+		"path": "/assets/generated/mimi-sorts-fruit/scenes/fruit-basket.png",
+		"alt": "A calm empty fruit basket on a sunny kitchen table"
+	},
+	"scenes": [
+		{
+			"id": "01-apple-and-banana",
+			"order": 1,
+			"purpose": "Start with familiar fruit in the basket.",
+			"text": {
+				"en": "The apple waits in the fruit basket.",
+				"zh-Hans": "苹果安静地待在水果篮里。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/apple-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/apple-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/scenes/fruit-basket.png",
+				"alt": "A calm fruit basket with an apple and banana"
+			},
+			"imagePrompt": "A calm empty fruit basket scene for a toddler word-learning game, soft tabletop, clear object placement zones, no text.",
+			"items": [
+				{
+					"itemId": "apple",
+					"x": 34,
+					"y": 59,
+					"scale": 0.95,
+					"interactionId": "apple-bounce"
+				},
+				{
+					"itemId": "banana",
+					"x": 51,
+					"y": 55,
+					"scale": 0.92,
+					"interactionId": "banana-bounce"
+				}
+			],
+			"interactions": [
+				{
+					"id": "apple-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "banana-bounce",
+					"type": "bounce"
+				}
+			]
+		},
+		{
+			"id": "02-orange-and-berries",
+			"order": 2,
+			"purpose": "Add more colorful fruit to the basket.",
+			"text": {
+				"en": "The orange waits in the fruit basket.",
+				"zh-Hans": "橙子安静地待在水果篮里。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/orange-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/orange-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/scenes/fruit-basket.png",
+				"alt": "A calm fruit basket with orange, strawberry, and grapes"
+			},
+			"imagePrompt": "A calm empty fruit basket scene for a toddler word-learning game, soft tabletop, clear object placement zones, no text.",
+			"items": [
+				{
+					"itemId": "orange",
+					"x": 41,
+					"y": 58,
+					"scale": 0.82,
+					"interactionId": "orange-bounce"
+				},
+				{
+					"itemId": "strawberry",
+					"x": 57,
+					"y": 66,
+					"scale": 0.68,
+					"interactionId": "strawberry-bounce"
+				},
+				{
+					"itemId": "grapes",
+					"x": 68,
+					"y": 57,
+					"scale": 0.78,
+					"interactionId": "grapes-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "orange-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "strawberry-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "grapes-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "03-watermelon",
+			"order": 3,
+			"purpose": "Notice one large fruit.",
+			"text": {
+				"en": "The watermelon waits in the fruit basket.",
+				"zh-Hans": "西瓜安静地待在水果篮里。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/watermelon-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/watermelon-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/scenes/fruit-basket.png",
+				"alt": "A calm fruit basket with a watermelon"
+			},
+			"imagePrompt": "A calm empty fruit basket scene for a toddler word-learning game, soft tabletop, clear object placement zones, no text.",
+			"items": [
+				{
+					"itemId": "watermelon",
+					"x": 51,
+					"y": 62,
+					"scale": 1.05,
+					"interactionId": "watermelon-float"
+				}
+			],
+			"interactions": [
+				{
+					"id": "watermelon-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "04-root-garden",
+			"order": 4,
+			"purpose": "Move from fruit to garden vegetables.",
+			"text": {
+				"en": "The carrot sits in the vegetable patch.",
+				"zh-Hans": "胡萝卜在菜地里。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/carrot-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/carrot-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/scenes/root-garden.png",
+				"alt": "A calm root vegetable garden bed with carrot and pumpkin"
+			},
+			"imagePrompt": "A calm root vegetable garden bed for a toddler word-learning game, soft soil rows, clear object placement zones, no text.",
+			"items": [
+				{
+					"itemId": "carrot",
+					"x": 34,
+					"y": 58,
+					"scale": 0.82,
+					"interactionId": "carrot-bounce"
+				},
+				{
+					"itemId": "pumpkin",
+					"x": 58,
+					"y": 67,
+					"scale": 0.9,
+					"interactionId": "pumpkin-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "carrot-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "pumpkin-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "05-garden-stand",
+			"order": 5,
+			"purpose": "Sort a tomato at the garden stand.",
+			"text": {
+				"en": "The tomato waits in the garden stand.",
+				"zh-Hans": "西红柿安静地待在菜园小摊里。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/tomato-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/tomato-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/scenes/garden-stand.png",
+				"alt": "A sunny garden stand with a tomato box"
+			},
+			"imagePrompt": "A calm garden stand for a toddler fruit and vegetable game, small baskets and boxes, clear placement zones, no text.",
+			"items": [
+				{
+					"itemId": "tomato",
+					"x": 62,
+					"y": 54,
+					"scale": 0.82,
+					"interactionId": "tomato-bounce"
+				},
+				{
+					"itemId": "pumpkin",
+					"x": 74,
+					"y": 66,
+					"scale": 0.78,
+					"interactionId": "pumpkin-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "tomato-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "pumpkin-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "06-leafy-patch",
+			"order": 6,
+			"purpose": "End quietly with one leafy vegetable.",
+			"text": {
+				"en": "The broccoli waits in the leafy patch.",
+				"zh-Hans": "西兰花安静地待在叶子菜地里。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/broccoli-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/broccoli-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/scenes/leafy-garden.png",
+				"alt": "A calm leafy garden bed with broccoli"
+			},
+			"imagePrompt": "A calm leafy vegetable garden for a toddler word-learning game, soft soil, green leaves, clear placement zones, no text.",
+			"items": [
+				{
+					"itemId": "broccoli",
+					"x": 51,
+					"y": 56,
+					"scale": 0.9,
+					"interactionId": "broccoli-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "broccoli-glow",
+					"type": "glow"
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"id": "apple",
+			"name": {
+				"en": "apple",
+				"zh-Hans": "苹果"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/apple-bright.webp",
+				"alt": "A bright apple with a green leaf"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/apple-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/apple-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-apple-and-banana"]
+		},
+		{
+			"id": "banana",
+			"name": {
+				"en": "banana",
+				"zh-Hans": "香蕉"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/banana-bright.webp",
+				"alt": "A bright yellow banana"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/banana-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/banana-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-apple-and-banana"]
+		},
+		{
+			"id": "orange",
+			"name": {
+				"en": "orange",
+				"zh-Hans": "橙子"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/orange-bright.png",
+				"alt": "A bright orange fruit"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/orange-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/orange-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-orange-and-berries"]
+		},
+		{
+			"id": "strawberry",
+			"name": {
+				"en": "strawberry",
+				"zh-Hans": "草莓"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/strawberry-bright.png",
+				"alt": "A bright red strawberry"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/strawberry-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/strawberry-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-orange-and-berries"]
+		},
+		{
+			"id": "grapes",
+			"name": {
+				"en": "grapes",
+				"zh-Hans": "葡萄"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/grapes-bright.png",
+				"alt": "A bright bunch of grapes"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/grapes-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/grapes-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-orange-and-berries"]
+		},
+		{
+			"id": "watermelon",
+			"name": {
+				"en": "watermelon",
+				"zh-Hans": "西瓜"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/watermelon-bright.png",
+				"alt": "A bright green watermelon slice"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/watermelon-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/watermelon-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-watermelon"]
+		},
+		{
+			"id": "carrot",
+			"name": {
+				"en": "carrot",
+				"zh-Hans": "胡萝卜"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/carrot-bright.png",
+				"alt": "A bright orange carrot with green leaves"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/carrot-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/carrot-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-root-garden"]
+		},
+		{
+			"id": "pumpkin",
+			"name": {
+				"en": "pumpkin",
+				"zh-Hans": "南瓜"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/pumpkin-bright.png",
+				"alt": "A round orange pumpkin"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/pumpkin-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/pumpkin-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-root-garden", "05-garden-stand"]
+		},
+		{
+			"id": "tomato",
+			"name": {
+				"en": "tomato",
+				"zh-Hans": "西红柿"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/tomato-bright.png",
+				"alt": "A bright red tomato"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/tomato-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/tomato-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-garden-stand"]
+		},
+		{
+			"id": "broccoli",
+			"name": {
+				"en": "broccoli",
+				"zh-Hans": "西兰花"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-sorts-fruit/items/broccoli-bright.png",
+				"alt": "A bright green broccoli"
+			},
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/broccoli-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-sorts-fruit/audio/broccoli-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-leafy-patch"]
+		}
+	]
+}

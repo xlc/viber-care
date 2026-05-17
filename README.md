@@ -60,8 +60,8 @@ authoring skill:
 For production art, generate and review image/audio assets locally or in a secure
 CI job, place the static files under `public/assets/`, update the pack asset
 paths if needed, then commit the bundled assets. Content image references should
-stay under `public/assets/generated/imagegen/`. The static runtime does not need
-any secret or network access.
+stay under `public/assets/generated/<pack-id>/`. The static runtime does not
+need any secret or network access.
 
 Review assets before deployment:
 
