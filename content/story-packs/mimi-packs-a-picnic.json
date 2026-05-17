@@ -1,0 +1,689 @@
+{
+	"id": "mimi-packs-a-picnic",
+	"version": "1.0.0",
+	"metadata": {
+		"title": {
+			"en": "Mimi Packs a Picnic",
+			"zh-Hans": "米米准备野餐"
+		},
+		"description": {
+			"en": "Mimi packs a gentle picnic and learns simple food and picnic words.",
+			"zh-Hans": "米米准备一次安静的野餐，认识简单的食物和野餐词语。"
+		},
+		"ageRange": "2-4",
+		"theme": "Packing a calm picnic",
+		"sceneCount": 6
+	},
+	"plotPlan": {
+		"mainCharacter": "Mimi, a curious toddler with short dark hair and a yellow shirt.",
+		"setting": "A cozy kitchen corner and a quiet sunny picnic spot with a low table and a soft blanket.",
+		"goal": "Mimi packs a small picnic basket and settles on a blanket while hearing simple food and picnic words.",
+		"beginning": "Mimi finds a picnic basket and a soft blanket.",
+		"middle": "Mimi adds fruit, a cup, a napkin, and a water bottle to the basket.",
+		"ending": "Mimi spreads the blanket and sits down for a quiet picnic.",
+		"emotionalTone": "Calm, warm, safe, tidy, and repeatable.",
+		"learningGoals": [
+			"Recognize simple picnic and food words.",
+			"Hear each important word in English and Simplified Chinese.",
+			"Practice gentle packing and setting-out actions.",
+			"Practice tapping visible story items to repeat audio."
+		],
+		"vocabulary": [
+			"basket",
+			"blanket",
+			"apple",
+			"banana",
+			"cup",
+			"napkin",
+			"water bottle",
+			"water",
+			"hat",
+			"sandwich"
+		],
+		"interactionIdeas": [
+			"Tap the basket to make it glow gently.",
+			"Tap the fruit to make it bounce softly.",
+			"Tap the water to float gently.",
+			"Tap the blanket to move open softly.",
+			"Tap the sandwich to glow."
+		]
+	},
+	"languages": ["en", "zh-Hans"],
+	"coverImage": {
+		"type": "image",
+		"path": "/assets/generated/mimi-packs-a-picnic/cover.jpg",
+		"alt": "Mimi smiles beside a picnic basket and blanket in a calm sunny picnic spot"
+	},
+	"scenes": [
+		{
+			"id": "01-find-basket",
+			"order": 1,
+			"purpose": "Introduce the picnic basket and blanket.",
+			"text": {
+				"en": "Mimi finds the picnic basket.",
+				"zh-Hans": "米米找到野餐篮。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/01-find-basket-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/01-find-basket-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/scenes/01-find-basket.jpg",
+				"alt": "Mimi finds a picnic basket beside a folded blanket"
+			},
+			"imagePrompt": "Mimi, a toddler with short dark hair and a yellow shirt, finds a small picnic basket beside a folded blanket in a cozy kitchen corner, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "basket",
+					"x": 58,
+					"y": 61,
+					"scale": 1.15,
+					"interactionId": "basket-glow"
+				},
+				{
+					"itemId": "blanket",
+					"x": 31,
+					"y": 70,
+					"scale": 0.95
+				}
+			],
+			"interactions": [
+				{
+					"id": "basket-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "02-fruit-in-basket",
+			"order": 2,
+			"purpose": "Show Mimi adding fruit to the basket.",
+			"text": {
+				"en": "Mimi puts fruit in the basket.",
+				"zh-Hans": "米米把水果放进篮子里。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/02-fruit-in-basket-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/02-fruit-in-basket-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/scenes/02-fruit-in-basket.jpg",
+				"alt": "Mimi puts an apple and a banana into a picnic basket"
+			},
+			"imagePrompt": "Mimi gently puts an apple and a banana into a small picnic basket on a low table, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "apple",
+					"x": 36,
+					"y": 58,
+					"scale": 0.85,
+					"interactionId": "apple-bounce"
+				},
+				{
+					"itemId": "banana",
+					"x": 48,
+					"y": 56,
+					"scale": 0.9,
+					"interactionId": "banana-bounce"
+				},
+				{
+					"itemId": "basket",
+					"x": 67,
+					"y": 62,
+					"scale": 1.1
+				}
+			],
+			"interactions": [
+				{
+					"id": "apple-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "banana-bounce",
+					"type": "bounce"
+				}
+			]
+		},
+		{
+			"id": "03-cup-and-napkin",
+			"order": 3,
+			"purpose": "Show Mimi adding a cup and napkin.",
+			"text": {
+				"en": "Mimi adds a cup and napkin.",
+				"zh-Hans": "米米放进杯子和餐巾。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/03-cup-and-napkin-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/03-cup-and-napkin-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/scenes/03-cup-and-napkin.jpg",
+				"alt": "Mimi adds a small cup and folded napkin beside the picnic basket"
+			},
+			"imagePrompt": "Mimi adds a small cup and a folded napkin beside a picnic basket on a low table, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "cup",
+					"x": 35,
+					"y": 62,
+					"scale": 0.9,
+					"interactionId": "cup-glow"
+				},
+				{
+					"itemId": "napkin",
+					"x": 48,
+					"y": 65,
+					"scale": 0.85,
+					"interactionId": "napkin-float"
+				},
+				{
+					"itemId": "basket",
+					"x": 68,
+					"y": 61,
+					"scale": 1.05
+				}
+			],
+			"interactions": [
+				{
+					"id": "cup-glow",
+					"type": "glow"
+				},
+				{
+					"id": "napkin-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "04-water-bottle",
+			"order": 4,
+			"purpose": "Show water going into the bottle.",
+			"text": {
+				"en": "Mimi fills the water bottle.",
+				"zh-Hans": "米米把水装进水瓶。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/04-water-bottle-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/04-water-bottle-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/scenes/04-water-bottle.jpg",
+				"alt": "Mimi fills a small water bottle with a little water beside a cup"
+			},
+			"imagePrompt": "Mimi fills a small child-sized water bottle with a little water beside a simple cup on a low table, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "water-bottle",
+					"x": 57,
+					"y": 57,
+					"scale": 1.05,
+					"interactionId": "water-bottle-glow"
+				},
+				{
+					"itemId": "water",
+					"x": 44,
+					"y": 54,
+					"scale": 0.8,
+					"interactionId": "water-float"
+				},
+				{
+					"itemId": "cup",
+					"x": 28,
+					"y": 64,
+					"scale": 0.75
+				}
+			],
+			"interactions": [
+				{
+					"id": "water-bottle-glow",
+					"type": "glow"
+				},
+				{
+					"id": "water-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "05-open-blanket",
+			"order": 5,
+			"purpose": "Show Mimi opening the blanket at the picnic spot.",
+			"text": {
+				"en": "Mimi spreads the soft blanket.",
+				"zh-Hans": "米米铺开软软的毯子。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/05-open-blanket-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/05-open-blanket-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/scenes/05-open-blanket.jpg",
+				"alt": "Mimi spreads a soft picnic blanket beside a basket and sun hat"
+			},
+			"imagePrompt": "Mimi spreads a soft picnic blanket on quiet grass beside a small picnic basket and a simple sun hat, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "blanket",
+					"x": 50,
+					"y": 70,
+					"scale": 1.25,
+					"interactionId": "blanket-move"
+				},
+				{
+					"itemId": "hat",
+					"x": 26,
+					"y": 62,
+					"scale": 0.8,
+					"interactionId": "hat-float"
+				},
+				{
+					"itemId": "basket",
+					"x": 72,
+					"y": 63,
+					"scale": 0.95
+				}
+			],
+			"interactions": [
+				{
+					"id": "blanket-move",
+					"type": "move"
+				},
+				{
+					"id": "hat-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "06-quiet-picnic",
+			"order": 6,
+			"purpose": "End with Mimi sitting for a quiet picnic.",
+			"text": {
+				"en": "Mimi sits for a quiet picnic.",
+				"zh-Hans": "米米安静地坐下来野餐。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/06-quiet-picnic-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/06-quiet-picnic-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/scenes/06-quiet-picnic.jpg",
+				"alt": "Mimi sits calmly on a picnic blanket with a sandwich, apple, and cup"
+			},
+			"imagePrompt": "Mimi sits calmly on a soft picnic blanket with a sandwich, apple, cup, and picnic basket arranged neatly nearby, warm children's book illustration, no text.",
+			"items": [
+				{
+					"itemId": "sandwich",
+					"x": 47,
+					"y": 67,
+					"scale": 0.9,
+					"interactionId": "sandwich-glow"
+				},
+				{
+					"itemId": "apple",
+					"x": 36,
+					"y": 69,
+					"scale": 0.75
+				},
+				{
+					"itemId": "cup",
+					"x": 60,
+					"y": 67,
+					"scale": 0.75
+				},
+				{
+					"itemId": "basket",
+					"x": 75,
+					"y": 59,
+					"scale": 0.85
+				}
+			],
+			"interactions": [
+				{
+					"id": "sandwich-glow",
+					"type": "glow"
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"id": "basket",
+			"name": {
+				"en": "basket",
+				"zh-Hans": "篮子"
+			},
+			"phrase": {
+				"en": "The basket is ready.",
+				"zh-Hans": "篮子准备好了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/basket.jpg",
+				"alt": "A small picnic basket"
+			},
+			"imagePrompt": "Standalone small woven picnic basket, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/basket-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/basket-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": [
+				"01-find-basket",
+				"02-fruit-in-basket",
+				"03-cup-and-napkin",
+				"05-open-blanket",
+				"06-quiet-picnic"
+			]
+		},
+		{
+			"id": "blanket",
+			"name": {
+				"en": "blanket",
+				"zh-Hans": "毯子"
+			},
+			"phrase": {
+				"en": "The blanket is soft.",
+				"zh-Hans": "毯子软软的。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/blanket.jpg",
+				"alt": "A soft folded picnic blanket"
+			},
+			"imagePrompt": "Standalone soft folded picnic blanket with simple gentle colors, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/blanket-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/blanket-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-find-basket", "05-open-blanket"]
+		},
+		{
+			"id": "apple",
+			"name": {
+				"en": "apple",
+				"zh-Hans": "苹果"
+			},
+			"phrase": {
+				"en": "Mimi packs an apple.",
+				"zh-Hans": "米米放进一个苹果。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/apple.jpg",
+				"alt": "A red apple"
+			},
+			"imagePrompt": "Standalone red apple with a small green leaf, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/apple-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/apple-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-fruit-in-basket", "06-quiet-picnic"]
+		},
+		{
+			"id": "banana",
+			"name": {
+				"en": "banana",
+				"zh-Hans": "香蕉"
+			},
+			"phrase": {
+				"en": "Mimi packs a banana.",
+				"zh-Hans": "米米放进一根香蕉。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/banana.jpg",
+				"alt": "A yellow banana"
+			},
+			"imagePrompt": "Standalone yellow banana, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/banana-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/banana-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-fruit-in-basket"]
+		},
+		{
+			"id": "cup",
+			"name": {
+				"en": "cup",
+				"zh-Hans": "杯子"
+			},
+			"phrase": {
+				"en": "Here is a cup.",
+				"zh-Hans": "这里有一个杯子。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/cup.jpg",
+				"alt": "A small blue cup"
+			},
+			"imagePrompt": "Standalone small blue cup, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/cup-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/cup-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-cup-and-napkin", "04-water-bottle", "06-quiet-picnic"]
+		},
+		{
+			"id": "napkin",
+			"name": {
+				"en": "napkin",
+				"zh-Hans": "餐巾"
+			},
+			"phrase": {
+				"en": "The napkin is folded.",
+				"zh-Hans": "餐巾叠好了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/napkin.jpg",
+				"alt": "A folded napkin"
+			},
+			"imagePrompt": "Standalone folded napkin in a soft color, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/napkin-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/napkin-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-cup-and-napkin"]
+		},
+		{
+			"id": "water-bottle",
+			"name": {
+				"en": "water bottle",
+				"zh-Hans": "水瓶"
+			},
+			"phrase": {
+				"en": "The water bottle is full.",
+				"zh-Hans": "水瓶装满了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/water-bottle.jpg",
+				"alt": "A small water bottle"
+			},
+			"imagePrompt": "Standalone small child-sized water bottle with clear water, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/water-bottle-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/water-bottle-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-water-bottle"]
+		},
+		{
+			"id": "water",
+			"name": {
+				"en": "water",
+				"zh-Hans": "水"
+			},
+			"phrase": {
+				"en": "Water goes in.",
+				"zh-Hans": "水倒进去了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/water.jpg",
+				"alt": "A few gentle blue water drops"
+			},
+			"imagePrompt": "Standalone few gentle blue water drops, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/water-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/water-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-water-bottle"]
+		},
+		{
+			"id": "hat",
+			"name": {
+				"en": "hat",
+				"zh-Hans": "帽子"
+			},
+			"phrase": {
+				"en": "Mimi has a sun hat.",
+				"zh-Hans": "米米有一顶太阳帽。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/hat.jpg",
+				"alt": "A soft yellow sun hat"
+			},
+			"imagePrompt": "Standalone soft yellow sun hat with a rounded brim, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/hat-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/hat-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-open-blanket"]
+		},
+		{
+			"id": "sandwich",
+			"name": {
+				"en": "sandwich",
+				"zh-Hans": "三明治"
+			},
+			"phrase": {
+				"en": "The sandwich is ready.",
+				"zh-Hans": "三明治准备好了。"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-packs-a-picnic/items/sandwich.jpg",
+				"alt": "A simple triangle sandwich"
+			},
+			"imagePrompt": "Standalone simple triangle sandwich with soft rounded edges, warm children's book illustration, no text.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/sandwich-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-packs-a-picnic/audio/sandwich-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-quiet-picnic"]
+		}
+	]
+}
