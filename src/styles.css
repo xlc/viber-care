@@ -199,7 +199,7 @@ h1 {
 
 .pack-select {
 	display: grid;
-	grid-template-columns: 112px 1fr;
+	grid-template-columns: 132px 1fr;
 	gap: 14px;
 	min-height: 136px;
 	padding: 0;
@@ -209,8 +209,10 @@ h1 {
 }
 
 .pack-select img {
-	width: 112px;
-	height: 112px;
+	align-self: center;
+	width: 132px;
+	height: auto;
+	aspect-ratio: 3 / 2;
 	object-fit: cover;
 	border-radius: 8px;
 	background: #d8f4ff;
@@ -494,12 +496,11 @@ h1 {
 	}
 
 	.pack-select {
-		grid-template-columns: 96px 1fr;
+		grid-template-columns: 112px 1fr;
 	}
 
 	.pack-select img {
-		width: 96px;
-		height: 96px;
+		width: 112px;
 	}
 
 	.card-stage {
