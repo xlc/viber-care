@@ -71,7 +71,7 @@ function validatePack(pack: StoryPack, messages: string[]) {
 		}
 	}
 
-	validateImageAsset(pack.coverImage, `${pack.id}/cover`, messages)
+	validateImageAsset(pack.coverImage, `${pack.id}/cover`, pack.id, messages)
 	validateRequiredLanguages(pack.metadata.title, `${pack.id}/title`, messages)
 	validateRequiredLanguages(
 		pack.metadata.description,
@@ -102,8 +102,13 @@ function validateScenes(pack: StoryPack, messages: string[]): Set<string> {
 		sceneOrders.add(scene.order)
 
 		validateRequiredLanguages(scene.text, `${scene.id}/text`, messages)
-		validateRequiredAudio(scene.narration, `${scene.id}/narration`, messages)
-		validateImageAsset(scene.image, `${scene.id}/image`, messages)
+		validateRequiredAudio(
+			scene.narration,
+			`${scene.id}/narration`,
+			pack.id,
+			messages,
+		)
+		validateImageAsset(scene.image, `${scene.id}/image`, pack.id, messages)
 
 		const interactionIds = new Set<string>()
 		for (const interaction of scene.interactions) {
@@ -153,8 +158,13 @@ function validateItems(
 		if (item.phrase) {
 			validateRequiredLanguages(item.phrase, `${item.id}/phrase`, messages)
 		}
-		validateRequiredAudio(item.wordAudio, `${item.id}/wordAudio`, messages)
-		validateImageAsset(item.image, `${item.id}/image`, messages)
+		validateRequiredAudio(
+			item.wordAudio,
+			`${item.id}/wordAudio`,
+			pack.id,
+			messages,
+		)
+		validateImageAsset(item.image, `${item.id}/image`, pack.id, messages)
 
 		const placedSceneIds =
 			placedSceneIdsByItem.get(item.id) ?? new Set<string>()
@@ -217,6 +227,7 @@ function validateRequiredLanguages(
 function validateRequiredAudio(
 	value: Record<string, AssetReference | undefined>,
 	label: string,
+	packId: string,
 	messages: string[],
 ) {
 	for (const language of REQUIRED_STORY_LANGUAGES) {
@@ -228,27 +239,35 @@ function validateRequiredAudio(
 		if (asset.type !== 'audio' && asset.type !== 'sound') {
 			messages.push(`${label} ${language} must be an audio asset.`)
 		}
-		validatePublicAsset(asset, `${label}/${language}`, messages)
+		validatePublicAsset(asset, `${label}/${language}`, packId, messages)
 	}
 }
 
 function validateImageAsset(
 	asset: AssetReference,
 	label: string,
+	packId: string,
 	messages: string[],
 ) {
 	if (asset.type !== 'image') {
 		messages.push(`${label} must be an image asset.`)
 	}
-	validatePublicAsset(asset, label, messages)
+	validatePublicAsset(asset, label, packId, messages)
 }
 
 function validatePublicAsset(
 	asset: AssetReference,
 	label: string,
+	packId: string,
 	messages: string[],
 ) {
-	if (!asset.path.startsWith('/assets/')) {
-		messages.push(`${label} must use a public /assets/ path.`)
+	const expectedPrefix = `/assets/generated/${packId}/`
+	if (!asset.path.startsWith(expectedPrefix)) {
+		messages.push(
+			`${label} must use a public asset path under ${expectedPrefix}.`,
+		)
+	}
+	if (asset.path.split('/').includes('..')) {
+		messages.push(`${label} must not contain path traversal.`)
 	}
 }

@@ -94,6 +94,11 @@ async function getAudioSources(page: Page) {
 test('app opens on the story-pack home screen', async ({ page }) => {
 	await page.goto('/')
 
+	await expect(page).toHaveTitle('Word Garden')
+	await expect(page.locator('meta[name="description"]')).toHaveAttribute(
+		'content',
+		'Word Garden is a calm bilingual story and card app for toddlers.',
+	)
 	await expect(page.getByTestId('home-screen')).toBeVisible()
 	await expect(page.getByTestId('pack-card-mimi-rides-the-bus')).toBeVisible()
 	await expect(page.getByTestId('start-story-mimi-rides-the-bus')).toBeVisible()

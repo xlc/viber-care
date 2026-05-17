@@ -64,12 +64,22 @@ describe('story content schema validation', () => {
 		)
 	})
 
-	it('rejects asset paths outside public assets', () => {
+	it('rejects asset paths outside the pack asset directory', () => {
 		const brokenPack = clone(mimiPack)
-		brokenPack.coverImage.path = '/legacy/cover.svg'
+		brokenPack.coverImage.path = '/assets/generated/other-pack/cover.jpg'
 
 		expect(() => validateStoryPacks([brokenPack])).toThrow(
-			/mimi-rides-the-bus\/cover must use a public \/assets\/ path/,
+			/mimi-rides-the-bus\/cover must use a public asset path under \/assets\/generated\/mimi-rides-the-bus\//,
+		)
+	})
+
+	it('rejects asset paths with traversal segments', () => {
+		const brokenPack = clone(mimiPack)
+		brokenPack.coverImage.path =
+			'/assets/generated/mimi-rides-the-bus/../other/cover.jpg'
+
+		expect(() => validateStoryPacks([brokenPack])).toThrow(
+			/mimi-rides-the-bus\/cover must not contain path traversal/,
 		)
 	})
 })

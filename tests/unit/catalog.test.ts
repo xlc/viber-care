@@ -51,12 +51,11 @@ describe('story runtime catalog', () => {
 	})
 
 	it('ships the complete Mimi pack without placeholder audio', () => {
-		const [pack] = catalog.packs
+		const pack = getRequiredPack('mimi-rides-the-bus')
 
-		expect(pack?.id).toBe('mimi-rides-the-bus')
-		expect(pack?.metadata.sceneCount).toBe(6)
-		expect(pack?.scenes).toHaveLength(6)
-		expect(pack?.items.map((item) => item.id)).toEqual([
+		expect(pack.metadata.sceneCount).toBe(6)
+		expect(pack.scenes).toHaveLength(6)
+		expect(pack.items.map((item) => item.id)).toEqual([
 			'bus',
 			'bus-stop',
 			'card',
@@ -75,11 +74,24 @@ describe('story runtime catalog', () => {
 	})
 
 	it('does not import legacy content as active story packs', () => {
-		expect(catalog.packs.map((pack) => pack.id)).toEqual(['mimi-rides-the-bus'])
+		expect(catalog.packs.map((pack) => pack.id).sort()).toEqual(
+			getSourceStoryPackIds(),
+		)
+		expect(
+			existsSync(path.join(process.cwd(), 'content', 'legacy-word-garden-v2')),
+		).toBe(true)
 		expect(existsSync(path.join(process.cwd(), 'content', 'items'))).toBe(false)
 		expect(existsSync(path.join(process.cwd(), 'content', 'packs'))).toBe(false)
 	})
 })
+
+function getRequiredPack(packId: string) {
+	const pack = catalog.packs.find((candidate) => candidate.id === packId)
+	if (!pack) {
+		throw new Error(`Missing story pack "${packId}"`)
+	}
+	return pack
+}
 
 function expectStaticAsset(asset: AssetReference | undefined, label: string) {
 	if (!asset) {
