@@ -1,0 +1,638 @@
+{
+	"id": "dino-valley-hello",
+	"version": "1.0.0",
+	"metadata": {
+		"title": {
+			"en": "Dino Valley Hello",
+			"zh-Hans": "恐龙山谷问好"
+		},
+		"description": {
+			"en": "A calm dinosaur valley story with gentle dinosaurs, leaves, eggs, and quiet fossils.",
+			"zh-Hans": "一个安静的恐龙山谷故事，认识温柔的恐龙、叶子、恐龙蛋和化石。"
+		},
+		"ageRange": "2-4",
+		"theme": "Gentle dinosaur valley",
+		"sceneCount": 6
+	},
+	"plotPlan": {
+		"mainCharacter": "A smiling baby dinosaur in a calm green valley.",
+		"setting": "A sunny prehistoric valley with soft hills, rounded rocks, ferns, and a quiet pond.",
+		"goal": "The baby dinosaur gently explores the valley and meets friendly dinosaur words.",
+		"beginning": "The baby dinosaur smiles in the safe green valley.",
+		"middle": "The baby dinosaur notices a long-neck dinosaur, a triceratops, a stegosaurus, footprints, leaves, and fossils.",
+		"ending": "A pteranodon floats above the quiet valley while the nest and egg rest calmly below.",
+		"emotionalTone": "Calm, curious, friendly, slow, and toddler-safe.",
+		"learningGoals": [
+			"Recognize simple dinosaur valley words.",
+			"Hear each important word in English and Simplified Chinese.",
+			"Practice tapping visible story items to repeat audio.",
+			"Explore dinosaurs without danger, chasing, scoring, or failure states."
+		],
+		"vocabulary": [
+			"baby dinosaur",
+			"long-neck dinosaur",
+			"triceratops",
+			"stegosaurus",
+			"pteranodon",
+			"dinosaur egg",
+			"dinosaur nest",
+			"dinosaur footprint",
+			"fern",
+			"fossil"
+		],
+		"interactionIdeas": [
+			"Tap a dinosaur to hear its word and make it bounce softly.",
+			"Tap the fern or pteranodon to float gently.",
+			"Tap the nest, egg, footprint, or fossil to glow softly.",
+			"Tap the scene text to replay calm narration."
+		]
+	},
+	"languages": ["en", "zh-Hans"],
+	"coverImage": {
+		"type": "image",
+		"path": "/assets/generated/dino-valley-hello/cover.jpg",
+		"alt": "Friendly dinosaurs smile together in a calm sunny dinosaur valley"
+	},
+	"scenes": [
+		{
+			"id": "01-baby-dinosaur",
+			"order": 1,
+			"purpose": "Introduce the baby dinosaur and calm valley.",
+			"text": {
+				"en": "The baby dinosaur smiles at the gentle valley.",
+				"zh-Hans": "恐龙宝宝对温柔的山谷微笑。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/01-baby-dinosaur-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/01-baby-dinosaur-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/scenes/valley.webp",
+				"alt": "A calm green dinosaur valley with soft hills and a quiet pond"
+			},
+			"imagePrompt": "A calm toddler-friendly prehistoric dinosaur valley with soft green hills, rounded rocks, simple ferns, a tiny pond, warm sunlight, and plenty of clear open space for objects. No lava, no danger, no text.",
+			"items": [
+				{
+					"itemId": "baby-dinosaur",
+					"x": 49,
+					"y": 69,
+					"scale": 0.88,
+					"interactionId": "baby-bounce"
+				},
+				{
+					"itemId": "fern",
+					"x": 82,
+					"y": 66,
+					"scale": 0.82,
+					"interactionId": "fern-float"
+				}
+			],
+			"interactions": [
+				{
+					"id": "baby-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "fern-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "02-long-neck-leaf",
+			"order": 2,
+			"purpose": "Show the long-neck dinosaur reaching a high leaf.",
+			"text": {
+				"en": "The long-neck gently nibbles a high leaf.",
+				"zh-Hans": "长颈龙轻轻吃到高高的叶子。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/02-long-neck-leaf-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/02-long-neck-leaf-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/scenes/valley.webp",
+				"alt": "A sunny valley where a long-neck dinosaur can reach leaves"
+			},
+			"imagePrompt": "A friendly long-neck dinosaur reaches toward a high leaf in a calm green prehistoric valley, warm children's book style, no text.",
+			"items": [
+				{
+					"itemId": "long-neck",
+					"x": 25,
+					"y": 66,
+					"scale": 1.08,
+					"interactionId": "long-neck-bounce"
+				},
+				{
+					"itemId": "fern",
+					"x": 73,
+					"y": 69,
+					"scale": 0.86,
+					"interactionId": "fern-float"
+				}
+			],
+			"interactions": [
+				{
+					"id": "long-neck-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "fern-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "03-triceratops-hello",
+			"order": 3,
+			"purpose": "Introduce the triceratops and a soft footprint.",
+			"text": {
+				"en": "The triceratops nods hello in the valley.",
+				"zh-Hans": "三角龙在山谷里点头问好。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/03-triceratops-hello-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/03-triceratops-hello-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/scenes/valley.webp",
+				"alt": "A friendly triceratops in a calm green valley"
+			},
+			"imagePrompt": "A gentle blue triceratops nods hello beside a dinosaur footprint in a calm green valley, warm children's book style, no text.",
+			"items": [
+				{
+					"itemId": "triceratops",
+					"x": 63,
+					"y": 68,
+					"scale": 0.96,
+					"interactionId": "triceratops-bounce"
+				},
+				{
+					"itemId": "dino-footprint",
+					"x": 34,
+					"y": 74,
+					"scale": 0.76,
+					"interactionId": "footprint-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "triceratops-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "footprint-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "04-stegosaurus-rocks",
+			"order": 4,
+			"purpose": "Show the stegosaurus near quiet rocks and a fossil.",
+			"text": {
+				"en": "The stegosaurus sways beside the warm rocks.",
+				"zh-Hans": "剑龙在温暖的石头旁轻轻摇摆。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/04-stegosaurus-rocks-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/04-stegosaurus-rocks-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/scenes/valley.webp",
+				"alt": "A friendly stegosaurus near warm rocks in a calm valley"
+			},
+			"imagePrompt": "A friendly stegosaurus sways beside rounded warm rocks and a quiet fossil in a calm green dinosaur valley, warm children's book style, no text.",
+			"items": [
+				{
+					"itemId": "stegosaurus",
+					"x": 56,
+					"y": 69,
+					"scale": 1,
+					"interactionId": "stegosaurus-bounce"
+				},
+				{
+					"itemId": "fossil",
+					"x": 27,
+					"y": 76,
+					"scale": 0.74,
+					"interactionId": "fossil-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "stegosaurus-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "fossil-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "05-egg-in-nest",
+			"order": 5,
+			"purpose": "Show the dinosaur egg resting safely in the nest.",
+			"text": {
+				"en": "The dinosaur egg rests quietly in the warm nest.",
+				"zh-Hans": "恐龙蛋安静地躺在温暖的窝里。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/05-egg-in-nest-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/05-egg-in-nest-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/scenes/valley.webp",
+				"alt": "A quiet dinosaur nest and egg in a sunny green valley"
+			},
+			"imagePrompt": "A speckled dinosaur egg rests quietly in a warm nest near a fern in a calm green dinosaur valley, warm children's book style, no text.",
+			"items": [
+				{
+					"itemId": "dino-nest",
+					"x": 53,
+					"y": 75,
+					"scale": 0.92,
+					"interactionId": "nest-glow"
+				},
+				{
+					"itemId": "dinosaur-egg",
+					"x": 42,
+					"y": 63,
+					"scale": 0.66,
+					"interactionId": "egg-glow"
+				},
+				{
+					"itemId": "fern",
+					"x": 74,
+					"y": 70,
+					"scale": 0.78,
+					"interactionId": "fern-float"
+				}
+			],
+			"interactions": [
+				{
+					"id": "nest-glow",
+					"type": "glow"
+				},
+				{
+					"id": "egg-glow",
+					"type": "glow"
+				},
+				{
+					"id": "fern-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "06-pteranodon-above",
+			"order": 6,
+			"purpose": "End with the valley quiet and the pteranodon floating above.",
+			"text": {
+				"en": "The pteranodon floats above the quiet valley.",
+				"zh-Hans": "翼龙在安静的山谷上方飞过。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/06-pteranodon-above-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/06-pteranodon-above-zh-Hans.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/scenes/valley.webp",
+				"alt": "A pteranodon floats above a quiet sunny dinosaur valley"
+			},
+			"imagePrompt": "A friendly pteranodon floats above a quiet sunny dinosaur valley while a baby dinosaur and long-neck dinosaur rest below, warm children's book style, no text.",
+			"items": [
+				{
+					"itemId": "pteranodon",
+					"x": 68,
+					"y": 32,
+					"scale": 0.78,
+					"interactionId": "pteranodon-float"
+				},
+				{
+					"itemId": "long-neck",
+					"x": 25,
+					"y": 67,
+					"scale": 0.96,
+					"interactionId": "long-neck-bounce"
+				},
+				{
+					"itemId": "baby-dinosaur",
+					"x": 50,
+					"y": 74,
+					"scale": 0.72,
+					"interactionId": "baby-bounce"
+				}
+			],
+			"interactions": [
+				{
+					"id": "pteranodon-float",
+					"type": "float"
+				},
+				{
+					"id": "long-neck-bounce",
+					"type": "bounce"
+				},
+				{
+					"id": "baby-bounce",
+					"type": "bounce"
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"id": "baby-dinosaur",
+			"name": {
+				"en": "baby dinosaur",
+				"zh-Hans": "小恐龙"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/baby-dinosaur.webp",
+				"alt": "A smiling baby dinosaur sitting in a cracked egg"
+			},
+			"imagePrompt": "A tiny smiling baby dinosaur for a toddler dinosaur word-learning game, pastel green, round cheeks, friendly pose, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/baby-dinosaur-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/baby-dinosaur-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-baby-dinosaur", "06-pteranodon-above"]
+		},
+		{
+			"id": "long-neck",
+			"name": {
+				"en": "long-neck dinosaur",
+				"zh-Hans": "长颈龙"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/long-neck.webp",
+				"alt": "A friendly blue long-neck dinosaur"
+			},
+			"imagePrompt": "A friendly long-neck dinosaur for a toddler dinosaur word-learning game, soft blue body, clear silhouette, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/long-neck-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/long-neck-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-long-neck-leaf", "06-pteranodon-above"]
+		},
+		{
+			"id": "triceratops",
+			"name": {
+				"en": "triceratops",
+				"zh-Hans": "三角龙"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/triceratops.webp",
+				"alt": "A gentle purple triceratops with soft horns"
+			},
+			"imagePrompt": "A gentle triceratops for a toddler dinosaur word-learning game, rounded frill, three soft horns, clear silhouette, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/triceratops-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/triceratops-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-triceratops-hello"]
+		},
+		{
+			"id": "stegosaurus",
+			"name": {
+				"en": "stegosaurus",
+				"zh-Hans": "剑龙"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/stegosaurus.webp",
+				"alt": "A friendly green stegosaurus with soft back plates"
+			},
+			"imagePrompt": "A friendly stegosaurus for a toddler dinosaur word-learning game, green body, soft rounded back plates, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/stegosaurus-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/stegosaurus-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-stegosaurus-rocks"]
+		},
+		{
+			"id": "pteranodon",
+			"name": {
+				"en": "pteranodon",
+				"zh-Hans": "翼龙"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/pteranodon.webp",
+				"alt": "A friendly green pteranodon with wide wings"
+			},
+			"imagePrompt": "A friendly pteranodon for a toddler dinosaur word-learning game, soft green wings, smiling face, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/pteranodon-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/pteranodon-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-pteranodon-above"]
+		},
+		{
+			"id": "dinosaur-egg",
+			"name": {
+				"en": "dinosaur egg",
+				"zh-Hans": "恐龙蛋"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/dinosaur-egg.webp",
+				"alt": "A pale speckled dinosaur egg"
+			},
+			"imagePrompt": "A speckled dinosaur egg for a toddler dinosaur word-learning game, soft colors, clear silhouette, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/dinosaur-egg-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/dinosaur-egg-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-egg-in-nest"]
+		},
+		{
+			"id": "dino-nest",
+			"name": {
+				"en": "dinosaur nest",
+				"zh-Hans": "恐龙窝"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/dino-nest.webp",
+				"alt": "A warm dinosaur nest with eggs and leaves"
+			},
+			"imagePrompt": "A cozy dinosaur nest for a toddler dinosaur word-learning game, warm straw, a few eggs, soft leaves, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/dino-nest-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/dino-nest-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-egg-in-nest"]
+		},
+		{
+			"id": "dino-footprint",
+			"name": {
+				"en": "dinosaur footprint",
+				"zh-Hans": "恐龙脚印"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/dino-footprint.webp",
+				"alt": "A soft golden dinosaur footprint"
+			},
+			"imagePrompt": "A big soft dinosaur footprint for a toddler dinosaur word-learning game, rounded edges, warm color, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/dino-footprint-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/dino-footprint-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-triceratops-hello"]
+		},
+		{
+			"id": "fern",
+			"name": {
+				"en": "fern",
+				"zh-Hans": "蕨叶"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/fern.webp",
+				"alt": "A soft green fern beside small rocks"
+			},
+			"imagePrompt": "A soft green fern for a toddler dinosaur word-learning game, clear leaves and small rounded rocks, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/fern-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/fern-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-baby-dinosaur", "02-long-neck-leaf", "05-egg-in-nest"]
+		},
+		{
+			"id": "fossil",
+			"name": {
+				"en": "fossil",
+				"zh-Hans": "化石"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/dino-valley-hello/items/fossil.webp",
+				"alt": "A quiet spiral fossil in a rounded rock"
+			},
+			"imagePrompt": "A quiet fossil stone for a toddler dinosaur word-learning game, soft spiral shape, rounded rock, no text, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/fossil-en.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/dino-valley-hello/audio/fossil-zh-Hans.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-stegosaurus-rocks"]
+		}
+	]
+}
