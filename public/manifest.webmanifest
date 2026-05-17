@@ -1,7 +1,7 @@
 {
 	"name": "Word Garden",
 	"short_name": "Word Garden",
-	"description": "A gentle multilingual object-learning game for toddlers.",
+	"description": "A calm bilingual story and card app for toddlers.",
 	"start_url": "/",
 	"scope": "/",
 	"display": "standalone",
