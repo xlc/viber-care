@@ -42,15 +42,6 @@ export function CardMode({
 			<section className="card-stage" aria-label="Vocabulary card">
 				<button
 					type="button"
-					className="nav-button"
-					aria-label="Previous card"
-					onClick={onPrevious}
-					disabled={items.length < 2}
-				>
-					Previous
-				</button>
-				<button
-					type="button"
 					className="vocabulary-card"
 					data-testid="vocabulary-card"
 					onClick={onSpeak}
@@ -65,15 +56,26 @@ export function CardMode({
 					<span lang="en">{getText(activeItem.name, 'en')}</span>
 					<span lang="zh-Hans">{getText(activeItem.name, 'zh-Hans')}</span>
 				</button>
-				<button
-					type="button"
-					className="nav-button"
-					aria-label="Next card"
-					onClick={onNext}
-					disabled={items.length < 2}
-				>
-					Next
-				</button>
+				<footer className="card-controls">
+					<button
+						type="button"
+						className="nav-button"
+						aria-label="Previous card"
+						onClick={onPrevious}
+						disabled={items.length < 2}
+					>
+						Previous
+					</button>
+					<button
+						type="button"
+						className="nav-button"
+						aria-label="Next card"
+						onClick={onNext}
+						disabled={items.length < 2}
+					>
+						Next
+					</button>
+				</footer>
 			</section>
 		</main>
 	)

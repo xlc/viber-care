@@ -138,8 +138,15 @@ test('story mode shell renders through its dedicated screen', async ({
 	await expect(page.getByTestId('scene-text')).toContainText(
 		'米米看见公共汽车站。',
 	)
+	await expect(
+		page.getByRole('button', { name: '米米看见公共汽车站。' }),
+	).toHaveCount(0)
 	await expect(page.getByTestId('scene-item-bus-stop')).toBeVisible()
+	await page
+		.getByRole('button', { name: 'Next scene' })
+		.scrollIntoViewIfNeeded()
 	await page.getByRole('button', { name: 'Next scene' }).click()
+	await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0)
 	await expect(page.getByTestId('scene-progress')).toContainText('2 / 6')
 	await expect(page.getByTestId('scene-text')).toContainText(
 		'黄色公共汽车来了。',

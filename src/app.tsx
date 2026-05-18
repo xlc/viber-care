@@ -65,6 +65,10 @@ export function App() {
 	}, [settings.muted])
 
 	useEffect(() => {
+		window.scrollTo({ top: 0 })
+	}, [screen, scene.id, cardIndex])
+
+	useEffect(() => {
 		setActiveStoryItemKey(null)
 		clearStoryItemTimer()
 	}, [scene.id])

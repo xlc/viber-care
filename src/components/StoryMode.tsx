@@ -50,7 +50,7 @@ export function StoryMode({
 				</button>
 				<div>
 					<p className="kicker">{title}</p>
-					<h1>{storyText}</h1>
+					<h1 data-testid="scene-text">{storyText}</h1>
 				</div>
 				<div
 					className="language-toggle compact"
@@ -77,14 +77,6 @@ export function StoryMode({
 			</header>
 
 			<section className="story-layout">
-				<button
-					type="button"
-					className="scene-text"
-					data-testid="scene-text"
-					onClick={onReplay}
-				>
-					{storyText}
-				</button>
 				<div className="scene-frame">
 					<img
 						className="scene-image"
