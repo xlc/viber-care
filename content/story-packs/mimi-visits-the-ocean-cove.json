@@ -1,0 +1,520 @@
+{
+	"id": "mimi-visits-the-ocean-cove",
+	"version": "1.0.0",
+	"metadata": {
+		"title": {
+			"en": "Mimi Visits the Ocean Cove",
+			"zh-Hans": "米米去海湾"
+		},
+		"description": {
+			"en": "Mimi looks around a quiet ocean cove and meets friendly sea animals one at a time.",
+			"zh-Hans": "米米来到安静的海湾，一个一个看见友好的海洋小动物。"
+		},
+		"ageRange": "2-4",
+		"theme": "Gentle ocean animals",
+		"sceneCount": 6
+	},
+	"plotPlan": {
+		"mainCharacter": "Mimi, a curious toddler visiting a calm ocean cove with a grown-up nearby.",
+		"setting": "A sunny ocean cove with shallow blue water, soft sand, sea grass, and quiet tide pools.",
+		"goal": "Mimi notices friendly ocean animals while hearing simple bilingual sea-animal words.",
+		"beginning": "Mimi starts by looking across the blue water and seeing a big whale and little fish.",
+		"middle": "Mimi watches a jellyfish float, an octopus wave, and a seahorse drift near sea grass.",
+		"ending": "Mimi finishes on the sand with a crab, seal, and bright starfish resting calmly.",
+		"emotionalTone": "Calm, bright, gentle, slow, and wonder-filled.",
+		"learningGoals": [
+			"Recognize common ocean animal words.",
+			"Hear each important word in English and Simplified Chinese.",
+			"Practice tapping visible animals to repeat audio.",
+			"Explore the ocean scene without timers, scores, or wrong answers."
+		],
+		"vocabulary": [
+			"whale",
+			"fish",
+			"jellyfish",
+			"octopus",
+			"seahorse",
+			"crab",
+			"seal",
+			"starfish"
+		],
+		"interactionIdeas": [
+			"Tap swimming animals for a gentle float.",
+			"Tap sand animals for a soft glow.",
+			"Tap the fish for a tiny bounce.",
+			"Replay each short line at the child's pace."
+		]
+	},
+	"languages": ["en", "zh-Hans"],
+	"coverImage": {
+		"type": "image",
+		"path": "/assets/generated/mimi-visits-the-ocean-cove/scenes/ocean-cove.webp",
+		"alt": "A sunny calm ocean cove with shallow water and tide pools"
+	},
+	"scenes": [
+		{
+			"id": "01-blue-water",
+			"order": 1,
+			"purpose": "Begin with gentle animals in the blue water.",
+			"text": {
+				"en": "The whale swims slowly.",
+				"zh-Hans": "鲸鱼慢慢地游。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/whale-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/whale-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/scenes/ocean-cove.webp",
+				"alt": "Calm blue ocean water with room for a whale and fish"
+			},
+			"imagePrompt": "A calm toddler-friendly ocean cove with soft blue water, sandy seabed, gentle sea plants, and open space for water animals. No text, no clutter.",
+			"items": [
+				{
+					"itemId": "whale",
+					"x": 24,
+					"y": 56,
+					"scale": 0.86,
+					"interactionId": "whale-float"
+				},
+				{
+					"itemId": "fish",
+					"x": 66,
+					"y": 55,
+					"scale": 0.58,
+					"interactionId": "fish-bounce"
+				}
+			],
+			"interactions": [
+				{
+					"id": "whale-float",
+					"type": "float"
+				},
+				{
+					"id": "fish-bounce",
+					"type": "bounce"
+				}
+			]
+		},
+		{
+			"id": "02-gentle-jellyfish",
+			"order": 2,
+			"purpose": "Notice one soft floating animal.",
+			"text": {
+				"en": "The jellyfish floats gently.",
+				"zh-Hans": "水母轻轻地飘。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/jellyfish-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/jellyfish-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/scenes/ocean-cove.webp",
+				"alt": "Calm ocean cove water with a jellyfish"
+			},
+			"imagePrompt": "A calm toddler-friendly ocean cove with soft blue water, sandy seabed, gentle sea plants, and open space for water animals. No text, no clutter.",
+			"items": [
+				{
+					"itemId": "jellyfish",
+					"x": 52,
+					"y": 54,
+					"scale": 0.66,
+					"interactionId": "jellyfish-float"
+				}
+			],
+			"interactions": [
+				{
+					"id": "jellyfish-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "03-sea-grass",
+			"order": 3,
+			"purpose": "Look near the sea grass for small friendly animals.",
+			"text": {
+				"en": "The octopus waves its arms.",
+				"zh-Hans": "章鱼挥动小手。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/octopus-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/octopus-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/scenes/ocean-cove.webp",
+				"alt": "Calm ocean cove with sea grass and space for an octopus and seahorse"
+			},
+			"imagePrompt": "A calm toddler-friendly ocean cove with soft blue water, sandy seabed, gentle sea plants, and open space for water animals. No text, no clutter.",
+			"items": [
+				{
+					"itemId": "octopus",
+					"x": 73,
+					"y": 69,
+					"scale": 0.64,
+					"interactionId": "octopus-glow"
+				},
+				{
+					"itemId": "seahorse",
+					"x": 34,
+					"y": 70,
+					"scale": 0.58,
+					"interactionId": "seahorse-float"
+				}
+			],
+			"interactions": [
+				{
+					"id": "octopus-glow",
+					"type": "glow"
+				},
+				{
+					"id": "seahorse-float",
+					"type": "float"
+				}
+			]
+		},
+		{
+			"id": "04-soft-sand",
+			"order": 4,
+			"purpose": "Move from water to the sandy tide pool edge.",
+			"text": {
+				"en": "The crab walks on the sand.",
+				"zh-Hans": "螃蟹在沙子上走。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/crab-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/crab-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/scenes/tide-pool.webp",
+				"alt": "Soft sandy tide pool edge with a crab"
+			},
+			"imagePrompt": "A pastel toddler-friendly tide pool at a quiet ocean cove, soft sand, shallow water, gentle sea plants, open space for small animals, no text, no logos.",
+			"items": [
+				{
+					"itemId": "crab",
+					"x": 75,
+					"y": 78,
+					"scale": 0.56,
+					"interactionId": "crab-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "crab-glow",
+					"type": "glow"
+				}
+			]
+		},
+		{
+			"id": "05-water-edge",
+			"order": 5,
+			"purpose": "Pause with a friendly animal by the water.",
+			"text": {
+				"en": "The seal claps by the water.",
+				"zh-Hans": "海豹在水边拍手。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/seal-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/seal-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/scenes/tide-pool.webp",
+				"alt": "A quiet tide pool edge with a seal"
+			},
+			"imagePrompt": "A pastel toddler-friendly tide pool at a quiet ocean cove, soft sand, shallow water, gentle sea plants, open space for small animals, no text, no logos.",
+			"items": [
+				{
+					"itemId": "seal",
+					"x": 54,
+					"y": 75,
+					"scale": 0.72,
+					"interactionId": "seal-bounce"
+				}
+			],
+			"interactions": [
+				{
+					"id": "seal-bounce",
+					"type": "bounce"
+				}
+			]
+		},
+		{
+			"id": "06-bright-starfish",
+			"order": 6,
+			"purpose": "End with one calm animal resting on the sand.",
+			"text": {
+				"en": "The starfish rests on the sand.",
+				"zh-Hans": "海星躺在沙子上。"
+			},
+			"narration": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/starfish-en-L3.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/starfish-zh-Hans-L3.mp3"
+				}
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/scenes/tide-pool.webp",
+				"alt": "A quiet tide pool edge with a bright starfish on the sand"
+			},
+			"imagePrompt": "A pastel toddler-friendly tide pool at a quiet ocean cove, soft sand, shallow water, gentle sea plants, open space for small animals, no text, no logos.",
+			"items": [
+				{
+					"itemId": "starfish",
+					"x": 44,
+					"y": 77,
+					"scale": 0.54,
+					"interactionId": "starfish-glow"
+				}
+			],
+			"interactions": [
+				{
+					"id": "starfish-glow",
+					"type": "glow"
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"id": "whale",
+			"name": {
+				"en": "whale",
+				"zh-Hans": "鲸鱼"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/items/whale.webp",
+				"alt": "whale"
+			},
+			"imagePrompt": "A friendly whale for a toddler ocean word-learning game, rounded toy-like shape, clear silhouette, soft blue color, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/whale-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/whale-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-blue-water"]
+		},
+		{
+			"id": "fish",
+			"name": {
+				"en": "fish",
+				"zh-Hans": "小鱼"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/items/fish.webp",
+				"alt": "fish"
+			},
+			"imagePrompt": "A friendly blue fish for a toddler ocean word-learning game, rounded toy-like shape, clear silhouette, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/fish-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/fish-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["01-blue-water"]
+		},
+		{
+			"id": "jellyfish",
+			"name": {
+				"en": "jellyfish",
+				"zh-Hans": "水母"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/items/jellyfish.webp",
+				"alt": "jellyfish"
+			},
+			"imagePrompt": "A gentle smiling jellyfish for a toddler ocean word-learning game, soft colors, clear silhouette, no scary expression, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/jellyfish-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/jellyfish-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["02-gentle-jellyfish"]
+		},
+		{
+			"id": "octopus",
+			"name": {
+				"en": "octopus",
+				"zh-Hans": "章鱼"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/items/octopus.webp",
+				"alt": "octopus"
+			},
+			"imagePrompt": "A soft friendly octopus for a toddler ocean word-learning game, rounded toy-like shape, clear silhouette, no scary expression, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/octopus-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/octopus-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-sea-grass"]
+		},
+		{
+			"id": "seahorse",
+			"name": {
+				"en": "seahorse",
+				"zh-Hans": "海马"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/items/seahorse.webp",
+				"alt": "seahorse"
+			},
+			"imagePrompt": "A tiny friendly seahorse for a toddler ocean word-learning game, warm color, clear silhouette, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/seahorse-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/seahorse-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["03-sea-grass"]
+		},
+		{
+			"id": "crab",
+			"name": {
+				"en": "crab",
+				"zh-Hans": "螃蟹"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/items/crab.webp",
+				"alt": "crab"
+			},
+			"imagePrompt": "A small friendly crab for a toddler ocean word-learning game, rounded toy-like shape, clear silhouette, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/crab-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/crab-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["04-soft-sand"]
+		},
+		{
+			"id": "seal",
+			"name": {
+				"en": "seal",
+				"zh-Hans": "海豹"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/items/seal.webp",
+				"alt": "seal"
+			},
+			"imagePrompt": "A friendly seal for a toddler ocean word-learning game, rounded toy-like shape, clear silhouette, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/seal-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/seal-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["05-water-edge"]
+		},
+		{
+			"id": "starfish",
+			"name": {
+				"en": "starfish",
+				"zh-Hans": "海星"
+			},
+			"image": {
+				"type": "image",
+				"path": "/assets/generated/mimi-visits-the-ocean-cove/items/starfish.webp",
+				"alt": "starfish"
+			},
+			"imagePrompt": "A bright smiling starfish for a toddler ocean word-learning game, rounded toy-like shape, clear silhouette, no text, no logos, transparent background.",
+			"wordAudio": {
+				"en": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/starfish-en-L0.mp3"
+				},
+				"zh-Hans": {
+					"type": "audio",
+					"path": "/assets/generated/mimi-visits-the-ocean-cove/audio/starfish-zh-Hans-L0.mp3"
+				}
+			},
+			"card": true,
+			"sceneIds": ["06-bright-starfish"]
+		}
+	]
+}
