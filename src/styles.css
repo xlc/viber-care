@@ -1,4 +1,7 @@
 :root {
+	--top-bar-height: 65px;
+	--mode-screen-padding: clamp(10px, 1.6vw, 18px);
+	--story-content-chrome-height: 148px;
 	color: #22313a;
 	background: #f7fbf8;
 	font-family:
@@ -18,12 +21,16 @@ body,
 #app {
 	min-height: 100%;
 	margin: 0;
+	touch-action: pan-y;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 
 body {
 	min-width: 320px;
 	min-height: 100vh;
 	overflow-x: hidden;
+	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -70,7 +77,8 @@ img {
 	align-items: center;
 	justify-content: space-between;
 	gap: 16px;
-	padding: 14px clamp(16px, 4vw, 36px);
+	height: var(--top-bar-height);
+	padding: 8px clamp(12px, 3vw, 28px);
 	background: rgba(247, 251, 248, 0.94);
 	border-bottom: 1px solid rgba(60, 92, 72, 0.15);
 	backdrop-filter: blur(12px);
@@ -118,9 +126,18 @@ img {
 
 .home-screen,
 .mode-screen {
-	width: min(1120px, 100%);
+	width: min(1280px, 100%);
 	margin: 0 auto;
-	padding: clamp(16px, 3vw, 32px);
+	padding: var(--mode-screen-padding);
+}
+
+.story-screen,
+.card-screen {
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr);
+	gap: 10px;
+	height: calc(100svh - var(--top-bar-height));
+	min-height: 0;
 }
 
 .home-intro {
@@ -243,34 +260,51 @@ h1 {
 }
 
 .mode-header {
-	justify-content: space-between;
-	margin-bottom: 22px;
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr) auto;
+	margin-bottom: 0;
 }
 
 .mode-header h1 {
 	max-width: 760px;
-	font-size: 2.75rem;
-	line-height: 1.08;
+	font-size: clamp(1.85rem, 3.2vw, 2.45rem);
+	line-height: 1.02;
 }
 
 .story-layout {
 	display: grid;
-	gap: 14px;
+	grid-template-rows: minmax(0, 1fr) auto;
+	align-items: stretch;
+	gap: 10px;
+	min-height: 0;
 }
 
 .scene-frame {
 	position: relative;
+	align-self: center;
+	justify-self: center;
+	width: fit-content;
+	max-width: 100%;
+	max-height: 100%;
 	overflow: hidden;
 	background: #d8f4ff;
 	border-radius: 8px;
 }
 
 .scene-image {
-	width: 100%;
-	max-height: min(58vh, 620px);
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: calc(
+		100svh -
+		var(--top-bar-height) -
+		var(--mode-screen-padding) -
+		var(--mode-screen-padding) -
+		var(--story-content-chrome-height)
+	);
 	object-fit: contain;
 	background: #d8f4ff;
-	border-radius: 0;
+	border-radius: 8px;
 }
 
 .scene-item-tap {
@@ -320,14 +354,14 @@ h1 {
 }
 
 .replay-action {
-	justify-self: center;
+	width: 100%;
 }
 
 .story-controls {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto minmax(0, 1fr);
 	align-items: center;
-	gap: 12px;
+	gap: 10px;
 }
 
 .scene-progress {
@@ -385,18 +419,22 @@ h1 {
 
 .card-stage {
 	display: grid;
-	align-content: start;
+	grid-template-rows: minmax(0, 1fr) auto;
+	align-items: stretch;
 	justify-items: center;
-	gap: 14px;
+	gap: 10px;
+	min-height: 0;
 }
 
 .vocabulary-card {
 	display: grid;
+	align-content: center;
 	justify-items: center;
-	gap: 10px;
-	width: min(460px, 100%);
+	gap: clamp(8px, 1.5vw, 14px);
+	width: min(760px, 100%);
+	height: 100%;
 	min-height: 0;
-	padding: clamp(16px, 3vw, 24px);
+	padding: clamp(14px, 2vw, 22px);
 	color: #22313a;
 	background: #fff;
 	box-shadow: 0 18px 52px rgba(32, 62, 52, 0.12);
@@ -405,12 +443,13 @@ h1 {
 .card-controls {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 12px;
-	width: min(460px, 100%);
+	gap: 10px;
+	width: min(760px, 100%);
 }
 
 .vocabulary-card img {
-	width: min(260px, 68vw);
+	width: min(520px, 76vw);
+	max-height: min(42svh, 360px);
 	aspect-ratio: 4 / 3;
 	object-fit: contain;
 }
@@ -488,10 +527,25 @@ h1 {
 }
 
 @media (max-width: 720px) {
-	.home-intro,
-	.mode-header {
+	.home-intro {
 		align-items: stretch;
 		flex-direction: column;
+	}
+
+	.mode-header {
+		grid-template-columns: auto minmax(0, 1fr);
+	}
+
+	.mode-header > div {
+		grid-column: 1 / -1;
+		grid-row: 2;
+	}
+
+	.language-toggle.compact,
+	.card-count {
+		grid-column: 2;
+		grid-row: 1;
+		justify-self: end;
 	}
 
 	.pack-select {
@@ -511,9 +565,14 @@ h1 {
 	}
 
 	.scene-progress {
-		grid-column: 1 / -1;
+		grid-column: 1;
 		grid-row: 1;
-		justify-self: center;
+		width: 100%;
+	}
+
+	.replay-action {
+		grid-column: 2;
+		grid-row: 1;
 	}
 
 	h1,
@@ -522,10 +581,73 @@ h1 {
 	}
 
 	.mode-header h1 {
-		font-size: 2rem;
+		font-size: clamp(1.55rem, 7vw, 2rem);
 	}
 
 	.vocabulary-card span {
 		font-size: 2.35rem;
+	}
+}
+
+@media (max-height: 480px) {
+	:root {
+		--top-bar-height: 57px;
+		--mode-screen-padding: 6px;
+		--story-content-chrome-height: 105px;
+	}
+
+	.top-bar {
+		padding-block: 4px;
+	}
+
+	.mode-screen {
+		padding-block: var(--mode-screen-padding);
+	}
+
+	.brand-button,
+	.language-toggle button {
+		min-height: 40px;
+	}
+
+	.kicker {
+		margin-bottom: 2px;
+		font-size: 0.78rem;
+	}
+
+	.mode-header h1 {
+		font-size: clamp(1.35rem, 4vw, 1.75rem);
+	}
+
+	.vocabulary-card {
+		grid-template-columns: minmax(150px, 0.9fr) minmax(0, 1fr);
+		grid-template-rows: auto auto;
+		align-content: center;
+		width: min(720px, 100%);
+		padding: 10px;
+	}
+
+	.card-controls {
+		width: min(720px, 100%);
+	}
+
+	.vocabulary-card img {
+		grid-row: 1 / span 2;
+		width: min(300px, 38vw);
+		max-height: 100%;
+	}
+
+	.vocabulary-card span {
+		font-size: clamp(1.7rem, 4vw, 2rem);
+	}
+
+	.story-controls,
+	.card-controls {
+		gap: 6px;
+	}
+
+	.story-controls .nav-button,
+	.story-controls .primary-action,
+	.card-controls .nav-button {
+		min-height: 40px;
 	}
 }

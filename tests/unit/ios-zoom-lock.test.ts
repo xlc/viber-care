@@ -60,12 +60,14 @@ function createNavigator(
 	} as Navigator
 }
 
-function createPreventableEvent(touchesLength?: number) {
+function createPreventableEvent(touchesLength?: number, timeStamp = 0) {
 	return {
+		cancelable: true,
 		defaultPrevented: false,
 		preventDefault() {
 			this.defaultPrevented = true
 		},
+		timeStamp,
 		touches:
 			touchesLength === undefined
 				? undefined
@@ -95,7 +97,7 @@ describe('iOS zoom lock', () => {
 		expect(isIosTouchDevice(createNavigator({ maxTouchPoints: 0 }))).toBe(false)
 	})
 
-	it('prevents iOS gesture and multi-touch zoom without blocking one finger', () => {
+	it('prevents iOS gesture, pinch, and double-tap zoom', () => {
 		const { documentListeners, target, windowListeners } = createTarget(
 			createNavigator({
 				userAgent: 'Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X)',
@@ -109,8 +111,15 @@ describe('iOS zoom lock', () => {
 			'gestureend',
 			'gesturestart',
 		])
-		expect(documentListeners.has('touchmove')).toBe(true)
+		expect([...documentListeners.keys()].sort()).toEqual([
+			'touchend',
+			'touchmove',
+			'touchstart',
+		])
 		expect(windowListeners.get('gesturestart')?.options).toEqual({
+			passive: false,
+		})
+		expect(documentListeners.get('touchstart')?.options).toEqual({
 			passive: false,
 		})
 
@@ -125,6 +134,22 @@ describe('iOS zoom lock', () => {
 		const twoFingerTouch = createPreventableEvent(2)
 		documentListeners.get('touchmove')?.listener(twoFingerTouch)
 		expect(twoFingerTouch.defaultPrevented).toBe(true)
+
+		const twoFingerStart = createPreventableEvent(2)
+		documentListeners.get('touchstart')?.listener(twoFingerStart)
+		expect(twoFingerStart.defaultPrevented).toBe(true)
+
+		const firstTap = createPreventableEvent(undefined, 1000)
+		documentListeners.get('touchend')?.listener(firstTap)
+		expect(firstTap.defaultPrevented).toBe(false)
+
+		const secondTap = createPreventableEvent(undefined, 1250)
+		documentListeners.get('touchend')?.listener(secondTap)
+		expect(secondTap.defaultPrevented).toBe(true)
+
+		const laterTap = createPreventableEvent(undefined, 1700)
+		documentListeners.get('touchend')?.listener(laterTap)
+		expect(laterTap.defaultPrevented).toBe(false)
 	})
 
 	it('does not install zoom guards on non-iOS devices', () => {

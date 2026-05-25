@@ -13,6 +13,7 @@ type MultiTouchEvent = Event & {
 }
 
 const installedTargets = new WeakSet<object>()
+const doubleTapZoomDelayMs = 300
 
 export function isIosTouchDevice(navigatorLike: ZoomLockNavigator): boolean {
 	const userAgent = navigatorLike.userAgent
@@ -33,17 +34,29 @@ export function installIosZoomLock(target: ZoomLockTarget = window): void {
 	installedTargets.add(target)
 
 	const options = { passive: false }
-	const preventGestureZoom = (event: Event) => {
-		event.preventDefault()
-	}
-	const preventMultiTouchZoom = (event: MultiTouchEvent) => {
-		if ((event.touches?.length ?? 0) > 1) {
+	let lastTouchEndAt = Number.NEGATIVE_INFINITY
+
+	const preventDefault = (event: Event) => {
+		if (event.cancelable !== false) {
 			event.preventDefault()
 		}
 	}
+	const preventMultiTouchZoom = (event: MultiTouchEvent) => {
+		if ((event.touches?.length ?? 0) > 1) {
+			preventDefault(event)
+		}
+	}
+	const preventDoubleTapZoom = (event: Event) => {
+		if (event.timeStamp - lastTouchEndAt <= doubleTapZoomDelayMs) {
+			preventDefault(event)
+		}
+		lastTouchEndAt = event.timeStamp
+	}
 
-	target.addEventListener('gesturestart', preventGestureZoom, options)
-	target.addEventListener('gesturechange', preventGestureZoom, options)
-	target.addEventListener('gestureend', preventGestureZoom, options)
+	target.addEventListener('gesturestart', preventDefault, options)
+	target.addEventListener('gesturechange', preventDefault, options)
+	target.addEventListener('gestureend', preventDefault, options)
+	target.document.addEventListener('touchstart', preventMultiTouchZoom, options)
 	target.document.addEventListener('touchmove', preventMultiTouchZoom, options)
+	target.document.addEventListener('touchend', preventDoubleTapZoom, options)
 }

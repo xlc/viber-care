@@ -5,7 +5,7 @@ import { HomeScreen } from './components/HomeScreen'
 import { ParentSettings } from './components/ParentSettings'
 import { StoryMode } from './components/StoryMode'
 import { catalog } from './content/catalog'
-import type { LanguageCode } from './content/schema'
+import type { LanguageCode, LocalizedAudio } from './content/schema'
 import {
 	loadSettings,
 	type StoryAppSettings,
@@ -90,9 +90,12 @@ export function App() {
 	}
 
 	function startStory(packId: string) {
+		const nextPack = getPack(catalog, packId)
+		const nextScene = getInitialScene(nextPack, null)
 		stopSpeech()
 		selectPack(packId)
 		setScreen('story')
+		playSceneNarration(nextScene.narration)
 	}
 
 	function startCards(packId: string) {
@@ -111,11 +114,15 @@ export function App() {
 		setScreen('home')
 	}
 
-	function replayScene() {
+	function playSceneNarration(narration: LocalizedAudio) {
 		speakSequence(
-			[{ audioPath: getAudioPath(scene.narration, settings.language) }],
+			[{ audioPath: getAudioPath(narration, settings.language) }],
 			settings.muted,
 		)
+	}
+
+	function replayScene() {
+		playSceneNarration(scene.narration)
 	}
 
 	function speakStoryItem(sceneItemId: string) {
@@ -158,6 +165,7 @@ export function App() {
 		}
 		stopSpeech()
 		updateSettings({ lastSceneId: nextScene.id })
+		playSceneNarration(nextScene.narration)
 	}
 
 	function selectCard(offset: number) {

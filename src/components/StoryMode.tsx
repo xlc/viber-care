@@ -115,15 +115,6 @@ export function StoryMode({
 						)
 					})}
 				</div>
-				<button
-					type="button"
-					className="primary-action replay-action"
-					data-testid="replay-scene"
-					disabled={!getAudioPath(scene.narration, language)}
-					onClick={onReplay}
-				>
-					Replay
-				</button>
 				<footer className="story-controls">
 					<button
 						type="button"
@@ -133,6 +124,15 @@ export function StoryMode({
 						onClick={onPrevious}
 					>
 						Previous
+					</button>
+					<button
+						type="button"
+						className="primary-action replay-action"
+						data-testid="replay-scene"
+						disabled={!getAudioPath(scene.narration, language)}
+						onClick={onReplay}
+					>
+						Replay
 					</button>
 					<span className="scene-progress" data-testid="scene-progress">
 						{sceneIndex + 1} / {sceneCount}

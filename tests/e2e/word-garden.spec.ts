@@ -99,6 +99,11 @@ test('app opens on the story-pack home screen', async ({ page }) => {
 		'content',
 		'Word Garden is a calm bilingual story and card app for toddlers.',
 	)
+	await expect(page.locator('meta[name="viewport"]')).toHaveAttribute(
+		'content',
+		'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover',
+	)
+	await expect(page.locator('html')).toHaveCSS('touch-action', 'pan-y')
 	await expect(page.getByTestId('home-screen')).toBeVisible()
 	await expect(page.getByTestId('pack-card-mimi-rides-the-bus')).toBeVisible()
 	await expect(page.getByTestId('start-story-mimi-rides-the-bus')).toBeVisible()
@@ -186,25 +191,38 @@ test('card mode shell uses one-card paging and bilingual labels', async ({
 	await expect(page.getByTestId('vocabulary-card')).toContainText('公共汽车站')
 })
 
-test('audio is user initiated and respects mute', async ({ page }) => {
+test('story audio starts after user actions and respects mute', async ({
+	page,
+}) => {
 	await page.goto('/')
 	await page.getByTestId('mute-button').click()
 	await resetAudio(page)
 
 	await page.getByTestId('start-story-mimi-rides-the-bus').click()
-	await page.getByTestId('replay-scene').click()
+	await expect.poll(async () => (await getAudioSources(page)).length).toBe(1)
 	let audioSources = await getAudioSources(page)
 	expect(audioSources).toHaveLength(1)
 	expect(audioSources[0]).toContain(
-		'/assets/generated/mimi-rides-the-bus/audio/',
+		'/assets/generated/mimi-rides-the-bus/audio/01-bus-stop-en.mp3',
 	)
 
-	await page.getByTestId('scene-item-bus-stop').click()
+	await page.getByRole('button', { name: 'Next scene' }).click()
 	await expect.poll(async () => (await getAudioSources(page)).length).toBe(2)
+	audioSources = await getAudioSources(page)
+	expect(audioSources[1]).toContain(
+		'/assets/generated/mimi-rides-the-bus/audio/02-bus-arrives-en.mp3',
+	)
+
+	await page.getByTestId('replay-scene').click()
+	await expect.poll(async () => (await getAudioSources(page)).length).toBe(3)
+	audioSources = await getAudioSources(page)
+	expect(audioSources[2]).toContain(
+		'/assets/generated/mimi-rides-the-bus/audio/02-bus-arrives-en.mp3',
+	)
 
 	await page.getByTestId('mute-button').click()
 	await resetAudio(page)
-	await page.getByTestId('replay-scene').click()
+	await page.getByRole('button', { name: 'Next scene' }).click()
 	audioSources = await getAudioSources(page)
 	expect(audioSources).toHaveLength(0)
 })
